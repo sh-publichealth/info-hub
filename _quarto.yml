@@ -3,8 +3,8 @@ project:
 
 website:
   title: "St Helena Public Health – Information Hub"
-  site-url: https://sth-publichealth.github.io/info-hub
-  repo-url: https://github.com/sth-publichealth/info-hub
+  site-url: https://sh-publichealth.github.io/info-hub
+  repo-url: https://github.com/sh-publichealth/info-hub
   navbar:
     left:
       - href: index.qmd
