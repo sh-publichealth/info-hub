@@ -1,0 +1,79 @@
+# Future sections (not yet exposed):
+# - News
+# - Briefings
+# - Datasets
+# - Dashboards
+# - Methods
+
+project:
+  type: website
+  preview:
+    port: 4200
+    
+website:
+  title: "Information Hub"
+  site-url: https://sh-publichealth.github.io/info-hub
+  repo-url: https://github.com/sh-publichealth/info-hub
+  page-navigation: true
+  back-to-top-navigation: true
+  reader-mode: true
+
+  # --------------------
+  # Top navigation bar
+  # --------------------
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: our-work/index.qmd
+        text: Our Work
+      - href: whats-new/index.qmd
+        text: What's New  
+      - href: our-data/index.qmd
+        text: Our Data               
+      - href: how-we-work/index.qmd
+        text: How We Work               
+      - href: about-us/index.qmd
+        text: About Us               
+
+  # --------------------
+  # Sidebar (scoped later)
+  # --------------------
+  sidebar:
+      id: tmr-ops
+      title: "TMR Operations Manual"
+      style: "docked"
+      search: true
+      collapse-level: 2
+      contents:
+        - text: Introduction
+          href: our-work/index.qmd
+        - section: "Total Meal Replacement"
+          href: our-work/tmr/index.qmd
+          contents:
+          - section: "Ops Manual"
+            href: our-work/tmr/ops-overview.qmd
+            contents: 
+            - text: Eligibility 
+              href: our-work/tmr/eligibility.qmd
+            - text: Participant Flow
+              href: our-work/tmr/participant-flow.qmd
+            - text: Recruitment 
+              href: our-work/tmr/recruitment.qmd
+            - text: Screening Visit 
+              href: our-work/tmr/screening-visit.qmd
+            - text: Baseline Visit 
+              href: our-work/tmr/baseline-visit.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+# touch: 2026-01-09 12:34:56.789
+
+
+# touch: 2026-01-09 15:00:56.693

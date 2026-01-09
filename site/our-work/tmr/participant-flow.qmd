@@ -1,0 +1,74 @@
+---
+editor: 
+  render-on-save: true
+---
+
+# The Recruitment Process
+## Part 1. First contact
+
+```{mermaid}
+%%| label: fig-mermaid-flowchart1
+%%| fig-cap: TMR Recruitment Process. Part 1 - First Contact
+%%| fig-alt: recruitment process, drawn using Mermaid.
+flowchart LR
+
+R1(**R1.** From REDCap<br/>Recruitment Report)
+R2(**R2.** Advert Response) 
+R3(**R3.** From Clinic)
+R4(**R4.** Find Person in<br/>REDCap Database)
+R4a(**R4a.** If not Found<br/>Add to Database)
+R5(**R5.** Make Contact.<br/>Deliver Telephone Script)
+R1 --> R4 
+R2 --> R4
+R3 --> R4
+R4 -.-> R4a
+R4a -.-> R5 
+R4 --> R5
+```
+
+::: {.callout-note collapse="true"}
+## Part 1 Notes
+**R1.** Use the REDCap "Recruitment Report". Choose and contact the next person on the list. 
+
+**R2/R3.** For potential participants responding to the project advert or recruited from clinic, search the REDCap database to see if they exist. If not on the database, create and complete a new *Screening Record* for this person.
+
+**R4.** Search the REDCap database for the person in question. You will use the person's REDCap Screening Form during the recruitment process.
+:::
+
+## Part 2. Participant Choices
+```{mermaid}
+%%| label: fig-mermaid-flowchart2
+%%| fig-cap: TMR Recruitment Process. Part 2 - Participant Choices
+%%| fig-alt: recruitment process, drawn using Mermaid.
+flowchart LR
+
+R5(**R5.** Make Contact.<br/>Deliver Telephone Script)
+R6(**R6.** Book Screening Visit in REDCap)
+R7(**R7.** Schedule follow-up call)
+R8(**R8.** Use as Control?)
+R9(**R9.** Update REDCap Database<br/>Screening Form)
+R5 -- "Interested" --> R6
+R5 -- "Possibly Interested" --> R7
+R5 -- "Not Interested"--> R8
+R6 --> R9
+R7 --> R9
+R8 --> R9
+```
+
+::: {.callout-note collapse="true"}
+## Part 2 Notes
+**R5.** You will of course only make contact if the person already meets the age, diabetes duration, and *recent clinic visit* criteria (see [Eligibility](./eligibility.qmd) for details). They will still need height and weight measurement (for the calculation of Body Mass Index) to confirm final eligibility. 
+
+**R6.** If ***interested***, book a screening visit using the REDCap visit scheduling tool. Point the person to the online [Information Sheet]{.highlight}.
+
+**R7.** If ***possibly interested***, point the participant to the online [information sheet]{.highlight}. And schedule a follow-up call.
+
+**R8.** If ***not interested***, the person could still be part of our control group. Follow the *possible control* telephone script.
+
+**R9.** For each possible outcome, updates to the REDCap Screening Form will be required. Follow the project REDCap guidance on this.
+:::
+
+# The Screening Visit
+
+
+
