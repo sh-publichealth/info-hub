@@ -27,7 +27,7 @@ R4 --> R5
 ```
 
 ::: {.callout-note collapse="true"}
-## Part 1 Notes
+## Recruitment Part 1 Notes
 **R1.** Use the REDCap "Recruitment Report". Choose and contact the next person on the list. 
 
 **R2/R3.** For potential participants responding to the project advert or recruited from clinic, search the REDCap database to see if they exist. If not on the database, create and complete a new *Screening Record* for this person.
@@ -45,30 +45,301 @@ flowchart LR
 R5(**R5.** Make Contact.<br/>Deliver Telephone Script)
 R6(**R6.** Book Screening Visit in REDCap)
 R7(**R7.** Schedule follow-up call)
-R8(**R8.** Use as Control?)
+R8(**R8.** Thank person for their time)
 R9(**R9.** Update REDCap Database<br/>Screening Form)
 R5 -- "Interested" --> R6
 R5 -- "Possibly Interested" --> R7
 R5 -- "Not Interested"--> R8
 R6 --> R9
 R7 --> R9
-R8 --> R9
+R8 -.-> R9
 ```
 
 ::: {.callout-note collapse="true"}
-## Part 2 Notes
+## Recruitment Part 2 Notes
 **R5.** You will of course only make contact if the person already meets the age, diabetes duration, and *recent clinic visit* criteria (see [Eligibility](./eligibility.qmd) for details). They will still need height and weight measurement (for the calculation of Body Mass Index) to confirm final eligibility. 
 
 **R6.** If ***interested***, book a screening visit using the REDCap visit scheduling tool. Point the person to the online [Information Sheet]{.highlight}.
 
 **R7.** If ***possibly interested***, point the participant to the online [information sheet]{.highlight}. And schedule a follow-up call.
 
-**R8.** If ***not interested***, the person could still be part of our control group. Follow the *possible control* telephone script.
+**R8.** If ***not interested***, thank the person for their time. The person could still be part of our control group, but we will identify controls directly from the Registry.
 
 **R9.** For each possible outcome, updates to the REDCap Screening Form will be required. Follow the project REDCap guidance on this.
 :::
 
 # The Screening Visit
-## Part 1
+## Part 1. Screening Visit Preparation
+
+```{mermaid}
+%%| label: fig-mermaid-flowchart3
+%%| fig-cap: TMR Screening Visit. Part 1 - Preparation
+%%| fig-alt: screening visit, drawn using Mermaid.
+flowchart LR
+
+S1(**S1.** Update REDCap)
+S2(**S2.** Medical Notes<br/>Review)
+S3(**S3.** Confirm Screening<br/>Visit on *day-1*)
+S4(**S4.** Thank person for their time)
+S1 --> S2
+S2 -- "Eligible" --> S3
+S2 -- "Note Eligible" --> S4
+
+```
+
+
+::: {.callout-note collapse="true"}
+## Screening Part 1 Notes
+**S2.** The medical notes review is an important step to identify clinical factors that might exclude someone from taking part in this intervention. Potential exclusion factors are as follows:
+
+ - Active mental illness
+ - AMI or stroke in past 3 months
+ - Severe / unstable heart failure 
+ - Porphyria
+ - Pregnant until >4 months post-partum or breastfeeding 
+ - Substance abuse
+ - Eating disorder accompanied by purging
+ - eGFR <30mls/min/1.73 within previous 3 months
+:::
+
+## Part 2. At the Screening Visit (BMI check)
+
+```{mermaid}
+%%| label: fig-mermaid-flowchart4
+%%| fig-cap: TMR Screening Visit. Part 2 - BMI Check
+%%| fig-alt: screening visit, drawn using Mermaid.
+flowchart LR
+
+S5(**S5.** Confirm Identity)
+S6(**S6.** Brief TMR<br/>Overview)
+S7(**S7.** Measure<br/>Height & Weight<br/>for BMI check)
+S8(**S8.** Final Eligibility Check<br/>Move to Next Stage)
+S9(**S9.** Thank person for their time)
+S5 --> S6
+S6 --> S7
+S7 -- "Eligible" --> S8
+S7 -- "Not Eligible" --> S9
+```
+
+
+::: {.callout-note collapse="true"}
+## Screening Part 2 Notes
+**S5 / S6.** For the identity check and the TMR overview, follow the [screening visit visit notes]{.highlight} 
+
+**S7.** Height and Weight should be measured following the simple protocol. Results must be entered directly into the REDCap Screening form, which will provide you with the person's Body Mass Index for you to assess eligibility.
+
+**S8.** The REDCap Screening Form will also use the already-completed fields to assess and complete overall eligibility based on [Age, Diabetes Duration, Clinic Visit Recency, BMI]. Use this REDCap eligibility classiffication to guide your next steps. 
+:::
+
+
+## Part 3. At the Screening Visit (Eating Disorder check)
+
+```{mermaid}
+%%| label: fig-mermaid-flowchart5
+%%| fig-cap: TMR Screening Visit. Part 3 - Eating Disorder Check
+%%| fig-alt: screening visit, drawn using Mermaid.
+flowchart LR
+
+S10(**S10.** Step 1.<br/>Anorexia/Bulimia)
+S11(**S11.** Step 2. Emotional/Binge Eating)
+S12(**S12.** Thank person for their time. **Health referral**)
+S13(**S13.** Start Programme. Complete 2.1)
+S14(**S14.** Thank person for their time. **Health referral**)
+S15(**S15.** Start with Usual Support)
+S16(**S16.** Start with Usual + Additional Support)
+
+S10 -- No Diagnosis --> S11
+S10 -- Diagnosed --> S12
+
+S11 -- LT3 --> S13
+S11 -- GE3 --> S14
+
+S13 --GE6 --> S15
+S13 --LE5 --> S16
+
+```
+
+
+::: {.callout-note collapse="true"}
+## Screening Part 3 Notes
+
+**S10/S11/S13.** These steps collectively form the eating disorder screening process. You should follow this process carefully, filling out the question responses in REDCap, and using the resultinbg REDCap scores to dictate the eventual participant pathway. 
+:::
+
+
+# The Baseline Visit
+## Part 1. Before Data Collection Begins
+
+```{mermaid}
+%%| label: fig-mermaid-flowchart6a
+%%| fig-cap: TMR Baseline Visit. Part 1 - Before Data Collection
+%%| fig-alt: baseline visit, drawn using Mermaid.
+flowchart LR
+
+B1(**B1.** Find Participant in REDCap)
+B2(**B2.** Visit Preamble)
+B3(**B3.** Impart Pre-Consent Information)
+B4(**B4.** Obtain Informed Consent)
+B1 --> B2
+B2 --> B3
+B3 --> B4
+
+```
+
+::: {.callout-note collapse="true"}
+## Baseline Part 1 Notes
+
+**B2.** As part of this visit preamble, you should:
+
+- Confirm the identity of the participant
+- Confirm their eligibility status 
+- Provide a brief review of the TMR intervention
+
+**B3.** As part of this visit preamble, you should:
+
+- Review how we plan to use the data
+- Review our data confidentiality guarentee
+- Review our plans for data use 
+
+**B4.** Obtain informed consent via the REDCap eConsent process
+:::
+
+
+## Part 2. Data Collection
+
+```{mermaid}
+%%| fig-alt: baseline visit, drawn using Mermaid.
+flowchart LR
+
+  B5(**B5.** Collect<br/>Anthropometry)
+  B6(**B6.** Collect Clinical<br/>Measures)
+  B7(**B7.** Collect<br/>Blood Sample)
+  B8(**B8.** Record<br/>Medication Status)
+  
+B5 --> B6
+B6 --> B7
+B7 --> B8
+
+```
+
+```{mermaid}
+%%| label: fig-mermaid-flowchart6b
+%%| fig-cap: TMR Baseline Visit. Part 2 - Data Collection
+%%| fig-alt: baseline visit, drawn using Mermaid.
+flowchart LR
+
+  B9(**B9.** Perform Fibroscan)
+  B10(**B10.** Collect Patient Reported Outcomes)
+  B11(**B11.** Update REDCap)
+  
+B9 --> B10
+B10 --> B11
+
+```
+
+
+::: {.callout-note collapse="true"}
+## Baseline Part 2 Notes
+
+**B5.** Anthropometry includes:
+
+- weight 
+- waist circumference
+- hip circumference
+
+**B6.** Clinical Measures includes:
+
+- blood pressure
+- glucose monitoring
+
+**B7.** Blood sample will be used for:
+
+- HbA1C
+- liver panel
+
+**B10.** Patient Reported Outcomes include:
+
+- Patient-Reported Outcomes
+- Eq5D - quality of life
+- PAID - diabetes distress
+- IPAQ - exercise
+
+:::
+
+
+# Intervention Visits (Weeks 2, 4, 6, 8, 10)
+## At Each Visit
+
+```{mermaid}
+%%| label: fig-mermaid-flowchart7
+%%| fig-cap: TMR intervention Visits
+%%| fig-alt: baseline visit, drawn using Mermaid.
+flowchart LR
+
+IV1(**IV1.** Schedule Visit by Telephone)
+IV2(**IV2.** Visit Confirmation by Telephone *day-1*)
+IV3(**IV3.** Visit to Preferred Participant Location<br/>for Data Collection + Support)
+IV4(**IV4.** Update REDCap)
+IV1 --> IV2
+IV2 --> IV3
+IV3 --> IV4
+
+```
+
+::: {.callout-note collapse="true"}
+## Intervention Visit Notes
+
+**IV1.** Enter Scheduled visit in REDCap
+
+**IV2.** Edit REDCap scheduling if necessary
+
+**IV3.** Measurements are:
+
+- weight
+- blood pressure
+- glucose monitor measurement
+- medication check
+- **Along with the usual support / counselling**
+:::
+
+
+# Intervention Visit (Week 12)
+## End of Intervention Visit
+
+```{mermaid}
+%%| label: fig-mermaid-flowchart8
+%%| fig-cap: TMR Week 12 Visit
+%%| fig-alt: baseline visit, drawn using Mermaid.
+flowchart LR
+
+W12a(**W12a.** Schedule Visit by Telephone)
+W12b(**W12b.** Visit Confirmation by Telephone *day-1*)
+W12c(**W12c.** Clinic Visit<br/>for Data Collection + Support)
+W12d(**W12d.** Update REDCap)
+W12a --> W12b
+W12b --> W12c
+W12c --> W12d
+
+```
+
+::: {.callout-note collapse="true"}
+## Intervention Visit Notes
+
+**W12a.** Enter Scheduled visit in REDCap
+
+**W12b.** Edit REDCap scheduling if necessary
+
+**W12c.** Measurements are:
+
+- All anthropometry
+- blood pressure
+- glucose monitor measurement
+- blood sample: for HbA1C, liver panel 
+- medication check
+- Eq5d - QoL
+- PAID - diabetes distress
+- IPAQ - exercise
+- **Along with the usual support / counselling**
+:::
 
 

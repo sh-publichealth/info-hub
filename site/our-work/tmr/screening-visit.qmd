@@ -1,0 +1,143 @@
+---
+title: "Screening Visit"
+subtitle: "Guidance for Study Staff"
+format: html
+---
+
+## Purpose of the Screening Visit
+
+The screening visit is a short, structured check to confirm whether the Total Meal Replacement (TMR) programme is appropriate, safe, and acceptable for an individual.
+
+This visit focuses on eligibility, safety, and informed choice.  
+It is not consent and does not commit the individual to taking part.
+
+A well-run screening visit helps protect participants, supports good programme outcomes, and sets the tone for trust and transparency.
+
+---
+
+## What the Screening Visit Is and Is Not
+
+The screening visit:
+- checks eligibility and safety  
+- explains the programme in more detail  
+- gives the individual space to ask questions and reflect  
+
+The screening visit does not:
+- act as a baseline assessment  
+- involve treatment or medication changes  
+- commit the individual to participation  
+
+---
+
+## What Happens at the Screening Visit
+
+Screening usually takes around 20–30 minutes.
+
+During the visit, staff will:
+- confirm key eligibility information (age, diabetes type and duration, recent clinic attendance)
+- measure height and weight and calculate BMI
+- review relevant clinical exclusions
+- explain what the programme involves, including time commitment and follow-up
+- check understanding and answer questions
+- ask whether the individual wishes to proceed to a baseline visit
+
+---
+
+## Eligibility and Safety Checks
+
+### Core eligibility
+
+Confirm that the individual meets the programme criteria, including:
+- type 2 diabetes diagnosis
+- diabetes duration within programme limits
+- recent engagement with diabetes care
+- BMI within the eligible range
+- recent HbA1c where available
+
+These checks ensure the programme is offered fairly and safely.
+
+---
+
+### Safety exclusions
+
+Screening must review key safety exclusions, including:
+- pregnancy or breastfeeding
+- recent major cardiovascular events
+- severe renal impairment
+- other significant medical contraindications
+
+If eligibility is unclear or borderline, pause screening and escalate to the clinical lead.
+
+---
+
+## Eating Disorder Assessment
+
+Assessment for current or past eating disorders is required, even though this is not listed explicitly in the SOP or checklist. This requirement is embedded in the participant flow and is an essential safety step.
+
+Staff should:
+- ask sensitively about any history of eating disorders, including binge eating, purging, or restrictive eating
+- remain alert to concerns raised during discussion about food, weight, or control
+- exclude individuals with an active eating disorder
+- escalate uncertainty or concern to the clinical lead before proceeding
+
+This assessment protects both the participant and the programme.
+
+---
+
+## Explaining the Programme
+
+Ensure the individual understands:
+- the first phase is intensive and time-limited (total diet replacement)
+- food is gradually reintroduced with structured support
+- medication changes may occur only under clinical supervision
+- regular follow-up visits are required
+- participation is voluntary and can be stopped at any time
+
+Avoid guarantees. Focus on support, structure, and learning.
+
+---
+
+## Confirming Interest and Next Steps
+
+At the end of the visit, ask neutrally whether the individual would like to proceed.
+
+If eligible and interested:
+- arrange a baseline visit
+- explain what will happen next and when
+
+If eligible but not interested:
+- thank them for their time
+- where appropriate, explain the option of contributing routine data as part of the control group
+
+If not eligible:
+- explain clearly and respectfully
+- ensure usual diabetes care continues unchanged
+
+---
+
+## Recording the Outcome
+
+After the visit:
+- record eligibility, interest, and outcome in REDCap
+- note any escalations, exclusions, or safeguarding concerns
+- ensure next steps are clearly documented
+
+No consent forms are completed at screening.
+
+---
+
+## Key Message for Staff
+
+Screening is about doing the right thing early: protecting participants, supporting informed choice, and ensuring the programme starts on solid ground.
+
+A careful, calm screening visit makes everything that follows easier.
+
+---
+
+## Key Documents and Links [(to be completed)]{.highlight}
+
+Add links here to documents used during screening, for example:
+- Screening Visit SOP  
+- Screening Visit Checklist  
+- Study Information Sheet  
+

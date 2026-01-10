@@ -1,1 +1,125 @@
-Time to add more
+---
+title: "Eligibility"
+subtitle: "Who can and cannot take part"
+---
+
+## Purpose of eligibility assessment
+
+Eligibility criteria are used to:
+
+- Ensure participant safety
+- Identify those most likely to benefit from TMR
+- Apply inclusion rules consistently and fairly
+
+Eligibility is assessed in **two stages**:
+
+1. Registry-based pre-screening
+2. In-person screening confirmation
+
+Eligibility is only final once **both stages** are complete.
+
+---
+
+## Stage 1: Registry-based eligibility (pre-screening)
+
+Stage 1 eligibility is assessed using **existing Diabetes Registry data only**.
+
+An individual may proceed to screening if all of the following apply:
+
+- Age **≤ 65 years**
+- Diagnosed with **type 2 diabetes**
+- Diabetes duration **≤ 6 years**  
+  - May be extended to **≤ 10 years** if recruitment numbers are low
+- At least **one diabetes-related visit in the past 12 months**
+- Likely **BMI ≥ 25** (confirmed at screening)
+
+Individuals meeting these criteria are flagged as *potentially eligible* and may be invited to screening.
+
+No consent is obtained at this stage.
+
+---
+
+## Stage 2: Screening visit eligibility
+
+Eligibility is confirmed at an **in-person screening visit**.
+
+To remain eligible, the individual must:
+
+- Have **BMI ≥ 25** confirmed by measured height and weight
+- Have no exclusion criteria (see below)
+- Be willing and able to attend scheduled study visits
+- Be willing to consider participation in the full programme
+
+Eligibility status is recorded in the screening instrument.
+
+---
+
+## Exclusion criteria (apply at any stage)
+
+An individual is **not eligible** if any of the following apply:
+
+- Pregnant, breastfeeding, or planning pregnancy
+- Severe renal impairment (e.g. eGFR <30 mL/min/1.73m²)
+- Active cancer
+- Myocardial infarction or stroke within the past 6 months
+- Severe heart failure (NYHA class III or IV)
+- Active eating disorder
+- Active substance use disorder
+- Prior bariatric surgery
+- Any condition where the clinical team judges TMR to be unsafe or inappropriate
+
+Clinical judgement should be documented where exclusions are discretionary.
+
+---
+
+## Participants using insulin
+
+Insulin use is **not an automatic exclusion**.
+
+However:
+- Insulin-treated participants require enhanced clinical oversight
+- Medication adjustment protocols must be followed
+- Insulin status should be clearly flagged at screening and baseline
+
+Insulin-treated participants may be analysed separately.
+
+---
+
+## If eligibility is not met
+
+If an individual does not meet eligibility criteria:
+
+- This should be recorded in the screening log
+- The reason for ineligibility should be documented
+- Routine diabetes care continues as normal
+
+Ineligibility does **not** affect access to services.
+
+---
+
+## Systems and documentation
+
+Eligibility assessment uses:
+- Diabetes Registry (Stage 1)
+- Eligibility screening REDCap instrument (Stage 2)
+- Recruitment and screening logs
+
+Eligibility decisions must be auditable.
+
+---
+
+## Key documents and links
+
+- Eligibility criteria summary table  
+- Screening REDCap instrument  
+- Participant flow diagram (Eligibility → Screening → Baseline)
+
+(Links inserted here)
+
+---
+
+## Key principle
+
+Eligibility assessment is a **safety and consistency function**, not a recruitment tool.
+
+When in doubt, pause, document, and escalate.
