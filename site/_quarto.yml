@@ -54,6 +54,8 @@ website:
           - section: "Ops Manual"
             href: our-work/tmr/ops-overview.qmd
             contents: 
+            - text: The Study Protocol 
+              href: our-work/tmr/protocol.qmd
             - text: Eligibility 
               href: our-work/tmr/eligibility.qmd
             - text: Participant Flow
@@ -76,4 +78,4 @@ format:
 # touch: 2026-01-09 12:34:56.789
 
 
-# touch: 2026-01-09 15:00:56.693
+# touch: 2026-01-10 17:32:27.563
