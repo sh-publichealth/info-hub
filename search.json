@@ -1,16 +1,175 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "our-work/index.html",
+    "href": "our-work/index.html",
+    "title": "Our Work",
     "section": "",
-    "text": "About this site"
+    "text": "Our Work\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Our Work",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/recruitment.html",
+    "href": "our-work/tmr/recruitment.html",
+    "title": "Information Hub",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Recruitment"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/eligibility.html",
+    "href": "our-work/tmr/eligibility.html",
+    "title": "Information Hub",
+    "section": "",
+    "text": "Time to add more\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Eligibility"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/index.html",
+    "href": "our-work/tmr/index.html",
+    "title": "Information Hub",
+    "section": "",
+    "text": "Total Meal Replacement\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement"
+    ]
+  },
+  {
+    "objectID": "how-we-work/index.html",
+    "href": "how-we-work/index.html",
+    "title": "How we Work",
+    "section": "",
+    "text": "How we Work\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "whats-new/index.html",
+    "href": "whats-new/index.html",
+    "title": "What’s New",
+    "section": "",
+    "text": "What’s New\n\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "info-hub",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is the St.Helena Public HealthProtozoa website\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "our-data/index.html",
+    "href": "our-data/index.html",
+    "title": "Our Data",
+    "section": "",
+    "text": "Our Data\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about-us/index.html",
+    "href": "about-us/index.html",
+    "title": "About Us",
+    "section": "",
+    "text": "About Us\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "our-work/tmr/baseline-visit.html",
+    "href": "our-work/tmr/baseline-visit.html",
+    "title": "Information Hub",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Baseline Visit"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/ops-overview.html",
+    "href": "our-work/tmr/ops-overview.html",
+    "title": "Information Hub",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/screening-visit.html",
+    "href": "our-work/tmr/screening-visit.html",
+    "title": "Information Hub",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Screening Visit"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/participant-flow.html",
+    "href": "our-work/tmr/participant-flow.html",
+    "title": "The Recruitment Process",
+    "section": "",
+    "text": "flowchart LR\n\nR1(**R1.** From REDCap&lt;br/&gt;Recruitment Report)\nR2(**R2.** Advert Response) \nR3(**R3.** From Clinic)\nR4(**R4.** Find Person in&lt;br/&gt;REDCap Database)\nR4a(**R4a.** If not Found&lt;br/&gt;Add to Database)\nR5(**R5.** Make Contact.&lt;br/&gt;Deliver Telephone Script)\nR1 --&gt; R4 \nR2 --&gt; R4\nR3 --&gt; R4\nR4 -.-&gt; R4a\nR4a -.-&gt; R5 \nR4 --&gt; R5\n\n\n\n\nFigure 1: TMR Recruitment Process. Part 1 - First Contact\n\n\n\n\n\n\n\n\n\n\n\nNotePart 1 Notes\n\n\n\n\n\nR1. Use the REDCap “Recruitment Report”. Choose and contact the next person on the list.\nR2/R3. For potential participants responding to the project advert or recruited from clinic, search the REDCap database to see if they exist. If not on the database, create and complete a new Screening Record for this person.\nR4. Search the REDCap database for the person in question. You will use the person’s REDCap Screening Form during the recruitment process.\n\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n\nR5(**R5.** Make Contact.&lt;br/&gt;Deliver Telephone Script)\nR6(**R6.** Book Screening Visit in REDCap)\nR7(**R7.** Schedule follow-up call)\nR8(**R8.** Use as Control?)\nR9(**R9.** Update REDCap Database&lt;br/&gt;Screening Form)\nR5 -- \"Interested\" --&gt; R6\nR5 -- \"Possibly Interested\" --&gt; R7\nR5 -- \"Not Interested\"--&gt; R8\nR6 --&gt; R9\nR7 --&gt; R9\nR8 --&gt; R9\n\n\n\n\nFigure 2: TMR Recruitment Process. Part 2 - Participant Choices\n\n\n\n\n\n\n\n\n\n\n\nNotePart 2 Notes\n\n\n\n\n\nR5. You will of course only make contact if the person already meets the age, diabetes duration, and recent clinic visit criteria (see Eligibility for details). They will still need height and weight measurement (for the calculation of Body Mass Index) to confirm final eligibility.\nR6. If interested, book a screening visit using the REDCap visit scheduling tool. Point the person to the online Information Sheet.\nR7. If possibly interested, point the participant to the online information sheet. And schedule a follow-up call.\nR8. If not interested, the person could still be part of our control group. Follow the possible control telephone script.\nR9. For each possible outcome, updates to the REDCap Screening Form will be required. Follow the project REDCap guidance on this.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/participant-flow.html#part-1.-first-contact",
+    "href": "our-work/tmr/participant-flow.html#part-1.-first-contact",
+    "title": "The Recruitment Process",
+    "section": "",
+    "text": "flowchart LR\n\nR1(**R1.** From REDCap&lt;br/&gt;Recruitment Report)\nR2(**R2.** Advert Response) \nR3(**R3.** From Clinic)\nR4(**R4.** Find Person in&lt;br/&gt;REDCap Database)\nR4a(**R4a.** If not Found&lt;br/&gt;Add to Database)\nR5(**R5.** Make Contact.&lt;br/&gt;Deliver Telephone Script)\nR1 --&gt; R4 \nR2 --&gt; R4\nR3 --&gt; R4\nR4 -.-&gt; R4a\nR4a -.-&gt; R5 \nR4 --&gt; R5\n\n\n\n\nFigure 1: TMR Recruitment Process. Part 1 - First Contact\n\n\n\n\n\n\n\n\n\n\n\nNotePart 1 Notes\n\n\n\n\n\nR1. Use the REDCap “Recruitment Report”. Choose and contact the next person on the list.\nR2/R3. For potential participants responding to the project advert or recruited from clinic, search the REDCap database to see if they exist. If not on the database, create and complete a new Screening Record for this person.\nR4. Search the REDCap database for the person in question. You will use the person’s REDCap Screening Form during the recruitment process.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/participant-flow.html#part-2.-participant-choices",
+    "href": "our-work/tmr/participant-flow.html#part-2.-participant-choices",
+    "title": "The Recruitment Process",
+    "section": "",
+    "text": "flowchart LR\n\nR5(**R5.** Make Contact.&lt;br/&gt;Deliver Telephone Script)\nR6(**R6.** Book Screening Visit in REDCap)\nR7(**R7.** Schedule follow-up call)\nR8(**R8.** Use as Control?)\nR9(**R9.** Update REDCap Database&lt;br/&gt;Screening Form)\nR5 -- \"Interested\" --&gt; R6\nR5 -- \"Possibly Interested\" --&gt; R7\nR5 -- \"Not Interested\"--&gt; R8\nR6 --&gt; R9\nR7 --&gt; R9\nR8 --&gt; R9\n\n\n\n\nFigure 2: TMR Recruitment Process. Part 2 - Participant Choices\n\n\n\n\n\n\n\n\n\n\n\nNotePart 2 Notes\n\n\n\n\n\nR5. You will of course only make contact if the person already meets the age, diabetes duration, and recent clinic visit criteria (see Eligibility for details). They will still need height and weight measurement (for the calculation of Body Mass Index) to confirm final eligibility.\nR6. If interested, book a screening visit using the REDCap visit scheduling tool. Point the person to the online Information Sheet.\nR7. If possibly interested, point the participant to the online information sheet. And schedule a follow-up call.\nR8. If not interested, the person could still be part of our control group. Follow the possible control telephone script.\nR9. For each possible outcome, updates to the REDCap Screening Form will be required. Follow the project REDCap guidance on this.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/participant-flow.html#part-1",
+    "href": "our-work/tmr/participant-flow.html#part-1",
+    "title": "The Recruitment Process",
+    "section": "Part 1",
+    "text": "Part 1",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Flow"
+    ]
   }
 ]
