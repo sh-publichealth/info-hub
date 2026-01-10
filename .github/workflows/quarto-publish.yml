@@ -18,11 +18,12 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render website
-        run: quarto render site
-
-      - name: Publish to gh-pages
-        uses: quarto-dev/quarto-actions/publish@v2
+        uses: quarto-dev/quarto-actions/render@v2
         with:
           path: site
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: site/_site
