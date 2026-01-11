@@ -1,0 +1,213 @@
+---
+title: "Anonymisation and Small-Number Suppression Rules"
+subtitle: "Guidance for Study Staff"
+format: html
+---
+
+## Total Meal Replacement (TMR) Diabetes Remission Programme
+
+---
+
+**St Helena Health and Social Care Directorate (HSC)**
+
+**Version 1 – Draft**
+
+**Date: 05-Jan-2026**
+
+**Prepared by: Ian Hambleton & Selvi Jeyaseelan**
+
+------
+
+## 1. Principles
+
+These rules are designed to protect participant confidentiality while allowing meaningful reporting from a service evaluation conducted in small populations.
+
+The guiding principles are to:
+
+- prevent direct identification of individuals;
+- minimise risk of indirect or jigsaw identification;
+- apply proportionate controls that reflect audience and purpose;
+- preserve the usefulness of outputs for service learning and decision-making.
+
+------
+
+## 2. Tiered release model
+
+Disclosure controls are applied according to the intended audience of the output.
+
+### Tier A – Internal service use (restricted)
+
+- Audience: authorised clinical and programme staff.
+- Purpose: operational learning, clinical governance, service improvement.
+- Granularity: more detailed breakdowns may be used where access is controlled and outputs are clearly labelled as restricted.
+
+### Tier B – Governance and oversight (restricted)
+
+- Audience: governance committees, regulators, oversight groups.
+- Purpose: assurance, accountability, decision-making.
+- Granularity: small-number rules apply, but limited subgroup detail may be permitted where justified and circulation is controlled.
+
+### Tier C – Public or external reporting
+
+- Audience: unrestricted.
+- Purpose: transparency and accountability without re-identification risk.
+- Granularity: strongest disclosure controls; broad categories and aggregation used by default.
+
+------
+
+## 3. Core anonymisation rules
+
+The following apply across all tiers.
+
+### Removal or generalisation of identifiers
+
+- Remove all direct identifiers (name, address, contact details, health identifiers).
+- Replace date of birth with age in years; use age bands for public outputs.
+- Replace exact dates with month, quarter, or programme phase where appropriate.
+- Avoid unnecessary geographic detail in public outputs.
+
+### Pseudonymisation
+
+- Use a programme-specific ID for analysis datasets.
+- Store re-identification keys separately with restricted access and audit controls.
+
+------
+
+## 4. Small-number suppression rules
+
+### 4.1 Minimum cell sizes by tier
+
+- Tier C (public): default minimum cell size k = 5.
+- Tier B (governance): minimum cell size k = 3 may be used where circulation is controlled.
+- Tier A (internal): cell-size thresholds may be relaxed where outputs remain within the service and are access-controlled.
+
+### 4.2 Complementary suppression
+
+Where primary suppression is applied, additional cells must be suppressed if values could otherwise be derived from totals.
+
+### 4.3 Treatment of zeros
+
+In small populations, zero counts can be identifying. In Tier C outputs, values from 0–4 may be reported as “<5” where appropriate.
+
+------
+
+## 5. Aggregation strategies to preserve usability
+
+Where possible, aggregation should be used in preference to suppression.
+
+### Category aggregation
+
+- Use wider age bands where needed.
+- Combine clinically meaningful categories (e.g. insulin vs non-insulin).
+- Report combined islands for public outputs unless separation is essential.
+
+### Time aggregation
+
+- Prefer quarterly or phase-based reporting over monthly breakdowns.
+
+### Table dimensionality
+
+- Avoid more than two stratifiers in public tables.
+
+------
+
+## 6. Output formats that reduce disclosure risk
+
+Certain formats allow useful reporting while reducing re-identification risk.
+
+### Model-based and adjusted outputs
+
+- Report adjusted estimates rather than raw subgroup counts where feasible.
+- Use confidence intervals or uncertainty bounds to convey precision.
+
+### Hierarchical and pooled estimates
+
+- Where comparing St Helena and Ascension Island, consider partially pooled estimates that stabilise small-area results.
+
+### Restricted annexes
+
+- Maintain restricted annexes for governance review where more detail is required, alongside public summaries.
+
+------
+
+## 7. Reporting estimates as an alternative to small cell counts
+
+In settings with small populations such as St Helena and Ascension Island, direct reporting of raw counts or percentages for finely stratified groups can increase the risk of re-identification, even when standard suppression thresholds are applied.
+
+Where appropriate, results may therefore be reported using statistical estimates with measures of uncertainty, rather than raw cell counts or percentages. This approach allows meaningful reporting of programme outcomes while reducing disclosure risk.
+
+### Rationale
+
+Reporting model-based or adjusted estimates can:
+
+- reduce the visibility of small underlying cell counts;
+- avoid disclosure through rare combinations of characteristics;
+- support more stable interpretation in the presence of small samples;
+- align reporting with the analytic methods described in the ==Statistical Analysis Plan==.
+
+### Types of estimates
+
+Depending on the outcome and audience, reporting may include:
+
+- estimated mean changes with confidence intervals;
+- estimated probabilities or proportions with uncertainty bounds;
+- adjusted group differences derived from regression or mixed-effects models;
+- model-based outcome trajectories over time.
+
+### Use by tier
+
+- Tier C: preference for estimates with uncertainty rather than raw subgroup counts.
+- Tier B: estimates may be presented alongside limited counts where appropriate.
+- Tier A: raw counts may be used where necessary for operational learning, subject to access controls.
+
+### Transparency and interpretation
+
+When estimates are reported:
+
+- the use of estimation will be stated clearly;
+- uncertainty will be presented where feasible;
+- results will not be over-interpreted as precise point values.
+
+Estimation is used as a privacy-preserving reporting strategy, not to obscure findings.
+
+### Limitations
+
+Estimates will not be used where model assumptions are implausible, denominators are extremely small, or disclosure risk remains high despite aggregation.
+
+------
+
+## 8. High-risk combinations
+
+Extra caution is required when reporting combinations such as:
+
+- island of residence combined with insulin status and age;
+- rare adverse events;
+- extreme outcome values paired with subgroup identifiers.
+
+Such combinations should be aggregated, estimated, or omitted from public outputs.
+
+------
+
+## 9. Pre-release disclosure check
+
+Before releasing any output, reviewers should confirm:
+
+1. No displayed cell violates the minimum threshold for its tier.
+2. Suppressed values cannot be derived from totals.
+3. No table or figure includes excessive stratification.
+4. Outputs cannot reasonably be used for local re-identification.
+5. Appropriate tier labelling is applied.
+
+------
+
+## 10. Relationship to other documents
+
+These rules should be applied alongside the ==Data Protection Impact Assessment (DPIA)==, the ==Data Flow Diagram – TMR Diabetes Remission Programme==, and the ==Statistical Analysis Plan==.
+
+------
+
+## 11. Review and maintenance
+
+These rules will be reviewed if reporting plans change, new outputs are proposed, or governance requirements are updated.
+
+**Date of last review:** ____________________

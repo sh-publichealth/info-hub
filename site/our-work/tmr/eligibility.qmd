@@ -1,6 +1,6 @@
 ---
 title: "Eligibility"
-subtitle: "Who can and cannot take part"
+subtitle: "Guidance for Study Staff"
 ---
 
 ## Purpose of eligibility assessment

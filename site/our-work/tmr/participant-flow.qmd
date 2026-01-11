@@ -1,6 +1,7 @@
 ---
-editor: 
-  render-on-save: true
+title: "Participant Flows"
+subtitle: "Guidance for Study Staff"
+format: html
 ---
 
 # The Recruitment Process
@@ -26,11 +27,11 @@ R4a -.-> R5
 R4 --> R5
 ```
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="false"}
 ## Recruitment Part 1 Notes
 **R1.** Use the REDCap "Recruitment Report". Choose and contact the next person on the list. 
 
-**R2/R3.** For potential participants responding to the project advert or recruited from clinic, search the REDCap database to see if they exist. If not on the database, create and complete a new *Screening Record* for this person.
+**R2/R3.** For potential participants responding to the project advert or recruited from clinic, search the REDCap database to see if they exist. If not on the database, create and complete a new **Screening Record** for this person.  
 
 **R4.** Search the REDCap database for the person in question. You will use the person's REDCap Screening Form during the recruitment process.
 :::
@@ -55,17 +56,17 @@ R7 --> R9
 R8 -.-> R9
 ```
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="false"}
 ## Recruitment Part 2 Notes
-**R5.** You will of course only make contact if the person already meets the age, diabetes duration, and *recent clinic visit* criteria (see [Eligibility](./eligibility.qmd) for details). They will still need height and weight measurement (for the calculation of Body Mass Index) to confirm final eligibility. 
+**R5.** You will only make contact if the person already meets the age, diabetes duration, and *recent clinic visit* criteria (see [Eligibility](./eligibility.qmd) for details). They will still need height and weight measurement (for the calculation of Body Mass Index) and an eating disorder check (see below for both) to confirm final eligibility. 
 
-**R6.** If ***interested***, book a screening visit using the REDCap visit scheduling tool. Point the person to the online [Information Sheet]{.highlight}.
+**R6.** If ***interested***, book a screening visit using the REDCap visit scheduling tool. Point the person to the online [Information Sheet](./info-sheet-01.qmd).
 
-**R7.** If ***possibly interested***, point the participant to the online [information sheet]{.highlight}. And schedule a follow-up call.
+**R7.** If ***possibly interested***, point the participant to the online [Information Sheet](./info-sheet-01.qmd). And schedule a follow-up call.
 
-**R8.** If ***not interested***, thank the person for their time. The person could still be part of our control group, but we will identify controls directly from the Registry.
+**R8.** If ***not interested***, thank the person for their time. 
 
-**R9.** For each possible outcome, updates to the REDCap Screening Form will be required. Follow the project REDCap guidance on this.
+**R9.** For each possible outcome, updates to the REDCap Screening Form will be required. Follow the [REDCap guidance](./redcap/index.qmd) on this.
 :::
 
 # The Screening Visit
@@ -77,7 +78,7 @@ R8 -.-> R9
 %%| fig-alt: screening visit, drawn using Mermaid.
 flowchart LR
 
-S1(**S1.** Update REDCap)
+S1(**S1.** Open REDCap. Search for Participant)
 S2(**S2.** Medical Notes<br/>Review)
 S3(**S3.** Confirm Screening<br/>Visit on *day-1*)
 S4(**S4.** Thank person for their time)
@@ -88,8 +89,10 @@ S2 -- "Note Eligible" --> S4
 ```
 
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="false"}
 ## Screening Part 1 Notes
+**S1.** During this pre-visit work, you will need to update the screening form for each potential participant.
+
 **S2.** The medical notes review is an important step to identify clinical factors that might exclude someone from taking part in this intervention. Potential exclusion factors are as follows:
 
  - Active mental illness
@@ -122,13 +125,15 @@ S7 -- "Not Eligible" --> S9
 ```
 
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="false"}
 ## Screening Part 2 Notes
-**S5 / S6.** For the identity check and the TMR overview, follow the [screening visit visit notes]{.highlight} 
+The REDCap screening form should be completed during the screening visit. Follow the [screening Visit SOP](./sops/screening-sop.qmd) and also use the <a href="../../downloads/sth-tmr-screening-visit-CHECKLIST.pdf" download>screening checklist</a> to ensure all required steps are completed.
 
-**S7.** Height and Weight should be measured following the simple protocol. Results must be entered directly into the REDCap Screening form, which will provide you with the person's Body Mass Index for you to assess eligibility.
+**S5 / S6.** For the identity check and the TMR overview, follow the [screening visit notes](./screening-visit.qmd). 
 
-**S8.** The REDCap Screening Form will also use the already-completed fields to assess and complete overall eligibility based on [Age, Diabetes Duration, Clinic Visit Recency, BMI]. Use this REDCap eligibility classiffication to guide your next steps. 
+**S7.** Height and Weight should be measured following [the simple protocol](./sops/height-weight-sop.qmd). Results must be entered directly into the REDCap Screening form, which will provide you with the person's Body Mass Index for you to assess eligibility.
+
+**S8.** The REDCap Screening Form will also use the already-completed fields to assess and complete overall eligibility based on **four criteria** (Age, Diabetes Duration, Clinic Visit Recency, BMI). Use this REDCap eligibility classification to guide your next steps. 
 :::
 
 
@@ -146,7 +151,7 @@ S12(**S12.** Thank person for their time. **Health referral**)
 S13(**S13.** Start Programme. Complete 2.1)
 S14(**S14.** Thank person for their time. **Health referral**)
 S15(**S15.** Start with Usual Support)
-S16(**S16.** Start with Usual + Additional Support)
+S16(**S16.** Start with Usual + Eating Disorder Support)
 
 S10 -- No Diagnosis --> S11
 S10 -- Diagnosed --> S12
@@ -160,10 +165,10 @@ S13 --LE5 --> S16
 ```
 
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="false"}
 ## Screening Part 3 Notes
 
-**S10/S11/S13.** These steps collectively form the eating disorder screening process. You should follow this process carefully, filling out the question responses in REDCap, and using the resultinbg REDCap scores to dictate the eventual participant pathway. 
+**S10/S11/S13.** These steps collectively form the eating disorder screening process. You should follow this process carefully as set out in the [eating disorder workflow](./sops/eating-disorder-sop.qmd), filling out the question responses in REDCap, and using the resulting REDCap scores to dictate the eventual participant pathway. 
 :::
 
 
@@ -186,7 +191,7 @@ B3 --> B4
 
 ```
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="false"}
 ## Baseline Part 1 Notes
 
 **B2.** As part of this visit preamble, you should:
@@ -195,13 +200,13 @@ B3 --> B4
 - Confirm their eligibility status 
 - Provide a brief review of the TMR intervention
 
-**B3.** As part of this visit preamble, you should:
+**B3.** The participant must understand the following before being asked to sign the consent form:
 
 - Review how we plan to use the data
-- Review our data confidentiality guarentee
+- Review our data confidentiality guarantee
 - Review our plans for data use 
 
-**B4.** Obtain informed consent via the REDCap eConsent process
+**B4.** Obtain informed consent via the REDCap eConsent process. See the [REDCap guidance](./redcap/index.qmd) for details.
 :::
 
 
@@ -211,10 +216,10 @@ B3 --> B4
 %%| fig-alt: baseline visit, drawn using Mermaid.
 flowchart LR
 
-  B5(**B5.** Collect<br/>Anthropometry)
-  B6(**B6.** Collect Clinical<br/>Measures)
-  B7(**B7.** Collect<br/>Blood Sample)
-  B8(**B8.** Record<br/>Medication Status)
+  B5(**B5.** Find Participant<br/>in REDCap)
+  B6(**B6.** Collect<br/>Anthropometry)
+  B7(**B7.** Collect Clinical<br/>Measures)
+  B8(**B8.** Collect<br/>Blood Sample)
   
 B5 --> B6
 B6 --> B7
@@ -228,9 +233,9 @@ B7 --> B8
 %%| fig-alt: baseline visit, drawn using Mermaid.
 flowchart LR
 
-  B9(**B9.** Perform Fibroscan)
-  B10(**B10.** Collect Patient Reported Outcomes)
-  B11(**B11.** Update REDCap)
+  B9(**B9.** Record<br/>Medication Status)
+  B10(**B10.** Perform Fibroscan)
+  B11(**B11.** Collect Patient Reported Outcomes)
   
 B9 --> B10
 B10 --> B11
@@ -238,26 +243,28 @@ B10 --> B11
 ```
 
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="false"}
 ## Baseline Part 2 Notes
 
-**B5.** Anthropometry includes:
+**B5.** The REDCap baseline form should be completed during the baseline visit. Follow the [Baseline Visit SOP](./sops/baseline-sop.qmd) and also use the <a href="../../downloads/sth-tmr-baseline-visit-CHECKLIST.pdf" download>baseline checklist</a> to ensure all required steps are completed.
+
+**B6.** Anthropometry includes:
 
 - weight 
 - waist circumference
 - hip circumference
 
-**B6.** Clinical Measures includes:
+**B7.** Clinical Measures includes:
 
 - blood pressure
 - glucose monitoring
 
-**B7.** Blood sample will be used for:
+**B8.** Blood sample will be used for:
 
 - HbA1C
 - liver panel
 
-**B10.** Patient Reported Outcomes include:
+**B11.** Patient Reported Outcomes include:
 
 - Patient-Reported Outcomes
 - Eq5D - quality of life
@@ -286,7 +293,7 @@ IV3 --> IV4
 
 ```
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="false"}
 ## Intervention Visit Notes
 
 **IV1.** Enter Scheduled visit in REDCap
@@ -322,7 +329,7 @@ W12c --> W12d
 
 ```
 
-::: {.callout-note collapse="true"}
+::: {.callout-note collapse="false"}
 ## Intervention Visit Notes
 
 **W12a.** Enter Scheduled visit in REDCap

@@ -1,0 +1,125 @@
+# TMR Intervention Roles and Responsibilities
+
+**St Helena Health and Social Care Directorate (HSC)**
+
+**Version 1 – Draft**
+
+**Date: 31-Dec-2025**
+
+**Prepared by: Selvi Jeyaseelan / Ian Hambleton**
+
+## SJ
+
+| Description                                | Output                                                       | Completed with | Reporting to |
+| ------------------------------------------ | ------------------------------------------------------------ | -------------- | ------------ |
+| Information gathering from Counterweight   | Clarification of medical review, screening scope, training coverage, app data and expectations | IH             |              |
+| Develop screening tool                     | REDCap screening tool and inclusion text                     | JC, IH         |              |
+| Develop screening scheduler (screening DB) | REDCap scheduler for screening                               | JC, IH         |              |
+| Patient flows                              | Completed XMind patient flows                                |                |              |
+| Submit ethics application                  | Ethics application submitted to SHG ethics committee and Leeds | SI, IH         |              |
+| Develop scheduler (main DB)                | REDCap scheduler for main database                           | JC, IH         |              |
+
+------
+
+## IH
+
+| Description                                      | Output                                                       | Completed with | Reporting to |
+| ------------------------------------------------ | ------------------------------------------------------------ | -------------- | ------------ |
+| Information gathering from Counterweight         | Clarification of screening, training, and app integration    | SJ             |              |
+| Identify potential participants from clinic list | Randomised list of participants and controls; dataset for JC import |                |              |
+| Develop screening tool                           | Pre-filled REDCap screening tool                             | JC, SJ         |              |
+| Develop screening scheduler (screening DB)       | REDCap scheduler for screening                               | JC, SJ         |              |
+| Develop scheduler (main DB)                      | REDCap scheduler for main database                           | JC, SJ         |              |
+| Monitor screening                                | Screening tracker and monitoring of screening rates          |                |              |
+| Build initial web page                           | Initial TMR document repository website                      |                |              |
+| Monitor baseline (part 1)                        | Baseline tracker and data completeness monitoring            |                |              |
+| Monitor baseline (part 2)                        | Continued baseline monitoring                                |                |              |
+
+------
+
+## SI
+
+| Description                                 | Output                                                | Completed with | Reporting to |
+| ------------------------------------------- | ----------------------------------------------------- | -------------- | ------------ |
+| Advertise for participants                  | List of responses to local paper and Facebook adverts |                |              |
+| Initial contact with potential participants | Scheduled screening visits and potential control IDs  | AM, GE         |              |
+| Test screening tool                         | Testing feedback                                      | JJ, JP, AM, GE |              |
+| Submit ethics application                   | Ethics submission                                     | SJ, IH         |              |
+| Screening delivery                          | Screening of participants                             | AM, GE         |              |
+| Baseline coaching                           | Participant coaching on day of baseline               | AM, GE         |              |
+| Test main database                          | Testing feedback                                      | JJ, JP, AM, GE |              |
+
+------
+
+## AM
+
+| Description                                 | Output                     | Completed with | Reporting to |
+| ------------------------------------------- | -------------------------- | -------------- | ------------ |
+| Initial contact with potential participants | Scheduled screening visits | SI, GE         |              |
+| Test screening tool                         | Testing feedback           | JJ, JP, SI, GE |              |
+| Screening delivery                          | Screening of participants  | SI, GE         |              |
+| Baseline coaching                           | Participant coaching       | SI, GE         |              |
+| Test main database                          | Testing feedback           | JJ, JP, SI, GE |              |
+
+------
+
+## GE
+
+| Description                                 | Output                     | Completed with | Reporting to |
+| ------------------------------------------- | -------------------------- | -------------- | ------------ |
+| Initial contact with potential participants | Scheduled screening visits | SI, AM         |              |
+| Test screening tool                         | Testing feedback           | JJ, JP, SI, AM |              |
+| Screening delivery                          | Screening of participants  | SI, AM         |              |
+| Baseline coaching                           | Participant coaching       | SI, AM         |              |
+| Test main database                          | Testing feedback           | JJ, JP, SI, AM |              |
+
+------
+
+## JC
+
+| Description                                | Output                                                       | Completed with | Reporting to |
+| ------------------------------------------ | ------------------------------------------------------------ | -------------- | ------------ |
+| Develop screening tool                     | REDCap screening tool                                        | IH, SJ         |              |
+| Develop screening scheduler (screening DB) | REDCap scheduler for screening                               | IH, SJ         |              |
+| Develop screening data export process      | Import process for eligible participants and full screening registry |                |              |
+| Screening form training                    | Training delivered to Jocelyn, Jannas, and Sarah             |                |              |
+| Develop scheduler (main DB)                | REDCap scheduler for main database                           | IH, SJ         |              |
+| Develop main database                      | Main REDCap database aligned to data dictionary              |                |              |
+
+------
+
+## JJ
+
+| Description                       | Output                                  | Completed with | Reporting to |
+| --------------------------------- | --------------------------------------- | -------------- | ------------ |
+| Test screening tool               | Testing feedback                        | JP, SI, AM, GE |              |
+| Baseline data collection (part 1) | Baseline datasets collected             | JP             |              |
+| Baseline data collection (part 2) | Remaining baseline and control datasets | JP             |              |
+| Test main database                | Testing feedback                        | JP, SI, AM, GE |              |
+
+------
+
+## JP
+
+| Description                       | Output                                  | Completed with | Reporting to |
+| --------------------------------- | --------------------------------------- | -------------- | ------------ |
+| Test screening tool               | Testing feedback                        | JJ, SI, AM, GE |              |
+| Baseline data collection (part 1) | Baseline datasets collected             | JJ             |              |
+| Baseline data collection (part 2) | Remaining baseline and control datasets | JJ             |              |
+| Test main database                | Testing feedback                        | JJ, SI, AM, GE |              |
+
+------
+
+## RJames
+
+| Description       | Output           | Completed with | Reporting to |
+| ----------------- | ---------------- | -------------- | ------------ |
+| Clearing shipment | Shipment cleared |                |              |
+
+------
+
+## ALL
+
+| Description | Output                                         | Completed with | Reporting to |
+| ----------- | ---------------------------------------------- | -------------- | ------------ |
+| TMR review  | Team review of process with agreed refinements | Entire team    |              |

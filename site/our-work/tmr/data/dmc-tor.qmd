@@ -1,0 +1,183 @@
+---
+title: "Data Monitoring Committee - Terms of Reference"
+subtitle: "Guidance for Study Staff"
+format: html
+---
+
+## Total Meal Replacement (TMR) Diabetes Remission Programme
+
+---
+
+**St Helena Health and Social Care Directorate (HSC)**
+
+**Version 1**
+
+**Date: 05-Jan-2026**
+
+**Prepared by: Ian Hambleton / Selvi Jeyaseelan**
+
+---
+
+## Purpose
+
+The Data Monitoring Group (DMG) provides independent oversight of patient safety, data integrity, and information governance for the Total Meal Replacement (TMR) Diabetes Remission Programme.
+
+The Group’s role is advisory and protective. It is not responsible for programme delivery or performance management.
+
+------
+
+## Scope
+
+The DMG oversees:
+
+- Participant safety and adverse event monitoring
+- Data quality, completeness, and integrity
+- Appropriate use of participant data in line with agreed purposes
+- Emerging risks related to the programme or evaluation
+
+The DMG does **not** assess intervention efficacy or make clinical decisions for individual participants.
+
+------
+
+## Key Functions
+
+The DMG will:
+
+- Review safety data, including adverse events and serious adverse events
+- Review recruitment, retention, and disengagement patterns
+- Monitor data flows, linkage, and anonymisation practices
+- Review any proposed changes to data use or evaluation scope
+- Provide advice on risk mitigation and programme safeguards
+
+------
+
+## Membership
+
+The DMG will comprise:
+
+- **Independent Chair** (not involved in programme delivery)
+- **Clinical member** with diabetes or metabolic expertise
+- **Public health or epidemiology member**
+- **Information governance member** (or Caldicott Guardian delegate)
+
+Additional members may be co-opted as required.
+
+A quorum requires the Chair plus at least two other members.
+
+------
+
+## Meetings
+
+- Meetings will be held monthly during active recruitment and early delivery
+- Thereafter, meetings may move to a quarterly schedule
+- Extraordinary meetings may be convened if safety concerns arise
+
+Meetings may be held virtually.
+
+------
+
+## Information Reviewed
+
+The DMG may review:
+
+- Aggregated safety summaries
+- Adverse event logs
+- Recruitment and attrition summaries
+- Data completeness and quality reports
+- Reports of protocol deviations or data incidents
+
+No routinely identifiable participant data will be reviewed unless strictly necessary for safety review.
+
+------
+
+## Decision-Making, Authority, and Guardrails
+
+The DMG is an **independent advisory body** with a defined safety and governance remit. It does not manage day-to-day operations or replace clinical or managerial accountability.
+
+### Nature of Authority
+
+- The DMG **advises** on safety, data integrity, and governance risks
+- The Programme Clinical Lead and Senior Responsible Officer (SRO) **retain operational authority**
+- DMG recommendations are expected to be taken seriously and responded to formally
+
+The programme is expected to **either implement DMG recommendations or document a clear, reasoned justification for not doing so**.
+
+------
+
+### Areas Where the DMG May Advise
+
+The DMG may make recommendations relating to:
+
+- Participant safety safeguards
+- Eligibility criteria application or clarification
+- Monitoring frequency for specific subgroups (e.g. insulin-treated participants)
+- Temporary changes to procedures following adverse events
+- Data collection, linkage, or reporting practices
+- Pausing specific activities while risks are reviewed
+
+The DMG does **not** direct individual clinical decisions or staff management.
+
+------
+
+### Examples of DMG Intervention
+
+The following examples illustrate how the DMG may intervene:
+
+- **Safety signal**: If multiple hypoglycaemic events are reported in a short period, the DMG may recommend increased monitoring, protocol clarification, or temporary modification of medication adjustment procedures.
+- **Recruitment imbalance**: If recruitment disproportionately excludes a subgroup (e.g. insulin users), the DMG may advise review of screening practices to ensure equity and consistency.
+- **Data risk**: If reporting outputs risk inadvertent identification due to small numbers, the DMG may require revised aggregation or suppression rules before dissemination.
+- **Process deviation**: If consent procedures are inconsistently applied, the DMG may recommend retraining or checklist revision.
+- **Escalation**: In the event of a serious and unresolved safety concern, the DMG may recommend a temporary pause or early termination of the programme.
+
+------
+
+### Escalation and Response
+
+- All DMG recommendations will be documented
+- The Programme Team will provide a written response outlining actions taken
+- Where recommendations are not implemented, the rationale will be recorded
+
+Final accountability for decisions rests with the Programme SRO, informed by DMG advice.
+
+------
+
+## Confidentiality
+
+All DMG members are required to:
+
+- Maintain strict confidentiality of all information reviewed
+- Declare any conflicts of interest
+- Comply with applicable data protection and information governance requirements
+
+------
+
+## Reporting and Records
+
+- Brief written summaries of meetings will be produced
+- Actions and recommendations will be tracked to resolution
+- Records will be retained in line with governance requirements
+
+------
+
+## Review of Terms of Reference
+
+These Terms of Reference will be reviewed annually or if the scope of the programme changes.
+
+------
+
+## Sign-off
+
+| Role                       | Name | Organisation | Signature | Date |
+| -------------------------- | ---- | ------------ | --------- | ---- |
+| Independent Chair          |      |              |           |      |
+| Programme Clinical Lead    |      |              |           |      |
+| Senior Responsible Officer |      |              |           |      |
+
+------
+
+## Linked Documents
+
+**Data Sharing Agreement – Outline**
+**Caldicott Guardian Sign-off Record**
+**Screening Visit SOP and Checklist**
+**Baseline Visit SOP and Checklist**

@@ -4,6 +4,18 @@ subtitle: "Guidance for Study Staff"
 format: html
 ---
 
+
+## Screening Documents
+
+| Document | | Read / Download | 
+| --- | --- | --- | 
+|Screening Visit SOP | {{< bi book >}} | [Read Here](./sops/screening-sop.qmd) |
+|Screening Visit Checklist | {{< bi download >}} | <a href="../../downloads/sth-tmr-screening-visit-CHECKLIST.pdf" download>Download</a>|
+|Screening Visit Script | {{< bi download >}} | <a href="../../downloads/sth-tmr-screening-script.pdf" download>Download</a>|
+|Screening Visit Participant Information Sheet | {{< bi download >}} | <a href="../../downloads/sth-tmr-screening-information-sheet.pdf" download>Download</a>|
+
+
+
 ## Purpose of the Screening Visit
 
 The screening visit is a short, structured check to confirm whether the Total Meal Replacement (TMR) programme is appropriate, safe, and acceptable for an individual.
@@ -131,13 +143,4 @@ No consent forms are completed at screening.
 Screening is about doing the right thing early: protecting participants, supporting informed choice, and ensuring the programme starts on solid ground.
 
 A careful, calm screening visit makes everything that follows easier.
-
----
-
-## Key Documents and Links [(to be completed)]{.highlight}
-
-Add links here to documents used during screening, for example:
-- Screening Visit SOP  
-- Screening Visit Checklist  
-- Study Information Sheet  
 

@@ -1,0 +1,318 @@
+---
+title: "Evidence Brief & Service Evaluation Justification"
+subtitle: "Who can and cannot take part"
+---
+
+## Total Meal Replacement (TMR) Diabetes Remission Programme
+
+**St Helena Health and Social Care Directorate (HSC)**
+
+**Version 1 – Draft**
+
+**Date: 05-Jan-2026**
+
+**Prepared by: Ian Hambleton & Selvi Jeyaseelan**
+
+------
+
+### Purpose of this document
+
+This document sets out the rationale for undertaking a **service evaluation** of the Total Meal Replacement (TMR) Diabetes Remission Programme in St Helena.
+
+It is intended to accompany the attached **Evidence Brief: Strength of Evidence for Total Meal Replacement in Type 2 Diabetes**, which summarises the existing scientific evidence base for TMR.
+
+------
+
+## Background and rationale
+
+Type 2 diabetes represents a major and growing burden for the St Helena health system, particularly among older adults. Improving diabetes outcomes while reducing long-term medication dependence and complications is a strategic priority for local health services.
+
+Total Meal Replacement programmes are an evidence-based approach that have demonstrated substantial benefits in multiple settings, including significant weight loss, improved glycaemic control, and, for some individuals, diabetes remission. These benefits are most clearly demonstrated in people with relatively recent diagnoses of type 2 diabetes.
+
+However, most of the existing evidence comes from:
+
+- controlled clinical trials, or
+- large, well-resourced mainland health systems.
+
+There is **limited evidence** on how such programmes perform when delivered within **small, remote, integrated health systems** with constrained workforce capacity and distinctive food environments, such as St Helena.
+
+------
+
+## Why a service evaluation is required
+
+The TMR Diabetes Remission Programme is being introduced as part of routine diabetes care in St Helena, drawing on established evidence and existing clinical service models.
+
+The purpose of this work is **not** to test whether TMR is biologically effective. That question has been addressed by prior research.
+
+Instead, the purpose of this service evaluation is to understand:
+
+- whether the programme can be delivered **safely** within the local health system;
+- how **acceptable** the programme is to participants and staff;
+- how well the programme fits with existing clinical workflows and resources;
+- what outcomes are achieved when the programme is delivered as routine care;
+- what adaptations may be required to optimise delivery in the St Helena context.
+
+These questions are central to decisions about whether and how the programme should be continued, adapted, or scaled locally.
+
+------
+
+## Why this is a service evaluation (not research)
+
+This work meets the definition of a **service evaluation** for the following reasons:
+
+- The intervention is based on an established evidence base and is delivered as part of routine clinical care.
+- Participants are not randomised to different interventions.
+- There is no experimental manipulation beyond standard clinical decision-making.
+- Clinical care, monitoring, and medication adjustment follow established professional standards.
+- The evaluation focuses on **delivery, outcomes, feasibility, and acceptability** of the service in practice.
+
+Data used in the evaluation will consist primarily of routinely collected clinical information, supplemented by participant and staff feedback to inform service improvement.
+
+------
+
+## Why St Helena requires local evaluation
+
+St Helena has a number of features that distinguish it from settings in which most TMR evidence has been generated:
+
+- a small population with a high prevalence of type 2 diabetes;
+- a highly integrated health system with limited specialist capacity;
+- logistical constraints related to geography and supply chains;
+- close-knit communities in which acceptability and trust are particularly important.
+
+These characteristics mean that evidence from other settings cannot be assumed to transfer directly.
+
+A local service evaluation is therefore necessary to ensure that the programme is:
+
+- appropriate for local needs;
+- safe in routine delivery;
+- acceptable to participants;
+- sustainable within available resources.
+
+------
+
+## Proportionality and governance
+
+The scale and methods of this service evaluation are proportionate to the level of risk associated with the programme.
+
+Governance arrangements, including data protection, safety monitoring, and adverse event reporting, are aligned with routine clinical service standards and are described in the accompanying protocol and governance documents.
+
+Ethical considerations, including informed consent for participation and feedback activities, confidentiality, and data protection, are embedded within programme delivery.
+
+------
+
+## Relationship to the evidence brief
+
+The accompanying evidence brief demonstrates that:
+
+- there is high confidence that TMR can be effective and safe when delivered with appropriate clinical support;
+- evidence is weaker for delivery in small or remote health systems;
+- this uncertainty justifies an implementation-focused evaluation.
+
+This service evaluation therefore builds on existing evidence by examining how an established intervention performs when delivered in the specific context of St Helena.
+
+------
+
+## Summary
+
+In summary, the Total Meal Replacement Diabetes Remission Programme is an evidence-informed clinical service being introduced to address a significant local health need.
+
+A structured service evaluation is necessary to understand feasibility, safety, acceptability, and outcomes in the St Helena context, and to inform decisions about future service provision.
+
+This approach is consistent with best practice for introducing complex interventions into routine care where strong efficacy evidence exists but local delivery uncertainty remains.
+
+
+
+
+
+---
+
+# Evidence Brief  
+
+## Strength of Evidence for Total Meal Replacement in Type 2 Diabetes  
+
+**Version 1 – Draft**
+
+**Date: 11-Dec-2025**
+
+**Prepared by: Ian Hambleton & Selvi Jeyaseelan**
+
+---
+
+*(Using GRADE: High, Moderate, Low, Very Low Confidence)*
+
+This evidence brief summarises the strength and quality of research relevant to implementing a Total Meal Replacement (TMR) programme for adults with type 2 diabetes on Saint Helena. Evidence has been classified using the **GRADE framework**, which is internationally recognised and applied by WHO, NICE, and Cochrane.
+
+---
+
+## 1. TMR Effectiveness for Non-Insulin-Treated Type 2 Diabetes  
+
+### **GRADE Rating: HIGH Confidence**
+
+**Key Evidence**
+
+- Multiple well-designed randomised controlled trials (RCTs), including the high-profile DiRECT study, demonstrate that TMR can produce large weight reductions and achieve diabetes remission in a substantial proportion of adults not on insulin.
+- DiRECT and associated studies show remission rates of ~45% at 12 months and ~36% at 24 months among participants with relatively short duration of diabetes.
+- Mechanistic studies provide strong biological plausibility: sustained hypocaloric intake reduces liver and pancreatic fat and restores first-phase insulin release.
+
+**Interpretation**
+There is **high confidence** that TMR is an effective metabolic intervention for adults with type 2 diabetes who are not using insulin. Evidence is consistent across multiple populations, settings and methodologies. The metabolic response is well understood, and benefits have been reproduced across trials.
+
+**Relevance to Saint Helena**
+This high-certainty evidence supports using TMR as a core diabetes intervention for the non-insulin-treated population, recognising that outcomes in real-world delivery may vary slightly from those in a controlled trial setting.
+
+---
+
+## 2. TMR for Insulin-Treated Type 2 Diabetes  
+
+### **GRADE Rating: MODERATE Confidence**
+
+**Key Evidence**
+
+- Evidence includes small RCTs and structured weight-loss trials showing that insulin-treated individuals can achieve significant reductions in HbA1c and marked reductions in insulin dose.
+- Some participants are able to stop insulin entirely during TMR while maintaining acceptable glycaemic control.
+- Evidence is less extensive than for non-insulin diabetes and typically involves shorter follow-up periods and smaller sample sizes.
+
+**Interpretation**
+There is **moderate confidence** that TMR can improve metabolic control and reduce insulin burden in insulin-treated individuals.  
+However, evidence for long-term remission is weaker, and estimates are more uncertain due to smaller trials and narrower study populations.
+
+**Relevance to Saint Helena**
+This supports including insulin users as a **secondary exploratory group** in the island's implementation. Benefits are likely but less predictable, and safe insulin down-titration is essential.
+
+---
+
+## 3. Sustainability of Weight Loss and Diabetes Remission  
+
+### **GRADE Rating: MODERATE Confidence**
+
+**Key Evidence**
+
+- Long-term follow-up from DiRECT (up to 5 years for some participants) shows that remission can be sustained, but most successful participants maintain weight loss.
+- Weight regain commonly leads to relapse, illustrating that maintenance behaviours and structured follow-up matter greatly.
+- Real-world programme evaluations (e.g., NHS England) suggest that weight loss is achievable outside trials, but long-term data remain more limited.
+
+**Interpretation**
+There is **moderate confidence** that sustained remission is achievable with TMR **provided that weight loss is maintained**.  
+Confidence is reduced by the limited number of high-quality long-term datasets and variability in maintenance support across settings.
+
+**Relevance to Saint Helena**
+Long-term success may depend on culturally aligned maintenance strategies, access to supportive food environments and ongoing behavioural support. The island setting may pose unique challenges but also offers opportunities for system-wide coherence.
+
+---
+
+## 4. Safety of TMR Programmes  
+
+### **GRADE Rating: HIGH Confidence**
+
+**Key Evidence**
+
+- Across trials, TMR is generally safe when medications—especially insulin and sulfonylureas—are adjusted appropriately.
+- Early phase monitoring prevents hypoglycaemia or symptomatic hyperglycaemia.
+- Adverse effects are typically mild and transient (fatigue, dizziness, coldness).
+
+**Interpretation**
+There is **high confidence** that TMR programmes are safe when medication withdrawal is supervised. Insulin-treated individuals require particular oversight, but structured protocols mitigate risk.
+
+**Relevance to Saint Helena**
+A small health system can closely monitor participants, facilitating safe implementation.
+
+---
+
+## 5. Quality-of-Life and Psychological Effects  
+
+### **GRADE Rating: MODERATE Confidence**
+
+**Key Evidence**
+
+- Many trials show improvements in quality of life (EQ-5D, EQ-VAS) following substantial weight loss.
+- Diabetes distress (PAID scores) often decreases, particularly when medication burden falls.
+- Some individuals may find the initial TMR phase challenging, but overall wellbeing improves in the majority.
+
+**Interpretation**
+There is **moderate confidence** that TMR improves quality of life and reduces emotional distress related to diabetes.  
+Confidence is moderate because not all studies include validated QoL assessments, and psychological responses can vary across cultures and individuals.
+
+**Relevance to Saint Helena**
+Monitoring EQ-5D and PAID provides insight into patient experience alongside biomedical outcomes.
+
+---
+
+## 6. Mechanistic Evidence (Liver/Pancreas Fat Reduction, Beta Cell Recovery)  
+
+### **GRADE Rating: HIGH Confidence**
+
+**Key Evidence**
+
+- MRI and metabolic studies have consistently shown rapid reductions in liver fat and gradual reductions in pancreatic fat during TMR.
+- Restoration of first-phase insulin secretion is a reproducible physiological effect in non-insulin-treated diabetes.
+- Mechanistic pathways have been mapped and reproduced across independent research groups.
+
+**Interpretation**
+There is **high confidence** in the mechanisms explaining why TMR works.  
+This mechanistic clarity strengthens confidence in applying the intervention beyond trial settings.
+
+**Relevance to Saint Helena**
+Strong mechanistic evidence supports adaptation to local circumstances, because physiological effects are universal regardless of geography.
+
+---
+
+## 7. Evidence from Real-World Health Systems  
+
+### **GRADE Rating: LOW to MODERATE Confidence**
+
+**Key Evidence**
+
+- Real-world programmes such as NHS England’s "Soups and Shakes" rollout show promising early results.
+- Real-world remission rates tend to be lower than RCTs, but weight-loss outcomes remain clinically relevant.
+- Evidence varies by implementation fidelity, population characteristics and healthcare system capacity.
+
+**Interpretation**
+There is **low to moderate confidence** in generalising real-world effectiveness due to heterogeneity of programmes and lack of long-term data.  
+Nevertheless, the consistent direction of benefit strengthens pragmatic confidence.
+
+**Relevance to Saint Helena**
+A small health system can implement TMR with high fidelity, potentially achieving outcomes closer to trial settings. Monitoring fidelity and process indicators is important in this context.
+
+---
+
+## 8. Evidence for TMR in Small, Remote or Low-Resource Settings  
+
+### **GRADE Rating: VERY LOW to LOW Confidence**
+
+**Key Evidence**
+
+- Limited published research examines TMR specifically in remote islands or small health systems.
+- Some weight-loss and behavioural interventions have been studied in Caribbean and Pacific contexts, but findings may not transfer directly to TMR.
+- Supply-chain constraints and food environments differ substantially across islands.
+
+**Interpretation**
+Confidence is **low**, primarily due to lack of directly relevant studies.  
+However, absence of evidence does not imply poor effectiveness; instead, it underscores the need for implementation-focused research.
+
+**Relevance to Saint Helena**
+This gap justifies an **implementation science** approach—testing feasibility, acceptability and system fit, not only metabolic outcomes.
+
+---
+
+# Summary of Strength of Evidence
+
+| Evidence Area                             | GRADE Rating     | Confidence Summary                                           |
+| ----------------------------------------- | ---------------- | ------------------------------------------------------------ |
+| TMR effectiveness (non-insulin)           | **High**         | Strong RCT evidence; consistent results; clear mechanisms    |
+| TMR effectiveness (insulin-treated)       | **Moderate**     | Smaller trials; strong direction of benefit; less long-term evidence |
+| Sustainability of remission               | **Moderate**     | Dependent on weight maintenance; limited long-term data      |
+| Safety                                    | **High**         | Well-managed risks; consistent safety across trials          |
+| QoL & psychological impact                | **Moderate**     | Improvements observed; some heterogeneity                    |
+| Mechanistic plausibility                  | **High**         | Strong, coherent physiological evidence                      |
+| Real-world evidence                       | **Low–Moderate** | Positive but heterogeneous; fidelity varies                  |
+| Evidence specific to small/remote systems | **Low**          | Little research; implementation science required             |
+
+---
+
+# Concluding Interpretation
+
+Overall, using the GRADE framework, there is **high confidence** that TMR is an effective and safe intervention for adults with type 2 diabetes who are not using insulin.  
+There is **moderate confidence** in benefits for insulin-treated individuals, particularly regarding de-intensification and improved metabolic control.
+
+Evidence is weaker for long-term sustainability and for small island settings.  
+This supports a pragmatic **implementation science approach** in Saint Helena, combining metabolic outcomes with qualitative evaluation, EMA, and health-economic insights to understand both *effectiveness* and *feasibility*.

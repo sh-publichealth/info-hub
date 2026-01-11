@@ -1,0 +1,135 @@
+---
+title: "Data Sharing Agreement"
+subtitle: "Guidance for Study Staff"
+format: html
+---
+
+## Total Meal Replacement (TMR) Diabetes Remission Programme
+
+**St Helena Health and Social Care Directorate (HSC)**
+
+**Version 1 – Draft**
+
+**Date: 06-Jan-2026**
+
+**Prepared by: Ian Hambleton & Selvi Jeyaseelan**
+
+---
+
+## Purpose
+
+This document sets out the principles and practical arrangements for sharing data to support the delivery, monitoring, and evaluation of the Total Meal Replacement (TMR) Diabetes Remission Programme in St Helena (and Ascension, where applicable).
+
+This is an outline agreement intended to provide clarity, proportional governance, and a shared understanding between parties. It is not a commercial contract.
+
+## Parties to the Agreement
+
+**Data Controllers**
+
+- St Helena Health and Social Care Directorate (HSC)
+
+**Data Processors / Delivery Partners**
+
+- Counterweight Ltd (programme delivery)
+
+**Evaluation and Public Health Partners**
+
+- St Helena Public Health Team
+- UKHSA UK Overseas Territories Public Health Programme (evaluation support)
+
+Additional parties may be added by written agreement if required for programme delivery or evaluation.
+
+## Data in Scope
+
+The following categories of data may be shared where necessary and proportionate:
+
+1. **Participant Identifiable Data (restricted access)**
+   - Name, contact details, date of birth
+   - NHS / local health identifiers
+   - Used only for programme delivery, scheduling, and clinical care
+2. **Clinical and Programme Data**
+   - Diabetes history, medications, HbA1c, weight, blood pressure
+   - Programme attendance and phase completion
+   - Adverse events and safety monitoring data
+3. **Evaluation and Monitoring Data**
+   - De-identified or pseudonymised clinical outcomes
+   - Aggregated service metrics (recruitment, retention, completion)
+   - Qualitative interview and survey data (with explicit consent)
+4. **Registry Data**
+   - Extracts from the St Helena Diabetes Registry where approved
+   - Used for eligibility screening, baseline context, and comparator analyses
+
+## Purpose of Data Sharing
+
+Data will be shared strictly for the following purposes:
+
+- Safe and effective delivery of the TMR service
+- Clinical monitoring and medication management
+- Service evaluation and quality improvement
+- Public health reporting and learning
+- Governance, audit, and safety oversight
+
+Data will not be used for commercial marketing or unrelated research.
+
+## Legal and Ethical Basis
+
+Data sharing is undertaken under the following principles:
+
+- Delivery and evaluation of a health service
+- Public task and public interest
+- Explicit informed consent where required (e.g. qualitative interviews)
+
+All data handling will comply with:
+
+- UK GDPR
+- Data Protection Act 2018
+- Local information governance requirements
+
+## Data Minimisation and Access Control
+
+- Only the minimum necessary data will be shared
+- Access will be role-based and time-limited
+- Identifiable data will be restricted to staff with a direct care or coordination role
+- Evaluation datasets will be anonymised or pseudonymised wherever possible
+
+## Data Storage and Security
+
+- Clinical and programme data will be stored in approved systems (e.g. REDCap, clinical records)
+- Evaluation datasets will be stored on secure, access-controlled platforms
+- No data will be stored on personal devices
+- Data transfers will use secure methods only
+
+## Reporting, Anonymisation, and Small Numbers
+
+- All reporting will use aggregated summaries
+- Small numbers will be suppressed or rounded in line with agreed disclosure control rules
+- No individual will be identifiable in published outputs
+
+## Data Retention and Disposal
+
+- Identifiable programme data will be retained in line with clinical record retention policies
+- Evaluation datasets will be retained only as long as necessary to complete agreed analyses
+- Secure deletion will be undertaken when data are no longer required
+
+## Oversight and Review
+
+- Data use and safety will be overseen by the Data Monitoring Group
+- Any data breaches or concerns will be reported immediately via established governance routes
+- This agreement will be reviewed annually or if programme scope changes
+
+## Sign-off
+
+This outline agreement is endorsed by the undersigned as a proportionate and appropriate basis for data sharing in support of the TMR programme.
+
+| Role                       | Name | Organisation | Signature | Date |
+| -------------------------- | ---- | ------------ | --------- | ---- |
+| Senior Responsible Officer |      |              |           |      |
+| Caldicott Guardian         |      |              |           |      |
+| Programme Lead             |      |              |           |      |
+
+## Linked Documents
+
+**Caldicott Guardian Sign-off Record**
+**Data Monitoring Group – Terms of Reference**
+**Screening Visit SOP and Checklist**
+**Baseline Visit SOP and Checklist**

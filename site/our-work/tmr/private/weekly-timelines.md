@@ -1,0 +1,234 @@
+# TMR Programme Timelines (Layered)
+
+**St Helena Health and Social Care Directorate (HSC)**
+**Version:** 2
+**Date:** 06-Jan-2026
+**Prepared by:** Ian Hambleton / Selvi Jeyaseelan
+
+------
+
+This document presents the TMR programme timeline using **three linked layers**:
+
+1. Programme milestones (stable spine)
+2. Rolling operational timeline (near-term detail)
+3. Standing monitoring activities (ongoing work)
+
+The aim is to retain operational truth while keeping the document readable, updateable, and extensible across the full study lifecycle.
+
+------
+
+## Layer 1: Programme Milestones (Study Spine)
+
+These milestones define the critical path of the programme. They change rarely and should remain short and readable.
+
+| Milestone                                         | Target date | Dependencies / notes                                |
+| ------------------------------------------------- | ----------- | --------------------------------------------------- |
+| Information gathering from Counterweight complete | 05/01/26    | Medical review, screening scope, app role clarified |
+| Screening tools and scheduler live                | 19/01/26    | REDCap build and testing complete                   |
+| Ethics approval or waiver                         | 09/02/26    | Submission to SHG ethics + Leeds                    |
+| Screening period complete                         | Feb 2026    | Recruitment targets reached                         |
+| Baseline data collection complete                 | 24/04/26    | Includes intervention + control                     |
+| First TMR cohort completes 12 weeks               | May 2026    | Supply chain stable                                 |
+| 6-month follow-up complete                        | Aug 2026    | Retention maintained                                |
+| 12-month follow-up complete                       | Feb 2027    | Primary outcomes                                    |
+| 24-month follow-up complete                       | Feb 2028    | Long-term outcomes                                  |
+
+------
+
+## Layer 2: Rolling Operational Timeline (Jan–Mar 2026)
+
+This section contains **detailed, time-bound tasks**. It should only extend 8–12 weeks ahead. Older completed sections can be archived below.
+
+### Status legend
+
+- 🟩 **Complete** – task finished
+- 🟦 **In progress** – task actively underway
+- 🟨 **Planned** – scheduled but not yet started
+- 🟥 **Critical / risk** – blocking issue or hard dependency
+- 🔁 **Ongoing** – repeated or continuous activity
+
+------
+
+### Week of 05 Jan 2026
+
+| Task                                             | Output                                     | Responsible | Status        |
+| ------------------------------------------------ | ------------------------------------------ | ----------- | ------------- |
+| Information gathering from Counterweight         | Clarified screening, app use, expectations | SJ / IH     | 🟦 In progress |
+| Identify potential participants from clinic list | Randomised list for screening              | IH          | 🟦 In progress |
+| Advert in local paper + Facebook                 | Advert responses list                      | SI          | 🟨 Planned     |
+
+------
+
+### Week of 12 Jan 2026
+
+| Task                            | Output                         | Responsible  | Status        |
+| ------------------------------- | ------------------------------ | ------------ | ------------- |
+| Develop screening tool          | Screening REDCap database live | JC / IH / SJ | 🟦 In progress |
+| Develop screening scheduler     | Screening scheduler in REDCap  | JC / IH / SJ | 🟦 In progress |
+| Initial contact (list + advert) | Screening visits scheduled     | SI / AM / GE | 🟦 In progress |
+| Complete patient flows          | XMind flows finalised          | SJ           | 🟦 In progress |
+
+------
+
+### Week of 19 Jan 2026
+
+| Task                                  | Output                | Responsible            | Status    |
+| ------------------------------------- | --------------------- | ---------------------- | --------- |
+| Test screening tool                   | QA complete           | JJ / JP / SI / AM / GE | 🟨 Planned |
+| Develop screening data export process | Import paths defined  | JC                     | 🟨 Planned |
+| Screening form training               | Staff trained         | JC                     | 🟨 Planned |
+| Submit ethics application             | Application submitted | SI / SJ / IH           | 🟨 Planned |
+
+------
+
+### Weeks of 26 Jan 2026
+
+| Task                         | Output                    | Responsible  | Status            |
+| ---------------------------- | ------------------------- | ------------ | ----------------- |
+| Screening begins             | Screening underway        | SI / AM / GE | 🟨 Planned         |
+| Develop main REDCap database | Main database built       | JC           | 🟨 Planned         |
+| Monitor screening            | Screening tracker updated | IH           | 🔁 Ongoing         |
+| Clearing shipment            | Supplies cleared          | RJames       | 🟥 Critical / risk |
+| FibroScan training           | Operators trained         | —            | 🟨 Planned         |
+
+------
+
+### Week of 02 Feb 2026
+
+| Task                   | Output                     | Responsible            | Status    |
+| ---------------------- | -------------------------- | ---------------------- | --------- |
+| Screening Continues    | Screening underway         | SI / AM / GE           | 🟨 Planned |
+| Test main database     | QA complete                | JJ / JP / SI / AM / GE | 🟨 Planned |
+| Database training      | Trained database operators | IH / SJ / JC           | 🟨 Planned |
+| Build initial web page | Document repository live   | IH                     | 🟨 Planned |
+
+------
+
+### Week of 09 Feb 2026
+
+| Task                               | Output              | Responsible  | Status            |
+| ---------------------------------- | ------------------- | ------------ | ----------------- |
+| Ethics approval / waiver confirmed | Go / no-go decision | —            | 🟥 Critical / risk |
+| Baseline data collection (part 1)  | First 6 baselines   | JJ / JP      | 🟨 Planned         |
+| Baseline coaching                  | Coaching delivered  | SI / AM / GE | 🟨 Planned         |
+| Monitor baseline                   | Baseline tracker    | IH           | 🔁 Ongoing         |
+
+------
+
+### Week of 16 Feb 2026
+
+| Task               | Output             | Responsible | Status    |
+| ------------------ | ------------------ | ----------- | --------- |
+| TMR process review | Adjustments agreed | ALL         | 🟨 Planned |
+
+------
+
+### Weeks of 23 Feb – 24 Apr 2026 (Staggered recruitment and baseline)
+
+**Note:** Recruitment and baseline assessments are **staggered** across this period. As a result, all downstream activities (intervention start, follow-up, monitoring) will also occur on a rolling, overlapping basis rather than as single fixed dates.
+
+| Task                              | Output                       | Responsible  | Status    |
+| --------------------------------- | ---------------------------- | ------------ | --------- |
+| Baseline data collection (part 2) | Remaining baselines complete | JJ / JP      | 🟨 Planned |
+| Recruit control participants      | Controls recruited           | JJ / JP      | 🟨 Planned |
+| Baseline coaching                 | Coaching delivered (rolling) | SI / AM / GE | 🟨 Planned |
+| Monitor baseline                  | Baseline tracker             | IH           | 🔁 Ongoing |
+
+------
+
+### Week of 16 Mar 2026 (Ascension Trip)
+
+| Task                         | Output                    | Responsible | Status    |
+| ---------------------------- | ------------------------- | ----------- | --------- |
+| Ascension setup and training | Site operational          | —           | 🟨 Planned |
+| REDCap training              | Staff trained             | IH / JC     | 🟨 Planned |
+| Meal replacement delivery    | Supplies delivered        | —           | 🟨 Planned |
+| Week 1 operations            | First participants active | —           | 🟨 Planned |
+| Review of week 1             | Lessons documented        | ALL         | 🟨 Planned |
+
+------
+
+## Forward Plan: Broad Phases for Remainder of 2026
+
+The following blocks outline the **expected flow of activity for the remainder of 2026**, recognising that recruitment, intervention delivery, and follow-up are staggered and overlapping. These blocks are indicative and will be refined as operational experience accumulates.
+
+### Late Apr – Jun 2026: Intervention Ramp-Up
+
+Focus:
+
+- Participants entering TMR at different start points
+- Intensive early-phase monitoring
+
+Key activities:
+
+- Rolling starts of TMR intervention
+- Medication review and adjustment
+- Ongoing coaching and support
+- Close safety monitoring (particularly insulin-treated participants)
+- Data completeness and fidelity checks
+
+------
+
+### Jul – Sep 2026: Mid-Programme Delivery and Early Follow-Up
+
+Focus:
+
+- Participants completing initial TMR phases
+- Transition to food reintroduction and maintenance
+
+Key activities:
+
+- Completion of 12-week TMR phase (rolling)
+- Structured food reintroduction
+- Early follow-up measurements (3–6 months, staggered)
+- Review of retention and engagement patterns
+- Interim process review
+
+------
+
+### Oct – Dec 2026: Follow-Up, Consolidation, and Learning
+
+Focus:
+
+- Medium-term outcomes
+- Programme refinement
+
+Key activities:
+
+- Rolling 6–9 month follow-up visits
+- Continued safety and medication oversight
+- Qualitative data collection (participants and staff)
+- Preliminary outcome summaries
+- Planning for 2027 follow-up and sustainability decisions
+
+------
+
+## Notes on Staggered Delivery
+
+- Most activities after baseline will occur on a **rolling cohort basis**
+- Monitoring and reporting should use **windows** rather than fixed dates
+- This structure supports flexibility while preserving governance and oversight
+
+------
+
+## Layer 3: Standing Monitoring and Coordination Activities
+
+These activities run throughout the programme and should not be duplicated in date-specific tables.
+
+| Activity                                                 | Frequency           | Responsible  |
+| -------------------------------------------------------- | ------------------- | ------------ |
+| Monitor screening rates                                  | Weekly              | IH           |
+| Monitor baseline completeness                            | Weekly              | IH           |
+| Monitor follow-up visit attendance and data completeness | Weekly              | IH           |
+| Project team meeting                                     | Fortnightly         | ALL          |
+| Review missed appointments                               | Fortnightly         | Project team |
+| Data Monitoring Group meeting                            | Monthly / quarterly | DMG          |
+
+------
+
+## Notes on Use and Maintenance
+
+- Only Layer 2 should be edited frequently
+- Completed operational weeks may be archived below
+- Layer 1 milestones should be updated only if scope or timing changes
+- This document is the authoritative timeline; visual views may be derived from it

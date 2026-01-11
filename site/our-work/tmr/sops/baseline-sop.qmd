@@ -1,0 +1,191 @@
+---
+title: "Baseline Visit SOP"
+subtitle: "Guidance for Study Staff"
+format: html
+---
+
+## Total Meal Replacement (TMR) Diabetes Remission Programme
+
+---
+
+**St Helena Health and Social Care Directorate (HSC)**
+
+**Version 1 – Draft**
+
+**Date: 06-Jan-2026**
+
+**Prepared by: Ian Hambleton & Selvi Jeyaseelan**
+
+---
+
+
+
+# Baseline Visit SOP
+
+## Purpose
+
+This SOP describes the standard process for conducting the **baseline visit** for participants entering the Total Meal Replacement (TMR) Diabetes Remission Programme.
+
+The baseline visit establishes:
+
+- informed consent,
+- definitive eligibility confirmation,
+- high-quality baseline measurements,
+- safe transition into the intervention or control pathway.
+
+The baseline visit is the **governance anchor point** for the programme.
+
+------
+
+## Scope
+
+This SOP applies to all staff involved in:
+
+- baseline assessments for intervention and control participants,
+- collection of clinical, anthropometric, laboratory, and questionnaire data,
+- entry of baseline data into the TMR REDCap database.
+
+------
+
+## Roles and Responsibilities
+
+- **Baseline assessor(s):** conduct measurements, administer questionnaires, record data
+- **Clinical lead / diabetes nurse specialist:** confirms eligibility, medication safety, and insulin status
+- **Programme coordinator:** scheduling, documentation, and follow-up
+
+------
+
+## Prerequisites
+
+Before the baseline visit:
+
+- Screening eligibility has been confirmed
+- The participant has expressed interest in taking part
+- A baseline appointment has been scheduled
+
+------
+
+## Overview of the Baseline Visit
+
+1. Welcome and orientation
+2. Confirm eligibility and answer questions
+3. Obtain informed consent
+4. Assign participant study ID
+5. Collect baseline measurements and questionnaires
+6. Confirm group allocation and next steps
+
+------
+
+## Detailed Procedure
+
+### 1. Welcome and Orientation
+
+- Reconfirm that participation is voluntary
+- Explain what will happen during the visit
+- Allow time for questions
+
+------
+
+### 2. Eligibility Confirmation
+
+- Confirm type 2 diabetes diagnosis
+- Confirm insulin status
+- Review any changes since screening
+
+If eligibility is no longer met, pause the visit and seek clinical advice.
+
+------
+
+### 3. Informed Consent
+
+- Provide the Participant Information Sheet
+- Explain data use, confidentiality, and withdrawal rights
+- Obtain written informed consent
+
+Consent must be obtained **before any baseline data collection**.
+
+------
+
+### 4. Participant Identification and Administration
+
+- Assign participant study ID
+- Record administrative details
+- Confirm site and group allocation
+
+------
+
+### 5. Baseline Measurements and Data Collection
+
+Baseline data collection follows the approved Data Dictionary and includes:
+
+**Clinical and anthropometry**
+
+- Height (baseline only)
+- Weight
+- Waist and hip circumference
+- Blood pressure
+- Capillary blood glucose
+
+**Laboratory measurements**
+
+- HbA1c
+- Liver function tests
+- FibroScan (where scheduled)
+
+**Medication status**
+
+- Diabetes medication use
+- Hypertension medication use
+
+**Patient-reported outcomes**
+
+- EQ-5D-3L
+- PAID
+- IPAQ short form
+
+Data should be entered directly into REDCap wherever possible.
+
+------
+
+### 6. Quality Checks
+
+- Check completeness of required baseline fields
+- Resolve missing or implausible values while the participant is present
+
+------
+
+### 7. Next Steps
+
+**Intervention participants**
+
+- Explain next visit and TMR start
+- Confirm coaching arrangements
+
+**Control participants**
+
+- Explain follow-up schedule
+- Confirm routine care continues
+
+------
+
+## Safety and Escalation
+
+- Any unexpected clinical findings should be escalated to the clinical lead
+- Adverse events identified at baseline should be recorded per protocol
+
+------
+
+## Documentation
+
+- Baseline data recorded in the TMR REDCap database
+- Signed consent forms stored securely
+
+------
+
+## Linked Documents
+
+**Baseline Visit Checklist**
+**Screening Visit SOP**
+**Participant Information Sheet**
+**Consent Form**
+**TMR Data Dictionary**

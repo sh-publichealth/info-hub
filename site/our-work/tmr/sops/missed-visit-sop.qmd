@@ -1,0 +1,158 @@
+---
+title: "Missed Appointment and Leaving the Programme Protocol SOP"
+subtitle: "Guidance for Study Staff"
+format: html
+---
+
+## Total Meal Replacement (TMR) Diabetes Remission Programme
+
+---
+
+**St Helena Health and Social Care Directorate (HSC)**
+
+**Version 1 – Draft**
+
+**Date: 06-Jan-2026**
+
+**Prepared by: Ian Hambleton & Selvi Jeyaseelan**
+
+---
+
+## Purpose
+
+This SOP sets out a clear, supportive, and proportionate approach to managing missed appointments and leaving the Total Meal Replacement (TMR) Diabetes Remission Programme.
+
+The aim is to:
+
+- protect participant safety,
+- support continued engagement where possible,
+- ensure clear documentation,
+- avoid punitive or judgemental responses.
+
+Leaving the programme (disengagement) is treated as **participant choice**, not failure. For some, recognise that this action may have medication consequences.
+
+------
+
+## Scope
+
+This protocol applies to:
+
+- screening visits,
+- baseline visits,
+- all follow-up and intervention visits.
+
+It applies to both intervention and control participants.
+
+------
+
+## Definitions
+
+- **Missed appointment:** A scheduled visit not attended without prior cancellation.
+- **Leaving the programme:** When a participant chooses not to continue attending visits or programme activities, or is no longer responding to contact attempts.
+
+------
+
+## Guiding Principles
+
+- Assume good intent
+- Prioritise safety
+- Keep contact respectful and non-intrusive
+- Minimise burden on participants and staff
+- Document clearly and consistently
+
+------
+
+## Missed Appointment Procedure
+
+### First Missed Appointment
+
+- Record the missed visit in REDCap
+- Attempt contact within a reasonable timeframe
+- Use neutral, supportive language
+- Offer to reschedule
+
+No change in participant status at this stage.
+
+------
+
+### Second Missed Appointment (Consecutive or Recurrent)
+
+- Record the missed visit
+- Attempt contact via an alternative method if available
+- Check for potential barriers (illness, transport, timing)
+- Escalate to clinical lead **if safety concerns are possible** (e.g. insulin use)
+
+------
+
+### Repeated Missed Appointments
+
+If multiple visits are missed without response:
+
+- Record attempts to contact
+- Discuss at programme team level
+- Consider temporary pause of intervention activities
+
+------
+
+## Leaving the Programme Procedure
+
+### Participant-Initiated Leaving of the Programme
+
+If a participant states they wish to stop:
+
+- Acknowledge and respect the decision
+- Reassure that routine clinical care continues
+- Ask (without pressure) about continued use of routine data for evaluation
+- Record leaving the programme reason if offered
+
+No justification is required from the participant.
+
+------
+
+### Loss to Contact (No Response)
+
+If a participant does not respond after reasonable attempts:
+
+- Record contact attempts
+- Update participant status to disengaged
+- Inform the clinical lead where safety monitoring is relevant
+
+------
+
+### Safety Considerations
+
+- Participants who have had diabetes or blood-pressure medication reduced or stopped during the programme require **continued clinical supervision** if they leave the programme
+- Leaving the programme does **not** mean withdrawal of clinical responsibility
+- For these participants, a clear handover to routine diabetes care must be arranged
+- Medication review and follow-up arrangements should be documented
+- Any safety concerns should be escalated promptly to the clinical lead
+
+------
+
+## Documentation
+
+- All missed appointments and contact attempts must be recorded in REDCap
+- Disengagement status and date should be clearly documented
+- No judgemental language should be used in records
+
+------
+
+## Review and Oversight
+
+- All missed appointments should be **identified and discussed at the regular project team meeting**
+- The purpose of discussion is to identify patterns, practical barriers, and any safety concerns
+- Actions agreed (e.g. follow-up approach, schedule adjustment) should be documented
+
+Patterns of missed appointments and leaving the programme may be:
+
+- summarised for internal review,
+- reviewed by the Data Monitoring Group where relevant to safety or equity.
+
+------
+
+## Linked Documents
+
+**Screening Visit SOP and Checklist**
+**Baseline Visit SOP and Checklist**
+**Data Monitoring Group – Terms of Reference**
+**TMR Data Dictionary**

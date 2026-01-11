@@ -1,0 +1,183 @@
+---
+title: "Screening Visit SOP"
+subtitle: "Guidance for Study Staff"
+format: html
+---
+
+## Total Meal Replacement (TMR) Diabetes Remission Programme
+
+---
+
+**St Helena Health and Social Care Directorate (HSC)**
+
+**Version 1**
+
+**Date: 05-Jan-2026**
+
+**Prepared by: Ian Hambleton / Selvi Jeyaseelan**
+
+---
+
+## Purpose
+
+This SOP describes the standard process for screening potential participants for the Total Meal Replacement (TMR) Diabetes Remission Programme.
+
+The screening visit is designed to:
+
+- Confirm eligibility and safety
+- Provide clear, neutral information about the programme
+- Support informed choice
+- Identify next steps (baseline visit, control group, or no further contact)
+
+Screening is **not** consent to participate and does not commit the individual to the programme.
+
+------
+
+## Scope
+
+This SOP applies to all staff involved in:
+
+- Identifying potential participants
+- Conducting screening visits (in-person or remote)
+- Recording screening data in REDCap
+
+------
+
+## Roles and Responsibilities
+
+- **Screening staff**: conduct screening, record data, explain next steps
+- **Clinical lead / diabetes nurse specialist**: available for clinical queries or borderline cases
+- **Programme coordinator**: scheduling and follow-up
+
+------
+
+## Overview of the Screening Process
+
+1. Identify potential participant
+2. Initial contact and explanation
+3. Screening assessment (eligibility and safety)
+4. Confirm interest
+5. Agree next step
+6. Record outcome
+
+------
+
+## Detailed Procedure
+
+### 1. Identification of Potential Participants
+
+Potential participants may be identified through:
+
+- Diabetes registry lists
+- Clinic lists
+- Referrals from clinical staff
+- Self-referral following publicity
+
+Eligibility lists may be randomly ordered prior to contact.
+
+------
+
+### 2. Initial Contact
+
+Explain:
+
+- This is a diabetes remission *service*, not a research trial
+- Participation is voluntary
+- Screening is to see if the programme is suitable and safe
+
+Provide a brief description of:
+
+- Total diet replacement phase
+- Follow-on food reintroduction and maintenance
+- Time commitment
+
+------
+
+### 3. Screening Assessment
+
+Confirm or collect the following:
+
+**Core eligibility**
+
+- Age within programme limits
+- Type 2 diabetes diagnosis
+- Duration of diabetes
+- Recent clinic attendance
+- Current HbA1c (if available)
+- Body Mass Index (measured or recent)
+
+**Safety exclusions**
+
+- Pregnancy or breastfeeding
+- Recent major cardiovascular events
+- Severe renal impairment
+- Active eating disorder
+- Other significant clinical exclusions
+
+Where uncertainty exists, pause screening and seek clinical advice.
+
+------
+
+### 4. Explain Programme Expectations
+
+Cover clearly:
+
+- The intensity of the first 12 weeks
+- Medication changes may occur under supervision
+- Regular follow-up visits are required
+- Participants can stop at any time
+
+Check understanding and allow questions.
+
+------
+
+### 5. Confirm Interest
+
+Ask neutrally:
+
+- Whether the individual wishes to proceed to a baseline visit
+
+If **yes**:
+
+- Schedule a baseline visit
+
+If **no**:
+
+- Thank the individual
+- Ask permission to use routine data as part of the control group (where applicable)
+
+------
+
+### 6. Record Outcome
+
+In REDCap, record:
+
+- Eligibility outcome
+- Interest outcome
+- Baseline visit scheduled (yes/no)
+- Any notes relevant to safety or follow-up
+
+------
+
+## Handling Special Situations
+
+- **Borderline eligibility**: escalate to clinical lead
+- **Insulin-treated participants**: flag for enhanced clinical oversight
+- **Safeguarding concerns**: follow standard clinical procedures
+
+------
+
+## Documentation
+
+- Screening data recorded in the screening REDCap database
+- No consent forms are signed at screening
+
+------
+
+## Linked Documents
+
+**Screening Visit SOP**
+**Data Sharing Agreement – Outline**
+**Caldott Guardian Sign-off Record**
+**Data Monitoring Group – Terms of Reference**
+**Baseline Visit SOP and Checklist**
