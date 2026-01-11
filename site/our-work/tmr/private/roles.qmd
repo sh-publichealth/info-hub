@@ -1,4 +1,8 @@
-# TMR Intervention Roles and Responsibilities
+---
+title: "TMR Intervention Roles and Responsibilities"
+subtitle: "Guidance for Study Staff"
+format: html
+---
 
 **St Helena Health and Social Care Directorate (HSC)**
 
