@@ -8,7 +8,7 @@ date-format: "D MMM YYYY"
 ---
 
 # The Recruitment Process
-## Part 1. First contact
+## Part 1. First contact  
 
 ```{mermaid}
 %%| label: fig-mermaid-flowchart1
