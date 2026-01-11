@@ -2,6 +2,10 @@
 title: "TMR: Internal Working Area"
 subtitle: "Guidance for Study Staff"
 format: html
+date: last-modified
+date-format: "D MMM YYYY"
+private: true
+search: false
 ---
 
 ::: {.callout-note}
@@ -9,16 +13,8 @@ This is a quiet internal working area for the Total Meal Replacement (TMR) progr
 Pages here are not listed in the main site navigation and are intended to be accessed only via direct links shared with relevant individuals.
 :::
 
-This section brings together a small set of internal working pages supporting delivery of the TMR programme.
-
-Content may change as the programme evolves and should not be treated as final or externally approved documentation.
-
 ## Working pages
 
-- [Required documents](./required-documents.qmd)
-- [Roles and responsibilities](./roles.qmd)
-- [Weekly timelines](./weekly-timelines.qmd)
-
----
-
-_Last updated: {{< meta date-modified >}}_
+- [Required documents](required-documents.qmd)
+- [Roles and responsibilities](roles.qmd)
+- [Weekly timelines](weekly-timelines.qmd)

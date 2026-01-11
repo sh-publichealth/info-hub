@@ -2,17 +2,11 @@
 title: "Required Study Documents"
 subtitle: "Guidance for Study Staff"
 format: html
+date: last-modified
+date-format: "D MMM YYYY"
+private: true
+search: false
 ---
-
-## Total Meal Replacement (TMR) Diabetes Remission Programme
-
----
-
-**St Helena Health and Social Care Directorate (HSC)**
-
-**Version 1**
-
-**Date: 05-Jan-2026**
 
 **Prepared by: Ian Hambleton / Selvi Jeyaseelan**
 
@@ -20,12 +14,13 @@ format: html
 
 ### Legend
 
-**Priority**
+**Priority** 
 
 - 🟥 = Must-have (MH)
 - 🟩 = Nice-to-have (NH)
 
 **Category**
+
 - 🟦 = Data-related
 - ⬛ = Management / operations
 - 🟨 = Participant-facing
@@ -35,6 +30,7 @@ format: html
 - 🧠 = Research-evidence
 
 **Phases / timepoints**
+
 - P0 = Pre-screening / set-up (before screening starts)
 - P1 = Screening period
 - P2 = Baseline start

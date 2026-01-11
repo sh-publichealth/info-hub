@@ -2,4 +2,6 @@
 title: "Study SOPs"
 subtitle: "Guidance for Study Staff"
 format: html
+date: last-modified
+date-format: "D MMM YYYY"
 ---

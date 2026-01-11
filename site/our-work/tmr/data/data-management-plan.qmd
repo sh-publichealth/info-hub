@@ -2,15 +2,9 @@
 title: "TMR Data Management Plan (DMP)"
 subtitle: "Guidance for Study Staff"
 format: html
+date: last-modified
+date-format: "D MMM YYYY"
 ---
-
-## Saint Helena Total Meal Replacement Diabetes Study
-
-**St Helena Health and Social Care Directorate (HSC)**
-
-**Version 2**
-
-**Date: 11-Dec-2025**
 
 **Prepared by: Ian Hambleton**
 

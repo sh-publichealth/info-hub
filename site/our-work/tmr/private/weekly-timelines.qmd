@@ -2,14 +2,15 @@
 title: "TMR Programme Timelines"
 subtitle: "Guidance for Study Staff"
 format: html
+date: last-modified
+date-format: "D MMM YYYY"
+private: true
+search: false
 ---
 
-**St Helena Health and Social Care Directorate (HSC)**
-**Version:** 2
-**Date:** 06-Jan-2026
 **Prepared by:** Ian Hambleton / Selvi Jeyaseelan
 
-------
+---
 
 This document presents the TMR programme timeline using **three linked layers**:
 

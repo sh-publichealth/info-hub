@@ -1,13 +1,13 @@
 ---
 title: "Total Meal Replacement"
 subtitle: "Understanding the Saint Helena Total Meal Replacement Diabetes Study"
+date: last-modified
+date-format: "D MMM YYYY"
 ---
 
 
 ---
 
-**St Helena Health and Social Care Directorate (HSC)**
-**Date: 11-Dec-2025**
 **Prepared by: Ian Hambleton & Selvi Jeyaseelan**
 
 ---

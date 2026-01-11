@@ -2,6 +2,8 @@
 title: "Screening Visit"
 subtitle: "Guidance for Study Staff"
 format: html
+date: last-modified
+date-format: "D MMM YYYY"
 ---
 
 

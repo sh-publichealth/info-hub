@@ -67,17 +67,17 @@ website:
             - section: "Participant Visits"
               contents: 
               - text: Participant Flow
-                href: our-work/tmr/participant-flow.qmd
+                href: our-work/tmr/visits/participant-flow.qmd
               - text: Recruitment
-                href: our-work/tmr/recruitment.qmd
+                href: our-work/tmr/visits/recruitment.qmd
               - text: Screening Visit 
-                href: our-work/tmr/screening-visit.qmd
+                href: our-work/tmr/visits/screening-visit.qmd
               - text: Baseline Visit 
-                href: our-work/tmr/baseline-visit.qmd
+                href: our-work/tmr/visits/baseline-visit.qmd
               - text: Meal Replacement Visits 
-                href: our-work/tmr/meal-replacement-visits.qmd
+                href: our-work/tmr/visits/meal-replacement-visits.qmd
               - text: Food Reintroduction Visits
-                href: our-work/tmr/food-reintroduction-visits.qmd
+                href: our-work/tmr/visits/food-reintroduction-visits.qmd
             - section: "SOPs"
               contents: 
               - text: SOP overview
@@ -112,9 +112,10 @@ website:
                 href: our-work/tmr/redcap/index.qmd
 format:
   html:
+    description: false
     theme:
       - cosmo
       - brand
     css: styles.css
     toc: true
-# touch: 2026-01-11 15:56:09.974
+# touch: 2026-01-11 17:59:30.434

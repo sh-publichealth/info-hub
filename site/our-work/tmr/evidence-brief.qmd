@@ -1,17 +1,22 @@
 ---
 title: "Evidence Brief & Service Evaluation Justification"
-subtitle: "Who can and cannot take part"
+subtitle: "An Evidence Summary"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Ian Hambleton, Selvi Jeyalseelan
+format: 
+   html: default
+   pdf: default
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
 ---
 
-## Total Meal Replacement (TMR) Diabetes Remission Programme
+---
 
-**St Helena Health and Social Care Directorate (HSC)**
+::: {.text-center .my-4}
+[Download PDF of this page](./evidence-brief.pdf){.btn .btn-outline-primary role="button" target="_blank" rel="noopener"}
+::: 
 
-**Version 1 – Draft**
-
-**Date: 05-Jan-2026**
-
-**Prepared by: Ian Hambleton & Selvi Jeyaseelan**
 
 ------
 

@@ -2,21 +2,11 @@
 title: "Anonymisation and Small-Number Suppression Rules"
 subtitle: "Guidance for Study Staff"
 format: html
+date: last-modified
+date-format: "D MMM YYYY"
 ---
-
-## Total Meal Replacement (TMR) Diabetes Remission Programme
-
----
-
-**St Helena Health and Social Care Directorate (HSC)**
-
-**Version 1 – Draft**
-
-**Date: 05-Jan-2026**
 
 **Prepared by: Ian Hambleton & Selvi Jeyaseelan**
-
-------
 
 ## 1. Principles
 

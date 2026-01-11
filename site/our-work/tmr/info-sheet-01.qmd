@@ -1,19 +1,24 @@
 ---
 title: "Participant Information Sheet"
 subtitle: "Diabetes Remission Programme (Total Meal Replacement)"
-format: html
+description-meta: "Participant Information Sheet."
+author: Ian Hambleton, Selvi Jeyalseelan
+format: 
+   html: default
+   pdf: default
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
 ---
 
+---
 
-**St Helena Health and Social Care Directorate (HSC)**
+::: {.text-center .my-4}
+[Download PDF of this page](./info-sheet-01.pdf){.btn .btn-outline-primary role="button" target="_blank" rel="noopener"}
+::: 
 
-**Version 1**
 
-**Date: 05-Jan-2026**
-
-**Prepared by: Ian Hambleton / Selvi Jeyaseelan**
-
-------
+---
 
 ### Please read this carefully
 

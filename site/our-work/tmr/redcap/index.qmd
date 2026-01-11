@@ -1,6 +1,8 @@
 ---
 title: "REDCap Guidance"
 subtitle: "The TMR Data Collection System"
+date: last-modified
+date-format: "D MMM YYYY"
 ---
 
 

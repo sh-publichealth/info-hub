@@ -1,27 +1,24 @@
 ---
-title: "project protocol"
-subtitle: "Guidance for Study Staff"
-format: html
+title: "Service Evaluation Protocol"
+subtitle: "Total Meal Replacement (TMR) Diabetes Remission Programme"
+description-meta: "Operational guidance for study staff delivering the TMR intervention."
+author: Ian Hambleton, Selvi Jeyalseelan
+format: 
+   html: default
+   pdf: default
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
 ---
-
-# Service Evaluation Protocol
-
-## Total Meal Replacement (TMR) Diabetes Remission Programme
-
----
-
-**St Helena Health and Social Care Directorate (HSC)**
-
-**Version 1 – Draft**
-
-**Date: 06-Jan-2026**
-
-**Prepared by: Ian Hambleton & Selvi Jeyaseelan**
 
 ---
 
+::: {.text-center .my-4}
+[Download PDF of this page](./protocol.pdf){.btn .btn-outline-primary role="button" target="_blank" rel="noopener"}
+::: 
+ 
 ## Executive summary
-
+ 
 St Helena has a high burden of type 2 diabetes and obesity, placing sustained pressure on a small, integrated health system. Evidence from high-quality trials shows that Total Meal Replacement (TMR) programmes can produce substantial weight loss and improved blood glucose control, and that some people can achieve diabetes remission when weight loss is maintained.
 
 This protocol describes a **service evaluation** of a TMR Diabetes Remission Programme delivered within routine St Helena diabetes services (with learning intended to inform delivery in other small or remote settings, including Ascension Island where relevant). The purpose is not to re-test biological efficacy, but to understand whether the programme can be delivered **safely, acceptably, and effectively** in local routine care, and what implementation learning is needed for potential continuation or scale-up.

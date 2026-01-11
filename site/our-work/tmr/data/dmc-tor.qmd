@@ -2,17 +2,9 @@
 title: "Data Monitoring Committee - Terms of Reference"
 subtitle: "Guidance for Study Staff"
 format: html
+date: last-modified
+date-format: "D MMM YYYY"
 ---
-
-## Total Meal Replacement (TMR) Diabetes Remission Programme
-
----
-
-**St Helena Health and Social Care Directorate (HSC)**
-
-**Version 1**
-
-**Date: 05-Jan-2026**
 
 **Prepared by: Ian Hambleton / Selvi Jeyaseelan**
 

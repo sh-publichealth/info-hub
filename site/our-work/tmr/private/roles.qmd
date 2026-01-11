@@ -2,15 +2,15 @@
 title: "TMR Intervention Roles and Responsibilities"
 subtitle: "Guidance for Study Staff"
 format: html
+date: last-modified
+date-format: "D MMM YYYY"
+private: true
+search: false
 ---
 
-**St Helena Health and Social Care Directorate (HSC)**
-
-**Version 1 – Draft**
-
-**Date: 31-Dec-2025**
-
 **Prepared by: Selvi Jeyaseelan / Ian Hambleton**
+
+---
 
 ## SJ
 

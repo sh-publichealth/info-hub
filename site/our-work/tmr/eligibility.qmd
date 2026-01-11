@@ -1,6 +1,8 @@
 ---
 title: "Eligibility"
 subtitle: "Guidance for Study Staff"
+date: last-modified
+date-format: "D MMM YYYY"
 ---
 
 ## Purpose of eligibility assessment

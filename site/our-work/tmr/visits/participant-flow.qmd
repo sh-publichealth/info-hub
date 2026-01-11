@@ -1,7 +1,10 @@
 ---
 title: "Participant Flows"
 subtitle: "Guidance for Study Staff"
-format: html
+format: 
+  html: default
+date: last-modified
+date-format: "D MMM YYYY"
 ---
 
 # The Recruitment Process
