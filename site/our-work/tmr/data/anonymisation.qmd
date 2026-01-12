@@ -1,8 +1,6 @@
 ---
 title: "Anonymisation and Small-Number Suppression Rules"
 subtitle: "Guidance for Data Handling Staff"
-title: "Evidence Brief & Service Evaluation Justification"
-subtitle: "An Evidence Summary"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
 author: Ian Hambleton
 format: 
