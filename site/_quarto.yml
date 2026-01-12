@@ -60,56 +60,56 @@ website:
             contents: 
             - text: Overview
               href: our-work/tmr/index.qmd
-            - text: The Study Protocol 
-              href: our-work/tmr/protocol.qmd
-            - text: Eligibility 
-              href: our-work/tmr/eligibility.qmd
-            - section: "Participant Visits"
-              contents: 
-              - text: Participant Flow
-                href: our-work/tmr/visits/participant-flow.qmd
-              - text: Recruitment
-                href: our-work/tmr/visits/recruitment.qmd
-              - text: Screening Visit 
-                href: our-work/tmr/visits/screening-visit.qmd
-              - text: Baseline Visit 
-                href: our-work/tmr/visits/baseline-visit.qmd
-              - text: Meal Replacement Visits 
-                href: our-work/tmr/visits/meal-replacement-visits.qmd
-              - text: Food Reintroduction Visits
-                href: our-work/tmr/visits/food-reintroduction-visits.qmd
-            - section: "SOPs"
-              contents: 
-              - text: SOP overview
-                href: our-work/tmr/sops/index.qmd
-              - text: Screening SOP
-                href: our-work/tmr/sops/screening-sop.qmd
-              - text: Height & Weight SOP 
-                href: our-work/tmr/sops/height-weight-sop.qmd
-              - text: Baseline SOP
-                href: our-work/tmr/sops/baseline-sop.qmd
-              - text: Missed Visit SOP
-                href: our-work/tmr/sops/missed-visit-sop.qmd
-            - section: "Data"
-              contents: 
-              - text: Overview
-                href: our-work/tmr/data/index.qmd
-              - text: Analysis Plan 
-                href: our-work/tmr/data/sap.qmd
-              - text: Data Dictionary
-                href: our-work/tmr/data/data-dictionary.qmd
-              - text: Data Management Plan
-                href: our-work/tmr/data/data-management-plan.qmd
-              - text: Data Sharing
-                href: our-work/tmr/data/data-sharing.qmd
-              - text: Data Anonymisation
-                href: our-work/tmr/data/anonymisation.qmd
-              - text: Data Monitoring Committee
-                href: our-work/tmr/data/dmc-tor.qmd
-            - section: "REDCap Guidance"
-              contents: 
-              - text: Training Overview
-                href: our-work/tmr/redcap/index.qmd
+#            - text: The Study Protocol 
+#              href: our-work/tmr/protocol.qmd
+#            - text: Eligibility 
+#              href: our-work/tmr/eligibility.qmd
+#            - section: "Participant Visits"
+#              contents: 
+#              - text: Participant Flow
+#                href: our-work/tmr/visits/participant-flow.qmd
+#              - text: Recruitment
+#                href: our-work/tmr/visits/recruitment.qmd
+#              - text: Screening Visit 
+#                href: our-work/tmr/visits/screening-visit.qmd
+#              - text: Baseline Visit 
+#                href: our-work/tmr/visits/baseline-visit.qmd
+#              - text: Meal Replacement Visits 
+#                href: our-work/tmr/visits/meal-replacement-visits.qmd
+#              - text: Food Reintroduction Visits
+#                href: our-work/tmr/visits/food-reintroduction-visits.qmd
+#            - section: "SOPs"
+#              contents: 
+#              - text: SOP overview
+#                href: our-work/tmr/sops/index.qmd
+#              - text: Screening SOP
+#                href: our-work/tmr/sops/screening-sop.qmd
+#              - text: Height & Weight SOP 
+#                href: our-work/tmr/sops/height-weight-sop.qmd
+#              - text: Baseline SOP
+#                href: our-work/tmr/sops/baseline-sop.qmd
+#              - text: Missed Visit SOP
+#                href: our-work/tmr/sops/missed-visit-sop.qmd
+#            - section: "Data"
+#              contents: 
+#              - text: Overview
+#                href: our-work/tmr/data/index.qmd
+#              - text: Analysis Plan 
+#                href: our-work/tmr/data/sap.qmd
+#              - text: Data Dictionary
+#                href: our-work/tmr/data/data-dictionary.qmd
+#              - text: Data Management Plan
+#                href: our-work/tmr/data/data-management-plan.qmd
+#              - text: Data Sharing
+#                href: our-work/tmr/data/data-sharing.qmd
+#              - text: Data Anonymisation
+#                href: our-work/tmr/data/anonymisation.qmd
+#              - text: Data Monitoring Committee
+#                href: our-work/tmr/data/dmc-tor.qmd
+#            - section: "REDCap Guidance"
+#              contents: 
+#              - text: Training Overview
+#                href: our-work/tmr/redcap/index.qmd
 
 format:
   html:
@@ -121,7 +121,6 @@ format:
       - cosmo
       - brand
     css: styles.css
-    html-math-method: katex
   pdf:
     toc: true
     documentclass: report
@@ -132,4 +131,4 @@ format:
 #        icon: file-pdf
 #        href: document-name.pdf
 
-# touch: 2026-01-12 12:20:20.913
+# touch: 2026-01-12 13:13:09.786
