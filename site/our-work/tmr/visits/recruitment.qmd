@@ -4,11 +4,7 @@ subtitle: "Guidance for Study Staff"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
 author: Ian Hambleton, Selvi Jeyaseelan
 format: 
-   html:
-     format-links: true 
-   pdf:
-     toc: true
-     documentclass: report
+   html: default
 date: last-modified
 date-format: "D MMM YYYY"
 draft: true

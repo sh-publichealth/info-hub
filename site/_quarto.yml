@@ -111,6 +111,8 @@ website:
 #              - text: Training Overview
 #                href: our-work/tmr/redcap/index.qmd
 
+freeze: auto
+
 format:
   html:
     format-links: true 
@@ -121,14 +123,8 @@ format:
       - cosmo
       - brand
     css: styles.css
-  pdf:
-    toc: true
-    documentclass: report
-    margin-left: 30mm
-    margin-right: 30mm
-#    other-links:
-#      - text: "Download PDF"
-#        icon: file-pdf
-#        href: document-name.pdf
 
-# touch: 2026-01-12 13:13:09.786
+
+
+
+# touch: 2026-01-12 13:53:23.179
