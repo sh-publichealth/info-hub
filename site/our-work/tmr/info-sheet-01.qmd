@@ -1,105 +1,92 @@
 ---
 title: "Participant Information Sheet"
-subtitle: "Diabetes Remission Programme (Total Meal Replacement)"
+subtitle: "What is the Saint Helena Total Meal Replacement Study for People Living With Diabetes?"
 description-meta: "Participant Information Sheet."
 author: Ian Hambleton, Selvi Jeyaseelan
 format:
   html: default
   pdf:
-    toc: true
-    documentclass: report
+    toc: false
+    documentclass: article
     margin-left: 30mm
     margin-right: 30mm
 format-links: true
 
 date: last-modified
 date-format: "D MMM YYYY"
-draft: true
+draft: false
 ---
 
----
-
+<!-- 
 ::: {.text-center .my-4}
 [Download PDF of this page](./info-sheet-01.pdf){.btn .btn-outline-primary role="button" target="_blank" rel="noopener"}
 ::: 
+-->
 
-
----
-
+::: {.callout-note}
 ### Please read this carefully
+  This information sheet explains a new health programme being offered on St Helena for people living with type 2 diabetes.
 
-This information sheet explains a new health programme being offered on **St Helena** for people living with **type 2 diabetes**.
+  Please take your time to read it. You do not have to decide anything straight away. You are welcome to discuss it with family, friends, or a member of the health team.
 
-Please take your time to read it. You do not have to decide anything straight away. You are welcome to discuss it with family, friends, or a member of the health team.
+  Taking part is *entirely your choice*.
+:::
 
-Taking part is **entirely your choice**.
+## What is this programme?
 
-------
-
-## 1. What is this programme?
-
-This programme is designed to help people with **type 2 diabetes** improve their health through **safe, supported weight loss**.
+This programme is designed to help people with *type 2 diabetes* improve their health through *safe, supported weight loss*.
 
 For some people, losing a significant amount of weight can:
 
 - Lower blood sugar levels
 - Reduce the need for diabetes medication
-- In some cases, put diabetes into **remission**
+- In some cases, put diabetes into remission
 
-*Diabetes remission* means blood sugar levels return to a non-diabetic range **without diabetes medication**, for a period of time.
+*Diabetes remission* means blood sugar levels return to a non-diabetic range *without diabetes medication*, for a period of time.
 
-This programme uses a **Total Meal Replacement (TMR)** approach for the first phase, followed by careful reintroduction of everyday foods and long-term support.
+This programme uses a *Total Meal Replacement (TMR)* approach for the first phase, followed by careful reintroduction of everyday foods and long-term support.
 
-------
-
-## 2. Why are we offering this programme on St Helena?
+## Why are we offering this programme on St Helena?
 
 Type 2 diabetes is common on St Helena and can lead to serious health problems over time.
 
-Research from the UK and other countries has shown that structured programmes like this can help many people improve their diabetes control, especially when diabetes has been diagnosed in recent years.
+Research from the UK and other countries has shown that structured programmes like this can help many people improve their diabetes control, especially when diabetes has been diagnosed in recent years. For those interested, we have [summarised the evidence](./evidence-brief.qmd) available from elsewhere.
 
-This programme is being offered as a **pilot**, to see how well it works for people on St Helena and how it can best fit within our local health services.
+This programme is being offered as a *pilot*, to see how well it works for people on St Helena and how it can best fit within our local health services.
 
-------
-
-## 3. Who is the programme for?
+## Who is the programme for?
 
 You may be invited to take part if you:
 
-- Are an adult with **type 2 diabetes**
-- Have been diagnosed within the last **6 years**
-- Have attended a diabetes clinic within the last **12 months**
+- Are an adult with *type 2 diabetes*
+- Have been diagnosed within the last *6 years*
+- Have attended a diabetes clinic within the last *12 months*
 - Meet the programme’s eligibility criteria based on height and weight measurements
 
 Final checks are done at a screening visit.
 
-------
+## What does taking part involve?
 
-## 4. What does taking part involve?
+### One screening visit
 
-### a) Screening visit
-
-If you are interested, you will be invited to a **screening visit**.
+If you are interested, you will be invited to a *screening visit*.
 
 At this visit we will:
 
 - Measure your height and weight
+- Better understand your eating habits
 - Check basic information from your medical record
 - Explain the programme in more detail
 - Answer your questions
 
 Attending the screening visit does **not** mean you have agreed to take part.
 
-------
+### The programme itself
 
-### b) The programme itself
-
-If you decide to take part, the programme lasts **about 12 months** and has three main phases:
+If you decide to take part, the programme lasts *about 12 months* and has three phases:
 
 **Phase 1: Total Meal Replacement (about 12 weeks)**
-You will replace all regular meals with specially prepared soups and shakes that provide all the nutrients your body needs, but fewer calories.
-
-You will be supported closely by the health team, with regular check-ins.
+You will replace all regular meals with specially prepared soups and shakes that provide all the nutrients your body needs, but fewer calories. These meals are provided by us, free-of-charge. You will be supported closely by our health team, with regular check-ins.
 
 **Phase 2: Food reintroduction (about 6 weeks)**
 Everyday foods are gradually reintroduced in a structured way.
@@ -107,24 +94,20 @@ Everyday foods are gradually reintroduced in a structured way.
 **Phase 3: Weight maintenance and long-term support**
 You will receive ongoing support to help maintain weight loss and healthy habits.
 
-------
-
-## 5. What are the possible benefits?
+## What are the possible benefits?
 
 People who take part may experience:
 
-- Weight loss
+- Planned weight loss
 - Improved blood sugar control
 - Reduced need for diabetes medication
 - Improved energy, mobility, and wellbeing
 
-Some people are able to achieve **diabetes remission**, but this cannot be guaranteed.
+Some people are able to achieve *diabetes remission*, but this cannot be guaranteed.
 
-------
+## What are the challenges?
 
-## 6. What are the challenges?
-
-This programme **requires commitment**.
+This programme *requires commitment*.
 
 Some people find:
 
@@ -134,23 +117,17 @@ Some people find:
 
 Support is built into the programme, but it is important to consider whether now is the right time for you.
 
-------
-
-## 7. Is it safe?
+## Is it safe?
 
 This programme has been used safely in other health systems when properly supervised.
 
-Your medications, especially diabetes and blood pressure medicines, may need adjustment as weight and blood sugar change. This will be done **carefully by trained health staff**.
+Your medications, especially diabetes and blood pressure medicines, may need adjustment as your weight and blood sugar levels change. This will be done *carefully by our trained health staff*.
 
-You will be monitored regularly, and you can stop the programme at any time.
+You will be monitored regularly, and **you can stop the programme at any time**.
 
-------
+## Do I have to take part?
 
-## 8. Do I have to take part?
-
-No.
-
-Taking part is **completely voluntary**.
+No. Taking part is **completely voluntary**.
 
 - You can decide not to take part
 - You can stop at any time
@@ -158,42 +135,34 @@ Taking part is **completely voluntary**.
 
 Your decision will not affect the care you receive.
 
-------
-
-## 9. What happens to my information?
+## What happens to my information?
 
 If you take part:
 
 - Information about your health will be recorded securely
 - Your information will be used to deliver and monitor the programme safely and effectively
-- Information will also be used to evaluate how well the programme works, so services can be improved
-- All data will be handled in line with **St Helena and UK data protection laws**
-- Results will be reported in a way that does not identify you as an individual
+- Information will also be used to evaluate how well the programme works, so our services can be improved
+- All data will be handled in line with *St Helena and UK data protection rules*
+- Results will be reported in a way that *does not* identify you as an individual.
 
 Your information will only be used for healthcare delivery and service evaluation related to this programme.
 
-------
-
-## 10. What if I change my mind?
+## What if I change my mind?
 
 You are free to withdraw from the programme at any time.
 
 If you withdraw from the programme, your usual diabetes care will continue.
 
-Information already collected as part of your care and programme monitoring may still be used for service evaluation, unless you specifically request otherwise, where this is permitted by law.
+Information already collected as part of your care and programme monitoring may still be used for the evaluation of our service.
 
-------
-
-## 11. Who can I contact for more information?
+## Who can I contact for more information?
 
 If you have questions or would like more information, please contact:
 
-==**[Clinic / Programme Name]**==
-**Phone:** ==[number]==
-**Email:** ==[email]==
+**Dr Selvi Jeyaseelan**<br/>
+**Phone:** 22500<br/>
+**Email:** [selvi.jeyaseelan@sainthelena.gov.sh](mailto:selvi.jeyaseelan@sainthelena.gov.sh?subject=TMR%20query)
 
-------
+### Thank you!
 
-### Thank you
-
-Thank you for taking the time to read this information. Whatever you decide, we appreciate your engagement with your health and with diabetes care on St Helena.
+Thank you for taking the time to read this information. Whatever you decide, we appreciate your engagement with us, with your health, and with diabetes care on St Helena.

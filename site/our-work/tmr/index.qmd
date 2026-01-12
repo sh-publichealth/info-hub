@@ -1,21 +1,22 @@
 ---
-title: "Total Meal Replacement"
+title: "Total Meal Replacement for Diabetes Remission"
 subtitle: "Understanding the Saint Helena Total Meal Replacement Diabetes Study"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
 author: Ian Hambleton, Selvi Jeyaseelan
 format: 
    html: default
+   pdf:
+     toc: false
+     documentclass: article
+     margin-left: 30mm
+     margin-right: 30mm
+
 date: last-modified
 date-format: "D MMM YYYY"
 draft: false
 ---
 
-
----
-
-**Prepared by: Ian Hambleton & Selvi Jeyaseelan**
-
----
+## Context
 
 Many people on Saint Helena are living with type 2 diabetes, and it affects families in every district. Managing diabetes can be tiring, expensive, and stressful. This study aims to find out whether a simple, structured food programme can help make life easier and healthier for people with diabetes.
 
@@ -41,20 +42,20 @@ Everyone in the programme will:
 - Have blood tests to monitor their diabetes and general health  
 - Fill in short questionnaires about their wellbeing and how they feel about living with diabetes  
 
-Some people will also be asked to share quick check-ins using their phones—simple “how are you doing today?” messages that help us understand what makes the programme easier or harder in everyday life. These are optional but very helpful.
+Some people will also asked to share their views on the prgramme. These views will help us understand what makes the programme easier or harder in everyday life. 
 
 ## How will we know if it works?
 
-To understand the programme’s impact, we will compare the progress of participants with people from the island’s diabetes registry who are not doing the programme. This is not a traditional trial where people are randomly assigned—everything is done in a way that fits St Helena’s small, close-knit community. Our team will use careful, fair comparisons to see whether the programme truly makes a difference.
+To understand the programme’s impact, we will compare the progress of participants with people from the island’s diabetes registry who are not taking part in the programme. Our team will use careful, fair comparisons to see whether the programme truly makes a difference.
 
 ## Why does this matter for St Helena?
 
 If this programme works well, it could:
 
-- Reduce the need for diabetes medicines, including insulin  
-- Improve people’s energy, wellbeing and day-to-day life  
-- Lower the risk of long-term diabetes complications  
-- Help the island save money on expensive medication imports  
-- Show what kind of support helps people succeed in making big health changes  
+- Reduce the need for diabetes medicines, including insulin.  
+- Improve people’s energy, wellbeing and day-to-day life.  
+- Lower the risk of long-term diabetes complications.  
+- Help the island save money on expensive medication imports.  
+- Show what kind of support helps people succeed in making big health changes.  
 
 Most importantly, it will help us understand whether this is something **the whole island** should have access to in the future.
