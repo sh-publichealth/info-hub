@@ -1,9 +1,9 @@
 format:
   html: default
-  pdf:
-    toc: true
-    documentclass: report
-    margin-left: 30mm
-    margin-right: 30mm
+#  pdf:
+#    toc: true
+#    documentclass: report
+#    margin-left: 30mm
+#    margin-right: 30mm
 
 format-links: true
