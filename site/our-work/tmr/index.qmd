@@ -1,8 +1,17 @@
 ---
 title: "Total Meal Replacement"
 subtitle: "Understanding the Saint Helena Total Meal Replacement Diabetes Study"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Ian Hambleton, Selvi Jeyaseelan
+format: 
+   html:
+     format-links: true 
+   pdf:
+     toc: true
+     documentclass: report
 date: last-modified
 date-format: "D MMM YYYY"
+draft: true
 ---
 
 

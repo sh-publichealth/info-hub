@@ -1,16 +1,19 @@
 ---
 title: "TMR Intervention Roles and Responsibilities"
 subtitle: "Guidance for Study Staff"
-format: html
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Ian Hambleton, Selvi Jeyaseelan
+format: 
+   html:
+     format-links: true 
+   pdf:
+     toc: true
+     documentclass: report
 date: last-modified
 date-format: "D MMM YYYY"
-private: true
-search: false
+draft: true
 ---
 
-**Prepared by: Selvi Jeyaseelan / Ian Hambleton**
-
----
 
 ## SJ
 

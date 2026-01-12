@@ -2,14 +2,15 @@
 title: "Service Evaluation Protocol"
 subtitle: "Total Meal Replacement (TMR) Diabetes Remission Programme"
 description-meta: "Operational guidance for study staff delivering the TMR intervention."
-author: Ian Hambleton, Selvi Jeyalseelan
+author: Ian Hambleton, Selvi Jeyaseelan
 format: 
    html: default
    pdf: default
 date: last-modified
 date-format: "D MMM YYYY"
-draft: false
+draft: true
 ---
+
 
 ---
 

@@ -2,13 +2,16 @@
 title: "Evidence Brief & Service Evaluation Justification"
 subtitle: "An Evidence Summary"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
-author: Ian Hambleton, Selvi Jeyalseelan
+author: Ian Hambleton, Selvi Jeyaseelan
 format: 
-   html: default
-   pdf: default
+   html:
+     format-links: true 
+   pdf:
+     toc: true
+     documentclass: report
 date: last-modified
 date-format: "D MMM YYYY"
-draft: false
+draft: true
 ---
 
 ---
@@ -20,7 +23,7 @@ draft: false
 
 ------
 
-### Purpose of this document
+## Purpose of this document
 
 This document sets out the rationale for undertaking a **service evaluation** of the Total Meal Replacement (TMR) Diabetes Remission Programme in St Helena.
 
@@ -61,7 +64,7 @@ These questions are central to decisions about whether and how the programme sho
 
 ------
 
-## Why this is a service evaluation (not research)
+## Why this is a service evaluation (not primary research)
 
 This work meets the definition of a **service evaluation** for the following reasons:
 
@@ -131,17 +134,9 @@ This approach is consistent with best practice for introducing complex intervent
 
 ---
 
-# Evidence Brief  
+## Evidence Brief  
 
-## Strength of Evidence for Total Meal Replacement in Type 2 Diabetes  
-
-**Version 1 – Draft**
-
-**Date: 11-Dec-2025**
-
-**Prepared by: Ian Hambleton & Selvi Jeyaseelan**
-
----
+### Strength of Evidence for Total Meal Replacement in Type 2 Diabetes  
 
 *(Using GRADE: High, Moderate, Low, Very Low Confidence)*
 
@@ -149,9 +144,9 @@ This evidence brief summarises the strength and quality of research relevant to 
 
 ---
 
-## 1. TMR Effectiveness for Non-Insulin-Treated Type 2 Diabetes  
+### TMR Effectiveness for Non-Insulin-Treated Type 2 Diabetes  
 
-### **GRADE Rating: HIGH Confidence**
+#### **GRADE Rating: HIGH Confidence**
 
 **Key Evidence**
 
@@ -167,9 +162,9 @@ This high-certainty evidence supports using TMR as a core diabetes intervention 
 
 ---
 
-## 2. TMR for Insulin-Treated Type 2 Diabetes  
+### TMR for Insulin-Treated Type 2 Diabetes  
 
-### **GRADE Rating: MODERATE Confidence**
+#### **GRADE Rating: MODERATE Confidence**
 
 **Key Evidence**
 
@@ -314,7 +309,7 @@ This gap justifies an **implementation science** approach—testing feasibility,
 
 ---
 
-# Concluding Interpretation
+## Concluding Interpretation
 
 Overall, using the GRADE framework, there is **high confidence** that TMR is an effective and safe intervention for adults with type 2 diabetes who are not using insulin.  
 There is **moderate confidence** in benefits for insulin-treated individuals, particularly regarding de-intensification and improved metabolic control.

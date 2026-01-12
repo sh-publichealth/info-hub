@@ -1,5 +1,13 @@
 ---
-title: "info-hub"
+title: "Information Hub"
+subtitle: "St Helena Public Health Team"
+description-meta: "public health information from St. Helena, in the South Atlantic"
+format: 
+   html: 
+      toc: true
+      format-links: false
+   pdf: default
+draft: false
 ---
 
 This is the St.Helena Public Health<br/>Protozoa website 

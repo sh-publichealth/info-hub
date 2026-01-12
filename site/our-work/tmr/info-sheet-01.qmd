@@ -2,13 +2,13 @@
 title: "Participant Information Sheet"
 subtitle: "Diabetes Remission Programme (Total Meal Replacement)"
 description-meta: "Participant Information Sheet."
-author: Ian Hambleton, Selvi Jeyalseelan
+author: Ian Hambleton, Selvi Jeyaseelan
 format: 
    html: default
    pdf: default
 date: last-modified
 date-format: "D MMM YYYY"
-draft: false
+draft: true
 ---
 
 ---
