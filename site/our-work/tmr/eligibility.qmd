@@ -120,7 +120,7 @@ Screening REDCap instrument
 
 For more information, please see the 
 [[Participant Flow Diagrams](./visits/participant-flow.qmd)]{.content-visible when-format="html"}
-[[Participant Flow Diagrams]({{< meta website.site-url >}}/our-work/tmr/visits/participant-flow.html)]{.content-visible when-format="pdf"}.
+[[Participant Flow Diagrams]({{< var site-url >}}/our-work/tmr/visits/participant-flow.html)]{.content-visible when-format="pdf"}.
 
 
 ## Key principle
