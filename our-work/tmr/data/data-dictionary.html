@@ -1,0 +1,2959 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Ian Hambleton">
+<meta name="dcterms.date" content="2026-01-13">
+<meta name="description" content="Background evidence for the Total Meal Replacement Intervention">
+
+<title>TMR Data Dictionary – Information Hub</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../our-work/tmr/data/data-management-plan.html" rel="next">
+<link href="../../../our-work/tmr/data/sap.html" rel="prev">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-29a19b5acbeac218a8c860e48340d4df.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Information Hub</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../our-work/index.html" aria-current="page"> 
+<span class="menu-text">Our Work</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../our-work/tmr/index.html">Total Meal Replacement</a></li><li class="breadcrumb-item"><a href="../../../our-work/tmr/protocol.html">Ops Manual</a></li><li class="breadcrumb-item"><a href="../../../our-work/tmr/data/sap.html">Data</a></li><li class="breadcrumb-item"><a href="../../../our-work/tmr/data/data-dictionary.html">Data Dictionary</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../our-work/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Total Meal Replacement</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../our-work/tmr/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Project</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../our-work/tmr/evidence-brief.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Evidence Brief</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../our-work/tmr/info-sheet-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Information Sheet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Ops Manual</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../our-work/tmr/protocol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Study Protocol</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../our-work/tmr/eligibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Eligibility</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Participant Visits</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../our-work/tmr/visits/participant-flow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Participant Flow</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../our-work/tmr/visits/participant-visits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview of Visits</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">SOPs</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../our-work/tmr/sops/recruitment-sop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recruitment SOP</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../our-work/tmr/sops/screening-sop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Screening SOP</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../our-work/tmr/data/data-dictionary.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Data Dictionary</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#data-collection-schedule-summary" id="toc-data-collection-schedule-summary" class="nav-link active" data-scroll-target="#data-collection-schedule-summary">Data Collection Schedule Summary</a></li>
+  <li><a href="#data-collection-instrument-summary" id="toc-data-collection-instrument-summary" class="nav-link" data-scroll-target="#data-collection-instrument-summary">Data Collection Instrument Summary</a></li>
+  <li><a href="#instrument-recruitment-screening" id="toc-instrument-recruitment-screening" class="nav-link" data-scroll-target="#instrument-recruitment-screening">Instrument: Recruitment &amp; Screening</a></li>
+  <li><a href="#instrument-participant_admin" id="toc-instrument-participant_admin" class="nav-link" data-scroll-target="#instrument-participant_admin">Instrument: participant_admin</a></li>
+  <li><a href="#instrument-weight" id="toc-instrument-weight" class="nav-link" data-scroll-target="#instrument-weight">Instrument: weight</a></li>
+  <li><a href="#instrument-anthropometry" id="toc-instrument-anthropometry" class="nav-link" data-scroll-target="#instrument-anthropometry">Instrument: anthropometry</a></li>
+  <li><a href="#instrument-blood_pressure" id="toc-instrument-blood_pressure" class="nav-link" data-scroll-target="#instrument-blood_pressure">Instrument: blood_pressure</a></li>
+  <li><a href="#instrument-glucose_monitor" id="toc-instrument-glucose_monitor" class="nav-link" data-scroll-target="#instrument-glucose_monitor">Instrument: glucose_monitor</a></li>
+  <li><a href="#instrument-hba1c" id="toc-instrument-hba1c" class="nav-link" data-scroll-target="#instrument-hba1c">Instrument: hba1c</a></li>
+  <li><a href="#instrument-liver_labs" id="toc-instrument-liver_labs" class="nav-link" data-scroll-target="#instrument-liver_labs">Instrument: liver_labs</a></li>
+  <li><a href="#instrument-fibroscan" id="toc-instrument-fibroscan" class="nav-link" data-scroll-target="#instrument-fibroscan">Instrument: fibroscan</a></li>
+  <li><a href="#instrument-medication" id="toc-instrument-medication" class="nav-link" data-scroll-target="#instrument-medication">Instrument: medication</a></li>
+  <li><a href="#instrument-eq5d3l_items" id="toc-instrument-eq5d3l_items" class="nav-link" data-scroll-target="#instrument-eq5d3l_items">Instrument: eq5d3l_items</a></li>
+  <li><a href="#instrument-paid_items" id="toc-instrument-paid_items" class="nav-link" data-scroll-target="#instrument-paid_items">Instrument: paid_items</a></li>
+  <li><a href="#instrument-ipaq_sf" id="toc-instrument-ipaq_sf" class="nav-link" data-scroll-target="#instrument-ipaq_sf">Instrument: ipaq_sf</a></li>
+  <li><a href="#instrument-health_economics" id="toc-instrument-health_economics" class="nav-link" data-scroll-target="#instrument-health_economics">Instrument: health_economics</a></li>
+  <li><a href="#instrument-prebaseline_registry-repeating" id="toc-instrument-prebaseline_registry-repeating" class="nav-link" data-scroll-target="#instrument-prebaseline_registry-repeating">Instrument: prebaseline_registry (REPEATING)</a></li>
+  <li><a href="#appendices.-variables-uses.-derived-variables." id="toc-appendices.-variables-uses.-derived-variables." class="nav-link" data-scroll-target="#appendices.-variables-uses.-derived-variables.">Appendices. Variables Uses. Derived Variables.</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="data-dictionary.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../our-work/tmr/index.html">Total Meal Replacement</a></li><li class="breadcrumb-item"><a href="../../../our-work/tmr/protocol.html">Ops Manual</a></li><li class="breadcrumb-item"><a href="../../../our-work/tmr/data/sap.html">Data</a></li><li class="breadcrumb-item"><a href="../../../our-work/tmr/data/data-dictionary.html">Data Dictionary</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">TMR Data Dictionary</h1>
+<p class="subtitle lead">Guidance for Data Handling Staff</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ian Hambleton </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">13 Jan 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="data-collection-schedule-summary" class="level2">
+<h2 class="anchored" data-anchor-id="data-collection-schedule-summary">Data Collection Schedule Summary</h2>
+<section id="longitudinal-timepoints" class="level4">
+<h4 class="anchored" data-anchor-id="longitudinal-timepoints">Longitudinal Timepoints</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phases</th>
+<th>Event label</th>
+<th>Approx weeks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Phase 1:</strong> Screening</td>
+<td>screening</td>
+<td>-1</td>
+</tr>
+<tr class="even">
+<td><strong>Phase 1:</strong> Pre-baseline</td>
+<td>prebaseline</td>
+<td>-∞ to 0</td>
+</tr>
+<tr class="odd">
+<td><strong>Phase 1:</strong> Baseline</td>
+<td>baseline</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td><strong>Phase 2:</strong> TMR phase</td>
+<td>wk00–wk12</td>
+<td>1–12 (visit every 2 weeks)</td>
+</tr>
+<tr class="odd">
+<td><strong>Phase 3:</strong> Food reintroduction</td>
+<td>wk13–wk19</td>
+<td>13–19 (visit every 2 weeks)</td>
+</tr>
+<tr class="even">
+<td><strong>Phase 4:</strong> Weight maintenance (Year 1)</td>
+<td>wk23–wk52</td>
+<td>23–52 (every 8 weeks)</td>
+</tr>
+<tr class="odd">
+<td><strong>Phase 4:</strong> Weight maintenance (Year 2)</td>
+<td>wk56–wk104</td>
+<td>56–104 (every 8 weeks)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="participant-visits-longitudinal-events" class="level4">
+<h4 class="anchored" data-anchor-id="participant-visits-longitudinal-events">Participant Visits / Longitudinal Events</h4>
+<p>The differing visit schedules of cases and controls means that we will probably work with two database arms</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 33%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phases</th>
+<th>Participant Visit / REDCap Event (Cases)</th>
+<th>Participant Visit / REDCap Event (Controls)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Phase 1:</strong></td>
+<td>pre-baseline, screening, baseline (wk00)</td>
+<td>pre-baseline, screening, baseline</td>
+</tr>
+<tr class="even">
+<td><strong>Phase 2:</strong> (TMR)</td>
+<td>wk02, wk04, wk06, wk08, wk10, wk12</td>
+<td>–</td>
+</tr>
+<tr class="odd">
+<td><strong>Phase 3:</strong> (Reintroduce Food)</td>
+<td>wk14, wk16, wk18, wk20</td>
+<td>–</td>
+</tr>
+<tr class="even">
+<td><strong>Phase 4:</strong> (Maintain Weight, Year 1)</td>
+<td>wk24, wk28, wk36, wk44, wk52 (<strong>1yr</strong>)</td>
+<td>wk28 <strong>(6m)</strong>, wk52 <strong>(1 yr)</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Phase 4:</strong> (Maintain Weight, Year 2)</td>
+<td>wk65, wk78, wk91, wk104 (<strong>2 yr</strong>)</td>
+<td>wk78 <strong>(18m)</strong>, wk104 <strong>(2 yr)</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="data-collection-instrument-summary" class="level2">
+<h2 class="anchored" data-anchor-id="data-collection-instrument-summary">Data Collection Instrument Summary</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 10%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Instrument</th>
+<th>Repeating</th>
+<th>Assigned events (Cases)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>eligibility_screening</td>
+<td>No</td>
+<td>Screening <em>(This will be maintained in the Diabetes Registry)</em></td>
+</tr>
+<tr class="even">
+<td>participant_admin</td>
+<td>No</td>
+<td>Baseline only</td>
+</tr>
+<tr class="odd">
+<td>weight</td>
+<td>No</td>
+<td>Baseline, every follow-up visit</td>
+</tr>
+<tr class="even">
+<td>anthropometry</td>
+<td>No</td>
+<td>baseline, wk12, wk20, wk36, wk52, wk78, wk104</td>
+</tr>
+<tr class="odd">
+<td>blood_pressure</td>
+<td>No</td>
+<td>baseline, every follow-up visit</td>
+</tr>
+<tr class="even">
+<td>glucose_monitor</td>
+<td>No</td>
+<td>baseline, every follow-up visit</td>
+</tr>
+<tr class="odd">
+<td>hba1c</td>
+<td>No</td>
+<td>baseline, wk12, wk20, wk27, wk36, wk52, wk78, wk104</td>
+</tr>
+<tr class="even">
+<td>liver_labs</td>
+<td>No</td>
+<td>baseline, wk12, wk52, wk104</td>
+</tr>
+<tr class="odd">
+<td>==fibroscan==</td>
+<td>==No==</td>
+<td>==baseline, wk12, wk52, wk104==</td>
+</tr>
+<tr class="even">
+<td>medication</td>
+<td>No</td>
+<td>baseline, every follow-up visit</td>
+</tr>
+<tr class="odd">
+<td>eq5d3l_items</td>
+<td>No</td>
+<td>baseline, wk12, wk52, wk104</td>
+</tr>
+<tr class="even">
+<td>paid_items</td>
+<td>No</td>
+<td>baseline, wk12, wk52, wk104</td>
+</tr>
+<tr class="odd">
+<td>ipaq_sf</td>
+<td>No</td>
+<td>baseline, wk12, wk52, wk104</td>
+</tr>
+<tr class="even">
+<td>health_economics</td>
+<td>No</td>
+<td>baseline, wk52, wk104</td>
+</tr>
+<tr class="odd">
+<td>prebaseline_registry</td>
+<td><strong>Yes</strong></td>
+<td>prebaseline <em>(This will be extracted directly from the Diabetes Registry)</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-recruitment-screening" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-recruitment-screening">Instrument: Recruitment &amp; Screening</h2>
+<ol type="1">
+<li>For each new diabetes intervention, we create a new registry instrument. The logic is mainly to have a registry record of the number of intervention involvements for each individual - for some protection against over-studying</li>
+<li>This will not be possible for TMR - as the registry needs further updating before it can be populated with additional data.</li>
+<li><strong>This means - for TMR - recruitment &amp; screening will occur in the main REDCap TMR database.</strong> The suggested TMR eligibility instrument for the registry is tabulated below.</li>
+<li>The TMR eligibility criteria are:
+<ul>
+<li>Age 65 years or younger</li>
+<li>Duration of diabetes 6 years or less</li>
+<li>1 or more visits in past 12 months</li>
+<li>IF (and only IF) we don’t recruit enough participants (50 cases, 50 controls in both locations combined), we will consider diabetes duration 10-years or less.</li>
+<li>BMI of 25 or greater</li>
+</ul></li>
+<li><strong>Screening Part 1.</strong> Using data from the diabetes registry, auto populate the TMR database screening form (Ascension = manual entry):
+<ul>
+<li>Date of Birth</li>
+<li>Date of Diabetes Diagnosis</li>
+<li>Date of Last Clinic Visit</li>
+</ul></li>
+<li>Auto-Calculate:
+<ul>
+<li>Age</li>
+<li>Duration of Diabetes</li>
+<li>Time since last visit</li>
+</ul></li>
+<li>Flag Eligible / Non-Eligible</li>
+<li>Eligible participants are randomly reordered, then pushed to a REDCap “potentially eligible” report for use by the <em>community health workers</em>.</li>
+</ol>
+<p><strong>Eligibility Screening Part 1.</strong> Draw registry data into new registry instrument. Calculate derived variables.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 46%">
+<col style="width: 10%">
+<col style="width: 24%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Coding</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>dob_registry</td>
+<td><strong>(auto-populate)</strong> Date of birth</td>
+<td>YYYY-MM-DD</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>dodiag_registry</td>
+<td><strong>(auto-populate)</strong> Date of diabetes diagnosis</td>
+<td>YYYY-MM-DD</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>dolv_registry</td>
+<td><strong>(auto-populate)</strong> Date of last clinic visit</td>
+<td>YYYY-MM-DD</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>ddur_registry</td>
+<td><strong><em>(derived)</em></strong> Duration of diabetes</td>
+<td>text (decimal)</td>
+<td>Present as <br>Years and Weeks</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>diab6_registry</td>
+<td><strong><em>(derived)</em></strong> Has the potential participant been diagnosed for 6 years or less</td>
+<td>yesno</td>
+<td>0/1</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>diab10_registry</td>
+<td><strong><em>(derived)</em></strong> Has the potential participant been diagnosed for 10 years or less</td>
+<td>yesno</td>
+<td>0/1</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>visit12_registry</td>
+<td><strong><em>(derived)</em></strong> 1 or more visits in the past year</td>
+<td>text (decimal)</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>tmr_eligible1</td>
+<td><strong><em>(auto-calculated)</em></strong> Is participant eligible so far for TMR pilot?</td>
+<td>yesno</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Eligibility Process Part 2.</strong> If eligible from <em>Screening Part 1</em>, create report / list of these eligible participants, along with their eligible values. This list will be held in the TMR database, randomly reordered. It will be used by the <em>community health workers</em> when contacting potential participants for interest, and if interested to attend an in-person screening visit.</p>
+<p>The Table below documents the additional variables collected at this in-person screening visit.</p>
+<p>If the participant is still eligible after Part 2, they should be asked if they are interested in hearing more about the pilot, or interested in taking part.</p>
+<ul>
+<li>If they are interested - schedule a baseline visit</li>
+<li>If they are not interested - ask about using their registry data in the control group.</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 45%">
+<col style="width: 10%">
+<col style="width: 24%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Coding</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>dob_screen</td>
+<td>Confirm date of birth</td>
+<td>YYYY-MM-DD</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>dov_screen</td>
+<td>Date of screening visit</td>
+<td>YYYY-MM-DD</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>ddur_screen</td>
+<td><strong><em>(derived)</em></strong> Calculate duration of diabetes</td>
+<td>text (decimal)</td>
+<td>Present as <br>Years and Weeks</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>diab6_screen</td>
+<td><strong><em>(derived)</em></strong> Has the potential participant been diagnosed for 6 years or less</td>
+<td>yesno</td>
+<td>0/1</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>diab10_screen</td>
+<td><strong><em>(derived)</em></strong> Has the potential participant been diagnosed for 10 years or less</td>
+<td>yesno</td>
+<td>0/1</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>visit12_screen</td>
+<td><strong><em>(derived)</em></strong> 1 or more visits in the past year</td>
+<td>text (decimal)</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>height_screen</td>
+<td>Height</td>
+<td>text (decimal)</td>
+<td>cm</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>weight_screen</td>
+<td>Weight</td>
+<td>text (decimal)</td>
+<td>kg</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>bmi_screen</td>
+<td><strong><em>(derived)</em></strong> Body Mass Index</td>
+<td>text (decimal)</td>
+<td>kg/m2</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>tmr_eligible2</td>
+<td><strong><em>(auto-calculated)</em></strong> Is participant eligible for TMR pilot?</td>
+<td>yesno</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>interested_screen</td>
+<td>Are you interested in taking part in the TMR pilot?</td>
+<td>yesno</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>visit_scheduled</td>
+<td>If Yes to taking part, has a baseline visit been scheduled?</td>
+<td>yesno</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>control</td>
+<td>If No to taking part, might we use their registry data in the control group?</td>
+<td>yesno</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>fu6m</td>
+<td>If Yes to being a control, are they happy to visit for 1 baseline visit, then every 6 months for diabetes support?</td>
+<td>yesno</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+<p><span class="highlight">NOTE 1 (13-Jan-2026): As part of this screening process, there will now be some screening questions exploring eating habits. These are to be finalised.</span></p>
+<p><span class="highlight">NOTE 2 (13-Jan-2026): From here, instruments are post-screening, meaning that they are collected only if participants have agreed to join the study</span></p>
+</section>
+<section id="instrument-participant_admin" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-participant_admin">Instrument: participant_admin</h2>
+<p>Collects core administrative identifiers and group allocation information required for participant linkage, stratification, and governance.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Coding</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pid</td>
+<td>Participant study ID</td>
+<td>text</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>site</td>
+<td>Study site</td>
+<td>radio</td>
+<td>1=St Helena; 2=Ascension</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>group</td>
+<td>Study group <strong>(defined by study arms)</strong></td>
+<td>radio</td>
+<td>1=Intervention (TMR); 2=Control</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>registry_id2</td>
+<td>Diabetes Registry ID</td>
+<td>text</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>dob</td>
+<td>Date of birth</td>
+<td>date</td>
+<td>YYYY-MM-DD</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>sex</td>
+<td>Participant sex</td>
+<td>radio</td>
+<td>1=female<br>2=male</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>fname</td>
+<td>First name</td>
+<td>text</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>lname</td>
+<td>Last name</td>
+<td>text</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>phone</td>
+<td>Phone number</td>
+<td>text</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>email</td>
+<td>Email address</td>
+<td>text</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>consent_date</td>
+<td>Date informed consent obtained</td>
+<td>date</td>
+<td>YYYY-MM-DD</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-weight" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-weight">Instrument: weight</h2>
+<p>Records repeated measurements of body weight over time to quantify weight change / trajectories.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Units</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>visit_date</td>
+<td>Date of measurement</td>
+<td>date</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>weight</td>
+<td>Weight</td>
+<td>text (decimal)</td>
+<td>kg</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-anthropometry" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-anthropometry">Instrument: anthropometry</h2>
+<p>Records repeated measurements of body circumferences over time to quantify body composition trajectories.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Units</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>visit_date</td>
+<td>Date of measurement</td>
+<td>date</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>waist</td>
+<td>Waist circumference</td>
+<td>text (decimal)</td>
+<td>cm</td>
+<td>N</td>
+</tr>
+<tr class="odd">
+<td>hip</td>
+<td>Hip circumference</td>
+<td>text (decimal)</td>
+<td>cm</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-blood_pressure" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-blood_pressure">Instrument: blood_pressure</h2>
+<p>Captures systolic and diastolic blood pressure measurements over follow-up to assess secondary cardiometabolic outcomes.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Units</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>visit_date</td>
+<td>Date of measurement</td>
+<td>date</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>sbp</td>
+<td>Systolic blood pressure</td>
+<td>integer</td>
+<td>mmHg</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>dbp</td>
+<td>Diastolic blood pressure</td>
+<td>integer</td>
+<td>mmHg</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-glucose_monitor" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-glucose_monitor">Instrument: glucose_monitor</h2>
+<p>Records glucose monitor readings over time to assess glycaemic control, remission, and relapse. These non-fasting values are primarily for clinical monitoring.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 39%">
+<col style="width: 22%">
+<col style="width: 9%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Units</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>visit_date</td>
+<td>Date of measurement</td>
+<td>date</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>glucose</td>
+<td>Blood glucose measurement</td>
+<td>text (decimal)</td>
+<td>mmol/L</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-hba1c" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-hba1c">Instrument: hba1c</h2>
+<p>Records HbA1c measurements over time to assess glycaemic control, remission, and relapse.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Units</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>visit_date</td>
+<td>Date of measurement</td>
+<td>date</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>hba1c</td>
+<td>HbA1c</td>
+<td>text (decimal)</td>
+<td>mmol/mol</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-liver_labs" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-liver_labs">Instrument: liver_labs</h2>
+<p>Records HbA1c measurements over time to assess glycaemic control, remission, and relapse.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 42%">
+<col style="width: 18%">
+<col style="width: 8%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Units</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>visit_date</td>
+<td>Date of measurement</td>
+<td>date</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>alt</td>
+<td>Alanine aminotransferase (ALT)</td>
+<td>text (decimal)</td>
+<td>U/L</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>ast</td>
+<td>Aspartate aminotransferase (AST)</td>
+<td>text (decimal)</td>
+<td>U/L</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>alp</td>
+<td>Alkaline phosphatase (ALP)</td>
+<td>text (decimal)</td>
+<td>U/L</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>ggt</td>
+<td>Gamma-glutamyl transferase (GGT)</td>
+<td>text (decimal)</td>
+<td>U/L</td>
+<td>N</td>
+</tr>
+<tr class="even">
+<td>bilirubin_total</td>
+<td>Total bilirubin</td>
+<td>text (decimal)</td>
+<td>µmol/L</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>albumin</td>
+<td>Albumin</td>
+<td>text (decimal)</td>
+<td>g/L</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>protein_total</td>
+<td>Total protein</td>
+<td>text (decimal)</td>
+<td>g/L</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-fibroscan" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-fibroscan">Instrument: fibroscan</h2>
+<p>Records liver disease variables using the Echosens fibroscanner. <span class="highlight">Variables to be finalised</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 37%">
+<col style="width: 10%">
+<col style="width: 24%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Coding / Units</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>fibroscan_date</td>
+<td>Date of FibroScan assessment</td>
+<td>date</td>
+<td>dd/mm/yyyy</td>
+<td>y</td>
+</tr>
+<tr class="even">
+<td>lsm_kpa</td>
+<td>Liver stiffness measurement</td>
+<td>numeric</td>
+<td>kilopascals (kPa)</td>
+<td>y</td>
+</tr>
+<tr class="odd">
+<td>cap_dbm</td>
+<td>Controlled attenuation parameter</td>
+<td>numeric</td>
+<td>decibels per metre (dB/m)</td>
+<td>y</td>
+</tr>
+<tr class="even">
+<td>fibrosis_stage</td>
+<td>Derived liver fibrosis stage</td>
+<td>categorical</td>
+<td>F0, F1, F2, F3, F4</td>
+<td>n</td>
+</tr>
+<tr class="odd">
+<td>steatosis_grade</td>
+<td>Derived liver steatosis grade</td>
+<td>categorical</td>
+<td>S0, S1, S2, S3</td>
+<td>n</td>
+</tr>
+<tr class="even">
+<td>lsm_iqr</td>
+<td>Interquartile range of liver stiffness</td>
+<td>numeric</td>
+<td>kilopascals (kPa)</td>
+<td>n</td>
+</tr>
+<tr class="odd">
+<td>lsm_iqr_median_pct</td>
+<td>IQR-to-median ratio for liver stiffness</td>
+<td>numeric</td>
+<td>percentage (%)</td>
+<td>n</td>
+</tr>
+<tr class="even">
+<td>probe_type</td>
+<td>FibroScan probe type used</td>
+<td>categorical</td>
+<td>M, XL</td>
+<td>y</td>
+</tr>
+<tr class="odd">
+<td>valid_measurements_n</td>
+<td>Number of valid FibroScan measurements</td>
+<td>integer</td>
+<td>count</td>
+<td>n</td>
+</tr>
+<tr class="even">
+<td>success_rate_pct</td>
+<td>FibroScan measurement success rate</td>
+<td>numeric</td>
+<td>percentage (%)</td>
+<td>n</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-medication" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-medication">Instrument: medication</h2>
+<p>Captures high-level information on insulin use, insulin dose, and overall glucose-lowering medication burden over time.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Coding / Units</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>visit_date</td>
+<td>Date of measurement</td>
+<td>date</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>diabetes_meds</td>
+<td>Are you on diabetes medication</td>
+<td>1=monotherapy oral<br>2=monotherapy injectable<br>3=combination</td>
+<td>1-3</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>hypertension_meds</td>
+<td>Are you on hypertension medication</td>
+<td>yesno</td>
+<td>0/1</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-eq5d3l_items" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-eq5d3l_items">Instrument: eq5d3l_items</h2>
+<p>Collects EQ-5D-3L health-related quality of life responses to assess changes in generic health status over time.</p>
+<p><span class="highlight">Go to EuroQol website. REDCap instrument available - must complete registration form</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Coding</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>eq_mob</td>
+<td>Mobility</td>
+<td>radio</td>
+<td>1–3</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>eq_sc</td>
+<td>Self-care</td>
+<td>radio</td>
+<td>1–3</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>eq_ua</td>
+<td>Usual activities</td>
+<td>radio</td>
+<td>1–3</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>eq_pd</td>
+<td>Pain / discomfort</td>
+<td>radio</td>
+<td>1–3</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>eq_ad</td>
+<td>Anxiety / depression</td>
+<td>radio</td>
+<td>1–3</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>eq_vas</td>
+<td>We would like to know how good or bad your health is TODAY</td>
+<td>integer</td>
+<td>0–100</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-paid_items" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-paid_items">Instrument: paid_items</h2>
+<p><strong>Problem Areas in Diabetes (PAID) scale</strong>. Collects PAID questionnaire items to quantify diabetes-related emotional distress longitudinally.</p>
+<p><strong>Instructions:</strong> Which of the following diabetes issues are currently a problem for you? Tick the box that gives the best answer for you. Please provide an answer for each question</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Coding</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>paid01</td>
+<td>Not having clear and concrete goals for your diabetes care?</td>
+<td>radio</td>
+<td>Not a problem (0), Minor problem (1), Moderate problem (2), Somewhat serious problem (3), Serious problem (4)</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>paid02</td>
+<td>Feeling discouraged with your diabetes treatment plan?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>paid03</td>
+<td>Feeling scared when you think about living with diabetes?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>paid04</td>
+<td>Uncomfortable social situations related to your diabetes care (e.g.&nbsp;people telling you what to eat)?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>paid05</td>
+<td>Feelings of deprivation regarding food and meals?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>paid06</td>
+<td>Feeling depressed when you think about living with diabetes?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>paid07</td>
+<td>Not knowing if your mood or feelings are related to your diabetes?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>paid08</td>
+<td>Feeling overwhelmed by your diabetes?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>paid09</td>
+<td>Worrying about low blood glucose reactions?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>paid10</td>
+<td>Feeling angry when you think about living with diabetes?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>paid11</td>
+<td>Feeling constantly concerned about food and eating?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>paid12</td>
+<td>Worrying about the future and the possibility of serious complications?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>paid13</td>
+<td>Feelings of guilt or anxiety when you get off track with your diabetes management?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>paid14</td>
+<td>Not ‘accepting’ your diabetes?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>paid15</td>
+<td>Feeling unsatisfied with your diabetes physician?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>paid16</td>
+<td>Feeling that diabetes is taking up too much of your mental and physical energy every day?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>paid17</td>
+<td>Feeling alone with your diabetes?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>paid18</td>
+<td>Feeling that your friends and family are not supportive of your diabetes management efforts?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>paid19</td>
+<td>Coping with complications of diabetes?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>paid20</td>
+<td>Feeling ‘burned out’ by the constant effort needed to manage diabetes?</td>
+<td>radio</td>
+<td>0–4</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-ipaq_sf" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-ipaq_sf">Instrument: ipaq_sf</h2>
+<p>Collects the IPAQ short form to quantify physical activity and sedentary behaviour across study follow-up.</p>
+<p><strong>Note.</strong> For use with young and middle aged adults.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Units</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ipaq_walk_days</td>
+<td>Walking days (last 7 days)</td>
+<td>integer</td>
+<td>days/week</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>ipaq_walk_mins</td>
+<td>Walking minutes per day</td>
+<td>integer</td>
+<td>min/day</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>ipaq_mod_days</td>
+<td>Moderate activity days</td>
+<td>integer</td>
+<td>days/week</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>ipaq_mod_mins</td>
+<td>Moderate activity minutes</td>
+<td>integer</td>
+<td>min/day</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>ipaq_vig_days</td>
+<td>Vigorous activity days</td>
+<td>integer</td>
+<td>days/week</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>ipaq_vig_mins</td>
+<td>Vigorous activity minutes</td>
+<td>integer</td>
+<td>min/day</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>ipaq_sit_mins</td>
+<td>Sitting time per weekday</td>
+<td>integer</td>
+<td>min/day</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-health_economics" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-health_economics">Instrument: health_economics</h2>
+<p>Captures programme product supply and medication cost inputs to support a pragmatic assessment of drug-related cost savings.</p>
+<p><span class="highlight">Confirm / Improve this variable set with Chief Economist</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 51%">
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Units</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>he_currency</td>
+<td>Currency used for costing</td>
+<td>radio</td>
+<td>GBP / USD / Other</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>he_insulin_supplied</td>
+<td>Number of weeks of insulin issued since the previous study visit</td>
+<td>integer</td>
+<td>weeks</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>he_metformin_supplied</td>
+<td>Number of weeks of metformin issued since the previous study visit</td>
+<td>integer</td>
+<td>weeks</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>he_antihyp_supplied</td>
+<td>Number of weeks of antihypertensive issued since the previous study visit</td>
+<td>integer</td>
+<td>weeks</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>he_notes</td>
+<td>Costing notes (e.g.&nbsp;supply interruptions or special circumstances)</td>
+<td>notes</td>
+<td>–</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instrument-prebaseline_registry-repeating" class="level2">
+<h2 class="anchored" data-anchor-id="instrument-prebaseline_registry-repeating">Instrument: prebaseline_registry (REPEATING)</h2>
+<blockquote class="blockquote">
+<p><strong>Pre-baseline measurements maintained <u>IN THE REGISTRY DATABASE</u> </strong></p>
+</blockquote>
+<p>I’m suggesting that this information is NOT stored as a separate instrument. We extract directly from the Registry Database using an API script</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Label</th>
+<th>Field type</th>
+<th>Units</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pre_date</td>
+<td>Date of registry measurement</td>
+<td>date</td>
+<td>–</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td>pre_weight</td>
+<td>Historical weight</td>
+<td>text (decimal)</td>
+<td>kg</td>
+<td>N</td>
+</tr>
+<tr class="odd">
+<td>pre_hba1c</td>
+<td>Historical HbA1c</td>
+<td>text (decimal)</td>
+<td>mmol/mol</td>
+<td>N</td>
+</tr>
+<tr class="even">
+<td>pre_sbp</td>
+<td>Historical systolic BP</td>
+<td>integer</td>
+<td>mmHg</td>
+<td>N</td>
+</tr>
+<tr class="odd">
+<td>pre_dbp</td>
+<td>Historical diastolic BP</td>
+<td>integer</td>
+<td>mmHg</td>
+<td>N</td>
+</tr>
+<tr class="even">
+<td>pre_diabetes_meds</td>
+<td>Diabetes medication use at the time</td>
+<td>1=monotherapy oral<br>2=monotherapy injectable<br>3=combination</td>
+<td>1-3</td>
+<td>Y</td>
+</tr>
+<tr class="odd">
+<td>pre-hypertensives</td>
+<td>antihypertensive use at that time</td>
+<td>yesno</td>
+<td>0/1</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="appendices.-variables-uses.-derived-variables." class="level2">
+<h2 class="anchored" data-anchor-id="appendices.-variables-uses.-derived-variables.">Appendices. Variables Uses. Derived Variables.</h2>
+<section id="appendix-variable-collection-timing-and-analytical-use" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-variable-collection-timing-and-analytical-use">Appendix: Variable Collection Timing and Analytical Use</h3>
+<p>This appendix provides a <strong>variable-by-variable enactment of the Statistical Analysis Plan (SAP)</strong>.<br>
+For each variable, it documents: - when it is collected, - its analytical role, - model families in which it is used, - and its contribution to tables, figures, and narratives.</p>
+<p>Unless explicitly stated, all derived variables are calculated <strong>outside REDCap</strong> in analysis code.</p>
+<section id="appendix-a-participant_admin" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-a-participant_admin">Appendix A: participant_admin</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 22%">
+<col style="width: 64%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pid</td>
+<td>Baseline</td>
+<td>Unique identifier for data management, dataset linkage, and longitudinal modelling; never analysed</td>
+</tr>
+<tr class="even">
+<td>site</td>
+<td>Baseline</td>
+<td>Fixed-effect covariate and stratification variable; appears in baseline descriptive tables and sensitivity analyses</td>
+</tr>
+<tr class="odd">
+<td>group</td>
+<td>Baseline</td>
+<td>Primary exposure indicator (TMR vs control); used in matched cohort analyses, difference-in-differences (DiD) models, and all outcome tables</td>
+</tr>
+<tr class="even">
+<td>registry_id2</td>
+<td>Baseline</td>
+<td>Linkage to diabetes registry and construction of pragmatic control cohort; not analysed</td>
+</tr>
+<tr class="odd">
+<td>dob</td>
+<td>Baseline</td>
+<td>Used to derive age; age enters propensity score models, regression covariate sets, and baseline tables</td>
+</tr>
+<tr class="even">
+<td>consent_date</td>
+<td>Baseline</td>
+<td>Governance and audit only</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="appendix-b-baseline_eligibility" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-b-baseline_eligibility">Appendix B: baseline_eligibility</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 21%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>elig_reviewed</td>
+<td>Baseline</td>
+<td>Governance only</td>
+</tr>
+<tr class="even">
+<td>elig_t2d</td>
+<td>Baseline</td>
+<td>Defines analytic population (type 2 diabetes)</td>
+</tr>
+<tr class="odd">
+<td>elig_insulin_exclusion</td>
+<td>Baseline</td>
+<td>Stratifier for insulin vs non-insulin subgroup analyses</td>
+</tr>
+<tr class="even">
+<td>elig_notes</td>
+<td>Baseline</td>
+<td>Audit / quality assurance only</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="appendix-c-baseline_anthropometry" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-c-baseline_anthropometry">Appendix C: baseline_anthropometry</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 23%">
+<col style="width: 67%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>height</td>
+<td>Baseline</td>
+<td>Used to derive BMI at all timepoints; baseline covariate in descriptive tables</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="appendix-d-anthropometry" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-d-anthropometry">Appendix D: anthropometry</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 29%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>visit_date</td>
+<td>All visits</td>
+<td>Defines time scale for longitudinal and DiD models</td>
+</tr>
+<tr class="even">
+<td>weight</td>
+<td>Baseline; all follow-ups</td>
+<td><strong>Primary continuous outcome</strong>; analysed using linear mixed-effects models and DiD regression; binary transformation used for ≥15 kg weight-loss endpoint; contributes to all primary outcome tables and trajectory figures</td>
+</tr>
+<tr class="odd">
+<td>waist</td>
+<td>Baseline; selected follow-ups</td>
+<td>Secondary adiposity outcome; descriptive statistics and exploratory linear models</td>
+</tr>
+<tr class="even">
+<td>hip</td>
+<td>Baseline; annual</td>
+<td>Used to derive waist-hip ratio; descriptive cardiometabolic profiling</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="appendix-e-blood_pressure" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-e-blood_pressure">Appendix E: blood_pressure</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 26%">
+<col style="width: 65%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>sbp</td>
+<td>Baseline; all follow-ups</td>
+<td>Secondary outcome; analysed using linear mixed-effects models; appears in metabolic outcome tables</td>
+</tr>
+<tr class="even">
+<td>dbp</td>
+<td>Baseline; all follow-ups</td>
+<td>Secondary outcome; analysed using linear mixed-effects models</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="appendix-f-glycaemia_labs" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-f-glycaemia_labs">Appendix F: glycaemia_labs</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 33%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>hba1c</td>
+<td>Pre-baseline; baseline; follow-ups</td>
+<td><strong>Primary glycaemic outcome</strong>; analysed as a continuous outcome in linear mixed-effects and DiD models; dichotomised for remission (&lt;48 mmol/mol) and tighter control (&lt;42 mmol/mol); used to define relapse; appears in all primary and secondary outcome tables</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="appendix-g-liver_labs" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-g-liver_labs">Appendix G: liver_labs</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 24%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>alt</td>
+<td>Baseline; wk12; 12m; 24m</td>
+<td>Secondary metabolic outcome; analysed descriptively and using exploratory linear mixed-effects models</td>
+</tr>
+<tr class="even">
+<td>ast</td>
+<td>Baseline; wk12; 12m; 24m</td>
+<td>Interpreted alongside ALT; supports exploratory AST:ALT ratio analyses</td>
+</tr>
+<tr class="odd">
+<td>alp</td>
+<td>Baseline; follow-ups</td>
+<td>Descriptive liver function context</td>
+</tr>
+<tr class="even">
+<td>ggt</td>
+<td>Baseline; follow-ups</td>
+<td>Exploratory marker of hepatic and metabolic stress</td>
+</tr>
+<tr class="odd">
+<td>bilirubin_total</td>
+<td>Baseline; follow-ups</td>
+<td>Safety and liver function descriptor</td>
+</tr>
+<tr class="even">
+<td>albumin</td>
+<td>Baseline; follow-ups</td>
+<td>Liver synthetic function; safety descriptor</td>
+</tr>
+<tr class="odd">
+<td>protein_total</td>
+<td>Baseline; follow-ups</td>
+<td>Descriptive only</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Liver panel analytical notes:</strong> 1. Analyses are <strong>secondary and exploratory</strong>, intended to describe metabolic improvement rather than confirm liver disease outcomes.<br>
+2. ALT is treated as the primary liver enzyme of interest, reflecting hepatic fat reduction and insulin sensitivity.<br>
+3. AST:ALT ratio may be derived descriptively to aid interpretation but is not a formal endpoint.<br>
+4. No diagnostic claims regarding NAFLD/NASH are made; interpretation is contextual and supportive.</p>
+</section>
+<section id="appendix-h-medication_use-medication_detail" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-h-medication_use-medication_detail">Appendix H: medication_use / medication_detail</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 31%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>insulin_use</td>
+<td>Pre-baseline; baseline; follow-ups</td>
+<td>Binary outcome; stratifier; component of remission definition; logistic and DiD analyses</td>
+</tr>
+<tr class="even">
+<td>insulin_dose</td>
+<td>Pre-baseline; baseline; follow-ups</td>
+<td>Continuous outcome; analysed descriptively and via linear models; input to economic analyses</td>
+</tr>
+<tr class="odd">
+<td>metformin_use</td>
+<td>Pre-baseline; baseline; follow-ups</td>
+<td>Binary covariate; remission definition; drug cost modelling</td>
+</tr>
+<tr class="even">
+<td>metformin_dose</td>
+<td>Baseline; follow-ups</td>
+<td>Dose reduction metric; economic analysis input</td>
+</tr>
+<tr class="odd">
+<td>other_glu_use</td>
+<td>Pre-baseline; baseline; follow-ups</td>
+<td>Medication burden indicator; remission definition</td>
+</tr>
+<tr class="even">
+<td>antihyp_use</td>
+<td>Pre-baseline; baseline; follow-ups</td>
+<td>Secondary outcome and covariate in BP models</td>
+</tr>
+<tr class="odd">
+<td>lipid_use</td>
+<td>Pre-baseline; baseline; follow-ups</td>
+<td>Contextual cardiovascular prevention covariate</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Medication analytical notes:</strong> - REDCap captures <strong>summary medication status</strong> sufficient for primary analyses.<br>
+- Where greater detail is required (e.g.&nbsp;specific agents, dose changes, dates), these may be extracted from <strong>clinic notes or the EMR</strong> and linked at analysis stage.<br>
+- REDCap is not treated as the authoritative medication prescribing system.</p>
+</section>
+<section id="appendix-i-eq5d3l_items-euroqol" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-i-eq5d3l_items-euroqol">Appendix I: eq5d3l_items (EuroQol)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 25%">
+<col style="width: 62%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>eq_mob–eq_ad</td>
+<td>Baseline; wk12; 12m; 24m</td>
+<td>Ordinal health-related quality-of-life domains; descriptive distributions and transition matrices; sensitivity ordinal models</td>
+</tr>
+<tr class="even">
+<td>eq_vas</td>
+<td>Baseline; wk12; 12m; 24m</td>
+<td>Continuous self-rated health outcome; analysed using linear mixed-effects models</td>
+</tr>
+</tbody>
+</table>
+<p><strong>EuroQol analytical notes:</strong> 1. EQ-5D-3L health states are converted to <strong>utility values</strong> using the <strong>UK value set (tariff)</strong>.<br>
+2. Utility scores are analysed as continuous outcomes to assess change over time and between groups.<br>
+3. Results are interpreted as <strong>health-related quality-of-life change</strong>, not preference-based cost-utility outcomes.<br>
+4. Utilities may be reported descriptively and used to contextualise clinical outcomes; formal QALY modelling is <strong>out of scope</strong>.</p>
+</section>
+<section id="appendix-j-paid_items" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-j-paid_items">Appendix J: paid_items</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 32%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>paid01–paid20</td>
+<td>Baseline; wk12; 12m; 24m</td>
+<td>Item-level checks; scale construction</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived (analysis only):</strong> - PAID total score (0–100): analysed using linear mixed-effects models<br>
+- PAID ≥40: binary high-distress outcome analysed using logistic or Poisson models<br>
+Appears in psychosocial outcome tables.</p>
+</section>
+<section id="appendix-k-ipaq_sf" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-k-ipaq_sf">Appendix K: ipaq_sf</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 26%">
+<col style="width: 65%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ipaq_*</td>
+<td>Baseline; wk12; 12m; 24m</td>
+<td>Used to derive MET-minutes/week; included as descriptive outcome and covariate in adjusted models</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="appendix-l-health_economics_type1" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-l-health_economics_type1">Appendix L: health_economics_type1</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>he_currency</td>
+<td>Baseline</td>
+<td>Costing metadata</td>
+</tr>
+<tr class="even">
+<td>he_tmr_weeks_supplied</td>
+<td>At each supply visit</td>
+<td>Interval-based programme exposure; multiplied by unit cost/week to estimate programme cost</td>
+</tr>
+<tr class="odd">
+<td>he_notes</td>
+<td>All</td>
+<td>Interpretation of costing anomalies</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Health-economic analytical notes:</strong> - Drug use and dose variables from REDCap are combined with <strong>unit prices held centrally</strong> to estimate medication costs.<br>
+- Where needed, detailed medication histories and quantities may be extracted from <strong>clinic notes or EMR systems</strong>.<br>
+- Analyses focus on <strong>budget impact and cost offsets</strong>, not full cost-effectiveness modelling.</p>
+</section>
+<section id="appendix-m-prebaseline_registry" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-m-prebaseline_registry">Appendix M: prebaseline_registry</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 25%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Collection timepoints</th>
+<th>Detailed analytical use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pre_date</td>
+<td>≥3 pre-baseline</td>
+<td>Time alignment; parallel-trends diagnostics</td>
+</tr>
+<tr class="even">
+<td>pre_weight</td>
+<td>≥3 pre-baseline</td>
+<td>DiD outcome; pre-intervention slope estimation</td>
+</tr>
+<tr class="odd">
+<td>pre_hba1c</td>
+<td>≥3 pre-baseline</td>
+<td>DiD outcome; pre-intervention slope estimation</td>
+</tr>
+<tr class="even">
+<td>pre_sbp</td>
+<td>≥3 pre-baseline</td>
+<td>Secondary DiD outcome</td>
+</tr>
+<tr class="odd">
+<td>pre_dbp</td>
+<td>≥3 pre-baseline</td>
+<td>Secondary DiD outcome</td>
+</tr>
+<tr class="even">
+<td>pre_metformin_use</td>
+<td>≥3 pre-baseline</td>
+<td>Medication stability assessment</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="appendix-n-derived-outcomes-analysis-only" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-n-derived-outcomes-analysis-only">Appendix N: Derived Outcomes (Analysis Only)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 45%">
+<col style="width: 16%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Outcome</th>
+<th>Exact calculation</th>
+<th>Model family</th>
+<th>SAP role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>≥15 kg weight loss</td>
+<td>Baseline weight − 12m weight ≥ 15 kg</td>
+<td>Log-binomial / Poisson</td>
+<td>Primary endpoint</td>
+</tr>
+<tr class="even">
+<td>Diabetes remission</td>
+<td>HbA1c &lt;48 mmol/mol <strong>and</strong> no glucose-lowering medication for ≥3 months</td>
+<td>Log-binomial / Poisson</td>
+<td>Primary endpoint</td>
+</tr>
+<tr class="odd">
+<td>Tight glycaemic control</td>
+<td>HbA1c &lt;42 mmol/mol</td>
+<td>Logistic / descriptive</td>
+<td>Secondary</td>
+</tr>
+<tr class="even">
+<td>HbA1c change</td>
+<td>HbA1c(time) − HbA1c(baseline)</td>
+<td>Linear mixed-effects</td>
+<td>Secondary</td>
+</tr>
+<tr class="odd">
+<td>Insulin cessation</td>
+<td>insulin_use = 0 at 12m</td>
+<td>Logistic</td>
+<td>Exploratory (insulin cohort)</td>
+</tr>
+<tr class="even">
+<td>Stepped improvement</td>
+<td>Ordered composite of HbA1c reduction and medication reduction</td>
+<td>Ordinal regression</td>
+<td>Exploratory</td>
+</tr>
+<tr class="odd">
+<td>Relapse</td>
+<td>HbA1c ≥48 mmol/mol after remission</td>
+<td>Descriptive</td>
+<td>Secondary</td>
+</tr>
+<tr class="even">
+<td>EQ-5D utility</td>
+<td>UK tariff applied to EQ-5D-3L health states</td>
+<td>Linear mixed-effects</td>
+<td>Secondary</td>
+</tr>
+<tr class="odd">
+<td>PAID high distress</td>
+<td>PAID total ≥40</td>
+<td>Logistic / Poisson</td>
+<td>Secondary</td>
+</tr>
+<tr class="even">
+<td>MET-minutes/week</td>
+<td>IPAQ scoring protocol</td>
+<td>Linear / descriptive</td>
+<td>Secondary</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="appendix-o-derived-variables" class="level4">
+<h4 class="anchored" data-anchor-id="appendix-o-derived-variables">Appendix O: Derived Variables</h4>
+</section>
+</section>
+<section id="appendix-p-definitions-derivation-rules-and-analytical-use" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-p-definitions-derivation-rules-and-analytical-use">Appendix P: Definitions, Derivation Rules, and Analytical Use</h3>
+<p>This appendix defines all derived variables required for analysis of the Saint Helena Total Meal Replacement (TMR) Diabetes Study. It is intended to be <strong>fully implementation-ready</strong>: an independent analyst should be able to recreate every derived variable exactly as specified and understand how and where each is used within the Statistical Analysis Plan (SAP).</p>
+<p>Unless otherwise stated, all derivations are performed in analysis code (e.g.&nbsp;Stata, R, Python) using cleaned, analysis-ready datasets.</p>
+</section>
+<section id="general-principles" class="level3">
+<h3 class="anchored" data-anchor-id="general-principles">General Principles</h3>
+<ul>
+<li>All dates are treated as calendar dates (ISO format recommended: YYYY-MM-DD).</li>
+<li>Durations are calculated in <strong>decimal years</strong> unless otherwise stated.</li>
+<li>Baseline is defined as the measurement closest to (and not after) the TMR start date.</li>
+<li>Follow-up windows align with the visit structure defined in the Data Dictionary and SAP.</li>
+<li>Binary variables are coded: 1 = Yes / achieved, 0 = No / not achieved.</li>
+</ul>
+<section id="p1.-demographic-and-eligibility-derivations" class="level4">
+<h4 class="anchored" data-anchor-id="p1.-demographic-and-eligibility-derivations">P1. Demographic and Eligibility Derivations</h4>
+<section id="p1.1-age-at-baseline-age_bl" class="level5">
+<h5 class="anchored" data-anchor-id="p1.1-age-at-baseline-age_bl">P1.1 Age at Baseline (<code>age_bl</code>)</h5>
+<p><em>Source variables</em> <code>dob</code>, <code>baseline_date</code></p>
+<p><em>Derivation</em> <span class="math display">\[
+\text{age\_bl} = \frac{\text{baseline\_date} - \text{dob}}{365.25}
+\]</span> <em>Format</em> Continuous, years (1 decimal place)</p>
+<p><em>Analytical use</em> Baseline description; propensity score models; adjusted analyses.</p>
+</section>
+<section id="p1.2-duration-of-diabetes-ddur_yrs" class="level5">
+<h5 class="anchored" data-anchor-id="p1.2-duration-of-diabetes-ddur_yrs">P1.2 Duration of Diabetes (<code>ddur_yrs</code>)</h5>
+<p><em>Source variables</em> <code>dodiag_registry</code>, <code>baseline_date</code></p>
+<p><em>Derivation</em> <span class="math display">\[
+\text{ddur\_yrs} = \frac{\text{baseline\_date} - \text{dodiag\_registry}}{365.25}
+\]</span> <em>Format</em> Continuous, years (2 decimal places)</p>
+<p><em>Analytical use</em> Eligibility documentation; covariate adjustment; subgroup analyses.</p>
+</section>
+<section id="p1.3-short-duration-diabetes-indicators" class="level5">
+<h5 class="anchored" data-anchor-id="p1.3-short-duration-diabetes-indicators">P1.3 Short-Duration Diabetes Indicators</h5>
+<ul>
+<li><code>diab_le6</code>: 1 if <code>ddur_yrs ≤ 6.0</code>, else 0</li>
+<li><code>diab_le10</code>: 1 if <code>ddur_yrs ≤ 10.0</code>, else 0</li>
+</ul>
+<p><em>Analytical use</em> Eligibility confirmation; sensitivity and subgroup analyses.</p>
+</section>
+</section>
+</section>
+<section id="p2.-anthropometric-derivations" class="level3">
+<h3 class="anchored" data-anchor-id="p2.-anthropometric-derivations">P2. Anthropometric Derivations</h3>
+<section id="p2.1-body-mass-index-bmi" class="level5">
+<h5 class="anchored" data-anchor-id="p2.1-body-mass-index-bmi">P2.1 Body Mass Index (<code>bmi</code>)</h5>
+<p><em>Source variables</em> <code>weight</code> (kg), <code>height</code> (cm)</p>
+<p><em>Derivation</em> <span class="math display">\[
+\text{bmi} = \frac{\text{weight}}{(\text{height}/100)^2}
+\]</span> <em>Format</em> Continuous, kg/m² (1 decimal place)</p>
+<p><em>Analytical use</em> Baseline description; covariate adjustment.</p>
+</section>
+<section id="p2.2-absolute-weight-change-wt_change_kg_t" class="level5">
+<h5 class="anchored" data-anchor-id="p2.2-absolute-weight-change-wt_change_kg_t">P2.2 Absolute Weight Change (<code>wt_change_kg_t</code>)</h5>
+<p><em>Derivation</em> <span class="math display">\[
+\text{wt\_change\_kg}_t = \text{weight}_t - \text{weight}_{bl}
+\]</span> Negative values indicate weight loss.</p>
+<p><em>Analytical use</em> Primary continuous outcome.</p>
+</section>
+<section id="p2.3-percentage-weight-change-wt_change_pct_t" class="level5">
+<h5 class="anchored" data-anchor-id="p2.3-percentage-weight-change-wt_change_pct_t">P2.3 Percentage Weight Change (<code>wt_change_pct_t</code>)</h5>
+<p><em>Derivation</em> <span class="math display">\[
+\text{wt\_change\_pct}_t = \frac{\text{weight}_t - \text{weight}_{bl}}{\text{weight}_{bl}} \times 100
+\]</span> <em>Analytical use</em> Secondary descriptive outcome.</p>
+</section>
+<section id="p2.4-15-kg-weight-loss-indicator-wt_loss15_t" class="level5">
+<h5 class="anchored" data-anchor-id="p2.4-15-kg-weight-loss-indicator-wt_loss15_t">P2.4 ≥15 kg Weight Loss Indicator (<code>wt_loss15_t</code>)</h5>
+<p><em>Derivation</em> 1 if (<code>weight_bl − weight_t</code>) ≥ 15.0 kg; else 0.</p>
+<p><em>Primary timepoint</em> 12 months</p>
+<p><em>Analytical use</em> Primary binary endpoint.</p>
+</section>
+</section>
+<section id="p3.-glycaemic-derivations" class="level3">
+<h3 class="anchored" data-anchor-id="p3.-glycaemic-derivations">P3. Glycaemic Derivations</h3>
+<section id="p3.1-hba1c-change-hba1c_change_t" class="level5">
+<h5 class="anchored" data-anchor-id="p3.1-hba1c-change-hba1c_change_t">P3.1 HbA1c Change (<code>hba1c_change_t</code>)</h5>
+<p><em>Derivation</em> <span class="math display">\[
+\text{hba1c\_change}_t = \text{hba1c}_t - \text{hba1c}_{bl}
+\]</span> <em>Analytical use</em> Primary continuous glycaemic outcome.</p>
+</section>
+<section id="p3.2-hba1c-threshold-indicators" class="level5">
+<h5 class="anchored" data-anchor-id="p3.2-hba1c-threshold-indicators">P3.2 HbA1c Threshold Indicators</h5>
+<ul>
+<li><code>hba1c_lt48_t</code>: 1 if HbA1c &lt; 48 mmol/mol</li>
+<li><code>hba1c_lt42_t</code>: 1 if HbA1c &lt; 42 mmol/mol</li>
+</ul>
+<p><em>Analytical use</em> Secondary binary outcomes.</p>
+</section>
+<section id="p3.3-diabetes-remission-remission_t" class="level5">
+<h5 class="anchored" data-anchor-id="p3.3-diabetes-remission-remission_t">P3.3 Diabetes Remission (<code>remission_t</code>)</h5>
+<p><em>Definition (non-insulin cohort)</em> All criteria must be met:</p>
+<ol type="1">
+<li>HbA1c &lt; 48 mmol/mol at time <em>t</em></li>
+<li>No glucose-lowering medication for ≥3 months prior</li>
+</ol>
+<p>Medication status is determined from clinic notes and/or EMR extraction.</p>
+<p><em>Primary timepoint</em> 12 months</p>
+<p><em>Analytical use</em> Primary binary endpoint.</p>
+</section>
+<section id="p3.4-relapse-from-remission-relapse_t" class="level5">
+<h5 class="anchored" data-anchor-id="p3.4-relapse-from-remission-relapse_t">P3.4 Relapse from Remission (<code>relapse_t</code>)</h5>
+<p>Among participants previously in remission:</p>
+<p>1 if HbA1c ≥ 48 mmol/mol at a subsequent follow-up; else 0.</p>
+<p><em>Analytical use</em> Durability analyses.</p>
+</section>
+</section>
+<section id="p4.-medication-burden-derivations" class="level3">
+<h3 class="anchored" data-anchor-id="p4.-medication-burden-derivations">P4. Medication Burden Derivations</h3>
+<section id="p4.1-insulin-use-indicator-insulin_use_t" class="level5">
+<h5 class="anchored" data-anchor-id="p4.1-insulin-use-indicator-insulin_use_t">P4.1 Insulin Use Indicator (<code>insulin_use_t</code>)</h5>
+<p>1 if any insulin prescribed in the preceding 3 months; else 0.</p>
+<p><em>Analytical use</em> Stratification; remission definition component.</p>
+</section>
+<section id="p4.2-insulin-dose-change-insulin_dose_change_t" class="level5">
+<h5 class="anchored" data-anchor-id="p4.2-insulin-dose-change-insulin_dose_change_t">P4.2 Insulin Dose Change (<code>insulin_dose_change_t</code>)</h5>
+<p><em>Derivation</em> <span class="math display">\[
+\text{dose}_t - \text{dose}_{bl}
+\]</span> Units: international units/day.</p>
+<p><em>Analytical use</em> Exploratory insulin-cohort analyses.</p>
+</section>
+<section id="p4.3-50-insulin-reduction-insulin_red50_t" class="level5">
+<h5 class="anchored" data-anchor-id="p4.3-50-insulin-reduction-insulin_red50_t">P4.3 ≥50% Insulin Reduction (<code>insulin_red50_t</code>)</h5>
+<p>1 if <code>dose_t ≤ 0.5 × dose_bl</code>; else 0.</p>
+<p><em>Analytical use</em> Stepped improvement summaries.</p>
+</section>
+<section id="p4.4-medication-class-count-med_class_n_t" class="level5">
+<h5 class="anchored" data-anchor-id="p4.4-medication-class-count-med_class_n_t">P4.4 Medication Class Count (<code>med_class_n_t</code>)</h5>
+<p>Count of glucose-lowering medication classes in use at time <em>t</em>.</p>
+<p><em>Analytical use</em> Medication de-intensification summaries.</p>
+</section>
+</section>
+<section id="p5.-insulin-cohort-stepped-improvement-outcome" class="level3">
+<h3 class="anchored" data-anchor-id="p5.-insulin-cohort-stepped-improvement-outcome">P5. Insulin-Cohort Stepped Improvement Outcome</h3>
+<section id="p5.1-ordinal-stepped-improvement-step_improve_t" class="level5">
+<h5 class="anchored" data-anchor-id="p5.1-ordinal-stepped-improvement-step_improve_t">P5.1 Ordinal Stepped Improvement (<code>step_improve_t</code>)</h5>
+<p><em>Level 1 – Best outcome</em> HbA1c &lt; 48 mmol/mol <strong>and</strong> no glucose-lowering medication ≥3 months.</p>
+<p><em>Level 2 – De-intensification</em> HbA1c ≤ baseline + 3 mmol/mol or &lt;53 mmol/mol <em>and</em> insulin dose reduced ≥50% or stopped <em>and</em> no net increase in other agents.</p>
+<p><em>Level 3 – Unfavourable</em> HbA1c worsened by &gt;5 mmol/mol or ≥64 mmol/mol or increased medication burden.</p>
+<p><em>Analytical use</em> Primary exploratory insulin-cohort outcome.</p>
+</section>
+</section>
+<section id="p6.-liver-and-fibroscan-derivations-exploratory" class="level3">
+<h3 class="anchored" data-anchor-id="p6.-liver-and-fibroscan-derivations-exploratory">P6. Liver and FibroScan Derivations (Exploratory)</h3>
+<section id="p6.1-astalt-ratio-ast_alt_ratio" class="level5">
+<h5 class="anchored" data-anchor-id="p6.1-astalt-ratio-ast_alt_ratio">P6.1 AST:ALT Ratio (<code>ast_alt_ratio</code>)</h5>
+<p><span class="math display">\[
+\text{AST} / \text{ALT}
+\]</span></p>
+<p><em>Analytical use</em> Descriptive metabolic context only.</p>
+</section>
+<section id="p6.2-fibrosis-and-steatosis-staging" class="level5">
+<h5 class="anchored" data-anchor-id="p6.2-fibrosis-and-steatosis-staging">P6.2 Fibrosis and Steatosis Staging</h5>
+<p>Derived using manufacturer-recommended cut-points applied to:</p>
+<ul>
+<li>Liver stiffness (kPa) → fibrosis stage (F0–F4)</li>
+<li>CAP (dB/m) → steatosis grade (S0–S3)</li>
+</ul>
+<p><em>Analytical use</em> Exploratory descriptive summaries only.</p>
+</section>
+</section>
+<section id="p7.-quality-of-life-and-distress-scores" class="level3">
+<h3 class="anchored" data-anchor-id="p7.-quality-of-life-and-distress-scores">P7. Quality of Life and Distress Scores</h3>
+<section id="p7.1-eq-5d-utility-index-eq5d_utility_t" class="level5">
+<h5 class="anchored" data-anchor-id="p7.1-eq-5d-utility-index-eq5d_utility_t">P7.1 EQ-5D Utility Index (<code>eq5d_utility_t</code>)</h5>
+<p>Derived using UK MVH tariff applied to EQ-5D-3L health states.</p>
+<p><em>Analytical use</em> Secondary outcome; health-economic interpretation.</p>
+</section>
+<section id="p7.2-paid-total-score-paid_total_t" class="level5">
+<h5 class="anchored" data-anchor-id="p7.2-paid-total-score-paid_total_t">P7.2 PAID Total Score (<code>paid_total_t</code>)</h5>
+<p>Sum of 20 items × 1.25 → scale 0–100.</p>
+</section>
+<section id="p7.3-high-diabetes-distress-paid_ge40_t" class="level5">
+<h5 class="anchored" data-anchor-id="p7.3-high-diabetes-distress-paid_ge40_t">P7.3 High Diabetes Distress (<code>paid_ge40_t</code>)</h5>
+<p>1 if PAID ≥ 40; else 0.</p>
+<p><em>Analytical use</em> Secondary psychosocial outcome.</p>
+</section>
+</section>
+<section id="p8.-physical-activity-ipaq-derivations" class="level3">
+<h3 class="anchored" data-anchor-id="p8.-physical-activity-ipaq-derivations">P8. Physical Activity (IPAQ) Derivations</h3>
+<section id="p8.1-met-minutes-per-week-ipaq_metwk_t" class="level5">
+<h5 class="anchored" data-anchor-id="p8.1-met-minutes-per-week-ipaq_metwk_t">P8.1 MET-Minutes per Week (<code>ipaq_metwk_t</code>)</h5>
+<ul>
+<li>Walking: minutes × days × 3.3</li>
+<li>Moderate: minutes × days × 4.0</li>
+<li>Vigorous: minutes × days × 8.0</li>
+</ul>
+<p>Total = sum of above.</p>
+</section>
+<section id="p8.2-activity-category-ipaq_cat_t" class="level5">
+<h5 class="anchored" data-anchor-id="p8.2-activity-category-ipaq_cat_t">P8.2 Activity Category (<code>ipaq_cat_t</code>)</h5>
+<p>Low / Moderate / High using standard IPAQ thresholds.</p>
+<p><em>Analytical use</em> Descriptive behavioural context.</p>
+</section>
+</section>
+<section id="p9.-economic-derivations" class="level3">
+<h3 class="anchored" data-anchor-id="p9.-economic-derivations">P9. Economic Derivations</h3>
+<section id="p9.1-monthly-medication-cost-med_cost_mo_t" class="level5">
+<h5 class="anchored" data-anchor-id="p9.1-monthly-medication-cost-med_cost_mo_t">P9.1 Monthly Medication Cost (<code>med_cost_mo_t</code>)</h5>
+<p><span class="math display">\[
+\text{med\_cost\_mo}_t = \sum_m \frac{\text{weeks supplied}_{m,t} \times \text{weekly unit cost}_m}{4.345}
+\]</span></p>
+<p><em>Analytical use</em> Medication cost summaries; cost-offset analyses.</p>
+</section>
+<section id="p9.2-monthly-insulin-cost-insulin_cost_mo_t" class="level5">
+<h5 class="anchored" data-anchor-id="p9.2-monthly-insulin-cost-insulin_cost_mo_t">P9.2 Monthly Insulin Cost (<code>insulin_cost_mo_t</code>)</h5>
+<p>Subset of <code>med_cost_mo_t</code> including insulin only.</p>
+</section>
+<section id="p9.3-change-in-monthly-medication-cost-med_cost_change_mo_t" class="level5">
+<h5 class="anchored" data-anchor-id="p9.3-change-in-monthly-medication-cost-med_cost_change_mo_t">P9.3 Change in Monthly Medication Cost (<code>med_cost_change_mo_t</code>)</h5>
+<p><span class="math display">\[
+\text{med\_cost\_mo}_t - \text{med\_cost\_mo}_{bl}
+\]</span></p>
+<p>Negative values indicate cost savings.</p>
+</section>
+<section id="p9.4-programme-cost-per-participant-tmr_cost_pp" class="level5">
+<h5 class="anchored" data-anchor-id="p9.4-programme-cost-per-participant-tmr_cost_pp">P9.4 Programme Cost per Participant (<code>tmr_cost_pp</code>)</h5>
+<p>Total programme delivery cost divided by number initiating TMR.</p>
+</section>
+<section id="p9.5-net-cost-offset-net_cost_offset_t" class="level5">
+<h5 class="anchored" data-anchor-id="p9.5-net-cost-offset-net_cost_offset_t">P9.5 Net Cost Offset (<code>net_cost_offset_t</code>)</h5>
+<p><span class="math display">\[
+(\text{med\_cost\_mo}_{bl} - \text{med\_cost\_mo}_t) \times 12 - \text{tmr\_cost\_pp}
+\]</span></p>
+<p>Positive values indicate net annual savings.</p>
+</section>
+</section>
+<section id="closing-note" class="level3">
+<h3 class="anchored" data-anchor-id="closing-note">Closing Note</h3>
+<p>This appendix defines all derived variables a priori and should be read alongside the <span>Statistical analysis plan (sap)</span>, which specifies how these variables are combined, modelled, and interpreted.</p>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/sh-publichealth\.github\.io\/info-hub");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../../our-work/tmr/data/sap.html" class="pagination-link" aria-label="Analysis Plan">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Analysis Plan</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../our-work/tmr/data/data-management-plan.html" class="pagination-link" aria-label="Data Management Plan">
+        <span class="nav-page-text">Data Management Plan</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,1562 @@
+[
+  {
+    "objectID": "our-work/tmr/visits/participant-flow.html",
+    "href": "our-work/tmr/visits/participant-flow.html",
+    "title": "Participant Flows",
+    "section": "",
+    "text": "flowchart LR\n\nR1(**R1.** From REDCap&lt;br/&gt;Recruitment Report)\nR2(**R2.** Advert Response) \nR3(**R3.** From Clinic)\nR4(**R4.** Find Person in&lt;br/&gt;REDCap Database)\nR4a(**R4a.** If not Found&lt;br/&gt;Add to Database)\nR5(**R5.** Make Contact.&lt;br/&gt;Deliver Telephone Script)\nR1 --&gt; R4 \nR2 --&gt; R4\nR3 --&gt; R4\nR4 -.-&gt; R4a\nR4a -.-&gt; R5 \nR4 --&gt; R5\n\n\n\n\nFigure 1: TMR Recruitment Process. Part 1 - First Contact\n\n\n\n\n\n\n\n\n\n\n\nNoteRecruitment Part 1 Notes\n\n\n\n\n\nR1. Use the REDCap “Recruitment Report”. Choose and contact the next person on the list.\nR2/R3. For potential participants responding to the project advert or recruited from clinic, search the REDCap database to see if they exist. If not on the database, create and complete a new Screening Record for this person.\nR4. Search the REDCap database for the person in question. You will use the person’s REDCap Screening Form during the recruitment process.\n\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n\nR5(**R5.** Make Contact.&lt;br/&gt;Deliver Telephone Script)\nR6(**R6.** Book Screening Visit in REDCap)\nR7(**R7.** Schedule follow-up call)\nR8(**R8.** Thank person for their time)\nR9(**R9.** Update REDCap Database&lt;br/&gt;Screening Form)\nR5 -- \"Interested\" --&gt; R6\nR5 -- \"Possibly Interested\" --&gt; R7\nR5 -- \"Not Interested\"--&gt; R8\nR6 --&gt; R9\nR7 --&gt; R9\nR8 -.-&gt; R9\n\n\n\n\nFigure 2: TMR Recruitment Process. Part 2 - Participant Choices\n\n\n\n\n\n\n\n\n\n\n\nNoteRecruitment Part 2 Notes\n\n\n\n\n\nR5. You will only make contact if the person already meets the age, diabetes duration, and recent clinic visit criteria (see Eligibility for details). They will still need height and weight measurement (for the calculation of Body Mass Index) and an eating disorder check (see below for both) to confirm final eligibility.\nR6. If interested, book a screening visit using the REDCap visit scheduling tool. Point the person to the online Information Sheet.\nR7. If possibly interested, point the participant to the online Information Sheet. And schedule a follow-up call.\nR8. If not interested, thank the person for their time.\nR9. For each possible outcome, updates to the REDCap Screening Form will be required. Follow the REDCap guidance on this.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-flow.html#part-1.-first-contact",
+    "href": "our-work/tmr/visits/participant-flow.html#part-1.-first-contact",
+    "title": "Participant Flows",
+    "section": "",
+    "text": "flowchart LR\n\nR1(**R1.** From REDCap&lt;br/&gt;Recruitment Report)\nR2(**R2.** Advert Response) \nR3(**R3.** From Clinic)\nR4(**R4.** Find Person in&lt;br/&gt;REDCap Database)\nR4a(**R4a.** If not Found&lt;br/&gt;Add to Database)\nR5(**R5.** Make Contact.&lt;br/&gt;Deliver Telephone Script)\nR1 --&gt; R4 \nR2 --&gt; R4\nR3 --&gt; R4\nR4 -.-&gt; R4a\nR4a -.-&gt; R5 \nR4 --&gt; R5\n\n\n\n\nFigure 1: TMR Recruitment Process. Part 1 - First Contact\n\n\n\n\n\n\n\n\n\n\n\nNoteRecruitment Part 1 Notes\n\n\n\n\n\nR1. Use the REDCap “Recruitment Report”. Choose and contact the next person on the list.\nR2/R3. For potential participants responding to the project advert or recruited from clinic, search the REDCap database to see if they exist. If not on the database, create and complete a new Screening Record for this person.\nR4. Search the REDCap database for the person in question. You will use the person’s REDCap Screening Form during the recruitment process.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-flow.html#part-2.-participant-choices",
+    "href": "our-work/tmr/visits/participant-flow.html#part-2.-participant-choices",
+    "title": "Participant Flows",
+    "section": "",
+    "text": "flowchart LR\n\nR5(**R5.** Make Contact.&lt;br/&gt;Deliver Telephone Script)\nR6(**R6.** Book Screening Visit in REDCap)\nR7(**R7.** Schedule follow-up call)\nR8(**R8.** Thank person for their time)\nR9(**R9.** Update REDCap Database&lt;br/&gt;Screening Form)\nR5 -- \"Interested\" --&gt; R6\nR5 -- \"Possibly Interested\" --&gt; R7\nR5 -- \"Not Interested\"--&gt; R8\nR6 --&gt; R9\nR7 --&gt; R9\nR8 -.-&gt; R9\n\n\n\n\nFigure 2: TMR Recruitment Process. Part 2 - Participant Choices\n\n\n\n\n\n\n\n\n\n\n\nNoteRecruitment Part 2 Notes\n\n\n\n\n\nR5. You will only make contact if the person already meets the age, diabetes duration, and recent clinic visit criteria (see Eligibility for details). They will still need height and weight measurement (for the calculation of Body Mass Index) and an eating disorder check (see below for both) to confirm final eligibility.\nR6. If interested, book a screening visit using the REDCap visit scheduling tool. Point the person to the online Information Sheet.\nR7. If possibly interested, point the participant to the online Information Sheet. And schedule a follow-up call.\nR8. If not interested, thank the person for their time.\nR9. For each possible outcome, updates to the REDCap Screening Form will be required. Follow the REDCap guidance on this.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-flow.html#part-1.-screening-visit-preparation",
+    "href": "our-work/tmr/visits/participant-flow.html#part-1.-screening-visit-preparation",
+    "title": "Participant Flows",
+    "section": "Part 1. Screening Visit Preparation",
+    "text": "Part 1. Screening Visit Preparation\n\n\n\n\n\n\nflowchart LR\n\nS1(**S1.** Open REDCap. Search for Participant)\nS2(**S2.** Medical Notes&lt;br/&gt;Review)\nS3(**S3.** Confirm Screening&lt;br/&gt;Visit on *day-1*)\nS4(**S4.** Thank person for their time)\nS1 --&gt; S2\nS2 -- \"Eligible\" --&gt; S3\nS2 -- \"Note Eligible\" --&gt; S4\n\n\n\n\n\nFigure 3: TMR Screening Visit. Part 1 - Preparation\n\n\n\n\n\n\n\n\n\n\n\nNoteScreening Part 1 Notes\n\n\n\n\n\nS1. During this pre-visit work, you will need to update the screening form for each potential participant.\nS2. The medical notes review is an important step to identify clinical factors that might exclude someone from taking part in this intervention. Potential exclusion factors are as follows:\n\nActive mental illness\nAMI or stroke in past 3 months\nSevere / unstable heart failure\nPorphyria\nPregnant until &gt;4 months post-partum or breastfeeding\nSubstance abuse\nEating disorder accompanied by purging\neGFR &lt;30mls/min/1.73 within previous 3 months",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-flow.html#part-2.-at-the-screening-visit-bmi-check",
+    "href": "our-work/tmr/visits/participant-flow.html#part-2.-at-the-screening-visit-bmi-check",
+    "title": "Participant Flows",
+    "section": "Part 2. At the Screening Visit (BMI check)",
+    "text": "Part 2. At the Screening Visit (BMI check)\n\n\n\n\n\n\nflowchart LR\n\nS5(**S5.** Confirm Identity)\nS6(**S6.** Brief TMR&lt;br/&gt;Overview)\nS7(**S7.** Measure&lt;br/&gt;Height & Weight&lt;br/&gt;for BMI check)\nS8(**S8.** Final Eligibility Check&lt;br/&gt;Move to Next Stage)\nS9(**S9.** Thank person for their time)\nS5 --&gt; S6\nS6 --&gt; S7\nS7 -- \"Eligible\" --&gt; S8\nS7 -- \"Not Eligible\" --&gt; S9\n\n\n\n\nFigure 4: TMR Screening Visit. Part 2 - BMI Check\n\n\n\n\n\n\n\n\n\n\n\nNoteScreening Part 2 Notes\n\n\n\n\n\nThe REDCap screening form should be completed during the screening visit. Follow the screening Visit SOP and also use the screening checklist to ensure all required steps are completed.\nS5 / S6. For the identity check and the TMR overview, follow the screening visit notes.\nS7. Height and Weight should be measured following the simple protocol. Results must be entered directly into the REDCap Screening form, which will provide you with the person’s Body Mass Index for you to assess eligibility.\nS8. The REDCap Screening Form will also use the already-completed fields to assess and complete overall eligibility based on four criteria (Age, Diabetes Duration, Clinic Visit Recency, BMI). Use this REDCap eligibility classification to guide your next steps.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-flow.html#part-3.-at-the-screening-visit-eating-disorder-check",
+    "href": "our-work/tmr/visits/participant-flow.html#part-3.-at-the-screening-visit-eating-disorder-check",
+    "title": "Participant Flows",
+    "section": "Part 3. At the Screening Visit (Eating Disorder check)",
+    "text": "Part 3. At the Screening Visit (Eating Disorder check)\n\n\n\n\n\n\nflowchart LR\n\nS10(**S10.** Step 1.&lt;br/&gt;Anorexia/Bulimia)\nS11(**S11.** Step 2. Emotional/Binge Eating)\nS12(**S12.** Thank person for their time. **Health referral**)\nS13(**S13.** Start Programme. Complete 2.1)\nS14(**S14.** Thank person for their time. **Health referral**)\nS15(**S15.** Start with Usual Support)\nS16(**S16.** Start with Usual + Eating Disorder Support)\n\nS10 -- No Diagnosis --&gt; S11\nS10 -- Diagnosed --&gt; S12\n\nS11 -- LT3 --&gt; S13\nS11 -- GE3 --&gt; S14\n\nS13 --GE6 --&gt; S15\nS13 --LE5 --&gt; S16\n\n\n\n\n\nFigure 5: TMR Screening Visit. Part 3 - Eating Disorder Check\n\n\n\n\n\n\n\n\n\n\n\nNoteScreening Part 3 Notes\n\n\n\n\n\nS10/S11/S13. These steps collectively form the eating disorder screening process. You should follow this process carefully as set out in the eating disorder workflow, filling out the question responses in REDCap, and using the resulting REDCap scores to dictate the eventual participant pathway.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-flow.html#part-1.-before-data-collection-begins",
+    "href": "our-work/tmr/visits/participant-flow.html#part-1.-before-data-collection-begins",
+    "title": "Participant Flows",
+    "section": "Part 1. Before Data Collection Begins",
+    "text": "Part 1. Before Data Collection Begins\n\n\n\n\n\n\nflowchart LR\n\nB1(**B1.** Find Participant in REDCap)\nB2(**B2.** Visit Preamble)\nB3(**B3.** Impart Pre-Consent Information)\nB4(**B4.** Obtain Informed Consent)\nB1 --&gt; B2\nB2 --&gt; B3\nB3 --&gt; B4\n\n\n\n\n\nFigure 6: TMR Baseline Visit. Part 1 - Before Data Collection\n\n\n\n\n\n\n\n\n\n\n\nNoteBaseline Part 1 Notes\n\n\n\n\n\nB2. As part of this visit preamble, you should:\n\nConfirm the identity of the participant\nConfirm their eligibility status\nProvide a brief review of the TMR intervention\n\nB3. The participant must understand the following before being asked to sign the consent form:\n\nReview how we plan to use the data\nReview our data confidentiality guarantee\nReview our plans for data use\n\nB4. Obtain informed consent via the REDCap eConsent process. See the REDCap guidance for details.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-flow.html#part-2.-data-collection",
+    "href": "our-work/tmr/visits/participant-flow.html#part-2.-data-collection",
+    "title": "Participant Flows",
+    "section": "Part 2. Data Collection",
+    "text": "Part 2. Data Collection\n\n\n\n\n\nflowchart LR\n\n  B5(**B5.** Find Participant&lt;br/&gt;in REDCap)\n  B6(**B6.** Collect&lt;br/&gt;Anthropometry)\n  B7(**B7.** Collect Clinical&lt;br/&gt;Measures)\n  B8(**B8.** Collect&lt;br/&gt;Blood Sample)\n  \nB5 --&gt; B6\nB6 --&gt; B7\nB7 --&gt; B8\n\n\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n\n  B9(**B9.** Record&lt;br/&gt;Medication Status)\n  B10(**B10.** Perform Fibroscan)\n  B11(**B11.** Collect Patient Reported Outcomes)\n  \nB9 --&gt; B10\nB10 --&gt; B11\n\n\n\n\n\nFigure 7: TMR Baseline Visit. Part 2 - Data Collection\n\n\n\n\n\n\n\n\n\n\n\nNoteBaseline Part 2 Notes\n\n\n\n\n\nB5. The REDCap baseline form should be completed during the baseline visit. Follow the Baseline Visit SOP and also use the baseline checklist to ensure all required steps are completed.\nB6. Anthropometry includes:\n\nweight\nwaist circumference\nhip circumference\n\nB7. Clinical Measures includes:\n\nblood pressure\nglucose monitoring\n\nB8. Blood sample will be used for:\n\nHbA1C\nliver panel\n\nB11. Patient Reported Outcomes include:\n\nPatient-Reported Outcomes\nEq5D - quality of life\nPAID - diabetes distress\nIPAQ - exercise",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-flow.html#at-each-visit",
+    "href": "our-work/tmr/visits/participant-flow.html#at-each-visit",
+    "title": "Participant Flows",
+    "section": "At Each Visit",
+    "text": "At Each Visit\n\n\n\n\n\n\nflowchart LR\n\nIV1(**IV1.** Schedule Visit by Telephone)\nIV2(**IV2.** Visit Confirmation by Telephone *day-1*)\nIV3(**IV3.** Visit to Preferred Participant Location&lt;br/&gt;for Data Collection + Support)\nIV4(**IV4.** Update REDCap)\nIV1 --&gt; IV2\nIV2 --&gt; IV3\nIV3 --&gt; IV4\n\n\n\n\n\nFigure 8: TMR intervention Visits\n\n\n\n\n\n\n\n\n\n\n\nNoteIntervention Visit Notes\n\n\n\n\n\nIV1. Enter Scheduled visit in REDCap\nIV2. Edit REDCap scheduling if necessary\nIV3. Measurements are:\n\nweight\nblood pressure\nglucose monitor measurement\nmedication check\nAlong with the usual support / counselling",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-flow.html#end-of-intervention-visit",
+    "href": "our-work/tmr/visits/participant-flow.html#end-of-intervention-visit",
+    "title": "Participant Flows",
+    "section": "End of Intervention Visit",
+    "text": "End of Intervention Visit\n\n\n\n\n\n\nflowchart LR\n\nW12a(**W12a.** Schedule Visit by Telephone)\nW12b(**W12b.** Visit Confirmation by Telephone *day-1*)\nW12c(**W12c.** Clinic Visit&lt;br/&gt;for Data Collection + Support)\nW12d(**W12d.** Update REDCap)\nW12a --&gt; W12b\nW12b --&gt; W12c\nW12c --&gt; W12d\n\n\n\n\n\nFigure 9: TMR Week 12 Visit\n\n\n\n\n\n\n\n\n\n\n\nNoteIntervention Visit Notes\n\n\n\n\n\nW12a. Enter Scheduled visit in REDCap\nW12b. Edit REDCap scheduling if necessary\nW12c. Measurements are:\n\nAll anthropometry\nblood pressure\nglucose monitor measurement\nblood sample: for HbA1C, liver panel\nmedication check\nEq5d - QoL\nPAID - diabetes distress\nIPAQ - exercise\nAlong with the usual support / counselling",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Participant Flow"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html",
+    "href": "our-work/tmr/data/data-dictionary.html",
+    "title": "TMR Data Dictionary",
+    "section": "",
+    "text": "Phases\nEvent label\nApprox weeks\n\n\n\n\nPhase 1: Screening\nscreening\n-1\n\n\nPhase 1: Pre-baseline\nprebaseline\n-∞ to 0\n\n\nPhase 1: Baseline\nbaseline\n0\n\n\nPhase 2: TMR phase\nwk00–wk12\n1–12 (visit every 2 weeks)\n\n\nPhase 3: Food reintroduction\nwk13–wk19\n13–19 (visit every 2 weeks)\n\n\nPhase 4: Weight maintenance (Year 1)\nwk23–wk52\n23–52 (every 8 weeks)\n\n\nPhase 4: Weight maintenance (Year 2)\nwk56–wk104\n56–104 (every 8 weeks)\n\n\n\n\n\n\nThe differing visit schedules of cases and controls means that we will probably work with two database arms\n\n\n\n\n\n\n\n\nPhases\nParticipant Visit / REDCap Event (Cases)\nParticipant Visit / REDCap Event (Controls)\n\n\n\n\nPhase 1:\npre-baseline, screening, baseline (wk00)\npre-baseline, screening, baseline\n\n\nPhase 2: (TMR)\nwk02, wk04, wk06, wk08, wk10, wk12\n–\n\n\nPhase 3: (Reintroduce Food)\nwk14, wk16, wk18, wk20\n–\n\n\nPhase 4: (Maintain Weight, Year 1)\nwk24, wk28, wk36, wk44, wk52 (1yr)\nwk28 (6m), wk52 (1 yr)\n\n\nPhase 4: (Maintain Weight, Year 2)\nwk65, wk78, wk91, wk104 (2 yr)\nwk78 (18m), wk104 (2 yr)",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#data-collection-schedule-summary",
+    "href": "our-work/tmr/data/data-dictionary.html#data-collection-schedule-summary",
+    "title": "TMR Data Dictionary",
+    "section": "",
+    "text": "Phases\nEvent label\nApprox weeks\n\n\n\n\nPhase 1: Screening\nscreening\n-1\n\n\nPhase 1: Pre-baseline\nprebaseline\n-∞ to 0\n\n\nPhase 1: Baseline\nbaseline\n0\n\n\nPhase 2: TMR phase\nwk00–wk12\n1–12 (visit every 2 weeks)\n\n\nPhase 3: Food reintroduction\nwk13–wk19\n13–19 (visit every 2 weeks)\n\n\nPhase 4: Weight maintenance (Year 1)\nwk23–wk52\n23–52 (every 8 weeks)\n\n\nPhase 4: Weight maintenance (Year 2)\nwk56–wk104\n56–104 (every 8 weeks)\n\n\n\n\n\n\nThe differing visit schedules of cases and controls means that we will probably work with two database arms\n\n\n\n\n\n\n\n\nPhases\nParticipant Visit / REDCap Event (Cases)\nParticipant Visit / REDCap Event (Controls)\n\n\n\n\nPhase 1:\npre-baseline, screening, baseline (wk00)\npre-baseline, screening, baseline\n\n\nPhase 2: (TMR)\nwk02, wk04, wk06, wk08, wk10, wk12\n–\n\n\nPhase 3: (Reintroduce Food)\nwk14, wk16, wk18, wk20\n–\n\n\nPhase 4: (Maintain Weight, Year 1)\nwk24, wk28, wk36, wk44, wk52 (1yr)\nwk28 (6m), wk52 (1 yr)\n\n\nPhase 4: (Maintain Weight, Year 2)\nwk65, wk78, wk91, wk104 (2 yr)\nwk78 (18m), wk104 (2 yr)",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#data-collection-instrument-summary",
+    "href": "our-work/tmr/data/data-dictionary.html#data-collection-instrument-summary",
+    "title": "TMR Data Dictionary",
+    "section": "Data Collection Instrument Summary",
+    "text": "Data Collection Instrument Summary\n\n\n\n\n\n\n\n\nInstrument\nRepeating\nAssigned events (Cases)\n\n\n\n\neligibility_screening\nNo\nScreening (This will be maintained in the Diabetes Registry)\n\n\nparticipant_admin\nNo\nBaseline only\n\n\nweight\nNo\nBaseline, every follow-up visit\n\n\nanthropometry\nNo\nbaseline, wk12, wk20, wk36, wk52, wk78, wk104\n\n\nblood_pressure\nNo\nbaseline, every follow-up visit\n\n\nglucose_monitor\nNo\nbaseline, every follow-up visit\n\n\nhba1c\nNo\nbaseline, wk12, wk20, wk27, wk36, wk52, wk78, wk104\n\n\nliver_labs\nNo\nbaseline, wk12, wk52, wk104\n\n\n==fibroscan==\n==No==\n==baseline, wk12, wk52, wk104==\n\n\nmedication\nNo\nbaseline, every follow-up visit\n\n\neq5d3l_items\nNo\nbaseline, wk12, wk52, wk104\n\n\npaid_items\nNo\nbaseline, wk12, wk52, wk104\n\n\nipaq_sf\nNo\nbaseline, wk12, wk52, wk104\n\n\nhealth_economics\nNo\nbaseline, wk52, wk104\n\n\nprebaseline_registry\nYes\nprebaseline (This will be extracted directly from the Diabetes Registry)",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-recruitment-screening",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-recruitment-screening",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: Recruitment & Screening",
+    "text": "Instrument: Recruitment & Screening\n\nFor each new diabetes intervention, we create a new registry instrument. The logic is mainly to have a registry record of the number of intervention involvements for each individual - for some protection against over-studying\nThis will not be possible for TMR - as the registry needs further updating before it can be populated with additional data.\nThis means - for TMR - recruitment & screening will occur in the main REDCap TMR database. The suggested TMR eligibility instrument for the registry is tabulated below.\nThe TMR eligibility criteria are:\n\nAge 65 years or younger\nDuration of diabetes 6 years or less\n1 or more visits in past 12 months\nIF (and only IF) we don’t recruit enough participants (50 cases, 50 controls in both locations combined), we will consider diabetes duration 10-years or less.\nBMI of 25 or greater\n\nScreening Part 1. Using data from the diabetes registry, auto populate the TMR database screening form (Ascension = manual entry):\n\nDate of Birth\nDate of Diabetes Diagnosis\nDate of Last Clinic Visit\n\nAuto-Calculate:\n\nAge\nDuration of Diabetes\nTime since last visit\n\nFlag Eligible / Non-Eligible\nEligible participants are randomly reordered, then pushed to a REDCap “potentially eligible” report for use by the community health workers.\n\nEligibility Screening Part 1. Draw registry data into new registry instrument. Calculate derived variables.\n\n\n\n\n\n\n\n\n\n\nVariable\nLabel\nField type\nCoding\nRequired\n\n\n\n\ndob_registry\n(auto-populate) Date of birth\nYYYY-MM-DD\n–\nY\n\n\ndodiag_registry\n(auto-populate) Date of diabetes diagnosis\nYYYY-MM-DD\n–\nY\n\n\ndolv_registry\n(auto-populate) Date of last clinic visit\nYYYY-MM-DD\n–\nY\n\n\nddur_registry\n(derived) Duration of diabetes\ntext (decimal)\nPresent as Years and Weeks\nY\n\n\ndiab6_registry\n(derived) Has the potential participant been diagnosed for 6 years or less\nyesno\n0/1\nY\n\n\ndiab10_registry\n(derived) Has the potential participant been diagnosed for 10 years or less\nyesno\n0/1\nY\n\n\nvisit12_registry\n(derived) 1 or more visits in the past year\ntext (decimal)\n–\nY\n\n\ntmr_eligible1\n(auto-calculated) Is participant eligible so far for TMR pilot?\nyesno\n–\nY\n\n\n\nEligibility Process Part 2. If eligible from Screening Part 1, create report / list of these eligible participants, along with their eligible values. This list will be held in the TMR database, randomly reordered. It will be used by the community health workers when contacting potential participants for interest, and if interested to attend an in-person screening visit.\nThe Table below documents the additional variables collected at this in-person screening visit.\nIf the participant is still eligible after Part 2, they should be asked if they are interested in hearing more about the pilot, or interested in taking part.\n\nIf they are interested - schedule a baseline visit\nIf they are not interested - ask about using their registry data in the control group.\n\n\n\n\n\n\n\n\n\n\n\nVariable\nLabel\nField type\nCoding\nRequired\n\n\n\n\ndob_screen\nConfirm date of birth\nYYYY-MM-DD\n–\nY\n\n\ndov_screen\nDate of screening visit\nYYYY-MM-DD\n–\nY\n\n\nddur_screen\n(derived) Calculate duration of diabetes\ntext (decimal)\nPresent as Years and Weeks\nY\n\n\ndiab6_screen\n(derived) Has the potential participant been diagnosed for 6 years or less\nyesno\n0/1\nY\n\n\ndiab10_screen\n(derived) Has the potential participant been diagnosed for 10 years or less\nyesno\n0/1\nY\n\n\nvisit12_screen\n(derived) 1 or more visits in the past year\ntext (decimal)\n–\nY\n\n\nheight_screen\nHeight\ntext (decimal)\ncm\nY\n\n\nweight_screen\nWeight\ntext (decimal)\nkg\nY\n\n\nbmi_screen\n(derived) Body Mass Index\ntext (decimal)\nkg/m2\nY\n\n\ntmr_eligible2\n(auto-calculated) Is participant eligible for TMR pilot?\nyesno\n–\nY\n\n\ninterested_screen\nAre you interested in taking part in the TMR pilot?\nyesno\n–\nY\n\n\nvisit_scheduled\nIf Yes to taking part, has a baseline visit been scheduled?\nyesno\n–\nY\n\n\ncontrol\nIf No to taking part, might we use their registry data in the control group?\nyesno\n–\nY\n\n\nfu6m\nIf Yes to being a control, are they happy to visit for 1 baseline visit, then every 6 months for diabetes support?\nyesno\n–\nY\n\n\n\nNOTE 1 (13-Jan-2026): As part of this screening process, there will now be some screening questions exploring eating habits. These are to be finalised.\nNOTE 2 (13-Jan-2026): From here, instruments are post-screening, meaning that they are collected only if participants have agreed to join the study",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-participant_admin",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-participant_admin",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: participant_admin",
+    "text": "Instrument: participant_admin\nCollects core administrative identifiers and group allocation information required for participant linkage, stratification, and governance.\n\n\n\n\n\n\n\n\n\n\nVariable\nLabel\nField type\nCoding\nRequired\n\n\n\n\npid\nParticipant study ID\ntext\n–\nY\n\n\nsite\nStudy site\nradio\n1=St Helena; 2=Ascension\nY\n\n\ngroup\nStudy group (defined by study arms)\nradio\n1=Intervention (TMR); 2=Control\nY\n\n\nregistry_id2\nDiabetes Registry ID\ntext\n–\nY\n\n\ndob\nDate of birth\ndate\nYYYY-MM-DD\nY\n\n\nsex\nParticipant sex\nradio\n1=female2=male\nY\n\n\nfname\nFirst name\ntext\n–\nY\n\n\nlname\nLast name\ntext\n–\nY\n\n\nphone\nPhone number\ntext\n–\nY\n\n\nemail\nEmail address\ntext\n–\nY\n\n\nconsent_date\nDate informed consent obtained\ndate\nYYYY-MM-DD\nY",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-weight",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-weight",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: weight",
+    "text": "Instrument: weight\nRecords repeated measurements of body weight over time to quantify weight change / trajectories.\n\n\n\nVariable\nLabel\nField type\nUnits\nRequired\n\n\n\n\nvisit_date\nDate of measurement\ndate\n–\nY\n\n\nweight\nWeight\ntext (decimal)\nkg\nY",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-anthropometry",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-anthropometry",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: anthropometry",
+    "text": "Instrument: anthropometry\nRecords repeated measurements of body circumferences over time to quantify body composition trajectories.\n\n\n\nVariable\nLabel\nField type\nUnits\nRequired\n\n\n\n\nvisit_date\nDate of measurement\ndate\n–\nY\n\n\nwaist\nWaist circumference\ntext (decimal)\ncm\nN\n\n\nhip\nHip circumference\ntext (decimal)\ncm\nN",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-blood_pressure",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-blood_pressure",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: blood_pressure",
+    "text": "Instrument: blood_pressure\nCaptures systolic and diastolic blood pressure measurements over follow-up to assess secondary cardiometabolic outcomes.\n\n\n\nVariable\nLabel\nField type\nUnits\nRequired\n\n\n\n\nvisit_date\nDate of measurement\ndate\n–\nY\n\n\nsbp\nSystolic blood pressure\ninteger\nmmHg\nY\n\n\ndbp\nDiastolic blood pressure\ninteger\nmmHg\nY",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-glucose_monitor",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-glucose_monitor",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: glucose_monitor",
+    "text": "Instrument: glucose_monitor\nRecords glucose monitor readings over time to assess glycaemic control, remission, and relapse. These non-fasting values are primarily for clinical monitoring.\n\n\n\n\n\n\n\n\n\n\nVariable\nLabel\nField type\nUnits\nRequired\n\n\n\n\nvisit_date\nDate of measurement\ndate\n–\nY\n\n\nglucose\nBlood glucose measurement\ntext (decimal)\nmmol/L\nY",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-hba1c",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-hba1c",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: hba1c",
+    "text": "Instrument: hba1c\nRecords HbA1c measurements over time to assess glycaemic control, remission, and relapse.\n\n\n\nVariable\nLabel\nField type\nUnits\nRequired\n\n\n\n\nvisit_date\nDate of measurement\ndate\n–\nY\n\n\nhba1c\nHbA1c\ntext (decimal)\nmmol/mol\nY",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-liver_labs",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-liver_labs",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: liver_labs",
+    "text": "Instrument: liver_labs\nRecords HbA1c measurements over time to assess glycaemic control, remission, and relapse.\n\n\n\n\n\n\n\n\n\n\nVariable\nLabel\nField type\nUnits\nRequired\n\n\n\n\nvisit_date\nDate of measurement\ndate\n–\nY\n\n\nalt\nAlanine aminotransferase (ALT)\ntext (decimal)\nU/L\nY\n\n\nast\nAspartate aminotransferase (AST)\ntext (decimal)\nU/L\nY\n\n\nalp\nAlkaline phosphatase (ALP)\ntext (decimal)\nU/L\nY\n\n\nggt\nGamma-glutamyl transferase (GGT)\ntext (decimal)\nU/L\nN\n\n\nbilirubin_total\nTotal bilirubin\ntext (decimal)\nµmol/L\nY\n\n\nalbumin\nAlbumin\ntext (decimal)\ng/L\nY\n\n\nprotein_total\nTotal protein\ntext (decimal)\ng/L\nN",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-fibroscan",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-fibroscan",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: fibroscan",
+    "text": "Instrument: fibroscan\nRecords liver disease variables using the Echosens fibroscanner. Variables to be finalised\n\n\n\n\n\n\n\n\n\n\nVariable\nLabel\nField type\nCoding / Units\nRequired\n\n\n\n\nfibroscan_date\nDate of FibroScan assessment\ndate\ndd/mm/yyyy\ny\n\n\nlsm_kpa\nLiver stiffness measurement\nnumeric\nkilopascals (kPa)\ny\n\n\ncap_dbm\nControlled attenuation parameter\nnumeric\ndecibels per metre (dB/m)\ny\n\n\nfibrosis_stage\nDerived liver fibrosis stage\ncategorical\nF0, F1, F2, F3, F4\nn\n\n\nsteatosis_grade\nDerived liver steatosis grade\ncategorical\nS0, S1, S2, S3\nn\n\n\nlsm_iqr\nInterquartile range of liver stiffness\nnumeric\nkilopascals (kPa)\nn\n\n\nlsm_iqr_median_pct\nIQR-to-median ratio for liver stiffness\nnumeric\npercentage (%)\nn\n\n\nprobe_type\nFibroScan probe type used\ncategorical\nM, XL\ny\n\n\nvalid_measurements_n\nNumber of valid FibroScan measurements\ninteger\ncount\nn\n\n\nsuccess_rate_pct\nFibroScan measurement success rate\nnumeric\npercentage (%)\nn",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-medication",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-medication",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: medication",
+    "text": "Instrument: medication\nCaptures high-level information on insulin use, insulin dose, and overall glucose-lowering medication burden over time.\n\n\n\n\n\n\n\n\n\n\nVariable\nLabel\nField type\nCoding / Units\nRequired\n\n\n\n\nvisit_date\nDate of measurement\ndate\n–\nY\n\n\ndiabetes_meds\nAre you on diabetes medication\n1=monotherapy oral2=monotherapy injectable3=combination\n1-3\nY\n\n\nhypertension_meds\nAre you on hypertension medication\nyesno\n0/1\nY",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-eq5d3l_items",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-eq5d3l_items",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: eq5d3l_items",
+    "text": "Instrument: eq5d3l_items\nCollects EQ-5D-3L health-related quality of life responses to assess changes in generic health status over time.\nGo to EuroQol website. REDCap instrument available - must complete registration form\n\n\n\n\n\n\n\n\n\n\nVariable\nLabel\nField type\nCoding\nRequired\n\n\n\n\neq_mob\nMobility\nradio\n1–3\nY\n\n\neq_sc\nSelf-care\nradio\n1–3\nY\n\n\neq_ua\nUsual activities\nradio\n1–3\nY\n\n\neq_pd\nPain / discomfort\nradio\n1–3\nY\n\n\neq_ad\nAnxiety / depression\nradio\n1–3\nY\n\n\neq_vas\nWe would like to know how good or bad your health is TODAY\ninteger\n0–100\nY",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-paid_items",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-paid_items",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: paid_items",
+    "text": "Instrument: paid_items\nProblem Areas in Diabetes (PAID) scale. Collects PAID questionnaire items to quantify diabetes-related emotional distress longitudinally.\nInstructions: Which of the following diabetes issues are currently a problem for you? Tick the box that gives the best answer for you. Please provide an answer for each question\n\n\n\n\n\n\n\n\n\n\nVariable\nLabel\nField type\nCoding\nRequired\n\n\n\n\npaid01\nNot having clear and concrete goals for your diabetes care?\nradio\nNot a problem (0), Minor problem (1), Moderate problem (2), Somewhat serious problem (3), Serious problem (4)\nY\n\n\npaid02\nFeeling discouraged with your diabetes treatment plan?\nradio\n0–4\nY\n\n\npaid03\nFeeling scared when you think about living with diabetes?\nradio\n0–4\nY\n\n\npaid04\nUncomfortable social situations related to your diabetes care (e.g. people telling you what to eat)?\nradio\n0–4\nY\n\n\npaid05\nFeelings of deprivation regarding food and meals?\nradio\n0–4\nY\n\n\npaid06\nFeeling depressed when you think about living with diabetes?\nradio\n0–4\nY\n\n\npaid07\nNot knowing if your mood or feelings are related to your diabetes?\nradio\n0–4\nY\n\n\npaid08\nFeeling overwhelmed by your diabetes?\nradio\n0–4\nY\n\n\npaid09\nWorrying about low blood glucose reactions?\nradio\n0–4\nY\n\n\npaid10\nFeeling angry when you think about living with diabetes?\nradio\n0–4\nY\n\n\npaid11\nFeeling constantly concerned about food and eating?\nradio\n0–4\nY\n\n\npaid12\nWorrying about the future and the possibility of serious complications?\nradio\n0–4\nY\n\n\npaid13\nFeelings of guilt or anxiety when you get off track with your diabetes management?\nradio\n0–4\nY\n\n\npaid14\nNot ‘accepting’ your diabetes?\nradio\n0–4\nY\n\n\npaid15\nFeeling unsatisfied with your diabetes physician?\nradio\n0–4\nY\n\n\npaid16\nFeeling that diabetes is taking up too much of your mental and physical energy every day?\nradio\n0–4\nY\n\n\npaid17\nFeeling alone with your diabetes?\nradio\n0–4\nY\n\n\npaid18\nFeeling that your friends and family are not supportive of your diabetes management efforts?\nradio\n0–4\nY\n\n\npaid19\nCoping with complications of diabetes?\nradio\n0–4\nY\n\n\npaid20\nFeeling ‘burned out’ by the constant effort needed to manage diabetes?\nradio\n0–4\nY",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-ipaq_sf",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-ipaq_sf",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: ipaq_sf",
+    "text": "Instrument: ipaq_sf\nCollects the IPAQ short form to quantify physical activity and sedentary behaviour across study follow-up.\nNote. For use with young and middle aged adults.\n\n\n\n\n\n\n\n\n\n\nVariable\nLabel\nField type\nUnits\nRequired\n\n\n\n\nipaq_walk_days\nWalking days (last 7 days)\ninteger\ndays/week\nY\n\n\nipaq_walk_mins\nWalking minutes per day\ninteger\nmin/day\nY\n\n\nipaq_mod_days\nModerate activity days\ninteger\ndays/week\nY\n\n\nipaq_mod_mins\nModerate activity minutes\ninteger\nmin/day\nY\n\n\nipaq_vig_days\nVigorous activity days\ninteger\ndays/week\nY\n\n\nipaq_vig_mins\nVigorous activity minutes\ninteger\nmin/day\nY\n\n\nipaq_sit_mins\nSitting time per weekday\ninteger\nmin/day\nY",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-health_economics",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-health_economics",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: health_economics",
+    "text": "Instrument: health_economics\nCaptures programme product supply and medication cost inputs to support a pragmatic assessment of drug-related cost savings.\nConfirm / Improve this variable set with Chief Economist\n\n\n\n\n\n\n\n\n\n\nVariable\nLabel\nField type\nUnits\nRequired\n\n\n\n\nhe_currency\nCurrency used for costing\nradio\nGBP / USD / Other\nY\n\n\nhe_insulin_supplied\nNumber of weeks of insulin issued since the previous study visit\ninteger\nweeks\nY\n\n\nhe_metformin_supplied\nNumber of weeks of metformin issued since the previous study visit\ninteger\nweeks\nY\n\n\nhe_antihyp_supplied\nNumber of weeks of antihypertensive issued since the previous study visit\ninteger\nweeks\nY\n\n\nhe_notes\nCosting notes (e.g. supply interruptions or special circumstances)\nnotes\n–\nN",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#instrument-prebaseline_registry-repeating",
+    "href": "our-work/tmr/data/data-dictionary.html#instrument-prebaseline_registry-repeating",
+    "title": "TMR Data Dictionary",
+    "section": "Instrument: prebaseline_registry (REPEATING)",
+    "text": "Instrument: prebaseline_registry (REPEATING)\n\nPre-baseline measurements maintained IN THE REGISTRY DATABASE \n\nI’m suggesting that this information is NOT stored as a separate instrument. We extract directly from the Registry Database using an API script\n\n\n\n\n\n\n\n\n\n\nVariable\nLabel\nField type\nUnits\nRequired\n\n\n\n\npre_date\nDate of registry measurement\ndate\n–\nY\n\n\npre_weight\nHistorical weight\ntext (decimal)\nkg\nN\n\n\npre_hba1c\nHistorical HbA1c\ntext (decimal)\nmmol/mol\nN\n\n\npre_sbp\nHistorical systolic BP\ninteger\nmmHg\nN\n\n\npre_dbp\nHistorical diastolic BP\ninteger\nmmHg\nN\n\n\npre_diabetes_meds\nDiabetes medication use at the time\n1=monotherapy oral2=monotherapy injectable3=combination\n1-3\nY\n\n\npre-hypertensives\nantihypertensive use at that time\nyesno\n0/1\nN",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/data/data-dictionary.html#appendices.-variables-uses.-derived-variables.",
+    "href": "our-work/tmr/data/data-dictionary.html#appendices.-variables-uses.-derived-variables.",
+    "title": "TMR Data Dictionary",
+    "section": "Appendices. Variables Uses. Derived Variables.",
+    "text": "Appendices. Variables Uses. Derived Variables.\n\nAppendix: Variable Collection Timing and Analytical Use\nThis appendix provides a variable-by-variable enactment of the Statistical Analysis Plan (SAP).\nFor each variable, it documents: - when it is collected, - its analytical role, - model families in which it is used, - and its contribution to tables, figures, and narratives.\nUnless explicitly stated, all derived variables are calculated outside REDCap in analysis code.\n\nAppendix A: participant_admin\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\npid\nBaseline\nUnique identifier for data management, dataset linkage, and longitudinal modelling; never analysed\n\n\nsite\nBaseline\nFixed-effect covariate and stratification variable; appears in baseline descriptive tables and sensitivity analyses\n\n\ngroup\nBaseline\nPrimary exposure indicator (TMR vs control); used in matched cohort analyses, difference-in-differences (DiD) models, and all outcome tables\n\n\nregistry_id2\nBaseline\nLinkage to diabetes registry and construction of pragmatic control cohort; not analysed\n\n\ndob\nBaseline\nUsed to derive age; age enters propensity score models, regression covariate sets, and baseline tables\n\n\nconsent_date\nBaseline\nGovernance and audit only\n\n\n\n\n\nAppendix B: baseline_eligibility\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\nelig_reviewed\nBaseline\nGovernance only\n\n\nelig_t2d\nBaseline\nDefines analytic population (type 2 diabetes)\n\n\nelig_insulin_exclusion\nBaseline\nStratifier for insulin vs non-insulin subgroup analyses\n\n\nelig_notes\nBaseline\nAudit / quality assurance only\n\n\n\n\n\nAppendix C: baseline_anthropometry\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\nheight\nBaseline\nUsed to derive BMI at all timepoints; baseline covariate in descriptive tables\n\n\n\n\n\nAppendix D: anthropometry\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\nvisit_date\nAll visits\nDefines time scale for longitudinal and DiD models\n\n\nweight\nBaseline; all follow-ups\nPrimary continuous outcome; analysed using linear mixed-effects models and DiD regression; binary transformation used for ≥15 kg weight-loss endpoint; contributes to all primary outcome tables and trajectory figures\n\n\nwaist\nBaseline; selected follow-ups\nSecondary adiposity outcome; descriptive statistics and exploratory linear models\n\n\nhip\nBaseline; annual\nUsed to derive waist-hip ratio; descriptive cardiometabolic profiling\n\n\n\n\n\nAppendix E: blood_pressure\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\nsbp\nBaseline; all follow-ups\nSecondary outcome; analysed using linear mixed-effects models; appears in metabolic outcome tables\n\n\ndbp\nBaseline; all follow-ups\nSecondary outcome; analysed using linear mixed-effects models\n\n\n\n\n\nAppendix F: glycaemia_labs\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\nhba1c\nPre-baseline; baseline; follow-ups\nPrimary glycaemic outcome; analysed as a continuous outcome in linear mixed-effects and DiD models; dichotomised for remission (&lt;48 mmol/mol) and tighter control (&lt;42 mmol/mol); used to define relapse; appears in all primary and secondary outcome tables\n\n\n\n\n\nAppendix G: liver_labs\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\nalt\nBaseline; wk12; 12m; 24m\nSecondary metabolic outcome; analysed descriptively and using exploratory linear mixed-effects models\n\n\nast\nBaseline; wk12; 12m; 24m\nInterpreted alongside ALT; supports exploratory AST:ALT ratio analyses\n\n\nalp\nBaseline; follow-ups\nDescriptive liver function context\n\n\nggt\nBaseline; follow-ups\nExploratory marker of hepatic and metabolic stress\n\n\nbilirubin_total\nBaseline; follow-ups\nSafety and liver function descriptor\n\n\nalbumin\nBaseline; follow-ups\nLiver synthetic function; safety descriptor\n\n\nprotein_total\nBaseline; follow-ups\nDescriptive only\n\n\n\nLiver panel analytical notes: 1. Analyses are secondary and exploratory, intended to describe metabolic improvement rather than confirm liver disease outcomes.\n2. ALT is treated as the primary liver enzyme of interest, reflecting hepatic fat reduction and insulin sensitivity.\n3. AST:ALT ratio may be derived descriptively to aid interpretation but is not a formal endpoint.\n4. No diagnostic claims regarding NAFLD/NASH are made; interpretation is contextual and supportive.\n\n\nAppendix H: medication_use / medication_detail\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\ninsulin_use\nPre-baseline; baseline; follow-ups\nBinary outcome; stratifier; component of remission definition; logistic and DiD analyses\n\n\ninsulin_dose\nPre-baseline; baseline; follow-ups\nContinuous outcome; analysed descriptively and via linear models; input to economic analyses\n\n\nmetformin_use\nPre-baseline; baseline; follow-ups\nBinary covariate; remission definition; drug cost modelling\n\n\nmetformin_dose\nBaseline; follow-ups\nDose reduction metric; economic analysis input\n\n\nother_glu_use\nPre-baseline; baseline; follow-ups\nMedication burden indicator; remission definition\n\n\nantihyp_use\nPre-baseline; baseline; follow-ups\nSecondary outcome and covariate in BP models\n\n\nlipid_use\nPre-baseline; baseline; follow-ups\nContextual cardiovascular prevention covariate\n\n\n\nMedication analytical notes: - REDCap captures summary medication status sufficient for primary analyses.\n- Where greater detail is required (e.g. specific agents, dose changes, dates), these may be extracted from clinic notes or the EMR and linked at analysis stage.\n- REDCap is not treated as the authoritative medication prescribing system.\n\n\nAppendix I: eq5d3l_items (EuroQol)\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\neq_mob–eq_ad\nBaseline; wk12; 12m; 24m\nOrdinal health-related quality-of-life domains; descriptive distributions and transition matrices; sensitivity ordinal models\n\n\neq_vas\nBaseline; wk12; 12m; 24m\nContinuous self-rated health outcome; analysed using linear mixed-effects models\n\n\n\nEuroQol analytical notes: 1. EQ-5D-3L health states are converted to utility values using the UK value set (tariff).\n2. Utility scores are analysed as continuous outcomes to assess change over time and between groups.\n3. Results are interpreted as health-related quality-of-life change, not preference-based cost-utility outcomes.\n4. Utilities may be reported descriptively and used to contextualise clinical outcomes; formal QALY modelling is out of scope.\n\n\nAppendix J: paid_items\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\npaid01–paid20\nBaseline; wk12; 12m; 24m\nItem-level checks; scale construction\n\n\n\nDerived (analysis only): - PAID total score (0–100): analysed using linear mixed-effects models\n- PAID ≥40: binary high-distress outcome analysed using logistic or Poisson models\nAppears in psychosocial outcome tables.\n\n\nAppendix K: ipaq_sf\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\nipaq_*\nBaseline; wk12; 12m; 24m\nUsed to derive MET-minutes/week; included as descriptive outcome and covariate in adjusted models\n\n\n\n\n\nAppendix L: health_economics_type1\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\nhe_currency\nBaseline\nCosting metadata\n\n\nhe_tmr_weeks_supplied\nAt each supply visit\nInterval-based programme exposure; multiplied by unit cost/week to estimate programme cost\n\n\nhe_notes\nAll\nInterpretation of costing anomalies\n\n\n\nHealth-economic analytical notes: - Drug use and dose variables from REDCap are combined with unit prices held centrally to estimate medication costs.\n- Where needed, detailed medication histories and quantities may be extracted from clinic notes or EMR systems.\n- Analyses focus on budget impact and cost offsets, not full cost-effectiveness modelling.\n\n\nAppendix M: prebaseline_registry\n\n\n\n\n\n\n\n\nVariable\nCollection timepoints\nDetailed analytical use\n\n\n\n\npre_date\n≥3 pre-baseline\nTime alignment; parallel-trends diagnostics\n\n\npre_weight\n≥3 pre-baseline\nDiD outcome; pre-intervention slope estimation\n\n\npre_hba1c\n≥3 pre-baseline\nDiD outcome; pre-intervention slope estimation\n\n\npre_sbp\n≥3 pre-baseline\nSecondary DiD outcome\n\n\npre_dbp\n≥3 pre-baseline\nSecondary DiD outcome\n\n\npre_metformin_use\n≥3 pre-baseline\nMedication stability assessment\n\n\n\n\n\nAppendix N: Derived Outcomes (Analysis Only)\n\n\n\n\n\n\n\n\n\nOutcome\nExact calculation\nModel family\nSAP role\n\n\n\n\n≥15 kg weight loss\nBaseline weight − 12m weight ≥ 15 kg\nLog-binomial / Poisson\nPrimary endpoint\n\n\nDiabetes remission\nHbA1c &lt;48 mmol/mol and no glucose-lowering medication for ≥3 months\nLog-binomial / Poisson\nPrimary endpoint\n\n\nTight glycaemic control\nHbA1c &lt;42 mmol/mol\nLogistic / descriptive\nSecondary\n\n\nHbA1c change\nHbA1c(time) − HbA1c(baseline)\nLinear mixed-effects\nSecondary\n\n\nInsulin cessation\ninsulin_use = 0 at 12m\nLogistic\nExploratory (insulin cohort)\n\n\nStepped improvement\nOrdered composite of HbA1c reduction and medication reduction\nOrdinal regression\nExploratory\n\n\nRelapse\nHbA1c ≥48 mmol/mol after remission\nDescriptive\nSecondary\n\n\nEQ-5D utility\nUK tariff applied to EQ-5D-3L health states\nLinear mixed-effects\nSecondary\n\n\nPAID high distress\nPAID total ≥40\nLogistic / Poisson\nSecondary\n\n\nMET-minutes/week\nIPAQ scoring protocol\nLinear / descriptive\nSecondary\n\n\n\n\n\nAppendix O: Derived Variables\n\n\n\nAppendix P: Definitions, Derivation Rules, and Analytical Use\nThis appendix defines all derived variables required for analysis of the Saint Helena Total Meal Replacement (TMR) Diabetes Study. It is intended to be fully implementation-ready: an independent analyst should be able to recreate every derived variable exactly as specified and understand how and where each is used within the Statistical Analysis Plan (SAP).\nUnless otherwise stated, all derivations are performed in analysis code (e.g. Stata, R, Python) using cleaned, analysis-ready datasets.\n\n\nGeneral Principles\n\nAll dates are treated as calendar dates (ISO format recommended: YYYY-MM-DD).\nDurations are calculated in decimal years unless otherwise stated.\nBaseline is defined as the measurement closest to (and not after) the TMR start date.\nFollow-up windows align with the visit structure defined in the Data Dictionary and SAP.\nBinary variables are coded: 1 = Yes / achieved, 0 = No / not achieved.\n\n\nP1. Demographic and Eligibility Derivations\n\nP1.1 Age at Baseline (age_bl)\nSource variables dob, baseline_date\nDerivation \\[\n\\text{age\\_bl} = \\frac{\\text{baseline\\_date} - \\text{dob}}{365.25}\n\\] Format Continuous, years (1 decimal place)\nAnalytical use Baseline description; propensity score models; adjusted analyses.\n\n\nP1.2 Duration of Diabetes (ddur_yrs)\nSource variables dodiag_registry, baseline_date\nDerivation \\[\n\\text{ddur\\_yrs} = \\frac{\\text{baseline\\_date} - \\text{dodiag\\_registry}}{365.25}\n\\] Format Continuous, years (2 decimal places)\nAnalytical use Eligibility documentation; covariate adjustment; subgroup analyses.\n\n\nP1.3 Short-Duration Diabetes Indicators\n\ndiab_le6: 1 if ddur_yrs ≤ 6.0, else 0\ndiab_le10: 1 if ddur_yrs ≤ 10.0, else 0\n\nAnalytical use Eligibility confirmation; sensitivity and subgroup analyses.\n\n\n\n\nP2. Anthropometric Derivations\n\nP2.1 Body Mass Index (bmi)\nSource variables weight (kg), height (cm)\nDerivation \\[\n\\text{bmi} = \\frac{\\text{weight}}{(\\text{height}/100)^2}\n\\] Format Continuous, kg/m² (1 decimal place)\nAnalytical use Baseline description; covariate adjustment.\n\n\nP2.2 Absolute Weight Change (wt_change_kg_t)\nDerivation \\[\n\\text{wt\\_change\\_kg}_t = \\text{weight}_t - \\text{weight}_{bl}\n\\] Negative values indicate weight loss.\nAnalytical use Primary continuous outcome.\n\n\nP2.3 Percentage Weight Change (wt_change_pct_t)\nDerivation \\[\n\\text{wt\\_change\\_pct}_t = \\frac{\\text{weight}_t - \\text{weight}_{bl}}{\\text{weight}_{bl}} \\times 100\n\\] Analytical use Secondary descriptive outcome.\n\n\nP2.4 ≥15 kg Weight Loss Indicator (wt_loss15_t)\nDerivation 1 if (weight_bl − weight_t) ≥ 15.0 kg; else 0.\nPrimary timepoint 12 months\nAnalytical use Primary binary endpoint.\n\n\n\nP3. Glycaemic Derivations\n\nP3.1 HbA1c Change (hba1c_change_t)\nDerivation \\[\n\\text{hba1c\\_change}_t = \\text{hba1c}_t - \\text{hba1c}_{bl}\n\\] Analytical use Primary continuous glycaemic outcome.\n\n\nP3.2 HbA1c Threshold Indicators\n\nhba1c_lt48_t: 1 if HbA1c &lt; 48 mmol/mol\nhba1c_lt42_t: 1 if HbA1c &lt; 42 mmol/mol\n\nAnalytical use Secondary binary outcomes.\n\n\nP3.3 Diabetes Remission (remission_t)\nDefinition (non-insulin cohort) All criteria must be met:\n\nHbA1c &lt; 48 mmol/mol at time t\nNo glucose-lowering medication for ≥3 months prior\n\nMedication status is determined from clinic notes and/or EMR extraction.\nPrimary timepoint 12 months\nAnalytical use Primary binary endpoint.\n\n\nP3.4 Relapse from Remission (relapse_t)\nAmong participants previously in remission:\n1 if HbA1c ≥ 48 mmol/mol at a subsequent follow-up; else 0.\nAnalytical use Durability analyses.\n\n\n\nP4. Medication Burden Derivations\n\nP4.1 Insulin Use Indicator (insulin_use_t)\n1 if any insulin prescribed in the preceding 3 months; else 0.\nAnalytical use Stratification; remission definition component.\n\n\nP4.2 Insulin Dose Change (insulin_dose_change_t)\nDerivation \\[\n\\text{dose}_t - \\text{dose}_{bl}\n\\] Units: international units/day.\nAnalytical use Exploratory insulin-cohort analyses.\n\n\nP4.3 ≥50% Insulin Reduction (insulin_red50_t)\n1 if dose_t ≤ 0.5 × dose_bl; else 0.\nAnalytical use Stepped improvement summaries.\n\n\nP4.4 Medication Class Count (med_class_n_t)\nCount of glucose-lowering medication classes in use at time t.\nAnalytical use Medication de-intensification summaries.\n\n\n\nP5. Insulin-Cohort Stepped Improvement Outcome\n\nP5.1 Ordinal Stepped Improvement (step_improve_t)\nLevel 1 – Best outcome HbA1c &lt; 48 mmol/mol and no glucose-lowering medication ≥3 months.\nLevel 2 – De-intensification HbA1c ≤ baseline + 3 mmol/mol or &lt;53 mmol/mol and insulin dose reduced ≥50% or stopped and no net increase in other agents.\nLevel 3 – Unfavourable HbA1c worsened by &gt;5 mmol/mol or ≥64 mmol/mol or increased medication burden.\nAnalytical use Primary exploratory insulin-cohort outcome.\n\n\n\nP6. Liver and FibroScan Derivations (Exploratory)\n\nP6.1 AST:ALT Ratio (ast_alt_ratio)\n\\[\n\\text{AST} / \\text{ALT}\n\\]\nAnalytical use Descriptive metabolic context only.\n\n\nP6.2 Fibrosis and Steatosis Staging\nDerived using manufacturer-recommended cut-points applied to:\n\nLiver stiffness (kPa) → fibrosis stage (F0–F4)\nCAP (dB/m) → steatosis grade (S0–S3)\n\nAnalytical use Exploratory descriptive summaries only.\n\n\n\nP7. Quality of Life and Distress Scores\n\nP7.1 EQ-5D Utility Index (eq5d_utility_t)\nDerived using UK MVH tariff applied to EQ-5D-3L health states.\nAnalytical use Secondary outcome; health-economic interpretation.\n\n\nP7.2 PAID Total Score (paid_total_t)\nSum of 20 items × 1.25 → scale 0–100.\n\n\nP7.3 High Diabetes Distress (paid_ge40_t)\n1 if PAID ≥ 40; else 0.\nAnalytical use Secondary psychosocial outcome.\n\n\n\nP8. Physical Activity (IPAQ) Derivations\n\nP8.1 MET-Minutes per Week (ipaq_metwk_t)\n\nWalking: minutes × days × 3.3\nModerate: minutes × days × 4.0\nVigorous: minutes × days × 8.0\n\nTotal = sum of above.\n\n\nP8.2 Activity Category (ipaq_cat_t)\nLow / Moderate / High using standard IPAQ thresholds.\nAnalytical use Descriptive behavioural context.\n\n\n\nP9. Economic Derivations\n\nP9.1 Monthly Medication Cost (med_cost_mo_t)\n\\[\n\\text{med\\_cost\\_mo}_t = \\sum_m \\frac{\\text{weeks supplied}_{m,t} \\times \\text{weekly unit cost}_m}{4.345}\n\\]\nAnalytical use Medication cost summaries; cost-offset analyses.\n\n\nP9.2 Monthly Insulin Cost (insulin_cost_mo_t)\nSubset of med_cost_mo_t including insulin only.\n\n\nP9.3 Change in Monthly Medication Cost (med_cost_change_mo_t)\n\\[\n\\text{med\\_cost\\_mo}_t - \\text{med\\_cost\\_mo}_{bl}\n\\]\nNegative values indicate cost savings.\n\n\nP9.4 Programme Cost per Participant (tmr_cost_pp)\nTotal programme delivery cost divided by number initiating TMR.\n\n\nP9.5 Net Cost Offset (net_cost_offset_t)\n\\[\n(\\text{med\\_cost\\_mo}_{bl} - \\text{med\\_cost\\_mo}_t) \\times 12 - \\text{tmr\\_cost\\_pp}\n\\]\nPositive values indicate net annual savings.\n\n\n\nClosing Note\nThis appendix defines all derived variables a priori and should be read alongside the Statistical analysis plan (sap), which specifies how these variables are combined, modelled, and interpreted.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Data",
+      "Data Dictionary"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/protocol.html",
+    "href": "our-work/tmr/protocol.html",
+    "title": "Service Evaluation Protocol",
+    "section": "",
+    "text": "St Helena has a high burden of type 2 diabetes and obesity, placing sustained pressure on a small, integrated health system. Evidence from high-quality trials shows that Total Meal Replacement (TMR) programmes can produce substantial weight loss and improved blood glucose control, and that some people can achieve diabetes remission when weight loss is maintained.\nThis protocol describes a service evaluation of a TMR Diabetes Remission Programme delivered within routine St Helena diabetes services (with learning intended to inform delivery in other small or remote settings, including Ascension Island where relevant). The purpose is not to re-test biological efficacy, but to understand whether the programme can be delivered safely, acceptably, and effectively in local routine care, and what implementation learning is needed for potential continuation or scale-up.\nThe evaluation focuses on:\n\nclinical outcomes (weight, HbA1c, diabetes remission, medication changes);\nsafety (including medication adjustment and adverse events);\nfeasibility and acceptability for participants and staff;\ndelivery and retention across programme phases.\n\nThe programme is delivered in three phases: a time-limited total meal replacement phase (approximately 12 weeks), stepped food reintroduction, and longer-term weight maintenance support. Clinical monitoring and medication adjustment are embedded throughout.\nThe evaluation primarily uses routinely collected clinical and registry data, supplemented by light-touch participant and staff feedback and a small number of qualitative interviews. Analysis follows an implementation-focused approach, with detailed methods set out in the linked Statistical Analysis Plan.\nAssociated documents:\n\nThe implementation evidence brief \nStatistical analysis plan (sap) \nData dictionary \nData management plan (dmp)",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "The Study Protocol"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/protocol.html#executive-summary",
+    "href": "our-work/tmr/protocol.html#executive-summary",
+    "title": "Service Evaluation Protocol",
+    "section": "",
+    "text": "St Helena has a high burden of type 2 diabetes and obesity, placing sustained pressure on a small, integrated health system. Evidence from high-quality trials shows that Total Meal Replacement (TMR) programmes can produce substantial weight loss and improved blood glucose control, and that some people can achieve diabetes remission when weight loss is maintained.\nThis protocol describes a service evaluation of a TMR Diabetes Remission Programme delivered within routine St Helena diabetes services (with learning intended to inform delivery in other small or remote settings, including Ascension Island where relevant). The purpose is not to re-test biological efficacy, but to understand whether the programme can be delivered safely, acceptably, and effectively in local routine care, and what implementation learning is needed for potential continuation or scale-up.\nThe evaluation focuses on:\n\nclinical outcomes (weight, HbA1c, diabetes remission, medication changes);\nsafety (including medication adjustment and adverse events);\nfeasibility and acceptability for participants and staff;\ndelivery and retention across programme phases.\n\nThe programme is delivered in three phases: a time-limited total meal replacement phase (approximately 12 weeks), stepped food reintroduction, and longer-term weight maintenance support. Clinical monitoring and medication adjustment are embedded throughout.\nThe evaluation primarily uses routinely collected clinical and registry data, supplemented by light-touch participant and staff feedback and a small number of qualitative interviews. Analysis follows an implementation-focused approach, with detailed methods set out in the linked Statistical Analysis Plan.\nAssociated documents:\n\nThe implementation evidence brief \nStatistical analysis plan (sap) \nData dictionary \nData management plan (dmp)",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "The Study Protocol"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/protocol.html#background-and-rationale",
+    "href": "our-work/tmr/protocol.html#background-and-rationale",
+    "title": "Service Evaluation Protocol",
+    "section": "Background and rationale",
+    "text": "Background and rationale\nType 2 diabetes and obesity represent a major and growing health burden on Saint Helena. A high proportion of adults are living with type 2 diabetes, many with poor glycaemic control and long-term complications. In a small and remote health system, this creates significant clinical, financial, and workforce pressures.\nInternational evidence shows that structured Total Meal Replacement (TMR) programmes can lead to substantial weight loss, improved metabolic health, and—among some people—remission of type 2 diabetes. These effects are most consistently seen in people with relatively recent diagnoses, but benefits also extend to medication reduction, improved quality of life, and reduced long-term service demand.\nRandomised controlled trials, including DiRECT, have already demonstrated that TMR can be effective and safe when delivered with appropriate clinical oversight. The key remaining question for Saint Helena is not whether TMR works in principle, but whether it can be delivered safely, acceptably, and effectively within a small-island health system, and whether the benefits observed elsewhere can be realised locally.\nThis programme therefore adopts an implementation and service-evaluation perspective. The focus is on real-world delivery, system fit, patient experience, and clinical outcomes, rather than on re-examining efficacy under tightly controlled trial conditions.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "The Study Protocol"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/protocol.html#programme-aims-and-evaluation-objectives",
+    "href": "our-work/tmr/protocol.html#programme-aims-and-evaluation-objectives",
+    "title": "Service Evaluation Protocol",
+    "section": "Programme aims and evaluation objectives",
+    "text": "Programme aims and evaluation objectives\n\nProgramme aim\nThe overall aim of the TMR programme is to support adults with type 2 diabetes on Saint Helena to achieve substantial weight loss, improved glycaemic control, and—where possible—diabetes remission, while ensuring patient safety and maintaining high-quality routine clinical care.\n\n\nEvaluation objectives\nThe evaluation has four primary objectives:\n\nClinical outcomes To assess changes in weight, HbA1c, medication use, and related cardiometabolic markers over follow-up, including the proportion of participants achieving diabetes remission.\nMedication de-intensification and safety To describe changes in diabetes medication burden, including insulin reduction or cessation, and to monitor adverse events and safety outcomes during and after the TMR phase.\nAcceptability and feasibility To assess how acceptable the programme is to participants and staff, and how feasible it is to deliver within existing services, workflows, and workforce constraints.\nImplementation learning To generate practical learning on delivery, monitoring, data capture, and follow-up that can inform future service planning on Saint Helena and in other small or remote settings.\n\nThe evaluation explicitly recognises that not all benefits will take the form of diabetes remission. Improvements short of remission—such as meaningful weight loss, better glycaemic control, reduced medication use, and improved wellbeing—are considered important and clinically relevant outcomes.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "The Study Protocol"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/protocol.html#study-design-overview",
+    "href": "our-work/tmr/protocol.html#study-design-overview",
+    "title": "Service Evaluation Protocol",
+    "section": "Study design overview",
+    "text": "Study design overview\nThis is a prospective, non-randomised service evaluation of a Total Meal Replacement programme delivered within routine diabetes services on Saint Helena and Ascension Island.\nUp to 50 eligible and willing participants are offered the TMR programme. Outcomes among participants are evaluated longitudinally and, for selected analyses, compared with a matched group of individuals with type 2 diabetes drawn from the island’s diabetes registry who do not take part in the programme.\nThe study is designed as an implementation evaluation rather than a conventional randomised controlled trial. This approach reflects:\n\nthe strong existing evidence base for TMR effectiveness;\nthe small size of the eligible population;\nethical considerations around withholding an intervention with known benefits; and\nthe primary interest in real-world delivery, system integration, and sustainability.\n\nTwo analytic populations are defined:\n\nPrimary cohort: adults with type 2 diabetes not using insulin at baseline.\nExploratory cohort: adults with type 2 diabetes using insulin at baseline, included with enhanced clinical monitoring and more exploratory analysis.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "The Study Protocol"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/protocol.html#participant-eligibility-and-recruitment",
+    "href": "our-work/tmr/protocol.html#participant-eligibility-and-recruitment",
+    "title": "Service Evaluation Protocol",
+    "section": "Participant eligibility and recruitment",
+    "text": "Participant eligibility and recruitment\n\nTarget population\nThe programme is offered to adults with type 2 diabetes living on St Helena or Ascension Island who are overweight or obese and for whom meaningful weight loss is clinically appropriate.\nThe primary target group comprises adults with relatively recent diagnoses of type 2 diabetes who are not using insulin at baseline, reflecting the population in which diabetes remission is most plausible based on existing evidence. Adults using insulin are also eligible to participate but are treated as a secondary, exploratory group with enhanced clinical oversight.\n\n\nInclusion criteria\nParticipants must meet all of the following criteria at screening:\n\nDiagnosis of type 2 diabetes.\nAge 18–65 years.\nBody mass index (BMI) ≥25 kg/m².\nEngagement with routine diabetes care - assessment as at least 1 clinic visit in the past 12 months.\nWillingness and ability to participate in the programme and attend follow-up visits.\n\nParticipants using insulin are eligible, provided they are assessed as suitable by the clinical team and agree to closer monitoring and medication adjustment during the TMR phase.\n\n\nExclusion criteria\nIndividuals will not be referred to or enrolled in the programme if they have:\n\nPregnancy, breastfeeding, or plans to become pregnant during the early phases of the programme.\nSevere or unstable medical conditions that would make rapid weight loss unsafe (e.g. recent myocardial infarction or stroke, severe heart failure, advanced renal disease).\nActive eating disorders, substance use disorders, or conditions that would impair safe participation (assessed at screening).\nPrior bariatric surgery.\nAny other clinical or practical factors judged by the care team to make participation unsafe or inappropriate.\n\nA full operational list of inclusion and exclusion criteria is available on the website eligibility page\n\n\nIdentification and recruitment\nPotential participants are identified through the island’s diabetes registry, local adverts, and clinic lists. Eligible individuals are contacted and invited to attend a screening visit, during which eligibility is confirmed, the programme is explained, and interest in participation is assessed.\nRecruitment is intentionally pragmatic. All eligible and willing individuals are offered the programme until capacity is reached. Individuals who decline participation are not excluded from routine care, and—with appropriate consent—their registry data may be used to support comparative analyses.\nRecruitment, screening outcomes, and baseline scheduling are tracked using REDCap-based tools to ensure transparency, auditability, and linkage to subsequent clinical and evaluation data.\n\n\nConsent\nWritten informed consent is obtained prior to baseline assessment. Consent covers participation in the programme, collection and use of clinical data for evaluation purposes, and—where applicable—participation in qualitative components such as interviews or surveys.\nParticipants may withdraw from the programme or from evaluation activities at any time without affecting their access to routine clinical care.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "The Study Protocol"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/protocol.html#description-of-the-intervention",
+    "href": "our-work/tmr/protocol.html#description-of-the-intervention",
+    "title": "Service Evaluation Protocol",
+    "section": "Description of the intervention",
+    "text": "Description of the intervention\nThe Total Meal Replacement (TMR) programme is a structured, time-limited dietary intervention followed by phased food reintroduction and longer-term weight maintenance support. It is delivered within routine diabetes services, with regular clinical monitoring and medication adjustment to ensure safety.\nThe programme is organised into three main phases. While the overall structure is standardised, delivery allows limited flexibility to accommodate individual needs, preferences, and clinical circumstances.\n\nPhase 1: Total Meal Replacement (weeks 0–12)\nParticipants replace all usual meals with nutritionally complete meal-replacement products for approximately 12 weeks. Daily energy intake is substantially reduced, with the aim of achieving rapid and clinically meaningful weight loss.\nDuring this phase:\n\nDiabetes and blood pressure medications are reviewed and adjusted according to agreed clinical protocols.\nParticipants are seen regularly for weight checks, symptom review, and clinical monitoring.\nBlood glucose and blood pressure are monitored closely, particularly in the early weeks.\nParticipants receive behavioural support and practical guidance to support adherence and wellbeing.\n\nThis phase carries the greatest potential for rapid metabolic improvement and therefore also requires the most intensive clinical oversight.\n\n\nPhase 2: Food reintroduction (approximately weeks 12–18)\nFollowing completion of the TMR phase, participants transition gradually back to food-based meals. Meal-replacement products are reduced in a stepwise manner while balanced meals are reintroduced.\nThe focus during this phase is on:\n\nMaintaining weight loss achieved during TMR.\nEstablishing sustainable eating patterns.\nSupporting participants to understand portion sizes, food choices, and meal timing.\n\nClinical monitoring continues during food reintroduction, with medication adjusted as required.\n\n\nPhase 3: Weight maintenance and follow-up (weeks 19+)\nAfter food reintroduction, participants enter a longer-term weight maintenance phase. The aim is to stabilise weight, prevent regain, and support sustained improvements in glycaemic control.\nFollow-up during this phase includes:\n\nPeriodic clinical review and weight monitoring.\nOngoing support for diet, physical activity, and behaviour change.\nContinued review of diabetes medications, including opportunities for further de-intensification.\n\nWhere weight regain or deterioration in glycaemic control occurs, additional support or temporary return to meal replacement may be offered, guided by clinical judgement.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "The Study Protocol"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/protocol.html#clinical-monitoring-safety-and-governance",
+    "href": "our-work/tmr/protocol.html#clinical-monitoring-safety-and-governance",
+    "title": "Service Evaluation Protocol",
+    "section": "Clinical monitoring, safety, and governance",
+    "text": "Clinical monitoring, safety, and governance\nParticipant safety is a central component of programme delivery. The TMR intervention is embedded within routine clinical care, with clear escalation pathways and governance arrangements.\n\nClinical monitoring\nAcross all phases, participants are monitored for:\n\nWeight change and symptoms.\nBlood pressure and blood glucose.\nChanges in diabetes and cardiovascular medication.\nAdverse events or clinical deterioration.\n\nMonitoring intensity is highest during the TMR phase and is adjusted thereafter based on clinical stability and individual risk.\n\n\nMedication adjustment\nStructured protocols guide the reduction, withdrawal, and reintroduction of diabetes and blood pressure medications. These protocols are designed to minimise the risk of hypoglycaemia, symptomatic hyperglycaemia, hypotension, and other adverse effects.\nMedication decisions remain the responsibility of qualified clinicians, with protocols providing guidance rather than rigid rules.\n\n\nAdverse events and escalation\nAdverse events are identified through routine clinical contact and participant self-report. Serious or unexpected events are documented, reviewed, and escalated according to agreed governance pathways.\nA Data Monitoring Group oversees safety during the programme, reviewing emerging issues and recommending modifications if required.\n\n\nGovernance and quality assurance\nThe programme operates under established clinical, information governance, and data protection frameworks. Documentation, data flows, and decision-making processes are designed to be auditable and proportionate to the scale of the programme.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "The Study Protocol"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/protocol.html#data-collection-and-outcome-measures",
+    "href": "our-work/tmr/protocol.html#data-collection-and-outcome-measures",
+    "title": "Service Evaluation Protocol",
+    "section": "Data collection and outcome measures",
+    "text": "Data collection and outcome measures\nData collection for the evaluation is designed to align closely with routine clinical care, minimising additional burden on participants and staff while ensuring that outcomes of interest can be assessed robustly.\n\nData sources\nData are drawn from three main sources:\n\nThe St Helena diabetes registry.\nStructured participant questionnaires, collected directly into an online REDCap database.\nQualitative interviews with a subset of participants and staff.\n\n\n\nPrimary outcomes\nThe primary clinical outcomes for the evaluation are:\n\nChange in body weight between baseline and 12-month follow-up.\nChange in HbA1c between baseline and 12-month follow-up.\nDiabetes remission, defined as sustained HbA1c below the diagnostic threshold without glucose-lowering medication, assessed according to pre-specified criteria.\n\nThese outcomes reflect both international definitions and what is clinically meaningful in routine practice.\n\n\nSecondary outcomes\nSecondary outcomes include:\n\nChanges in diabetes medication use, including insulin dose reduction or cessation.\nBlood pressure and lipid profile changes.\nMeasures of wellbeing, quality of life, and diabetes-related distress.\nProgramme retention and completion.\n\nFor participants using insulin at baseline, outcomes are interpreted cautiously and reported separately.\n\n\nQualitative outcomes\nQualitative data are collected to understand participant and staff experiences, including:\n\nAcceptability of the programme.\nBarriers and facilitators to engagement and adherence.\nPerceived impacts on daily life and self-management.\n\nThese data provide essential context for interpreting quantitative findings and for informing future service development.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "The Study Protocol"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/protocol.html#analysis-approach",
+    "href": "our-work/tmr/protocol.html#analysis-approach",
+    "title": "Service Evaluation Protocol",
+    "section": "Analysis approach",
+    "text": "Analysis approach\nThe analysis approach is designed to support a rigorous, implementation-focused service evaluation of the TMR Diabetes Remission Programme in St Helena and Ascension Island. The aim is to generate credible, decision-relevant evidence on outcomes and delivery in routine care, recognising that statistical inference is one component of a broader evaluation that also considers feasibility, safety, and acceptability.\nAnalyses will be conducted in accordance with the Statistical analysis plan (sap) , which provides full technical detail. The summary below describes the overall analytic strategy and interpretive principles.\n\nOverall analytic strategy\nThe evaluation uses a non-randomised, observational design appropriate to service delivery. Analyses combine:\n\nregistry-based matched cohort comparisons; and\nlongitudinal modelling of outcome trajectories over time.\n\nThese complementary approaches are used to contextualise outcomes observed among programme participants and to strengthen causal interpretation where feasible, while recognising the limitations inherent in routine-care data.\n\n\nAnalytic populations\nAnalyses are stratified by baseline insulin use, reflecting clinically meaningful differences in complexity and expected outcomes. A primary analytic population (participants not using insulin at baseline) and an exploratory analytic population (participants using insulin at baseline) are defined, as set out in the Statistical Analysis Plan.\nPrimary analyses follow intention-to-treat principles, with additional analyses used to explore the impact of programme exposure and adherence.\n\n\nOutcomes and estimation\nClinical, process, safety, and acceptability outcomes are analysed using appropriate statistical models for repeated measures / longitudinal data. Emphasis is placed on estimation and uncertainty (effect sizes and confidence intervals), with formal hypothesis testing used selectively and interpreted cautiously in light of sample size and service-evaluation context.\nPrimary and secondary endpoints, including definitions of diabetes remission, weight loss thresholds, and medication outcomes, are pre-specified in the Statistical Analysis Plan.\n\n\nInterpretation and robustness\nFindings are interpreted by triangulating results across analytic approaches and outcome domains, rather than relying on single tests or thresholds. Sensitivity analyses are undertaken to assess robustness to key assumptions, including confounding control and missing data, as described in the Statistical Analysis Plan.\nOverall interpretation explicitly integrates quantitative findings with implementation-relevant considerations, recognising that decisions about service continuation or adaptation depend on more than statistical significance alone.\n\n\nQualitative analysis\nQualitative data (including free-text survey responses and semi-structured interviews) are analysed thematically using inductive coding, supported by simple software tools where appropriate. Interviews are conducted in English, digitally recorded, and transcribed verbatim with participant consent. Qualitative findings are used to explain and contextualise quantitative results, particularly around acceptability, feasibility, and barriers and facilitators to engagement.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "The Study Protocol"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/protocol.html#ethics-information-governance-and-consent",
+    "href": "our-work/tmr/protocol.html#ethics-information-governance-and-consent",
+    "title": "Service Evaluation Protocol",
+    "section": "Ethics, information governance, and consent",
+    "text": "Ethics, information governance, and consent\nThis work is a service evaluation of a pilot clinical programme rather than a research study. Nevertheless, ethical principles relating to consent, confidentiality, and data protection are applied throughout.\n\nEthics and approvals\nThe evaluation protocol is reviewed through appropriate governance and ethics processes, including UKHSA REGG and local approval routes where required.\n\n\nConsent and confidentiality\nInformed consent is obtained for participation in evaluation activities beyond routine care, including surveys and interviews. Participation in evaluation components is voluntary and does not affect access to clinical care.\nAll evaluation data are handled in accordance with UK GDPR and local information governance requirements. Identifiable data are restricted to those involved in care delivery, and evaluation outputs use anonymised and aggregated data.\n\n\nSmall numbers and disclosure control\nGiven the small population size, particular care is taken to prevent disclosure. Suppression, aggregation, and careful reporting practices are applied consistently.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "The Study Protocol"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/protocol.html#reporting-and-dissemination",
+    "href": "our-work/tmr/protocol.html#reporting-and-dissemination",
+    "title": "Service Evaluation Protocol",
+    "section": "Reporting and dissemination",
+    "text": "Reporting and dissemination\nFindings from the evaluation will be reported in a form suitable for clinical teams, health system leaders, and external stakeholders.\nReporting will focus on:\n\nClinical outcomes and safety.\nProgramme acceptability and feasibility.\nPractical lessons for future service delivery.\n\nOutputs may include internal reports, summaries for participants, and contributions to the wider evidence base on diabetes remission programmes in small or remote settings.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "The Study Protocol"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-telephone-script.html",
+    "href": "our-work/tmr/sops/recruitment-telephone-script.html",
+    "title": "Recruitment Telephone Script",
+    "section": "",
+    "text": "Hello, may I speak with participant name, please?\nHello participant name, my name is staff name, and I am calling from the St Helena / Ascension Island Health Service. Is now a convenient time to speak for a few minutes?\n(If no, arrange a call back)\nBefore we continue, I just want to check that I’m speaking to the right person. Can you please confirm your date of birth?"
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-telephone-script.html#opening-and-identity-check",
+    "href": "our-work/tmr/sops/recruitment-telephone-script.html#opening-and-identity-check",
+    "title": "Recruitment Telephone Script",
+    "section": "",
+    "text": "Hello, may I speak with participant name, please?\nHello participant name, my name is staff name, and I am calling from the St Helena / Ascension Island Health Service. Is now a convenient time to speak for a few minutes?\n(If no, arrange a call back)\nBefore we continue, I just want to check that I’m speaking to the right person. Can you please confirm your date of birth?"
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-telephone-script.html#why-we-are-calling",
+    "href": "our-work/tmr/sops/recruitment-telephone-script.html#why-we-are-calling",
+    "title": "Recruitment Telephone Script",
+    "section": "2. Why we are calling",
+    "text": "2. Why we are calling\nThank you. I’m calling because our records show that you have type 2 diabetes, and you have attended our clinic within the last year.\nWe are inviting a small number of people to take part in a new programme being offered, which is designed to help people improve their diabetes control and, for some people, potentially put their diabetes into remission.\nThis programme is part of a carefully monitored health project being run locally by our Health Team."
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-telephone-script.html#what-the-programme-is-about",
+    "href": "our-work/tmr/sops/recruitment-telephone-script.html#what-the-programme-is-about",
+    "title": "Recruitment Telephone Script",
+    "section": "3. What the programme is about",
+    "text": "3. What the programme is about\nThe programme involves a structured, low-calorie meal replacement plan, with regular support from our health team.\nFor many people, losing weight in a safe and supported way can:\n\nLower blood sugar levels\nReduce the need for diabetes medications\nIn some cases, allow people to stop diabetes medication altogether\n\nIt’s important to be clear that results vary from person to person, but similar programmes elsewhere have helped many people make big improvements to their health."
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-telephone-script.html#being-open-about-commitment",
+    "href": "our-work/tmr/sops/recruitment-telephone-script.html#being-open-about-commitment",
+    "title": "Recruitment Telephone Script",
+    "section": "4. Being open about commitment",
+    "text": "4. Being open about commitment\nI also want to be upfront that this programme does require commitment.\nIt involves:\n\nFollowing a structured eating plan for several months\nAttending regular clinic visits\nKeeping in close touch with the health team\n\nSome people find it challenging at times, but you would not be doing this alone. Support is a key part of the programme."
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-telephone-script.html#introducing-the-screening-visit",
+    "href": "our-work/tmr/sops/recruitment-telephone-script.html#introducing-the-screening-visit",
+    "title": "Recruitment Telephone Script",
+    "section": "5. Introducing the screening visit",
+    "text": "5. Introducing the screening visit\nThe next step, if you are interested, would be to attend a screening visit at the clinic.\nAt this visit we would:\n\nMeasure your height and weight to calculate your Body Mass Index, or BMI\nCheck a few basic details from your medical record\nGather some extra detail on your eating habits\nExplain the programme to you in more detail\nGive you the chance to ask questions before deciding whether to take part\n\nThe screening visit helps us confirm whether the programme is suitable for you."
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-telephone-script.html#key-eligibility-checks",
+    "href": "our-work/tmr/sops/recruitment-telephone-script.html#key-eligibility-checks",
+    "title": "Recruitment Telephone Script",
+    "section": "6. Key eligibility checks",
+    "text": "6. Key eligibility checks\nBefore inviting you in to see us, I just need to check a few simple points:\n\nAre you 65 years old or over?\nHave you been told you have type 2 diabetes within the last 6 years?\n\n(If unsure, reassure that this can be confirmed at screening.)\nOne of the criteria we check at screening is BMI, which is based on height and weight. To take part, BMI needs to be 25 or higher, but we only confirm that in person."
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-telephone-script.html#emphasising-choice-and-voluntariness",
+    "href": "our-work/tmr/sops/recruitment-telephone-script.html#emphasising-choice-and-voluntariness",
+    "title": "Recruitment Telephone Script",
+    "section": "7. Emphasising choice and voluntariness",
+    "text": "7. Emphasising choice and voluntariness\nTaking part is completely your choice. Coming to the screening visit does not mean you are committing to the programme. It is simply a chance to:\n\nLearn more\nSee if you are eligible\nDecide what feels right for you\n\nYour usual care will continue whether or not you decide to take part."
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-telephone-script.html#invitation-to-attend-screening",
+    "href": "our-work/tmr/sops/recruitment-telephone-script.html#invitation-to-attend-screening",
+    "title": "Recruitment Telephone Script",
+    "section": "8. Invitation to attend screening",
+    "text": "8. Invitation to attend screening\nBased on what we’ve discussed, would you be interested in attending a screening appointment to learn more about the programme?\n(If yes)\nThat’s great. We really appreciate your interest. Let’s look at a suitable time for your screening visit.\n(If no)\nThat’s perfectly fine. Thank you for taking the time to speak with me today. If you change your mind in the future, or would like more information at any point, you’re very welcome to get back in touch with the diabetes team.\nBefore we finish, would it be okay for us to keep a note that we spoke today?"
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-telephone-script.html#practical-arrangements",
+    "href": "our-work/tmr/sops/recruitment-telephone-script.html#practical-arrangements",
+    "title": "Recruitment Telephone Script",
+    "section": "9. Practical arrangements",
+    "text": "9. Practical arrangements\n\nLocation: clinic name\nEstimated duration: About 45 minutes\nWhat to bring: Please bring any reading glasses you use, and wear light clothing if possible\n\nIf you have any questions before the appointment, you can contact us on 22500, please ask for your name."
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-telephone-script.html#closing",
+    "href": "our-work/tmr/sops/recruitment-telephone-script.html#closing",
+    "title": "Recruitment Telephone Script",
+    "section": "10. Closing",
+    "text": "10. Closing\nThank you very much for your time today, participant name.\nWe’re really pleased to be offering this opportunity on [St Helena / Ascension Island], and we look forward to seeing you at the screening visit.\nHave a lovely day.\nStaff notes (not read aloud):\n\nKeep tone friendly, calm, and encouraging\nAvoid medical jargon\nAllow pauses for questions\nDo not promise remission or stopping medication; use phrases like “may help” or “for some people”"
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-info-sheet.html",
+    "href": "our-work/tmr/sops/screening-info-sheet.html",
+    "title": "The Screening Information Sheet",
+    "section": "",
+    "text": "You are being invited to attend a screening visit for a new Diabetes Remission Programme being offered on St Helena.\nThis visit is to:\n\nCheck whether the programme is suitable for you\nExplain the programme in a bit more detail\nGive you a chance to ask questions\n\nComing to this visit does not mean you are signing up to the programme."
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-info-sheet.html#what-is-this-visit-about",
+    "href": "our-work/tmr/sops/screening-info-sheet.html#what-is-this-visit-about",
+    "title": "The Screening Information Sheet",
+    "section": "",
+    "text": "You are being invited to attend a screening visit for a new Diabetes Remission Programme being offered on St Helena.\nThis visit is to:\n\nCheck whether the programme is suitable for you\nExplain the programme in a bit more detail\nGive you a chance to ask questions\n\nComing to this visit does not mean you are signing up to the programme."
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-info-sheet.html#what-will-happen-at-the-screening-visit",
+    "href": "our-work/tmr/sops/screening-info-sheet.html#what-will-happen-at-the-screening-visit",
+    "title": "The Screening Information Sheet",
+    "section": "What will happen at the screening visit?",
+    "text": "What will happen at the screening visit?\nThe visit is simple and usually takes about 30-40 minutes.\nAt the visit, a member of the health team will:\n\nMeasure your height and weight\nUse these to calculate your Body Mass Index (BMI)\nCheck a few basic details from your medical record (such as age, diabetes diagnosis date, and recent clinic visits)\nAsk you a few questions about your eating habits\nExplain what taking part in the programme would involve\n\nNo treatments or changes to medication will happen at this visit."
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-info-sheet.html#why-do-you-measure-height-and-weight",
+    "href": "our-work/tmr/sops/screening-info-sheet.html#why-do-you-measure-height-and-weight",
+    "title": "The Screening Information Sheet",
+    "section": "Why do you measure height and weight?",
+    "text": "Why do you measure height and weight?\nThe programme is designed for people whose health is likely to benefit from weight loss. Height and weight measurements help us check whether the programme is safe and appropriate for you. These checks are part of making sure the programme is offered fairly and safely."
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-info-sheet.html#why-do-you-need-to-know-about-my-eating-habits",
+    "href": "our-work/tmr/sops/screening-info-sheet.html#why-do-you-need-to-know-about-my-eating-habits",
+    "title": "The Screening Information Sheet",
+    "section": "Why do you need to know about my eating habits?",
+    "text": "Why do you need to know about my eating habits?\nThese questions help the team understand whether the programme is right for each person and how best to offer support. They are not about judgement or blame. Everyone’s eating patterns are different, and there are no right or wrong answers. The information helps make sure the programme is safe and appropriate. All information shared is treated confidentially."
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-info-sheet.html#do-i-have-to-decide-at-this-visit",
+    "href": "our-work/tmr/sops/screening-info-sheet.html#do-i-have-to-decide-at-this-visit",
+    "title": "The Screening Information Sheet",
+    "section": "Do I have to decide at this visit?",
+    "text": "Do I have to decide at this visit?\nNo. The screening visit is information-gathering only.\nIf you are eligible, you can:\n\nTake time to think about it\nTalk it over with family or friends\nDecide later whether you would like to take part"
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-info-sheet.html#what-happens-next",
+    "href": "our-work/tmr/sops/screening-info-sheet.html#what-happens-next",
+    "title": "The Screening Information Sheet",
+    "section": "What happens next?",
+    "text": "What happens next?\n\nIf you are eligible and interested, a baseline appointment will be arranged to go through the programme fully\nIf you decide not to take part, your usual diabetes care will continue as normal"
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-info-sheet.html#do-i-need-to-prepare-anything",
+    "href": "our-work/tmr/sops/screening-info-sheet.html#do-i-need-to-prepare-anything",
+    "title": "The Screening Information Sheet",
+    "section": "Do I need to prepare anything?",
+    "text": "Do I need to prepare anything?\n\nPlease wear light clothing if possible, to help us measure your weight fully-clothed.\nBring any glasses you need for reading\nBring any questions you may have"
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-info-sheet.html#who-can-i-contact",
+    "href": "our-work/tmr/sops/screening-info-sheet.html#who-can-i-contact",
+    "title": "The Screening Information Sheet",
+    "section": "Who can I contact?",
+    "text": "Who can I contact?\nIf you have questions at any time, please contact:\nDr Selvi Jeyaseelan Phone: 22500 Email: selvi.jeyaseelan@sainthelena.gov.sh"
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-info-sheet.html#thank-you",
+    "href": "our-work/tmr/sops/screening-info-sheet.html#thank-you",
+    "title": "The Screening Information Sheet",
+    "section": "Thank you",
+    "text": "Thank you\nThank you for taking the time to attend a screening visit and for your interest in improving diabetes care on St Helena."
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-sop.html",
+    "href": "our-work/tmr/sops/screening-sop.html",
+    "title": "The Screening Visit",
+    "section": "",
+    "text": "This SOP describes the standard process for screening potential participants for the Total Meal Replacement (TMR) Diabetes Remission Programme.\nThe screening visit is designed to:\n\nConfirm eligibility and safety\nProvide clear, neutral information about the programme\nSupport informed choice\nIdentify next steps (baseline visit, control group, or no further contact)\n\nScreening is not consent to participate and does not commit the individual to the programme.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Screening SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-sop.html#purpose",
+    "href": "our-work/tmr/sops/screening-sop.html#purpose",
+    "title": "The Screening Visit",
+    "section": "",
+    "text": "This SOP describes the standard process for screening potential participants for the Total Meal Replacement (TMR) Diabetes Remission Programme.\nThe screening visit is designed to:\n\nConfirm eligibility and safety\nProvide clear, neutral information about the programme\nSupport informed choice\nIdentify next steps (baseline visit, control group, or no further contact)\n\nScreening is not consent to participate and does not commit the individual to the programme.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Screening SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-sop.html#documentation",
+    "href": "our-work/tmr/sops/screening-sop.html#documentation",
+    "title": "The Screening Visit",
+    "section": "Documentation",
+    "text": "Documentation\nThe following documents are used directly as part of the screening visit process.\n\n\n\nDocument\n\nLink / Download\n\n\n\n\nScreening visit information sheet\n\ndownload\n\n\nScreening visit checklist\n\ndownload\n\n\nParticipant flow diagrams\n\nparticipant flow diagrams",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Screening SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-sop.html#scope",
+    "href": "our-work/tmr/sops/screening-sop.html#scope",
+    "title": "The Screening Visit",
+    "section": "Scope",
+    "text": "Scope\nThis SOP applies to all staff involved in:\n\nIdentifying potential participants\nConducting screening visits (always in-person)\nRecording screening data in the REDCap TMR database",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Screening SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-sop.html#roles-and-responsibilities",
+    "href": "our-work/tmr/sops/screening-sop.html#roles-and-responsibilities",
+    "title": "The Screening Visit",
+    "section": "Roles and Responsibilities",
+    "text": "Roles and Responsibilities\nCommunity Health Workers. conduct screening, record data, explain next steps\nStudy data manager. Provides REDCap and data system support throughout recruitment.\nStudy clinician. available for clinical queries or borderline cases\nStudy manager. scheduling and follow-up",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Screening SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-sop.html#overview-of-the-screening-process",
+    "href": "our-work/tmr/sops/screening-sop.html#overview-of-the-screening-process",
+    "title": "The Screening Visit",
+    "section": "Overview of the Screening Process",
+    "text": "Overview of the Screening Process\n\nIdentify potential participant\nInitial contact and explanation\nScreening assessment (eligibility and safety)\nConfirm interest\nAgree next step\nRecord outcome",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Screening SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-sop.html#detailed-procedure",
+    "href": "our-work/tmr/sops/screening-sop.html#detailed-procedure",
+    "title": "The Screening Visit",
+    "section": "Detailed Procedure",
+    "text": "Detailed Procedure\n\n1. Identification of Potential Participants\nPotential participants may be identified through:\n\nDiabetes registry listing (using a report in the REDCap TMR database)\nClinic lists\nReferrals from clinical staff\nSelf-referral following publicity\n\n\n\n2. Initial Contact\nExplain:\n\nThis is a diabetes remission service, not a research trial\nParticipation is voluntary\nScreening is to see if the programme is suitable and safe\n\nProvide a brief description of:\n\nTotal diet replacement phase\nFollow-on food reintroduction and maintenance\nTime commitment\n\n\n\n3. Screening Assessment\nConfirm or collect the following:\nCore eligibility\n\nAge within programme limits\nType 2 diabetes diagnosis\nDuration of diabetes\nRecent clinic attendance\nBody Mass Index (measured or recent)\n\nSafety exclusions\nThis medical check will likely occur before the screening visit takes place. The reviewer (study clinician or specialist diabetes nurse) will review patient notes, looking for any pre-existing exclusion factors - such as. This will be recorded by the study clinician or specialist diabetes nurse in the REDCap TMR database screening form:\n\nPregnancy or breastfeeding\nRecent major cardiovascular events\nSevere renal impairment\nActive eating disorder\nOther significant clinical exclusions\n\n\n\n4. Explain Programme Expectations\nCover clearly:\n\nThe intensity of the first 12 weeks\nMedication changes may occur under supervision\nRegular follow-up visits are required\nParticipants can stop at any time\n\nCheck understanding and allow questions.\n\n\n5. Confirm Interest\nAsk neutrally:\n\nWhether the individual wishes to proceed to a baseline visit\n\nIf yes:\n\nSchedule a baseline visit\n\nIf no:\n\nThank the individual\nAsk permission to use routine data as part of the control group (where applicable)\n\n\n\n6. Record Outcome\nIn REDCap, record:\n\nEligibility outcome\nInterest outcome\nBaseline visit scheduled (yes/no)\nAny notes relevant to safety or follow-up",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Screening SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-sop.html#handling-special-situations",
+    "href": "our-work/tmr/sops/screening-sop.html#handling-special-situations",
+    "title": "The Screening Visit",
+    "section": "Handling Special Situations",
+    "text": "Handling Special Situations\n\nBorderline eligibility. escalate to clinical lead\nInsulin-treated participants. flag for enhanced clinical oversight\nSafeguarding concerns. follow standard clinical procedures",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Screening SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-sop.html#documentation-1",
+    "href": "our-work/tmr/sops/screening-sop.html#documentation-1",
+    "title": "The Screening Visit",
+    "section": "Documentation",
+    "text": "Documentation\n\nScreening data is recorded in the screening REDCap database\nNo consent forms are signed at screening",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Screening SOP"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Information Hub",
+    "section": "",
+    "text": "This is the St.Helena Public HealthProtozoa website\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-sop.html",
+    "href": "our-work/tmr/sops/recruitment-sop.html",
+    "title": "The Recruitment Process",
+    "section": "",
+    "text": "This SOP describes the recruitment process for inviting eligible individuals to attend a screening visit for the TMR Diabetes Remission Programme.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Recruitment SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-sop.html#purpose",
+    "href": "our-work/tmr/sops/recruitment-sop.html#purpose",
+    "title": "The Recruitment Process",
+    "section": "",
+    "text": "This SOP describes the recruitment process for inviting eligible individuals to attend a screening visit for the TMR Diabetes Remission Programme.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Recruitment SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-sop.html#documentation",
+    "href": "our-work/tmr/sops/recruitment-sop.html#documentation",
+    "title": "The Recruitment Process",
+    "section": "Documentation",
+    "text": "Documentation\nAll recruitment contacts and outcomes (contacted, agreed, declined, no response) are recorded in the designated study database in accordance with data governance procedures.\n\n\n\nDocument\n\nLink / Download\n\n\n\n\nRecruitment telephone script\n\ndownload\n\n\nParticipant information sheet\n\ndownload\n\n\nParticipant flow diagrams\n\nParticipant flow diagrams",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Recruitment SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-sop.html#scope",
+    "href": "our-work/tmr/sops/recruitment-sop.html#scope",
+    "title": "The Recruitment Process",
+    "section": "Scope",
+    "text": "Scope\nThis SOP covers activities from identification of potentially eligible individuals through to the scheduling of a screening visit. All screening procedures are covered in the Screening SOP. Baseline enrolment is covered in the Baseline SOP.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Recruitment SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-sop.html#roles-and-responsibilities",
+    "href": "our-work/tmr/sops/recruitment-sop.html#roles-and-responsibilities",
+    "title": "The Recruitment Process",
+    "section": "Roles and responsibilities",
+    "text": "Roles and responsibilities\nData handling staff. Extract potentially eligible participants from the diabetes registry and prepare recruitment lists within the REDCap Total Meal Replacement (TMR) database.\nCommunity Health Workers (CHWs). Review the REDCap recruitment report to identify potential eligible participants. Select the person at the top of the list and make contact for potential recruitment.\nStudy data manager. Provides REDCap and data system support throughout recruitment.\nStudy clinician. Provides clinical oversight and advice where required.\nStudy manager. Oversees recruitment progress, coordination, and escalation of issues.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Recruitment SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-sop.html#recruitment-overview",
+    "href": "our-work/tmr/sops/recruitment-sop.html#recruitment-overview",
+    "title": "The Recruitment Process",
+    "section": "Recruitment overview",
+    "text": "Recruitment overview\nRecruitment is a structured, auditable process designed to ensure that individuals are approached consistently, respectfully, and without coercion. Participation is voluntary, and declining does not affect routine care.\nStep 1: Identification of potentially eligible participants\nData handling staff use the diabetes registry to identify potentially eligible individuals based on:\n\nConfirmed diabetes diagnosis\nDuration of diabetes\nAt least one clinic visit in the previous 12 months\n\nFor all individuals meeting these criteria, registry information is used to pre-populate the REDCap screening form in the TMR database.\nStep 2: Creation of recruitment list in the REDCap TMR database\nUsing the pre-populated screening forms, a REDCap report is generated listing potentially eligible participants. This report functions as the active recruitment list. The community health workers contact individuals in the order presented in the REDCap report, starting from the top of the list.\nStep 3: Recruitment contact\nThe community health workers contact individuals listed in the REDCap recruitment report by telephone or in person.\nDuring recruitment contact:\n\nThe approved recruitment script must be followed closely\nThe purpose of the programme is explained briefly\nThe individual is invited to attend a screening visit to learn more\nIt is made clear that participation is optional and declining will not affect usual care\n\nThe recruitment script is provided as a downloadable document at the top of this SOP and must be used for all recruitment contacts. No screening assessments or consent are undertaken at this stage.\nStep 4: Updating recruitment outcomes in REDCap\nDuring or immediately after recruitment contact, the REDCap screening form is updated to record the outcome, including:\n\nIndividual declined participation\nIndividual agreed to attend a screening visit\n\nThis information is recorded directly in the REDCap database to maintain a real-time recruitment record.\nStep 5: Scheduling the screening visit\nFor individuals who agree to attend a screening visit, the REDCap scheduling functionality in the TMR database is used to book the screening appointment. Once a screening visit is scheduled, the recruitment process for that individual is complete.\nStep 6: Handover to screening\nScreening visits are conducted by the Community Health Worker team, with support from:\n\nThe study data manager\nThe study clinician\nThe study manager\n\nFrom this point onward, procedures are governed by the Screening SOP.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Recruitment SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/recruitment-sop.html#documentation-and-audit-trail",
+    "href": "our-work/tmr/sops/recruitment-sop.html#documentation-and-audit-trail",
+    "title": "The Recruitment Process",
+    "section": "Documentation and audit trail",
+    "text": "Documentation and audit trail\nAll recruitment activity—including eligibility identification, contact attempts, outcomes, and scheduling—is recorded within REDCap. This provides a complete audit trail of recruitment decisions and supports monitoring of recruitment progress and equity.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "SOPs",
+      "Recruitment SOP"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-checklist.html",
+    "href": "our-work/tmr/sops/screening-checklist.html",
+    "title": "The Screening Visit Checklist",
+    "section": "",
+    "text": "Participant study ID: __________________________\nDate of screening (dd/mm/yyyy): ____ / ____ / ______\nStaff initials: __________________________\nLocation / mode: ☐ In person ☐ Telephone"
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-checklist.html#screening-visit-identifiers",
+    "href": "our-work/tmr/sops/screening-checklist.html#screening-visit-identifiers",
+    "title": "The Screening Visit Checklist",
+    "section": "",
+    "text": "Participant study ID: __________________________\nDate of screening (dd/mm/yyyy): ____ / ____ / ______\nStaff initials: __________________________\nLocation / mode: ☐ In person ☐ Telephone"
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-checklist.html#before-the-screening-visit-tick-when-completed",
+    "href": "our-work/tmr/sops/screening-checklist.html#before-the-screening-visit-tick-when-completed",
+    "title": "The Screening Visit Checklist",
+    "section": "Before the Screening Visit (TICK when COMPLETED)",
+    "text": "Before the Screening Visit (TICK when COMPLETED)\n\\(\\square\\) Participant identified from an approved source (registry list / clinic / referral / self-referral)\n\\(\\square\\) Screening appointment scheduled\n\\(\\square\\) Appropriate time allocated"
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-checklist.html#during-the-screening-visit",
+    "href": "our-work/tmr/sops/screening-checklist.html#during-the-screening-visit",
+    "title": "The Screening Visit Checklist",
+    "section": "During the Screening Visit",
+    "text": "During the Screening Visit\n\nProgramme Explanation (TICK when COMPLETED)\n\\(\\square\\) Explained that this is a service, not a research study\n\\(\\square\\) Voluntary nature of participation confirmed\n\\(\\square\\) Screening explained as an eligibility and safety check only\n\\(\\square\\) Overview of TMR, food reintroduction, and maintenance phases provided\n\n\nEligibility Checks (TICK if ELIGIBILITY MET)\n\\(\\square\\) Age within programme limits\n\\(\\square\\) Type 2 diabetes diagnosis confirmed\n\\(\\square\\) Duration of diabetes within criteria\n\\(\\square\\) Recent clinic attendance confirmed\n\\(\\square\\) BMI meets eligibility threshold (measured or recent)\n\n\nSafety Exclusions Reviewed (TICK if EXCLUSION REASON APPLIES)\n\\(\\square\\) Pregnancy or breastfeeding excluded\n\\(\\square\\) Recent major cardiovascular event excluded\n\\(\\square\\) Severe renal impairment excluded\n\\(\\square\\) Active eating disorder excluded\n\\(\\square\\) Other significant exclusions considered\n\\(\\square\\) Borderline eligibility identified and escalated (if applicable)\n\n\nParticipant Understanding (TICK when COMPLETED)\n\\(\\square\\) Time commitment explained\n\\(\\square\\) Medication changes under supervision explained\n\\(\\square\\) Opportunity for questions provided"
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-checklist.html#outcome-of-screening",
+    "href": "our-work/tmr/sops/screening-checklist.html#outcome-of-screening",
+    "title": "The Screening Visit Checklist",
+    "section": "Outcome of Screening",
+    "text": "Outcome of Screening\n\nOutcome (CHOOSE ONE)\n\\(\\square\\) Eligible\n\\(\\square\\) Not eligible\n\n\nInterested (CHOOSE ONE)\n\\(\\square\\) Interested in proceeding to baseline visit\n\\(\\square\\) Not interested in proceeding\nIf interested:\n\\(\\square\\) Baseline visit scheduled\nIf not interested:\n\\(\\square\\) Option of routine data use as control explained (where applicable)"
+  },
+  {
+    "objectID": "our-work/tmr/sops/screening-checklist.html#after-the-screening-visit-tick-when-completed",
+    "href": "our-work/tmr/sops/screening-checklist.html#after-the-screening-visit-tick-when-completed",
+    "title": "The Screening Visit Checklist",
+    "section": "After the Screening Visit (TICK when COMPLETED)",
+    "text": "After the Screening Visit (TICK when COMPLETED)\n\\(\\square\\) Screening outcome recorded in REDCap\n\\(\\square\\) Notes added where relevant (e.g. escalation, safeguarding)\n\\(\\square\\) Next steps communicated to participant"
+  },
+  {
+    "objectID": "our-work/tmr/index.html",
+    "href": "our-work/tmr/index.html",
+    "title": "Total Meal Replacement for Diabetes Remission",
+    "section": "",
+    "text": "Many people on Saint Helena are living with type 2 diabetes, and it affects families in every district. Managing diabetes can be tiring, expensive, and stressful. This study aims to find out whether a simple, structured food programme can help make life easier and healthier for people with diabetes.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "The Project"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/index.html#context",
+    "href": "our-work/tmr/index.html#context",
+    "title": "Total Meal Replacement for Diabetes Remission",
+    "section": "",
+    "text": "Many people on Saint Helena are living with type 2 diabetes, and it affects families in every district. Managing diabetes can be tiring, expensive, and stressful. This study aims to find out whether a simple, structured food programme can help make life easier and healthier for people with diabetes.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "The Project"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/index.html#what-is-the-programme",
+    "href": "our-work/tmr/index.html#what-is-the-programme",
+    "title": "Total Meal Replacement for Diabetes Remission",
+    "section": "What is the programme?",
+    "text": "What is the programme?\nThe programme is a guided, short-term eating plan. For a few weeks, everyday meals are swapped for specially prepared soups and shakes. These products are designed to give you everything your body needs, just with far fewer calories. After this first phase, ordinary foods are slowly added back in, with support from the health team every step of the way.\nStudies in other countries have shown that this type of programme can help many people lose a significant amount of weight and improve their blood sugar levels—sometimes by so much that they no longer need diabetes tablets.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "The Project"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/index.html#who-is-taking-part",
+    "href": "our-work/tmr/index.html#who-is-taking-part",
+    "title": "Total Meal Replacement for Diabetes Remission",
+    "section": "Who is taking part?",
+    "text": "Who is taking part?\nTwo groups of adults with type 2 diabetes will join:\n\nPeople who are not using insulin, who give us the clearest picture of how the programme might affect diabetes.\nPeople who do use insulin. Their treatment needs closer supervision when starting the programme, so they are followed as a separate group to make sure everything is done safely.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "The Project"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/index.html#what-will-happen-during-the-study",
+    "href": "our-work/tmr/index.html#what-will-happen-during-the-study",
+    "title": "Total Meal Replacement for Diabetes Remission",
+    "section": "What will happen during the study?",
+    "text": "What will happen during the study?\nEveryone in the programme will:\n\nMeet regularly with the health team\n\nHave their weight, blood pressure and waist measured\n\nHave blood tests to monitor their diabetes and general health\n\nFill in short questionnaires about their wellbeing and how they feel about living with diabetes\n\nSome people will also asked to share their views on the prgramme. These views will help us understand what makes the programme easier or harder in everyday life.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "The Project"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/index.html#how-will-we-know-if-it-works",
+    "href": "our-work/tmr/index.html#how-will-we-know-if-it-works",
+    "title": "Total Meal Replacement for Diabetes Remission",
+    "section": "How will we know if it works?",
+    "text": "How will we know if it works?\nTo understand the programme’s impact, we will compare the progress of participants with people from the island’s diabetes registry who are not taking part in the programme. Our team will use careful, fair comparisons to see whether the programme truly makes a difference.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "The Project"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/index.html#why-does-this-matter-for-st-helena",
+    "href": "our-work/tmr/index.html#why-does-this-matter-for-st-helena",
+    "title": "Total Meal Replacement for Diabetes Remission",
+    "section": "Why does this matter for St Helena?",
+    "text": "Why does this matter for St Helena?\nIf this programme works well, it could:\n\nReduce the need for diabetes medicines, including insulin.\n\nImprove people’s energy, wellbeing and day-to-day life.\n\nLower the risk of long-term diabetes complications.\n\nHelp the island save money on expensive medication imports.\n\nShow what kind of support helps people succeed in making big health changes.\n\nMost importantly, it will help us understand whether this is something the whole island should have access to in the future.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "The Project"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/eligibility.html",
+    "href": "our-work/tmr/eligibility.html",
+    "title": "Eligibility",
+    "section": "",
+    "text": "Eligibility criteria are used to:\n\nEnsure participant safety\nIdentify those most likely to benefit from TMR\nApply inclusion rules consistently and fairly\n\nEligibility is assessed in two stages:\n\nRegistry-based pre-screening\nIn-person screening confirmation\n\nEligibility is only final once both stages are complete.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Eligibility"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/eligibility.html#purpose-of-eligibility-assessment",
+    "href": "our-work/tmr/eligibility.html#purpose-of-eligibility-assessment",
+    "title": "Eligibility",
+    "section": "",
+    "text": "Eligibility criteria are used to:\n\nEnsure participant safety\nIdentify those most likely to benefit from TMR\nApply inclusion rules consistently and fairly\n\nEligibility is assessed in two stages:\n\nRegistry-based pre-screening\nIn-person screening confirmation\n\nEligibility is only final once both stages are complete.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Eligibility"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/eligibility.html#stage-1-registry-based-eligibility-pre-screening",
+    "href": "our-work/tmr/eligibility.html#stage-1-registry-based-eligibility-pre-screening",
+    "title": "Eligibility",
+    "section": "Stage 1: Registry-based eligibility (pre-screening)",
+    "text": "Stage 1: Registry-based eligibility (pre-screening)\nStage 1 eligibility is assessed using existing Diabetes Registry data only.\nAn individual may proceed to screening if all of the following apply:\n\nAge ≤ 65 years\nDiagnosed with type 2 diabetes\nDiabetes duration ≤ 6 years\n\nThis may be extended to ≤ 10 years if recruitment numbers are low\n\nAt least one diabetes-related visit in the past 12 months\nLikely BMI ≥ 25 (confirmed at screening)\n\nIndividuals meeting these criteria are flagged as potentially eligible and may be invited to screening.\nNo consent is obtained at this stage.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Eligibility"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/eligibility.html#stage-2-screening-visit-eligibility",
+    "href": "our-work/tmr/eligibility.html#stage-2-screening-visit-eligibility",
+    "title": "Eligibility",
+    "section": "Stage 2: Screening visit eligibility",
+    "text": "Stage 2: Screening visit eligibility\nEligibility is confirmed at an in-person screening visit.\nTo remain eligible, the individual must:\n\nHave BMI ≥ 25 confirmed by measured height and weight\nHave no exclusion criteria (see below)\nBe willing and able to attend scheduled study visits\nBe willing to consider participation in the full programme\n\nEligibility status is recorded in the screening instrument.\nAt this screening visit each person also takes part in an eating habits / eating disorders review. This may exclude a small number of people, but more likely, it will identify participants that will benefit from additional support.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Eligibility"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/eligibility.html#exclusion-criteria-apply-at-any-stage",
+    "href": "our-work/tmr/eligibility.html#exclusion-criteria-apply-at-any-stage",
+    "title": "Eligibility",
+    "section": "Exclusion criteria (apply at any stage)",
+    "text": "Exclusion criteria (apply at any stage)\nAn individual is not eligible if any of the following apply:\n\nPregnant, breastfeeding, or planning pregnancy\nSevere renal impairment (e.g. eGFR &lt;30 mL/min/1.73m²)\nActive cancer\nMyocardial infarction or stroke within the past 6 months\nSevere heart failure (NYHA class III or IV)\nActive eating disorder\nActive substance use disorder\nPrior bariatric surgery\nAny condition where the clinical team judges TMR to be unsafe or inappropriate\n\nThese crieria will ideally be identified through a clinical review of a person’s notes. Clinical judgement should be documented where exclusions are discretionary. The absence of information in the clinical notes may require an in-person clinical review.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Eligibility"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/eligibility.html#participants-using-insulin",
+    "href": "our-work/tmr/eligibility.html#participants-using-insulin",
+    "title": "Eligibility",
+    "section": "Participants using insulin",
+    "text": "Participants using insulin\nInsulin use is not an automatic exclusion.\nHowever:\n\nInsulin-treated participants require enhanced clinical oversight\nMedication adjustment protocols must be followed\nInsulin status should be clearly flagged at screening and baseline\n\nInsulin-treated participants may be analysed separately.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Eligibility"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/eligibility.html#if-eligibility-is-not-met",
+    "href": "our-work/tmr/eligibility.html#if-eligibility-is-not-met",
+    "title": "Eligibility",
+    "section": "If eligibility is not met",
+    "text": "If eligibility is not met\nIf an individual does not meet eligibility criteria:\n\nThis should be recorded in the screening log\nThe reason for ineligibility should be documented\nRoutine diabetes care continues as normal\n\nIneligibility does not affect access to services.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Eligibility"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/eligibility.html#systems-and-documentation",
+    "href": "our-work/tmr/eligibility.html#systems-and-documentation",
+    "title": "Eligibility",
+    "section": "Systems and documentation",
+    "text": "Systems and documentation\nEligibility assessment uses:\n\nDiabetes Registry (Stage 1)\nEligibility screening REDCap instrument (Stage 2)\nRecruitment and screening logs\n\nEligibility decisions must be auditable.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Eligibility"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/eligibility.html#key-documents-and-links",
+    "href": "our-work/tmr/eligibility.html#key-documents-and-links",
+    "title": "Eligibility",
+    "section": "Key documents and links",
+    "text": "Key documents and links\n\nProject protocol \nParticipant flow diagrams",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Eligibility"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/eligibility.html#key-principle",
+    "href": "our-work/tmr/eligibility.html#key-principle",
+    "title": "Eligibility",
+    "section": "Key principle",
+    "text": "Key principle\nEligibility assessment is a safety and consistency function, not a recruitment tool.\nWhen in doubt, pause, document, and escalate.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Eligibility"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/info-sheet-01.html",
+    "href": "our-work/tmr/info-sheet-01.html",
+    "title": "Participant Information Sheet",
+    "section": "",
+    "text": "NotePlease read this carefully\n\n\n\nThis information sheet explains a new health programme being offered on St Helena for people living with type 2 diabetes.\nPlease take your time to read it. You do not have to decide anything straight away. You are welcome to discuss it with family, friends, or a member of the health team.\nTaking part is entirely your choice.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Information Sheet"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/info-sheet-01.html#what-is-this-programme",
+    "href": "our-work/tmr/info-sheet-01.html#what-is-this-programme",
+    "title": "Participant Information Sheet",
+    "section": "What is this programme?",
+    "text": "What is this programme?\nThis programme is designed to help people with type 2 diabetes improve their health through safe, supported weight loss.\nFor some people, losing a significant amount of weight can:\n\nLower blood sugar levels\nReduce the need for diabetes medication\nIn some cases, put diabetes into remission\n\nDiabetes remission means blood sugar levels return to a non-diabetic range without diabetes medication, for a period of time.\nThis programme uses a Total Meal Replacement (TMR) approach for the first phase, followed by careful reintroduction of everyday foods and long-term support.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Information Sheet"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/info-sheet-01.html#why-are-we-offering-this-programme-on-st-helena",
+    "href": "our-work/tmr/info-sheet-01.html#why-are-we-offering-this-programme-on-st-helena",
+    "title": "Participant Information Sheet",
+    "section": "Why are we offering this programme on St Helena?",
+    "text": "Why are we offering this programme on St Helena?\nType 2 diabetes is common on St Helena and can lead to serious health problems over time.\nResearch from the UK and other countries has shown that structured programmes like this can help many people improve their diabetes control, especially when diabetes has been diagnosed in recent years. For those interested, we have summarised the evidence available from elsewhere.\nThis programme is being offered as a pilot, to see how well it works for people on St Helena and how it can best fit within our local health services.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Information Sheet"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/info-sheet-01.html#who-is-the-programme-for",
+    "href": "our-work/tmr/info-sheet-01.html#who-is-the-programme-for",
+    "title": "Participant Information Sheet",
+    "section": "Who is the programme for?",
+    "text": "Who is the programme for?\nYou may be invited to take part if you:\n\nAre an adult with type 2 diabetes\nHave been diagnosed within the last 6 years\nHave attended a diabetes clinic within the last 12 months\nMeet the programme’s eligibility criteria based on height and weight measurements\n\nFinal checks are done at a screening visit.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Information Sheet"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/info-sheet-01.html#what-does-taking-part-involve",
+    "href": "our-work/tmr/info-sheet-01.html#what-does-taking-part-involve",
+    "title": "Participant Information Sheet",
+    "section": "What does taking part involve?",
+    "text": "What does taking part involve?\n\nOne screening visit\nIf you are interested, you will be invited to a screening visit.\nAt this visit we will:\n\nMeasure your height and weight\nBetter understand your eating habits\nCheck basic information from your medical record\nExplain the programme in more detail\nAnswer your questions\n\nAttending the screening visit does not mean you have agreed to take part.\n\n\nThe programme itself\nIf you decide to take part, the programme lasts about 12 months and has three phases:\nPhase 1: Total Meal Replacement (about 12 weeks) You will replace all regular meals with specially prepared soups and shakes that provide all the nutrients your body needs, but fewer calories. These meals are provided by us, free-of-charge. You will be supported closely by our health team, with regular check-ins.\nPhase 2: Food reintroduction (about 6 weeks) Everyday foods are gradually reintroduced in a structured way.\nPhase 3: Weight maintenance and long-term support You will receive ongoing support to help maintain weight loss and healthy habits.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Information Sheet"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/info-sheet-01.html#what-are-the-possible-benefits",
+    "href": "our-work/tmr/info-sheet-01.html#what-are-the-possible-benefits",
+    "title": "Participant Information Sheet",
+    "section": "What are the possible benefits?",
+    "text": "What are the possible benefits?\nPeople who take part may experience:\n\nPlanned weight loss\nImproved blood sugar control\nReduced need for diabetes medication\nImproved energy, mobility, and wellbeing\n\nSome people are able to achieve diabetes remission, but this cannot be guaranteed.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Information Sheet"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/info-sheet-01.html#what-are-the-challenges",
+    "href": "our-work/tmr/info-sheet-01.html#what-are-the-challenges",
+    "title": "Participant Information Sheet",
+    "section": "What are the challenges?",
+    "text": "What are the challenges?\nThis programme requires commitment.\nSome people find:\n\nThe early weeks challenging\nSocial situations involving food more difficult\nIt takes effort to attend regular appointments\n\nSupport is built into the programme, but it is important to consider whether now is the right time for you.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Information Sheet"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/info-sheet-01.html#is-it-safe",
+    "href": "our-work/tmr/info-sheet-01.html#is-it-safe",
+    "title": "Participant Information Sheet",
+    "section": "Is it safe?",
+    "text": "Is it safe?\nThis programme has been used safely in other health systems when properly supervised.\nYour medications, especially diabetes and blood pressure medicines, may need adjustment as your weight and blood sugar levels change. This will be done carefully by our trained health staff.\nYou will be monitored regularly, and you can stop the programme at any time.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Information Sheet"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/info-sheet-01.html#do-i-have-to-take-part",
+    "href": "our-work/tmr/info-sheet-01.html#do-i-have-to-take-part",
+    "title": "Participant Information Sheet",
+    "section": "Do I have to take part?",
+    "text": "Do I have to take part?\nNo. Taking part is completely voluntary.\n\nYou can decide not to take part\nYou can stop at any time\nYour usual diabetes care will continue whether or not you take part\n\nYour decision will not affect the care you receive.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Information Sheet"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/info-sheet-01.html#what-happens-to-my-information",
+    "href": "our-work/tmr/info-sheet-01.html#what-happens-to-my-information",
+    "title": "Participant Information Sheet",
+    "section": "What happens to my information?",
+    "text": "What happens to my information?\nIf you take part:\n\nInformation about your health will be recorded securely\nYour information will be used to deliver and monitor the programme safely and effectively\nInformation will also be used to evaluate how well the programme works, so our services can be improved\nAll data will be handled in line with St Helena and UK data protection rules\nResults will be reported in a way that does not identify you as an individual.\n\nYour information will only be used for healthcare delivery and service evaluation related to this programme.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Information Sheet"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/info-sheet-01.html#what-if-i-change-my-mind",
+    "href": "our-work/tmr/info-sheet-01.html#what-if-i-change-my-mind",
+    "title": "Participant Information Sheet",
+    "section": "What if I change my mind?",
+    "text": "What if I change my mind?\nYou are free to withdraw from the programme at any time.\nIf you withdraw from the programme, your usual diabetes care will continue.\nInformation already collected as part of your care and programme monitoring may still be used for the evaluation of our service.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Information Sheet"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/info-sheet-01.html#who-can-i-contact-for-more-information",
+    "href": "our-work/tmr/info-sheet-01.html#who-can-i-contact-for-more-information",
+    "title": "Participant Information Sheet",
+    "section": "Who can I contact for more information?",
+    "text": "Who can I contact for more information?\nIf you have questions or would like more information, please contact:\nDr Selvi Jeyaseelan Phone: 22500 Email: selvi.jeyaseelan@sainthelena.gov.sh\n\nThank you!\nThank you for taking the time to read this information. Whatever you decide, we appreciate your engagement with us, with your health, and with diabetes care on St Helena.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Information Sheet"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-visits.html",
+    "href": "our-work/tmr/visits/participant-visits.html",
+    "title": "Describing the Participant Visits",
+    "section": "",
+    "text": "The Total Meal Replacement (TMR) programme is a structured intervention designed to support weight loss, improved diabetes control, and longer-term health. The programme runs over approximately one year and includes several distinct types of visits, each with a specific purpose.\nThis page provides a high-level overview of the visit types that occur across the life of the programme. It is intended for participants, families, community stakeholders, healthcare staff, and partners who want to understand how the programme is organised.\nParticipation in the programme is voluntary, and usual diabetes care continues throughout.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Overview of Visits"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-visits.html#overview-of-visits-across-the-tmr-programme",
+    "href": "our-work/tmr/visits/participant-visits.html#overview-of-visits-across-the-tmr-programme",
+    "title": "Describing the Participant Visits",
+    "section": "",
+    "text": "The Total Meal Replacement (TMR) programme is a structured intervention designed to support weight loss, improved diabetes control, and longer-term health. The programme runs over approximately one year and includes several distinct types of visits, each with a specific purpose.\nThis page provides a high-level overview of the visit types that occur across the life of the programme. It is intended for participants, families, community stakeholders, healthcare staff, and partners who want to understand how the programme is organised.\nParticipation in the programme is voluntary, and usual diabetes care continues throughout.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Overview of Visits"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-visits.html#recruitment-contact",
+    "href": "our-work/tmr/visits/participant-visits.html#recruitment-contact",
+    "title": "Describing the Participant Visits",
+    "section": "Recruitment contact",
+    "text": "Recruitment contact\nRecruitment begins with an invitation to learn more about the programme. This initial contact is used to explain the purpose of the programme and to invite individuals to attend a screening visit.\nThe recruitment stage is designed to be low-pressure and informational. Declining an invitation has no effect on routine care.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Overview of Visits"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-visits.html#screening-visit",
+    "href": "our-work/tmr/visits/participant-visits.html#screening-visit",
+    "title": "Describing the Participant Visits",
+    "section": "Screening visit",
+    "text": "Screening visit\nThe screening visit is used to confirm whether the programme is appropriate and safe for an individual. At this stage:\n\nThe programme is explained in more detail\nBasic health measurements are taken\nQuestions can be discussed\n\nThe screening visit does not commit an individual to participation.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Overview of Visits"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-visits.html#baseline-visit",
+    "href": "our-work/tmr/visits/participant-visits.html#baseline-visit",
+    "title": "Describing the Participant Visits",
+    "section": "Baseline visit",
+    "text": "Baseline visit\nThe baseline visit marks the formal start of participation in the programme. During this visit:\n\nParticipation is confirmed\nBaseline health measurements are recorded\nPlans for the next phase of the programme are agreed\n\nThis visit provides the reference point for monitoring change over time.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Overview of Visits"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-visits.html#total-meal-replacement-visits",
+    "href": "our-work/tmr/visits/participant-visits.html#total-meal-replacement-visits",
+    "title": "Describing the Participant Visits",
+    "section": "Total Meal Replacement visits",
+    "text": "Total Meal Replacement visits\nThe Total Meal Replacement phase includes regular visits over the first few months of the programme. These visits support:\n\nDelivery of the meal replacement intervention\nMonitoring of health and safety\nAdjustment of medications where appropriate\nOngoing practical and emotional support\n\nThis phase is closely monitored due to the rapid changes that can occur during weight loss.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Overview of Visits"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-visits.html#food-reintroduction-visits",
+    "href": "our-work/tmr/visits/participant-visits.html#food-reintroduction-visits",
+    "title": "Describing the Participant Visits",
+    "section": "Food reintroduction visits",
+    "text": "Food reintroduction visits\nFollowing the meal replacement phase, food is gradually reintroduced in a structured way. Food reintroduction visits focus on:\n\nTransitioning from meal replacements back to everyday foods\nSupporting nutritional balance\nBuilding skills and confidence for longer-term eating patterns",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Overview of Visits"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/visits/participant-visits.html#weight-maintenance-visits",
+    "href": "our-work/tmr/visits/participant-visits.html#weight-maintenance-visits",
+    "title": "Describing the Participant Visits",
+    "section": "Weight maintenance visits",
+    "text": "Weight maintenance visits\nOnce food has been fully reintroduced, the programme enters the weight maintenance phase. Visits during this phase are less frequent and focus on:\n\nSupporting weight stability\nMonitoring longer-term health outcomes\nReinforcing sustainable habits\nOngoing monitoring and support\n\nAcross all phases of the programme:\n\nHealth outcomes are monitored\nSupport is available when challenges arise\nParticipants may choose to stop at any point\n\nThe structure of visits is designed to balance safety, effectiveness, and sustainability, while fitting within routine health service delivery.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Ops Manual",
+      "Participant Visits",
+      "Overview of Visits"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/evidence-brief.html",
+    "href": "our-work/tmr/evidence-brief.html",
+    "title": "Evidence Brief & Service Evaluation Justification",
+    "section": "",
+    "text": "This document sets out the rationale for undertaking a service evaluation of the Total Meal Replacement (TMR) Diabetes Remission Programme in St Helena. Towards the end of the document is a formal evidence brief summarising the existing scientific evidence base for a total meal replacement intervention.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Evidence Brief"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/evidence-brief.html#purpose-of-this-document",
+    "href": "our-work/tmr/evidence-brief.html#purpose-of-this-document",
+    "title": "Evidence Brief & Service Evaluation Justification",
+    "section": "",
+    "text": "This document sets out the rationale for undertaking a service evaluation of the Total Meal Replacement (TMR) Diabetes Remission Programme in St Helena. Towards the end of the document is a formal evidence brief summarising the existing scientific evidence base for a total meal replacement intervention.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Evidence Brief"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/evidence-brief.html#background-and-rationale",
+    "href": "our-work/tmr/evidence-brief.html#background-and-rationale",
+    "title": "Evidence Brief & Service Evaluation Justification",
+    "section": "Background and rationale",
+    "text": "Background and rationale\nType 2 diabetes represents a major and growing burden for the St Helena health system, particularly among older adults. Improving diabetes outcomes while reducing long-term medication dependence and complications is a strategic priority for the island’s health service.\nTotal Meal Replacement programmes are an evidence-based approach that have demonstrated substantial benefits in multiple settings, including significant weight loss, improved glycaemic control, and, for some individuals, diabetes remission. These benefits are most clearly demonstrated in people with relatively recent diagnoses of type 2 diabetes. However, most of the existing evidence comes from:\n\ncontrolled clinical trials, or\nlarge, well-resourced mainland health systems.\n\nThere is limited evidence on how such programmes perform when delivered within small, remote, integrated health systems with constrained workforce capacity and distinctive food environments, such as St Helena.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Evidence Brief"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/evidence-brief.html#why-a-service-evaluation-is-required",
+    "href": "our-work/tmr/evidence-brief.html#why-a-service-evaluation-is-required",
+    "title": "Evidence Brief & Service Evaluation Justification",
+    "section": "Why a service evaluation is required",
+    "text": "Why a service evaluation is required\nThe TMR Diabetes Remission Programme is being introduced as part of routine diabetes care in St Helena, drawing on established evidence and existing clinical service models. The purpose of this work is not to test whether TMR is biologically effective. That question has been addressed by prior research. Instead, the purpose of this service evaluation is to understand:\n\nwhether the programme can be delivered safely within the local health system;\nhow acceptable the programme is to participants and staff;\nhow well the programme fits with existing clinical workflows and resources;\nwhat outcomes are achieved when the programme is delivered as routine care;\nwhat adaptations may be required to optimise delivery in the St Helena context.\n\nThese questions are central to decisions about whether and how the programme should be continued, adapted, or scaled locally.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Evidence Brief"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/evidence-brief.html#why-this-is-a-service-evaluation-not-primary-research",
+    "href": "our-work/tmr/evidence-brief.html#why-this-is-a-service-evaluation-not-primary-research",
+    "title": "Evidence Brief & Service Evaluation Justification",
+    "section": "Why this is a service evaluation (not primary research)",
+    "text": "Why this is a service evaluation (not primary research)\nThis work meets the definition of a service evaluation for the following reasons:\n\nthe intervention is based on an established evidence base and is delivered as part of routine clinical care;\nparticipants are not randomised to different interventions;\nthere is no experimental manipulation beyond standard clinical decision-making;\nclinical care, monitoring, and medication adjustment follow established professional standards;\nthe evaluation focuses on delivery, outcomes, feasibility, and acceptability of the service in practice.\n\nData used in the evaluation will consist primarily of routinely collected clinical information, supplemented by participant and staff feedback to inform service improvement.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Evidence Brief"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/evidence-brief.html#why-st-helena-requires-local-evaluation",
+    "href": "our-work/tmr/evidence-brief.html#why-st-helena-requires-local-evaluation",
+    "title": "Evidence Brief & Service Evaluation Justification",
+    "section": "Why St Helena requires local evaluation",
+    "text": "Why St Helena requires local evaluation\nSt Helena has a number of features that distinguish it from settings in which most TMR evidence has been generated:\n\na small population with a high prevalence of type 2 diabetes;\na highly integrated health system with limited specialist capacity;\nlogistical constraints related to geography and supply chains;\nclose-knit communities in which acceptability and trust are particularly important.\n\nThese characteristics mean that evidence from other settings cannot be assumed to transfer directly. A local service evaluation is therefore necessary to ensure that the programme is:\n\nappropriate for local needs;\nsafe in routine delivery;\nacceptable to participants;\nsustainable using available resources.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Evidence Brief"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/evidence-brief.html#relationship-to-the-evidence-brief",
+    "href": "our-work/tmr/evidence-brief.html#relationship-to-the-evidence-brief",
+    "title": "Evidence Brief & Service Evaluation Justification",
+    "section": "Relationship to the evidence brief",
+    "text": "Relationship to the evidence brief\nThe evidence brief that follows demonstrates that:\n\nthere is high confidence that TMR can be effective and safe when delivered with appropriate clinical support;\nevidence is weaker for delivery in small or remote health systems;\nthis uncertainty justifies an implementation-focused evaluation.\n\nThis service evaluation therefore builds on existing evidence by examining how an established intervention performs when delivered in the specific context of St Helena.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Evidence Brief"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/evidence-brief.html#evidence-brief",
+    "href": "our-work/tmr/evidence-brief.html#evidence-brief",
+    "title": "Evidence Brief & Service Evaluation Justification",
+    "section": "Evidence Brief",
+    "text": "Evidence Brief\n\nStrength of Evidence for Total Meal Replacement in Type 2 Diabetes\n(Using GRADE: High, Moderate, Low, Very Low Confidence)\nThis evidence brief summarises the strength and quality of research relevant to implementing a Total Meal Replacement (TMR) programme for adults with type 2 diabetes on Saint Helena. Evidence has been classified using the GRADE framework, which is internationally recognised and applied by WHO, NICE, and Cochrane.\n\n\nTMR Effectiveness for Non-Insulin-Treated Type 2 Diabetes\n\nGRADE Rating: HIGH Confidence\nKey Evidence\n\nMultiple well-designed randomised controlled trials (RCTs), including the high-profile DiRECT study, demonstrate that TMR can produce large weight reductions and achieve diabetes remission in a substantial proportion of adults not on insulin.\nDiRECT and associated studies show remission rates of around 45% at 12 months and around one-third at 24 months among participants with relatively short duration of diabetes.\nMechanistic studies provide strong biological plausibility: sustained hypocaloric intake reduces liver and pancreatic fat and restores first-phase insulin release.\n\nInterpretation: There is high confidence that TMR is an effective metabolic intervention for adults with type 2 diabetes who are not using insulin. Evidence is consistent across multiple populations, settings and methodologies. The metabolic response is well understood, and benefits have been reproduced across trials.\nRelevance to Saint Helena: This high-certainty evidence supports using TMR as a core diabetes intervention for the non-insulin-treated population, recognising that outcomes in real-world delivery may vary slightly from those in a controlled trial setting.\n\n\n\nTMR for Insulin-Treated Type 2 Diabetes\n\nGRADE Rating: MODERATE Confidence\nKey Evidence\n\nEvidence includes small RCTs and structured weight-loss trials showing that insulin-treated individuals can achieve significant reductions in HbA1c and marked reductions in insulin dose.\nSome participants are able to stop insulin entirely during TMR while maintaining acceptable glycaemic control.\nEvidence is less extensive than for non-insulin diabetes and typically involves shorter follow-up periods and smaller sample sizes.\n\nInterpretation: There is moderate confidence that TMR can improve metabolic control and reduce insulin burden in insulin-treated individuals.\nHowever, evidence for long-term remission is weaker, and estimates are more uncertain due to smaller trials and narrower study populations.\nRelevance to Saint Helena: This supports including insulin users as a secondary exploratory group in the island’s implementation. Benefits are likely but less predictable, and safe insulin down-titration is essential.\n\n\n\nSustainability of Weight Loss and Diabetes Remission\n\nGRADE Rating: MODERATE Confidence\nKey Evidence\n\nLong-term follow-up from DiRECT (up to 5 years for some participants) shows that remission can be sustained, but most successful participants maintain weight loss.\nWeight regain commonly leads to relapse, illustrating that maintenance behaviours and structured follow-up matter greatly.\nReal-world programme evaluations (e.g., NHS England) suggest that weight loss is achievable outside trials, but long-term data remain more limited.\n\nInterpretation: There is moderate confidence that sustained remission is achievable with TMR provided that weight loss is maintained.\nConfidence is reduced by the limited number of high-quality long-term datasets and variability in maintenance support across settings.\nRelevance to Saint Helena: Long-term success may depend on culturally aligned maintenance strategies, access to supportive food environments and ongoing behavioural support. The island setting may pose unique challenges but also offers opportunities for system-wide coherence.\n\n\n\nSafety of TMR Programmes\n\nGRADE Rating: HIGH Confidence\nKey Evidence\n\nAcross trials, TMR is generally safe when medications—especially insulin and sulfonylureas—are adjusted appropriately.\nEarly phase monitoring prevents hypoglycaemia or symptomatic hyperglycaemia.\nAdverse effects are typically mild and transient (fatigue, dizziness, coldness).\n\nInterpretation: There is high confidence that TMR programmes are safe when medication withdrawal is supervised. Insulin-treated individuals require particular oversight, but structured protocols mitigate risk.\nRelevance to Saint Helena: A small health system can closely monitor participants, facilitating safe implementation.\n\n\n\nQuality-of-Life and Psychological Effects\n\nGRADE Rating: MODERATE Confidence\nKey Evidence\n\nMany trials show improvements in quality of life (EQ-5D, EQ-VAS) following substantial weight loss.\nDiabetes distress (PAID scores) often decreases, particularly when medication burden falls.\nSome individuals may find the initial TMR phase challenging, but overall wellbeing improves in the majority.\n\nInterpretation: There is moderate confidence that TMR improves quality of life and reduces emotional distress related to diabetes.\nConfidence is moderate because not all studies include validated QoL assessments, and psychological responses can vary across cultures and individuals.\nRelevance to Saint Helena: Monitoring EQ-5D and PAID provides insight into patient experience alongside biomedical outcomes.\n\n\n\nMechanistic Evidence (Liver/Pancreas Fat Reduction, Beta Cell Recovery)\n\nGRADE Rating: HIGH Confidence\nKey Evidence\n\nMRI and metabolic studies have consistently shown rapid reductions in liver fat and gradual reductions in pancreatic fat during TMR.\nRestoration of first-phase insulin secretion is a reproducible physiological effect in non-insulin-treated diabetes.\nMechanistic pathways have been mapped and reproduced across independent research groups.\n\nInterpretation: There is high confidence in the mechanisms explaining why TMR works.\nThis mechanistic clarity strengthens confidence in applying the intervention beyond trial settings.\nRelevance to Saint Helena: Strong mechanistic evidence supports adaptation to local circumstances, because physiological effects are universal regardless of geography.\n\n\n\nEvidence from Real-World Health Systems\n\nGRADE Rating: LOW to MODERATE Confidence\nKey Evidence\n\nReal-world programmes such as NHS England’s “Soups and Shakes” rollout show promising early results.\nReal-world remission rates tend to be lower than RCTs, but weight-loss outcomes remain clinically relevant.\nEvidence varies by implementation fidelity, population characteristics and healthcare system capacity.\n\nInterpretation: There is low to moderate confidence in generalising real-world effectiveness due to heterogeneity of programmes and lack of long-term data. Nevertheless, the consistent direction of benefit strengthens pragmatic confidence.\nRelevance to Saint Helena: A small health system can implement TMR with high fidelity, potentially achieving outcomes closer to trial settings. Monitoring fidelity and process indicators is important in this context.\n\n\n\nEvidence for TMR in Small, Remote or Low-Resource Settings\n\nGRADE Rating: VERY LOW to LOW Confidence\nKey Evidence\n\nLimited published research examines TMR specifically in remote islands or small health systems.\nSome weight-loss and behavioural interventions have been studied in Caribbean and Pacific contexts, but findings may not transfer directly to TMR.\nSupply-chain constraints and food environments differ substantially across islands.\n\nInterpretation: Confidence is low, primarily due to lack of directly relevant studies.\nHowever, absence of evidence does not imply poor effectiveness; instead, it underscores the need for implementation-focused research.\nRelevance to Saint Helena: This gap justifies an implementation science approach—testing feasibility, acceptability and system fit, not only metabolic outcomes.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Evidence Brief"
+    ]
+  },
+  {
+    "objectID": "our-work/tmr/evidence-brief.html#summary-of-strength-of-evidence",
+    "href": "our-work/tmr/evidence-brief.html#summary-of-strength-of-evidence",
+    "title": "Evidence Brief & Service Evaluation Justification",
+    "section": "Summary of Strength of Evidence",
+    "text": "Summary of Strength of Evidence\n\n\n\n\n\n\n\n\nEvidence Area\nGRADE Rating\nConfidence Summary\n\n\n\n\nTMR effectiveness (non-insulin)\nHigh\nStrong RCT evidence; consistent results; clear mechanisms\n\n\nTMR effectiveness (insulin-treated)\nModerate\nSmaller trials; strong direction of benefit; less long-term evidence\n\n\nSustainability of remission\nModerate\nDependent on weight maintenance; limited long-term data\n\n\nSafety\nHigh\nWell-managed risks; consistent safety across trials\n\n\nQoL & psychological impact\nModerate\nImprovements observed; some heterogeneity\n\n\nMechanistic plausibility\nHigh\nStrong, coherent physiological evidence\n\n\nReal-world evidence\nLow–Moderate\nPositive but heterogeneous; fidelity varies\n\n\nEvidence specific to small/remote systems\nLow\nLittle research; implementation science required\n\n\n\n\nConcluding Interpretation\nOverall, using the GRADE framework, there is high confidence that TMR is an effective and safe intervention for adults with type 2 diabetes who are not using insulin.\nThere is moderate confidence in benefits for insulin-treated individuals, particularly regarding de-intensification and improved metabolic control.\nEvidence is weaker for long-term sustainability and for small island settings.\nThis supports a pragmatic implementation science approach in Saint Helena, combining metabolic outcomes with qualitative evaluation, EMA, and health-economic insights to understand both effectiveness and feasibility.",
+    "crumbs": [
+      "Home",
+      "Total Meal Replacement",
+      "Evidence Brief"
+    ]
+  }
+]
