@@ -14,21 +14,14 @@ format-links: true
 
 date: last-modified
 date-format: "D MMM YYYY"
-draft: true
+draft: false
 ---
-
-
----
-
-::: {.text-center .my-4}
-[Download PDF of this page](./protocol.pdf){.btn .btn-outline-primary role="button" target="_blank" rel="noopener"}
-::: 
  
 ## Executive summary
  
 St Helena has a high burden of type 2 diabetes and obesity, placing sustained pressure on a small, integrated health system. Evidence from high-quality trials shows that Total Meal Replacement (TMR) programmes can produce substantial weight loss and improved blood glucose control, and that some people can achieve diabetes remission when weight loss is maintained.
 
-This protocol describes a **service evaluation** of a TMR Diabetes Remission Programme delivered within routine St Helena diabetes services (with learning intended to inform delivery in other small or remote settings, including Ascension Island where relevant). The purpose is not to re-test biological efficacy, but to understand whether the programme can be delivered **safely, acceptably, and effectively** in local routine care, and what implementation learning is needed for potential continuation or scale-up.
+This protocol describes a **service evaluation** of a TMR Diabetes Remission Programme delivered within routine St Helena diabetes services (with learning intended to inform delivery in other small or remote settings, including Ascension Island where relevant). The purpose is not to re-test biological efficacy, but to understand whether the programme can be delivered *safely, acceptably, and effectively* in local routine care, and what implementation learning is needed for potential continuation or scale-up.
 
 The evaluation focuses on:
 
@@ -41,12 +34,18 @@ The programme is delivered in three phases: a time-limited total meal replacemen
 
 The evaluation primarily uses routinely collected clinical and registry data, supplemented by light-touch participant and staff feedback and a small number of qualitative interviews. Analysis follows an implementation-focused approach, with detailed methods set out in the linked Statistical Analysis Plan.
 
-**Linked documents:**
-**Evidence brief** · **Statistical Analysis Plan** · **Data Dictionary** · **Data Protection Impact Assessment** · **Service evaluation justification** · **Required documents list**
+**Associated documents:**
 
----
+- [[The implementation evidence brief](./evidence-brief.qmd)]{.content-visible when-format="html"}
+[[The implementation evidence brief]({{< var site-url >}}/our-work/tmr/evidence-brief.html)]{.content-visible when-format="pdf"}
+- [[Statistical analysis plan (sap)](./data/sap.qmd)]{.content-visible when-format="html"}
+[[Statistical analysis plan (sap)]({{< var site-url >}}/our-work/tmr/data/sap.html)]{.content-visible when-format="pdf"}
+- [[Data dictionary](./data/data-dictionary.qmd)]{.content-visible when-format="html"}
+[[Data dictionary]({{< var site-url >}}/our-work/tmr/data/data-dictionary.html)]{.content-visible when-format="pdf"}
+- [[Data management plan (dmp)](./data/data-management-plan.qmd)]{.content-visible when-format="html"}
+[[Data management plan (dmp)]({{< var site-url >}}/our-work/tmr/data/data-management-plan.html)]{.content-visible when-format="pdf"}
 
-## 1. Background and rationale
+## Background and rationale
 
 Type 2 diabetes and obesity represent a major and growing health burden on Saint Helena. A high proportion of adults are living with type 2 diabetes, many with poor glycaemic control and long-term complications. In a small and remote health system, this creates significant clinical, financial, and workforce pressures.
 
@@ -54,20 +53,15 @@ International evidence shows that structured Total Meal Replacement (TMR) progra
 
 Randomised controlled trials, including DiRECT, have already demonstrated that TMR can be effective and safe when delivered with appropriate clinical oversight. The key remaining question for Saint Helena is not whether TMR works in principle, but whether it can be delivered safely, acceptably, and effectively within a small-island health system, and whether the benefits observed elsewhere can be realised locally.
 
-This programme therefore adopts an implementation and service-evaluation perspective. The focus is on real-world delivery, system fit, patient experience, and clinical outcomes, rather than on re-testing efficacy under tightly controlled trial conditions.
+This programme therefore adopts an implementation and service-evaluation perspective. The focus is on real-world delivery, system fit, patient experience, and clinical outcomes, rather than on re-examining efficacy under tightly controlled trial conditions.
 
-**Linked documents:**
-This protocol should be read alongside the linked supporting documents. **Evidence brief** · **Service evaluation justification** · **Required documents list** ·  **Statistical Analysis Plan** · **Data Dictionary**
+## Programme aims and evaluation objectives
 
----
-
-## 2. Programme aims and evaluation objectives
-
-### 2.1 Programme aim
+### Programme aim
 
 The overall aim of the TMR programme is to support adults with type 2 diabetes on Saint Helena to achieve substantial weight loss, improved glycaemic control, and—where possible—diabetes remission, while ensuring patient safety and maintaining high-quality routine clinical care.
 
-### 2.2 Evaluation objectives
+### Evaluation objectives
 
 The evaluation has four primary objectives:
 
@@ -80,16 +74,13 @@ The evaluation has four primary objectives:
 4. **Implementation learning**
    To generate practical learning on delivery, monitoring, data capture, and follow-up that can inform future service planning on Saint Helena and in other small or remote settings.
 
-The evaluation explicitly recognises that not all benefits will take the form of full remission. Improvements short of remission—such as meaningful weight loss, better glycaemic control, reduced medication use, and improved wellbeing—are considered important and clinically relevant outcomes.
+The evaluation explicitly recognises that not all benefits will take the form of diabetes remission. Improvements short of remission—such as meaningful weight loss, better glycaemic control, reduced medication use, and improved wellbeing—are considered important and clinically relevant outcomes.
 
-**Linked documents:**
-**Statistical Analysis Plan** · **Data Dictionary** · **Required documents list**
+## Study design overview
 
-## 3. Study design overview
+This is a prospective, non-randomised service evaluation of a Total Meal Replacement programme delivered within routine diabetes services on Saint Helena and Ascension Island.
 
-This is a prospective, non-randomised service evaluation of a Total Meal Replacement programme delivered within routine diabetes services on Saint Helena.
-
-All eligible and willing participants are offered the TMR programme. Outcomes among participants are evaluated longitudinally and, for selected analyses, compared with a matched group of individuals with type 2 diabetes drawn from the island’s diabetes registry who do not take part in the programme.
+Up to 50 eligible and willing participants are offered the TMR programme. Outcomes among participants are evaluated longitudinally and, for selected analyses, compared with a matched group of individuals with type 2 diabetes drawn from the island’s diabetes registry who do not take part in the programme.
 
 The study is designed as an implementation evaluation rather than a conventional randomised controlled trial. This approach reflects:
 
@@ -103,70 +94,60 @@ Two analytic populations are defined:
 - **Primary cohort**: adults with type 2 diabetes not using insulin at baseline.
 - **Exploratory cohort**: adults with type 2 diabetes using insulin at baseline, included with enhanced clinical monitoring and more exploratory analysis.
 
-**Linked documents:**
-**Statistical Analysis Plan** · **Data Dictionary** · **Anonymisation and small-numbers suppression rules** · **Required documents list** Governance, ethics, and operational documentation are tracked through the **Required documents list**.
 
-------
+## Participant eligibility and recruitment
 
-## 4. Participant eligibility and recruitment
+### Target population
 
-### 4.1 Target population
-
-The programme is offered to adults with type 2 diabetes living on Saint Helena who are overweight or obese and for whom meaningful weight loss is clinically appropriate.
+The programme is offered to adults with type 2 diabetes living on St Helena or Ascension Island who are overweight or obese and for whom meaningful weight loss is clinically appropriate.
 
 The primary target group comprises adults with relatively recent diagnoses of type 2 diabetes who are not using insulin at baseline, reflecting the population in which diabetes remission is most plausible based on existing evidence. Adults using insulin are also eligible to participate but are treated as a secondary, exploratory group with enhanced clinical oversight.
 
-### 4.2 Inclusion criteria
+### Inclusion criteria
 
 Participants must meet all of the following criteria at screening:
 
 - Diagnosis of type 2 diabetes.
 - Age 18–65 years.
 - Body mass index (BMI) ≥25 kg/m².
-- HbA1c in the diagnostic range for diabetes at the most recent routine clinical assessment.
-- Engagement with routine diabetes care, including attendance for review when offered.
+- Engagement with routine diabetes care - assessment as at least 1 clinic visit in the past 12 months.
 - Willingness and ability to participate in the programme and attend follow-up visits.
 
 Participants using insulin are eligible, provided they are assessed as suitable by the clinical team and agree to closer monitoring and medication adjustment during the TMR phase.
 
-### 4.3 Exclusion criteria
+### Exclusion criteria
 
 Individuals will not be referred to or enrolled in the programme if they have:
 
 - Pregnancy, breastfeeding, or plans to become pregnant during the early phases of the programme.
 - Severe or unstable medical conditions that would make rapid weight loss unsafe (e.g. recent myocardial infarction or stroke, severe heart failure, advanced renal disease).
-- Active eating disorders, substance use disorders, or conditions that would impair safe participation.
+- Active eating disorders, substance use disorders, or conditions that would impair safe participation (assessed at screening).
 - Prior bariatric surgery.
 - Any other clinical or practical factors judged by the care team to make participation unsafe or inappropriate.
 
-A full operational list of inclusion and exclusion criteria, including escalation and decision rules, is maintained in the screening documentation.
+A full operational list of inclusion and exclusion criteria is available on the website [[eligibility page](./eligibility.qmd)]{.content-visible when-format="html"}[[eligibility page]({{< var site-url >}}/our-work/tmr/eligibility.html)]{.content-visible when-format="pdf"}
 
-### 4.4 Identification and recruitment
+### Identification and recruitment
 
-Potential participants are identified through the island’s diabetes registry and clinic lists. Eligible individuals are contacted and invited to attend a screening visit, during which eligibility is confirmed, the programme is explained, and interest in participation is assessed.
+Potential participants are identified through the island’s diabetes registry, local adverts, and clinic lists. Eligible individuals are contacted and invited to attend a screening visit, during which eligibility is confirmed, the programme is explained, and interest in participation is assessed.
 
 Recruitment is intentionally pragmatic. All eligible and willing individuals are offered the programme until capacity is reached. Individuals who decline participation are not excluded from routine care, and—with appropriate consent—their registry data may be used to support comparative analyses.
 
 Recruitment, screening outcomes, and baseline scheduling are tracked using REDCap-based tools to ensure transparency, auditability, and linkage to subsequent clinical and evaluation data.
 
-### 4.5 Consent
+### Consent
 
 Written informed consent is obtained prior to baseline assessment. Consent covers participation in the programme, collection and use of clinical data for evaluation purposes, and—where applicable—participation in qualitative components such as interviews or surveys.
 
 Participants may withdraw from the programme or from evaluation activities at any time without affecting their access to routine clinical care.
 
-**Linked documents:**
-**Participant Information Sheet** · **Consent Form** · **Screening SOP and eligibility guidance** · **Required documents list**
-
----
-
-## 5. Description of the intervention
+## Description of the intervention
 
 The Total Meal Replacement (TMR) programme is a structured, time-limited dietary intervention followed by phased food reintroduction and longer-term weight maintenance support. It is delivered within routine diabetes services, with regular clinical monitoring and medication adjustment to ensure safety.
 
 The programme is organised into three main phases. While the overall structure is standardised, delivery allows limited flexibility to accommodate individual needs, preferences, and clinical circumstances.
 
-### 5.1 Phase 1: Total Meal Replacement (weeks 0–12)
+### Phase 1: Total Meal Replacement (weeks 0–12)
 
 Participants replace all usual meals with nutritionally complete meal-replacement products for approximately 12 weeks. Daily energy intake is substantially reduced, with the aim of achieving rapid and clinically meaningful weight loss.
 
@@ -179,7 +160,7 @@ During this phase:
 
 This phase carries the greatest potential for rapid metabolic improvement and therefore also requires the most intensive clinical oversight.
 
-### 5.2 Phase 2: Food reintroduction (approximately weeks 12–18)
+### Phase 2: Food reintroduction (approximately weeks 12–18)
 
 Following completion of the TMR phase, participants transition gradually back to food-based meals. Meal-replacement products are reduced in a stepwise manner while balanced meals are reintroduced.
 
@@ -191,7 +172,7 @@ The focus during this phase is on:
 
 Clinical monitoring continues during food reintroduction, with medication adjusted as required.
 
-### 5.3 Phase 3: Weight maintenance and follow-up (weeks 19+)
+### Phase 3: Weight maintenance and follow-up (weeks 19+)
 
 After food reintroduction, participants enter a longer-term weight maintenance phase. The aim is to stabilise weight, prevent regain, and support sustained improvements in glycaemic control.
 
@@ -203,14 +184,11 @@ Follow-up during this phase includes:
 
 Where weight regain or deterioration in glycaemic control occurs, additional support or temporary return to meal replacement may be offered, guided by clinical judgement.
 
-**Linked documents:**
-**Programme delivery timeline** · **Participant-facing phase overviews** · **Medication adjustment and safety SOP** · **Adverse event reporting pathway** · **Required documents list**
-
-## 6. Clinical monitoring, safety, and governance
+## Clinical monitoring, safety, and governance
 
 Participant safety is a central component of programme delivery. The TMR intervention is embedded within routine clinical care, with clear escalation pathways and governance arrangements.
 
-### 6.1 Clinical monitoring
+### Clinical monitoring
 
 Across all phases, participants are monitored for:
 
@@ -221,53 +199,45 @@ Across all phases, participants are monitored for:
 
 Monitoring intensity is highest during the TMR phase and is adjusted thereafter based on clinical stability and individual risk.
 
-### 6.2 Medication adjustment
+### Medication adjustment
 
 Structured protocols guide the reduction, withdrawal, and reintroduction of diabetes and blood pressure medications. These protocols are designed to minimise the risk of hypoglycaemia, symptomatic hyperglycaemia, hypotension, and other adverse effects.
 
 Medication decisions remain the responsibility of qualified clinicians, with protocols providing guidance rather than rigid rules.
 
-### 6.3 Adverse events and escalation
+### Adverse events and escalation
 
 Adverse events are identified through routine clinical contact and participant self-report. Serious or unexpected events are documented, reviewed, and escalated according to agreed governance pathways.
 
 A Data Monitoring Group oversees safety during the programme, reviewing emerging issues and recommending modifications if required.
 
-### 6.4 Governance and quality assurance
+### Governance and quality assurance
 
 The programme operates under established clinical, information governance, and data protection frameworks. Documentation, data flows, and decision-making processes are designed to be auditable and proportionate to the scale of the programme.
 
-**Linked documents:**
-**Medication adjustment and safety SOP** · **Adverse event reporting guidance** · **Data Monitoring Group terms of reference** · **Data Protection Impact Assessment** · **Required documents list**
-
----
-
-## 7. Data collection and outcome measures
+## Data collection and outcome measures
 
 Data collection for the evaluation is designed to align closely with routine clinical care, minimising additional burden on participants and staff while ensuring that outcomes of interest can be assessed robustly.
 
-### 7.1 Data sources
+### Data sources
 
-Data are drawn from four main sources:
+Data are drawn from three main sources:
 
-- Routine clinical records generated through programme delivery.
-- The Saint Helena diabetes registry.
-- Structured participant questionnaires.
+- The St Helena diabetes registry.
+- Structured participant questionnaires, collected directly into an online REDCap database.
 - Qualitative interviews with a subset of participants and staff.
 
-Where possible, existing data systems are used to avoid duplication and to support linkage across programme phases.
-
-### 7.2 Primary outcomes
+### Primary outcomes
 
 The primary clinical outcomes for the evaluation are:
 
-- Change in body weight over follow-up.
-- Change in HbA1c.
+- Change in body weight between baseline and 12-month follow-up.
+- Change in HbA1c between baseline and 12-month follow-up.
 - Diabetes remission, defined as sustained HbA1c below the diagnostic threshold without glucose-lowering medication, assessed according to pre-specified criteria.
 
 These outcomes reflect both international definitions and what is clinically meaningful in routine practice.
 
-### 7.3 Secondary outcomes
+### Secondary outcomes
 
 Secondary outcomes include:
 
@@ -278,7 +248,7 @@ Secondary outcomes include:
 
 For participants using insulin at baseline, outcomes are interpreted cautiously and reported separately.
 
-### 7.4 Qualitative outcomes
+### Qualitative outcomes
 
 Qualitative data are collected to understand participant and staff experiences, including:
 
@@ -288,16 +258,12 @@ Qualitative data are collected to understand participant and staff experiences, 
 
 These data provide essential context for interpreting quantitative findings and for informing future service development.
 
-**Linked documents:**
-**Data Dictionary** · **Schedule of assessments** · **Participant questionnaires** · **Interview topic guides** · **Required documents list**
+## Analysis approach
 
----
+The analysis approach is designed to support a rigorous, implementation-focused service evaluation of the TMR Diabetes Remission Programme in *St Helena and Ascension Island*. The aim is to generate credible, decision-relevant evidence on outcomes and delivery in routine care, recognising that statistical inference is one component of a broader evaluation that also considers feasibility, safety, and acceptability.
 
-## 8. Analysis approach
-
-The analysis approach is designed to support a rigorous, implementation-focused service evaluation of the TMR Diabetes Remission Programme in **St Helena and Ascension Island**. The aim is to generate credible, decision-relevant evidence on outcomes and delivery in routine care, recognising that statistical inference is one component of a broader evaluation that also considers feasibility, safety, and acceptability.
-
-Analyses will be conducted in accordance with the *Statistical Analysis Plan*, which provides full technical detail. The summary below describes the overall analytic strategy and interpretive principles.
+Analyses will be conducted in accordance with the [[Statistical analysis plan (sap)](./data/sap.qmd)]{.content-visible when-format="html"}
+[[Statistical analysis plan (sap)]({{< var site-url >}}/our-work/tmr/data/sap.html)]{.content-visible when-format="pdf"}, which provides full technical detail. The summary below describes the overall analytic strategy and interpretive principles.
 
 ### Overall analytic strategy
 
@@ -316,7 +282,7 @@ Primary analyses follow intention-to-treat principles, with additional analyses 
 
 ### Outcomes and estimation
 
-Clinical, process, safety, and acceptability outcomes are analysed using appropriate statistical models for repeated measures and longitudinal data. Emphasis is placed on estimation and uncertainty (effect sizes and confidence intervals), with formal hypothesis testing used selectively and interpreted cautiously in light of sample size and service-evaluation context.
+Clinical, process, safety, and acceptability outcomes are analysed using appropriate statistical models for repeated measures / longitudinal data. Emphasis is placed on estimation and uncertainty (effect sizes and confidence intervals), with formal hypothesis testing used selectively and interpreted cautiously in light of sample size and service-evaluation context.
 
 Primary and secondary endpoints, including definitions of diabetes remission, weight loss thresholds, and medication outcomes, are pre-specified in the *Statistical Analysis Plan*.
 
@@ -328,35 +294,27 @@ Overall interpretation explicitly integrates quantitative findings with implemen
 
 ### Qualitative analysis
 
-Qualitative data (including free-text survey responses and semi-structured interviews) are analysed thematically using an inductive coding approach, supported by simple software tools where appropriate. Interviews are conducted in English, digitally recorded, and transcribed verbatim with participant consent. Qualitative findings are used to explain and contextualise quantitative results, particularly around acceptability, feasibility, and barriers and facilitators to engagement.
+Qualitative data (including free-text survey responses and semi-structured interviews) are analysed thematically using inductive coding, supported by simple software tools where appropriate. Interviews are conducted in English, digitally recorded, and transcribed verbatim with participant consent. Qualitative findings are used to explain and contextualise quantitative results, particularly around acceptability, feasibility, and barriers and facilitators to engagement.
 
-**Linked documents:**
-**Statistical Analysis Plan** · **Anonymisation and small-numbers suppression rules** · **Required documents list**
-
----
-
-## 9. Ethics, information governance, and consent
+## Ethics, information governance, and consent
 
 This work is a service evaluation of a pilot clinical programme rather than a research study. Nevertheless, ethical principles relating to consent, confidentiality, and data protection are applied throughout.
 
-### 9.1 Ethics and approvals
+### Ethics and approvals
 
 The evaluation protocol is reviewed through appropriate governance and ethics processes, including UKHSA REGG and local approval routes where required.
 
-### 9.2 Consent and confidentiality
+### Consent and confidentiality
 
 Informed consent is obtained for participation in evaluation activities beyond routine care, including surveys and interviews. Participation in evaluation components is voluntary and does not affect access to clinical care.
 
 All evaluation data are handled in accordance with UK GDPR and local information governance requirements. Identifiable data are restricted to those involved in care delivery, and evaluation outputs use anonymised and aggregated data.
 
-### 9.3 Small numbers and disclosure control
+### Small numbers and disclosure control
 
 Given the small population size, particular care is taken to prevent disclosure. Suppression, aggregation, and careful reporting practices are applied consistently.
 
-**Linked documents:**
-**Ethics / REGG submission pack** · **Data Protection Impact Assessment** · **Anonymisation and small-numbers suppression rules** · **Participant information and consent materials** · **Required documents list**
-
-## 10. Reporting and dissemination
+## Reporting and dissemination
 
 Findings from the evaluation will be reported in a form suitable for clinical teams, health system leaders, and external stakeholders.
 
@@ -367,22 +325,3 @@ Reporting will focus on:
 - Practical lessons for future service delivery.
 
 Outputs may include internal reports, summaries for participants, and contributions to the wider evidence base on diabetes remission programmes in small or remote settings.
-
-**Linked documents:**
-**Final evaluation report template** · **Dissemination plan** · **Required documents list**
-
----
-
-## 11. Document control and version history
-
-This protocol is a controlled document and will be reviewed if there are material changes to:
-
-- programme delivery;
-- data collection or processing;
-- governance or safety arrangements.
-
-**Version:** ____________________
-**Date:** ____________________
-**Author(s):** ____________________
-**Approved by:** ____________________
-**Review date:** ____________________

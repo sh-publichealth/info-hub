@@ -12,17 +12,37 @@ format:
 
 date: last-modified
 date-format: "D MMM YYYY"
-draft: true
+draft: false
 ---
 
 ## Purpose of Recruitment
 
 Recruitment is the first real point of contact between the study and potential participants. How this is handled matters.  
-The aim is to invite people into the programme in a way that is clear, respectful, and quietly optimistic about what the Total Meal Replacement (TMR) intervention can offer.
+The aim is to invite people into the programme in a way that is clear, respectful, and quietly optimistic about what the Total Meal Replacement (TMR) intervention can offer. Recruitment is about **offering an opportunity**, not persuading.
 
-Recruitment is about **offering an opportunity**, not persuading.
+## Key Documents and Links
 
----
+- Telephone recruitment script  
+- Screening checklist  
+- Participant Information Sheet  
+- Study overview or evidence summary  
+
+
+## Screening Documents
+
+| Document | | Read / Download | 
+| --- | --- | --- | 
+|Screening Visit Script | {{< bi download >}} | [download]({{< var site-url >}}/our-work/tmr/visits/recruitment-telephone-script.pdf) |
+
+
+
+<!--   
+|Screening Visit SOP | {{< bi book >}} | [Read Here](./sops/screening-sop.qmd) |
+|Screening Visit Checklist | {{< bi download >}} | <a href="../../downloads/sth-tmr-screening-visit-CHECKLIST.pdf" download>Download</a>|
+|Screening Visit Participant Information Sheet | {{< bi download >}} | <a href="../../downloads/sth-tmr-screening-information-sheet.pdf" download>Download</a>|
+-->
+
+
 
 ## Who We Approach
 
@@ -83,14 +103,3 @@ Where appropriate, they may be invited to contribute as a control participant us
 This programme is about **giving people a genuine chance to change how diabetes affects their lives**, with proper support and careful monitoring.
 
 The role of recruitment is simply to open that door — clearly, honestly, and with quiet confidence in the intervention.
-
----
-
-## Key Documents and Links [(to be completed)]{.highlight}
-
-_Add links here to documents used during recruitment and screening, for example:_
-
-- Telephone recruitment script  
-- Screening checklist  
-- Participant Information Sheet  
-- Study overview or evidence summary  

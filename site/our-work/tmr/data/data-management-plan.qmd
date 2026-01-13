@@ -6,13 +6,15 @@ author: Ian Hambleton
 format: 
    html:
      format-links: true 
-#   pdf:
-#     toc: true
-#     documentclass: report
+   pdf:
+     toc: true
+     documentclass: report
+     margin-left: 30mm
+     margin-right: 30mm
 
 date: last-modified
 date-format: "D MMM YYYY"
-draft: true
+draft: false
 ---
 
 

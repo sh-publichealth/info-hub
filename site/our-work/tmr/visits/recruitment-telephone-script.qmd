@@ -1,0 +1,132 @@
+---
+title: "Recruitment Telephone Script"
+subtitle: "Standard script for staff contacting potential participants by telephone to invite them to a screening visit"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Ian Hambleton, Selvi Jeyaseelan
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+## 1. Opening and identity check
+
+Hello, may I speak with [*participant name*]{.highlight}, please?
+
+Hello [*participant name*]{.highlight}, my name is [*staff name*]{.highlight}, and I am calling from the [*St Helena / Ascension Island*]{.highlight} Health Service. Is now a convenient time to speak for a few minutes?
+
+[*(If no, arrange a call back)*]{.highlight}
+
+Before we continue, I just want to check that I’m speaking to the right person. Can you please confirm your date of birth?
+
+## 2. Why we are calling
+
+Thank you. I’m calling because our records show that you have type 2 diabetes, and you have attended our clinic within the last year.
+
+We are inviting a small number of people to take part in a new programme being offered, which is designed to help people improve their diabetes control and, for some people, potentially put their diabetes into remission.
+
+This programme is part of a carefully monitored health project being run locally by our Health Team.
+
+## 3. What the programme is about
+
+The programme involves a structured, low-calorie meal replacement plan, with regular support from our health team.
+
+For many people, losing weight in a safe and supported way can:
+
+- Lower blood sugar levels
+- Reduce the need for diabetes medications
+- In some cases, allow people to stop diabetes medication altogether
+
+It’s important to be clear that results vary from person to person, but similar programmes elsewhere have helped many people make big improvements to their health.
+
+## 4. Being open about commitment
+
+I also want to be upfront that this programme does require commitment.
+
+It involves:
+
+- Following a structured eating plan for several months
+- Attending regular clinic visits
+- Keeping in close touch with the health team
+
+Some people find it challenging at times, but you would not be doing this alone. Support is a key part of the programme.
+
+## 5. Introducing the screening visit
+
+The next step, if you are interested, would be to attend a screening visit at the clinic.
+
+At this visit we would:
+
+- Measure your height and weight to calculate your Body Mass Index, or BMI
+- Check a few basic details from your medical record
+- Gather some extra detail on your eating habits
+- Explain the programme to you in more detail
+- Give you the chance to ask questions before deciding whether to take part
+
+The screening visit helps us confirm whether the programme is suitable for you.
+
+## 6. Key eligibility checks
+
+Before inviting you in to see us, I just need to check a few simple points:
+
+- Are you **65 years old or over**?
+- Have you been told you have **type 2 diabetes within the last 6 years**?
+
+[(If unsure, reassure that this can be confirmed at screening.)]{.highlight}
+
+One of the criteria we check at screening is BMI, which is based on height and weight. To take part, BMI needs to be 25 or higher, but we only confirm that in person.
+
+## 7. Emphasising choice and voluntariness
+
+Taking part is completely your choice. Coming to the screening visit does not mean you are committing to the programme. It is simply a chance to:
+
+- Learn more
+- See if you are eligible
+- Decide what feels right for you
+
+Your usual care will continue whether or not you decide to take part.
+
+## 8. Invitation to attend screening
+
+Based on what we’ve discussed, would you be interested in attending a screening appointment to learn more about the programme?
+
+[(If yes)]{.highlight}
+
+That’s great. We really appreciate your interest. Let’s look at a suitable time for your screening visit.
+
+[(If no)]{.highlight}
+
+That’s perfectly fine. Thank you for taking the time to speak with me today. If you change your mind in the future, or would like more information at any point, you’re very welcome to get back in touch with the diabetes team.
+
+Before we finish, would it be okay for us to keep a note that we spoke today?
+
+## 9. Practical arrangements
+
+- **Location:** [clinic name]{.highlight}
+- **Estimated duration:** [About 45 minutes]{.highlight}
+- **What to bring:** Please bring any reading glasses you use, and wear light clothing if possible
+
+If you have any questions before the appointment, you can contact us on 22500, please ask for [your name]{.highlight}.
+
+## 10. Closing
+
+Thank you very much for your time today, [participant name]{.highlight}.
+
+We’re really pleased to be offering this opportunity on [*St Helena / Ascension Island*], and we look forward to seeing you at the screening visit.
+
+Have a lovely day.
+
+[**Staff notes (not read aloud):**]{.highlight}
+
+- Keep tone friendly, calm, and encouraging
+- Avoid medical jargon
+- Allow pauses for questions
+- Do not promise remission or stopping medication; use phrases like “may help” or “for some people”

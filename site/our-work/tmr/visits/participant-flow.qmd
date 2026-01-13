@@ -40,7 +40,7 @@ R4a -.-> R5
 R4 --> R5
 ```
 
-::: {.callout-note collapse="false"}
+::: {.callout-note collapse="true"}
 ## Recruitment Part 1 Notes
 **R1.** Use the REDCap "Recruitment Report". Choose and contact the next person on the list. 
 
@@ -69,7 +69,7 @@ R7 --> R9
 R8 -.-> R9
 ```
 
-::: {.callout-note collapse="false"}
+::: {.callout-note collapse="true"}
 ## Recruitment Part 2 Notes
 **R5.** You will only make contact if the person already meets the age, diabetes duration, and *recent clinic visit* criteria (see [Eligibility](./eligibility.qmd) for details). They will still need height and weight measurement (for the calculation of Body Mass Index) and an eating disorder check (see below for both) to confirm final eligibility. 
 
@@ -102,7 +102,7 @@ S2 -- "Note Eligible" --> S4
 ```
 
 
-::: {.callout-note collapse="false"}
+::: {.callout-note collapse="true"}
 ## Screening Part 1 Notes
 **S1.** During this pre-visit work, you will need to update the screening form for each potential participant.
 
@@ -138,7 +138,7 @@ S7 -- "Not Eligible" --> S9
 ```
 
 
-::: {.callout-note collapse="false"}
+::: {.callout-note collapse="true"}
 ## Screening Part 2 Notes
 The REDCap screening form should be completed during the screening visit. Follow the [screening Visit SOP](./sops/screening-sop.qmd) and also use the <a href="../../downloads/sth-tmr-screening-visit-CHECKLIST.pdf" download>screening checklist</a> to ensure all required steps are completed.
 
@@ -178,7 +178,7 @@ S13 --LE5 --> S16
 ```
 
 
-::: {.callout-note collapse="false"}
+::: {.callout-note collapse="true"}
 ## Screening Part 3 Notes
 
 **S10/S11/S13.** These steps collectively form the eating disorder screening process. You should follow this process carefully as set out in the [eating disorder workflow](./sops/eating-disorder-sop.qmd), filling out the question responses in REDCap, and using the resulting REDCap scores to dictate the eventual participant pathway. 
@@ -204,7 +204,7 @@ B3 --> B4
 
 ```
 
-::: {.callout-note collapse="false"}
+::: {.callout-note collapse="true"}
 ## Baseline Part 1 Notes
 
 **B2.** As part of this visit preamble, you should:
@@ -256,7 +256,7 @@ B10 --> B11
 ```
 
 
-::: {.callout-note collapse="false"}
+::: {.callout-note collapse="true"}
 ## Baseline Part 2 Notes
 
 **B5.** The REDCap baseline form should be completed during the baseline visit. Follow the [Baseline Visit SOP](./sops/baseline-sop.qmd) and also use the <a href="../../downloads/sth-tmr-baseline-visit-CHECKLIST.pdf" download>baseline checklist</a> to ensure all required steps are completed.
@@ -306,7 +306,7 @@ IV3 --> IV4
 
 ```
 
-::: {.callout-note collapse="false"}
+::: {.callout-note collapse="true"}
 ## Intervention Visit Notes
 
 **IV1.** Enter Scheduled visit in REDCap
@@ -342,7 +342,7 @@ W12c --> W12d
 
 ```
 
-::: {.callout-note collapse="false"}
+::: {.callout-note collapse="true"}
 ## Intervention Visit Notes
 
 **W12a.** Enter Scheduled visit in REDCap
