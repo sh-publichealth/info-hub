@@ -117,8 +117,10 @@ Eligibility decisions must be auditable.
 Eligibility criteria summary table  
 Screening REDCap instrument  
 
-[Participant Flow Diagrams](./visits/participant-flow.qmd)
 
+For more information, please see the 
+[[Participant Flow Diagrams](./visits/participant-flow.qmd)]{.content-visible when-format="html"}
+[[Participant Flow Diagrams]({{< meta website.site-url >}}/our-work/tmr/visits/participant-flow.html)]{.content-visible when-format="pdf"}.
 
 
 ## Key principle
