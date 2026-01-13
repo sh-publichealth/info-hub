@@ -1,0 +1,115 @@
+---
+title: "The Screening Visit Checklist"
+subtitle: "Guidance for study staff"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Ian Hambleton, Selvi Jeyaseelan
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+## Screening Visit Identifiers
+
+**Participant study ID:** __________________________
+
+**Date of screening (dd/mm/yyyy):** ____ / ____ / ______
+
+**Staff initials:** __________________________
+
+**Location / mode:** ☐ In person ☐ Telephone
+
+
+## Before the Screening Visit (TICK when COMPLETED)
+
+  $\square$ Participant identified from an approved source (registry list / clinic / referral / self-referral)
+
+  $\square$ Screening appointment scheduled
+
+  $\square$ Appropriate time allocated
+
+## During the Screening Visit
+
+### Programme Explanation (TICK when COMPLETED)
+
+  $\square$ Explained that this is a *service*, not a research study
+
+  $\square$ Voluntary nature of participation confirmed
+
+  $\square$ Screening explained as an eligibility and safety check only
+
+  $\square$ Overview of TMR, food reintroduction, and maintenance phases provided
+
+### Eligibility Checks (TICK if ELIGIBILITY MET)
+
+  $\square$ Age within programme limits
+
+  $\square$ Type 2 diabetes diagnosis confirmed
+
+  $\square$ Duration of diabetes within criteria
+
+  $\square$ Recent clinic attendance confirmed
+
+  $\square$ BMI meets eligibility threshold (measured or recent)
+
+### Safety Exclusions Reviewed (TICK if EXCLUSION REASON APPLIES)
+
+  $\square$ Pregnancy or breastfeeding excluded
+  
+  $\square$ Recent major cardiovascular event excluded
+  
+  $\square$ Severe renal impairment excluded
+  
+  $\square$ Active eating disorder excluded
+  
+  $\square$ Other significant exclusions considered
+  
+  $\square$ Borderline eligibility identified and escalated (if applicable)
+
+### Participant Understanding (TICK when COMPLETED)
+
+  $\square$ Time commitment explained
+  
+  $\square$ Medication changes under supervision explained
+  
+  $\square$ Opportunity for questions provided
+
+
+## Outcome of Screening 
+
+### Outcome (CHOOSE ONE)
+
+  $\square$ Eligible
+  
+  $\square$ Not eligible
+  
+### Interested (CHOOSE ONE)
+
+  $\square$ Interested in proceeding to baseline visit
+
+  $\square$ Not interested in proceeding
+
+If interested:
+
+  $\square$ Baseline visit scheduled
+
+If not interested:
+
+  $\square$ Option of routine data use as control explained (where applicable)
+
+
+## After the Screening Visit (TICK when COMPLETED)
+
+  $\square$ Screening outcome recorded in REDCap
+  
+  $\square$ Notes added where relevant (e.g. escalation, safeguarding)
+
+  $\square$ Next steps communicated to participant

@@ -1,0 +1,85 @@
+---
+title: "The Screening Information Sheet"
+subtitle: "What can I expect at the screening visit?"
+description-meta: "The TMR screening visit - What can I expect at the screening visit?"
+author: Ian Hambleton, Selvi Jeyaseelan
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+## What is this visit about?
+
+You are being invited to attend a *screening visit* for a new Diabetes Remission Programme being offered on St Helena.
+
+This visit is to:
+
+- Check whether the programme is suitable for you
+- Explain the programme in a bit more detail
+- Give you a chance to ask questions
+
+*Coming to this visit does not mean you are signing up to the programme.*
+
+## What will happen at the screening visit?
+
+The visit is simple and usually takes *about 30-40 minutes*.
+
+At the visit, a member of the health team will:
+
+- Measure your *height and weight*
+- Use these to calculate your *Body Mass Index (BMI)*
+- Check a few basic details from your medical record (such as age, diabetes diagnosis date, and recent clinic visits)
+- Ask you a few questions about your eating habits
+- Explain what taking part in the programme would involve
+
+No treatments or changes to medication will happen at this visit.
+
+## Why do you measure height and weight?
+
+The programme is designed for people whose health is likely to benefit from weight loss. Height and weight measurements help us check whether the programme is *safe and appropriate* for you. These checks are part of making sure the programme is offered fairly and safely.
+
+## Why do you need to know about my eating habits?
+
+These questions help the team understand whether the programme is right for each person and how best to offer support. They are not about judgement or blame. Everyone’s eating patterns are different, and there are no right or wrong answers. The information helps make sure the programme is safe and appropriate. All information shared is treated confidentially.
+
+## Do I have to decide at this visit?
+
+No. The screening visit is *information-gathering only*.
+
+If you are eligible, you can:
+
+- Take time to think about it
+- Talk it over with family or friends
+- Decide later whether you would like to take part
+
+## What happens next?
+
+- If you are *eligible and interested*, a baseline appointment will be arranged to go through the programme fully
+- If you decide *not* to take part, your usual diabetes care will continue as normal
+
+## Do I need to prepare anything?
+
+- Please wear *light clothing* if possible, to help us measure your weight fully-clothed.
+- Bring any *glasses* you need for reading
+- Bring any questions you may have
+
+## Who can I contact?
+
+If you have questions at any time, please contact:
+
+**Dr Selvi Jeyaseelan**<br/>
+**Phone:** 22500<br/>
+**Email:** [selvi.jeyaseelan@sainthelena.gov.sh](mailto:selvi.jeyaseelan@sainthelena.gov.sh?subject=TMR%20query)
+
+## Thank you
+
+Thank you for taking the time to attend a screening visit and for your interest in improving diabetes care on St Helena.

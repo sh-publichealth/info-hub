@@ -1,0 +1,86 @@
+---
+title: "Describing the Participant Visits"
+subtitle: "An overview of visits across the TMR programme"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Ian Hambleton, Selvi Jeyaseelan
+format: 
+   html:
+     format-links: true 
+#   pdf:
+#     toc: true
+#     documentclass: report
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+## Overview of visits across the TMR programme
+
+The Total Meal Replacement (TMR) programme is a structured intervention designed to support weight loss, improved diabetes control, and longer-term health. The programme runs over approximately one year and includes several distinct types of visits, each with a specific purpose.
+
+This page provides a high-level overview of the visit types that occur across the life of the programme. It is intended for participants, families, community stakeholders, healthcare staff, and partners who want to understand how the programme is organised.
+
+Participation in the programme is voluntary, and usual diabetes care continues throughout.
+
+## Recruitment contact
+
+Recruitment begins with an invitation to learn more about the programme. This initial contact is used to explain the purpose of the programme and to invite individuals to attend a screening visit.
+
+The recruitment stage is designed to be low-pressure and informational. Declining an invitation has no effect on routine care.
+
+## Screening visit
+
+The screening visit is used to confirm whether the programme is appropriate and safe for an individual. At this stage:
+
+- The programme is explained in more detail
+- Basic health measurements are taken
+- Questions can be discussed
+
+The screening visit does not commit an individual to participation.
+
+## Baseline visit
+
+The baseline visit marks the formal start of participation in the programme. During this visit:
+
+- Participation is confirmed
+- Baseline health measurements are recorded
+- Plans for the next phase of the programme are agreed
+
+This visit provides the reference point for monitoring change over time.
+
+## Total Meal Replacement visits
+
+The Total Meal Replacement phase includes regular visits over the first few months of the programme. These visits support:
+
+- Delivery of the meal replacement intervention
+- Monitoring of health and safety
+- Adjustment of medications where appropriate
+- Ongoing practical and emotional support
+
+This phase is closely monitored due to the rapid changes that can occur during weight loss.
+
+## Food reintroduction visits
+
+Following the meal replacement phase, food is gradually reintroduced in a structured way. Food reintroduction visits focus on:
+
+- Transitioning from meal replacements back to everyday foods
+- Supporting nutritional balance
+- Building skills and confidence for longer-term eating patterns
+
+## Weight maintenance visits
+
+Once food has been fully reintroduced, the programme enters the weight maintenance phase. Visits during this phase are less frequent and focus on:
+
+- Supporting weight stability
+- Monitoring longer-term health outcomes
+- Reinforcing sustainable habits
+- Ongoing monitoring and support
+
+Across all phases of the programme:
+
+- Health outcomes are monitored
+- Support is available when challenges arise
+- Participants may choose to stop at any point
+
+The structure of visits is designed to balance safety, effectiveness, and sustainability, while fitting within routine health service delivery.

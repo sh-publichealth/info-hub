@@ -1,18 +1,20 @@
 ---
-title: "Screening Visit SOP"
-subtitle: "Guidance for Study Staff"
+title: "The Screening Visit"
+subtitle: "Standard Operating Procedure (SOP) - guidance for study staff"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
 author: Ian Hambleton, Selvi Jeyaseelan
-format: 
-   html:
-     format-links: true 
-#   pdf:
-#     toc: true
-#     documentclass: report
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
 
 date: last-modified
 date-format: "D MMM YYYY"
-draft: true
+draft: false
 ---
 
 ## Purpose
@@ -26,27 +28,35 @@ The screening visit is designed to:
 - Support informed choice
 - Identify next steps (baseline visit, control group, or no further contact)
 
-Screening is **not** consent to participate and does not commit the individual to the programme.
+Screening is *not* consent to participate and does not commit the individual to the programme.
 
-------
+## Documentation
+
+The following documents are used directly as part of the screening visit process. 
+
+| Document | | Link / Download | 
+| :--- | ---: | :--- | 
+|Screening visit information sheet | {{< bi download >}} | [download]({{< var site-url >}}/our-work/tmr/sops/screening-info-sheet.pdf) |
+|Screening visit checklist | {{< bi download >}} | [download]({{< var site-url >}}/our-work/tmr/sops/screening-checklist.pdf) |
+|Participant flow diagrams| {{< bi link-45deg >}} | [[participant flow diagrams](../visits/participant-flow.qmd)]{.content-visible when-format="html"}[[participant flow diagrams]({{< var site-url >}}/our-work/tmr/visits/participant-flow.html)]{.content-visible when-format="pdf"} |
 
 ## Scope
 
 This SOP applies to all staff involved in:
 
 - Identifying potential participants
-- Conducting screening visits (in-person or remote)
-- Recording screening data in REDCap
-
-------
+- Conducting screening visits (always in-person)
+- Recording screening data in the REDCap TMR database 
 
 ## Roles and Responsibilities
 
-- **Screening staff**: conduct screening, record data, explain next steps
-- **Clinical lead / diabetes nurse specialist**: available for clinical queries or borderline cases
-- **Programme coordinator**: scheduling and follow-up
+*Community Health Workers.* conduct screening, record data, explain next steps
 
-------
+*Study data manager.* Provides REDCap and data system support throughout recruitment.
+
+*Study clinician.* available for clinical queries or borderline cases
+
+*Study manager.* scheduling and follow-up
 
 ## Overview of the Screening Process
 
@@ -57,22 +67,16 @@ This SOP applies to all staff involved in:
 5. Agree next step
 6. Record outcome
 
-------
-
 ## Detailed Procedure
 
 ### 1. Identification of Potential Participants
 
 Potential participants may be identified through:
 
-- Diabetes registry lists
+- Diabetes registry listing (using a report in the REDCap TMR database)
 - Clinic lists
 - Referrals from clinical staff
 - Self-referral following publicity
-
-Eligibility lists may be randomly ordered prior to contact.
-
-------
 
 ### 2. Initial Contact
 
@@ -88,8 +92,6 @@ Provide a brief description of:
 - Follow-on food reintroduction and maintenance
 - Time commitment
 
-------
-
 ### 3. Screening Assessment
 
 Confirm or collect the following:
@@ -100,20 +102,17 @@ Confirm or collect the following:
 - Type 2 diabetes diagnosis
 - Duration of diabetes
 - Recent clinic attendance
-- Current HbA1c (if available)
 - Body Mass Index (measured or recent)
 
 **Safety exclusions**
+
+This medical check will likely occur before the screening visit takes place. The reviewer (study clinician or specialist diabetes nurse) will review patient notes, looking for any pre-existing exclusion factors - such as. This will be recorded by the study clinician or specialist diabetes nurse in the REDCap TMR database screening form: 
 
 - Pregnancy or breastfeeding
 - Recent major cardiovascular events
 - Severe renal impairment
 - Active eating disorder
 - Other significant clinical exclusions
-
-Where uncertainty exists, pause screening and seek clinical advice.
-
-------
 
 ### 4. Explain Programme Expectations
 
@@ -125,8 +124,6 @@ Cover clearly:
 - Participants can stop at any time
 
 Check understanding and allow questions.
-
-------
 
 ### 5. Confirm Interest
 
@@ -143,8 +140,6 @@ If **no**:
 - Thank the individual
 - Ask permission to use routine data as part of the control group (where applicable)
 
-------
-
 ### 6. Record Outcome
 
 In REDCap, record:
@@ -154,27 +149,13 @@ In REDCap, record:
 - Baseline visit scheduled (yes/no)
 - Any notes relevant to safety or follow-up
 
-------
-
 ## Handling Special Situations
 
-- **Borderline eligibility**: escalate to clinical lead
-- **Insulin-treated participants**: flag for enhanced clinical oversight
-- **Safeguarding concerns**: follow standard clinical procedures
-
-------
+- *Borderline eligibility.* escalate to clinical lead
+- *Insulin-treated participants.* flag for enhanced clinical oversight
+- *Safeguarding concerns.* follow standard clinical procedures
 
 ## Documentation
 
-- Screening data recorded in the screening REDCap database
+- Screening data is recorded in the screening REDCap database
 - No consent forms are signed at screening
-
-------
-
-## Linked Documents
-
-**Screening Visit SOP**
-**Data Sharing Agreement – Outline**
-**Caldott Guardian Sign-off Record**
-**Data Monitoring Group – Terms of Reference**
-**Baseline Visit SOP and Checklist**

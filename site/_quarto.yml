@@ -68,22 +68,16 @@ website:
               contents: 
               - text: Participant Flow
                 href: our-work/tmr/visits/participant-flow.qmd
-              - text: Recruitment
-                href: our-work/tmr/visits/recruitment.qmd
-#              - text: Screening Visit 
-#                href: our-work/tmr/visits/screening-visit.qmd
-#              - text: Baseline Visit 
-#                href: our-work/tmr/visits/baseline-visit.qmd
-#              - text: Meal Replacement Visits 
-#                href: our-work/tmr/visits/meal-replacement-visits.qmd
-#              - text: Food Reintroduction Visits
-#                href: our-work/tmr/visits/food-reintroduction-visits.qmd
-#            - section: "SOPs"
-#              contents: 
+              - text: Overview of Visits
+                href: our-work/tmr/visits/participant-visits.qmd
+            - section: "SOPs"
+              contents: 
 #              - text: SOP overview
 #                href: our-work/tmr/sops/index.qmd
-#              - text: Screening SOP
-#                href: our-work/tmr/sops/screening-sop.qmd
+              - text: Recruitment SOP
+                href: our-work/tmr/sops/recruitment-sop.qmd
+              - text: Screening SOP
+                href: our-work/tmr/sops/screening-sop.qmd
 #              - text: Height & Weight SOP 
 #                href: our-work/tmr/sops/height-weight-sop.qmd
 #              - text: Baseline SOP
@@ -127,4 +121,4 @@ format:
 
 
 
-# touch: 2026-01-13 11:47:51.518
+# touch: 2026-01-13 16:59:07.384

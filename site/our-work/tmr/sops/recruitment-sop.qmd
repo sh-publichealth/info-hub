@@ -1,0 +1,107 @@
+---
+title: "The Recruitment Process"
+subtitle: "Standard Operating Procedure (SOP) - guidance for study staff"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Ian Hambleton, Selvi Jeyaseelan
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+## Purpose
+
+This SOP describes the recruitment process for inviting eligible individuals to attend a screening visit for the TMR Diabetes Remission Programme.
+
+## Documentation
+
+All recruitment contacts and outcomes (contacted, agreed, declined, no response) are recorded in the designated study database in accordance with data governance procedures.
+
+| Document | | Link / Download | 
+| :--- | ---: | :--- | 
+|Recruitment telephone script | {{< bi download >}} | [download]({{< var site-url >}}/our-work/tmr/sops/recruitment-telephone-script.pdf) |
+|Participant information sheet | {{< bi download >}} | [download]({{< var site-url >}}/our-work/tmr/info-sheet-01.pdf) |
+|Participant flow diagrams | {{< bi link-45deg >}} | [[Participant flow diagrams](../visits/participant-flow.qmd)]{.content-visible when-format="html"}[[Participant flow diagrams]({{< var site-url >}}/our-work/tmr/visits/participant-flow.html)]{.content-visible when-format="pdf"} |
+
+## Scope
+
+This SOP covers activities from identification of potentially eligible individuals through to the scheduling of a screening visit.
+All screening procedures are covered in the Screening SOP. Baseline enrolment is covered in the Baseline SOP.
+
+## Roles and responsibilities
+
+*Data handling staff.* Extract potentially eligible participants from the diabetes registry and prepare recruitment lists within the REDCap Total Meal Replacement (TMR) database.
+
+*Community Health Workers (CHWs)*. Review the REDCap recruitment report to identify potential eligible participants. Select the person at the top of the list and make contact for potential recruitment.
+
+*Study data manager.* Provides REDCap and data system support throughout recruitment.
+
+*Study clinician.* Provides clinical oversight and advice where required.
+
+*Study manager.* Oversees recruitment progress, coordination, and escalation of issues.
+
+## Recruitment overview
+
+Recruitment is a structured, auditable process designed to ensure that individuals are approached consistently, respectfully, and without coercion. Participation is voluntary, and declining does not affect routine care.
+
+**Step 1:** Identification of potentially eligible participants
+
+Data handling staff use the diabetes registry to identify potentially eligible individuals based on:
+
+- Confirmed diabetes diagnosis
+- Duration of diabetes
+- At least one clinic visit in the previous 12 months
+
+For all individuals meeting these criteria, registry information is used to pre-populate the REDCap screening form in the TMR database.
+
+**Step 2:** Creation of recruitment list in the REDCap TMR database
+
+Using the pre-populated screening forms, a REDCap report is generated listing potentially eligible participants. This report functions as the active recruitment list. The *community health workers* contact individuals in the order presented in the REDCap report, starting from the top of the list.
+
+**Step 3:** Recruitment contact
+
+The *community health workers* contact individuals listed in the REDCap recruitment report by telephone or in person.
+
+During recruitment contact:
+
+- The approved recruitment script must be followed closely
+- The purpose of the programme is explained briefly
+- The individual is invited to attend a screening visit to learn more
+- It is made clear that participation is optional and declining will not affect usual care
+
+The recruitment script is provided as a downloadable document at the top of this SOP and must be used for all recruitment contacts. No screening assessments or consent are undertaken at this stage.
+
+**Step 4:** Updating recruitment outcomes in REDCap
+
+During or immediately after recruitment contact, the REDCap screening form is updated to record the outcome, including:
+
+- Individual declined participation
+- Individual agreed to attend a screening visit
+
+This information is recorded directly in the REDCap database to maintain a real-time recruitment record.
+
+**Step 5:** Scheduling the screening visit
+
+For individuals who agree to attend a screening visit, the REDCap scheduling functionality in the TMR database is used to book the screening appointment. Once a screening visit is scheduled, the recruitment process for that individual is complete.
+
+**Step 6:** Handover to screening
+
+Screening visits are conducted by the Community Health Worker team, with support from:
+
+- The study data manager
+- The study clinician
+- The study manager
+
+From this point onward, procedures are governed by the Screening SOP.
+
+## Documentation and audit trail
+
+All recruitment activity—including eligibility identification, contact attempts, outcomes, and scheduling—is recorded within REDCap. This provides a complete audit trail of recruitment decisions and supports monitoring of recruitment progress and equity.

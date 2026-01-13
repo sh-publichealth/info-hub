@@ -18,9 +18,7 @@ draft: false
 ---
 
 
-
-
-## Data Collection Schedule (Summary)
+## Data Collection Schedule Summary
 
 #### Longitudinal Timepoints
 
@@ -50,9 +48,7 @@ The differing visit schedules of cases and controls means that we will probably 
 
 
 
----
-
-## Instrument Summary (Build Checklist)
+## Data Collection Instrument Summary
 
 | Instrument            | Repeating | Assigned events (Cases)                                      |
 | --------------------- | --------- | ------------------------------------------------------------ |
@@ -71,28 +67,20 @@ The differing visit schedules of cases and controls means that we will probably 
 | ipaq_sf               | No        | baseline, wk12, wk52, wk104                                  |
 | health_economics      | No        | baseline, wk52, wk104                                        |
 | prebaseline_registry  | **Yes**   | prebaseline *(This will be extracted directly from the Diabetes Registry)* |
-| ema_daily             | **Yes**   | EMA-designated events                                        |
-
----
 
 
-
-### Instrument: eligibility_screening
-
-> **Eligibility screening for all diabetes intervention work occurs <u>IN A SEPARATE REDCap DATABASE</u> ** 
-
-Eventually, the plan for future project screening is as follows: 
+## Instrument: Recruitment & Screening
 
 1. For each new diabetes intervention, we create a new registry instrument. The logic is mainly to have a registry record of the number of intervention involvements for each individual - for some protection against over-studying 
 2. This will not be possible for TMR - as the registry needs further updating before it can be populated with additional data.
-3. **This means - for TMR - eligibility screening should occur in a separate REDCap database.** The suggested TMR eligibility instrument for the registry is tabulated below. 
+3. **This means - for TMR - recruitment & screening will occur in the main REDCap TMR database.** The suggested TMR eligibility instrument for the registry is tabulated below. 
 4. The TMR eligibility criteria are:
    - Age 65 years or younger
    - Duration of diabetes 6 years or less
    - 1 or more visits in past 12 months
-   - IF (and only IF) we don't recruit enough participants (50 cases, 50 controls), we will consider diabetes duration 10-years or less.
+   - IF (and only IF) we don't recruit enough participants (50 cases, 50 controls in both locations combined), we will consider diabetes duration 10-years or less.
    - BMI of 25 or greater
-5. **Screening Part 1.** Auto populate (Ascension = manual entry):
+5. **Screening Part 1.** Using data from the diabetes registry, auto populate the TMR database screening form (Ascension = manual entry):
    - Date of Birth 
    - Date of Diabetes Diagnosis
    - Date of Last Clinic Visit 
@@ -101,9 +89,7 @@ Eventually, the plan for future project screening is as follows:
    - Duration of Diabetes
    - Time since last visit
 7. Flag Eligible / Non-Eligible
-8. Eligible participants are randomly reordered, then contacted for interest
-
-
+8. Eligible participants are randomly reordered, then pushed to a REDCap "potentially eligible" report for use by the *community health workers*.
 
 **Eligibility Screening Part 1.** Draw registry data into new registry instrument. Calculate derived variables.
 
@@ -118,7 +104,9 @@ Eventually, the plan for future project screening is as follows:
 | visit12_registry | ***(derived)*** 1 or more visits in the past year            | text (decimal) | –                                | Y        |
 | tmr_eligible1    | ***(auto-calculated)*** Is participant eligible so far for TMR pilot? | yesno          | –                                | Y        |
 
-**Eligibility Process Part 2.** If eligible from *Screening Part 1*, create report / list of these eligible participants, along with their eligible values. This list will be exported, randomly reordered, then used by the team to ask participants to attend an in-person screening visit. The Table below documents the additional variables collected at this in-person screening visit. 
+**Eligibility Process Part 2.** If eligible from *Screening Part 1*, create report / list of these eligible participants, along with their eligible values. This list will be held in the TMR database, randomly reordered. It will be used by the *community health workers* when contacting potential participants for interest, and if interested  to attend an in-person screening visit. 
+
+The Table below documents the additional variables collected at this in-person screening visit. 
 
 If the participant is still eligible after Part 2, they should be asked if they are interested in hearing more about the pilot, or interested in taking part. 
 
@@ -143,16 +131,11 @@ If the participant is still eligible after Part 2, they should be asked if they 
 | fu6m              | If Yes to being a control, are they happy to visit for 1 baseline visit, then every 6 months for diabetes support? | yesno          | –                                | Y        |
 
 
+[NOTE 1 (13-Jan-2026): As part of this screening process, there will now be some screening questions exploring eating habits. These are to be finalised.]{.highlight}
 
----
+[NOTE 2 (13-Jan-2026): From here, instruments are post-screening, meaning that they are collected only if participants have agreed to join the study]{.highlight}
 
-**From here, instruments are housed in the TMR intervention database**
-
----
-
-
-
-### Instrument: participant_admin
+## Instrument: participant_admin
 
 Collects core administrative identifiers and group allocation information required for participant linkage, stratification, and governance.
 
@@ -170,9 +153,8 @@ Collects core administrative identifiers and group allocation information requir
 | email | Email address | text | – | Y |
 | consent_date | Date informed consent obtained | date | YYYY-MM-DD | Y |
 
----
 
-### Instrument: weight
+## Instrument: weight
 
 Records repeated measurements of body weight over time to quantify weight change / trajectories.
 
@@ -181,9 +163,8 @@ Records repeated measurements of body weight over time to quantify weight change
 | visit_date | Date of measurement | date | – | Y |
 | weight | Weight | text (decimal) | kg | Y |
 
----
 
-### Instrument: anthropometry
+## Instrument: anthropometry
 
 Records repeated measurements of body circumferences over time to quantify body composition trajectories.
 
@@ -193,9 +174,8 @@ Records repeated measurements of body circumferences over time to quantify body 
 | waist      | Waist circumference | text (decimal) | cm    | N        |
 | hip        | Hip circumference   | text (decimal) | cm    | N        |
 
----
 
-### Instrument: blood_pressure
+## Instrument: blood_pressure
 
 Captures systolic and diastolic blood pressure measurements over follow-up to assess secondary cardiometabolic outcomes.
 
@@ -205,9 +185,8 @@ Captures systolic and diastolic blood pressure measurements over follow-up to as
 | sbp | Systolic blood pressure | integer | mmHg | Y |
 | dbp | Diastolic blood pressure | integer | mmHg | Y |
 
----
 
-### Instrument: glucose_monitor
+## Instrument: glucose_monitor
 
 Records glucose monitor readings over time to assess glycaemic control, remission, and relapse. These non-fasting values are primarily for clinical monitoring.
 
@@ -216,9 +195,8 @@ Records glucose monitor readings over time to assess glycaemic control, remissio
 | visit_date | Date of measurement       | date           | –      | Y        |
 | glucose    | Blood glucose measurement | text (decimal) | mmol/L | Y        |
 
----
 
-### Instrument: hba1c
+## Instrument: hba1c
 
 Records HbA1c measurements over time to assess glycaemic control, remission, and relapse.
 
@@ -229,9 +207,7 @@ Records HbA1c measurements over time to assess glycaemic control, remission, and
 
 
 
----
-
-### Instrument: liver_labs
+## Instrument: liver_labs
 
 Records HbA1c measurements over time to assess glycaemic control, remission, and relapse.
 
@@ -246,11 +222,10 @@ Records HbA1c measurements over time to assess glycaemic control, remission, and
 | albumin         | Albumin                          | text (decimal) | g/L    | Y        |
 | protein_total   | Total protein                    | text (decimal) | g/L    | N        |
 
----
 
-### Instrument: fibroscan
+## Instrument: fibroscan
 
-Records liver disease variables using the Echosens fibroscanner.
+Records liver disease variables using the Echosens fibroscanner. [Variables to be finalised]{.highlight}
 
 | Variable             | Label                                   | Field type  | Coding / Units            | Required |
 | -------------------- | --------------------------------------- | ----------- | ------------------------- | -------- |
@@ -265,9 +240,8 @@ Records liver disease variables using the Echosens fibroscanner.
 | valid_measurements_n | Number of valid FibroScan measurements  | integer     | count                     | n        |
 | success_rate_pct     | FibroScan measurement success rate      | numeric     | percentage (%)            | n        |
 
----
 
-### Instrument: medication
+## Instrument: medication
 
 Captures high-level information on insulin use, insulin dose, and overall glucose-lowering medication burden over time.
 
@@ -277,13 +251,12 @@ Captures high-level information on insulin use, insulin dose, and overall glucos
 | diabetes_meds     | Are you on diabetes medication     | 1=monotherapy oral<br />2=monotherapy injectable<br />3=combination | 1-3            | Y        |
 | hypertension_meds | Are you on hypertension medication | yesno                                                        | 0/1            | Y        |
 
----
 
-### Instrument: eq5d3l_items
+## Instrument: eq5d3l_items
 
 Collects EQ-5D-3L health-related quality of life responses to assess changes in generic health status over time.
 
-==Go to EuroQol website. REDCap instrument available - must complete registration form==
+[Go to EuroQol website. REDCap instrument available - must complete registration form]{.highlight}
 
 | Variable | Label | Field type | Coding | Required |
 |---|---|---|---|---|
@@ -294,9 +267,8 @@ Collects EQ-5D-3L health-related quality of life responses to assess changes in 
 | eq_ad | Anxiety / depression | radio | 1–3 | Y |
 | eq_vas | We would like to know how good or bad your health is TODAY | integer | 0–100 | Y |
 
----
 
-### Instrument: paid_items
+## Instrument: paid_items
 
 **Problem Areas in Diabetes (PAID) scale**. Collects PAID questionnaire items to quantify diabetes-related emotional distress longitudinally.
 
@@ -325,9 +297,8 @@ Collects EQ-5D-3L health-related quality of life responses to assess changes in 
 | paid19 | Coping with complications of diabetes? | radio | 0–4 | Y |
 | paid20 | Feeling ‘burned out’ by the constant effort needed to manage diabetes? | radio | 0–4 | Y |
 
----
 
-### Instrument: ipaq_sf
+## Instrument: ipaq_sf
 
 Collects the IPAQ short form to quantify physical activity and sedentary behaviour across study follow-up.
 
@@ -343,13 +314,12 @@ Collects the IPAQ short form to quantify physical activity and sedentary behavio
 | ipaq_vig_mins | Vigorous activity minutes | integer | min/day | Y |
 | ipaq_sit_mins | Sitting time per weekday | integer | min/day | Y |
 
----
 
-### Instrument: health_economics
+## Instrument: health_economics
 
 Captures programme product supply and medication cost inputs to support a pragmatic assessment of drug-related cost savings.
 
-==Confirm / Improve this variable set with Chief Economist==
+[Confirm / Improve this variable set with Chief Economist]{.highlight}
 
 | Variable              | Label                                                        | Field type | Units             | Required |
 | --------------------- | ------------------------------------------------------------ | ---------- | ----------------- | -------- |
@@ -359,9 +329,8 @@ Captures programme product supply and medication cost inputs to support a pragma
 | he_antihyp_supplied   | Number of weeks of antihypertensive issued since the previous study visit | integer    | weeks             | Y        |
 | he_notes              | Costing notes (e.g. supply interruptions or special circumstances) | notes      | –                 | N        |
 
----
 
-### Instrument: prebaseline_registry (REPEATING)
+## Instrument: prebaseline_registry (REPEATING)
 
 > **Pre-baseline measurements maintained <u>IN THE REGISTRY DATABASE</u> ** 
 
@@ -377,35 +346,10 @@ I'm suggesting that this information is NOT stored as a separate instrument. We 
 | pre_diabetes_meds | Diabetes medication use at the time | 1=monotherapy oral<br />2=monotherapy injectable<br />3=combination | 1-3      | Y        |
 | pre-hypertensives | antihypertensive use at that time | yesno | 0/1 | N |
 
----
 
-### Instrument: ema_daily (REPEATING)
+## Appendices. Variables Uses. Derived Variables.#
 
-Collects high-frequency ecological momentary assessment data to explore behavioural, emotional, and contextual factors during the intervention.
-
-==Q: Can we confirm the questions used here by the DiRECT study==
-
-==Q: Discuss this with Leeds Beckett - with the extensive Qualitative Assessment, this may not be needed==
-
-==Q: If we do use, could be uploaded via MyCap - potentially==
-
-| Variable | Label | Field type | Coding | Required |
-|---|---|---|---|---|
-| ema_date | Date of EMA prompt | date | – | Y |
-| ema_time | Time of EMA response | time | HH:MM | Y |
-| ema_adherence | Dietary adherence | radio | 0–4 | Y |
-| ema_craving | Food craving intensity | radio | 0–4 | Y |
-| ema_mood | Current mood | radio | 0–4 | Y |
-| ema_stress | Current stress level | radio | 0–4 | Y |
-| ema_context | Eating context | radio | Home/Work/Social/Other | N |
-
----
-
-
-
-
-
-## Appendix: Variable Collection Timing and Analytical Use
+### Appendix: Variable Collection Timing and Analytical Use
 
 This appendix provides a **variable-by-variable enactment of the Statistical Analysis Plan (SAP)**.  
 For each variable, it documents:
@@ -416,9 +360,8 @@ For each variable, it documents:
 
 Unless explicitly stated, all derived variables are calculated **outside REDCap** in analysis code.
 
----
 
-## Appendix A: participant_admin
+#### Appendix A: participant_admin
 
 | Variable     | Collection timepoints | Detailed analytical use                                      |
 | ------------ | --------------------- | ------------------------------------------------------------ |
@@ -429,9 +372,8 @@ Unless explicitly stated, all derived variables are calculated **outside REDCap*
 | dob          | Baseline              | Used to derive age; age enters propensity score models, regression covariate sets, and baseline tables |
 | consent_date | Baseline              | Governance and audit only                                    |
 
----
 
-## Appendix B: baseline_eligibility
+#### Appendix B: baseline_eligibility
 
 | Variable               | Collection timepoints | Detailed analytical use                                 |
 | ---------------------- | --------------------- | ------------------------------------------------------- |
@@ -440,17 +382,17 @@ Unless explicitly stated, all derived variables are calculated **outside REDCap*
 | elig_insulin_exclusion | Baseline              | Stratifier for insulin vs non-insulin subgroup analyses |
 | elig_notes             | Baseline              | Audit / quality assurance only                          |
 
----
 
-## Appendix C: baseline_anthropometry
+
+#### Appendix C: baseline_anthropometry
 
 | Variable | Collection timepoints | Detailed analytical use                                      |
 | -------- | --------------------- | ------------------------------------------------------------ |
 | height   | Baseline              | Used to derive BMI at all timepoints; baseline covariate in descriptive tables |
 
----
 
-## Appendix D: anthropometry
+
+#### Appendix D: anthropometry
 
 | Variable   | Collection timepoints         | Detailed analytical use                                      |
 | ---------- | ----------------------------- | ------------------------------------------------------------ |
@@ -459,26 +401,26 @@ Unless explicitly stated, all derived variables are calculated **outside REDCap*
 | waist      | Baseline; selected follow-ups | Secondary adiposity outcome; descriptive statistics and exploratory linear models |
 | hip        | Baseline; annual              | Used to derive waist-hip ratio; descriptive cardiometabolic profiling |
 
----
 
-## Appendix E: blood_pressure
+
+#### Appendix E: blood_pressure
 
 | Variable | Collection timepoints    | Detailed analytical use                                      |
 | -------- | ------------------------ | ------------------------------------------------------------ |
 | sbp      | Baseline; all follow-ups | Secondary outcome; analysed using linear mixed-effects models; appears in metabolic outcome tables |
 | dbp      | Baseline; all follow-ups | Secondary outcome; analysed using linear mixed-effects models |
 
----
 
-## Appendix F: glycaemia_labs
+
+#### Appendix F: glycaemia_labs
 
 | Variable | Collection timepoints              | Detailed analytical use                                      |
 | -------- | ---------------------------------- | ------------------------------------------------------------ |
 | hba1c    | Pre-baseline; baseline; follow-ups | **Primary glycaemic outcome**; analysed as a continuous outcome in linear mixed-effects and DiD models; dichotomised for remission (<48 mmol/mol) and tighter control (<42 mmol/mol); used to define relapse; appears in all primary and secondary outcome tables |
 
----
 
-## Appendix G: liver_labs
+
+#### Appendix G: liver_labs
 
 | Variable        | Collection timepoints    | Detailed analytical use                                      |
 | --------------- | ------------------------ | ------------------------------------------------------------ |
@@ -496,9 +438,9 @@ Unless explicitly stated, all derived variables are calculated **outside REDCap*
 3. AST:ALT ratio may be derived descriptively to aid interpretation but is not a formal endpoint.  
 4. No diagnostic claims regarding NAFLD/NASH are made; interpretation is contextual and supportive.
 
----
 
-## Appendix H: medication_use / medication_detail
+
+#### Appendix H: medication_use / medication_detail
 
 | Variable       | Collection timepoints              | Detailed analytical use                                      |
 | -------------- | ---------------------------------- | ------------------------------------------------------------ |
@@ -515,9 +457,9 @@ Unless explicitly stated, all derived variables are calculated **outside REDCap*
 - Where greater detail is required (e.g. specific agents, dose changes, dates), these may be extracted from **clinic notes or the EMR** and linked at analysis stage.  
 - REDCap is not treated as the authoritative medication prescribing system.
 
----
 
-## Appendix I: eq5d3l_items (EuroQol)
+
+#### Appendix I: eq5d3l_items (EuroQol)
 
 | Variable     | Collection timepoints    | Detailed analytical use                                      |
 | ------------ | ------------------------ | ------------------------------------------------------------ |
@@ -530,9 +472,9 @@ Unless explicitly stated, all derived variables are calculated **outside REDCap*
 3. Results are interpreted as **health-related quality-of-life change**, not preference-based cost-utility outcomes.  
 4. Utilities may be reported descriptively and used to contextualise clinical outcomes; formal QALY modelling is **out of scope**.
 
----
 
-## Appendix J: paid_items
+
+#### Appendix J: paid_items
 
 | Variable      | Collection timepoints    | Detailed analytical use               |
 | ------------- | ------------------------ | ------------------------------------- |
@@ -543,17 +485,17 @@ Unless explicitly stated, all derived variables are calculated **outside REDCap*
 - PAID ≥40: binary high-distress outcome analysed using logistic or Poisson models  
 Appears in psychosocial outcome tables.
 
----
 
-## Appendix K: ipaq_sf
+
+#### Appendix K: ipaq_sf
 
 | Variable | Collection timepoints    | Detailed analytical use                                      |
 | -------- | ------------------------ | ------------------------------------------------------------ |
 | ipaq_*   | Baseline; wk12; 12m; 24m | Used to derive MET-minutes/week; included as descriptive outcome and covariate in adjusted models |
 
----
 
-## Appendix L: health_economics_type1
+
+#### Appendix L: health_economics_type1
 
 | Variable              | Collection timepoints | Detailed analytical use                                      |
 | --------------------- | --------------------- | ------------------------------------------------------------ |
@@ -566,9 +508,9 @@ Appears in psychosocial outcome tables.
 - Where needed, detailed medication histories and quantities may be extracted from **clinic notes or EMR systems**.  
 - Analyses focus on **budget impact and cost offsets**, not full cost-effectiveness modelling.
 
----
 
-## Appendix M: prebaseline_registry
+
+#### Appendix M: prebaseline_registry
 
 | Variable          | Collection timepoints | Detailed analytical use                        |
 | ----------------- | --------------------- | ---------------------------------------------- |
@@ -579,23 +521,7 @@ Appears in psychosocial outcome tables.
 | pre_dbp           | ≥3 pre-baseline       | Secondary DiD outcome                          |
 | pre_metformin_use | ≥3 pre-baseline       | Medication stability assessment                |
 
----
-
-## Appendix N: ema_daily
-
-| Variable      | Collection timepoints    | Detailed analytical use                                      |
-| ------------- | ------------------------ | ------------------------------------------------------------ |
-| ema_adherence | Daily during EMA windows | Aggregated predictor of weight and HbA1c change; exploratory mediation analyses |
-| ema_craving   | Daily                    | Behavioural context covariate                                |
-| ema_mood      | Daily                    | Psychosocial covariate                                       |
-| ema_stress    | Daily                    | Psychosocial covariate                                       |
-| ema_context   | Daily                    | Environmental context descriptor                             |
-
-EMA analyses are **exploratory and hypothesis-generating**, per SAP.
-
----
-
-## Appendix O: Derived Outcomes (Analysis Only)
+#### Appendix N: Derived Outcomes (Analysis Only)
 
 | Outcome                 | Exact calculation                                            | Model family           | SAP role                     |
 | ----------------------- | ------------------------------------------------------------ | ---------------------- | ---------------------------- |
@@ -610,21 +536,18 @@ EMA analyses are **exploratory and hypothesis-generating**, per SAP.
 | PAID high distress      | PAID total ≥40                                               | Logistic / Poisson     | Secondary                    |
 | MET-minutes/week        | IPAQ scoring protocol                                        | Linear / descriptive   | Secondary                    |
 
----
+
+#### Appendix O: Derived Variables
 
 
-
-## Appendix P: Derived Variables
-
-### Definitions, Derivation Rules, and Analytical Use
+### Appendix P: Definitions, Derivation Rules, and Analytical Use
 
 This appendix defines all derived variables required for analysis of the Saint Helena Total Meal Replacement (TMR) Diabetes Study. It is intended to be **fully implementation-ready**: an independent analyst should be able to recreate every derived variable exactly as specified and understand how and where each is used within the Statistical Analysis Plan (SAP).
 
 Unless otherwise stated, all derivations are performed in analysis code (e.g. Stata, R, Python) using cleaned, analysis-ready datasets.
 
-------
 
-## **General Principles**
+### General Principles
 
 - All dates are treated as calendar dates (ISO format recommended: YYYY-MM-DD).
 - Durations are calculated in **decimal years** unless otherwise stated.
@@ -632,136 +555,130 @@ Unless otherwise stated, all derivations are performed in analysis code (e.g. St
 - Follow-up windows align with the visit structure defined in the Data Dictionary and SAP.
 - Binary variables are coded: 1 = Yes / achieved, 0 = No / not achieved.
 
-------
 
-## **P1. Demographic and Eligibility Derivations**
+#### P1. Demographic and Eligibility Derivations
 
-### **P1.1 Age at Baseline (`age_bl`)**
+##### P1.1 Age at Baseline (`age_bl`)
 
-**Source variables**
+*Source variables*
  `dob`, `baseline_date`
 
-**Derivation**
+*Derivation*
 $$
 \text{age\_bl} = \frac{\text{baseline\_date} - \text{dob}}{365.25}
 $$
-**Format**
+*Format*
  Continuous, years (1 decimal place)
 
-**Analytical use**
+*Analytical use*
  Baseline description; propensity score models; adjusted analyses.
 
-------
 
-### **P1.2 Duration of Diabetes (`ddur_yrs`)**
 
-**Source variables**
+##### P1.2 Duration of Diabetes (`ddur_yrs`)
+
+*Source variables*
  `dodiag_registry`, `baseline_date`
 
-**Derivation**
+*Derivation*
 $$
 \text{ddur\_yrs} = \frac{\text{baseline\_date} - \text{dodiag\_registry}}{365.25}
 $$
-**Format**
+*Format*
  Continuous, years (2 decimal places)
 
-**Analytical use**
+*Analytical use*
  Eligibility documentation; covariate adjustment; subgroup analyses.
 
-------
 
-### **P1.3 Short-Duration Diabetes Indicators**
 
-- **`diab_le6`**: 1 if `ddur_yrs ≤ 6.0`, else 0
-- **`diab_le10`**: 1 if `ddur_yrs ≤ 10.0`, else 0
+##### P1.3 Short-Duration Diabetes Indicators
 
-**Analytical use**
+- `diab_le6`: 1 if `ddur_yrs ≤ 6.0`, else 0
+- `diab_le10`: 1 if `ddur_yrs ≤ 10.0`, else 0
+
+*Analytical use*
  Eligibility confirmation; sensitivity and subgroup analyses.
 
-------
 
-## **P2. Anthropometric Derivations**
 
-### **P2.1 Body Mass Index (`bmi`)**
+### P2. Anthropometric Derivations
 
-**Source variables**
+##### P2.1 Body Mass Index (`bmi`)
+
+*Source variables*
  `weight` (kg), `height` (cm)
 
-**Derivation**
+*Derivation*
 $$
 \text{bmi} = \frac{\text{weight}}{(\text{height}/100)^2}
 $$
-**Format**
+*Format*
  Continuous, kg/m² (1 decimal place)
 
-**Analytical use**
+*Analytical use*
  Baseline description; covariate adjustment.
 
-------
+##### P2.2 Absolute Weight Change (`wt_change_kg_t`)
 
-### **P2.2 Absolute Weight Change (`wt_change_kg_t`)**
-
-**Derivation**
+*Derivation*
 $$
 \text{wt\_change\_kg}_t = \text{weight}_t - \text{weight}_{bl}
 $$
 Negative values indicate weight loss.
 
-**Analytical use**
+*Analytical use*
  Primary continuous outcome.
 
-------
 
-### **P2.3 Percentage Weight Change (`wt_change_pct_t`)**
+##### P2.3 Percentage Weight Change (`wt_change_pct_t`)
 
-**Derivation**
+*Derivation*
 $$
 \text{wt\_change\_pct}_t = \frac{\text{weight}_t - \text{weight}_{bl}}{\text{weight}_{bl}} \times 100
 $$
-**Analytical use**
+*Analytical use*
  Secondary descriptive outcome.
 
-------
 
-### **P2.4 ≥15 kg Weight Loss Indicator (`wt_loss15_t`)**
 
-**Derivation**
+##### P2.4 ≥15 kg Weight Loss Indicator (`wt_loss15_t`)
+
+*Derivation*
  1 if (`weight_bl − weight_t`) ≥ 15.0 kg; else 0.
 
-**Primary timepoint**
+*Primary timepoint*
  12 months
 
-**Analytical use**
+*Analytical use*
  Primary binary endpoint.
 
-------
 
-## **P3. Glycaemic Derivations**
 
-### **P3.1 HbA1c Change (`hba1c_change_t`)**
+### P3. Glycaemic Derivations
 
-**Derivation**
+##### P3.1 HbA1c Change (`hba1c_change_t`)
+
+*Derivation*
 $$
 \text{hba1c\_change}_t = \text{hba1c}_t - \text{hba1c}_{bl}
 $$
-**Analytical use**
+*Analytical use*
  Primary continuous glycaemic outcome.
 
-------
 
-### **P3.2 HbA1c Threshold Indicators**
+##### P3.2 HbA1c Threshold Indicators
 
-- **`hba1c_lt48_t`**: 1 if HbA1c < 48 mmol/mol
-- **`hba1c_lt42_t`**: 1 if HbA1c < 42 mmol/mol
+- `hba1c_lt48_t`: 1 if HbA1c < 48 mmol/mol
+- `hba1c_lt42_t`: 1 if HbA1c < 42 mmol/mol
 
-**Analytical use**
+*Analytical use*
  Secondary binary outcomes.
 
-------
 
-### **P3.3 Diabetes Remission (`remission_t`)**
+##### P3.3 Diabetes Remission (`remission_t`)
 
-**Definition (non-insulin cohort)**
+*Definition (non-insulin cohort)*
  All criteria must be met:
 
 1. HbA1c < 48 mmol/mol at time *t*
@@ -769,142 +686,130 @@ $$
 
 Medication status is determined from clinic notes and/or EMR extraction.
 
-**Primary timepoint**
+*Primary timepoint*
  12 months
 
-**Analytical use**
+*Analytical use*
  Primary binary endpoint.
 
-------
 
-### **P3.4 Relapse from Remission (`relapse_t`)**
+##### P3.4 Relapse from Remission (`relapse_t`)
 
 Among participants previously in remission:
 
 1 if HbA1c ≥ 48 mmol/mol at a subsequent follow-up; else 0.
 
-**Analytical use**
+*Analytical use*
  Durability analyses.
 
-------
 
-## **P4. Medication Burden Derivations**
+### P4. Medication Burden Derivations
 
-### **P4.1 Insulin Use Indicator (`insulin_use_t`)**
+##### P4.1 Insulin Use Indicator (`insulin_use_t`)
 
 1 if any insulin prescribed in the preceding 3 months; else 0.
 
-**Analytical use**
+*Analytical use*
  Stratification; remission definition component.
 
-------
 
-### **P4.2 Insulin Dose Change (`insulin_dose_change_t`)**
+##### P4.2 Insulin Dose Change (`insulin_dose_change_t`)
 
-**Derivation**
+*Derivation*
 $$
 \text{dose}_t - \text{dose}_{bl}
 $$
 Units: international units/day.
 
-**Analytical use**
+*Analytical use*
  Exploratory insulin-cohort analyses.
 
-------
 
-### **P4.3 ≥50% Insulin Reduction (`insulin_red50_t`)**
+##### P4.3 ≥50% Insulin Reduction (`insulin_red50_t`)
 
 1 if `dose_t ≤ 0.5 × dose_bl`; else 0.
 
-**Analytical use**
+*Analytical use*
  Stepped improvement summaries.
 
-------
 
-### **P4.4 Medication Class Count (`med_class_n_t`)**
+##### P4.4 Medication Class Count (`med_class_n_t`)
 
 Count of glucose-lowering medication classes in use at time *t*.
 
-**Analytical use**
+*Analytical use*
  Medication de-intensification summaries.
 
-------
 
-## **P5. Insulin-Cohort Stepped Improvement Outcome**
+### P5. Insulin-Cohort Stepped Improvement Outcome
 
-### **P5.1 Ordinal Stepped Improvement (`step_improve_t`)**
+##### P5.1 Ordinal Stepped Improvement (`step_improve_t`)
 
-**Level 1 – Best outcome**
+*Level 1 – Best outcome*
  HbA1c < 48 mmol/mol **and** no glucose-lowering medication ≥3 months.
 
-**Level 2 – De-intensification**
+*Level 2 – De-intensification*
  HbA1c ≤ baseline + 3 mmol/mol or <53 mmol/mol
- **and** insulin dose reduced ≥50% or stopped
- **and** no net increase in other agents.
+ *and* insulin dose reduced ≥50% or stopped
+ *and* no net increase in other agents.
 
-**Level 3 – Unfavourable**
+*Level 3 – Unfavourable*
  HbA1c worsened by >5 mmol/mol or ≥64 mmol/mol
  or increased medication burden.
 
-**Analytical use**
+*Analytical use*
  Primary exploratory insulin-cohort outcome.
 
-------
 
-## **P6. Liver and FibroScan Derivations (Exploratory)**
+### P6. Liver and FibroScan Derivations (Exploratory)
 
-### **P6.1 AST:ALT Ratio (`ast_alt_ratio`)**
+##### P6.1 AST:ALT Ratio (`ast_alt_ratio`)
 
 $$
 \text{AST} / \text{ALT}
 $$
 
-**Analytical use**
+*Analytical use*
  Descriptive metabolic context only.
 
-------
 
-### **P6.2 Fibrosis and Steatosis Staging**
+##### P6.2 Fibrosis and Steatosis Staging
 
 Derived using manufacturer-recommended cut-points applied to:
 
 - Liver stiffness (kPa) → fibrosis stage (F0–F4)
 - CAP (dB/m) → steatosis grade (S0–S3)
 
-**Analytical use**
+*Analytical use*
  Exploratory descriptive summaries only.
 
-------
 
-## **P7. Quality of Life and Distress Scores**
+### P7. Quality of Life and Distress Scores
 
-### **P7.1 EQ-5D Utility Index (`eq5d_utility_t`)**
+##### P7.1 EQ-5D Utility Index (`eq5d_utility_t`)
 
 Derived using UK MVH tariff applied to EQ-5D-3L health states.
 
-**Analytical use**
+*Analytical use*
  Secondary outcome; health-economic interpretation.
 
-------
 
-### **P7.2 PAID Total Score (`paid_total_t`)**
+##### P7.2 PAID Total Score (`paid_total_t`)
 
 Sum of 20 items × 1.25 → scale 0–100.
 
-------
 
-### **P7.3 High Diabetes Distress (`paid_ge40_t`)**
+##### P7.3 High Diabetes Distress (`paid_ge40_t`)
 
 1 if PAID ≥ 40; else 0.
 
-**Analytical use**
+*Analytical use*
  Secondary psychosocial outcome.
 
-------
 
-## **P8. Physical Activity (IPAQ) Derivations**
+### P8. Physical Activity (IPAQ) Derivations
 
-### **P8.1 MET-Minutes per Week (`ipaq_metwk_t`)**
+##### P8.1 MET-Minutes per Week (`ipaq_metwk_t`)
 
 - Walking: minutes × days × 3.3
 - Moderate: minutes × days × 4.0
@@ -912,37 +817,33 @@ Sum of 20 items × 1.25 → scale 0–100.
 
 Total = sum of above.
 
-------
 
-### **P8.2 Activity Category (`ipaq_cat_t`)**
+##### P8.2 Activity Category (`ipaq_cat_t`)
 
 Low / Moderate / High using standard IPAQ thresholds.
 
-**Analytical use**
+*Analytical use*
  Descriptive behavioural context.
 
-------
 
-## **P9. Economic Derivations**
+### P9. Economic Derivations
 
-### **P9.1 Monthly Medication Cost (`med_cost_mo_t`)**
+##### P9.1 Monthly Medication Cost (`med_cost_mo_t`)
 
 $$
 \text{med\_cost\_mo}_t = \sum_m \frac{\text{weeks supplied}_{m,t} \times \text{weekly unit cost}_m}{4.345}
 $$
 
-**Analytical use**
+*Analytical use*
  Medication cost summaries; cost-offset analyses.
 
-------
 
-### **P9.2 Monthly Insulin Cost (`insulin_cost_mo_t`)**
+##### P9.2 Monthly Insulin Cost (`insulin_cost_mo_t`)
 
 Subset of `med_cost_mo_t` including insulin only.
 
-------
 
-### **P9.3 Change in Monthly Medication Cost (`med_cost_change_mo_t`)**
+##### P9.3 Change in Monthly Medication Cost (`med_cost_change_mo_t`)
 
 $$
 \text{med\_cost\_mo}_t - \text{med\_cost\_mo}_{bl}
@@ -950,15 +851,13 @@ $$
 
 Negative values indicate cost savings.
 
-------
 
-### **P9.4 Programme Cost per Participant (`tmr_cost_pp`)**
+##### P9.4 Programme Cost per Participant (`tmr_cost_pp`)
 
 Total programme delivery cost divided by number initiating TMR.
 
-------
 
-### **P9.5 Net Cost Offset (`net_cost_offset_t`)**
+##### P9.5 Net Cost Offset (`net_cost_offset_t`)
 
 $$
 (\text{med\_cost\_mo}_{bl} - \text{med\_cost\_mo}_t) \times 12 - \text{tmr\_cost\_pp}
@@ -966,8 +865,7 @@ $$
 
 Positive values indicate net annual savings.
 
-------
 
-## **Closing Note**
+### Closing Note
 
-This appendix defines all derived variables a priori and should be read alongside the Statistical Analysis Plan, which specifies how these variables are combined, modelled, and interpreted.
+This appendix defines all derived variables a priori and should be read alongside the [[Statistical analysis plan (sap)](./sap.qmd)]{.content-visible when-format="html"}[[Statistical analysis plan (sap)]({{< var site-url >}}/our-work/tmr/data/sap.pdf)]{.content-visible when-format="pdf"}, which specifies how these variables are combined, modelled, and interpreted.
