@@ -12,7 +12,7 @@ format:
 
 date: last-modified
 date-format: "D MMM YYYY"
-draft: true
+draft: false
 ---
 
 

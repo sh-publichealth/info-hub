@@ -221,14 +221,14 @@ However, absence of evidence does not imply poor effectiveness; instead, it unde
 
 | Evidence Area                             | GRADE Rating     | Confidence Summary                                           |
 | ----------------------------------------- | ---------------- | ------------------------------------------------------------ |
-| TMR effectiveness (non-insulin)           | **High**         | Strong RCT evidence; consistent results; clear mechanisms    |
-| TMR effectiveness (insulin-treated)       | **Moderate**     | Smaller trials; strong direction of benefit; less long-term evidence |
-| Sustainability of remission               | **Moderate**     | Dependent on weight maintenance; limited long-term data      |
-| Safety                                    | **High**         | Well-managed risks; consistent safety across trials          |
-| QoL & psychological impact                | **Moderate**     | Improvements observed; some heterogeneity                    |
-| Mechanistic plausibility                  | **High**         | Strong, coherent physiological evidence                      |
-| Real-world evidence                       | **Low–Moderate** | Positive but heterogeneous; fidelity varies                  |
-| Evidence specific to small/remote systems | **Low**          | Little research; implementation science required             |
+| TMR effectiveness (non-insulin)           | *High*         | Strong RCT evidence; consistent results; clear mechanisms    |
+| TMR effectiveness (insulin-treated)       | *Moderate*     | Smaller trials; strong direction of benefit; less long-term evidence |
+| Sustainability of remission               | *Moderate*     | Dependent on weight maintenance; limited long-term data      |
+| Safety                                    | *High*         | Well-managed risks; consistent safety across trials          |
+| QoL & psychological impact                | *Moderate*     | Improvements observed; some heterogeneity                    |
+| Mechanistic plausibility                  | *High*         | Strong, coherent physiological evidence                      |
+| Real-world evidence                       | *Low–Moderate* | Positive but heterogeneous; fidelity varies                  |
+| Evidence specific to small/remote systems | *Low*          | Little research; implementation science required             |
 
 ### Concluding Interpretation
 

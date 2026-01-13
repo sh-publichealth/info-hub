@@ -50,7 +50,7 @@ This programme uses a *Total Meal Replacement (TMR)* approach for the first phas
 
 Type 2 diabetes is common on St Helena and can lead to serious health problems over time.
 
-Research from the UK and other countries has shown that structured programmes like this can help many people improve their diabetes control, especially when diabetes has been diagnosed in recent years. For those interested, we have [summarised the evidence](./evidence-brief.qmd) available from elsewhere.
+Research from the UK and other countries has shown that structured programmes like this can help many people improve their diabetes control, especially when diabetes has been diagnosed in recent years. For those interested, we have [summarised the evidence](html:./evidence-brief.qmd pdf:./evidence-brief.html) available from elsewhere.
 
 This programme is being offered as a *pilot*, to see how well it works for people on St Helena and how it can best fit within our local health services.
 

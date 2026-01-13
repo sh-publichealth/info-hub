@@ -58,16 +58,16 @@ website:
             href: our-work/tmr/info-sheet-01.qmd
           - section: "Ops Manual"
             contents: 
-            - text: Overview
-              href: our-work/tmr/index.qmd
+#            - text: Overview
+#              href: our-work/tmr/index.qmd
 #            - text: The Study Protocol 
 #              href: our-work/tmr/protocol.qmd
-#            - text: Eligibility 
-#              href: our-work/tmr/eligibility.qmd
-#            - section: "Participant Visits"
-#              contents: 
-#              - text: Participant Flow
-#                href: our-work/tmr/visits/participant-flow.qmd
+            - text: Eligibility 
+              href: our-work/tmr/eligibility.qmd
+            - section: "Participant Visits"
+              contents: 
+              - text: Participant Flow
+                href: our-work/tmr/visits/participant-flow.qmd
 #              - text: Recruitment
 #                href: our-work/tmr/visits/recruitment.qmd
 #              - text: Screening Visit 
@@ -127,4 +127,4 @@ format:
 
 
 
-# touch: 2026-01-12 18:01:04.691
+# touch: 2026-01-13 08:30:58.764

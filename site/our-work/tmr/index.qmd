@@ -5,11 +5,11 @@ description-meta: "Background evidence for the Total Meal Replacement Interventi
 author: Ian Hambleton, Selvi Jeyaseelan
 format: 
    html: default
-   pdf:
-     toc: false
-     documentclass: article
-     margin-left: 30mm
-     margin-right: 30mm
+#   pdf:
+#     toc: false
+#     documentclass: article
+#     margin-left: 30mm
+#     margin-right: 30mm
 
 date: last-modified
 date-format: "D MMM YYYY"
