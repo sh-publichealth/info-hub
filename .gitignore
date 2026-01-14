@@ -1,6 +1,28 @@
-/site/_site/
-/site/.quarto/
+# ---------------------------
+# Quarto website outputs
+# ---------------------------
+site/_site/
+site/.quarto/
+.quarto/
 
+# Quarto cache / freeze folders (can appear depending on features used)
+_freeze/
+*_cache/
+**/*_cache/
+
+# Jupyter / Quarto notebooks
 **/*.quarto_ipynb
-*.html
-*.ign
+
+# ---------------------------
+# R / Python / OS cruft / Stata
+# ---------------------------
+.Rproj.user/
+.Rhistory
+.RData
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.dta
+.do
+.ado
