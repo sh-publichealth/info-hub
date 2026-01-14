@@ -3,16 +3,20 @@ name: Publish Quarto website
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
+# Required for GitHub Pages deployments via Actions
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: "pages"
   cancel-in-progress: true
-  
+
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -21,17 +25,39 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      # Optional but helpful if you render PDFs
       - name: Install TinyTeX
         run: quarto install tinytex --no-prompt
-  
+
+      # Cache Quarto + TinyTeX to speed up and reduce flakiness
+      - name: Cache Quarto + TinyTeX
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/quarto
+            ~/.TinyTeX
+          key: ${{ runner.os }}-quarto-${{ hashFiles('site/**/*.qmd', 'site/**/_quarto.yml', 'site/_quarto.yml', '_quarto.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-quarto-
+
       - name: Render website
         uses: quarto-dev/quarto-actions/render@v2
         with:
           path: site
 
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v4
+      # Upload the rendered site as the Pages artifact
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: site/_site
-          force_orphan: true
+          path: site/_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
