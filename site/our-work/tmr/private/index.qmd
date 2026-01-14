@@ -24,7 +24,7 @@ Pages here are not listed in the main site navigation and can be accessed only v
 
 ## Working pages
 
-- [Required documents](./required-documents.qmd)
+- [Required documents](./required-docs.qmd)
 - [Roles and responsibilities](./roles.qmd)
 - [Weekly timelines](./weekly-timelines.qmd)
 

@@ -28,6 +28,8 @@ draft: false
   - Will probably mostly be linked to medications
 - [ ] Documents / forms related to the clinical review?
 - [ ] Recruitment / Appointment Trackers (in REDCap?) 
+- [ ] Ht and Wt SOP
+- [ ] Fibroscan SOP
 
 ## Followed By
 - [ ] TMR Phase documentation
@@ -40,7 +42,6 @@ draft: false
   - Checklist
 - [ ] Meds escalation / de-escalation documentation
   - Information sheet
-- [ ] 
 
 
 ## Later
