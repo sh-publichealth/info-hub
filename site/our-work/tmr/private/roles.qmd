@@ -1,133 +1,169 @@
 ---
 title: "TMR Intervention Roles and Responsibilities"
-subtitle: "Guidance for Study Staff"
+subtitle: "Aligned with Weekly Activities - guidance for Study Staff"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
 author: Ian Hambleton, Selvi Jeyaseelan
-format: 
-   html:
-     format-links: true 
-#   pdf:
-#     toc: true
-#     documentclass: report
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
 
 date: last-modified
 date-format: "D MMM YYYY"
-draft: true
+draft: false
 ---
 
+This page reorganises the programme work *by role*, drawing directly from `weekly-timelines.qmd`. 
 
-## SJ
+Each role lists *what they are responsible for* and *who they work with to complete it*.  
+Timing, sequencing, and status are managed in the weekly timelines.
 
-| Description                                | Output                                                       | Completed with | Reporting to |
-| ------------------------------------------ | ------------------------------------------------------------ | -------------- | ------------ |
-| Information gathering from Counterweight   | Clarification of medical review, screening scope, training coverage, app data and expectations | IH             |              |
-| Develop screening tool                     | REDCap screening tool and inclusion text                     | JC, IH         |              |
-| Develop screening scheduler (screening DB) | REDCap scheduler for screening                               | JC, IH         |              |
-| Patient flows                              | Completed XMind patient flows                                |                |              |
-| Submit ethics application                  | Ethics application submitted to SHG ethics committee and Leeds | SI, IH         |              |
-| Develop scheduler (main DB)                | REDCap scheduler for main database                           | JC, IH         |              |
+## Ian Hambleton (IH)
 
-------
+| Description | Completed With |
+|------------|----------------|
+| Develop and maintain study documentation website | — |
+| Finalise patient flow diagrams and study ops content | SJ |
+| Identify and prepare participant lists for screening | — |
+| Design REDCap database structure and data model | JC |
+| Develop screening scheduler and tracking tools | JC |
+| Oversee screening and baseline data completeness | Project team |
+| Prepare baseline and screening trackers | — |
+| Support ethics submission and documentation | SJ |
+| Define data export processes and QA checks | JC |
+| Maintain document repository and version control | — |
+| Monitor recruitment, screening, and baseline progress | SG |
+| Track programme risks and dependencies | SG |
+| Support Ascension Island setup and training | Project team |
 
-## IH
 
-| Description                                      | Output                                                       | Completed with | Reporting to |
-| ------------------------------------------------ | ------------------------------------------------------------ | -------------- | ------------ |
-| Information gathering from Counterweight         | Clarification of screening, training, and app integration    | SJ             |              |
-| Identify potential participants from clinic list | Randomised list of participants and controls; dataset for JC import |                |              |
-| Develop screening tool                           | Pre-filled REDCap screening tool                             | JC, SJ         |              |
-| Develop screening scheduler (screening DB)       | REDCap scheduler for screening                               | JC, SJ         |              |
-| Develop scheduler (main DB)                      | REDCap scheduler for main database                           | JC, SJ         |              |
-| Monitor screening                                | Screening tracker and monitoring of screening rates          |                |              |
-| Build initial web page                           | Initial TMR document repository website                      |                |              |
-| Monitor baseline (part 1)                        | Baseline tracker and data completeness monitoring            |                |              |
-| Monitor baseline (part 2)                        | Continued baseline monitoring                                |                |              |
+## Selvi Jeyaseelan (SJ)
 
-------
+| Description | Completed With |
+|------------|----------------|
+| Draft and coordinate ethics application | IH |
+| Finalise screening and consent wording | IH, JC |
+| Liaise with Counterweight on programme details | Counterweight |
+| Coordinate staff training plan | SI |
+| Oversee screening launch and early delivery | SI, AM, GE |
+| Review programme milestones and delivery progress | SG |
+| Coordinate stakeholder communication | SG |
+  
 
-## SI
+## Sarah Iguna (SI)
 
-| Description                                 | Output                                                | Completed with | Reporting to |
-| ------------------------------------------- | ----------------------------------------------------- | -------------- | ------------ |
-| Advertise for participants                  | List of responses to local paper and Facebook adverts |                |              |
-| Initial contact with potential participants | Scheduled screening visits and potential control IDs  | AM, GE         |              |
-| Test screening tool                         | Testing feedback                                      | JJ, JP, AM, GE |              |
-| Submit ethics application                   | Ethics submission                                     | SJ, IH         |              |
-| Screening delivery                          | Screening of participants                             | AM, GE         |              |
-| Baseline coaching                           | Participant coaching on day of baseline               | AM, GE         |              |
-| Test main database                          | Testing feedback                                      | JJ, JP, AM, GE |              |
+| Description | Completed With |
+|------------|----------------|
+| Advertise programme and invite participants | — |
+| Make first contact with potential participants | AM, GE |
+| Schedule and deliver screening visits | AM, GE |
+| Deliver baseline coaching and participant orientation | AM, GE |
+| Contribute to testing of screening tools | JJ, JP, JC |
+| Provide operational feedback during early delivery | Project team |
 
-------
 
-## AM
+## Albert Meij (AM)
 
-| Description                                 | Output                     | Completed with | Reporting to |
-| ------------------------------------------- | -------------------------- | -------------- | ------------ |
-| Initial contact with potential participants | Scheduled screening visits | SI, GE         |              |
-| Test screening tool                         | Testing feedback           | JJ, JP, SI, GE |              |
-| Screening delivery                          | Screening of participants  | SI, GE         |              |
-| Baseline coaching                           | Participant coaching       | SI, GE         |              |
-| Test main database                          | Testing feedback           | JJ, JP, SI, GE |              |
+| Description | Completed With |
+|------------|----------------|
+| Contact potential participants | SI, GE |
+| Support screening visit delivery | SI, GE |
+| Assist baseline visit delivery | SI, GE |
 
-------
 
-## GE
+## Grace Elefuo (GE)
 
-| Description                                 | Output                     | Completed with | Reporting to |
-| ------------------------------------------- | -------------------------- | -------------- | ------------ |
-| Initial contact with potential participants | Scheduled screening visits | SI, AM         |              |
-| Test screening tool                         | Testing feedback           | JJ, JP, SI, AM |              |
-| Screening delivery                          | Screening of participants  | SI, AM         |              |
-| Baseline coaching                           | Participant coaching       | SI, AM         |              |
-| Test main database                          | Testing feedback           | JJ, JP, SI, AM |              |
+| Description | Completed With |
+|------------|----------------|
+| Contact potential participants | SI, AM |
+| Support screening visit delivery | SI, AM |
+| Assist baseline visit delivery | SI, AM |
 
-------
 
-## JC
+## Jacqueline Campbell (JC)
 
-| Description                                | Output                                                       | Completed with | Reporting to |
-| ------------------------------------------ | ------------------------------------------------------------ | -------------- | ------------ |
-| Develop screening tool                     | REDCap screening tool                                        | IH, SJ         |              |
-| Develop screening scheduler (screening DB) | REDCap scheduler for screening                               | IH, SJ         |              |
-| Develop screening data export process      | Import process for eligible participants and full screening registry |                |              |
-| Screening form training                    | Training delivered to Jocelyn, Jannas, and Sarah             |                |              |
-| Develop scheduler (main DB)                | REDCap scheduler for main database                           | IH, SJ         |              |
-| Develop main database                      | Main REDCap database aligned to data dictionary              |                |              |
+| Description | Completed With |
+|------------|----------------|
+| Build REDCap screening database | IH, SJ |
+| Build REDCap main intervention database | IH |
+| Implement screening scheduler | IH |
+| Develop data export and extraction processes | IH |
+| Support form testing and refinements | Project team |
+| Maintain REDCap fixes and updates | — |
 
-------
 
-## JJ
+## Joslyn Johnson (JJ)
 
-| Description                       | Output                                  | Completed with | Reporting to |
-| --------------------------------- | --------------------------------------- | -------------- | ------------ |
-| Test screening tool               | Testing feedback                        | JP, SI, AM, GE |              |
-| Baseline data collection (part 1) | Baseline datasets collected             | JP             |              |
-| Baseline data collection (part 2) | Remaining baseline and control datasets | JP             |              |
-| Test main database                | Testing feedback                        | JP, SI, AM, GE |              |
+| Description | Completed With |
+|------------|----------------|
+| Test screening tools and workflows | JP, SI, JC |
+| Collect baseline data (intervention arm) | Project team |
+| Collect baseline data (controls) | Project team |
 
-------
 
-## JP
+## Jannas du Plessis (JP)
 
-| Description                       | Output                                  | Completed with | Reporting to |
-| --------------------------------- | --------------------------------------- | -------------- | ------------ |
-| Test screening tool               | Testing feedback                        | JJ, SI, AM, GE |              |
-| Baseline data collection (part 1) | Baseline datasets collected             | JJ             |              |
-| Baseline data collection (part 2) | Remaining baseline and control datasets | JJ             |              |
-| Test main database                | Testing feedback                        | JJ, SI, AM, GE |              |
+| Description | Completed With |
+|------------|----------------|
+| Test screening and main REDCap databases | JJ, SI, JC |
+| Support baseline data collection | Project team |
+| Conduct baseline data QA checks | IH |
+| Support recruitment and eligibility QA | SI |
+| Log and feedback process improvements | SG |
 
-------
 
 ## RJames
 
-| Description       | Output           | Completed with | Reporting to |
-| ----------------- | ---------------- | -------------- | ------------ |
-| Clearing shipment | Shipment cleared |                |              |
+| Description | Completed With |
+|------------|----------------|
+| Clear shipment and supplies | Project team |
 
-------
+
+## Selene Gough (SG)
+
+| Description | Completed With |
+|------------|----------------|
+| Programme oversight and escalation | IH, SJ |
+| Risk and dependency management | Project team |
+| Coordinate cross-team communication | Project team |
+
+
+## Data Monitoring Group (DMG)
+
+| Description | Completed With |
+|------------|----------------|
+| Monitor participant safety | Project team |
+| Review safety data and escalation issues | SG |
+
+
+## Community Health Workers (CHW)
+
+| Description | Completed With |
+|------------|----------------|
+| Support recruitment outreach | SI |
+| Provide appointment reminders | SI |
+| Conduct non-clinical participant check-ins | SI |
+| Signpost practical and social support | Project team |
+| Flag access or transport barriers | SG |
+
+
+## Project team
+
+| Description | Completed With |
+|------------|----------------|
+| Support recruitment and retention | IH |
+| Contribute to continuous improvement | SG |
+| Maintain shared operational communication | SG |
+
 
 ## ALL
 
-| Description | Output                                         | Completed with | Reporting to |
-| ----------- | ---------------------------------------------- | -------------- | ------------ |
-| TMR review  | Team review of process with agreed refinements | Entire team    |              |
+| Description | Completed With |
+|------------|----------------|
+| Participate in TMR review and refinement | Project team |
+| Contribute to continuous improvement log | SG |
+| Attend shared operational updates | SG |

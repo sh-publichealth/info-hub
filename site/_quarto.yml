@@ -80,8 +80,8 @@ website:
                 href: our-work/tmr/sops/screening-sop.qmd
 #              - text: Height & Weight SOP 
 #                href: our-work/tmr/sops/height-weight-sop.qmd
-#              - text: Baseline SOP
-#                href: our-work/tmr/sops/baseline-sop.qmd
+              - text: Baseline SOP
+                href: our-work/tmr/sops/baseline-sop.qmd
 #              - text: Missed Visit SOP
 #                href: our-work/tmr/sops/missed-visit-sop.qmd
             - section: "Data"
@@ -121,4 +121,4 @@ format:
 
 
 
-# touch: 2026-01-13 17:03:43.449
+# touch: 2026-01-14 11:14:10.940

@@ -1,0 +1,113 @@
+---
+title: "The Baseline Information Sheet"
+subtitle: "What can I expect at the baseline visit?"
+description-meta: "The TMR baseline visit - What can I expect at the baseline visit?"
+author: Ian Hambleton, Selvi Jeyaseelan
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+### What is the baseline visit?
+
+The *baseline visit* is the first full appointment for people who decide to take part in the Diabetes Remission Programme.
+
+This visit helps us:
+
+- Confirm that the programme is right for you
+- Record starting measurements so we can track progress safely
+- Make sure you feel informed, supported, and ready to begin
+
+
+## How long will the visit take?
+
+The baseline visit usually takes *about 60–90 minutes*. We will take our time and answer any questions you have.
+
+## What will happen at the baseline visit?
+
+At this visit, a member of our health team will:
+
+- Review the programme again with you and check that you are happy to go ahead
+- Go through the *Participant Information Sheet* with you
+- Ask you to sign the *Consent Form*, if you have not already done so
+
+### Measurements and checks
+
+To understand your starting point and keep you safe, we will:
+
+- Measure your *height* (if not already done)
+- Measure your *weight*
+- Measure your *blood pressure*
+- Take routine *blood tests*, including diabetes-related tests
+- Review your current *medications*
+- Do a FibroScan – a simple, painless scan to check your liver health
+- Ask how your health affects daily life
+- Ask you a few questions about how diabetes affects you emotionally
+- Ask a few questions about your usual physical activity
+- These measurements are part of routine care and help guide safe support during the programme.
+
+## Talking about medications
+
+As weight and blood sugar levels change, some medications may need to be *reduced or stopped*.
+
+At the baseline visit:
+
+- We will review what medications you are currently taking
+- We will explain how medication changes are handled safely
+- No changes will be made without clear explanation and clinical oversight
+
+## Starting the programme
+
+If everything is in place, the baseline visit will also:
+
+- Mark the official *start* of the programme
+- Confirm the date for beginning the Total Meal Replacement phase
+- Explain how and when you will receive the meal replacement products
+- Schedule your follow-up appointments
+
+## What will be expected of you?
+
+We will talk openly about:
+
+- Following the programme as closely as you can
+- Attending regular appointments
+- Staying in contact with the health team if you feel unwell or unsure
+
+You will be supported throughout, and you can raise concerns at any time.
+
+## What should I bring?
+
+Please bring:
+
+- Any *medications* you are currently taking (or a list)
+- *Glasses* if you need them for reading
+- Any *questions* you would like to ask
+
+## Can I change my mind?
+
+Yes.
+
+Even at the baseline visit, you can decide not to continue.
+
+Your usual diabetes care will continue whether or not you take part.
+
+## Who can I contact?
+
+If you have questions before or after your visit, please contact:
+
+**Dr Selvi Jeyaseelan**<br/>
+**Phone:** 22500<br/>
+**Email:** [selvi.jeyaseelan@sainthelena.gov.sh](mailto:selvi.jeyaseelan@sainthelena.gov.sh?subject=TMR%20query)
+
+### Thank you
+
+Thank you for taking this step. Deciding to take part is a personal choice, and we appreciate the time and thought you are giving to your health.

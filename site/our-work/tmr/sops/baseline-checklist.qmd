@@ -1,0 +1,136 @@
+---
+title: "The Baseline Visit Checklist"
+subtitle: "Guidance for study staff"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Ian Hambleton, Selvi Jeyaseelan
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+## Baseline Visit Identifiers
+
+**Participant study ID:** __________________________
+
+**Date of baseline visit (dd/mm/yyyy):** ____ / ____ / ______
+
+**Staff initials:** __________________________
+
+
+
+## Before the Baseline Visit
+
+  $\square$ Screening eligibility confirmed
+
+  $\square$ Participant expressed interest in taking part
+
+  $\square$ Participant Information Sheet available
+
+  $\square$ Consent form available
+
+  $\square$ REDCap baseline event opened
+
+## Welcome and Orientation
+
+  $\square$ Voluntary nature of participation reconfirmed
+
+  $\square$ Visit procedures explained
+
+  $\square$ Opportunity for questions provided
+
+
+## Eligibility Reconfirmation
+
+  $\square$ Type 2 diabetes diagnosis reconfirmed
+  
+  $\square$ Insulin status confirmed
+  
+  $\square$ No material changes since screening
+  
+  $\square$ Borderline eligibility identified and escalated (if applicable)
+
+## Informed Consent
+
+  $\square$ Participant Information Sheet reviewed with participant
+  
+  $\square$ Data use and confidentiality explained
+  
+  $\square$ Withdrawal rights explained
+
+  $\square$ Written informed consent obtained *before data collection*
+
+  $\square$ Consent date recorded in REDCap
+
+## Participant Administration
+
+  $\square$ Participant study ID assigned / confirmed
+  
+  $\square$ Group allocation recorded (intervention / control)
+  
+## Baseline Measurements Collected
+
+### Anthropometry and Clinical Measures
+
+  $\square$ Height (baseline only)
+  
+  $\square$ Weight
+  
+  $\square$ Waist circumference
+  
+  $\square$ Hip circumference
+  
+  $\square$ Blood pressure
+  
+  $\square$ Capillary blood glucose
+
+### Laboratory Measures
+
+  $\square$ HbA1c
+  
+  $\square$ Liver function tests
+  
+  $\square$ FibroScan completed or scheduled (if applicable)
+
+### Medication Status
+
+  $\square$ Diabetes medication status recorded
+  
+  $\square$ Hypertension medication status recorded
+
+### Patient-Reported Outcome Measures
+
+  $\square$ EQ-5D-3L completed
+  
+  $\square$ PAID questionnaire completed
+  
+  $\square$ IPAQ short form completed
+
+## Data Quality Checks
+
+  $\square$ Required baseline fields completed
+  
+  $\square$ Implausible or missing values addressed
+
+## Next Steps Confirmed
+
+  $\square$ Intervention participant: next visit and TMR start explained
+  
+  $\square$ Control participant: follow-up schedule explained
+
+## After the Visit
+
+  $\square$ All baseline data entered into REDCap
+  
+  $\square$ Consent form stored securely
+  
+  $\square$ Any safety issues escalated
+

@@ -1,29 +1,30 @@
 ---
 title: "TMR: Internal Working Area"
-subtitle: "Guidance for Study Staff"
+subtitle: "Total Meal Replacement (TMR) internal documents - not for sharing"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
 author: Ian Hambleton, Selvi Jeyaseelan
-format: 
-   html:
-     format-links: true 
+format:
+  html: default
 #   pdf:
 #     toc: true
 #     documentclass: report
+#     margin-left: 30mm
+#     margin-right: 30mm
+# format-links: true
 
 date: last-modified
 date-format: "D MMM YYYY"
-draft: true
+draft: false
 ---
-
-
 
 ::: {.callout-note}
 This is a quiet internal working area for the Total Meal Replacement (TMR) programme.  
-Pages here are not listed in the main site navigation and are intended to be accessed only via direct links shared with relevant individuals.
+Pages here are not listed in the main site navigation and can be accessed only via direct links.
 :::
 
 ## Working pages
 
-- [Required documents](required-documents.qmd)
-- [Roles and responsibilities](roles.qmd)
-- [Weekly timelines](weekly-timelines.qmd)
+- [Required documents](./required-documents.qmd)
+- [Roles and responsibilities](./roles.qmd)
+- [Weekly timelines](./weekly-timelines.qmd)
+

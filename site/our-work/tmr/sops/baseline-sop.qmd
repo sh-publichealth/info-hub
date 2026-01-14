@@ -1,26 +1,26 @@
 ---
-title: "Baseline Visit SOP"
-subtitle: "Guidance for Study Staff"
+title: "The Baseline Visit"
+subtitle: "Standard Operating Procedure (SOP) - guidance for study staff"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
 author: Ian Hambleton, Selvi Jeyaseelan
-format: 
-   html:
-     format-links: true 
-#   pdf:
-#     toc: true
-#     documentclass: report
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
 
 date: last-modified
 date-format: "D MMM YYYY"
-draft: true
+draft: false
 ---
 
 
-# Baseline Visit SOP
-
 ## Purpose
 
-This SOP describes the standard process for conducting the **baseline visit** for participants entering the Total Meal Replacement (TMR) Diabetes Remission Programme.
+This SOP describes the standard process for conducting the *baseline visit* for participants entering the Total Meal Replacement (TMR) Diabetes Remission Programme.
 
 The baseline visit establishes:
 
@@ -29,9 +29,17 @@ The baseline visit establishes:
 - high-quality baseline measurements,
 - safe transition into the intervention or control pathway.
 
-The baseline visit is the **governance anchor point** for the programme.
+The baseline visit is the *governance anchor point* for the programme.
 
-------
+## Documentation
+
+The following documents are used directly as part of the screening visit process. 
+
+| Document | | Link / Download | 
+| :--- | ---: | :--- | 
+|Baseline visit - what to expect | {{< bi download >}} | [download]({{< var site-url >}}/our-work/tmr/sops/baseline-info-sheet.pdf) |
+|Baseline visit checklist | {{< bi download >}} | [download]({{< var site-url >}}/our-work/tmr/sops/baseline-checklist.pdf) |
+|Participant flow diagrams| {{< bi link-45deg >}} | [[participant flow diagrams](../visits/participant-flow.qmd)]{.content-visible when-format="html"}[[participant flow diagrams]({{< var site-url >}}/our-work/tmr/visits/participant-flow.html)]{.content-visible when-format="pdf"} |
 
 ## Scope
 
@@ -41,15 +49,18 @@ This SOP applies to all staff involved in:
 - collection of clinical, anthropometric, laboratory, and questionnaire data,
 - entry of baseline data into the TMR REDCap database.
 
-------
-
 ## Roles and Responsibilities
 
-- **Baseline assessor(s):** conduct measurements, administer questionnaires, record data
-- **Clinical lead / diabetes nurse specialist:** confirms eligibility, medication safety, and insulin status
-- **Programme coordinator:** scheduling, documentation, and follow-up
+*Community Health Workers.* conduct measurements, administer questionnaire, record data, explain next steps (except bloods)
 
-------
+*diabetes nurse specialist.* baseline bloods
+
+*Study data manager.* Provides REDCap and data system support throughout the study operations.
+
+*Study clinician.* available for clinical queries
+
+*Study manager.* scheduling and follow-up
+
 
 ## Prerequisites
 
@@ -59,18 +70,14 @@ Before the baseline visit:
 - The participant has expressed interest in taking part
 - A baseline appointment has been scheduled
 
-------
-
 ## Overview of the Baseline Visit
 
 1. Welcome and orientation
 2. Confirm eligibility and answer questions
 3. Obtain informed consent
-4. Assign participant study ID
+4. Find participant in REDCap database
 5. Collect baseline measurements and questionnaires
 6. Confirm group allocation and next steps
-
-------
 
 ## Detailed Procedure
 
@@ -80,8 +87,6 @@ Before the baseline visit:
 - Explain what will happen during the visit
 - Allow time for questions
 
-------
-
 ### 2. Eligibility Confirmation
 
 - Confirm type 2 diabetes diagnosis
@@ -90,33 +95,27 @@ Before the baseline visit:
 
 If eligibility is no longer met, pause the visit and seek clinical advice.
 
-------
-
 ### 3. Informed Consent
 
 - Provide the Participant Information Sheet
 - Explain data use, confidentiality, and withdrawal rights
 - Obtain written informed consent
 
-Consent must be obtained **before any baseline data collection**.
-
-------
+Consent must be obtained *before any baseline data collection*.
 
 ### 4. Participant Identification and Administration
 
-- Assign participant study ID
+- Find participant in FREDCap database
 - Record administrative details
 - Confirm site and group allocation
 
-------
-
 ### 5. Baseline Measurements and Data Collection
 
-Baseline data collection follows the approved Data Dictionary and includes:
+Baseline data collection follows the flow in the REDCap database and includes:
 
 **Clinical and anthropometry**
 
-- Height (baseline only)
+- Height (if not already completed)
 - Weight
 - Waist and hip circumference
 - Blood pressure
@@ -141,14 +140,10 @@ Baseline data collection follows the approved Data Dictionary and includes:
 
 Data should be entered directly into REDCap wherever possible.
 
-------
-
 ### 6. Quality Checks
 
 - Check completeness of required baseline fields
 - Resolve missing or implausible values while the participant is present
-
-------
 
 ### 7. Next Steps
 
@@ -162,26 +157,12 @@ Data should be entered directly into REDCap wherever possible.
 - Explain follow-up schedule
 - Confirm routine care continues
 
-------
-
 ## Safety and Escalation
 
 - Any unexpected clinical findings should be escalated to the clinical lead
 - Adverse events identified at baseline should be recorded per protocol
 
-------
-
 ## Documentation
 
 - Baseline data recorded in the TMR REDCap database
-- Signed consent forms stored securely
-
-------
-
-## Linked Documents
-
-**Baseline Visit Checklist**
-**Screening Visit SOP**
-**Participant Information Sheet**
-**Consent Form**
-**TMR Data Dictionary**
+- Signed consent forms stored securely (if hard copy rather than REDCap E-consent)

@@ -1,0 +1,49 @@
+---
+title: "TMR Documents Still to Create"
+subtitle: "The Documents ToDo List"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Ian Hambleton, Selvi Jeyaseelan
+format:
+  html: default
+  pdf:
+    toc: true
+    documentclass: report
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: false
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+## Right Away
+- [ ] Ethics / REGG submission pack + local ethics pack (P0)
+    - Ethics Form
+    - Database Forms from REDCap
+    - Evidence Brief
+    - Information Sheet
+    - Consent form / E-consent
+- [ ] Risk register - to monitor AE / SAE and other events
+  - Will probably mostly be linked to medications
+- [ ] Documents / forms related to the clinical review?
+- [ ] Recruitment / Appointment Trackers (in REDCap?) 
+
+## Followed By
+- [ ] TMR Phase documentation
+  - Information sheet
+  - SOP
+  - Checklist
+- [ ] Food Reintroduction Phase documentation
+  - Information sheet
+  - SOP
+  - Checklist
+- [ ] Meds escalation / de-escalation documentation
+  - Information sheet
+- [ ] 
+
+
+## Later
+- [ ] Data linkage protocol (database to registry)
+- [ ] Data Quality Checks (iin Stata)
+
