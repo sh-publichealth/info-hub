@@ -60,7 +60,7 @@ The differing visit schedules of cases and controls means that we will probably 
 | glucose_monitor       | No        | baseline, every follow-up visit                              |
 | hba1c                 | No        | baseline, wk12, wk20, wk27, wk36, wk52, wk78, wk104          |
 | liver_labs            | No        | baseline, wk12, wk52, wk104                                  |
-| ==fibroscan==         | ==No==    | ==baseline, wk12, wk52, wk104==                              |
+| [fibroscan]{.highlight} | No      | baseline, wk12, wk52, wk104                                  |
 | medication            | No        | baseline, every follow-up visit                              |
 | eq5d3l_items          | No        | baseline, wk12, wk52, wk104                                  |
 | paid_items            | No        | baseline, wk12, wk52, wk104                                  |
