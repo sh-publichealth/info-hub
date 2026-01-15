@@ -1,0 +1,192 @@
+---
+title: "St Helena Health: Urgent Cost-Control Plan"
+subtitle: "A defensible way forward under severe constraints"
+author: Selvi Jeyaseelan
+format:
+  html: 
+    output-file: core-offer-action-plan.html
+    toc: true
+  revealjs:
+    output-file: core-offer-action-plan-slides.html
+    theme: simple
+    slide-number: true
+    incremental: true
+    transition: fade
+    center: true
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+
+## The situation
+
+* Annual health budget: ~£9m
+* Recurrent overspend: ~£1.5m per year
+* Direction from funders: reduce costs, soon
+* No clear service-level costing
+* External consultancy has not delivered
+
+**Action is required now, with limited time and resource**
+
+---
+
+## The core challenge 
+
+We offer a quality service.
+
+Our staff work hard and follow best-practice.
+
+**This is a decision framework problem**:
+
+* What services should a very small, isolated health system provide?
+* How do we decide this transparently and defensibly?
+
+---
+
+## Expectations gap
+
+* Public expectation: UK-level services
+* Reality: small island, limited workforce, fragile supply chains
+* NICE guidance reflects UK conditions, not St Helena conditions
+
+**We must align services with local feasibility, not imported assumptions**
+
+---
+
+## Our guiding principle
+
+**Core services first**
+
+Core services are those that:
+
+* Prevent *avoidable death* or irreversible harm
+* Can be delivered safely and consistently in St Helena
+* Are legally and ethically defensible within constraints
+
+---
+
+## What is possible now (and what is not)
+
+**Not possible immediately**
+
+* Full service costing
+* Full cost-effectiveness modelling
+* Definitive list of services to withdraw
+
+**Possible immediately**
+
+* A clear decision logic
+* Rapid service mapping
+* Identification of high-risk, high-cost areas
+
+---
+
+## A simple decision framework
+
+Each service is assessed across three questions:
+
+1. **Clinical necessity**
+   Does withdrawal materially increase risk of death or irreversible harm?
+
+2. **System feasibility**
+   Can this be delivered safely and reliably with our workforce and infrastructure?
+
+3. **Cost pressure signal**
+   Is this likely to be a major driver of overspend?
+
+---
+
+## What this framework does
+
+* Sorts services without needing full costing
+* Makes value judgements explicit
+* Creates an auditable decision trail
+* Supports prioritisation under pressure
+
+**This is sorting, not final ranking**
+
+---
+
+## Rapid service mapping (next phase)
+
+A short, structured exercise:
+
+* List all current service lines. For each service, record:
+
+  * Staff / locums / on-call requirements  
+  * Likelihood of off-island referral
+  * Known safety or litigation sensitivity
+
+Outcome:
+
+* Clearly core services OR clearly discretionary services
+* Services needing deeper review
+
+---
+
+## Use of evidence and guidance
+
+* NICE and international guidance will inform clinical evidence
+* They will not define automatic service entitlement
+* Assumptions about volume, staffing and infrastructure must be tested locally
+
+**Evidence-informed, but adapted locally**
+
+---
+
+## Role of modern tools
+
+To reduce burden of this review on limited staff:
+
+* Build private LLM to summarise and compare guidance
+* Extract hidden assumptions in UK-based recommendations
+* Support, not replace, human decision-making
+
+All outputs reviewed and documented carefully
+
+---
+
+## Opportunity cost {visibility="hidden"}
+
+Every resource committed to low-value or fragile services:
+
+* Reduces capacity for prevention
+* Reduces chronic disease management
+* Increases system instability
+
+**Doing nothing also has consequences**
+
+---
+
+## What this approach delivers
+
+* A credible, transparent decision process
+* A defensible response to funders
+* A foundation for longer-term reform
+* Immediate grip on financial risk
+
+---
+
+## What is needed
+
+* Agreement on the decision framework
+* Permission to prioritise explicitly
+* Time to complete rapid service mapping
+* Support for a phased, evidence-led process
+
+---
+
+## Closing message
+
+This is a big task.
+
+But it is manageable if:
+
+* Decisions are explicit
+* Trade-offs are acknowledged
+* Evidence is used proportionately
+
+**This plan puts St Helena Health back in control**
