@@ -1,6 +1,6 @@
 ---
 title: "TMR Statistical Analysis Plan (SAP)"
-subtitle: "Guidance for Study Staff"
+subtitle: "Guidance for Data Handling Staff"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
 author: Ian Hambleton
 format: 

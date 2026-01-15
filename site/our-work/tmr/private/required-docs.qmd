@@ -30,7 +30,9 @@ draft: false
 - [ ] Recruitment / Appointment Trackers (in REDCap?) 
 - [ ] Ht and Wt SOP
 - [ ] Fibroscan SOP
-
+- [ ] Do we need AE/SAE form?
+- [ ] Any qual collection to be stored here?
+  
 ## Followed By
 - [ ] TMR Phase documentation
   - Information sheet
