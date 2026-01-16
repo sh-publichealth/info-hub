@@ -32,6 +32,7 @@ draft: false
 - [ ] Fibroscan SOP
 - [ ] Do we need AE/SAE form?
 - [ ] Any qual collection to be stored here?
+- [ ] Eating Disorder Documentation?
   
 ## Followed By
 - [ ] TMR Phase documentation
@@ -48,5 +49,5 @@ draft: false
 
 ## Later
 - [ ] Data linkage protocol (database to registry)
-- [ ] Data Quality Checks (iin Stata)
+- [ ] Data Quality Checks (in Stata)
 
