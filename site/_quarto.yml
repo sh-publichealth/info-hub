@@ -94,10 +94,10 @@ website:
                 href: our-work/tmr/data/data-dictionary.qmd
               - text: Data Management Plan
                 href: our-work/tmr/data/data-management-plan.qmd
-#              - text: Data Sharing
-#                href: our-work/tmr/data/data-sharing.qmd
-#              - text: Data Anonymisation
-#                href: our-work/tmr/data/anonymisation.qmd
+              - text: Data Anonymisation
+                href: our-work/tmr/data/anonymisation.qmd
+              - text: Data Sharing
+                href: our-work/tmr/data/data-sharing.qmd
 #              - text: Data Monitoring Committee
 #                href: our-work/tmr/data/dmc-tor.qmd
 #            - section: "REDCap Guidance"
@@ -121,4 +121,4 @@ format:
 
 
 
-# touch: 2026-01-15 16:35:21.604
+# touch: 2026-01-16 10:43:40.572

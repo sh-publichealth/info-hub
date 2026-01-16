@@ -8,7 +8,7 @@ format:
      format-links: true 
    pdf:
      toc: true
-     documentclass: report
+     documentclass: article
      margin-left: 30mm
      margin-right: 30mm
 

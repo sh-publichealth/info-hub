@@ -1,136 +1,101 @@
 ---
-title: "Data Sharing Agreement"
-subtitle: "Guidance for Data Handling Staff"
+title: "Data Sharing Policy"
+subtitle: "General Guidance"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
 author: Ian Hambleton
 format: 
    html:
      format-links: true 
-#   pdf:
-#     toc: true
-#     documentclass: report
+   pdf:
+     toc: true
+     documentclass: article
+     margin-left: 30mm
+     margin-right: 30mm
 
 date: last-modified
 date-format: "D MMM YYYY"
-draft: true
+draft: false
 ---
 
----
+## Why we share data
 
-## Purpose
+This project collects health and programme data to help improve care, learn what works, and inform future decisions.
 
-This document sets out the principles and practical arrangements for sharing data to support the delivery, monitoring, and evaluation of the Total Meal Replacement (TMR) Diabetes Remission Programme in St Helena (and Ascension, where applicable).
+We believe data should be *useful*, *responsible*, and *shared carefully* — not locked away, but never used in ways that could harm people or communities.
 
-This is an outline agreement intended to provide clarity, proportional governance, and a shared understanding between parties. It is not a commercial contract.
+This page explains, in simple terms, *what data we may share, how we share it, and the conditions we apply*.
 
-## Parties to the Agreement
+## What data might be shared
 
-**Data Controllers**
+We may share:
 
-- St Helena Health and Social Care Directorate (HSC)
+- Summary results (for example averages, percentages, or trends)
+- De-identified individual-level data (data with names, addresses, and direct identifiers removed)
+- Supporting documents such as questionnaires, data dictionaries, or analysis notes
 
-**Data Processors / Delivery Partners**
+We do **not** share names, contact details, or anything that could reasonably identify an individual.
 
-- Counterweight Ltd (programme delivery)
+## Who we share data with
 
-**Evaluation and Public Health Partners**
+We may share data with:
 
-- St Helena Public Health Team
-- UKHSA UK Overseas Territories Public Health Programme (evaluation support)
+- Health services and policymakers
+- Researchers and analysts
+- Public health organisations
+- Funders and partners
+- Others working to improve health and care
 
-Additional parties may be added by written agreement if required for programme delivery or evaluation.
+All data sharing is assessed on a case-by-case basis.
 
-## Data in Scope
+## How data can be used
 
-The following categories of data may be shared where necessary and proportionate:
+Shared data may be used to:
 
-1. **Participant Identifiable Data (restricted access)**
-   - Name, contact details, date of birth
-   - NHS / local health identifiers
-   - Used only for programme delivery, scheduling, and clinical care
-2. **Clinical and Programme Data**
-   - Diabetes history, medications, HbA1c, weight, blood pressure
-   - Programme attendance and phase completion
-   - Adverse events and safety monitoring data
-3. **Evaluation and Monitoring Data**
-   - De-identified or pseudonymised clinical outcomes
-   - Aggregated service metrics (recruitment, retention, completion)
-   - Qualitative interview and survey data (with explicit consent)
-4. **Registry Data**
-   - Extracts from the St Helena Diabetes Registry where approved
-   - Used for eligibility screening, baseline context, and comparator analyses
+- Improve services and programmes
+- Support research and evaluation
+- Inform policy or planning
+- Produce reports, publications, or public summaries
 
-## Purpose of Data Sharing
+Data must **not** be used for commercial marketing, advertising, or to make decisions about individuals.
 
-Data will be shared strictly for the following purposes:
+## How we protect people’s privacy
 
-- Safe and effective delivery of the TMR service
-- Clinical monitoring and medication management
-- Service evaluation and quality improvement
-- Public health reporting and learning
-- Governance, audit, and safety oversight
+Before any data are shared, we take steps to:
 
-Data will not be used for commercial marketing or unrelated research.
+- Remove direct identifiers
+- Reduce the risk of re-identification
+- Limit what is shared to what is necessary
+- Apply clear conditions on use and storage
 
-## Legal and Ethical Basis
+We follow applicable data protection laws and good practice.
 
-Data sharing is undertaken under the following principles:
+## Conditions of sharing
 
-- Delivery and evaluation of a health service
-- Public task and public interest
-- Explicit informed consent where required (e.g. qualitative interviews)
+Anyone receiving data from this project must agree to:
 
-All data handling will comply with:
+- Use the data only for the agreed purpose
+- Not attempt to identify individuals
+- Keep the data secure
+- Not share the data further without permission
+- Acknowledge the source of the data
 
-- UK GDPR
-- Data Protection Act 2018
-- Local information governance requirements
+## How to request data
 
-## Data Minimisation and Access Control
+If you are interested in accessing data from this project, please contact us with:
 
-- Only the minimum necessary data will be shared
-- Access will be role-based and time-limited
-- Identifiable data will be restricted to staff with a direct care or coordination role
-- Evaluation datasets will be anonymised or pseudonymised wherever possible
+- Who you are and who you represent
+- What data you are requesting
+- How you plan to use it
+- How you will store and protect it
 
-## Data Storage and Security
+We aim to be open, fair, and proportionate in our decisions.
 
-- Clinical and programme data will be stored in approved systems (e.g. REDCap, clinical records)
-- Evaluation datasets will be stored on secure, access-controlled platforms
-- No data will be stored on personal devices
-- Data transfers will use secure methods only
+## A more formal agreement
 
-## Reporting, Anonymisation, and Small Numbers
+For situations where data are shared outside the project team, we use a short written agreement that sets out these conditions clearly.
 
-- All reporting will use aggregated summaries
-- Small numbers will be suppressed or rounded in line with agreed disclosure control rules
-- No individual will be identifiable in published outputs
+You can download the agreement here:
 
-## Data Retention and Disposal
-
-- Identifiable programme data will be retained in line with clinical record retention policies
-- Evaluation datasets will be retained only as long as necessary to complete agreed analyses
-- Secure deletion will be undertaken when data are no longer required
-
-## Oversight and Review
-
-- Data use and safety will be overseen by the Data Monitoring Group
-- Any data breaches or concerns will be reported immediately via established governance routes
-- This agreement will be reviewed annually or if programme scope changes
-
-## Sign-off
-
-This outline agreement is endorsed by the undersigned as a proportionate and appropriate basis for data sharing in support of the TMR programme.
-
-| Role                       | Name | Organisation | Signature | Date |
-| -------------------------- | ---- | ------------ | --------- | ---- |
-| Senior Responsible Officer |      |              |           |      |
-| Caldicott Guardian         |      |              |           |      |
-| Programme Lead             |      |              |           |      |
-
-## Linked Documents
-
-**Caldicott Guardian Sign-off Record**
-**Data Monitoring Group – Terms of Reference**
-**Screening Visit SOP and Checklist**
-**Baseline Visit SOP and Checklist**
+| Document | | Link / Download | 
+| :--- | ---: | :--- | 
+|Download the Data Sharing Agreement | {{< bi download >}} | [download]({{< var site-url >}}/our-work/tmr/data/data-sharing-agreement.pdf) |

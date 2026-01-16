@@ -6,12 +6,15 @@ author: Ian Hambleton
 format: 
    html:
      format-links: true 
-#   pdf:
-#     toc: true
-#     documentclass: report
+   pdf:
+     toc: false
+     documentclass: article
+     margin-left: 30mm
+     margin-right: 30mm
+
 date: last-modified
 date-format: "D MMM YYYY"
-draft: true
+draft: false
 ---
 
 
@@ -22,11 +25,10 @@ These rules are designed to protect participant confidentiality while allowing m
 The guiding principles are to:
 
 - prevent direct identification of individuals;
-- minimise risk of indirect or jigsaw identification;
+- minimise risk of indirect or *jigsaw* identification;
 - apply proportionate controls that reflect audience and purpose;
 - preserve the usefulness of outputs for service learning and decision-making.
 
-------
 
 ## 2. Tiered release model
 
@@ -34,23 +36,22 @@ Disclosure controls are applied according to the intended audience of the output
 
 ### Tier A – Internal service use (restricted)
 
-- Audience: authorised clinical and programme staff.
-- Purpose: operational learning, clinical governance, service improvement.
-- Granularity: more detailed breakdowns may be used where access is controlled and outputs are clearly labelled as restricted.
+- *Audience:* authorised clinical and programme staff.
+- *Purpose:* operational learning, clinical governance, service improvement.
+- *Granularity:* more detailed breakdowns may be used where access is controlled and outputs are clearly labelled as restricted.
 
 ### Tier B – Governance and oversight (restricted)
 
-- Audience: governance committees, regulators, oversight groups.
-- Purpose: assurance, accountability, decision-making.
-- Granularity: small-number rules apply, but limited subgroup detail may be permitted where justified and circulation is controlled.
+- *Audience:* governance committees, regulators, oversight groups.
+- *Purpose:* assurance, accountability, decision-making.
+- *Granularity:* small-number rules apply, but limited subgroup detail may be permitted where justified and circulation is controlled.
 
 ### Tier C – Public or external reporting
 
-- Audience: unrestricted.
-- Purpose: transparency and accountability without re-identification risk.
-- Granularity: strongest disclosure controls; broad categories and aggregation used by default.
+- *Audience:* unrestricted.
+- *Purpose:* transparency and accountability without re-identification risk.
+- *Granularity:* strongest disclosure controls; broad categories and aggregation used by default.
 
-------
 
 ## 3. Core anonymisation rules
 
@@ -68,15 +69,14 @@ The following apply across all tiers.
 - Use a programme-specific ID for analysis datasets.
 - Store re-identification keys separately with restricted access and audit controls.
 
-------
 
 ## 4. Small-number suppression rules
 
 ### 4.1 Minimum cell sizes by tier
 
-- Tier C (public): default minimum cell size k = 5.
-- Tier B (governance): minimum cell size k = 3 may be used where circulation is controlled.
-- Tier A (internal): cell-size thresholds may be relaxed where outputs remain within the service and are access-controlled.
+- *Tier C (public):* generally, the default minimum cell size k = 5.
+- *Tier B (governance):* minimum cell size k = 3 may be used where circulation is controlled.
+- *Tier A (internal):* cell-size thresholds may be relaxed where outputs remain within the service and are access-controlled.
 
 ### 4.2 Complementary suppression
 
@@ -86,7 +86,6 @@ Where primary suppression is applied, additional cells must be suppressed if val
 
 In small populations, zero counts can be identifying. In Tier C outputs, values from 0–4 may be reported as “<5” where appropriate.
 
-------
 
 ## 5. Aggregation strategies to preserve usability
 
@@ -106,7 +105,6 @@ Where possible, aggregation should be used in preference to suppression.
 
 - Avoid more than two stratifiers in public tables.
 
-------
 
 ## 6. Output formats that reduce disclosure risk
 
@@ -125,7 +123,6 @@ Certain formats allow useful reporting while reducing re-identification risk.
 
 - Maintain restricted annexes for governance review where more detail is required, alongside public summaries.
 
-------
 
 ## 7. Reporting estimates as an alternative to small cell counts
 
@@ -140,7 +137,8 @@ Reporting model-based or adjusted estimates can:
 - reduce the visibility of small underlying cell counts;
 - avoid disclosure through rare combinations of characteristics;
 - support more stable interpretation in the presence of small samples;
-- align reporting with the analytic methods described in the ==Statistical Analysis Plan==.
+- align reporting with the analytic methods described in the [[Statistical analysis plan (sap)](./sap.qmd)]{.content-visible when-format="html"}
+[[Statistical analysis plan (sap)]({{< var site-url >}}/our-work/tmr/data/sap.html)]{.content-visible when-format="pdf"}.
 
 ### Types of estimates
 
@@ -153,9 +151,9 @@ Depending on the outcome and audience, reporting may include:
 
 ### Use by tier
 
-- Tier C: preference for estimates with uncertainty rather than raw subgroup counts.
-- Tier B: estimates may be presented alongside limited counts where appropriate.
-- Tier A: raw counts may be used where necessary for operational learning, subject to access controls.
+- *Tier C:* preference for estimates with uncertainty rather than raw subgroup counts.
+- *Tier B:* estimates may be presented alongside limited counts where appropriate.
+- *Tier A:* raw counts may be used where necessary for operational learning, subject to access controls.
 
 ### Transparency and interpretation
 
@@ -171,7 +169,6 @@ Estimation is used as a privacy-preserving reporting strategy, not to obscure fi
 
 Estimates will not be used where model assumptions are implausible, denominators are extremely small, or disclosure risk remains high despite aggregation.
 
-------
 
 ## 8. High-risk combinations
 
@@ -183,7 +180,6 @@ Extra caution is required when reporting combinations such as:
 
 Such combinations should be aggregated, estimated, or omitted from public outputs.
 
-------
 
 ## 9. Pre-release disclosure check
 
@@ -195,16 +191,13 @@ Before releasing any output, reviewers should confirm:
 4. Outputs cannot reasonably be used for local re-identification.
 5. Appropriate tier labelling is applied.
 
-------
 
 ## 10. Relationship to other documents
 
-These rules should be applied alongside the ==Data Protection Impact Assessment (DPIA)==, the ==Data Flow Diagram – TMR Diabetes Remission Programme==, and the ==Statistical Analysis Plan==.
+These rules should be applied alongside the [[Statistical analysis plan (sap)](./sap.qmd)]{.content-visible when-format="html"}
+[[Statistical analysis plan (sap)]({{< var site-url >}}/our-work/tmr/data/sap.html)]{.content-visible when-format="pdf"}.
 
-------
 
 ## 11. Review and maintenance
 
 These rules will be reviewed if reporting plans change, new outputs are proposed, or governance requirements are updated.
-
-**Date of last review:** ____________________

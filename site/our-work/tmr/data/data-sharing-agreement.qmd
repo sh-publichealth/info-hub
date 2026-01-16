@@ -1,0 +1,115 @@
+---
+title: "Data Sharing Agreement"
+subtitle: "For the St Helena Total Meal Replacement Study"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Ian Hambleton
+format: 
+   html:
+     format-links: true 
+   pdf:
+     toc: false
+     documentclass: article
+     margin-left: 30mm
+     margin-right: 30mm
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+## 1. Purpose of this agreement
+
+This agreement sets out the terms under which data from the *Total Meal Replacement Study* will be shared.
+
+Its purpose is to ensure that data are used responsibly, ethically, and in ways that respect the people and communities represented.
+
+
+## 2. Parties to the agreement
+
+**Data Provider**  
+Name / Organisation: ______________________________  
+Contact person: ___________________________________  
+
+**Data Recipient**  
+Name / Organisation: ______________________________  
+Contact person: ___________________________________  
+
+
+## 3. Description of the data
+
+The Data Provider agrees to share the following data:
+
+Brief description of data to be shared:<br/>  
+____________________________________________________________________  
+
+The data will be provided in a de-identified form.
+
+
+## 4. Permitted use
+
+The Data Recipient agrees to use the data only for the following purpose(s):<br/><br/>
+____________________________________________________________________  
+
+The data must not be used to identify individuals or to make decisions about individuals.
+
+
+## 5. Data protection and security
+
+The Data Recipient agrees to:
+
+- Store the data securely
+- Limit access to authorised individuals only
+- Not attempt to re-identify individuals
+- Comply with applicable data protection laws
+- Notify the Data Provider of any data breach or misuse
+
+
+## 6. Further sharing
+
+The Data Recipient must not share the data with any third party without written permission from the Data Provider.
+
+## 7. Publication and acknowledgement
+
+Any reports, publications, or outputs using the data must:
+
+- Acknowledge the Data Provider and the project
+- Avoid presenting results that could lead to identification of individuals or small groups
+
+
+## 8. Duration of the agreement
+
+This agreement applies from the date of signing until:
+
+  $\square$ A fixed end date: ______________________________  
+
+  $\square$ Completion of the agreed work  
+
+  $\square$ Written termination by either party  
+
+
+## 9. Termination
+
+The Data Provider may withdraw permission to use the data if the terms of this agreement are breached.
+
+Upon termination, the Data Recipient agrees to securely delete or return the data, as instructed.
+
+
+## 10. Signatures
+
+By signing below, both parties agree to the terms of this Data Sharing Agreement.
+
+**For the Data Provider**
+
+Name: ___________________________________ 
+
+Signature: _______________________________ 
+
+Date: ___________________________________  
+
+**For the Data Recipient**
+
+Name: ___________________________________  
+
+Signature: _______________________________ 
+
+Date: ___________________________________  
