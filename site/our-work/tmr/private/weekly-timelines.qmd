@@ -17,7 +17,7 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
-This document presents the TMR programme timeline using **three linked layers**:
+This document presents the TMR programme timeline using **three linked layers**:  
 
 1. Programme milestones (overall goals)
 2. Rolling operational timeline (near-term detail)
