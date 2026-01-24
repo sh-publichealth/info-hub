@@ -51,9 +51,9 @@ This SOP applies to all staff involved in:
 
 ## Roles and Responsibilities
 
-*Community Health Workers.* conduct measurements, administer questionnaire, record data, explain next steps (except bloods)
+*Community health workers.* conduct measurements, administer questionnaire, record data, explain next steps (except bloods)
 
-*diabetes nurse specialist.* baseline bloods
+*Diabetes nurse specialist.* baseline bloods
 
 *Study data manager.* Provides REDCap and data system support throughout the study operations.
 
@@ -105,7 +105,7 @@ Consent must be obtained *before any baseline data collection*.
 
 ### 4. Participant Identification and Administration
 
-- Find participant in FREDCap database
+- Find participant in REDCap database
 - Record administrative details
 - Confirm site and group allocation
 

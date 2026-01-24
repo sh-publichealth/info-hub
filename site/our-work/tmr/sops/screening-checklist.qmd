@@ -52,6 +52,8 @@ draft: false
 
   $\square$ Age within programme limits
 
+  $\square$ HbA1C within programme limits
+
   $\square$ Type 2 diabetes diagnosis confirmed
 
   $\square$ Duration of diabetes within criteria

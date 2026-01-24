@@ -42,6 +42,8 @@ An individual may proceed to screening if all of the following apply:
 - Diagnosed with *type 2 diabetes*
 - Diabetes duration *≤ 6 years*  
   - This may be extended to *≤ 10 years* if recruitment numbers are low
+- HbA1C ≥ 43 mmol/mol & < 88 mmol/mol if on treatment with any hypoglycaemic agents.
+- HbA1C ≥ 48 mmol/mol & < 88 mmol/mol if **NOT** on treatment with any hypoglycaemic agents.
 - At least *one diabetes-related visit in the past 12 months*
 - Likely *BMI ≥ 25* (confirmed at screening)
 
@@ -76,6 +78,9 @@ An individual is *not eligible* if any of the following apply:
 - Active eating disorder
 - Active substance use disorder
 - Prior bariatric surgery
+- Active liver disease
+- Porphyria
+- Untreated proliferative retinopathy
 - Any condition where the clinical team judges TMR to be unsafe or inappropriate
 
 These crieria will ideally be identified through a clinical review of a person's notes. Clinical judgement should be documented where exclusions are discretionary. The absence of information in the clinical notes may require an in-person clinical review.

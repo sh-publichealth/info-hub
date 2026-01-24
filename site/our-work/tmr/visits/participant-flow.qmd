@@ -19,7 +19,7 @@ draft: false
 
 # The Recruitment Process
 ## Part 1. First contact  
-
+This flow shows how a person is sourced (REDCap recruitment report, advert response, or clinic), located (or added) in REDCap, and then contacted using the telephone script.
 ```{mermaid}
 %%| label: fig-mermaid-flowchart1
 %%| fig-cap: TMR Recruitment Process. Part 1 - First Contact
@@ -50,6 +50,7 @@ R4 --> R5
 :::
 
 ## Part 2. Participant Choices
+This flow shows how different outcomes of the first contact call are handled, including booking a screening visit, arranging a follow-up call, or ending contact and updating REDCap.
 ```{mermaid}
 %%| label: fig-mermaid-flowchart2
 %%| fig-cap: TMR Recruitment Process. Part 2 - Participant Choices
@@ -84,7 +85,7 @@ R8 -.-> R9
 
 # The Screening Visit
 ## Part 1. Screening Visit Preparation
-
+This flow shows the pre-visit checks carried out in REDCap and medical notes to confirm eligibility before the participant attends screening.
 ```{mermaid}
 %%| label: fig-mermaid-flowchart3
 %%| fig-cap: TMR Screening Visit. Part 1 - Preparation
@@ -97,7 +98,7 @@ S3(**S3.** Confirm Screening<br/>Visit on *day-1*)
 S4(**S4.** Thank person for their time)
 S1 --> S2
 S2 -- "Eligible" --> S3
-S2 -- "Note Eligible" --> S4
+S2 -- "Not Eligible" --> S4
 
 ```
 
@@ -119,7 +120,7 @@ S2 -- "Note Eligible" --> S4
 :::
 
 ## Part 2. At the Screening Visit (BMI check)
-
+This flow shows the in-person screening steps, including identity confirmation, a brief programme explanation, BMI measurement, and the decision to continue or stop.
 ```{mermaid}
 %%| label: fig-mermaid-flowchart4
 %%| fig-cap: TMR Screening Visit. Part 2 - BMI Check
@@ -146,12 +147,12 @@ The REDCap screening form should be completed during the screening visit. Follow
 
 **S7.** Height and Weight should be measured following [the simple protocol](./sops/height-weight-sop.qmd). Results must be entered directly into the REDCap Screening form, which will provide you with the person's Body Mass Index for you to assess eligibility.
 
-**S8.** The REDCap Screening Form will also use the already-completed fields to assess and complete overall eligibility based on **four criteria** (Age, Diabetes Duration, Clinic Visit Recency, BMI). Use this REDCap eligibility classification to guide your next steps. 
+**S8.** The REDCap Screening Form will also use the already-completed fields to assess and complete overall eligibility based on **four criteria** (Age, Diabetes Duration, Clinic Visit Recency, BMI, HbA1C). Use this REDCap eligibility classification to guide your next steps. 
 :::
 
 
 ## Part 3. At the Screening Visit (Eating Disorder check)
-
+This flow shows the structured eating disorder screening process and how participants are routed to continue, pause, or stop based on responses. 
 ```{mermaid}
 %%| label: fig-mermaid-flowchart5
 %%| fig-cap: TMR Screening Visit. Part 3 - Eating Disorder Check
@@ -161,10 +162,8 @@ flowchart LR
 S10(**S10.** Step 1.<br/>Anorexia/Bulimia)
 S11(**S11.** Step 2. Emotional/Binge Eating)
 S12(**S12.** Thank person for their time. **Health referral**)
-S13(**S13.** Start Programme. Complete 2.1)
+S13(**S13.** Start Programme.)
 S14(**S14.** Thank person for their time. **Health referral**)
-S15(**S15.** Start with Usual Support)
-S16(**S16.** Start with Usual + Eating Disorder Support)
 
 S10 -- No Diagnosis --> S11
 S10 -- Diagnosed --> S12
@@ -172,22 +171,21 @@ S10 -- Diagnosed --> S12
 S11 -- LT3 --> S13
 S11 -- GE3 --> S14
 
-S13 --GE6 --> S15
-S13 --LE5 --> S16
-
 ```
 
 
 ::: {.callout-note collapse="true"}
 ## Screening Part 3 Notes
 
-**S10/S11/S13.** These steps collectively form the eating disorder screening process. You should follow this process carefully as set out in the [eating disorder workflow](./sops/eating-disorder-sop.qmd), filling out the question responses in REDCap, and using the resulting REDCap scores to dictate the eventual participant pathway. 
+**S10/S11/S13.** These steps collectively form the eating disorder screening process. You should follow this process carefully as set out in the [Counterweight disordered eating pathway](./sops/eating-disorder-sop.qmd), filling out the question responses in REDCap, and using the resulting REDCap scores to dictate the eventual participant pathway. 
+
+In the diagram, *LT3=Less-Than 3*, *GE3=Greater Than 3*. 
 :::
 
 
 # The Baseline Visit
 ## Part 1. Before Data Collection Begins
-
+This flow shows how informed consent is obtained and the baseline visit is prepared before any study measurements are taken.
 ```{mermaid}
 %%| label: fig-mermaid-flowchart6a
 %%| fig-cap: TMR Baseline Visit. Part 1 - Before Data Collection
@@ -224,7 +222,7 @@ B3 --> B4
 
 
 ## Part 2. Data Collection
-
+This flow shows the core baseline data collection sequence in REDCap, including anthropometry, clinical measurements, and blood sampling.
 ```{mermaid}
 %%| fig-alt: baseline visit, drawn using Mermaid.
 flowchart LR
@@ -239,6 +237,8 @@ B6 --> B7
 B7 --> B8
 
 ```
+
+This flow shows completion of baseline assessments, including medication status, FibroScan, and patient-reported outcome measures.
 
 ```{mermaid}
 %%| label: fig-mermaid-flowchart6b
@@ -289,7 +289,7 @@ B10 --> B11
 
 # Intervention Visits (Weeks 2, 4, 6, 8, 10)
 ## At Each Visit
-
+This flow shows the standard pattern for intervention visits, from scheduling and confirmation through in-person support, data collection, and REDCap updates.
 ```{mermaid}
 %%| label: fig-mermaid-flowchart7
 %%| fig-cap: TMR intervention Visits
@@ -325,7 +325,7 @@ IV3 --> IV4
 
 # Intervention Visit (Week 12)
 ## End of Intervention Visit
-
+This flow shows the specific visit steps at week 12, including scheduling, clinic attendance, data collection, and system updates.
 ```{mermaid}
 %%| label: fig-mermaid-flowchart8
 %%| fig-cap: TMR Week 12 Visit

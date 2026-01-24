@@ -24,7 +24,7 @@ This Data Management Plan outlines how data will be collected, stored, secured, 
 
 The study will collect a combination of clinical, behavioural, and self-reported data. Clinical data include demographic details, medical history, anthropometric measurements, blood pressure, and laboratory results such as HbA1c, lipid profiles and renal function tests. Details of medication use, including dose changes and cessation, will be recorded throughout the study.
 
-Participants will also complete standardised questionnaires, including the EQ-5D-3L for quality of life and the PAID instrument for diabetes-related emotional distress, and IPAQQ for physical activity. A subset of participants may take part in Ecological Momentary Assessment (EMA), providing repeated brief updates about their mood, cravings and adherence through mobile prompts.
+Participants will also complete standardised questionnaires, including the EQ-5D-3L for quality of life and the PAID instrument for diabetes-related emotional distress, and IPAQ for physical activity. A subset of participants may take part in Ecological Momentary Assessment (EMA), providing repeated brief updates about their mood, cravings and adherence through mobile prompts.
 
 Qualitative interviews will produce audio recordings and transcripts. These will be anonymised before analysis. Analysis datasets derived from the raw data, as well as the statistical code used to produce results, are also considered part of the study data.
 

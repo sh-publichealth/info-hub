@@ -99,6 +99,7 @@ Confirm or collect the following:
 **Core eligibility**
 
 - Age within programme limits
+- HbA1C within programme limits
 - Type 2 diabetes diagnosis
 - Duration of diabetes
 - Recent clinic attendance

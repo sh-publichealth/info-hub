@@ -78,6 +78,8 @@ website:
                 href: our-work/tmr/sops/recruitment-sop.qmd
               - text: Screening SOP
                 href: our-work/tmr/sops/screening-sop.qmd
+              - text: Eating Disorder SOP
+                href: our-work/tmr/sops/eating-disorder-sop.qmd
 #              - text: Height & Weight SOP 
 #                href: our-work/tmr/sops/height-weight-sop.qmd
               - text: Baseline SOP
@@ -121,4 +123,4 @@ format:
 
 
 
-# touch: 2026-01-18 10:48:07.509
+# touch: 2026-01-24 14:48:43.519

@@ -17,7 +17,7 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
-This document presents the TMR programme timeline using **three linked layers**:  
+This document presents the TMR programme timeline using **three linked layers**:   
 
 1. Programme milestones (overall goals)
 2. Rolling operational timeline (near-term detail)
@@ -75,10 +75,9 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 | Task                                             | Output                                     | Responsible | Status        |
 | ------------------------------------------------ | ------------------------------------------ | ----------- | ------------- |
 | Complete patient flows                           | Flow diagrams completed                    | IH / SJ     | 🟩 Complete |
-| Creation of Study Documentation Website          | Draft 1 document repository                | IH          | 🟦 In progress |
-| Identify potential participants from clinic list | Randomised list for screening              | IH          | 🟦 In progress |
-| Information gathering from Counterweight         | Clarified eligibility/screening            | SJ          | 🟦 In progress |
-| Advert in local paper + Facebook                 | Advert responses list                      | SJ / SI     | 🟦 In Progress |
+| Creation of Study Documentation Website          | Draft 1 document repository                | IH          | 🟩 In progress |
+| Identify potential participants from clinic list | Randomised list for screening              | IH          | 🟩 In progress |
+| Information gathering from Counterweight         | Clarified eligibility/screening            | SJ          | 🟩 In progress |
 
 
 ## By Fri 30 Jan 2026
@@ -90,6 +89,13 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 | Develop baseline (etc) scheduler | Main scheduler in REDCap      | JC / IH      | 🟦 In progress |
 | Develop E-consent               | E-Consent process available    | JC / IH      | 🟦 In progress |
 | Develop recruitment report      | REDCap Report available        | JC / IH      | 🟦 In progress |
+| Advert in local paper + Facebook                 | Advert responses list                      | SJ / SI     | 🟦 In Progress |
+| Test Recruitment Script                 | Final Script                      | AM / GE     | 🟨 Planned |
+| Create SOP (Ht / Wt)                 | Final SOP                      | AM / GE     | 🟨 Planned |
+| Create SOP (Fibroscan)                 | Final SOP                      | AM / GE     | 🟨 Planned |
+| Create SOP (Hip & Waist Circum)                 | Final SOP                      | AM / GE     | 🟨 Planned |
+| Create SOP (Blood Pressure)                 | Final SOP                      | AM / GE     | 🟨 Planned |
+| Create SOP (Blood Sugar Levels - finger prick)                 | Final SOP                      | AM / GE     | 🟨 Planned |
 
 
 ## By Fri 06 Feb 2026

@@ -58,6 +58,7 @@ Data handling staff use the diabetes registry to identify potentially eligible i
 
 - Confirmed diabetes diagnosis
 - Duration of diabetes
+- HbA1C within programme limits
 - At least one clinic visit in the previous 12 months
 
 For all individuals meeting these criteria, registry information is used to pre-populate the REDCap screening form in the TMR database.

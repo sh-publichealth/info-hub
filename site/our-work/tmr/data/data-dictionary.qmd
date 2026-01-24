@@ -28,8 +28,8 @@ draft: false
 | **Phase 1:** Pre-baseline | prebaseline | -∞ to 0 |
 | **Phase 1:** Baseline | baseline | 0 |
 | **Phase 2:** TMR phase | wk00–wk12 | 1–12 (visit every 2 weeks) |
-| **Phase 3:** Food reintroduction | wk13–wk19 | 13–19 (visit every 2 weeks) |
-| **Phase 4:** Weight maintenance (Year 1) | wk23–wk52 | 23–52 (every 8 weeks) |
+| **Phase 3:** Food reintroduction | wk13–wk23 | 13–23 (visit every 2 weeks) |
+| **Phase 4:** Weight maintenance (Year 1) | wk24–wk52 | 24–52 (every 8 weeks) |
 | **Phase 4:** Weight maintenance (Year 2) | wk56–wk104 | 56–104 (every 8 weeks) |
 
 
@@ -55,10 +55,10 @@ The differing visit schedules of cases and controls means that we will probably 
 | eligibility_screening | No        | Screening *(This will be maintained in the Diabetes Registry)* |
 | participant_admin     | No        | Baseline only                                                |
 | weight                | No        | Baseline, every follow-up visit                              |
-| anthropometry         | No        | baseline, wk12, wk20, wk36, wk52, wk78, wk104                |
+| anthropometry         | No        | baseline, wk12, wk24, wk36, wk52, wk78, wk104                |
 | blood_pressure        | No        | baseline, every follow-up visit                              |
 | glucose_monitor       | No        | baseline, every follow-up visit                              |
-| hba1c                 | No        | baseline, wk12, wk20, wk27, wk36, wk52, wk78, wk104          |
+| hba1c                 | No        | baseline, wk12, wk24, wk27, wk36, wk52, wk78, wk104          |
 | liver_labs            | No        | baseline, wk12, wk52, wk104                                  |
 | [fibroscan]{.highlight} | No      | baseline, wk12, wk52, wk104                                  |
 | medication            | No        | baseline, every follow-up visit                              |

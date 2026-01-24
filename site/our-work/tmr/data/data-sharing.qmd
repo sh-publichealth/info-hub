@@ -81,7 +81,12 @@ Anyone receiving data from this project must agree to:
 
 ## How to request data
 
-If you are interested in accessing data from this project, please contact us with:
+If you are interested in accessing data from this project, please contact us informally at first at: 
+
+Dr Selvi Jeyaseelan
+selvi.jeyaseelan@sainthelena.gov.sh
+
+Include the following information:
 
 - Who you are and who you represent
 - What data you are requesting

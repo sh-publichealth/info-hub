@@ -17,6 +17,11 @@ date-format: "D MMM YYYY"
 draft: false
 ---
  
+:::{.callout-note}
+## Protocol Scope
+This protocol covers all aspects of the intervention assessment. It *does not* include details on how to deliver the Counterweight programme.  
+:::
+
 ## Executive summary
  
 St Helena has a high burden of type 2 diabetes and obesity, placing sustained pressure on a small, integrated health system. Evidence from high-quality trials shows that Total Meal Replacement (TMR) programmes can produce substantial weight loss and improved blood glucose control, and that some people can achieve diabetes remission when weight loss is maintained.
@@ -110,6 +115,8 @@ Participants must meet all of the following criteria at screening:
 - Diagnosis of type 2 diabetes.
 - Age 18–65 years.
 - Body mass index (BMI) ≥25 kg/m².
+- HbA1C ≥ 43 mmol/mol & < 88 mmol/mol if on treatment with any hypoglycaemic agents.
+- HbA1C ≥ 48 mmol/mol & < 88 mmol/mol if **NOT** on treatment with any hypoglycaemic agents.
 - Engagement with routine diabetes care - assessment as at least 1 clinic visit in the past 12 months.
 - Willingness and ability to participate in the programme and attend follow-up visits.
 
@@ -160,7 +167,7 @@ During this phase:
 
 This phase carries the greatest potential for rapid metabolic improvement and therefore also requires the most intensive clinical oversight.
 
-### Phase 2: Food reintroduction (approximately weeks 12–18)
+### Phase 2: Food reintroduction (approximately weeks 12–23)
 
 Following completion of the TMR phase, participants transition gradually back to food-based meals. Meal-replacement products are reduced in a stepwise manner while balanced meals are reintroduced.
 
@@ -172,7 +179,7 @@ The focus during this phase is on:
 
 Clinical monitoring continues during food reintroduction, with medication adjusted as required.
 
-### Phase 3: Weight maintenance and follow-up (weeks 19+)
+### Phase 3: Weight maintenance and follow-up (weeks 24+)
 
 After food reintroduction, participants enter a longer-term weight maintenance phase. The aim is to stabilise weight, prevent regain, and support sustained improvements in glycaemic control.
 
