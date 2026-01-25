@@ -101,7 +101,12 @@ The differing visit schedules of cases and controls means that we will probably 
 | ddur_registry    | ***(derived)*** Duration of diabetes                         | text (decimal) | Present as <br />Years and Weeks | Y        |
 | diab6_registry   | ***(derived)*** Has the potential participant been diagnosed for 6 years or less | yesno          | 0/1                              | Y        |
 | diab10_registry  | ***(derived)*** Has the potential participant been diagnosed for 10 years or less | yesno          | 0/1                              | Y        |
-| visit12_registry | ***(derived)*** 1 or more visits in the past year            | text (decimal) | –                                | Y        |
+| [visit12_registry]{.highlight2} | ***(derived)*** Most recent visit in the past 12 months            | text (decimal) | –                                | Y        |
+| [visit24_registry]{.highlight2} | ***(derived)*** Most recent visit 12-24 months ago            | text (decimal) | –                                | Y        |
+| [visit36_registry]{.highlight2} | ***(derived)*** Most recent visit 24-36 months ago            | text (decimal) | –                                | Y        |
+| [dohba1c_registry]{.highlight2}    | **(auto-populate)** Date of last HbA1C measurement                | YYYY-MM-DD     | –                                | Y        |
+| [hba1c_treat_registry]{.highlight2} | HbA1C ≥ 43 mmol/mol & < 88 mmol/mol if on treatment with any hypoglycaemic agents             | text (decimal) | –                                | Y        |
+| [hba1c_notreat_registry]{.highlight2} | HbA1C ≥ 48 mmol/mol & < 88 mmol/mol if **NOT** on treatment with any hypoglycaemic agents             | text (decimal) | –                                | Y        |
 | tmr_eligible1    | ***(auto-calculated)*** Is participant eligible so far for TMR pilot? | yesno          | –                                | Y        |
 
 **Eligibility Process Part 2.** If eligible from *Screening Part 1*, create report / list of these eligible participants, along with their eligible values. This list will be held in the TMR database, randomly reordered. It will be used by the *community health workers* when contacting potential participants for interest, and if interested  to attend an in-person screening visit. 

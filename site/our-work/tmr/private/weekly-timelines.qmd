@@ -75,9 +75,9 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 | Task                                             | Output                                     | Responsible | Status        |
 | ------------------------------------------------ | ------------------------------------------ | ----------- | ------------- |
 | Complete patient flows                           | Flow diagrams completed                    | IH / SJ     | 🟩 Complete |
-| Creation of Study Documentation Website          | Draft 1 document repository                | IH          | 🟩 In progress |
-| Identify potential participants from clinic list | Randomised list for screening              | IH          | 🟩 In progress |
-| Information gathering from Counterweight         | Clarified eligibility/screening            | SJ          | 🟩 In progress |
+| Creation of Study Documentation Website          | Draft 1 document repository                | IH          | 🟩 Complete |
+| Identify potential participants from clinic list | Randomised list for screening              | IH          | 🟩 Complete |
+| Information gathering from Counterweight         | Clarified eligibility/screening            | SJ          | 🟩 Complete |
 
 
 ## By Fri 30 Jan 2026
@@ -96,7 +96,12 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 | Create SOP (Hip & Waist Circum)                 | Final SOP                      | AM / GE     | 🟨 Planned |
 | Create SOP (Blood Pressure)                 | Final SOP                      | AM / GE     | 🟨 Planned |
 | Create SOP (Blood Sugar Levels - finger prick)                 | Final SOP                      | AM / GE     | 🟨 Planned |
+| Discuss & Decide on HbA1C inclusion **[1, 2]**.                 | Final Decision                      | SJ / JP     | 🟨 Planned |
+| From EMIS. List of HbA1C through time (w/dates).                 | Final Decision                      | SJ / JP     | 🟨 Planned |
+| Use HbA1C list - add to database.                 | Final Decision                      | IH / JC     | 🟨 Planned |
 
+**[1] NOTE1.** HbA1C upper limit of 87 mmol/mol. Rationale | not a criterion in DiRECT trial?
+**[1] NOTE2.** HbA1C lower limits of 43/48 mmol/mol. Rationale | those on insulin and controlled would therefore be ineligible?
 
 ## By Fri 06 Feb 2026
 
