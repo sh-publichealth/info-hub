@@ -1,4 +1,4 @@
-/* css styles */
+/* TWO highlight styles */
 .highlight {
   background-color: #fff3b0;
   padding: 0.1em 0.25em;
@@ -8,4 +8,89 @@
   background-color: #ffca94;
   padding: 0.1em 0.25em;
   border-radius: 0.2em;
+}
+
+/* =========================
+   Public Health Hub styling
+   Minimal + consistent
+   ========================= */
+
+/* Front page content: readable line length + consistent alignment */
+.hub-home {
+  max-width: 65ch;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  text-align: left;
+}
+
+/* Keep title/subtitle aligned with page content */
+.quarto-title-block,
+.quarto-title-block * {
+  text-align: left !important;
+}
+
+/* Lead text: slightly larger, still plain */
+.hub-home .lead {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Navbar logo sizing */
+.navbar .navbar-brand .navbar-logo,
+.navbar .navbar-brand img,
+.navbar .navbar-brand svg {
+  height: 36px !important;
+  width: auto !important;
+  max-height: none !important;
+}
+
+/* Vertical alignment for logo + text */
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Three-card layout */
+.hub-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+  .hub-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card styling: subtle outline + gentle lift on hover */
+.hub-card {
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 12px;
+  padding: 1.1rem 1rem 0.95rem 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hub-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Icon: on its own line, larger, accent colour only here */
+.hub-card-icon {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  text-align: center;
+  opacity: 0.9;
+  color: #18BC9C; /* sunset orange */
+}
+
+/* Card title: simple, strong */
+.hub-card-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }

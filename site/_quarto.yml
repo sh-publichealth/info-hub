@@ -11,7 +11,7 @@ project:
     port: 4200
     
 website:
-  title: "Information Hub"
+  title: ""
   site-url: https://sh-publichealth.github.io/info-hub
   repo-url: https://github.com/sh-publichealth/info-hub
   page-navigation: true
@@ -22,6 +22,8 @@ website:
   # Top navigation bar
   # --------------------
   navbar:
+    logo: assets/images/logo-white.png
+  #  title: "Info Hub"
     left:
       - href: index.qmd
         text: Home
@@ -116,11 +118,7 @@ format:
     toc-depth: 2
     description: false
     theme:
-      - cosmo
-      - brand
+      - flatly
     css: styles.css
 
-
-
-
-# touch: 2026-01-25 12:04:13.922
+# touch: 2026-01-28 14:14:36.954

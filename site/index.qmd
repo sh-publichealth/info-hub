@@ -1,16 +1,75 @@
 ---
-title: "Information Hub"
-subtitle: "St Helena Public Health Team"
-description-meta: "public health information from St. Helena, in the South Atlantic"
-format: 
-   html: 
-      toc: true
-      format-links: false
-   pdf: default
+title-meta: "Public Health Information Hub"
+subtitle-meta: "St Helena Public Health Team"
+description-meta: "Clear, trustworthy public health information from St Helena"
 draft: false
+
+format: 
+  html: 
+    toc: false
+    page-layout: full
+    sidebar: false
+    margin: false
 ---
 
-<!-- deploy test -->
-This is the St.Helena Public Health<br/>Protozoa website 
+<div class="hub-home">
 
+# St Helena Health Information Hub
+
+::: {.lead}
+#### Local, trustworthy health information — simply.
+:::
+
+---
+
+This site brings together information, learning, and evidence to support the health of all of us on **St Helena**. It is part of a wider effort to make health information open, understandable, and useful in everyday life on the island.
+
+<div class="hub-cards">
+
+<div class="hub-card">
+
+<div class="hub-card-icon">
+<i class="bi bi-question-circle"></i>
+</div>
+
+<div class="hub-card-title">
+What’s here now
+</div>
+
+The Hub currently focuses on work linked to our **Total Meal Replacement (TMR) pilot**, part of ongoing efforts to improve diabetes care and long-term health.
+
+Here you’ll find background, aims, and practical learning as the work develops.
+</div>
+
+<div class="hub-card">
+
+<div class="hub-card-icon">
+<i class="bi bi-person-arms-up"></i>
+</div>
+
+<div class="hub-card-title">
+What this site will become
+</div>
+
+Over time, the Hub will grow into a shared space for understanding health on St Helena. </br></br>Bringing together evidence and learning from local projects and programmes.
+</div>
+
+<div class="hub-card">
+
+<div class="hub-card-icon">
+<i class="bi bi-people-fill"></i>
+</div>
+
+<div class="hub-card-title">
+Who this is for
+</div>
+
+This site is for everyone. </br></br>People living on St Helena, those working in health and care, students, researchers, and anyone who wants clear health information without jargon.
+</div>
+
+</div>
+
+---
+
+*This Hub will continue to grow as new topics and learning are added*
 

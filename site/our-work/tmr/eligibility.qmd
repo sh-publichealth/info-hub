@@ -42,8 +42,8 @@ An individual may proceed to screening if all of the following apply:
 - Diagnosed with *type 2 diabetes*
 - Diabetes duration *≤ 6 years*  
   - This may be extended to *≤ 10 years* if recruitment numbers are low
-- HbA1C ≥ 43 mmol/mol & < 88 mmol/mol if on treatment with any hypoglycaemic agents.
-- HbA1C ≥ 48 mmol/mol & < 88 mmol/mol if **NOT** on treatment with any hypoglycaemic agents.
+- HbA1C ≥ 43 mmol/mol (& < 88 mmol/mol - TBC){.highlight} if on treatment with any hypoglycaemic agents.
+- HbA1C ≥ 48 mmol/mol (& < 88 mmol/mol){.highlight} if **NOT** on treatment with any hypoglycaemic agents.
 - At least *one diabetes-related visit in the past 12 months*
 - Likely *BMI ≥ 25* (confirmed at screening)
 

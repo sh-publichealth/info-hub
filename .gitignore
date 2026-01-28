@@ -4,6 +4,7 @@
 site/_site/
 site/.quarto/
 .quarto/
+*.html
 
 # Quarto cache / freeze folders (can appear depending on features used)
 _freeze/

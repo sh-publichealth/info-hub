@@ -6,11 +6,11 @@ author: Ian Hambleton, Selvi Jeyaseelan
 format:
   html: default
 #  pdf:
-#    toc: true
+#    toc: false
 #    documentclass: report
 #    margin-left: 30mm
 #    margin-right: 30mm
-# format-links: true
+format-links: true
 
 date: last-modified
 date-format: "D MMM YYYY"
@@ -89,18 +89,18 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 | Develop baseline (etc) scheduler | Main scheduler in REDCap      | JC / IH      | 🟦 In progress |
 | Develop E-consent               | E-Consent process available    | JC / IH      | 🟦 In progress |
 | Develop recruitment report      | REDCap Report available        | JC / IH      | 🟦 In progress |
-| Advert in local paper + Facebook                 | Advert responses list                      | SJ / SI     | 🟦 In Progress |
-| Test Recruitment Script                 | Final Script                      | AM / GE     | 🟨 Planned |
-| Create SOP (Ht / Wt)                 | Final SOP                      | AM / GE     | 🟨 Planned |
-| Create SOP (Fibroscan)                 | Final SOP                      | AM / GE     | 🟨 Planned |
-| Create SOP (Hip & Waist Circum)                 | Final SOP                      | AM / GE     | 🟨 Planned |
-| Create SOP (Blood Pressure)                 | Final SOP                      | AM / GE     | 🟨 Planned |
-| Create SOP (Blood Sugar Levels - finger prick)                 | Final SOP                      | AM / GE     | 🟨 Planned |
+| Advert in local paper + Facebook | Advert responses list                      | SJ / SI     | 🟦 In Progress |
+| Test Recruitment Script | Final Script                      | AM / GE     | 🟨 Planned |
+| Create SOP (Ht / Wt)  | Final SOP                      | AM / GE     | 🟨 Planned |
+| Create SOP (Fibroscan)     | Final SOP                      | AM / GE     | 🟨 Planned |
+| Create SOP (Hip & Waist Circum)  | Final SOP                      | AM / GE     | 🟨 Planned |
+| Create SOP (Blood Pressure)  | Final SOP   | AM / GE     | 🟨 Planned |
+| Create SOP (Blood Sugar Levels - finger prick)   | Final SOP                      | AM / GE     | 🟨 Planned |
 | Discuss & Decide on HbA1C inclusion **[1, 2]**.                 | Final Decision                      | SJ / JP     | 🟨 Planned |
 | From EMIS. List of HbA1C through time (w/dates).                 | Final Decision                      | SJ / JP     | 🟨 Planned |
 | Use HbA1C list - add to database.                 | Final Decision                      | IH / JC     | 🟨 Planned |
 
-**[1] NOTE1.** HbA1C upper limit of 87 mmol/mol. Rationale | not a criterion in DiRECT trial?
+**[1] NOTE1.** HbA1C upper limit of 87 mmol/mol. Rationale | not a criterion in DiRECT trial?</br>
 **[2] NOTE2.** HbA1C lower limits of 43/48 mmol/mol. Rationale | those on insulin and controlled would therefore be ineligible?
 
 ## By Fri 06 Feb 2026
