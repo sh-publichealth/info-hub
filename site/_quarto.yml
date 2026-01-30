@@ -119,6 +119,9 @@ format:
     description: false
     theme:
       - flatly
-    css: styles.css
+    css: assets/css/styles.css
 
-# touch: 2026-01-28 14:14:36.954
+bibliography: references.bib
+csl: https://www.zotero.org/styles/harvard-cite-them-right
+
+# touch: 2026-01-30 07:50:48.765

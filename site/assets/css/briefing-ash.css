@@ -1,0 +1,54 @@
+/* Scoped styles for briefing pages only */
+
+.briefing-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin: 0.5rem 0 1.25rem 0;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 0.75rem 0 1.25rem 0;
+}
+
+.stat-tile {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: 1.05rem;
+  margin-top: 0.15rem;
+}
+
+.stat-foot {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 680px) {
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  .stat-grid,
+  .stat-tile {
+    break-inside: avoid;
+  }
+}
