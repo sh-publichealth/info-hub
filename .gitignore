@@ -3,8 +3,10 @@
 # ---------------------------
 site/_site/
 site/.quarto/
+site/deprecated/
 .quarto/
 *.html
+*.ignore
 
 # Quarto cache / freeze folders (can appear depending on features used)
 _freeze/

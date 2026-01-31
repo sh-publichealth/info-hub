@@ -1,11 +1,16 @@
 ---
-title: "The St Helena Public Health Group"
-subtitle: "Our Work"
+title: "Our Areas of Work"
+# subtitle: "Our Work"
 description-meta: "An overview of the work of the St Helena Public Health Group, St Helena, South Atlantic"
-author: Ian Hambleton, Selvi Jeyaseelan
+author: St Helena Public Health
+
 format: 
-   html:
-     format-links: true 
+  html: 
+    toc: false
+    page-layout: full
+    sidebar: false
+    margin: false
+
 #   pdf:
 #     toc: true
 #     documentclass: report
@@ -14,5 +19,54 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
-## Our Work
+## Health Interventions 
+```{=html}
+<section class="stat-grid" aria-label="Headline results">
+  <div class="stat-tile">
+    <div class="stat-value">Total Meal Replacement</div>
+    <div class="stat-label">for Diabetes Control</div>
+    <div class="stat-foot">
+      <i class="bi bi-link-45deg" aria-hidden="true"></i>
+      <a href="./tmr/">Read more</a>
+    </div>
+  </div>
+<div class="stat-tile">
+    <div class="stat-value">Intermittent Fasting</div>
+    <div class="stat-label">for Diabetes Control</div>
+    <div class="stat-foot">
+      <i class="bi bi-link-45deg" aria-hidden="true"></i>
+      Read more
+    </div>
+  </div>
+<div class="stat-tile">
+    <div class="stat-value">Using GLP-1</div>
+    <div class="stat-label">for Diabetes Control</div>
+    <div class="stat-foot">
+      <i class="bi bi-link-45deg" aria-hidden="true"></i>
+      Read more
+    </div>
+  </div>
+</section>
+```
 
+## Health Surveys
+```{=html}
+<section class="stat-grid" aria-label="Headline results">
+  <div class="stat-tile">
+    <div class="stat-value">Youth Smoking</div>
+    <div class="stat-label">ASH 2025</div>
+    <div class="stat-foot">
+      <i class="bi bi-link-45deg" aria-hidden="true"></i>
+      Read more
+    </div>
+  </div>
+  <div class="stat-tile">
+    <div class="stat-value">Child Growth</div>
+    <div class="stat-label">Annual Survey (2023-2025)</div>
+    <div class="stat-foot">
+      <i class="bi bi-link-45deg" aria-hidden="true"></i>
+      Read more
+    </div>
+  </div>
+</section>
+```

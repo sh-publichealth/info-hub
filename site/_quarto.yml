@@ -27,8 +27,8 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: our-work/index.qmd
-        text: Our Work
+      - href: our-work/tmr/index.qmd
+        text: Diabetes Remission Pilot
 #     - href: whats-new/index.qmd
 #       text: What's New  
 #     - href: our-data/index.qmd
@@ -119,9 +119,15 @@ format:
     description: false
     theme:
       - flatly
-    css: assets/css/styles.css
+    css: 
+      - assets/css/styles.css
+      - assets/css/briefing-ash.css
+      - assets/css/grid.css
+
+resources:
+  - assets/graphics/Coat_of_Arms_of_Saint_Helena.png
 
 bibliography: references.bib
 csl: https://www.zotero.org/styles/harvard-cite-them-right
 
-# touch: 2026-01-30 07:50:48.765
+# touch: 2026-01-31 11:59:20.949
