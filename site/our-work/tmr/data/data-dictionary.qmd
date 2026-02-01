@@ -52,22 +52,22 @@ The differing visit schedules of cases and controls means that we will probably 
 
 | Instrument            | Repeating | Assigned events (Cases)                                      |
 | --------------------- | --------- | ------------------------------------------------------------ |
-| eligibility_screening | No        | Screening *(This will be maintained in the Diabetes Registry)* |
-| participant_admin     | No        | Baseline only                                                |
-| weight                | No        | Baseline, every follow-up visit                              |
-| anthropometry         | No        | baseline, wk12, wk24, wk36, wk52, wk78, wk104                |
-| blood_pressure        | No        | baseline, every follow-up visit                              |
-| glucose_monitor       | No        | baseline, every follow-up visit                              |
-| hba1c                 | No        | baseline, wk12, wk24, wk27, wk36, wk52, wk78, wk104          |
-| liver_labs            | No        | baseline, wk12, wk52, wk104                                  |
-| fibroscan             | No      | baseline, wk12, wk52, wk104                                  |
-| medication            | No        | baseline, every follow-up visit                              |
-| eq5d3l_items          | No        | baseline, wk12, wk52, wk104                                  |
-| paid_items            | No        | baseline, wk12, wk52, wk104                                  |
-| ipaq_sf               | No        | baseline, wk12, wk52, wk104                                  |
-| health_economics      | No        | baseline, wk52, wk104                                        |
+| eligibility_screening 1 | No        | Screening Part 1 *(This will include data imported from the Diabetes Registry)* |
+| eligibility_screening 2 | No        | Screening Part 2 *(Additional in person elibility data)* |
+| participant_admin     | No        | Baseline only  |
+| medication            | No        | baseline, every follow-up visit |
+| weight                | No        | Baseline, every follow-up visit |
+| blood_pressure        | No        | baseline, every follow-up visit |
+| glucose_monitor       | No        | baseline, every follow-up visit |
+| anthropometry         | No        | baseline, wk12, wk24, wk36, wk52, wk78, wk104 |
+| hba1c                 | No        | baseline, wk12, wk24, wk27, wk36, wk52, wk78, wk104 |
+| liver_labs            | No        | baseline, wk12, wk52, wk104  |
+| fibroscan             | No        | baseline, wk12, wk52, wk104      |
+| eq5d3l_items          | No        | baseline, wk12, wk52, wk104  |
+| paid_items            | No        | baseline, wk12, wk52, wk104   |
+| ipaq_sf               | No        | baseline, wk12, wk52, wk104  |
+| health_economics      | No        | baseline, wk52, wk104  |
 | prebaseline_registry  | **Yes**   | prebaseline *(This will be extracted directly from the Diabetes Registry)* |
-
 
 ## Instrument: Recruitment & Screening
 
@@ -305,7 +305,7 @@ I'm suggesting that this information is NOT stored as a separate instrument. We 
 
 # Appendix: Variable Collection Timing, Derived Variables, and Analytical Use  
 **Saint Helena Total Meal Replacement (TMR) Diabetes Remission Evaluation**  
-_(Designed as a practical, analyst-friendly companion to the SAP — with full derivations and equations.)_
+_(A practical, analyst-friendly companion to the SAP.)_
 
 This appendix is organised to mirror the **current REDCap table grouping**:
 
@@ -320,14 +320,14 @@ This appendix is organised to mirror the **current REDCap table grouping**:
 9. `prebaseline_registry`  
 10. `derived_outcomes` (analysis-only)
 
-For **each table**, you get:
+For **each table**, we have:
+
 - A **variable-by-variable table** (collection timing + analytical role),
 - A **derived-variable listing** (what is created post-export),
-- **Explicit equations** defining derived variables (Quarto/PDF-friendly).
+- **Explicit equations** defining derived variables.
 
-Unless stated otherwise, **all derived variables are computed outside REDCap** in analysis code.
+Derived variables are computed outside REDCap using the Stata statistical system.
 
----
 
 ## Appendix A: `eligibility_screening_1`  
 _(Registry-linked pre-screening variables)_
@@ -341,7 +341,7 @@ _(Registry-linked pre-screening variables)_
 | `dolv_registry` | Screening | Date of last clinic visit; used to derive engagement/recency indicator |
 | `ddur_registry` | Derived | Diabetes duration (years); eligibility criterion (≤6 primary; ≤10 contingency) |
 | `diab6_registry` | Derived | Flag for diabetes duration ≤6y; defines core eligible pool |
-| `diab10_registry` | Derived | Flag for diabetes duration ≤10y; contingency planning and sensitivity |
+| `diab10_registry` | Derived | Flag for diabetes duration <6 and ≤10y; contingency planning and sensitivity |
 | `visit12_registry` | Derived | Engagement proxy: ≥1 visit within past 12 months |
 | `tmr_eligible1` | Derived | Composite eligibility flag at registry stage; defines recruitment denominator |
 
@@ -357,8 +357,9 @@ _(Registry-linked pre-screening variables)_
 Let dates be in days. Define the screening reference date as `screen_date` (the date the registry pull is executed, or the screening assessment date if recorded).
 
 **Age at screening (years)**
+
 $$
-\text{age\_screen}_i = \frac{\text{screen\_date}_i - \text{dob}_i}{365.25}
+\text{age\_screen}_i = \frac{ \text{screening\_date}_i - \text{dob}_i}{365.25}
 $$
 
 **Diabetes duration (years)**
@@ -377,14 +378,22 @@ $$
 
 **Eligibility flags**
 $$
-\text{diab6}_i = \mathbb{I}(\text{ddur}_i \le 6), \quad
-\text{diab10}_i = \mathbb{I}(\text{ddur}_i \le 10)
+\text{age65}_i = \mathbb{I}(\text{age\_screen}_i < 65)
+$$ 
+
+$$
+\text{diab6}_i = \mathbb{I}(\text{ddur}_i \le 6)
+$$ 
+
+$$ 
+\text{diab10}_i = \mathbb{I}(\text{ddur}_i > 6 \land \text{ddur}_i \le 10)
 $$
 
 **Composite eligibility (registry stage)**  
-_(extend with BMI and other criteria if added later)_
+_(extend with BMI and other criteria when added later)_
 $$
-\text{tmr\_eligible1}_i = \mathbb{I}(\text{diab6}_i = 1 \land \text{visit12}_i = 1)
+\text{tmr\_eligible1}_i =
+\mathbb{I}(\text{age65}_i = 1 \land \text{diab6}_i = 1 \land \text{visit12}_i = 1)
 $$
 
 ---
@@ -418,7 +427,7 @@ $$
 \text{BMI}_i = \frac{\text{weight}_i}{\text{height}_i^2}
 $$
 
-**Final eligibility (example)**
+**Eligibility (BMI added)**
 $$
 \text{tmr\_eligible2}_i = \mathbb{I}(\text{BMI}_i \ge 25)
 $$
@@ -444,13 +453,14 @@ _(If other criteria are applied at screening visit, add them here as conjunction
 ### C2. Derived variables (analysis-only)
 - `age_baseline` (years)
 - `baseline_date` (defined as first post-consent assessment date; see note below)
-- `analysis_stratum` (A/B; insulin vs non-insulin at baseline) — derived from baseline medication status
+- `analysis_stratum` (A/B; insulin vs non-insulin at baseline)
 
 ### C3. Equations
 
 **Age at baseline**
 $$
-\text{age\_baseline}_i = \frac{\text{baseline\_date}_i - \text{dob}_i}{365.25}
+\text{age\_baseline}_i =
+\frac{\text{baseline\_date}_i - \text{dob}_i}{365.25}
 $$
 
 **Analysis stratum (baseline insulin status)**
@@ -462,54 +472,31 @@ B, & \text{if } \text{insulin\_use}_{i0} = 1
 \end{cases}
 $$
 
-**Baseline timing note (recommended operational rule)**  
-Define `baseline_date` as the date of the baseline assessment (first measurement visit) and enforce a window rule if desired:
+**Baseline timing note (recommended operational rule)**
 $$
-\text{baseline\_ok}_i = \mathbb{I}(|\text{baseline\_date}_i - \text{programme\_start}_i| \le 14 \text{ days})
+\text{baseline\_ok}_i =
+\mathbb{I}(|\text{baseline\_date}_i - \text{programme\_start}_i| \le 14 \text{ days})
 $$
 
 ---
 
 ## Appendix D: `measurements_medications`  
-_(Weight, blood pressure, glucose monitoring, medication summary)_
 
 ### D1. Variable collection and analytical use
 
 | Variable | Collected when | Detailed analytical use |
 |---|---|---|
-| `visit_date` | All visits | Defines time axis; used to map visits into weeks/months for models |
-| `weight` | Baseline + follow-ups | **Primary continuous outcome**; mixed-effects + DiD; forms ≥15 kg endpoint |
-| `sbp` | Baseline + follow-ups | Secondary outcome; mixed-effects; safety/medication context |
-| `dbp` | Baseline + follow-ups | Secondary outcome; mixed-effects; safety/medication context |
-| `glucose` | Follow-ups | Clinical monitoring context; descriptive / safety summaries |
-| `diabetes_meds` | Baseline + follow-ups | Part of remission definition; med burden trajectory |
-| `hypertension_meds` | Baseline + follow-ups | Context for BP interpretation; de-intensification summaries |
-| `insulin_use`* | Baseline + follow-ups | Stratification + exploratory endpoint (off-insulin) |
-| `insulin_dose`* | Baseline + follow-ups | Exploratory continuous outcome; cost modelling input |
-
-\* If not currently captured in this table, treat as extracted from clinic notes/registry and merged at analysis stage.
-
-### D2. Derived variables (analysis-only)
-**Weight**
-- `weight_change_kg(t)`
-- `weight_change_pct(t)`
-- `wl_15kg_12m` (primary)
-- `wl_10pct_12m` (secondary/supportive)
-- (optional) `weight_trajectory_slope`
-
-**BP**
-- `sbp_change(t)`, `dbp_change(t)`
-- (optional) `hypertension_control_flag` (if targets defined)
-
-**Medication**
-- `meds_none(t)` / `meds_any(t)`
-- `med_burden_level(t)` (ordinal summary)
-- `insulin_off_12m` (exploratory)
-- `insulin_dose_change(t)` (exploratory)
+| `visit_date` | All visits | Defines time axis; used to map visits into weeks/months |
+| `weight` | Baseline + follow-ups | **Primary continuous outcome** |
+| `sbp` | Baseline + follow-ups | Secondary outcome |
+| `dbp` | Baseline + follow-ups | Secondary outcome |
+| `glucose` | Follow-ups | Clinical monitoring |
+| `diabetes_meds` | Baseline + follow-ups | Part of remission definition |
+| `hypertension_meds` | Baseline + follow-ups | Context for BP interpretation |
+| `insulin_use`* | Baseline + follow-ups | Stratification + exploratory endpoint |
+| `insulin_dose`* | Baseline + follow-ups | Exploratory continuous outcome |
 
 ### D3. Equations
-
-Let baseline be \(t=0\), and 12-month assessment be \(t=12m\). Let \(W_{it}\) be weight for person \(i\) at time \(t\).
 
 **Absolute weight change**
 $$
@@ -521,19 +508,15 @@ $$
 \%\Delta W_{it} = 100 \times \frac{W_{it} - W_{i0}}{W_{i0}}
 $$
 
-**≥15 kg weight loss (primary endpoint)**
+**≥15 kg weight loss**
 $$
 Y^{15kg}_i = \mathbb{I}(W_{i0} - W_{i,12m} \ge 15)
 $$
 
-**≥10% weight loss (supportive)**
+**≥10% weight loss**
 $$
-Y^{10\%}_i = \mathbb{I}\left(\frac{W_{i0} - W_{i,12m}}{W_{i0}} \ge 0.10\right)
-$$
-
-**BP change**
-$$
-\Delta SBP_{it} = SBP_{it} - SBP_{i0}, \quad \Delta DBP_{it} = DBP_{it} - DBP_{i0}
+Y^{10\%}_i =
+\mathbb{I}\!\left(\frac{W_{i0} - W_{i,12m}}{W_{i0}} \ge 0.10\right)
 $$
 
 **Medication-any indicator**
@@ -541,160 +524,39 @@ $$
 \text{meds\_any}_{it} = \mathbb{I}(\text{diabetes\_meds}_{it} \ne 0)
 $$
 
-**Off-insulin at 12m (exploratory insulin cohort)**
+**Off-insulin at 12 months**
 $$
 Y^{ins\_off}_i = \mathbb{I}(\text{insulin\_use}_{i,12m} = 0)
-$$
-
-**Insulin dose change**
-$$
-\Delta D^{ins}_{it} = D^{ins}_{it} - D^{ins}_{i0}, \quad
-\%\Delta D^{ins}_{it} = 100 \times \frac{D^{ins}_{it} - D^{ins}_{i0}}{D^{ins}_{i0}}
-$$
-
----
-
-## Appendix E: `anthropometry`
-
-### E1. Variable collection and analytical use
-
-| Variable | Collected when | Detailed analytical use |
-|---|---|---|
-| `height` | Baseline | Used to derive BMI for baseline risk profiling and models |
-| `waist` | Selected follow-ups | Secondary adiposity outcome; descriptive + exploratory models |
-| `hip` | Annual | Used to derive waist–hip ratio; descriptive profiling |
-
-### E2. Derived variables (analysis-only)
-- `bmi(t)` (if weight is time-varying)
-- `whr(t)` (waist–hip ratio)
-
-### E3. Equations
-
-**BMI at time \(t\)**
-$$
-BMI_{it} = \frac{W_{it}}{H_i^2}
-$$
-
-**Waist–hip ratio**
-$$
-WHR_{it} = \frac{Waist_{it}}{Hip_{it}}
 $$
 
 ---
 
 ## Appendix F: `hba1c`
 
-### F1. Variable collection and analytical use
-
-| Variable | Collected when | Detailed analytical use |
-|---|---|---|
-| `hba1c` | Pre-baseline, baseline, follow-ups | **Primary glycaemic outcome**; continuous + binary endpoints; defines relapse |
-
-### F2. Derived variables (analysis-only)
-- `hba1c_change(t)`
-- `remission_12m` (primary)
-- `tight_control_12m` (secondary)
-- `relapse` (secondary)
-- (optional) `hba1c_trajectory_slope`
-
 ### F3. Equations
-
-**HbA1c change**
-$$
-\Delta HbA1c_{it} = HbA1c_{it} - HbA1c_{i0}
-$$
 
 **Tight control at 12m**
 $$
 Y^{tight}_i = \mathbb{I}(HbA1c_{i,12m} < 42)
 $$
 
-**Remission at 12m (SAP definition)**
+**Remission at 12m**
 $$
-Y^{rem}_i = \mathbb{I}\Big(HbA1c_{i,12m} < 48 \ \land\  \text{No GL meds for } \ge 3 \text{ months prior}\Big)
-$$
-
-**Relapse (after remission achieved)**
-$$
-Y^{relapse}_i = \mathbb{I}\Big(\exists t>t_{rem}: HbA1c_{it} \ge 48\Big)
+Y^{rem}_i =
+\mathbb{I}\!\Big(HbA1c_{i,12m} < 48 \land \text{No GL meds for } \ge 3 \text{ months}\Big)
 $$
 
----
-
-## Appendix G: `remaining_items`  
-_(Liver labs, FibroScan, EQ-5D-3L, PAID, IPAQ-SF, EMA)_
-
-### G1. Liver biochemistry
-
-#### Variable table
-| Variable | Collected when | Detailed analytical use |
-|---|---|---|
-| `alt` | Baseline, wk12, 12m, 24m | Exploratory metabolic/liver response marker (primary liver enzyme of interest) |
-| `ast` | Baseline + follow-ups | Interpreted alongside ALT; ratio exploration |
-| `alp` | Baseline + follow-ups | Descriptive liver context |
-| `ggt` | Baseline + follow-ups | Exploratory stress marker |
-| `bilirubin_total` | Baseline + follow-ups | Safety descriptor |
-| `albumin` | Baseline + follow-ups | Liver synthetic function; safety |
-| `protein_total` | Baseline + follow-ups | Descriptive only |
-
-#### Derived variables + equations
-**AST:ALT ratio**
+**Relapse**
 $$
-R^{AST/ALT}_{it} = \frac{AST_{it}}{ALT_{it}}
+Y^{relapse}_i =
+\mathbb{I}\!\Big(\exists t>t_{rem}: HbA1c_{it} \ge 48\Big)
 $$
 
 ---
 
-### G2. FibroScan
+## Appendix G: PAID
 
-#### Variable table
-| Variable | Collected when | Detailed analytical use |
-|---|---|---|
-| `lsm_kpa` | Baseline + follow-ups | Exploratory liver stiffness |
-| `cap_dbm` | Baseline + follow-ups | Exploratory steatosis |
-| `fibrosis_stage` | Derived | Descriptive staging (if algorithm applied) |
-| `steatosis_grade` | Derived | Descriptive staging (if algorithm applied) |
-
-#### Derived notes
-Where stage/grade derivation relies on vendor cut-points, record the cut-points in code and version them.
-
----
-
-### G3. EQ-5D-3L
-
-#### Variable table
-| Variable | Collected when | Detailed analytical use |
-|---|---|---|
-| `eq_mob`–`eq_ad` | Baseline, wk12, 12m, 24m | Domain-level transitions; descriptive and exploratory ordinal models |
-| `eq_vas` | Baseline, wk12, 12m, 24m | Continuous QoL outcome; mixed-effects models |
-
-#### Derived variables + equations
-Let the health state be:
-$$
-\mathbf{H}_i = (M_i, SC_i, UA_i, PD_i, AD_i)
-$$
-
-Utility is computed using the UK tariff as a mapping function:
-
-
-$$
-U_i = f_{UK}(\mathbf{H}_i)
-$$
-(Implementation note: keep the tariff table in code, with citation/version.)
-
----
-
-### G4. PAID (Problem Areas in Diabetes)
-
-#### Variable table
-| Variable | Collected when | Detailed analytical use |
-|---|---|---|
-| `paid01`–`paid20` | Baseline, wk12, 12m, 24m | Scale construction, item checks, missingness diagnostics |
-
-#### Derived variables + equations
-Let each item \(Q_{ij}\in\{0,1,2,3,4\}\).
-
-**PAID total score (0–100)**
+**PAID total score**
 $$
 PAID_i = 1.25 \times \sum_{j=1}^{20} Q_{ij}
 $$
@@ -703,177 +565,6 @@ $$
 $$
 Y^{PAID40}_i = \mathbb{I}(PAID_i \ge 40)
 $$
-
----
-
-### G5. IPAQ-SF (Short Form)
-
-#### Variable table (explicit inputs)
-| Variable | Collected when | Detailed analytical use |
-|---|---|---|
-| `ipaq_walk_days` | Baseline, wk12, 12m, 24m | Input to walking MET-min/week |
-| `ipaq_walk_mins` | Baseline, wk12, 12m, 24m | Input to walking MET-min/week |
-| `ipaq_mod_days` | Baseline, wk12, 12m, 24m | Input to moderate MET-min/week |
-| `ipaq_mod_mins` | Baseline, wk12, 12m, 24m | Input to moderate MET-min/week |
-| `ipaq_vig_days` | Baseline, wk12, 12m, 24m | Input to vigorous MET-min/week |
-| `ipaq_vig_mins` | Baseline, wk12, 12m, 24m | Input to vigorous MET-min/week |
-| `ipaq_sit_mins` | Baseline, wk12, 12m, 24m | Sedentary behaviour descriptor (min/day) |
-
-#### Derived variables (analysis-only)
-- `met_walk`
-- `met_mod`
-- `met_vig`
-- `met_total`
-- `ipaq_category` (low/moderate/high)
-
-#### Equations (IPAQ scoring)
-Let \(d^{walk}_i\) = walk days/week, \(m^{walk}_i\) = walk minutes/day (and similarly for moderate and vigorous).
-
-$$
-MET^{walk}_i = 3.3 \times d^{walk}_i \times m^{walk}_i
-$$
-$$
-MET^{mod}_i = 4.0 \times d^{mod}_i \times m^{mod}_i
-$$
-
-$$
-MET^{vig}_i = 8.0 \times d^{vig}_i \times m^{vig}_i
-$$
-
-$$
-MET^{total}_i = MET^{walk}_i + MET^{mod}_i + MET^{vig}_i
-$$
-
-**Activity category**  
-Use standard IPAQ categorisation rules; implement in code and version-control the rule-set (because “standard” has edge-case handling).
-
----
-
-### G6. EMA (if implemented)
-
-#### Variable table
-| Variable | Collected when | Detailed analytical use |
-|---|---|---|
-| `ema_adherence` | Daily windows | Aggregated predictor of weight/HbA1c change; exploratory mediation |
-| `ema_craving` | Daily windows | Contextual predictor |
-| `ema_mood` | Daily windows | Psychosocial predictor |
-| `ema_stress` | Daily windows | Psychosocial predictor |
-| `ema_context` | Daily windows | Environmental descriptor |
-
-#### Derived variables + equations
-Example aggregated adherence score (mean within person):
-$$
-\overline{A}_i = \frac{1}{n_i}\sum_{t=1}^{n_i} A_{it}
-$$ 
-Variance / instability (optional):
-
-$$ 
-Var(A_i) = \frac{1}{n_i-1}\sum_{t=1}^{n_i}(A_{it}-\overline{A}_i)^2
-$$
-
----
-
-## Appendix H: `health_economics`
-
-### H1. Variable collection and analytical use
-
-| Variable | Collected when | Detailed analytical use |
-|---|---|---|
-| `he_currency` | Baseline | Costing metadata |
-| `he_insulin_supplied` | Each interval | Exposure input for insulin cost estimation |
-| `he_metformin_supplied` | Each interval | Exposure input for metformin cost estimation |
-| `he_antihyp_supplied` | Each interval | Exposure input for antihypertensive cost estimation |
-| `he_notes` | Any time | Context for anomalies (interruptions, substitutions, etc.) |
-
-### H2. Derived variables (analysis-only)
-- `cost_insulin_interval`
-- `cost_metformin_interval`
-- `cost_antihyp_interval`
-- `cost_total_interval`
-- `cost_change_baseline_to_12m`
-- `programme_cost_estimate` (if TMR supply weeks recorded elsewhere)
-
-### H3. Equations
-
-Let \(q_{kit}\) be quantity supplied of drug \(k\) for person \(i\) in interval \(t\), and \(p_k\) be the unit price.
-
-**Interval drug cost**
-$$
-C^{drug}_{it} = \sum_{k} q_{kit}\, p_k
-$$
-
-**Cost change (baseline vs 12m interval)**
-$$
-\Delta C_i = C_{i,12m} - C_{i,0}
-$$
-
-**Budget impact summary**
-$$
-\overline{\Delta C} = \frac{1}{N}\sum_{i=1}^{N} \Delta C_i
-$$
-
-**Scope statement (important):** no ICER/QALY modelling in this evaluation (budget impact and cost-offset only).
-
----
-
-## Appendix I: `prebaseline_registry`
-
-### I1. Variable collection and analytical use
-
-| Variable | Collected when | Detailed analytical use |
-|---|---|---|
-| `pre_date` | ≥3 pre-baseline | Aligns history time axis; supports DiD diagnostics |
-| `pre_weight` | ≥3 pre-baseline | Pre-trend diagnostics for weight; DiD robustness |
-| `pre_hba1c` | ≥3 pre-baseline | Pre-trend diagnostics for HbA1c; DiD robustness |
-| `pre_sbp` / `pre_dbp` | ≥3 pre-baseline | Secondary pre-trend diagnostics |
-| `pre_diabetes_meds` | ≥3 pre-baseline | Medication stability context |
-
-### I2. Derived variables (analysis-only)
-- `pretrend_weight_slope`
-- `pretrend_hba1c_slope`
-- `parallel_trends_flag` (diagnostic, not a model variable)
-
-### I3. Equations
-
-If at least two pre-baseline points exist, estimate individual slope (simple version):
-
-$$
-s^{W}_i = \frac{W_{i,t_2} - W_{i,t_1}}{t_2 - t_1}
-\quad \text{(or via linear regression over all pre points)}
-$$
-
-**Parallel trends diagnostic (conceptual)**  
-For outcome \(Y\), check whether:
-$$
-E[\Delta Y^{control}_{pre}] \approx E[\Delta Y^{TMR}_{pre}]
-$$
-Large deviations downgrade causal interpretation of DiD.
-
----
-
-## Appendix J: Derived Outcomes (analysis-only)  
-_(These are not in REDCap as variables; they are computed post-export.)_
-
-### J1. Outcome definitions table
-
-| Outcome | Exact calculation | Model family | SAP role |
-|---|---|---|---|
-| ≥15 kg weight loss | \(W_{i0} - W_{i,12m} \ge 15\) | Log-binomial / Poisson | Primary |
-| Diabetes remission | \(HbA1c_{i,12m} < 48\) and no GL meds ≥3 months | Log-binomial / Poisson | Primary |
-| Tight glycaemic control | \(HbA1c_{i,12m} < 42\) | Logistic / descriptive | Secondary |
-| HbA1c change | \(HbA1c_{it} - HbA1c_{i0}\) | Linear mixed-effects | Secondary |
-| Relapse | \(HbA1c_{it} \ge 48\) after remission | Descriptive | Secondary |
-| EQ-5D utility | \(U_i = f_{UK}(H_i)\) | Linear mixed-effects | Secondary |
-| PAID high distress | \(PAID_i \ge 40\) | Logistic / Poisson | Secondary |
-| MET-min/week | \(MET^{total}_i\) per IPAQ | Linear / descriptive | Secondary |
-| Off-insulin with control | insulin=0 and \(HbA1c<53\) at 12m | Logistic | Exploratory (insulin cohort) |
-
-### J2. Key equations (canonical)
-**Difference-in-Difference core model (continuous outcome)**
-$$
-Y_{it} = \beta_0 + \beta_1 T_i + \beta_2 Post_t + \beta_3 (T_i \times Post_t) + u_i + \epsilon_{it}
-$$
-\(\beta_3\) is the DiD estimand (the extra change attributable to TMR beyond baseline differences and general time trends).
 
 ---
 
