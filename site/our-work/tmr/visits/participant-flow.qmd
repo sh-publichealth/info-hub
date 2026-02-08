@@ -31,7 +31,7 @@ R2(**R2.** Advert Response)
 R3(**R3.** From Clinic)
 R4(**R4.** Find Person in<br/>REDCap Database)
 R4a(**R4a.** If not Found<br/>Add to Database)
-R5(**R5.** Make Contact.<br/>Deliver Telephone Script)
+R5(**R5.** **a.** Complete database details<br/>**b.** Make Contact.<br/>**c.** Deliver Telephone Script)
 R1 --> R4 
 R2 --> R4
 R3 --> R4
@@ -47,6 +47,8 @@ R4 --> R5
 **R2/R3.** For potential participants responding to the project advert or recruited from clinic, search the REDCap database to see if they exist. If not on the database, create and complete a new **Screening Record** for this person.  
 
 **R4.** Search the REDCap database for the person in question. You will use the person's REDCap Screening Form during the recruitment process.
+
+**R5.** Not every potential participant will have a complete record in our project database. All missing data items must be completed. Especially important is the completion of contact details (*phone number(s)*, *email address*)
 :::
 
 ## Part 2. Participant Choices
@@ -80,7 +82,7 @@ R8 -.-> R9
 
 **R8.** If ***not interested***, thank the person for their time. 
 
-**R9.** For each possible outcome, updates to the REDCap Screening Form will be required. Follow the [REDCap guidance](./redcap/index.qmd) on this.
+**R9.** For each possible outcome, updates to the REDCap Screening Form will be required. This will be a variable that records the contact's interest or otherwise.
 :::
 
 # The Screening Visit
@@ -217,7 +219,7 @@ B3 --> B4
 - Review our data confidentiality guarantee
 - Review our plans for data use 
 
-**B4.** Obtain informed consent via the REDCap eConsent process. See the [REDCap guidance](./redcap/index.qmd) for details.
+**B4.** Obtain informed consent via the REDCap eConsent process. See the REDCap training for details.
 :::
 
 
