@@ -90,15 +90,15 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 | Develop E-consent               | E-Consent process available    | JC / IH      | 🟦 In progress |
 | Develop recruitment report      | REDCap Report available        | JC / IH      | 🟦 In progress |
 | Advert in local paper + Facebook | Advert responses list                      | SJ / SI     | 🟦 In Progress |
-| Test Recruitment Script | Final Script                      | AM / GE     | 🟨 Planned |
-| Create SOP (Ht / Wt)  | Final SOP                      | AM / GE     | 🟨 Planned |
-| Create SOP (Fibroscan)     | Final SOP                      | AM / GE     | 🟨 Planned |
-| Create SOP (Hip & Waist Circum)  | Final SOP                      | AM / GE     | 🟨 Planned |
-| Create SOP (Blood Pressure)  | Final SOP   | AM / GE     | 🟨 Planned |
+| Test Recruitment Script | Final Script                      | AM / GE     | 🟩 Complete |
+| Create SOP (Ht / Wt)  | Final SOP                      | AM / GE     | 🟩 Complete |
+| Create SOP (Fibroscan)     | Final SOP                      | AM / GE     | 🟦 In progress |
+| Create SOP (Hip & Waist Circum)  | Final SOP                      | AM / GE     | 🟦 In progress |
+| Create SOP (Blood Pressure)  | Final SOP   | AM / GE     | 🟦 In progress |
 | Create SOP (Blood Sugar Levels - finger prick)   | Final SOP                      | AM / GE     | 🟨 Planned |
-| Discuss & Decide on HbA1C inclusion **[1, 2]**.                 | Final Decision                      | SJ / JP     | 🟨 Planned |
-| From EMIS. List of HbA1C through time (w/dates).                 | Final Decision                      | SJ / JP     | 🟨 Planned |
-| Use HbA1C list - add to database.                 | Final Decision                      | IH / JC     | 🟨 Planned |
+| Discuss & Decide on HbA1C inclusion **[1, 2]**.                 | Final Decision                      | SJ / JP     | 🟩 Complete |
+| From EMIS. List of HbA1C through time (w/dates).                 | Final Decision                      | SJ / JP     | 🟩 Complete |
+| Use HbA1C list - add to database.                 | Final Decision                      | IH / JC     | 🟩 Complete |
 
 **[1] NOTE1.** HbA1C upper limit of 87 mmol/mol. Rationale | not a criterion in DiRECT trial?</br>
 **[2] NOTE2.** HbA1C lower limits of 43/48 mmol/mol. Rationale | those on insulin and controlled would therefore be ineligible?
@@ -107,9 +107,9 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 
 | Task                                  | Output                | Responsible            | Status    |
 | ------------------------------------- | --------------------- | ---------------------- | --------- |
-| Database testing                      | Database tested       | IH / SJ / JP / SI / SG | 🟨 Planned |
+| Database testing                      | Database tested       | IH / SJ / JP / SI / SG | 🟦 In progress |
 | Initial contact (list + advert)       | Screening visits scheduled | SI / AM / GE      | 🟦 In progress |
-| Expansion of Study Docs Website       | Draft 2 doc repository | IH                    | 🟦 In progress |
+| Expansion of Study Docs Website       | Draft 2 doc repository | IH                    | 🟩 Complete |
 
 
 ## By Fri 13 Feb 2026
@@ -117,8 +117,8 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 | ---------------------------- | ------------------------- | ------------ | ----------------- |
 | Clearing shipment            | Supplies cleared          | RJames       | 🟥 Critical / risk |
 | Database training (Part 1)   | Training completed        | JC / IH / SJ | 🟨 Planned         |
-| FibroScan training           | Operators trained         | —            | 🟨 Planned         |
-| Screening training           | Operators trained         | JP, SI, SJ   | 🟨 Planned         |
+| FibroScan training           | Operators trained         | —            | 🟩 Complete         |
+| Screening training           | Operators trained         | JP, SI, SJ   | 🟦 In progress      |
 | Baseline training            | Operators trained         | JP, SI, SJ   | 🟨 Planned         |
 
 

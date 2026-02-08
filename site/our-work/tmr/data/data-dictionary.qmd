@@ -11,16 +11,20 @@ format:
      documentclass: report
      margin-left: 30mm
      margin-right: 30mm
-
+#     include-in-header:
+#      - assets/tex/sh-house-style.tex
+#      - assets/tex/report-added-style.tex
 date: last-modified
 date-format: "D MMM YYYY"
 draft: false
+resources:
+  - assets/images/Coat_of_Arms_of_Saint_Helena.png
 ---
 
 
 ## Data Collection Schedule Summary
 
-#### Longitudinal Timepoints
+#### Longitudinal Timepoints 
 
 | Phases | Event label | Approx weeks |
 |---|---|---|

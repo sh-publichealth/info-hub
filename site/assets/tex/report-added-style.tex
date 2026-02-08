@@ -1,0 +1,27 @@
+% report-added-style.tex
+% Extra, document-specific tweaks layered on top of sh-house-style.tex
+% (kept deliberately small and “path-robust”)
+
+% Ensure graphics support is available (safe even if already loaded elsewhere)
+\RequirePackage{graphicx}
+
+% In Quarto, the LaTeX "working directory" can vary (project root vs the .qmd folder vs a temp dir).
+% So we provide a short search list that covers the common cases.
+\graphicspath{%
+  {assets/images/}%
+  {../assets/images/}%
+  {../../assets/images/}%
+  {../../../assets/images/}%
+}
+
+% Small logo (header, page 2+)
+% Prefer filename only, and let \graphicspath do the finding.
+\renewcommand{\IanLogoPath}{Coat_of_Arms_of_Saint_Helena.png}
+
+% Large logo (title page only)
+\renewcommand{\IanTitleLogoPath}{Coat_of_Arms_of_Saint_Helena.png}
+\renewcommand{\IanTitleLogoWidth}{0.1\textwidth}
+
+% First page top and bottom margin overrides
+\setlength{\droptitle}{-2.0cm}
+\renewcommand{\IanTitleLogoVSpace}{0.4em}
