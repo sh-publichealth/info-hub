@@ -31,7 +31,11 @@ format:
 
 ### Introduction
 
-The height of eligible participants is taken to help calculate their body mass index (BMI), which is their weight relative to their height.
+The height of eligible participants is taken to help calculate their body mass index (BMI), which is their weight relative to their height. For those interested, BMI is calculated as follows:
+$$
+\mathrm{BMI} = \frac{\text{weight (kg)}}{\text{height (m)}^2}
+$$
+We require a BMI of $25\,\mathrm{kg/m^2}$ or greater for entry to our TMR pilot. Our project database will do this calculation for you...
 
 ### Equipment
 
