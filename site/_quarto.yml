@@ -82,8 +82,8 @@ website:
                 href: our-work/tmr/sops/screening-sop.qmd
               - text: Eating Disorder SOP
                 href: our-work/tmr/sops/eating-disorder-sop.qmd
-#              - text: Height & Weight SOP 
-#                href: our-work/tmr/sops/height-weight-sop.qmd
+              - text: Height & Weight SOP 
+                href: our-work/tmr/sops/height-weight-sop.qmd
               - text: Baseline SOP
                 href: our-work/tmr/sops/baseline-sop.qmd
 #              - text: Missed Visit SOP
@@ -130,4 +130,4 @@ resources:
 bibliography: references.bib
 csl: https://www.zotero.org/styles/harvard-cite-them-right
 
-# touch: 2026-02-08 18:00:35.995
+# touch: 2026-02-09 16:42:58.178

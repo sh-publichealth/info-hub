@@ -2,15 +2,82 @@
 title: "Height & Weight Measurement SOP"
 subtitle: "Guidance for Study Staff"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
-author: Ian Hambleton, Selvi Jeyaseelan
-format: 
-   html:
-     format-links: true 
-#   pdf:
-#     toc: true
-#     documentclass: report
+author: Albert Meij
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
 
 date: last-modified
 date-format: "D MMM YYYY"
-draft: true
+draft: false
 ---
+
+---
+title: "Standard Operating Procedure: Measuring Height and Weight"
+subtitle: "Total Meal Replacement (TMR) Pilot"
+format:
+  html:
+    toc: false
+  pdf:
+    toc: false
+---
+
+## Measuring Height
+
+### Introduction
+
+The height of eligible participants is taken to help calculate their body mass index (BMI), which is their weight relative to their height.
+
+### Equipment
+
+Portable height/length measuring device.
+
+### Procedure
+
+| Step | Action |
+|:-:|--------|
+| 1 | Ask the participant to remove their footwear (shoes, slippers, sandals, etc), head gear (hat, cap, hair bows, comb, ribbons, etc). Any fancy or high hairdos may have to be pressed. |
+|  | **Note:** If it would be insensitive to seek removal of a scarf or veil, the measurement may be taken over light fabric. |
+| 2 | Ask the participant to stand on the board facing you. |
+| 3 | Ask the participant to stand with feet together, heels against the back board, and knees straight. |
+| 4 | Ask the participant to look straight ahead and not tilt their head up. |
+| 5 | Make sure eyes are the same level as the ears. |
+| 6 | Move the measure arm gently down onto the head of the participant and ask the participant to breathe in and stand tall. |
+| 7 | Read the height in centimetres at the exact point to the nearest mm. |
+| 8 | Ask the participant to step away from the measuring board. |
+| 9 | Record the height measurement in centimetres and device ID. |
+
+
+## Measuring Weight
+
+### Introduction
+
+The weight of eligible participants is taken to help determine their body mass index (BMI), which is their weight relative to their height.
+
+### Equipment
+
+Portable weighing scale.
+
+### Set-up Requirements
+
+Make sure the scales are placed on a firm, flat surface. Do not place the scales on:
+
+- carpet  
+- a sloping surface  
+- a rough, uneven surface  
+
+### Procedure
+
+| Step | Action |
+|:-:|--------|
+| 1 | Ask the participant to remove their footwear (shoes, slippers, sandals, etc) and socks. They should also take off any heavy belts and empty out their pockets of mobiles, wallets and coins. |
+| 2 | Ask the participant to step onto the scale with one foot on each side of the scale. |
+| 3 | Ask the participant to stand still, face forward, place arms at their side, and wait until asked to step off. |
+| 4 | Record the weight in kilograms and device ID. |
+|  | If the participant wants to know their weight in pounds, convert by multiplying the measured weight by 2.2. |
+
