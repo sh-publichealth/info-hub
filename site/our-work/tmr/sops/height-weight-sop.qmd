@@ -41,7 +41,7 @@ We require a BMI of $25\,\mathrm{kg/m^2}$ or greater for entry to our TMR pilot.
 
 ### Equipment
 
-Portable height/length measuring device.
+Height measuring device (available in diabetes clinic room and outpatient clinic room 4).
 
 ### Procedure
 
@@ -67,7 +67,7 @@ The weight of eligible participants is taken to help determine their body mass i
 
 ### Equipment
 
-Portable weighing scale.
+Weighing scales. 
 
 ### Set-up Requirements
 
