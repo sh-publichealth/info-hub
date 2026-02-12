@@ -80,7 +80,7 @@ Potential participants may be identified through:
 
 ### 2. Initial Contact
 
-Explain:
+This can be in-person or over the phone. Explain:
 
 - This is a diabetes remission *service*, not a research trial
 - Participation is voluntary
@@ -89,19 +89,16 @@ Explain:
 Provide a brief description of:
 
 - Total diet replacement phase
-- Follow-on food reintroduction and maintenance
-- Time commitment
+- Follow-on food reintroduction and maintenance *(this should be very brief - just one or two sentences)*
+- Time commitment *(this should be very brief)*
 
 ### 3. Screening Assessment
 
 Confirm or collect the following:
 
-**Core eligibility**
+**Eligibility Items to be Re-Confirmed at face-to-face visit**
 
-- Age within programme limits
-- HbA1C within programme limits
 - Type 2 diabetes diagnosis
-- Duration of diabetes
 - Recent clinic attendance
 - Body Mass Index (measured or recent)
 

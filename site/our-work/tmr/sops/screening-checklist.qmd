@@ -27,28 +27,9 @@ draft: false
 
 **Location / mode:** ☐ In person ☐ Telephone
 
-
 ## Before the Screening Visit (TICK when COMPLETED)
 
-  $\square$ Participant identified from an approved source (registry list / clinic / referral / self-referral)
-
-  $\square$ Screening appointment scheduled
-
-  $\square$ Appropriate time allocated
-
-## During the Screening Visit
-
-### Programme Explanation (TICK when COMPLETED)
-
-  $\square$ Explained that this is a *service*, not a research study
-
-  $\square$ Voluntary nature of participation confirmed
-
-  $\square$ Screening explained as an eligibility and safety check only
-
-  $\square$ Overview of TMR, food reintroduction, and maintenance phases provided
-
-### Eligibility Checks (TICK if ELIGIBILITY MET)
+### Initial Eligibility Checks (TICK if ELIGIBILITY MET)
 
   $\square$ Age within programme limits
 
@@ -75,6 +56,22 @@ draft: false
   $\square$ Other significant exclusions considered
   
   $\square$ Borderline eligibility identified and escalated (if applicable)
+
+### Pre-Visit Tasks (TICK when COMPLETED)
+
+  $\square$ Screening appointment scheduled
+
+## During the Screening Visit
+
+### Programme Explanation (TICK when COMPLETED)
+
+  $\square$ Explained that this is a *service*, not a research study
+
+  $\square$ Voluntary nature of participation confirmed
+
+  $\square$ Screening explained as an eligibility and safety check only
+
+  $\square$ Overview of TMR, food reintroduction, and maintenance phases provided
 
 ### Participant Understanding (TICK when COMPLETED)
 
