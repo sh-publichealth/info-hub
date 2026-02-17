@@ -44,7 +44,7 @@ include-in-header:
       \renewcommand{\headrulewidth}{0pt}
       \renewcommand{\footrulewidth}{0pt}
       \fancyfoot[L]{\scriptsize V 1.0 -- \today}
-       \fancyfoot[C]{\scriptsize Participant initials:\ \underline{\hspace{1.5cm}}\quad Date:\ \underline{\hspace{1cm}}}
+    %   \fancyfoot[C]{\scriptsize Participant initials:\ \underline{\hspace{1.5cm}}\quad Date:\ \underline{\hspace{1cm}}}
       \fancyfoot[R]{\scriptsize Page \thepage}
     }
 
@@ -81,9 +81,10 @@ $\square$ I understand what the programme involves, including:
 - Ongoing weight-maintenance support
 - Regular clinical monitoring
 
-$\square$ I understand that participation is voluntary.
 
 \section*{2. Voluntary Participation}
+
+$\square$ I understand that participation is voluntary.
 
 $\square$ I understand that I am free to withdraw from the programme at any time without giving a reason.
 
@@ -116,7 +117,7 @@ $\square$ I agree that my anonymised data may be used in future research or serv
 
 $\square$ I understand that no information that identifies me personally will be shared outside the clinical team.
 
-\section*{6. Questionnaires and Interviews (Optional)}
+\section*{6. Questionnaires and Interviews}
 
 $\square$ I agree to complete questionnaires about my health, wellbeing, and experience of the programme.
 

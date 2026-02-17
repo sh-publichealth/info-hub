@@ -31,14 +31,13 @@ The aim is to retain operational truth while keeping the document readable, upda
 These milestones define the critical path of the programme. They change rarely and should remain short and readable.
 
 | Milestone                                         | Target date | Dependencies / notes                                |
-| ------------------------------------------------- | ----------- | --------------------------------------------------- |
+| ------------------------------------------ | -------------- | -------------------------------------------- |
 | Information gathering from<br/>Counterweight complete | 30-JAN-26    | Medical review, screening scope, app role clarified |
 | Screening tools and scheduler live                | 30-JAN-26    | REDCap build and testing complete                   |
 | Ethics approval or waiver                         | 23-FEB-26    | Submission to SHG ethics + Leeds                    |
-| Screening period starts                           | 16-FEB-26    | Database operational / training completed           |
-| Screening period ends                             | 16-FEB-26    | Database operational / training completed           |
-| Screening complete                                | 17-APR-26    | May complete earlier if recruitment target achieved |
-| Baseline data collection complete                 | 17-APR-26    | St Helena (only)                                    |
+| Screening period starts                           | 02-MAR-26    | Database operational / training completed           |
+| Baseline period starts                            | 09-MAR-26    | Database operational / training completed           |
+| Baseline data collection complete                 | 27-APR-26    | St Helena (only)                                    |
 | First TMR cohort completes 12 weeks               | JUL 2026    | Supply chain stable                                 |
 | 6-month follow-up complete                        | OCT 2026    | Retention maintained                                |
 | 12-month follow-up complete                       | APR 2027    | Primary outcomes                                    |
@@ -87,8 +86,7 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 | Develop REDCap database         | REDCap database draft          | JC / IH      | 🟦 In progress |
 | Develop screening scheduler     | Screening scheduler in REDCap  | JC / IH      | 🟦 In progress |
 | Develop baseline (etc) scheduler | Main scheduler in REDCap      | JC / IH      | 🟦 In progress |
-| Develop E-consent               | E-Consent process available    | JC / IH      | 🟦 In progress |
-| Develop recruitment report      | REDCap Report available        | JC / IH      | 🟦 In progress |
+| Develop Consent               | E-Consent process available    | JC / IH      | 🟩 Complete |
 | Advert in local paper + Facebook | Advert responses list                      | SJ / SI     | 🟦 In Progress |
 | Test Recruitment Script | Final Script                      | AM / GE     | 🟩 Complete |
 | Create SOP (Ht / Wt)  | Final SOP                      | AM / GE     | 🟩 Complete |
@@ -118,7 +116,7 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 | Clearing shipment            | Supplies cleared          | RJames       | 🟥 Critical / risk |
 | Database training (Part 1)   | Training completed        | JC / IH / SJ | 🟨 Planned         |
 | FibroScan training           | Operators trained         | —            | 🟩 Complete         |
-| Screening training           | Operators trained         | JP, SI, SJ   | 🟦 In progress      |
+| Screening training           | Operators trained         | JP, SI, SJ   | 🟩 Complete      |
 | Baseline training            | Operators trained         | JP, SI, SJ   | 🟨 Planned         |
 
 
@@ -126,9 +124,9 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 
 | Task                         | Output                    | Responsible  | Status            |
 | ---------------------------- | ------------------------- | ------------ | ----------------- |
-| Screening begins             | Screening underway        | CHW          | 🟨 Planned         |
+| Screening begins             | Screening underway        | CHW          | 🟦 In progress         |
 | Monitor screening            | Screening tracker updated | IH           | 🔁 Ongoing         |
-| Ethics approval received     | Go / no-go decision       | SI           | 🟥 Critical / risk |
+| Ethics approval received     | Go / no-go decision       | SI           | 🟩 Complete |
 
 
 ## By Fri 27 Feb 2026
