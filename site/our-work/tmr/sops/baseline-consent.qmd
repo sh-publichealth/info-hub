@@ -1,0 +1,151 @@
+---
+title: "Participant Consent Form"
+subtitle: "St Helena Total Meal Replacement (TMR) Pilot"
+format:
+  pdf:
+    pdf-engine: lualatex
+    documentclass: scrartcl
+    number-sections: false
+    toc: false
+    geometry:
+      - top=0.6in
+      - bottom=0.85in
+      - left=0.9in
+      - right=0.9in
+      - includefoot
+      - footskip=18pt
+include-in-header:
+  text: |
+    % ============================================================
+    % Stable footer (identical on ALL pages, including page 1)
+    % ============================================================
+
+    % Block titlesec / lastpage if injected elsewhere
+    \makeatletter
+    \@namedef{ver@titlesec.sty}{9999/12/31}
+    \@namedef{ver@lastpage.sty}{9999/12/31}
+    \makeatother
+
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \setlength{\footskip}{18pt}
+
+    % Footer content definition (reusable)
+    \fancyfoot[L]{\scriptsize V 1.0 -- \today}
+    % \fancyfoot[C]{\scriptsize Participant initials:\ \underline{\hspace{1.5cm}}\quad Date:\ \underline{\hspace{1cm}}}
+    \fancyfoot[R]{\scriptsize Page \thepage}
+
+    % CRITICAL: make page 1 use same footer
+    \fancypagestyle{plain}{
+      \fancyhf{}
+      \renewcommand{\headrulewidth}{0pt}
+      \renewcommand{\footrulewidth}{0pt}
+      \fancyfoot[L]{\scriptsize V 1.0 -- \today}
+       \fancyfoot[C]{\scriptsize Participant initials:\ \underline{\hspace{1.5cm}}\quad Date:\ \underline{\hspace{1cm}}}
+      \fancyfoot[R]{\scriptsize Page \thepage}
+    }
+
+    % KOMA-safe section spacing
+    \RedeclareSectionCommand[
+      beforeskip=0.55\baselineskip,
+      afterskip=0.25\baselineskip
+    ]{section}
+
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{4pt}
+
+fontsize: 11pt
+---
+
+\noindent\textbf{Participant Study ID:}\hfill\underline{\hspace{6cm}}
+
+\vspace{0.25cm}
+
+Please read each statement carefully. Tick each box to show that you agree.
+
+\section*{1. Understanding the Programme}
+
+$\square$ I confirm that I have read and understood the Participant Information Sheet.
+
+$\square$ I have had the opportunity to ask questions and have received satisfactory answers.
+
+$\square$ I understand that this is a structured weight-loss programme designed to help improve blood sugar control and possibly achieve remission of Type 2 Diabetes.
+
+$\square$ I understand what the programme involves, including:
+
+- A 12-week total diet replacement phase
+- Gradual food reintroduction
+- Ongoing weight-maintenance support
+- Regular clinical monitoring
+
+$\square$ I understand that participation is voluntary.
+
+\section*{2. Voluntary Participation}
+
+$\square$ I understand that I am free to withdraw from the programme at any time without giving a reason.
+
+$\square$ I understand that withdrawing will not affect my usual diabetes care or relationship with health services.
+
+\section*{3. Clinical Monitoring and Safety}
+
+$\square$ I understand that my weight, blood pressure, HbA1c, and other routine clinical measurements will be recorded during the programme.
+
+$\square$ I understand that my diabetes and blood pressure medications may be reduced, stopped, or restarted under clinical supervision to ensure safety.
+
+$\square$ I understand that there may be side effects (for example dizziness, constipation, or low blood sugar), and that I should report any concerns to the clinical team.
+
+\newpage
+\section*{4. Use of My Data}
+
+$\square$ I agree for my clinical information collected during the programme to be recorded in the TMR database.
+
+$\square$ I agree for relevant information to be accessed from the St Helena Diabetes Registry for evaluation purposes.
+
+$\square$ I understand that my data will be stored securely and handled in line with UK GDPR and local data protection requirements.
+
+$\square$ I understand that my name will not appear in any reports or publications.
+
+\section*{5. Service Evaluation and Future Use of Data}
+
+$\square$ I agree for my anonymised data to be used to evaluate the TMR pilot programme.
+
+$\square$ I agree that my anonymised data may be used in future research or service evaluations related to diabetes care.
+
+$\square$ I understand that no information that identifies me personally will be shared outside the clinical team.
+
+\section*{6. Questionnaires and Interviews (Optional)}
+
+$\square$ I agree to complete questionnaires about my health, wellbeing, and experience of the programme.
+
+$\square$ I agree to be contacted about taking part in an interview about my experience.
+
+$\square$ I understand that taking part in interviews is optional and separate from the clinical programme.
+
+\vspace{0.65cm}
+
+\section*{7. Final Confirmation}
+
+\textbf{Participant Name (print):}\hfill\underline{\hspace{9cm}}
+
+\vspace{0.5cm}
+
+\textbf{Signature:}\hfill\underline{\hspace{9cm}}
+
+\vspace{0.5cm}
+
+\textbf{Date:}\hfill\underline{\hspace{4cm}}
+
+\vspace{0.9cm}
+
+\textbf{Name of staff member obtaining consent:}\hfill\underline{\hspace{6.5cm}}
+
+\vspace{0.5cm}
+
+\textbf{Signature:}\hfill\underline{\hspace{9cm}}
+
+\vspace{0.5cm}
+
+\textbf{Date:}\hfill\underline{\hspace{4cm}}

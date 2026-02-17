@@ -7,6 +7,8 @@ site/deprecated/
 .quarto/
 *.html
 *.ignore
+*.log 
+*.tex
 
 # Quarto cache / freeze folders (can appear depending on features used)
 _freeze/

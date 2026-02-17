@@ -4,7 +4,6 @@ subtitle: "Standard Operating Procedure (SOP) - guidance for study staff"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
 author: Ian Hambleton, Selvi Jeyaseelan
 format:
-  html: default
   pdf:
     toc: false
     documentclass: article
@@ -33,12 +32,14 @@ The baseline visit is the *governance anchor point* for the programme.
 
 ## Documentation
 
-The following documents are used directly as part of the screening visit process. 
+The following documents are used directly as part of the baseline visit process. 
 
 | Document | | Link / Download | 
 | :--- | ---: | :--- | 
 |Baseline visit - what to expect | {{< bi download >}} | [download]({{< var site-url >}}/our-work/tmr/sops/baseline-info-sheet.pdf) |
 |Baseline visit checklist | {{< bi download >}} | [download]({{< var site-url >}}/our-work/tmr/sops/baseline-checklist.pdf) |
+|Participant Information Sheet | {{< bi download >}} | [download]({{< var site-url >}}/our-work/tmr/info-sheet-01.pdf) |
+|Study Consent Form | {{< bi download >}} | [download]({{< var site-url >}}/our-work/tmr/sops/baseline-consent.pdf) |
 |Participant flow diagrams| {{< bi link-45deg >}} | [[participant flow diagrams](../visits/participant-flow.qmd)]{.content-visible when-format="html"}[[participant flow diagrams]({{< var site-url >}}/our-work/tmr/visits/participant-flow.html)]{.content-visible when-format="pdf"} |
 
 ## Scope

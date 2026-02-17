@@ -219,7 +219,7 @@ B3 --> B4
 - Review our data confidentiality guarantee
 - Review our plans for data use 
 
-**B4.** Obtain informed consent via the REDCap eConsent process. See the REDCap training for details.
+**B4.** Obtain informed consent. The consenting process and the forms to use can be found on the [Baseline SOP](../sops/baseline-sop.qmd).
 :::
 
 
