@@ -108,10 +108,10 @@ website:
 #              contents: 
 #              - text: Training Overview
 #                href: our-work/tmr/redcap/index.qmd
-            - section: "DataBase"
-              contents: 
-              - text: Database Training
-                href: our-work/tmr/database/database-training.qmd
+#            - section: "DataBase"
+#              contents: 
+#              - text: Database Training
+#                href: our-work/tmr/database/database-training.qmd
 
 freeze: auto
 

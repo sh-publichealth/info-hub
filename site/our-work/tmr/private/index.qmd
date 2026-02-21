@@ -27,4 +27,4 @@ Pages here are not listed in the main site navigation and can be accessed only v
 - [Required documents](./required-docs.qmd)
 - [Roles and responsibilities](./roles.qmd)
 - [Weekly timelines](./weekly-timelines.qmd)
-
+- [Database training](./database-training.qmd)
