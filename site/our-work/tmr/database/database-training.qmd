@@ -1,0 +1,31 @@
+---
+title: "Total Meal Replacement Database Training"
+# subtitle: ""
+description-meta: "Database information for the Total Meal Replacement Intervention"
+author: Jacqui Campbell
+format:
+  html: default
+  pdf:
+    toc: true
+    documentclass: report
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: false
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+::: {.callout-note}
+This training video is hosted externally (Cloudflare R2) to keep the Information Hub lightweight and to support smooth playback.
+:::
+
+### DataBase Training Video Test
+
+<video controls preload="metadata" playsinline style="max-width: 100%; height: auto; border-radius: 12px;"
+  poster="">
+  <source src="https://pub-1c73cc55171047afa4719477b01b04a3.r2.dev/trainingplan_720p.mp4" type="video/mp4">
+  Sorry — your browser does not support the video tag.
+</video>
+

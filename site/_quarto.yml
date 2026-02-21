@@ -108,6 +108,10 @@ website:
 #              contents: 
 #              - text: Training Overview
 #                href: our-work/tmr/redcap/index.qmd
+            - section: "DataBase"
+              contents: 
+              - text: Database Training
+                href: our-work/tmr/database/database-training.qmd
 
 freeze: auto
 
@@ -130,4 +134,4 @@ resources:
 bibliography: references.bib
 csl: https://www.zotero.org/styles/harvard-cite-them-right
 
-# touch: 2026-02-17 17:55:31.236
+# touch: 2026-02-21 15:23:09.983
