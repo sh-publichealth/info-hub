@@ -1,0 +1,151 @@
+---
+title: "FibroScan SOP"
+subtitle: "Guidance for Study Staff"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Albert Meij
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+## FibroScan – Standard Use Manual
+
+### Introduction
+
+#### Pre-examination requirements
+
+**Patient**
+
+- Fasting for **3 hours or more**
+- Lying on the examination bed for **5 minutes** before the examination (to allow the body to rest)
+
+**Operator**
+
+- Duly trained by Echosens (or its local representative)
+
+**Device**
+
+- Probes are calibrated
+
+### Examination room set-up
+
+**Operator**
+
+- Facing the screen on a height-adjustable stool
+
+**Patient**
+
+- Lying flat on the examination bed
+- Right arm under the head
+- “Banana shaped” position
+
+### Probe selection criteria
+
+Ensure the probe corresponds to the patient’s body type:
+
+- For adults choosing between **M+** and **XL+**, follow the automatic probe selection tool displayed in real time, based on the **Probe to Liver Capsule Distance (PCD)** (not on BMI).
+- **Warning:** Selecting XL+ only when M+ examination fails is not correct — follow the automated probe advice.
+
+### Examination reliability criteria
+
+**LSM reliability criteria**
+
+- At least **10 measurements** at the same spot with one single probe
+- Liver stiffness **IQR/Median ratio ≤ 30%** when the final median stiffness result exceeds **7.1 kPa**
+
+**CAP reliability criteria**
+
+- Sufficient ultrasound attenuation measurements acquired (CAP progression bar reaches **100%**)
+
+### Set-up of system
+
+[**IRH NOTE:** Fibroscan machine has a *Research Mode*. We should be using this. Allows entry of ID number. Explore functionality]{.highlight}
+
+| Step | Action |
+|:-:|--------|
+| 1 | Place FibroScan near the exam table and ensure the necessary probes are connected. If not charged, plug the FibroScan into an electrical outlet. When charged, it can operate from battery. |
+| 2 | Turn on the FibroScan by pressing the **Power** button on the back of the system. Allow time for it to boot up. |
+| 3 | Log into the system as an **Operator** or **FibroScan Admin**. |
+|  | **If first-time use:** USER1 for “Operator”; FSCONF1 for “FibroScan Admin”. Check the user manual for password configuration. |
+
+### Examination
+
+| Step | Action |
+|:-:|--------|
+| 1 | Touch **New Examination** (center of the screen) to start. |
+| 2 | Complete patient information fields as required by your site. Minimum requirement before starting is **Last Name**. Touch the **Play** icon to proceed. |
+| 3 | Complete new examination fields as required by your site (including **Examination type** and Guided VCTE™ as ON/OFF). Touch the **Play** icon to proceed. |
+
+### Localisation phase
+
+Search for the center of the liver by:
+
+- Using **Ultrasound™ mode**
+- Observing the **LSM** and **CAP™** indicators
+- Performing measurements in different intercostal positions
+
+### Examination phase
+
+**a) AutoScan**
+
+AutoScan can be initiated by ensuring:
+
+- Recommended probe is being used
+- LSM indicator is **orange**
+- CAP™ indicator is **blue**
+- Press and hold the button on the probe for a few seconds to activate AutoScan (acquires **10 valid LSM measurements**)
+
+**b) Manual measurements**
+
+Manual measurements can be initiated by ensuring:
+
+- Recommended probe is being used
+- LSM indicator is **orange**
+- CAP™ indicator is **blue**
+- Press the button to acquire individual measurements
+
+### Deleting measurements
+
+To delete measurements:
+
+- Touch the **Trash Can** icon on the top right-hand corner of any measurement. This selects that measurement and all preceding measurements. Confirm deletion in the pop-up.
+- Use the icon to delete all measurements except for the last 10.
+
+### Completing the exam
+
+#### Quality assurance checklist
+
+- At least **10 valid** measurements, all performed at the same spot
+- High quality elastograms with linear and parallel margin
+- CAP™ progression bar is **100%** before removing probe
+- IQR/Median Ratio is **≤30%** when there are 10 LSM measurements
+
+To save and end the examination, touch the **Square** icon in the lower right-hand corner of the screen.
+
+### Data management
+
+| Step | Action |
+|:-:|--------|
+| 1 | To export the scan, touch the **Square with the Arrow** icon on the lower tool bar. |
+| 2 | In the pop-up window, select appropriate options for **Export format** and **De-identified**. |
+| 3 | To print, a printer must be installed. Ensure the **Printer** icon is not faded, then press it to print. |
+
+### Cleaning and powering down
+
+| Step | Action |
+|:-:|--------|
+| 1 | Clean the probe and system as outlined in the user manual using approved disinfectants (list available via the referenced website/QR code). |
+| 2 | To power off, touch the **Shutdown** icon. Once shut down, unplug (if required) and safely store the FibroScan. |
+
+### Reference note
+
+This FibroScan SOP is based on the **Echosens training manual**.

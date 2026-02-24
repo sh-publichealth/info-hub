@@ -1,0 +1,100 @@
+---
+title: "Waist & Hip Circumference Measurement SOP"
+subtitle: "Guidance for Study Staff"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Albert Meij
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+
+## Measuring Waist Circumference
+
+### Introduction
+
+Waist circumference measurements are taken to provide additional information on overweight and obesity.
+
+### Equipment
+
+- Constant tension tape
+- Chair or coat stand for participants to place their clothes
+
+### Privacy
+
+A private area is necessary for this measurement. This could be a separate room, or an area that has been screened off from other people within the household.
+
+### Preparing the participant
+
+This measurement should be taken without clothing (directly over the skin). If this is not possible, the measurement may be taken over light clothing. It must **not** be taken over thick or bulky clothing (this must be removed).
+
+### How to take the measurement
+
+This measurement should be taken:
+
+- At the end of a normal expiration
+- With the arms relaxed at the sides
+- At the midpoint between the lower margin of the last palpable rib and the top of the iliac crest (hip bone)
+
+### Procedure
+
+| Step | Action |
+|:-:|--------|
+| 1 | Standing to the side of the participant, locate the last palpable rib and the top of the hip bone. You may ask the participant to assist you in locating these points on their body. |
+| 2 | Ask the participant to wrap the tension tape around themselves and position the tape at the midpoint between the last palpable rib and the top of the hip bone, ensuring the tape passes over the same spot on the opposite side. |
+|  | **Note:** Check that the tape is horizontal across the back and front of the participant, and as parallel with the floor as possible. |
+| 3 | Ask the participant to stand with feet together, weight evenly distributed across both feet; hold the arms relaxed at the sides; breathe normally for a few breaths, then make a normal expiration. |
+| 4 | Measure waist circumference and read the measurement to the nearest **0.1 cm**, keeping the tape snug but not tight enough to compress the skin. |
+| 5 | Record the measurement and device ID. |
+|  | **Note:** Measure only once and record. |
+
+## Measuring Hip Circumference
+
+### Introduction
+
+Hip circumference measurements are taken in some countries as an expanded option to measure overweight and obesity. Hip measurements are taken immediately after waist circumferences.
+
+### Equipment
+
+- Constant tension tape
+- Chair or coat stand for participants to place their clothes
+
+### Privacy
+
+A private area is necessary for this measurement. This could be a separate room, or an area that has been screened off from other people within the household.
+
+### Preparing the participant
+
+This measurement should be taken without clothing (directly over the skin). If this is not possible, the measurement may be taken over light clothing. It must **not** be taken over thick or bulky clothing (this must be removed).
+
+### How to take the measurement
+
+This measurement should be taken:
+
+- With the arms relaxed at the sides
+- At the maximum circumference over the buttocks
+
+### Procedure
+
+| Step | Action |
+|:-:|--------|
+| 1 | Stand to the side of the participant, and ask them to help wrap the tape around themselves. |
+| 2 | Position the measuring tape around the maximum circumference of the buttocks. |
+| 3 | Ask the participant to stand with feet together, weight evenly distributed over both feet; and hold their arms relaxed at the sides. |
+| 4 | Check that the tape position is horizontal all around the body and snug without constricting. |
+| 5 | Measure hip circumference and read the measurement to the nearest **0.1 cm**. |
+| 6 | Record the measurement and device ID. |
+|  | **Note:** Measure only once and record. |
+
+### Reference note
+
+This physical measurement SOP is based on the **WHO STEPS Manual**.

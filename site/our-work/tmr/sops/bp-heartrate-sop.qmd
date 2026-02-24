@@ -1,0 +1,85 @@
+---
+title: "Blood Pressure & Heart Rate Measurement SOP"
+subtitle: "Guidance for Study Staff"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Albert Meij
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+
+## Taking Blood Pressure and Recording Heart Rate
+
+### Introduction
+
+Blood pressure is taken to determine the prevalence of raised blood pressure in the population.
+
+### Equipment
+
+- Digital automatic blood pressure monitor (A&D Medical: Blood Pressure Monitor)
+- Appropriate size cuffs (or a universal cuff)
+
+### Preparing the participant
+
+Ask the participant to sit quietly and rest for **15 minutes** with legs uncrossed.
+
+- Participant should have an empty bladder when measurements are taken.
+- Participant should not have coffee before or during measurements.
+- Participant should not talk during measurements.
+- The elbow should be supported during measurements.
+
+### Three measurements
+
+Three blood pressure measurements should be taken. During analysis, the **mean of the second and third** readings will be calculated. The participant rests for **three minutes** between each reading.
+
+### Recording the measurements
+
+- Record your **Interviewer ID**
+- Record the **device ID** of the blood pressure machine you are using
+- After each of the three measurements, record the results
+- Check that all readings are correctly filled in
+- Inform the participant of the **last** blood pressure reading only, after the whole process is completed
+
+### Recording heart rate measurements
+
+Heart rate and blood pressure results are displayed simultaneously on the digital blood pressure monitor. If heart rate recording is included, record it alongside the blood pressure results after each of the three measurements.
+
+### Procedure for measuring blood pressure
+
+The instructions below apply to the use of automatic blood pressure monitors. More detailed operating instructions are included with each device and should be reviewed before taking any blood pressure measurements.
+
+#### Applying the cuff
+
+| Step | Action |
+|:-:|--------|
+| 1 | Place the **left arm** of the participant on the table with the palm facing upward. If **right arm** is used, record this. |
+| 2 | Remove or roll up clothing on the arm (make sure rolled-up clothing is not tight). |
+| 3 | Use a universal cuff, or select the appropriate cuff size for the participant: **17–22 cm = Small (S); 22–32 cm = Medium (M); >32 cm = Large (L)**. |
+| 4 | Position the cuff above the elbow so that the lower band is positioned **1–2 cm** above the elbow joint. |
+| 5 | Wrap the cuff snugly onto the arm and securely fasten with the Velcro. |
+| 6 | Keep the cuff at the **same level as the heart** during measurement. |
+
+#### Taking the measurements
+
+| Step | Action |
+|:-:|--------|
+| 1 | Switch the monitor on. |
+| 2 | The monitor will start measuring when it detects the pulse. Systolic and diastolic blood pressure readings should be displayed within a few moments (systolic above and diastolic below). |
+| 3 | Record the reading (and heart rate, if required). |
+| 4 | Switch the monitor off, but leave the cuff in place. |
+| 5 | Wait **three minutes**, then repeat steps 1–4 **two more times**. |
+| 6 | Record the last reading on the participant feedback form as well. |
+
+### Reference note
+
+This physical measurement SOP is based on the **WHO STEPS Manual**.

@@ -17,15 +17,6 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
----
-title: "Standard Operating Procedure: Measuring Height and Weight"
-subtitle: "Total Meal Replacement (TMR) Pilot"
-format:
-  html:
-    toc: false
-  pdf:
-    toc: false
----
 
 ## Measuring Height
 
@@ -87,3 +78,6 @@ Make sure the scales are placed on a firm, flat surface. Do not place the scales
 | 4 | Record the weight in kilograms and device ID. |
 |  | If the participant wants to know their weight in pounds, convert by multiplying the measured weight by 2.2. |
 
+### Reference note
+
+This physical measurement SOP is based on the **WHO STEPS Manual**.

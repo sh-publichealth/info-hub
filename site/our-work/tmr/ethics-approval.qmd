@@ -1,0 +1,45 @@
+---
+title: "Project Approval"
+subtitle: "From the St Helena Research Council"
+format:
+  html:
+    toc: false
+    page-layout: full
+---
+
+<!--
+The Ethics approval PDF is stored at:
+../../downloads/R02_2026_SI.pdf
+-->
+
+<script>
+  const pdf_path = "../../downloads/R02_2026_SI.pdf";
+</script>
+
+<span style="opacity:0.75;">Note: if this PDF viewer is blank, your browser may block inline PDFs — use this download link instead.</span>
+
+<div style="display:flex; gap: 0.75rem; align-items: center; margin-bottom: 0.75rem;">
+  <a id="pdf-download" href="" style="text-decoration: none; padding: 0.35rem 0.6rem; border: 1px solid #ccc; border-radius: 6px;">
+    Download PDF
+  </a>
+</div>
+
+<iframe
+  id="pdf-frame"
+  src=""
+  width="100%"
+  style="height: 85vh; border: 1px solid #ddd; border-radius: 10px;"
+  loading="lazy">
+</iframe>
+
+<script>
+  // Wire up iframe + download link
+  document.getElementById("pdf-frame").src = pdf_path;
+  document.getElementById("pdf-download").href = pdf_path;
+</script>
+
+<noscript>
+  <p>
+    JavaScript is disabled. <a href="../../downloads/R02_2026_SI.pdf">Download the PDF</a>.
+  </p>
+</noscript>

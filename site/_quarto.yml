@@ -58,6 +58,8 @@ website:
             href: our-work/tmr/evidence-brief.qmd
           - text: Information Sheet
             href: our-work/tmr/info-sheet-01.qmd
+          - text: Project Approval
+            href: our-work/tmr/ethics-approval.qmd
           - section: "Ops Manual"
             contents: 
 #            - text: Overview
@@ -84,6 +86,14 @@ website:
                 href: our-work/tmr/sops/eating-disorder-sop.qmd
               - text: Height & Weight SOP 
                 href: our-work/tmr/sops/height-weight-sop.qmd
+              - text: Anthropometry SOP 
+                href: our-work/tmr/sops/waist-hip-sop.qmd
+              - text: Blood Pressure SOP 
+                href: our-work/tmr/sops/bp-heartrate-sop.qmd
+              - text: Glucose & Lipids SOP 
+                href: our-work/tmr/sops/bloodglucose-lipids-sop.qmd
+              - text: Fibroscan SOP 
+                href: our-work/tmr/sops/fibroscan-sop.qmd
               - text: Baseline SOP
                 href: our-work/tmr/sops/baseline-sop.qmd
 #              - text: Missed Visit SOP
@@ -134,4 +144,4 @@ resources:
 bibliography: references.bib
 csl: https://www.zotero.org/styles/harvard-cite-them-right
 
-# touch: 2026-02-21 15:23:09.983
+# touch: 2026-02-24 12:14:00.190

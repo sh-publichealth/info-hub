@@ -1,0 +1,68 @@
+---
+title: "Blood Glucose & Lipids Measurement SOP"
+subtitle: "Guidance for Study Staff"
+description-meta: "Background evidence for the Total Meal Replacement Intervention"
+author: Albert Meij
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+## Measurement of Blood Glucose and Lipids
+
+### Introduction
+
+Blood sugar tests are taken to measure raised blood sugar levels (a risk factor for diabetes).
+
+Blood cholesterol tests are taken to measure total cholesterol and HDL cholesterol levels.
+
+Triglyceride tests are taken to measure fasting levels of natural fats and oils in the bloodstream.
+
+### Equipment required
+
+Dry chemistry equipment and supplies required for blood glucose and lipid tests include:
+
+- A device that measures blood glucose and lipids [(e.g., Cardiochek PA, Reflotron Plus, Cholestech LDX)]{.highlight}, **or** separate devices that measure blood glucose and lipids
+- A batch of sufficient reagent test strips (note: for some devices, combined strips measuring several items are available)
+- Single-use lancets
+- Capillary tubes and plungers for collection of the right amount of blood
+- Cotton balls and swabs
+- Gloves
+- Disposable container
+
+### Preparing the device
+
+Follow the appropriate device instructions to set up, prepare and use the meter for blood tests.
+
+### Measurement procedure
+
+Follow the steps below to take blood measurements and record the results. Read the device instructions carefully.
+
+| Step | Action |
+|:-:|--------|
+| 1 | Put on gloves. |
+| 2 | Remove a test strip, put it into the machine, and close the test strip box tightly. Strips are sensitive to heat and humidity, so only take one strip at a time. |
+| 3 | Rub and knead a fingertip to help withdraw blood (rub the side of the participant’s finger closest to the thumb). |
+| 4 | Wipe/swab the fingertip using a sterile swab. |
+| 5 | Lance the massaged place on the fingertip with the lancing device. |
+| 6 | Allow a hanging blood drop to form without applying too much pressure. |
+| 7 | Collect blood with the capillary tube until it reaches the mark on the tube, and apply blood onto the test field **without touching it**. |
+|  | **Note:** The test field must be completely covered with blood. If too little blood is applied, do not rub it in or apply a second drop; repeat the measurement with a fresh test strip. |
+| 8 | Give the participant a cotton ball to press on the puncture. |
+| 9 | Wait for the measurement to be displayed (results usually displayed in mmol/L or mg/dL). |
+| 10 | Record the results of the readings. |
+| 11 | Record Technician ID, Device ID, and time of day. |
+
+
+### Reference note
+
+This measurement SOP is based on the **WHO STEPS Manual**.
