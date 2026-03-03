@@ -17,25 +17,24 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
-
-## Measuring Waist Circumference
-
-### Introduction
+## Introduction
 
 Waist circumference measurements are taken to provide additional information on overweight and obesity.
 
-### Equipment
+## Equipment
 
 - Constant tension tape
 - Chair or coat stand for participants to place their clothes
 
-### Privacy
+## Privacy
 
 A private area is necessary for this measurement. This could be a separate room, or an area that has been screened off from other people within the household.
 
-### Preparing the participant
+## Preparing the participant
 
 This measurement should be taken without clothing (directly over the skin). If this is not possible, the measurement may be taken over light clothing. It must **not** be taken over thick or bulky clothing (this must be removed).
+
+## Measuring Waist Circumference
 
 ### How to take the measurement
 
@@ -54,27 +53,10 @@ This measurement should be taken:
 |  | **Note:** Check that the tape is horizontal across the back and front of the participant, and as parallel with the floor as possible. |
 | 3 | Ask the participant to stand with feet together, weight evenly distributed across both feet; hold the arms relaxed at the sides; breathe normally for a few breaths, then make a normal expiration. |
 | 4 | Measure waist circumference and read the measurement to the nearest **0.1 cm**, keeping the tape snug but not tight enough to compress the skin. |
-| 5 | Record the measurement and device ID. |
+| 5 | Record the measurement. |
 |  | **Note:** Measure only once and record. |
 
 ## Measuring Hip Circumference
-
-### Introduction
-
-Hip circumference measurements are taken in some countries as an expanded option to measure overweight and obesity. Hip measurements are taken immediately after waist circumferences.
-
-### Equipment
-
-- Constant tension tape
-- Chair or coat stand for participants to place their clothes
-
-### Privacy
-
-A private area is necessary for this measurement. This could be a separate room, or an area that has been screened off from other people within the household.
-
-### Preparing the participant
-
-This measurement should be taken without clothing (directly over the skin). If this is not possible, the measurement may be taken over light clothing. It must **not** be taken over thick or bulky clothing (this must be removed).
 
 ### How to take the measurement
 
@@ -92,7 +74,7 @@ This measurement should be taken:
 | 3 | Ask the participant to stand with feet together, weight evenly distributed over both feet; and hold their arms relaxed at the sides. |
 | 4 | Check that the tape position is horizontal all around the body and snug without constricting. |
 | 5 | Measure hip circumference and read the measurement to the nearest **0.1 cm**. |
-| 6 | Record the measurement and device ID. |
+| 6 | Record the measurement. |
 |  | **Note:** Measure only once and record. |
 
 ### Reference note

@@ -27,6 +27,38 @@ draft: false
 
 **Location / mode:** ☐ In person ☐ Telephone
 
+::: {.content-visible when-format="html"}
+<div style="border:1px solid #444; padding:12px; width: 420px; border-radius:6px;">
+  <div><strong>Signature of Study Lead or Clinician</strong></div>
+  <div style="height:70px;"></div>
+  <div style="border-top:1px solid #444; padding-top:6px;">Name / Date</div>
+</div>
+:::
+
+
+::: {.content-visible when-format="pdf"}
+```{=tex}
+\bigskip
+
+% Box styling (tweak if you like)
+\setlength{\fboxsep}{8pt}   % padding inside box
+\setlength{\fboxrule}{0.4pt} % border thickness
+
+\noindent\fbox{%
+  \parbox{0.95\linewidth}{%
+    \textbf{Signature of Study Lead or Clinician}\par
+    \vspace{1.1cm}
+    \noindent\rule{0.62\linewidth}{0.4pt}\hfill Date:\ \rule{0.22\linewidth}{0.4pt}\par
+    \vspace{0.35cm}
+    \noindent Name:\ \rule{0.80\linewidth}{0.4pt}\par
+  }%
+}
+
+\bigskip
+```
+:::
+
+
 ## Before the Screening Visit (TICK when COMPLETED)
 
 ### Initial Eligibility Checks (TICK if ELIGIBILITY MET)

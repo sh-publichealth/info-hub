@@ -76,9 +76,9 @@ Before the baseline visit:
 1. Welcome and orientation
 2. Confirm eligibility and answer questions
 3. Obtain informed consent
-4. Find participant in REDCap database
-5. Collect baseline measurements and questionnaires
-6. Confirm group allocation and next steps
+4. Find participant in REDCap database *(this should be done before the participant arrives)*
+5. Collect baseline measurements and questionnaire responses
+6. Confirm next steps
 
 ## Detailed Procedure
 
@@ -86,7 +86,8 @@ Before the baseline visit:
 
 - Reconfirm that participation is voluntary
 - Explain what will happen during the visit
-- Allow time for questions
+
+**Note:** Allow time for questions
 
 ### 2. Eligibility Confirmation
 
@@ -98,7 +99,10 @@ If eligibility is no longer met, pause the visit and seek clinical advice.
 
 ### 3. Informed Consent
 
+**Note:** See the Participant Admin form on REDCap.
+
 - Provide the Participant Information Sheet
+- Check the participant's understanding of the pilot
 - Explain data use, confidentiality, and withdrawal rights
 - Obtain written informed consent
 
@@ -124,8 +128,7 @@ Baseline data collection follows the flow in the REDCap database and includes:
 
 **Laboratory measurements**
 
-- HbA1c
-- Liver function tests
+- Blood sample taken for HbA1C, liver function tests, lipids
 - FibroScan (where scheduled)
 
 **Medication status**
@@ -153,11 +156,6 @@ Data should be entered directly into REDCap wherever possible.
 - Explain next visit and TMR start
 - Confirm coaching arrangements
 
-**Control participants**
-
-- Explain follow-up schedule
-- Confirm routine care continues
-
 ## Safety and Escalation
 
 - Any unexpected clinical findings should be escalated to the clinical lead
@@ -166,4 +164,4 @@ Data should be entered directly into REDCap wherever possible.
 ## Documentation
 
 - Baseline data recorded in the TMR REDCap database
-- Signed consent forms stored securely (if hard copy rather than REDCap E-consent)
+- Signed consent forms stored securely

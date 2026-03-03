@@ -40,7 +40,7 @@ All screening procedures are covered in the Screening SOP. Baseline enrolment is
 
 *Data handling staff.* Extract potentially eligible participants from the diabetes registry and prepare recruitment lists within the REDCap Total Meal Replacement (TMR) database.
 
-*Community Health Workers (CHWs)*. Review the REDCap recruitment report to identify potential eligible participants. Select the person at the top of the list and make contact for potential recruitment.
+*Community Health Workers (CHWs)*. Review the REDCap recruitment report to identify potential eligible participants. Select the person at the top of the list and make contact for potential recruitment. With your chosen contact, search PatientSource software for vital status and transfer contact details to REDCap. 
 
 *Study data manager.* Provides REDCap and data system support throughout recruitment.
 
@@ -54,14 +54,14 @@ Recruitment is a structured, auditable process designed to ensure that individua
 
 **Step 1:** Identification of potentially eligible participants
 
-Data handling staff use the diabetes registry to identify potentially eligible individuals based on:
+Data handling staff have used PatientSource and other Health data sources to identify potentially eligible individuals based on:
 
 - Confirmed diabetes diagnosis
 - Duration of diabetes
 - HbA1C within programme limits
 - At least one clinic visit in the previous 12 months
 
-For all individuals meeting these criteria, registry information is used to pre-populate the REDCap screening form in the TMR database.
+**Note:** For all individuals meeting these criteria, the REDCap screening form has been pre-populated in the TMR database.
 
 **Step 2:** Creation of recruitment list in the REDCap TMR database
 
@@ -78,7 +78,7 @@ During recruitment contact:
 - The individual is invited to attend a screening visit to learn more
 - It is made clear that participation is optional and declining will not affect usual care
 
-The recruitment script is provided as a downloadable document at the top of this SOP and must be used for all recruitment contacts. No screening assessments or consent are undertaken at this stage.
+The recruitment script is provided as a downloadable document at the top of this SOP *(and in the project folder)* and must be used for all recruitment contacts. No screening assessments or consent are undertaken at this stage.
 
 **Step 4:** Updating recruitment outcomes in REDCap
 
@@ -91,7 +91,7 @@ This information is recorded directly in the REDCap database to maintain a real-
 
 **Step 5:** Scheduling the screening visit
 
-For individuals who agree to attend a screening visit, the REDCap scheduling functionality in the TMR database is used to book the screening appointment. Once a screening visit is scheduled, the recruitment process for that individual is complete.
+For individuals who agree to attend a screening visit, the REDCap scheduling functionality in the TMR database is used to book the screening appointment. For screening visits in REDCap, you will need to select *Arm 1: Screening*. Once a screening visit is scheduled, the recruitment process for that individual is complete.
 
 **Step 6:** Handover to screening
 

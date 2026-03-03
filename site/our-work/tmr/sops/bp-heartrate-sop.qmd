@@ -1,5 +1,5 @@
 ---
-title: "Blood Pressure & Heart Rate Measurement SOP"
+title: "Blood Pressure SOP"
 subtitle: "Guidance for Study Staff"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
 author: Albert Meij
@@ -18,11 +18,11 @@ draft: false
 ---
 
 
-## Taking Blood Pressure and Recording Heart Rate
+## Taking and Recording Blood Pressure
 
 ### Introduction
 
-Blood pressure is taken to determine the prevalence of raised blood pressure in the population.
+Blood pressure is taken to determine if the participant has raised blood pressure.
 
 ### Equipment
 
@@ -50,10 +50,6 @@ Three blood pressure measurements should be taken. During analysis, the **mean o
 - Check that all readings are correctly filled in
 - Inform the participant of the **last** blood pressure reading only, after the whole process is completed
 
-### Recording heart rate measurements
-
-Heart rate and blood pressure results are displayed simultaneously on the digital blood pressure monitor. If heart rate recording is included, record it alongside the blood pressure results after each of the three measurements.
-
 ### Procedure for measuring blood pressure
 
 The instructions below apply to the use of automatic blood pressure monitors. More detailed operating instructions are included with each device and should be reviewed before taking any blood pressure measurements.
@@ -62,9 +58,9 @@ The instructions below apply to the use of automatic blood pressure monitors. Mo
 
 | Step | Action |
 |:-:|--------|
-| 1 | Place the **left arm** of the participant on the table with the palm facing upward. If **right arm** is used, record this. |
+| 1 | Place the **left arm** of the participant on the table with the palm facing upward. If **right arm** is used, record this on the checklist. |
 | 2 | Remove or roll up clothing on the arm (make sure rolled-up clothing is not tight). |
-| 3 | Use a universal cuff, or select the appropriate cuff size for the participant: **17–22 cm = Small (S); 22–32 cm = Medium (M); >32 cm = Large (L)**. |
+| 3 | Use the universal cuff. |
 | 4 | Position the cuff above the elbow so that the lower band is positioned **1–2 cm** above the elbow joint. |
 | 5 | Wrap the cuff snugly onto the arm and securely fasten with the Velcro. |
 | 6 | Keep the cuff at the **same level as the heart** during measurement. |
@@ -75,10 +71,11 @@ The instructions below apply to the use of automatic blood pressure monitors. Mo
 |:-:|--------|
 | 1 | Switch the monitor on. |
 | 2 | The monitor will start measuring when it detects the pulse. Systolic and diastolic blood pressure readings should be displayed within a few moments (systolic above and diastolic below). |
-| 3 | Record the reading (and heart rate, if required). |
+| 3 | Record the reading. |
 | 4 | Switch the monitor off, but leave the cuff in place. |
 | 5 | Wait **three minutes**, then repeat steps 1–4 **two more times**. |
-| 6 | Record the last reading on the participant feedback form as well. |
+
+You should provide the participant with *the last* measurement. 
 
 ### Reference note
 

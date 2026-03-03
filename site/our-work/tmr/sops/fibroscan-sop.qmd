@@ -17,6 +17,8 @@ date-format: "D MMM YYYY"
 draft: false
 ---
 
+[**Note:** Need probe cleaner]{.highlight}
+
 ## FibroScan – Standard Use Manual
 
 ### Introduction
@@ -25,12 +27,13 @@ draft: false
 
 **Patient**
 
+- Get participant ID (for REDCap) 
 - Fasting for **3 hours or more**
 - Lying on the examination bed for **5 minutes** before the examination (to allow the body to rest)
 
 **Operator**
 
-- Duly trained by Echosens (or its local representative)
+- Duly trained by Echosens
 
 **Device**
 
@@ -82,7 +85,7 @@ Ensure the probe corresponds to the patient’s body type:
 | Step | Action |
 |:-:|--------|
 | 1 | Touch **New Examination** (center of the screen) to start. |
-| 2 | Complete patient information fields as required by your site. Minimum requirement before starting is **Last Name**. Touch the **Play** icon to proceed. |
+| 2 | Complete patient information fields as required by your site. Minimum requirement before starting is **Patient Study ID**. Touch the **Play** icon to proceed. |
 | 3 | Complete new examination fields as required by your site (including **Examination type** and Guided VCTE™ as ON/OFF). Touch the **Play** icon to proceed. |
 
 ### Localisation phase
@@ -131,7 +134,7 @@ To delete measurements:
 
 To save and end the examination, touch the **Square** icon in the lower right-hand corner of the screen.
 
-### Data management
+### [Data management]{.highlight}
 
 | Step | Action |
 |:-:|--------|

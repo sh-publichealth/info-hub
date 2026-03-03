@@ -1,5 +1,5 @@
 ---
-title: "Blood Glucose & Lipids Measurement SOP"
+title: "Blood Glucose SOP"
 subtitle: "Guidance for Study Staff"
 description-meta: "Background evidence for the Total Meal Replacement Intervention"
 author: Albert Meij
@@ -31,10 +31,9 @@ Triglyceride tests are taken to measure fasting levels of natural fats and oils 
 
 Dry chemistry equipment and supplies required for blood glucose and lipid tests include:
 
-- A device that measures blood glucose and lipids [(e.g., Cardiochek PA, Reflotron Plus, Cholestech LDX)]{.highlight}, **or** separate devices that measure blood glucose and lipids
-- A batch of sufficient reagent test strips (note: for some devices, combined strips measuring several items are available)
+- A device that measures blood glucose [(e.g., Cardiochek PA, Reflotron Plus, Cholestech LDX)]{.highlight}, **or** separate devices that measure blood glucose and lipids
+- A batch of sufficient reagent test strips
 - Single-use lancets
-- Capillary tubes and plungers for collection of the right amount of blood
 - Cotton balls and swabs
 - Gloves
 - Disposable container

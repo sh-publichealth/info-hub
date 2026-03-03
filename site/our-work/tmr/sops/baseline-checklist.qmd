@@ -33,7 +33,7 @@ draft: false
 
   $\square$ Participant expressed interest in taking part
 
-  $\square$ Participant Information Sheet available
+  $\square$ Participant Information Sheet given to participant
 
   $\square$ Consent form available
 
@@ -96,8 +96,10 @@ draft: false
 
   $\square$ HbA1c
   
-  $\square$ Liver function tests
+  $\square$ Blood samples taken - purple tube
   
+  $\square$ Blood samples taken - yellow tube
+
   $\square$ FibroScan completed or scheduled (if applicable)
 
 ### Medication Status
@@ -124,11 +126,9 @@ draft: false
 
   $\square$ Intervention participant: next visit and TMR start explained
   
-  $\square$ Control participant: follow-up schedule explained
-
 ## After the Visit
 
-  $\square$ All baseline data entered into REDCap
+  $\square$ Ensure all baseline data entered into REDCap
   
   $\square$ Consent form stored securely
   

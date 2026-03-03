@@ -72,10 +72,10 @@ Make sure the scales are placed on a firm, flat surface. Do not place the scales
 
 | Step | Action |
 |:-:|--------|
-| 1 | Ask the participant to remove their footwear (shoes, slippers, sandals, etc) and socks. They should also take off any heavy belts and empty out their pockets of mobiles, wallets and coins. |
-| 2 | Ask the participant to step onto the scale with one foot on each side of the scale. |
+| 1 | Ask the participant to remove their footwear (shoes, slippers, sandals, etc). They should also take off any heavy belts and empty out their pockets of mobiles, wallets and coins. |
+| 2 | Ask the participant to step onto the scale, standing in the centre of the scale. |
 | 3 | Ask the participant to stand still, face forward, place arms at their side, and wait until asked to step off. |
-| 4 | Record the weight in kilograms and device ID. |
+| 4 | Record the weight in kilograms. |
 |  | If the participant wants to know their weight in pounds, convert by multiplying the measured weight by 2.2. |
 
 ### Reference note

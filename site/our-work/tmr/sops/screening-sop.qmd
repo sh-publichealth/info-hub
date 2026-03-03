@@ -73,14 +73,15 @@ This SOP applies to all staff involved in:
 
 Potential participants may be identified through:
 
-- Diabetes registry listing (using a report in the REDCap TMR database)
+- Diabetes registry listing (using a recruitment report in the REDCap TMR database)
 - Clinic lists
 - Referrals from clinical staff
 - Self-referral following publicity
 
 ### 2. Initial Contact
 
-This can be in-person or over the phone. Explain:
+Before making this call, confirm type-2 diabetes status of the potential participant. 
+The call can be in-person or over the phone. Explain:
 
 - This is a diabetes remission *service*, not a research trial
 - Participation is voluntary
@@ -104,13 +105,15 @@ Confirm or collect the following:
 
 **Safety exclusions**
 
-This medical check will likely occur before the screening visit takes place. The reviewer (study clinician or specialist diabetes nurse) will review patient notes, looking for any pre-existing exclusion factors - such as. This will be recorded by the study clinician or specialist diabetes nurse in the REDCap TMR database screening form: 
+This medical check will take place before the screening visit takes place - and is the responsibility of the study clinician and study PI. The reviewer will review patient notes, looking for any pre-existing exclusion factors - such as.  
 
 - Pregnancy or breastfeeding
 - Recent major cardiovascular events
 - Severe renal impairment
 - Active eating disorder
 - Other significant clinical exclusions
+
+The presence / absence of any exclusion factor must be recorded in the REDCap screening form, and this then excludes the person from taking part in this TMR pilot.
 
 ### 4. Explain Programme Expectations
 
@@ -142,10 +145,9 @@ If **no**:
 
 In REDCap, record:
 
-- Eligibility outcome
-- Interest outcome
-- Baseline visit scheduled (yes/no)
-- Any notes relevant to safety or follow-up
+- The outcome of the eligibility assessment
+- The person's interest in taking part
+- Whether a baseline visit has been scheduled (yes/no)
 
 ## Handling Special Situations
 
