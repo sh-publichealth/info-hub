@@ -1,0 +1,40 @@
+---
+title: "Module Overview"
+---
+
+The Data Skills Programme is organised into modules that develop capability step by step.
+
+This structure is a **living framework** and will evolve as the programme grows.
+
+## Core Modules
+
+### Module 1 — Orientation and Data Safety
+
+- working with confidential health data
+- disclosure risk and safe outputs
+- project structure and reproducible workflows
+
+### Module 2 — Data Pipelines
+
+- importing data
+- cleaning and validation
+- deriving variables
+- preparing analysis-ready datasets
+
+### Module 3 — Describing Populations
+
+- counts and proportions
+- denominators and rates
+- age structure and interpretation
+
+### Module 4 — Public Health Surveillance
+
+- case definitions
+- surveillance indicators
+- data quality and bias
+
+### Module 5 — Reporting and Communication
+
+- clear statistical tables
+- effective data visualisation
+- communicating results for decision-making

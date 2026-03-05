@@ -1,0 +1,44 @@
+---
+title: "Course Overview"
+---
+
+## Purpose
+
+The St Helena Public Health Data Skills Programme builds practical capability in analysing and communicating public health data.
+
+The programme is designed for small teams working in real-world health systems with limited resources.
+
+## Design Principles
+
+The programme emphasises:
+
+- practical workflows
+- reproducible analysis
+- responsible handling of health data
+- clear communication of evidence
+
+Participants learn to move from:
+
+raw data → cleaned datasets → analysis → safe outputs → policy-relevant communication.
+
+## Data Protection and Confidentiality
+
+A core component of the programme is the safe handling of individual-level health data.
+
+Key topics include:
+
+- confidentiality of patient data
+- principles of GDPR and responsible data governance
+- anonymisation and de-identification
+- aggregation and disclosure control
+- suppression of small numbers
+- safe public reporting
+
+## Learning Structure
+
+Each module contains:
+
+- short conceptual explanations
+- worked examples (primarily in **Stata**)
+- optional “try-it-yourself” exercises
+- practical tasks based on real public health workflows

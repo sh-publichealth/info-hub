@@ -40,17 +40,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-quarto-
 
-      # 1) Render main website first (creates site/_site)
       - name: Render website
         uses: quarto-dev/quarto-actions/render@v2
         with:
           path: site
-
-      # 2) Render the Data Skills Programme book into site/_site/data-skills
-      - name: Render Data Skills Programme
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          path: site/data-skills
 
       # Upload the rendered site as the Pages artifact
       - name: Upload Pages artifact

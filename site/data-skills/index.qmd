@@ -1,0 +1,27 @@
+---
+title: "Public Health Data Skills"
+---
+
+Welcome to the **St Helena Public Health Data Skills Programme**.
+
+This programme develops practical skills for working with health data in a small-island health system.
+
+The focus is on:
+
+- safe handling of individual-level health data  
+- reproducible analytic workflows  
+- clear and trustworthy reporting  
+- practical decision-support for public health action  
+
+This site section acts as the **living training guide** for the programme.
+
+It contains:
+
+- an overview of the programme
+- the module structure
+- practical worked examples
+- exercises based on real public health tasks
+
+The programme emphasises **doing the work carefully and reproducibly**, using tools that support transparent and auditable analysis.
+
+Next: see the **Course Overview**.

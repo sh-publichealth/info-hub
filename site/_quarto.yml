@@ -29,6 +29,8 @@ website:
         text: Home
       - href: our-work/tmr/index.qmd
         text: Diabetes Remission Pilot
+      - href: data-skills/
+        text: "Data Skills"
 #     - href: whats-new/index.qmd
 #       text: What's New  
 #     - href: our-data/index.qmd

@@ -2,6 +2,7 @@
 # Quarto website outputs
 # ---------------------------
 site/_site/
+site/_guardrails
 site/.quarto/
 site/deprecated/
 .quarto/
