@@ -1,8 +1,6 @@
 project:
   type: book
   output-dir: ../_site/data-skills
-  render:
-    - "*.qmd"
 
 book:
   title: "St Helena Public Health Data Skills Programme"
