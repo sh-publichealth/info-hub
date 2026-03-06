@@ -1,44 +1,86 @@
 ---
-title: "Course Overview"
+title: "Public Health Data Skills Programme"
+pagetitle: "St Helena Public Health Data Skills Programme"
+format:
+  html:
+    toc: false
 ---
 
-## Purpose
+## Welcome 
 
-The St Helena Public Health Data Skills Programme builds practical capability in analysing and communicating public health data.
+Good public health decisions depend on good data.
 
-The programme is designed for small teams working in real-world health systems with limited resources.
+The **St Helena Public Health Data Skills Programme** is a practical learning programme designed to help build the skills needed to collect, manage, analyse, and interpret health data responsibly.
 
-## Design Principles
+This is not a traditional short course. It is a **mentored learning programme built around real public health questions**, realistic datasets, and practical analytical work.
 
-The programme emphasises:
+Our aim is straightforward:
 
-- practical workflows
-- reproducible analysis
-- responsible handling of health data
-- clear communication of evidence
+> To help develop confident, careful, and useful public health data practice in St Helena.
 
-Participants learn to move from:
+## Who this learning programme is for
 
-raw data → cleaned datasets → analysis → safe outputs → policy-relevant communication.
+The learning materials are designed to support several different roles within the health system.
 
-## Data Protection and Confidentiality
+- **Data staff** involved in data entry, management, and quality assurance  
+- **Epidemiology or research trainees** working with health data  
+- **Data producers**, including clinicians and programme staff  
+- **Evidence consumers**, such as managers and decision-makers
 
-A core component of the programme is the safe handling of individual-level health data.
+Not everyone needs every module. The programme is modular so that people can focus on the material most relevant to their role. We can help you decide which modules are most relevant to your work.
 
-Key topics include:
+## How the learning works
 
-- confidentiality of patient data
-- principles of GDPR and responsible data governance
-- anonymisation and de-identification
-- aggregation and disclosure control
-- suppression of small numbers
-- safe public reporting
+The programme is designed for a small health system where people already have busy roles.
 
-## Learning Structure
+Most learning happens **asynchronously**.
 
-Each module contains:
+Participants work through short modules at their own pace and then meet periodically to discuss progress, ask questions, and review analytical work.
 
-- short conceptual explanations
-- worked examples (primarily in **Stata**)
-- optional “try-it-yourself” exercises
-- practical tasks based on real public health workflows
+A typical learning cycle could look like this:
+
+1. read the module overview  
+2. work through the key concepts  
+3. complete a practical exercise  
+4. produce a short analytical output  
+5. review the work during a mentoring discussion
+
+We hope that in this way, learning happens **through doing**.
+
+## What the programme focuses on
+
+The modules focus on the practical work required to generate useful public health intelligence.
+
+Topics include:
+
+- responsible handling of health data  
+- understanding how datasets are built and managed  
+- checking and improving data quality  
+- analysing population health data  
+- interpreting epidemiological results carefully  
+- communicating findings clearly  
+- building reproducible analytical workflows
+
+The emphasis is on **good judgement and practical usefulness**, not just technical skill.
+
+## Why this matters for St Helena
+
+In small populations, good data practice matters even more.
+
+Small numbers can make confidentiality more sensitive.  
+Limited staff and temporary visiting staff make documentation and reproducibility essential.  
+Scarce resources mean analysis must be clear, careful, and directly relevant to real decisions.
+
+Building strong data practice is therefore an important part of strengthening the health system.
+
+## A living learning resource
+
+This learning hub will grow gradually.
+
+The earlier modules will be developed in full from the start. Others will be added as new needs arise and as local experience develops.
+
+The goal is not to create a fixed manual. The goal is to build a **useful, evolving resource that supports public health data capability in St Helena**.
+
+## Next step
+
+The **Module Overview** page introduces the initial learning map and briefly describes each planned module in the programme.

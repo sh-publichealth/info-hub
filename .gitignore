@@ -1,6 +1,7 @@
 # ---------------------------
 # Quarto website outputs
 # ---------------------------
+training/
 site/_site/
 site/_guardrails
 site/.quarto/

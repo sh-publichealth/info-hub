@@ -1,0 +1,169 @@
+---
+title: "Module Overview"
+pagetitle: "Learning Modules"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+## Introduction
+
+The fellowship is organised as a set of learning modules.
+
+Each module focuses on one practical area of public health data work. Some modules are relevant to everyone. Others are more specialised.
+
+The modules together form a flexible **learning library** that can support different roles across the health system.
+
+---
+
+## Responsible Data Practice
+
+::: {.callout-note title="Module 1 – Responsible Handling of Health Data" collapse="false"}
+
+Learn how to work safely and responsibly with confidential health data.
+
+Topics include confidentiality, anonymisation, data minimisation, role-based access, and practical rules for working with small-population health data.
+
+:::
+
+::: {.callout-note title="Module 2 – Responsible AI-Assisted Data Practice" collapse="true"}
+
+Learn how to use AI tools safely in analytical work.
+
+The module covers safe prompting, verifying AI outputs, avoiding hallucinated results, and keeping a transparent record of AI-assisted analysis.
+
+:::
+
+::: {.callout-note title="Module 3 – Scientific Integrity and Analytical Transparency" collapse="true"}
+
+Understand why honest and transparent analysis matters.
+
+Topics include responsible interpretation, reproducibility, and avoiding misleading statistical claims.
+
+
+:::
+
+---
+
+## Data Systems and Data Quality
+
+::: {.callout-note title="Module 4 – Designing Health Data Systems" collapse="true"}
+
+Learn the practical building blocks of health data systems.
+
+Topics include identifiers, metadata, data dictionaries, and how datasets are structured so they can be used reliably.
+
+:::
+
+::: {.callout-note title="Module 5 – From Raw Data to Analytical Dataset" collapse="true"}
+
+Learn how to turn messy raw data into a clean analytical dataset using reproducible workflows.
+
+Topics include data cleaning, documentation, and structured analytical pipelines.
+
+:::
+
+::: {.callout-note title="Module 6 – Understanding Measurement and Survey Data" collapse="true"}
+
+Learn how survey data are generated and where errors can arise.
+
+Topics include measurement error, response bias, and interpreting survey-based indicators.
+
+:::
+
+::: {.callout-note title="Module 7 – Data Quality in Surveillance Systems" collapse="true"}
+
+Learn how to review the quality of surveillance or registry datasets.
+
+Topics include missing data, duplicate records, completeness checks, and internal consistency.
+
+:::
+
+---
+
+## Epidemiological and Statistical Analysis
+
+::: {.callout-note title="Module 8 – Exploring Data and Understanding Variation" collapse="true"}
+
+Learn how to describe data clearly using summary statistics and simple visualisations.
+
+Topics include distributions, histograms, boxplots, and identifying unusual observations.
+
+:::
+
+::: {.callout-note title="Module 9 – Disease Frequency and Health Indicators" collapse="true"}
+
+Learn how to calculate and interpret the basic measures used in public health.
+
+Topics include counts, proportions, rates, prevalence, incidence, and denominators.
+
+:::
+
+::: {.callout-note title="Module 10 – Probability and Statistical Uncertainty" collapse="true"}
+
+Learn the basic statistical ideas behind uncertainty in public health data.
+
+Topics include probability, variability, and interpreting uncertainty in results.
+
+:::
+
+::: {.callout-note title="Module 11 – Study Design in Epidemiology" collapse="true"}
+
+Learn the main types of epidemiological study and what they can tell us.
+
+Topics include cross-sectional studies, cohort studies, case-control studies, and sources of bias.
+
+:::
+
+::: {.callout-note title="Module 12 – Confounding and Causal Thinking" collapse="true"}
+
+Learn why statistical associations can be misleading.
+
+Topics include confounding, causal reasoning, Simpson’s paradox, and careful interpretation of regression models.
+
+:::
+
+::: {.callout-note title="Module 13 – Population Comparisons and Standardisation" collapse="true"}
+
+Learn how to compare populations fairly.
+
+Topics include age-specific rates, age standardisation, and why crude comparisons can be misleading.
+
+:::
+
+::: {.callout-note title="Module 14 – Time-to-Event Analysis" collapse="true"}
+
+Learn how to analyse outcomes that occur over time.
+
+Topics include follow-up time, censoring, Kaplan-Meier curves, and interpretation of time-to-event results.
+
+:::
+
+---
+
+## Communication and Public Health Intelligence
+
+::: {.callout-note title="Module 15 – Data Visualisation and Communicating Risk" collapse="true"}
+
+Learn how to present data clearly and honestly using simple graphics.
+
+Topics include effective charts and avoiding misleading visualisations.
+
+:::
+
+::: {.callout-note title="Module 16 – Communicating Evidence for Policy and Practice" collapse="true"}
+
+Learn how to turn analysis into useful public health intelligence.
+
+Topics include technical notes, briefing papers, and short analytical summaries for decision-makers.
+
+:::
+
+---
+
+## Using the modules
+
+Some learners will complete only a few modules. Others may work through most of the sequence.
+
+The modules are designed to support **gradual development of public health data capability within St Helena**.

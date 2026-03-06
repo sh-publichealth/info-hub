@@ -1,0 +1,256 @@
+---
+title: "Standard Module Structure"
+subtitle: "St Helena Public Health Data Skills Programme"
+format:
+  html:
+    toc: true
+    toc-location: left
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+---
+
+# Purpose
+
+This document sets out the standard structure for taught modules in the **St Helena Public Health Data Skills Programme**.
+
+It is intended to act as the **single source of truth** for module design. It merges the strengths of the two earlier layouts while keeping each module realistic to develop and deliver within a **2-days-per-week contract**, alongside mentoring and other responsibilities.
+
+The emphasis is on modules that are:
+
+- concise
+- practical
+- public-health focused
+- realistic to build incrementally
+- easy to mentor alongside
+
+# Core design principle
+
+Each module should be short enough to be developed, delivered, and maintained sustainably.
+
+The goal is not to create long textbook chapters. The goal is to create **useful learning units** that help a fellow build practical skills and apply them to real public health data work in St Helena.
+
+Each module should therefore:
+
+- introduce one coherent topic
+- explain why it matters
+- teach only the essential concepts
+- include one short worked example
+- include one practical exercise
+- support discussion with a mentor
+
+# Standard module structure
+
+A standard module should normally contain **6 to 8 short sections** and should usually be readable in about **30 to 45 minutes**, excluding exercise time.
+
+## 1. Introduction
+
+A short plain-language overview of the topic.
+
+This section should explain:
+
+- what the topic is
+- why it matters
+- what type of problem it helps solve
+
+Keep this short. In most cases, **100 to 150 words** is enough.
+
+## 2. Why this matters in St Helena
+
+This section connects the topic to the local public health and data environment.
+
+Examples may include:
+
+- small population size
+- confidentiality risk
+- limited workforce capacity
+- practical service pressures
+- importance of proportionate methods
+- need for robust but lightweight workflows
+
+This section keeps the module grounded in local reality rather than abstract training examples.
+
+## 3. Learning objectives
+
+State what the fellow should be able to do by the end of the module.
+
+Objectives should use clear action verbs such as:
+
+- understand
+- describe
+- recognise
+- apply
+- interpret
+- explain
+
+Each module should normally include **3 to 4 objectives**.
+
+## 4. Key concepts
+
+This is the main teaching section.
+
+It should explain the core concepts using short subsections, with emphasis on:
+
+- what the concept means
+- why it matters
+- common mistakes or misunderstandings
+- how it applies in practice
+
+This section should be selective. Only include concepts needed for the module’s practical purpose.
+
+Where useful, include a short **Key terms** subsection.
+
+## 5. Worked example (Stata)
+
+Each module should usually contain one short reproducible worked example in **Stata**.
+
+This section should include:
+
+- a brief description of the example dataset
+- the variables being used
+- step-by-step code
+- a short interpretation of the output
+
+The purpose is to model clear, readable, practical analysis.
+
+Code should be simple, commented where needed, and directly linked to the concepts taught in the module.
+
+## 6. Practical exercise
+
+Each module should include one exercise for the fellow to complete independently.
+
+This section should usually include:
+
+### Task
+
+A short practical task with clear instructions.
+
+### Expected output
+
+A simple description of what the fellow should produce, for example:
+
+- a short interpretation paragraph
+- a small table or graph
+- a brief Stata do-file
+- a short written reflection on results
+
+Exercises should be realistic and proportionate. One well-designed task is better than a long list of smaller tasks.
+
+## 7. Mentoring discussion
+
+Each module should include prompts for discussion with the mentor.
+
+These are not formal assessment questions. They are prompts to help connect the material to real work.
+
+Examples include:
+
+- Where would this skill be useful in our current work?
+- What mistakes would matter most here?
+- What would good enough look like in St Helena?
+- When would a simple approach be better than a more advanced one?
+
+Three short prompts are usually enough.
+
+## 8. Further reading
+
+Each module should end with a short list of further reading.
+
+In most cases this should contain **3 to 6 carefully chosen items**. The aim is to support learning without overwhelming the fellow.
+
+# Optional sections
+
+The following sections may be added where useful, but they are **not required** in every module.
+
+## Confidentiality note
+
+Include when the module involves individual-level health data, small numbers, linkage, or potentially identifiable information.
+
+## Training datasets
+
+Include when a module uses a specific training dataset or when the learner needs a short description of available files.
+
+## Optional Python extension
+
+Include only where useful. Stata remains the primary language. Python can be offered as an optional extension or “try it yourself” pathway.
+
+## Reflection
+
+A short reflective section may be used where the topic benefits from explicitly linking learning to workplace practice.
+
+## Version note
+
+This can be helpful where modules are expected to evolve over time.
+
+# Supporting resource checklist
+
+A module may have supporting materials, depending on its topic.
+
+Possible supporting files include:
+
+- training dataset
+- cleaned dataset
+- data dictionary
+- Stata do-file
+- answer sheet
+- example output
+- reporting template
+
+Not every module will need all of these.
+
+# Recommended module length
+
+To keep development realistic, a typical module should aim for roughly the following scale:
+
+- **Introduction:** 100 to 150 words
+- **Why this matters in St Helena:** 100 to 150 words
+- **Key concepts:** 300 to 500 words
+- **Worked example:** one short example
+- **Practical exercise:** one task
+- **Mentoring discussion:** three short prompts
+
+In total, most modules should be around **900 to 1200 words**, plus code and any exercise materials.
+
+# Consistency feature for all modules
+
+Each module should begin with a short, high-visibility take-away box.
+
+::: {.callout-note}
+## Key take-away
+
+State in one sentence what the fellow should really remember from this module.
+:::
+
+This helps each module feel focused and memorable.
+
+# Development standard
+
+A module does not need to be perfect on first release.
+
+Each module should be developed as a **minimal viable learning unit**, then improved over time as the programme evolves.
+
+The preferred order of priority is:
+
+1. clear purpose
+2. practical relevance
+3. concise explanation
+4. usable worked example
+5. realistic exercise
+6. mentoring value
+
+# Summary
+
+The standard module structure for this programme is therefore:
+
+1. Introduction  
+2. Why this matters in St Helena  
+3. Learning objectives  
+4. Key concepts  
+5. Worked example (Stata)  
+6. Practical exercise  
+7. Mentoring discussion  
+8. Further reading  
+
+Optional sections can be added when needed, but this core structure should remain the default.
+
+This document should be treated as the **single source of truth** for future module development.

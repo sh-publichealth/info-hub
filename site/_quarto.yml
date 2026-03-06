@@ -9,7 +9,7 @@ project:
   type: website
   preview:
     port: 4200
-    
+
 website:
   title: ""
   site-url: https://sh-publichealth.github.io/info-hub
@@ -18,124 +18,108 @@ website:
   back-to-top-navigation: true
   reader-mode: true
 
-  # --------------------
-  # Top navigation bar
-  # --------------------
   navbar:
     logo: assets/images/logo-white.png
-  #  title: "Info Hub"
+    pinned: true
     left:
       - href: index.qmd
         text: Home
-      - href: our-work/tmr/index.qmd
-        text: Diabetes Remission Pilot
-      - href: data-skills/
-        text: "Data Skills"
-#     - href: whats-new/index.qmd
-#       text: What's New  
-#     - href: our-data/index.qmd
-#       text: Our Data               
-#     - href: how-we-work/index.qmd
-#       text: How We Work               
-#     - href: about-us/index.qmd
-#       text: About Us               
 
-  # --------------------
-  # Sidebar (scoped later)
-  # --------------------
+      - text: "Our Work"
+        menu:
+          - href: our-work/tmr/index.qmd
+            text: Total Meal Replacement
+
+      - href: data-skills/course-overview.qmd
+        text: Data Skills
+
   sidebar:
-      id: tmr-ops
+    - id: tmr-ops
       title: "TMR Operations Manual"
-      style: "docked"
+      style: docked
       search: true
-      collapse-level: 2
+      collapse-level: 1
       contents:
-        - text: Introduction
-          href: our-work/index.qmd
-        - section: "Total Meal Replacement"
-          contents: 
-          - text: The Project
-            href: our-work/tmr/index.qmd
-          - text: Evidence Brief
-            href: our-work/tmr/evidence-brief.qmd
-          - text: Information Sheet
-            href: our-work/tmr/info-sheet-01.qmd
-          - text: Project Approval
-            href: our-work/tmr/ethics-approval.qmd
-          - section: "Ops Manual"
-            contents: 
-#            - text: Overview
-#              href: our-work/tmr/index.qmd
-            - text: The Study Protocol 
+        - text: The Project
+          href: our-work/tmr/index.qmd
+
+        - text: Information Sheet
+          href: our-work/tmr/info-sheet-01.qmd
+
+        - section: "Operations Manual"
+          contents:
+            - text: The Study Protocol
               href: our-work/tmr/protocol.qmd
-            - text: Eligibility 
+            - text: Evidence Brief
+              href: our-work/tmr/evidence-brief.qmd
+            - text: Project Approval
+              href: our-work/tmr/ethics-approval.qmd
+            - text: Eligibility
               href: our-work/tmr/eligibility.qmd
+
             - section: "Participant Visits"
-              contents: 
-              - text: Participant Flow
-                href: our-work/tmr/visits/participant-flow.qmd
-              - text: Overview of Visits
-                href: our-work/tmr/visits/participant-visits.qmd
+              contents:
+                - text: Participant Flow
+                  href: our-work/tmr/visits/participant-flow.qmd
+                - text: Overview of Visits
+                  href: our-work/tmr/visits/participant-visits.qmd
+
             - section: "SOPs"
-              contents: 
-#              - text: SOP overview
-#                href: our-work/tmr/sops/index.qmd
-              - text: Recruitment SOP
-                href: our-work/tmr/sops/recruitment-sop.qmd
-              - text: Screening SOP
-                href: our-work/tmr/sops/screening-sop.qmd
-#              - text: Eating Disorder SOP
-#                href: our-work/tmr/sops/eating-disorder-sop.qmd
-              - text: Height & Weight SOP 
-                href: our-work/tmr/sops/height-weight-sop.qmd
-              - text: Anthropometry SOP 
-                href: our-work/tmr/sops/waist-hip-sop.qmd
-              - text: Blood Pressure SOP 
-                href: our-work/tmr/sops/bp-heartrate-sop.qmd
-              - text: Glucose & Lipids SOP 
-                href: our-work/tmr/sops/bloodglucose-lipids-sop.qmd
-              - text: Fibroscan SOP 
-                href: our-work/tmr/sops/fibroscan-sop.qmd
-              - text: Baseline SOP
-                href: our-work/tmr/sops/baseline-sop.qmd
-#              - text: Missed Visit SOP
-#                href: our-work/tmr/sops/missed-visit-sop.qmd
+              contents:
+                - text: Recruitment SOP
+                  href: our-work/tmr/sops/recruitment-sop.qmd
+                - text: Screening SOP
+                  href: our-work/tmr/sops/screening-sop.qmd
+                - text: Height & Weight SOP
+                  href: our-work/tmr/sops/height-weight-sop.qmd
+                - text: Anthropometry SOP
+                  href: our-work/tmr/sops/waist-hip-sop.qmd
+                - text: Blood Pressure SOP
+                  href: our-work/tmr/sops/bp-heartrate-sop.qmd
+                - text: Glucose & Lipids SOP
+                  href: our-work/tmr/sops/bloodglucose-lipids-sop.qmd
+                - text: Fibroscan SOP
+                  href: our-work/tmr/sops/fibroscan-sop.qmd
+                - text: Baseline SOP
+                  href: our-work/tmr/sops/baseline-sop.qmd
+
             - section: "Data"
-              contents: 
-#              - text: Overview
-#                href: our-work/tmr/data/index.qmd
-              - text: Analysis Plan 
-                href: our-work/tmr/data/sap.qmd
-              - text: Data Dictionary
-                href: our-work/tmr/data/data-dictionary.qmd
-              - text: Data Management Plan
-                href: our-work/tmr/data/data-management-plan.qmd
-              - text: Data Anonymisation
-                href: our-work/tmr/data/anonymisation.qmd
-              - text: Data Sharing
-                href: our-work/tmr/data/data-sharing.qmd
-#              - text: Data Monitoring Committee
-#                href: our-work/tmr/data/dmc-tor.qmd
-#            - section: "REDCap Guidance"
-#              contents: 
-#              - text: Training Overview
-#                href: our-work/tmr/redcap/index.qmd
-#            - section: "DataBase"
-#              contents: 
-#              - text: Database Training
-#                href: our-work/tmr/database/database-training.qmd
+              contents:
+                - text: Analysis Plan
+                  href: our-work/tmr/data/sap.qmd
+                - text: Data Dictionary
+                  href: our-work/tmr/data/data-dictionary.qmd
+                - text: Data Management Plan
+                  href: our-work/tmr/data/data-management-plan.qmd
+                - text: Data Anonymisation
+                  href: our-work/tmr/data/anonymisation.qmd
+                - text: Data Sharing
+                  href: our-work/tmr/data/data-sharing.qmd
+
+    - id: data-skills
+      title: "Data Skills Training"
+      style: docked
+      search: true
+      collapse-level: 1
+      contents:
+        - text: Course Overview
+          href: data-skills/course-overview.qmd
+        - text: Our Modules
+          href: data-skills/module-overview.qmd
+#        - text: Module Skeleton
+#          href: data-skills/module-skeleton.qmd
 
 freeze: auto
 
 format:
   html:
-    format-links: true 
+    format-links: true
     toc: true
     toc-depth: 2
     description: false
     theme:
       - flatly
-    css: 
+    css:
       - assets/css/styles.css
       - assets/css/briefing-ash.css
       - assets/css/grid.css
@@ -145,5 +129,4 @@ resources:
 
 bibliography: references.bib
 csl: https://www.zotero.org/styles/harvard-cite-them-right
-
-# touch: 2026-03-03 09:29:53.424
+# touch: 2026-03-06 15:19:34.007
