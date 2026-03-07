@@ -1,0 +1,233 @@
+---
+title: "Module 1: Responsible Use of Public Health Data"
+format:
+  html:
+    theme: default
+    toc: true
+    toc-depth: 2
+    code-copy: true
+    smooth-scroll: true
+  pdf: default
+---
+
+::: {.callout-note}
+## Module at a glance
+
+**Estimated time:** 30–40 minutes
+
+This module introduces the responsible use of health data in small populations.
+
+You will explore:
+
+1. Why confidentiality matters in public health data  
+2. How disclosure risk arises in small datasets  
+3. The difference between identifiable, de-identified, and anonymised data  
+4. Why reproducible analysis is safer than manual editing  
+5. Practical exercises using fictional datasets
+:::
+
+## Why this module matters {#why-this-module-matters}
+
+Public health work depends on data.
+
+We collect information about illnesses, clinic visits, treatments, and outcomes so that we can understand what is happening in a population and decide how services should respond.
+
+But health data are not ordinary data.
+
+Behind every record is a real person. Someone’s diagnosis. Someone’s treatment. Someone’s life.
+
+This means that anyone working with health data carries an important responsibility: *to use data in ways that improve health while protecting the privacy and dignity of individuals*.
+
+In large countries this responsibility is important. In small communities it becomes even more important.
+
+## The special challenge of small populations
+
+St Helena has a small population.
+
+This is one of the things that makes the island special. It also creates a particular challenge for people working with data.
+
+In a small population:
+
+- many people know each other  
+- some health conditions are rare  
+- small numbers appear often in data tables  
+
+When numbers are small, it can sometimes become possible to guess who a record refers to, even if names and other direct identifiers have been removed.
+
+For example, imagine a table showing:
+
+- female  
+- age under 40  
+- type 1 diabetes  
+- living in a particular community
+
+In a small community, that combination may refer to a single person.
+
+The table may look anonymous, but the information it contains may still point to someone.
+
+This is called **disclosure risk**.
+
+## Disclosure risk in practice {#disclosure-risk-in-practice}
+
+### The idea
+
+Disclosure risk occurs when published data could allow someone to identify an individual.
+
+This can happen in several ways:
+
+- because the numbers are very small  
+- because the condition is rare  
+- because several ordinary variables combine to point to one person  
+
+Importantly, disclosure risk can exist *even when names and identifiers have been removed*.
+
+### Consider this situation
+
+Look at the table below. Which cells create the biggest disclosure risk?
+
+| Age group | Male Type 1 | Male Type 2 | Female Type 1 | Female Type 2 |
+|-----------|-------------|-------------|---------------|---------------|
+| <40       | 1           | 2           | 2             | 1             |
+| 40–59     | 1           | 6           | 0             | 5             |
+| 60+       | 0           | 9           | 1             | 8             |
+
+::: {.callout-note collapse="true"}
+## Suggested response
+
+The riskiest cells are the ones with **1 or 2 people**.
+
+In a small population, these combinations may point to a single individual or a very small number of possible individuals.
+
+That is true even though the table contains no direct identifiers.
+:::
+
+::: {.callout-tip collapse="true"}
+## How would the risk change if the table also included *community*?
+
+It would usually increase. A place variable can narrow the possibilities sharply in a small community.
+:::
+
+## Key concepts {#key-concepts}
+
+::: {.panel-tabset}
+
+## Identifiable data
+
+Data that relate to an identified person, or to a person who can be identified directly or indirectly. This is a formal concept in the Uropean Union's **GDPR** and related data protection laws.
+
+**Examples include:** names, addresses, identification numbers, or combinations of information that make a person identifiable.
+
+## De-identified or pseudonymised data
+
+Data from which direct identifiers have been removed, replaced, or separated. This reduces risk, but it does **not** usually make the data anonymous. In GDPR terms, pseudonymised data are generally still personal data.
+
+## Anonymised data
+
+Data that have been processed so that individuals cannot reasonably be identified.
+
+This usually means more than removing names. It may also require reducing or transforming indirect identifiers such as exact age, exact dates, rare diagnoses, detailed geography, and unusual combinations of variables.
+
+## Aggregated data
+
+Data that have been summarised into groups.
+
+Examples include counts by age group, totals by disease type, or percentages across categories.
+
+Aggregation often reduces disclosure risk because individuals are no longer visible in the data.
+
+## Small-number suppression
+
+Very small counts — often below 5 — are sometimes replaced with a symbol such as `<5`.
+
+In small populations this may remove a lot of detail, but it is often necessary to protect confidentiality in public reporting.
+:::
+
+## De-identification, pseudonymisation, and anonymisation {#de-identification-pseudonymisation-and-anonymisation}
+
+These terms are often used interchangeably, but they describe different stages of protecting data.
+
+- **De-identification** removes direct identifiers such as names or ID numbers  
+- **Pseudonymisation** replaces identifiers with codes while keeping a secure linking file  
+- **Anonymisation** reduces identification risk so individuals can no longer reasonably be identified  
+
+A dataset can have names and other direct identifiers removed and still be personal data.
+
+### The privacy pathway
+
+```{mermaid}
+%%{init: {'flowchart': {'rankSpacing': 35, 'nodeSpacing': 18, 'padding': 5}} }%%
+flowchart TD
+
+A[Define the purpose of the data use]
+
+A --> B(Are direct identifiers needed?)
+
+B -->|Yes| C[Use identifiable data<br>in a secure operational system]
+B -->|No| D[Remove direct identifiers]
+
+D --> E(Is row-level analysis required?)
+
+E -->|Yes| F[Create a de-identified<br>or pseudonymised analysis file]
+E -->|No| G[Prepare aggregated output]
+
+F --> H(Will results be shared<br>beyond the team?)
+
+H -->|Yes| I[Check indirect identifiers,<br>aggregate and suppress]
+H -->|No| J[Use internally with<br>appropriate access controls]
+
+I --> K[Release aggregated or effectively anonymised output]
+classDef decision fill: #ddd0b9,stroke: #2f2f2f,stroke-width:1px;
+class B,E,H decision;
+```
+
+
+
+## Responsible data analysis in practice {#responsible-data-analysis-in-practice}
+
+Producing safe outputs is not only about the final table or figure. It is also about *how analysis is carried out*.
+
+Good analysis should be:
+
+- **transparent** — others can see how results were produced  
+- **reproducible** — the same analysis can be run again  
+- **script-based** — using code rather than manual editing  
+
+Scripts such as Stata `do`-files create a clear record of analytical decisions.
+
+## Exercises and supporting files {#exercises-and-supporting-files}
+
+| Resource | Purpose |
+|---|---|
+| [Exercise 1: Disclosure risk](exercise-01-disclosure-risk.qmd) | Practise identifying unsafe small-cell outputs. |
+| [Exercise 2: De-identification and anonymisation](exercise-02-deidentification.qmd) | Practise preparing safer analysis datasets and outputs. |
+| [Module resources](resources.qmd) | Access the datasets and Stata scripts used in this module. |
+
+::: {.callout-note}
+## Practical work
+
+Work through both exercises for this module.
+
+- The first focuses on *disclosure risk in outputs*.  
+- The second focuses on *how identifiable data are prepared for safe analysis and safer reporting*.
+:::
+
+## What to remember from this module {#what-to-remember-from-this-module}
+
+::: {.callout-tip}
+### Key ideas
+
+- Health data represent real people, so confidentiality must be protected.  
+- Removing names does not automatically make data anonymous.  
+- De-identified or pseudonymised data are often still personal data.  
+- In small populations, small numbers and combinations of variables can identify individuals.  
+- Responsible analysts redesign outputs when needed.  
+- Script-based analysis improves transparency and reproducibility.
+:::
+
+## Next module
+
+::: {.callout-important}
+### Coming next
+
+In **Module 2**, we explore how AI tools can be used safely in analytical work. We look at practical ways to use AI for coding and documentation while maintaining transparency, verification, and responsibility in public health analysis.
+:::

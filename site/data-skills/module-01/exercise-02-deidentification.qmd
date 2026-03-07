@@ -1,0 +1,175 @@
+---
+title: "Exercise 2: De-identification and Anonymisation"
+format:
+  html: default
+  pdf: default
+draft: false
+---
+
+## Exercise overview
+
+In this exercise, you will work with a fictional clinic dataset that contains direct identifiers and detailed personal information.
+
+Your task is to produce two safer outputs:
+
+- a de-identified dataset suitable for internal analysis
+- a more strongly anonymised or aggregated output suitable for wider reporting
+
+## Why this exercise matters
+
+Health data do not move directly from clinic record to public report in one leap.
+
+They usually move through stages.
+
+```{mermaid}
+%%{init: {'flowchart': {'rankSpacing': 35, 'nodeSpacing': 18, 'padding': 5}} }%%
+flowchart TD
+
+A[Define the purpose of the data use]
+
+A --> B(Are direct identifiers needed?)
+
+B -->|Yes| C[Use identifiable data<br>in a secure operational system]
+B -->|No| D[Remove direct identifiers]
+
+D --> E(Is row-level analysis required?)
+
+E -->|Yes| F[Create a de-identified<br>or pseudonymised analysis file]
+E -->|No| G[Prepare aggregated output]
+
+F --> H(Will results be shared<br>beyond the team?)
+
+H -->|Yes| I[Check indirect identifiers,<br>aggregate and suppress]
+H -->|No| J[Use internally with<br>appropriate access controls]
+
+I --> K[Release aggregated or effectively anonymised output]
+classDef decision fill: #ddd0b9,stroke: #2f2f2f,stroke-width:1px;
+class B,E,H decision;
+```
+
+A key part of responsible data work is deciding what level of detail is appropriate for each stage and each audience.
+
+## Learning aims
+
+By the end of this exercise, you should be able to:
+
+- identify direct identifiers in a dataset
+- recognise variables that may identify people indirectly when combined
+- prepare a de-identified file for internal analysis
+- explain why that file is still not the same as a public anonymised output
+
+## The fictional scenario
+
+You are given a fictional diabetes clinic dataset containing:
+
+- names
+- hospital numbers
+- addresses
+- dates of birth
+- community
+- clinical variables
+
+The dataset is too detailed for routine sharing.
+
+Your job is to decide what should be removed, transformed, retained, or aggregated.
+
+::: {.callout-note}
+## Task 1. Identify the variables by risk type
+
+Review the dataset and divide variables into three groups.
+
+1. **Direct identifiers**  
+2. **Variables that may identify people when combined**  
+3. **Variables that are generally useful for analysis**
+
+Write a short note explaining your decisions.
+:::
+
+::: {.callout-note}
+## Task 2. Create a de-identified internal analysis file
+
+Prepare a version of the dataset suitable for internal analysis by a small analytic team.
+
+Think about actions such as:
+
+- removing names
+- removing hospital numbers
+- removing addresses
+- replacing the original identifier with a study ID
+- reducing exact dates to age, age group, or month
+- deciding whether community is still needed
+
+Your aim is to retain enough information for analysis while reducing unnecessary identification risk.
+:::
+
+::: {.callout-note}
+## Task 3. Prepare a public-facing output
+
+Now imagine that results from the same data need to appear in a public report.
+
+Produce a safer output, such as:
+
+- diabetes type by age group
+- total patients by age group
+
+Before finalising the output:
+
+- check for small cell counts
+- think about aggregation or suppression
+- think carefully about whether community should appear at all
+:::
+
+::: {.callout-note}
+## Task 4. Explain the difference
+
+Write 4 to 6 sentences explaining the difference between:
+
+- a **de-identified or pseudonymised analysis file**
+- an **anonymised or aggregated public output**
+
+Your answer should show that these are not the same thing.
+:::
+
+## Reflection
+
+Write briefly on the following question.
+
+**Why is removing names only the start, rather than the end, of safe data preparation?**
+
+## Optional software task
+
+If you are using Stata, run the companion exercise script and review the internal analysis file and the public summary table that it creates.
+
+Briefly note:
+
+- which variables were removed completely
+- which variables were transformed
+- which variables remain potentially sensitive even in the internal analysis file
+
+## Suggested answer structure
+
+### 1. Variable groups
+
+Write your answer here.
+
+### 2. Internal analysis file
+
+Write your answer here.
+
+### 3. Public-facing output
+
+Write your answer here.
+
+### 4. Difference between de-identification and anonymisation
+
+Write your answer here.
+
+### 5. Reflection
+
+Write your answer here.
+
+## Key point
+
+Removing names is important, but it is rarely enough on its own.
+
+Responsible analysts think about the whole pathway from identifiable data to safer analysis files and finally to anonymised or aggregated outputs.

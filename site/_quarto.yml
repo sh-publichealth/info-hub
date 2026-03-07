@@ -106,8 +106,20 @@ website:
           href: data-skills/course-overview.qmd
         - text: Our Modules
           href: data-skills/module-overview.qmd
-#        - text: Module Skeleton
-#          href: data-skills/module-skeleton.qmd
+        - section: "Module 1. Responsible Data Use"
+          contents:
+            - text: Learning Guide
+              href: data-skills/module-01/index.qmd
+            - text: Exercise 1. Disclosure Risk
+              href: data-skills/module-01/exercise-01-disclosure-risk.qmd
+            - text: Exercise 2. De-identification
+              href: data-skills/module-01/exercise-02-deidentification.qmd
+            - text: Resources
+              href: data-skills/module-01/resources.qmd
+        - section: "Module 2. Responsible AI Use"
+          contents:
+            - text: Learning Guide
+              href: data-skills/module-02/index.qmd
 
 freeze: auto
 
@@ -120,13 +132,13 @@ format:
     theme:
       - flatly
     css:
-      - assets/css/styles.css
       - assets/css/briefing-ash.css
       - assets/css/grid.css
+      - assets/css/styles.css
 
 resources:
   - assets/graphics/Coat_of_Arms_of_Saint_Helena.png
 
 bibliography: references.bib
 csl: https://www.zotero.org/styles/harvard-cite-them-right
-# touch: 2026-03-06 15:19:34.007
+# touch: 2026-03-07 14:27:03.119

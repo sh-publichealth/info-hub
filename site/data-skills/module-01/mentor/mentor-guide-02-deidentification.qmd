@@ -1,0 +1,146 @@
+---
+title: "Mentor Guide 2: De-identification and Anonymisation"
+format:
+  html: default
+  pdf: default
+draft: true
+---
+
+## Purpose of this guide
+
+This document provides suggested answers and teaching notes for **Exercise 2: De-identification and Anonymisation**.
+
+The exercise is designed to help the trainee distinguish between a de-identified internal analysis file and an anonymised or aggregated output suitable for wider release.
+
+## Learning goal of the exercise
+
+The trainee should understand that:
+
+- direct identifiers usually need to be removed quickly
+- indirect identifiers may still create risk when combined
+- a pseudonymised or de-identified analysis file is often still personal data
+- anonymised public outputs usually require further reduction, grouping, or aggregation
+
+## Task 1. Grouping variables by risk type
+
+A reasonable classification is:
+
+### Direct identifiers
+
+- patient_name
+- hospital_number
+- address
+
+### Variables that may identify people when combined
+
+- date_of_birth
+- sex
+- community
+- diabetes_type
+- clinic_visit_date
+
+### Variables usually useful for analysis
+
+- age or age_group
+- diagnosis_year
+- bmi_category
+- treatment
+- clinic_visits_last_year
+
+The key idea is that the same variable may be acceptable in one setting and too detailed in another.
+
+## Task 2. Internal analysis file
+
+A reasonable internal analysis file would:
+
+- remove patient_name
+- remove hospital_number
+- remove address
+- use a study ID instead of the original operational ID
+- replace exact date of birth with age or age group
+- replace exact clinic visit date with month or quarter
+- retain clinical variables needed for analysis
+
+The mentor should reinforce that this file may still be personal data because people may remain identifiable indirectly.
+
+## Task 3. Public-facing output
+
+A reasonable public-facing output would be aggregated and might show:
+
+- diabetes type by age group
+- total counts by age group only
+
+The trainee should recognise that this output should contain:
+
+- no names
+- no hospital numbers
+- no addresses
+- no row-level records
+- no exact dates
+- careful handling of small cell counts
+
+If the trainee includes community in a public output, they should explain clearly why this is justified and how disclosure risk has been managed. In most cases, leaving community out would be the safer choice.
+
+## Task 4. Explaining the difference
+
+A strong answer should recognise that:
+
+- **de-identification or pseudonymisation** reduces risk and supports analysis but does not guarantee anonymity
+- **anonymisation** aims to make identification no longer reasonably likely
+- aggregated outputs may be safer than row-level files because individuals are no longer visible directly
+
+The trainee does not need to give a legal essay. The goal is practical understanding.
+
+## Reflection question
+
+The trainee should recognise that removing names is only the start because:
+
+- dates, place, age, and rare conditions can still identify people
+- combinations of variables may reveal someone even without direct identifiers
+- the audience and purpose matter when deciding how much detail is safe
+
+## Teaching notes for mentors
+
+### 1. This exercise is about pathway, not just variables
+
+The important model is:
+
+Identifiable dataset  
+→ de-identified analysis file  
+→ anonymised or aggregated output
+
+That sequence should become a mental habit for the trainee.
+
+### 2. Internal and public use are different
+
+A file may be acceptable for a small authorised analytic team and completely inappropriate for public release.
+
+The trainee should learn to ask: **who will use this, and for what purpose?**
+
+### 3. Community is a useful teaching variable
+
+Community may be analytically useful, but in a small population it is often risky. This helps learners see why indirect identifiers matter.
+
+## Signs the trainee has understood the exercise
+
+The trainee likely understands the exercise if they can:
+
+- identify obvious direct identifiers
+- recognise the importance of indirect identifiers
+- describe a sensible internal analysis file
+- describe a safer public output
+- explain that de-identification and anonymisation are not synonyms
+
+## Suggested discussion prompt
+
+A useful discussion starter is:
+
+> What minimum information do you genuinely need to answer the analysis question in front of you?
+
+That question often helps trainees move from habit to judgement.
+
+## Key takeaway
+
+Responsible data preparation is not a single act.
+
+It is a sequence of decisions about what to retain, what to transform, what to remove, and what level of detail is appropriate for each audience.

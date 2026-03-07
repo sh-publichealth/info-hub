@@ -33,3 +33,6 @@ Thumbs.db
 .dta
 .do
 .ado
+*.csv
+*.dta
+

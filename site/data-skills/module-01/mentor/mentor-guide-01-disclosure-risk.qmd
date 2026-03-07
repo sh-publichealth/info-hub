@@ -1,0 +1,210 @@
+---
+title: "Mentor Guide 1: Disclosure Risk"
+format:
+  html: default
+  pdf: default
+draft: true
+---
+
+## Purpose of this guide
+
+This document provides suggested answers and teaching notes for **Exercise 1: Disclosure Risk**.
+
+The goal is not to assess the trainee against a rigid answer key. The goal is to support discussion about how confidentiality risks arise when analysing health data in a small population.
+
+A trainee who recognises the general issue and proposes sensible mitigation strategies has understood the core lesson.
+
+## Learning goal of the exercise
+
+The exercise is designed to help the trainee understand that:
+
+- removing direct identifiers does **not** automatically make data anonymous
+- very small cell counts can create identification risk
+- combining ordinary variables can reveal individuals
+- analysts must actively think about disclosure risk when producing tables
+
+In a small population, this judgement becomes a routine part of analytical work.
+
+## Task 1. Identifying the disclosure risk
+
+### Table shown to trainee
+
+| Age group | Male Type 1 | Male Type 2 | Female Type 1 | Female Type 2 |
+|-----------|-------------|-------------|---------------|---------------|
+| <40       | 1           | 2           | 2             | 1             |
+| 40–59     | 1           | 6           | 0             | 5             |
+| 60+       | 0           | 9           | 1             | 8             |
+
+### Expected observations
+
+The trainee should identify that the following cells create risk:
+
+- any cell with **1 or 2 individuals**
+- the `<40` age group cells
+- the **Male Type 1** cells
+- the **Female Type 1** cells
+
+The key idea is that very small counts may allow someone to infer the identity of individuals.
+
+### Explanation mentors should look for
+
+The trainee should recognise that:
+
+- in small communities, people may already know who has a condition
+- a table can confirm those suspicions
+- small counts combined with demographic information can effectively identify someone
+
+Removing direct identifiers does not eliminate this risk.
+
+A reasonable answer might mention that counts below about **5** are commonly treated as sensitive in public reporting, even though this teaching exercise uses counts of **1 to 3** to keep the example simple.
+
+## Task 2. Why community increases risk
+
+The trainee should recognise that **adding community increases the chance of identification**.
+
+Expected reasoning includes:
+
+- some communities contain small populations
+- people often know their neighbours' health circumstances
+- combining community with age and condition narrows the possible individuals dramatically
+
+For example:
+
+Female  
+Age <40  
+Type 1 diabetes  
+Community = Sandy Bay
+
+In a small community this may point to a single person.
+
+The trainee should understand that **combinations of variables can become identifying even when each variable alone seems harmless**.
+
+## Task 3. Safer reporting strategies
+
+Acceptable suggestions include the following.
+
+### Aggregation
+
+Combine categories to increase cell counts.
+
+Examples:
+
+- remove the sex split
+- combine age groups
+- combine diabetes types
+
+### Suppression
+
+Hide small counts such as 1, 2, or 3.
+
+In this exercise they might be shown as `<4`.
+
+### Removing a variable
+
+Sometimes the safest option is to remove one dimension of the table.
+
+For example:
+
+Age group × diabetes type
+
+instead of:
+
+Age group × sex × diabetes type
+
+### Higher-level summaries
+
+Reporting only total counts by age group may be sufficient for some audiences.
+
+Mentors should reinforce that **the appropriate level of detail depends on the reporting context**.
+
+## Task 4. Example safer table
+
+One reasonable safer table might look like this.
+
+| Age group | Type 1 | Type 2 |
+|-----------|--------|--------|
+| <40       | <4     | 3      |
+| 40–59     | <4     | 11     |
+| 60+       | <4     | 17     |
+
+Here:
+
+- the sex split has been removed
+- small counts are masked
+- useful information is still conveyed
+
+Another acceptable solution is to present only total diabetes counts by age group.
+
+There is rarely a single correct answer. The important point is that the trainee demonstrates awareness of risk and proposes sensible adjustments.
+
+## Reflection question
+
+The trainee's reflection should recognise the tension between two goals:
+
+- protecting individual confidentiality
+- preserving useful information for decision-making
+
+Mentors should encourage discussion around:
+
+- how aggregation reduces detail
+- why protecting individuals is a core public health responsibility
+- how analysts must make careful judgement calls
+
+The key insight is that **good data stewardship requires balancing transparency with privacy**.
+
+## Teaching notes for mentors
+
+### 1. Analysts often think anonymisation is automatic
+
+Many beginners assume that removing names solves the confidentiality problem.
+
+This exercise demonstrates that **structure and context also matter**.
+
+### 2. Small populations magnify risk
+
+In large national datasets, a count of 2 may not reveal much.
+
+In a community of a few thousand people, the same count may be identifying.
+
+This is why disclosure control matters especially in:
+
+- small island states
+- rural communities
+- rare diseases
+
+### 3. The analyst is a data steward
+
+A useful message for trainees is that analysts are not just technicians.
+
+They are also responsible for:
+
+- protecting the dignity of individuals
+- maintaining public trust
+- ensuring data are used responsibly
+
+This idea will recur throughout later modules.
+
+## Signs the trainee has understood the exercise
+
+The trainee likely understands the concept if they can:
+
+- identify small-cell risk
+- explain why combinations of variables can reveal identities
+- suggest at least one practical mitigation strategy
+- recognise that reporting choices depend on audience and context
+
+Perfect answers are not required. Clear reasoning is the goal.
+
+## Suggested discussion prompt
+
+A useful conversation starter is:
+
+> If you were a patient in a small community, what level of detail would you feel comfortable seeing in public health reports?
+
+This question often makes the confidentiality issue much more concrete.
+
+## Key takeaway
+
+Responsible use of health data is not only about statistical accuracy.
+
+It is also about understanding the social context in which data are used, and making thoughtful decisions that protect both **individual privacy** and **public health insight**.

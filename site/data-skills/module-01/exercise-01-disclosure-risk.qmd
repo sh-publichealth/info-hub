@@ -1,0 +1,159 @@
+---
+title: "Exercise 1: Identifying Disclosure Risk"
+format:
+  html: default
+  pdf: default
+draft: false
+---
+
+## Exercise overview
+
+In this exercise, you will review a small fictional health dataset and think about one of the central challenges of public health data work in a small population.
+
+How do we share useful information without increasing the risk that individuals could be identified?
+
+The purpose is not to catch you out. The purpose is to help you build judgement.
+
+## Why this exercise matters
+
+In a small population, even a simple summary table can create confidentiality risks.
+
+This can happen when:
+
+- cell counts are very small
+- rare conditions are shown in combination with age, sex, or community
+- local knowledge makes it easier to infer who someone is
+
+This means that technically correct analysis is not always safe analysis.
+
+## Learning aims
+
+By the end of this exercise, you should be able to:
+
+- spot small-cell disclosure risk in a summary table
+- explain why some tables are unsafe for public reporting
+- suggest simple ways to reduce disclosure risk
+- distinguish between a table suitable for internal use and one suitable for wider release
+
+## The fictional scenario
+
+You are working with a fictional quarterly extract from a diabetes clinic.
+
+A colleague has prepared a summary table for a report. The colleague has removed direct identifiers and believes the table is therefore safe to share.
+
+Your job is to review the output before it is included in a report.
+
+::: {.callout-note}
+## Task 1. Identify the risk
+
+Look at the table below.
+
+| Age group | Male Type 1 | Male Type 2 | Female Type 1 | Female Type 2 |
+|-----------|-------------|-------------|---------------|---------------|
+| <40       | 1           | 2           | 2             | 1             |
+| 40--59    | 1           | 6           | 0             | 5             |
+| 60+       | 0           | 9           | 1             | 8             |
+
+Write a short note answering the following.
+
+a. Which cells create the main disclosure risks?  
+b. Why are these cells potentially risky in a small population?  
+c. Does removing direct identifiers make this table safe? Explain briefly.
+:::
+
+::: {.callout-note}
+## Task 2. Think about how risk increases
+
+Now imagine the analyst decides to produce a second table that includes **community** as well as diabetes type.
+
+Write a short note answering the following.
+
+a. Why might adding community increase disclosure risk?  
+b. Why can place be especially sensitive in a small community?  
+c. Can a combination of ordinary variables become identifying when put together?
+:::
+
+::: {.callout-note}
+## Task 3. Improve the table
+
+Suggest at least **two ways** to make the original table safer for wider reporting.
+
+You may wish to think about options such as:
+
+- combining categories
+- removing one variable from the public table
+- suppressing very small counts
+- producing a higher-level summary instead
+
+In this exercise, counts of **1 to 3** are treated as risky for teaching purposes. In practice, many organisations use a threshold below **5** for public reporting.
+:::
+
+::: {.callout-note}
+## Task 4. Draft a safer version
+
+Produce a safer alternative to the table above.
+
+You do not need to use software for this exercise. You may simply sketch the safer table in words or in a small table using whatever software you choose.
+
+For example, you might decide to report:
+
+- age group by diabetes type only
+- total patients by age group only
+- small counts as `<4` in this teaching example
+:::
+
+## Reflection
+
+Write 4 to 6 sentences on the following question.
+
+**What is the balance between protecting confidentiality and preserving useful information?**
+
+In your reflection, consider:
+
+- what is lost when categories are combined
+- what is gained when risk is reduced
+- why this balance matters in public health work
+
+## Optional software task
+
+If you are using Stata, run the companion exercise script and compare:
+
+1. the unsafe table
+2. the safer table
+3. the most aggregated version
+
+Briefly note which version you think is appropriate for:
+
+- internal team discussion
+- management reporting
+- public release
+
+## Suggested answer structure
+
+You can structure your response using the headings below.
+
+### 1. Main disclosure risks
+
+Write your answer here.
+
+### 2. Why community increases risk
+
+Write your answer here.
+
+### 3. Safer reporting options
+
+Write your answer here.
+
+### 4. My revised table
+
+Write your answer here.
+
+### 5. Reflection
+
+Write your answer here.
+
+## Key point
+
+A table can look anonymous and still create disclosure risk.
+
+Responsible public health analysis is not only about producing results. It is also about judging what can be shared safely, usefully, and appropriately.

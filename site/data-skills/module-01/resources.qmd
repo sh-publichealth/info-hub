@@ -1,0 +1,86 @@
+---
+title: "Module 1 Resources"
+format:
+  html: default
+  pdf: default
+draft: false
+---
+
+## How to use these resources
+
+This page brings together the practical materials used in **Module 1**.
+
+Use the resources in this order:
+
+1. Read the main module page: [Module 1: Responsible Use of Public Health Data](index.qmd)
+2. Work through **Exercise 1** on disclosure risk.
+3. Work through **Exercise 2** on de-identification and anonymisation.
+4. Use the Stata scripts and fictional datasets to practise the steps for yourself.
+
+We're not aiming to memorise. Our goal is to develop judgement about how health data can be used safely and responsibly.
+
+## Exercises
+
+| Resource | Purpose |
+|---|---|
+| [Exercise 1: Disclosure risk](exercise-01-disclosure-risk.qmd) | Practise identifying unsafe small-cell outputs and thinking about safer reporting options. |
+| [Exercise 2: De-identification and anonymisation](exercise-02-deidentification.qmd) | Practise turning identifiable data into a safer analysis file and a safer public-facing output. |
+
+## Stata scripts and datasets
+
+For those of you using Stata in your work, you can copy these Stata `do` files to continue your practice session. 
+
+| File | Purpose |
+|---|---|
+| [`data/create-module-01-fictional-dataset.do`](data/create-module-01-fictional-dataset.do) | Creates the fictional diabetes dataset used for Exercise 1. |
+| [`data/exercise-01-disclosure-risk.do`](data/exercise-01-disclosure-risk.do) | Demonstrates unsafe tables, small-cell risk, and safer aggregated outputs. |
+| [`data/create-module-01-identifiable-dataset.do`](data/create-module-01-identifiable-dataset.do) | Creates the fictional identifiable dataset used for Exercise 2. |
+| [`data/exercise-02-deidentification.do`](data/exercise-02-deidentification.do) | Demonstrates de-identification steps and safer reporting outputs. |
+
+## What each exercise is teaching
+
+### Exercise 1: Disclosure risk
+
+This exercise focuses on **outputs**.
+
+You will look at summary tables and ask:
+
+- Do these counts create a risk of identification?
+- Is the table safe for public reporting?
+- Would aggregation or suppression be needed?
+
+This is about recognising when an apparently simple table may still be unsafe.
+
+### Exercise 2: De-identification and anonymisation
+
+This exercise focuses on **data preparation and intended audience**.
+
+You will ask:
+
+- Which variables directly identify a person?
+- Which variables may identify someone when combined?
+- What can remain in an internal analysis file?
+- What must be removed or reduced for wider sharing?
+
+This is about understanding the path from:
+
+- identifiable data
+- de-identified analysis data
+- anonymised or aggregated public outputs
+
+## Suggested learning path
+
+::: {.callout-note}
+### Suggested sequence
+
+Start with the main module page and then move into the practical work.
+
+A sensible route is:
+
+1. Read **Module 1**.
+2. Complete **Exercise 1**.
+3. Review the Exercise 1 script in Stata.
+4. Complete **Exercise 2**.
+5. Review the Exercise 2 script in Stata.
+6. Return briefly to the **What to remember from this module** section in the main page.
+:::
