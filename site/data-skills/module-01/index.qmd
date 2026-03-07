@@ -7,7 +7,6 @@ format:
     toc-depth: 2
     code-copy: true
     smooth-scroll: true
-  pdf: default
 ---
 
 ::: {.callout-note}

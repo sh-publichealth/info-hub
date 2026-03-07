@@ -2,7 +2,6 @@
 title: "Exercise 2: De-identification and Anonymisation"
 format:
   html: default
-  pdf: default
 draft: false
 ---
 

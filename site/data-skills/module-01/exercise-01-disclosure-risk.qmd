@@ -2,7 +2,6 @@
 title: "Exercise 1: Identifying Disclosure Risk"
 format:
   html: default
-  pdf: default
 draft: false
 ---
 
