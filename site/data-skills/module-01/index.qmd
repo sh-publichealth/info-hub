@@ -141,6 +141,26 @@ Very small counts — often below 5 — are sometimes replaced with a symbol suc
 In small populations this may remove a lot of detail, but it is often necessary to protect confidentiality in public reporting.
 :::
 
+
+::: {.callout-note}
+## Short video: What counts as personal data?
+
+Understanding what counts as *personal data* is the starting point for responsible data use.
+
+<iframe 
+  width="640"
+  height="360"
+  src="https://www.youtube.com/embed/SpWG0tfdlAo"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
+After watching, keep this question in mind as you continue:
+
+**When might apparently anonymous statistics still allow someone to identify an individual?**
+:::
+
+
 ## De-identification, pseudonymisation, and anonymisation {#de-identification-pseudonymisation-and-anonymisation}
 
 These terms are often used interchangeably, but they describe different stages of protecting data.

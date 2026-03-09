@@ -13,6 +13,24 @@ How do we share useful information without increasing the risk that individuals 
 
 The purpose is not to catch you out. The purpose is to help you build judgement.
 
+::: {.callout-note collapse="true"}
+## Running the exercise in Stata
+
+This exercise uses two short Stata scripts.
+
+1. Download the synthetic dataset script and run it in Stata.  
+   This will create the fictional dataset used in the exercise.
+
+   - [create-module-01-fictional-dataset.do](./data/create-module-01-fictional-dataset.do)
+
+2. Then download and run the exercise script.  
+   This script uses the dataset to generate a series of tables that illustrate **disclosure risk**.
+
+   - [exercise-01-disclosure-risk.do](./data/exercise-01-disclosure-risk.do)
+
+The scripts are fully commented and will guide you through the exercise step by step.
+:::
+
 ## Why this exercise matters
 
 In a small population, even a simple summary table can create confidentiality risks.
@@ -115,7 +133,7 @@ In your reflection, consider:
 
 ## Optional software task
 
-If you are using Stata, run the companion exercise script and compare:
+If you are using Stata, run the companion exercise script [download the script here](./data/exercise-01-disclosure-risk.do) and compare:
 
 1. the unsafe table
 2. the safer table
