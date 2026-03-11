@@ -79,7 +79,7 @@ $\square$ I understand what the programme involves, including:
 - A 12-week total diet replacement phase
 - Gradual food reintroduction
 - Ongoing weight-maintenance support
-- Regular clinical monitoring
+- Regular monitoring
 
 
 \section*{2. Voluntary Participation}
@@ -96,7 +96,7 @@ $\square$ I understand that my weight, blood pressure, HbA1c, and other routine 
 
 $\square$ I understand that my diabetes and blood pressure medications may be reduced, stopped, or restarted under clinical supervision to ensure safety.
 
-$\square$ I understand that there may be side effects (for example dizziness, constipation, or low blood sugar), and that I should report any concerns to the clinical team.
+$\square$ I understand that there may be side effects (for example dizziness, constipation, or low blood sugar), and that I should report any concerns to the health team.
 
 \newpage
 \section*{4. Use of My Data}

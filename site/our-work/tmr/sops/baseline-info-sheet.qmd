@@ -24,7 +24,7 @@ The *baseline visit* is the first full appointment for people who decide to take
 This visit helps us:
 
 - Confirm that the programme is right for you
-- Record starting measurements so we can track progress safely
+- Record starting measurements so we can track progress
 - Make sure you feel informed, supported, and ready to begin
 
 
@@ -53,7 +53,8 @@ To understand your starting point and keep you safe, we will:
 - Ask how your health affects daily life
 - Ask you a few questions about how diabetes affects you emotionally
 - Ask a few questions about your usual physical activity
-- These measurements are part of routine care and help guide safe support during the programme.
+
+These measurements are part of routine care and help guide safe support during the programme.
 
 ## Talking about medications
 
@@ -91,6 +92,8 @@ Please bring:
 - Any *medications* you are currently taking (or a list)
 - *Glasses* if you need them for reading
 - Any *questions* you would like to ask
+
+You should wear loose-fitting light clothing for this and all your visits.
 
 ## Can I change my mind?
 
