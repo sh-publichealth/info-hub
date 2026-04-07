@@ -12,7 +12,7 @@ format:
 ::: {.callout-note}
 ## Module at a glance
 
-**Estimated time:** 30–40 minutes
+**Estimated time:** 30–45 minutes
 
 This module introduces the responsible use of health data in small populations.
 
