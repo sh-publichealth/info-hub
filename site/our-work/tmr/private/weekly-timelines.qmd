@@ -36,12 +36,12 @@ These milestones define the critical path of the programme. They change rarely a
 | Screening tools and scheduler live                | 30-JAN-26    | REDCap build and testing complete                   |
 | Ethics approval or waiver                         | 23-FEB-26    | Submission to SHG ethics + Leeds                    |
 | Screening period starts                           | 02-MAR-26    | Database operational / training completed           |
-| Baseline period starts                            | 09-MAR-26    | Database operational / training completed           |
-| Baseline data collection complete                 | 27-APR-26    | St Helena (only)                                    |
-| First TMR cohort completes 12 weeks               | JUL 2026    | Supply chain stable                                 |
-| 6-month follow-up complete                        | OCT 2026    | Retention maintained                                |
-| 12-month follow-up complete                       | APR 2027    | Primary outcomes                                    |
-| 24-month follow-up complete                       | APR 2028    | Long-term outcomes                                  |
+| Baseline period starts                            | 20-APR-26    | Database operational / training completed           |
+| Baseline data collection complete                 | 05-JUN-26    | St Helena (only)                                    |
+| First TMR cohort completes 12 weeks               | SEP 2026    | Supply chain stable                                 |
+| 6-month follow-up complete                        | DEC 2026    | Retention maintained                                |
+| 12-month follow-up complete                       | JUN 2027    | Primary outcomes                                    |
+| 24-month follow-up complete                       | JUN 2028    | Long-term outcomes                                  |
 
 ## Layer 2: Activity Timeline 
 ### Weekly (JAN–APR 2026)
@@ -83,17 +83,17 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 
 | Task                            | Output                         | Responsible  | Status        |
 | ------------------------------- | ------------------------------ | ------------ | ------------- |
-| Develop REDCap database         | REDCap database draft          | JC / IH      | 🟦 In progress |
-| Develop screening scheduler     | Screening scheduler in REDCap  | JC / IH      | 🟦 In progress |
-| Develop baseline (etc) scheduler | Main scheduler in REDCap      | JC / IH      | 🟦 In progress |
+| Develop REDCap database         | REDCap database draft          | JC / IH      | 🟩 Complete |
+| Develop screening scheduler     | Screening scheduler in REDCap  | JC / IH      | 🟩 Complete |
+| Develop baseline (etc) scheduler | Main scheduler in REDCap      | JC / IH      | 🟩 Complete |
 | Develop Consent               | E-Consent process available    | JC / IH      | 🟩 Complete |
-| Advert in local paper + Facebook | Advert responses list                      | SJ / SI     | 🟦 In Progress |
+| Advert in local paper + Facebook | Advert responses list                      | SJ / SI     | 🟩 Complete |
 | Test Recruitment Script | Final Script                      | AM / GE     | 🟩 Complete |
 | Create SOP (Ht / Wt)  | Final SOP                      | AM / GE     | 🟩 Complete |
-| Create SOP (Fibroscan)     | Final SOP                      | AM / GE     | 🟦 In progress |
-| Create SOP (Hip & Waist Circum)  | Final SOP                      | AM / GE     | 🟦 In progress |
-| Create SOP (Blood Pressure)  | Final SOP   | AM / GE     | 🟦 In progress |
-| Create SOP (Blood Sugar Levels - finger prick)   | Final SOP                      | AM / GE     | 🟨 Planned |
+| Create SOP (Fibroscan)     | Final SOP                      | AM / GE     | 🟩 Complete |
+| Create SOP (Hip & Waist Circum)  | Final SOP                      | AM / GE     | 🟩 Complete |
+| Create SOP (Blood Pressure)  | Final SOP   | AM / GE     | 🟩 Complete |
+| Create SOP (Blood Sugar Levels - finger prick)   | Final SOP                      | AM / GE     | 🟩 Complete |
 | Discuss & Decide on HbA1C inclusion **[1, 2]**.                 | Final Decision                      | SJ / JP     | 🟩 Complete |
 | From EMIS. List of HbA1C through time (w/dates).                 | Final Decision                      | SJ / JP     | 🟩 Complete |
 | Use HbA1C list - add to database.                 | Final Decision                      | IH / JC     | 🟩 Complete |
@@ -105,73 +105,60 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 
 | Task                                  | Output                | Responsible            | Status    |
 | ------------------------------------- | --------------------- | ---------------------- | --------- |
-| Database testing                      | Database tested       | IH / SJ / JP / SI / SG | 🟦 In progress |
-| Initial contact (list + advert)       | Screening visits scheduled | SI / AM / GE      | 🟦 In progress |
+| Database testing                      | Database tested       | IH / SJ / JP / SI / SG | 🟩 Complete |
+| Initial contact (list + advert)       | Screening visits scheduled | SI / AM / GE      | 🟩 Complete |
 | Expansion of Study Docs Website       | Draft 2 doc repository | IH                    | 🟩 Complete |
 
 
 ## By Fri 13 Feb 2026
 | Task                         | Output                    | Responsible  | Status            |
 | ---------------------------- | ------------------------- | ------------ | ----------------- |
-| Clearing shipment            | Supplies cleared          | RJames       | 🟥 Critical / risk |
-| Database training (Part 1)   | Training completed        | JC / IH / SJ | 🟨 Planned         |
+| Clearing shipment            | Supplies cleared          | RJames       | 🟥 Shipment arrived 06-APR-2026 |
+| Database training (Part 1)   | Training completed        | JC / IH / SJ | 🟩 Complete         |
 | FibroScan training           | Operators trained         | —            | 🟩 Complete         |
 | Screening training           | Operators trained         | JP, SI, SJ   | 🟩 Complete      |
-| Baseline training            | Operators trained         | JP, SI, SJ   | 🟨 Planned         |
-
-
-## By Fri 20 Feb 2026
-
-| Task                         | Output                    | Responsible  | Status            |
-| ---------------------------- | ------------------------- | ------------ | ----------------- |
-| Screening begins             | Screening underway        | CHW          | 🟦 In progress         |
-| Monitor screening            | Screening tracker updated | IH           | 🔁 Ongoing         |
-| Ethics approval received     | Go / no-go decision       | SI           | 🟩 Complete |
-
+| Baseline training            | Operators trained         | JP, SI, SJ   | 🟩 Complete         |
 
 ## By Fri 27 Feb 2026
 
 | Task                         | Output                    | Responsible  | Status            |
 | ---------------------------- | ------------------------- | ------------ | ----------------- |
-| Database training (Part 2)   | Training completed        | JC / IH / SJ | 🟨 Planned         |
+| Database training (Part 2)   | Training completed        | JC / IH / SJ | 🟩 Complete         |
 
+## By 02 Mar 2026
 
-## By Fri 06 Mar 2026
+| Task                         | Output                    | Responsible  | Status            |
+| ---------------------------- | ------------------------- | ------------ | ----------------- |
+| Screening                    | Screening underway        | CHW          | 🟦 In progress         |
+| Monitor screening            | Screening tracker updated | IH           | 🔁 Ongoing         |
+| Ethics approval received     | Go / no-go decision       | SI           | 🟩 Complete |
+
+## By 20 Apr 2026
 
 | Task               | Output             | Responsible | Status    |
 | ------------------ | ------------------ | ----------- | --------- |
-| Baseline data collection (part 1)  | First 6 baselines   | JJ / JP / CHW | 🟨 Planned         |
+| Baseline data collection           | First 6 baselines   | JJ / JP / CHW | 🟦 In progress         |
 | Monitor baseline                   | Baseline tracker    | IH            | 🔁 Ongoing         |
 
-
-## By Fri 13 Mar 2026
+## By 01 May 2026
 | Task               | Output             | Responsible | Status    |
 | ------------------ | ------------------ | ----------- | --------- |
 | TMR process review | Adjustments agreed | ALL         | 🟨 Planned |
 
 
-## By Fri 20 Mar 2026
-| Task               | Output             | Responsible | Status    |
-| ------------------ | ------------------ | ----------- | --------- |
-| Baseline data collection (part 2)  | Remaining baselines   | JJ / JP / CHW  | 🟨 Planned         |
-| Monitor baseline                   | Baseline tracker      | IH             | 🔁 Ongoing         |
-
-
-## 20 Mar – 24 Apr 2026 
+## 27 Apr – 13 Jul 2026 
 ### Staggered Screening and Baseline
 
 **NOTE:** Screening and baseline assessments are *staggered* across this period. As a result, all downstream activities (intervention start, follow-up, monitoring) will also occur on a rolling, overlapping basis rather than as single fixed dates.
 
 | Task                              | Output                       | Responsible  | Status    |
 | --------------------------------- | ---------------------------- | ------------ | --------- |
-| Baseline data collection (part 2) | Remaining baselines complete | JJ / JP / CHW | 🟨 Planned |
-| Identify control participants     | Controls recruited           | IH / SJ / JP  | 🟨 Planned |
 | FOOD REPLACEMENT VISITS           | Home visits                  | CHW           | 🟨 Planned |
 | Monitor all visits                | Visit tracker                | IH            | 🔁 Ongoing |
 
 
 ## Ascension Island Visit 
-### Date TBC
+### Likely Date JULY 2026
 
 | Task                         | Output                    | Responsible | Status    |
 | ---------------------------- | ------------------------- | ----------- | --------- |
@@ -186,7 +173,7 @@ This section contains *detailed, project-startup tasks*. We maintain this level 
 
 The following blocks outline the *expected flow of activity for the remainder of 2026*, recognising that recruitment, intervention delivery, and follow-up are staggered and overlapping. These blocks are indicative and will be refined as operational experience accumulates.
 
-#### Late Apr – Jun 2026: Intervention Ramp-Up
+#### Intervention Ramp-Up
 
 Focus:
 
@@ -201,7 +188,7 @@ Key activities:
 - Close safety monitoring (particularly insulin-treated participants)
 - Data completeness and fidelity checks
 
-#### Jul – Oct 2026: Mid-Programme Delivery and Early Follow-Up
+#### Mid-Programme Delivery and Early Follow-Up
 
 Focus:
 
@@ -216,7 +203,7 @@ Key activities:
 - Review of retention and engagement patterns
 - Interim process review
 
-#### Nov – Dec 2026: Follow-Up, Consolidation, and Learning
+#### Follow-Up, Consolidation, and Learning
 
 Focus:
 
