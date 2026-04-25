@@ -1,0 +1,345 @@
+---
+title: "SHG Diabetes Registry"
+subtitle: "Data Dictionary"
+description-meta: "Data Handling background for SHG Diabetes Registry"
+author: Ian Hambleton, Selvi Jeyaseelan
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+**Scope**
+This data dictionary defines all registry variables required to support diabetes surveillance, quality-of-care metrics, and service planning in St Helena. All variables are either:
+
+- Routinely recorded during 6-monthly diabetes clinic visits, or
+- Directly derivable from PatientSource (EMR) without additional bespoke data collection.
+
+------
+
+## 1. Registry Identifiers (was Demographics)
+
+| In REDCap                                           | Variable (short name) | Label (long name) / Notes                                    | Field type  | Coding                   | Required   |
+| --------------------------------------------------- | --------------------- | ------------------------------------------------------------ | ----------- | ------------------------ | ---------- |
+| record_id                                           |                       | Registry internal participant identifier                     |             |                          | y          |
+| dctype_demo                                         |                       |                                                              |             |                          | [delete]{.highlight} |
+| crfid_demo                                          |                       |                                                              |             |                          | [delete]{.highlight} |
+| de_person_demo [rename, remove demo suffix]{.highlight} |                       | [Change to dropdown with individual identifiers]{.highlight}           |             |                          | y          |
+| today [rename]{.highlight}                              |                       | [Is this a date for a person's first entry to the registry? Should not be called Todays Date. Instead, call it something like "**Date of First Entry to Registry**"]{.highlight} |             |                          |            |
+| forename                                            |                       |                                                              |             |                          | y          |
+| surname                                             |                       |                                                              |             |                          | y          |
+| —                                                   | address1              | Contact address 1 [**NOTE.** Not a repeating instrument. But we do want to keep old contact information, rather than overwrite. Would careful logging of changes work - could then occasionally extract the logged changes? Same note for *address2* and *address3*]{.highlight} |             |                          | y          |
+| —                                                   | address2              | Contact address 2                                            |             |                          | y          |
+| —                                                   | address3              | Contact address 3                                            |             |                          | y          |
+| —                                                   | email1                | Email contact1                                               |             |                          | n          |
+| —                                                   | email2                | Email contact2                                               |             |                          | n          |
+| dob                                                 | dob                   | Date of birth                                                | dd/mm/yyyy  | —                        | y          |
+| age_current_y                                       |                       |                                                              |             |                          | [delete]{.highlight} |
+| age_current_m                                       |                       |                                                              |             |                          | [delete]{.highlight} |
+| sex                                                 | sex                   | Sex                                                          | categorical | 1=Male, 2=Female         | y          |
+| patient_id                                          | patient_id            | Patient identifier from St Helena health system (EMIS)       | text        | Unique, non-identifiable | y          |
+| vstatus                                             |                       | [moved - See Diabetes Diagnosis & Status]{.highlight}                  |             |                          |            |
+| duplicate                                           |                       |                                                              |             |                          | [delete]{.highlight} |
+| pharmacy                                            |                       |                                                              |             |                          | [delete]{.highlight} |
+| dm_year_dash                                        |                       |                                                              |             |                          | [delete]{.highlight} |
+| age_dx_y_dash                                       |                       |                                                              |             |                          | [delete]{.highlight} |
+
+------
+
+## 2. Diabetes Diagnosis & Status (was Diagnosis)
+
+| In REDCap  | Variable (short name) | Label (long name)                                            | Field type  | Coding                               | Required   |
+| ---------- | --------------------- | ------------------------------------------------------------ | ----------- | ------------------------------------ | ---------- |
+| dm         | diabetes_status       | Diagnosed diabetes (==change responses==)                    | binary      | 0=No, 1=Pre-diabetes, 2=Diabetes     | y          |
+| —          | diabetes_type         | Diabetes type                                                | categorical | 1=T1, 2=T2, 3=GDM, 4=Other/Secondary | y          |
+| dm_date    | dx_date               | Date of diabetes diagnosis. ==**NOTE.** Date of diagnosis is always an estimate, and we may be able to improve it over time. So we want the ability to have multiple entires for this field, rather than over-writing. Can we use careful logging, or is it best to have diagnosis date field as a repeating instrument? If we can keep multiple entries, we would want a variable giving SOURCE of diagnosis - with some categorical options== | dd/mm/yyyy  | —                                    | y          |
+| —          | dm_source             | Source of the diagnosis date                                 | categorical | 1=notes, 2=self report, 3=meds       | y          |
+| dm_year    |                       |                                                              |             |                                      | [delete]{.highlight} |
+| age_dx_y   |                       |                                                              |             |                                      | [delete]{.highlight} |
+| age_dx_m   |                       |                                                              |             |                                      | [delete]{.highlight} |
+| duration_y |                       | ==We always want each screen to show the CURRENT duration. Perhaps force report generation for an individual ID number?== <br /><br />[So move to report format]{.highlight} |             |                                      | [delete]{.highlight} |
+| duration_m |                       |                                                              |             |                                      | [delete]{.highlight} |
+| vstatus    | vital_status          | ==Change to auto-generated, using the following logic==<br/><br/>(A) Date of Last Visit - extracted from the date of last patient data collection. <br/>(B) Vital status of patient at this point = ALIVE. <br/>(C) Now we use patient appointment regime. Patient is seen every 6 months, so missing 2 visits = DEFAULT. Patient status then changes to DEFAULT<br/>(D) DEFAULT trips a flag to attempt contact / look for record of death<br/>(E) Death can be confirmed by family or by death record (we must record the source)<br/>(F) If death confirmed, vstatus=DEATH | categorical | 0=Alive, 1=Deceased                  | y          |
+|            | date_of_death         | Date of death                                                | dd/mm/yyyy  | —                                    | n          |
+
+------
+
+## 3. Pregnancy & Gestational Diabetes
+
+| In REDCap | Variable (short name) | Label (long name)                      | Field type | Coding           | Required |
+| --------- | --------------------- | -------------------------------------- | ---------- | ---------------- | -------- |
+|           | pregnancy_status      | Pregnant at time of visit              | binary     | 0=No, 1=Yes      | n        |
+|           | pregnancy_id          | Pregnancy episode identifier           | text       | Episode-level ID | n        |
+|           | gdm_dx_date           | Date of gestational diabetes diagnosis | dd/mm/yyyy | —                | n        |
+|           | bmi                   | Body mass index                        | numeric    | kg/m²            | n        |
+
+------
+
+## 4. Anthropometry & Vital Signs
+
+*(Measured routinely at clinic visits)*
+
+| In REDCap | Variable (short name) | Label (long name)               | Field type | Coding | Required |
+| --------- | --------------------- | ------------------------------- | ---------- | ------ | -------- |
+|           | weight                | Weight                          | numeric    | kg     | y        |
+|           | height                | Height                          | numeric    | cm     | n        |
+|           | waist_circ            | Waist circumference             | numeric    | cm     | n        |
+|           | bmi_calc              | Body mass index (derived)       | numeric    | kg/m²  | n        |
+|           | bp_date               | Blood pressure measurement date | dd/mm/yyyy | —      | n        |
+|           | sbp                   | Systolic blood pressure         | numeric    | mmHg   | n        |
+|           | dbp                   | Diastolic blood pressure        | numeric    | mmHg   | n        |
+
+------
+
+## 5. Laboratory Measurements
+
+*(Linked from laboratory results in PatientSource)*
+
+| In REDCap | Variable (short name) | Label (long name)              | Field type  | Coding                                    | Required |
+| --------- | --------------------- | ------------------------------ | ----------- | ----------------------------------------- | -------- |
+|           | hba1c_date            | HbA1c test date                | dd/mm/yyyy  | —                                         | y        |
+|           | hba1c_value           | HbA1c result                   | numeric     | mmol/mol                                  | y        |
+|           | creatinine            | Serum creatinine               | numeric     | µmol/L                                    | n        |
+|           | egfr                  | Estimated GFR (derived)        | numeric     | ml/min/1.73m²                             | n        |
+|           | urine_acr             | Urine albumin–creatinine ratio | numeric     | mg/mmol                                   | n        |
+|           | total_chol            | Total cholesterol              | numeric     | mmol/L                                    | n        |
+|           | ldl_chol              | LDL cholesterol                | numeric     | mmol/L                                    | n        |
+|           | triglycerides         | Triglycerides                  | numeric     | mmol/L                                    | n        |
+|           | nephropathy_status    | Diabetic nephropathy status    | categorical | 0=None, 1=Microalbuminuria, 2=Proteinuria | n        |
+
+------
+
+## 6. Medications & Self-Management
+
+*(Abstracted from prescribing records; detailed drug data remains in EMR)*
+
+| In REDCap | Variable (short name)    | Label (long name)                  | Field type  | Coding                    | Required |
+| --------- | ------------------------ | ---------------------------------- | ----------- | ------------------------- | -------- |
+|           | insulin_current          | Currently on insulin               | binary      | 0=No, 1=Yes               | y        |
+|           | oral_agents_current      | On oral diabetes medication        | binary      | 0=No, 1=Yes               | y        |
+|           | antihypertensive_current | On antihypertensive therapy        | binary      | 0=No, 1=Yes               | n        |
+|           | ace_arb_current          | On ACE inhibitor or ARB            | binary      | 0=No, 1=Yes               | n        |
+|           | smbg_status              | Self-monitoring of blood glucose   | categorical | 0=No, 1=Yes               | n        |
+|           | med_adherence            | Self-reported medication adherence | categorical | 1=Good, 2=Partial, 3=Poor | n        |
+|           | med_intolerance          | Medication intolerance noted       | binary      | 0=No, 1=Yes               | n        |
+
+*Note: medication names, doses, and start/stop dates can be retrieved from PatientSource prescribing records if required for audit or health-economic analysis.*
+
+------
+
+## 7. Foot Health
+
+*(Observed during routine examination)*
+
+| In REDCap | Variable (short name) | Label (long name)                | Field type | Coding      | Required |
+| --------- | --------------------- | -------------------------------- | ---------- | ----------- | -------- |
+|           | foot_exam_done        | Foot exam performed              | binary     | 0=No, 1=Yes | n        |
+|           | lops                  | Loss of protective sensation     | binary     | 0=No, 1=Yes | n        |
+|           | active_ulcer          | Active foot ulcer present        | binary     | 0=No, 1=Yes | n        |
+|           | prior_amputation      | History of lower-limb amputation | binary     | 0=No, 1=Yes | n        |
+
+------
+
+## 8. Symptoms & Hypoglycaemia
+
+*(Asked verbally during routine review)*
+
+| In REDCap | Variable (short name)   | Label (long name)                          | Field type | Coding      | Required |
+| --------- | ----------------------- | ------------------------------------------ | ---------- | ----------- | -------- |
+|           | hypoglycaemia_any       | Any hypoglycaemia since last visit         | binary     | 0=No, 1=Yes | n        |
+|           | hypoglycaemia_severe    | Severe hypoglycaemia (assistance required) | binary     | 0=No, 1=Yes | n        |
+|           | hyperglycaemia_symptoms | Symptomatic hyperglycaemia                 | binary     | 0=No, 1=Yes | n        |
+
+------
+
+## 9. Lifestyle Risk Factors
+
+*(Periodically refreshed, not re-measured every visit)*
+
+| In REDCap | Variable (short name) | Label (long name)      | Field type  | Coding                          | Required |
+| --------- | --------------------- | ---------------------- | ----------- | ------------------------------- | -------- |
+|           | smoking_status        | Current smoking status | categorical | 0=Never, 1=Former, 2=Current    | n        |
+|           | alcohol_use           | Alcohol use status     | categorical | 0=None, 1=Moderate, 2=Hazardous | n        |
+
+------
+
+## 10. Care Processes & Preventive Services
+
+| In REDCap | Variable (short name) | Label (long name)                    | Field type  | Coding                                | Required |
+| --------- | --------------------- | ------------------------------------ | ----------- | ------------------------------------- | -------- |
+|           | diet_review_date      | Date of last dietary review          | dd/mm/yyyy  | —                                     | n        |
+|           | retinal_screen_date   | Date of last retinal screening       | dd/mm/yyyy  | —                                     | y        |
+|           | retinal_status        | Retinal screening eligibility/status | categorical | 0=Eligible, 1=Exempt, 2=Ophthalmology | y        |
+|           | flu_vacc_date         | Influenza vaccination date           | dd/mm/yyyy  | —                                     | n        |
+|           | edu_date              | Diabetes education completion date   | dd/mm/yyyy  | —                                     | y        |
+|           | edu_programme         | Education programme code             | text        | Local coding                          | n        |
+
+------
+
+## 11. Service Contact & Continuity
+
+*(Derived from appointment and encounter records)*
+
+| In REDCap | Variable (short name) | Label (long name)                        | Field type | Coding      | Required |
+| --------- | --------------------- | ---------------------------------------- | ---------- | ----------- | -------- |
+|           | seen_last_6m          | Seen in diabetes clinic in last 6 months | binary     | 0=No, 1=Yes | y        |
+|           | missed_appt           | Missed appointment since last review     | binary     | 0=No, 1=Yes | n        |
+|           | next_review_date      | Next scheduled diabetes review           | dd/mm/yyyy | —           | n        |
+
+------
+
+## 12. Psychosocial & Functional Context
+
+*(Optional but high interpretive value)*
+
+| In REDCap | Variable (short name) | Label (long name)      | Field type  | Coding                                  | Required |
+| --------- | --------------------- | ---------------------- | ----------- | --------------------------------------- | -------- |
+|           | employment_status     | Employment status      | categorical | 1=Employed, 2=Retired, 3=Unable to work | n        |
+|           | self_rated_health     | Self-rated health      | categorical | 1=Poor, 2=Fair, 3=Good                  | n        |
+|           | care_barriers         | Barriers to care noted | categorical | Transport / Cost / Caregiving / Other   | n        |
+
+------
+
+
+
+# St Helena Diabetes Registry
+
+## Final Crosswalk: Data Dictionary ↔ SAP Handbook Metrics
+
+### Legend
+
+- **R** = Required variable
+- **D** = Derived from DD variables
+- **(Y)** = Used for numerator
+- **(D)** = Used for denominator
+
+------
+
+## 1. Burden & Epidemiology Metrics
+
+| In Manual | SAP Metric Code | Metric Name                        | DD Variables Used                                            |
+| --------- | --------------- | ---------------------------------- | ------------------------------------------------------------ |
+| X         | T2D-INC-01      | Type 2 diabetes incidence          | dx_date (Y), diabetes_type (Y), dob (R), sex (R), vital_status (D), population denominator (external) |
+| X         | T2D-PREV-02     | Diagnosed diabetes prevalence      | diabetes_status (Y), vital_status (Y), dx_date (R), population denominator (external) |
+| X         | T2D-AGE-03      | Age at diagnosis                   | dob (R), dx_date (R)                                         |
+| X         | T2D-DUR-04      | Duration of diabetes               | dx_date (R), vital_status (R), date_of_death (if applicable), current date (D) |
+| X         | T2D-W18-44-07   | Diabetes prevalence in women 18–44 | dob (R), sex (R), diabetes_status (Y)                        |
+| X         | T2D-TYPE-08     | Diabetes type distribution         | diabetes_type (Y)                                            |
+
+------
+
+## 2. Pregnancy & Maternal Health
+
+***(REGISTRY PHASE 2 - Rationale is that we will need to extract pregnancy status regularly from PatientSource)***
+
+| In Manual | SAP Metric Code | Metric Name                        | DD Variables Used                                          |
+| --------- | --------------- | ---------------------------------- | ---------------------------------------------------------- |
+| X         | T2D-PREG-05     | Diabetes in pregnancy (prevalence) | pregnancy_status (Y), diabetes_type (Y), pregnancy_id (D)  |
+| X         | T2D-GDM-06      | Gestational diabetes incidence     | pregnancy_id (D), gdm_dx_date (Y), dob (R), bmi (optional) |
+
+------
+
+## 3. HbA1c Monitoring & Glycaemic Control
+
+| In Manual | SAP Metric Code                        | Metric Name                  | DD Variables Used                                    |
+| --------- | -------------------------------------- | ---------------------------- | ---------------------------------------------------- |
+| X         | T2D-HBA1c-1x-09                        | ≥1 HbA1c measurement in year | diabetes_type (D), hba1c_date (Y)                    |
+| X         | T2D-HBA1c-None-10                      | No HbA1c in year             | diabetes_type (D), hba1c_date (Y – absence)          |
+| X         | T2D-HbA1c≤64-12<br />in last 12 months | HbA1c ≤64 mmol/mol           | hba1c_value (Y), hba1c_date (D), diabetes_status (D) |
+| X         | T2D-HbA1c≤75-13<br />in last 12 months | HbA1c ≤75 mmol/mol           | hba1c_value (Y), hba1c_date (D), diabetes_status (D) |
+| X         | T2D-HbA1c<53-14<br />in last 12 months | HbA1c <53 mmol/mol           | hba1c_value (Y), hba1c_date (D), diabetes_type (D)   |
+| X         | T2D-HbA1c≥75-15<br />in last 12 months | HbA1c ≥75 mmol/mol           | hba1c_value (Y), hba1c_date (D), diabetes_type (D)   |
+
+------
+
+## 4. Blood Pressure & Renal Protection
+
+| In Manual | SAP Metric Code   | Metric Name                | DD Variables Used                                            |
+| --------- | ----------------- | -------------------------- | ------------------------------------------------------------ |
+| X         | T2D-BP≤130/80-20  | BP controlled ≤130/80      | sbp (Y), dbp (Y), bp_date (D), diabetes_status (D)           |
+| X         | T2D-BP>140/90-19A | BP >140/90 untreated       | sbp (Y), dbp (Y), antihypertensive_current (D), diabetes_type (D) |
+| X         | T2D-BP>140/90-19B | BP >140/90 treated         | sbp (Y), dbp (Y), antihypertensive_current (D), diabetes_type (D) |
+| X         | T2D-ACEARB-18     | ACE/ARB use in nephropathy | nephropathy_status (D), ace_arb_current (Y)<br />**(REGISTRY PHASE 2)** |
+
+------
+
+## 5. Medications & Self-Management
+
+| In Manual | SAP Metric Code | Metric Name                      | DD Variables Used                                            |
+| --------- | --------------- | -------------------------------- | ------------------------------------------------------------ |
+| X         | T2D-MED-21      | Diabetes medication distribution | insulin_current (Y), oral_agents_current (Y), diabetes_type (D) |
+| X         | T2D-SMBG-11A    | SMBG among insulin-treated       | diabetes_type (D), insulin_current (D), smbg_status (Y)      |
+| X         | T2D-SMBG-11B    | SMBG among T2 diabetes           | diabetes_type (D), smbg_status (Y)                           |
+
+------
+
+## 6. Lifestyle, Education & Preventive Care
+
+| In Manual | SAP Metric Code | Metric Name                                                  | DD Variables Used                                            |
+| --------- | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+|           | T2D-Diet-16     | Dietary review in last 15 months                             | diet_review_date (Y), diabetes_status (D)                    |
+|           | T2D-EDU-23      | Diabetes education uptake                                    | edu_date (Y), diabetes_type (D)<br />**(REGISTRY PHASE 2)**  |
+| X         | T2D-Flu-17      | Influenza immunisation in previous flu season (between preceding August to April) | flu_vacc_date (Y), diabetes_status (D)<br />**(REGISTRY PHASE 2)** |
+|           | T2D-RET-22      | Retinopathy exam in last 12 months                           | retinal_screen_date (Y), retinal_status (D), diabetes_status (D)<br />**(REGISTRY PHASE 2)** |
+
+------
+
+## 7. Continuity & System Performance (Interpretive Metrics)
+
+***(REGISTRY PHASE 2 - Rationale is that we MAY need to extract regularly from PatientSource)***
+
+| In Manual | SAP-Linked Domain | Metric Use                             | DD Variables Used                       |
+| --------- | ----------------- | -------------------------------------- | --------------------------------------- |
+|           | Retention in care | Registry completeness / interpretation | seen_last_6m, missed_appt               |
+|           | Access & equity   | Explaining poor control                | employment_status, care_barriers        |
+|           | Clinical safety   | Context for HbA1c targets              | hypoglycaemia_any, hypoglycaemia_severe |
+
+------
+
+
+
+## Coverage Statement 
+
+> *All metrics specified in the St Helena Diabetes SAP handbook are fully supported by routinely collected PatientSource data, either directly or through transparent derivation. No bespoke data collection is required.*
+
+
+---
+
+
+### Instrument: eligibility_screening
+
+> **Ian to think about this process and complete table** 
+
+This instrument is tied into the screening process a little bit. So a bit for discussion. The current plan is this:
+
+- Auto extract all Dates of Birth / Dates of Diabetes Diagnosis (Ascension = manual entry)
+- Calculate Age and Duration of Diabetes
+- Flag Eligible / Non-Eligible
+- Eligible participants are randomly reordered, then contacted for interest
+- **IDEA.** For each new diabetes intervention, create a new instrument
+  - Records if a registry punter took part in a particular intervention, along with their eligibility criteria 
+  - Once auto-calculated, these eligibility fields are then squirted to the intervention database
+
+
+
+Records confirmation of eligibility criteria and cohort classification at study entry for audit and analytic population definition.
+
+| Variable      | Label                                                        | Field type     | Coding                               | Required |
+| ------------- | ------------------------------------------------------------ | -------------- | ------------------------------------ | -------- |
+| dodiag        | What was the date of diabetes diagnosis                      | YYYY-MM-DD     | –                                    | Y        |
+| diab_duration | ***(derived)*** Duration of diabetes                         | text (decimal) | Ideally presented as years and weeks | Y        |
+| diab6         | ***(derived)*** Has the potential participant been diagnosed for 6 years or less | yesno          | 0/1                                  | Y        |
+| diab10        | ***(derived)*** Has the potential participant been diagnosed for 6 years or less | yesno          | 0/1                                  | Y        |
+| height        | Height                                                       | text (decimal) | cm                                   | Y        |
+| weight        | Weight                                                       | text (decimal) | kg                                   | Y        |
+| bmi           | ***(derived)*** Body Mass Index                              | text (decimal) | kg/m2                                | Y        |
+| visit12       | 1 or more visits in the past year                            | text (decimal) | –                                    | Y        |
+

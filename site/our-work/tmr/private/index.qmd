@@ -28,3 +28,7 @@ Pages here are not listed in the main site navigation and can be accessed only v
 - [Roles and responsibilities](./roles.qmd)
 - [Weekly timelines](./weekly-timelines.qmd)
 - [Database training](./database-training.qmd)
+
+## SHG Diabetes Registry
+- [Statistical Analysis Plan](./20250927-sap-handbook.qmd)
+- [Data Dictionary](./registry-dd.qmd)

@@ -1,0 +1,3013 @@
+---
+title: "SHG Diabetes Registry"
+subtitle: "Statistical Analysis Plan"
+description-meta: "Data Handling background for SHG Diabetes Registry"
+author: Ian Hambleton, Selvi Jeyaseelan
+format:
+  html: default
+  pdf:
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
+---
+
+# 📑 Metric T2D-INC-01: Percentage of people with newly diagnosed type 2 diabetes in one year (Incidence)
+
+**0. Priority**
+**PRIMARY** — this is the leading measure of *new burden*. It signals prevention needs and is widely used for international comparison.
+
+---
+
+**1. Definition (Official wording)**
+International Diabetes Federation (IDF): *The percentage of people in the population who are newly diagnosed with type 2 diabetes within a one-year period.*
+
+---
+
+**2. Plain Language Description**
+This shows how many people developed type 2 diabetes for the first time in a year, compared to the number of people who were at risk at the start of that year.
+
+---
+
+**3. Formula**
+
+* **Incidence (%)** = (New T2D cases ÷ Population at risk at start of year) × 100
+* **Incidence per 1,000** = (New T2D cases ÷ Population at risk) × 1,000
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** People with a first-ever diagnosis of type 2 diabetes during the reporting year.
+* **Denominator:** All individuals aged 20–79 without diabetes at the start of the year, resident in St Helena.
+
+---
+
+**5. Variables Required**
+
+* Date of diagnosis
+* Diabetes type (exclude type 1, gestational, secondary)
+* Age, sex
+* Vital status
+* Population denominator (census/administrative registers)
+
+---
+
+**6. Data Source(s)**
+
+* St Helena Diabetes Registry
+* Laboratory system (diagnostic confirmation)
+* Census / population estimates
+
+---
+
+**7. Data Quality & Caveats**
+
+* Incomplete capture of new diagnoses will underestimate incidence.
+* Type misclassification (esp. young adults) is a risk.
+* Migration in/out of population may bias denominators.
+* Undiagnosed diabetes is not captured.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Annual incidence estimates may be volatile due to small case counts.
+* Always report **absolute counts alongside rates**.
+* Prefer **per 1,000 population** rates, not percentages, for readability.
+* Suppress single-year estimates if denominator <50; instead report 3-year rolling averages.
+* Use wide uncertainty bands and clear messaging: “numbers too small for precise year-to-year comparison.”
+
+**Bayesian estimation (technical)**
+
+* Likelihood: Binomial(n, p), Prior: Jeffreys prior Beta(0.5,0.5).
+* Posterior: Beta(0.5+x, 0.5+n−x) → report posterior mean and 95% credible interval (CrI).
+* Trend smoothing: hierarchical/random-walk model on logit(p) with partial pooling across years.
+* Prior sensitivity: compare Beta(0.5,0.5), Beta(1,1), and weakly informative priors centred on UK/IDF comparators.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age group and sex (no geography for St Helena).
+* **Age-standardisation:** Use the **WHO World Standard Population (2000–2025 revision)** for global comparison, and the **2013 European Standard Population (ESP)** when benchmarking against UK data.
+
+---
+
+**10. Importance / Uses**
+
+* Core measure of new onset diabetes.
+* Evaluates prevention programmes.
+* Supports burden-of-disease and cost projections.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annually.
+* Present as per 1,000 with 95% CrI.
+* Line chart for trend; bar chart for age/sex groups.
+
+---
+
+**12. Interpretation Guidance**
+
+* Rising incidence = either more risk factors or better detection.
+* Falling incidence may reflect prevention success *or* under-diagnosis.
+* In a population of ~4,500, annual changes may reflect chance variation.
+
+---
+
+**13. Responsible Party**
+St Helena Public Health Directorate — NCD team; registry manager ensures quality.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Prevalence (T2D-PREV-02)
+* Age at diagnosis (T2D-AGE-03)
+* Glycaemic control targets (T2D-HbA1c metrics)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-INC-01
+* Source: IDF
+* Version: 1.0
+* Date updated: 27 Sept 2025
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS Digital, *National Diabetes Audit* (incidence and new diagnoses).
+* **International:** IDF Diabetes Atlas (age-standardised incidence estimates).
+
+---
+
+# 📑 Metric T2D-PREV-02: Diagnosed diabetes (Prevalence)
+
+**0. Priority**
+**PRIMARY** — prevalence reflects the *total burden of disease*. It drives service demand and is the single most important metric for workforce and resource planning.
+
+---
+
+**1. Definition (Official wording)**
+CDC USDSS: *Percentage of the population with a diagnosis of diabetes at a given point in time.*
+
+---
+
+**2. Plain Language Description**
+Shows how many people are currently living with diabetes compared to the total population.
+
+---
+
+**3. Formula**
+
+* **Prevalence (%)** = (Diagnosed diabetes cases ÷ Total population) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** All people alive on the index date with a diagnosis of diabetes (any type).
+* **Denominator:** Total resident population.
+
+---
+
+**5. Variables Required**
+
+* Diagnosis status
+* Date of diagnosis
+* Vital status (alive on index date)
+* Population denominator (census/administrative registers)
+
+---
+
+**6. Data Source(s)**
+
+* St Helena Diabetes Registry
+* Census / administrative population data
+
+---
+
+**7. Data Quality & Caveats**
+
+* Misses undiagnosed diabetes, which may be substantial.
+* Requires an accurate denominator population.
+* Misclassification of diabetes type possible.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Annual prevalence estimates are more stable than incidence but still sensitive to denominator shifts in a small island population.
+* Always report **absolute counts alongside rates**.
+* Prefer **per 1,000 population** for clarity.
+* Use **rounded whole numbers**; avoid spurious decimals.
+* If denominator <50 (e.g., age/sex subgroup), suppress subgroup prevalence and report pooled estimates instead.
+* Use **3–5 year rolling averages** if subgroup trends are needed.
+
+**Bayesian estimation (technical)**
+
+* Likelihood: Binomial(n, p), Prior: Jeffreys prior Beta(0.5,0.5).
+* Posterior: Beta(0.5+x, 0.5+n−x) → report posterior mean and 95% credible interval (CrI).
+* Optional: hierarchical model for age/sex groups with partial pooling to stabilise estimates.
+* Prior sensitivity: compare Beta(0.5,0.5), Beta(1,1), and weakly informative priors centred on UK/IDF comparators.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age group and sex (no geography for St Helena).
+* **Age-standardisation:** Use the **WHO World Standard Population (2000–2025 revision)** for global comparison, and the **2013 European Standard Population (ESP)** when benchmarking against UK data.
+
+---
+
+**10. Importance / Uses**
+
+* Primary measure of disease burden.
+* Used for planning service capacity, medicines, and workforce.
+* Allows benchmarking with global and UK prevalence.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual reporting.
+* Expressed as % or per 1,000 population.
+* Present with line charts for trend; bar charts for age/sex breakdown.
+
+---
+
+**12. Interpretation Guidance**
+
+* Rising prevalence may reflect true increases, better detection, or both.
+* Short-term changes should be interpreted cautiously in small populations.
+* Must be read alongside incidence and mortality trends.
+
+---
+
+**13. Responsible Party**
+Public Health Directorate, NCD team.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Incidence (T2D-INC-01)
+* Duration (T2D-DUR-04)
+* Age at diagnosis (T2D-AGE-03)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-PREV-02
+* Source: CDC USDSS
+* Version: 1.0
+* Date updated: 27 Sept 2025
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS Digital, *National Diabetes Audit* (prevalence by age/sex).
+* **International:** IDF Diabetes Atlas (country-level prevalence).
+
+---
+
+# 📑 Metric T2D-AGE-03: Age at diabetes diagnosis (Mean/median)
+
+**0. Priority**
+**SECONDARY** — useful for understanding trends in early onset but not a core burden or service metric.
+
+---
+
+**1. Definition (Official wording)**
+CDC USDSS: *Mean or median age at which diabetes is first diagnosed.*
+
+---
+
+**2. Plain Language Description**
+The typical age when people are first diagnosed with diabetes.
+
+---
+
+**3. Formula**
+
+* **Mean age at diagnosis** = Sum of ages at diagnosis ÷ Number of new cases
+* **Median age at diagnosis** = Middle age in the distribution of new diagnoses
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Sum (for mean) or distribution (for median) of ages at diagnosis.
+* **Denominator:** Number of new cases.
+
+---
+
+**5. Variables Required**
+
+* Date of birth
+* Date of diagnosis
+
+---
+
+**6. Data Source(s)**
+
+* Registry records with date of birth and diagnosis date.
+
+---
+
+**7. Data Quality & Caveats**
+
+* Errors in recording dates bias results.
+* Small numbers may produce unstable estimates, especially for means.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Report **median age with interquartile range (IQR)**, which is more robust to outliers.
+* Aggregate into 3-year blocks if <30 new cases annually.
+* Present both **median** and **range or IQR** instead of mean alone.
+
+**Bayesian estimation (technical)**
+
+* For mean: Bayesian t-distribution models with weakly informative priors can stabilise estimates.
+* For medians: BCa bootstrap intervals are preferable.
+* Small-n sensitivity analysis: compare annual vs pooled multi-year medians.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By sex and broad age groups (no geography).
+* **Age-standardisation is not applicable** since this is already an age-based measure.
+
+---
+
+**10. Importance / Uses**
+
+* Detects whether diabetes onset is shifting to younger ages.
+* Earlier onset implies longer exposure and greater lifetime burden.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annually (or 3-year rolling if sparse).
+* Present mean and median, with boxplots for distribution.
+
+---
+
+**12. Interpretation Guidance**
+
+* A falling age at diagnosis indicates earlier onset.
+* Must be interpreted carefully in small populations where a few young cases can shift averages.
+
+---
+
+**13. Responsible Party**
+Registry team (Public Health Directorate).
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Incidence (T2D-INC-01)
+* Duration (T2D-DUR-04)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-AGE-03
+* Source: CDC USDSS
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS Digital, *National Diabetes Audit* (age at diagnosis distribution).
+* **International:** ICHOM standard set for diabetes outcomes.
+
+---
+
+# 📑 Metric T2D-DUR-04: Duration of diabetes (Mean/median)
+
+**0. Priority**
+**SECONDARY** — provides useful context for chronic burden but less central than prevalence or control metrics.
+
+---
+
+**1. Definition (Official wording)**
+CDC USDSS: *Mean or median duration of diabetes among diagnosed patients.*
+
+---
+
+**2. Plain Language Description**
+Shows how long people have lived with diabetes since their diagnosis.
+
+---
+
+**3. Formula**
+
+* **Mean duration (years)** = Sum of years since diagnosis ÷ Number of people with diabetes
+* **Median duration (years)** = Middle value of years since diagnosis among cases
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Sum (for mean) or distribution (for median) of years since diagnosis.
+* **Denominator:** People alive with a diabetes diagnosis.
+
+---
+
+**5. Variables Required**
+
+* Date of diagnosis
+* Current date (or date of death if deceased)
+
+---
+
+**6. Data Source(s)**
+
+* St Helena Diabetes Registry
+
+---
+
+**7. Data Quality & Caveats**
+
+* Missing mortality data will inflate duration.
+* In early registry years, mean duration will be underestimated.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Report **median duration** alongside mean.
+* Group into bands (<5 years, 5–10 years, >10 years) to reduce volatility.
+* Use rolling averages if small n.
+
+**Bayesian estimation (technical)**
+
+* Bayesian survival models could be used to account for censoring.
+* Alternatively, model duration distribution with weakly informative priors to estimate median with uncertainty.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex (no geography).
+* **Age-standardisation not applicable** (duration is a time-based measure).
+
+---
+
+**10. Importance / Uses**
+
+* Longer duration increases complication risks.
+* Rising mean duration may reflect improved survival.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual reporting.
+* Present mean/median years; bar charts by duration band.
+
+---
+
+**12. Interpretation Guidance**
+
+* Increasing duration suggests improved survival.
+* Shorter duration may suggest poor outcomes or high mortality.
+
+---
+
+**13. Responsible Party**
+Registry manager; NCD epidemiology team.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Age at diagnosis (T2D-AGE-03)
+* Mortality (future indicators)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-DUR-04
+* Source: CDC USDSS
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS Digital, *National Diabetes Audit* (duration distribution).
+* **International:** WHO/IDF registry comparisons.
+
+---
+
+# 📑 Metric T2D-PREG-05: Diabetes in pregnancy (Prevalence)
+
+**0. Priority**
+**SECONDARY** — numbers will be very small in St Helena, but important for maternal and child health surveillance.
+
+---
+
+**1. Definition (Official wording)**
+CDC USDSS: *Prevalence of diabetes (any type) during pregnancy.*
+
+---
+
+**2. Plain Language Description**
+Shows how many pregnant women already have diabetes during pregnancy.
+
+---
+
+**3. Formula**
+
+* **Prevalence (%)** = (Pregnant women with diabetes ÷ Total pregnancies) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Pregnant women diagnosed with diabetes.
+* **Denominator:** All pregnancies in the reporting period.
+
+---
+
+**5. Variables Required**
+
+* Pregnancy status
+* Diabetes diagnosis and type
+
+---
+
+**6. Data Source(s)**
+
+* St Helena Diabetes Registry
+* Maternity records
+
+---
+
+**7. Data Quality & Caveats**
+
+* Requires distinction between pre-existing and gestational diabetes.
+* Very small numbers lead to high volatility.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Always report **absolute numbers** alongside %.
+* Use **3–5 year pooling** for stable estimates.
+* Suppress annual % if denominator <50 pregnancies.
+
+**Bayesian estimation (technical)**
+
+* Likelihood: Binomial(n, p), Prior: Jeffreys prior Beta(0.5,0.5).
+* Posterior: Beta(0.5+x, 0.5+n−x).
+* Multi-year hierarchical models can stabilise very small denominators.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By maternal age only (no geography).
+* **Age-standardisation:** If needed, use WHO World Standard Population or 2013 ESP for comparison, though small N may limit feasibility.
+
+---
+
+**10. Importance / Uses**
+
+* Important for maternal and fetal outcomes.
+* Informs antenatal care planning.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual, but pooled multi-year reporting recommended.
+* Report both % and absolute numbers.
+
+---
+
+**12. Interpretation Guidance**
+
+* High prevalence may reflect high background diabetes burden.
+* Year-to-year changes should not be over-interpreted.
+
+---
+
+**13. Responsible Party**
+Maternity services and registry team.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Gestational diabetes incidence (T2D-GDM-06)
+* Pre-pregnancy diabetes (future metrics)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-PREG-05
+* Source: CDC USDSS
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS *National Maternity and Perinatal Audit* (diabetes in pregnancy).
+* **International:** WHO/IDF maternal diabetes statistics.
+
+---
+
+# 📑 Metric T2D-GDM-06: Gestational diabetes mellitus (Incidence)
+
+**0. Priority**
+**SECONDARY** — numbers are very small in St Helena, so this metric is more descriptive than statistical.
+
+---
+
+**1. Definition (Official wording)**
+CDC USDSS: *Incidence of gestational diabetes mellitus (GDM) in a defined year.*
+
+---
+
+**2. Plain Language Description**
+Shows what proportion of pregnancies are affected by gestational diabetes.
+
+---
+
+**3. Formula**
+
+* **Incidence (%)** = (New GDM cases ÷ Total pregnancies in year) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Pregnant women newly diagnosed with GDM during pregnancy.
+* **Denominator:** All pregnancies in the reporting year.
+
+---
+
+**5. Variables Required**
+
+* Pregnancy identifier
+* Date of GDM diagnosis
+* Maternal age, BMI (if available)
+
+---
+
+**6. Data Source(s)**
+
+* Maternity records
+* St Helena Diabetes Registry
+
+---
+
+**7. Data Quality & Caveats**
+
+* Screening practices strongly affect incidence.
+* Requires exclusion of pre-existing diabetes.
+* Small numbers make estimates volatile.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Report **absolute numbers + %** together.
+* Use **3–5 year pooled incidence** for trend reporting.
+* Suppress single-year estimates if <50 pregnancies.
+
+**Bayesian estimation (technical)**
+
+* Likelihood: Binomial(n, p), Prior: Jeffreys Beta(0.5,0.5).
+* Posterior: Beta(0.5+x, 0.5+n−x).
+* Consider hierarchical pooling across years for stability.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By maternal age or BMI group (no geography).
+* **Age-standardisation:** Use WHO World Standard Population or ESP if comparing internationally, though small sample size may limit feasibility.
+
+---
+
+**10. Importance / Uses**
+
+* Key maternal outcome.
+* Important for antenatal care, neonatal health, and future maternal risk.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual reporting; recommend pooled multi-year presentation.
+
+---
+
+**12. Interpretation Guidance**
+
+* Rising incidence may reflect obesity, older maternal age, or better screening.
+
+---
+
+**13. Responsible Party**
+Maternity and registry teams.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Diabetes in pregnancy (T2D-PREG-05)
+* Pre-pregnancy diabetes (future indicator)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-GDM-06
+* Source: CDC USDSS
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS *National Maternity and Perinatal Audit* (gestational diabetes rates).
+* **International:** WHO and IDF maternal health indicators.
+
+---
+
+# 📑 Metric T2D-W18-44-07: Diabetes prevalence among women aged 18–44 years
+
+**0. Priority**
+**SECONDARY** — important for reproductive health, but numbers are small.
+
+---
+
+**1. Definition (Official wording)**
+CDC Chronic Disease Indicators: *Percentage of women aged 18–44 with diabetes.*
+
+---
+
+**2. Plain Language Description**
+Shows how common diabetes is among women of childbearing age.
+
+---
+
+**3. Formula**
+
+* **Prevalence (%)** = (Women aged 18–44 with diabetes ÷ All women aged 18–44) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Women aged 18–44 diagnosed with diabetes.
+* **Denominator:** All women aged 18–44 in the population.
+
+---
+
+**5. Variables Required**
+
+* Age, sex
+* Diagnosis status
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Census population estimates
+
+---
+
+**7. Data Quality & Caveats**
+
+* May underestimate true prevalence due to undiagnosed cases.
+* Age and sex classification must be accurate.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Always report **absolute counts + %**.
+* Use **broad age bands** (18–29, 30–44).
+* Suppress subgroup estimates if denominator <50.
+
+**Bayesian estimation (technical)**
+
+* Binomial(n, p), Prior: Beta(0.5,0.5).
+* Posterior mean + 95% CrI.
+* Partial pooling across years can stabilise.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* Report only by broad maternal age bands (no geography).
+* **Age-standardisation:** Not usually needed, as this is already an age-specific measure.
+
+---
+
+**10. Importance / Uses**
+
+* Identifies reproductive-age women at risk.
+* Informs pre-conception and antenatal care services.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual; 3-year rolling averages if small N.
+
+---
+
+**12. Interpretation Guidance**
+
+* High prevalence in this group may reflect obesity and other risk factors.
+
+---
+
+**13. Responsible Party**
+Registry and reproductive health services.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Pregnancy-related diabetes (T2D-PREG-05, T2D-GDM-06).
+
+---
+
+**15. Metadata**
+
+* Code: T2D-W18-44-07
+* Source: CDC CDI
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS Digital, *Maternity Services Data Set* (diabetes prevalence in younger women).
+* **International:** IDF Diabetes Atlas, women’s health tables.
+
+---
+
+# 📑 Metric T2D-TYPE-08: Diabetes type (Prevalence of each type)
+
+**0. Priority**
+**SECONDARY** — useful for context, but not a primary planning metric.
+
+---
+
+**1. Definition (Official wording)**
+ICHOM: *Proportion of all diagnosed diabetes cases by type (Type 1, Type 2, gestational, other).*
+
+---
+
+**2. Plain Language Description**
+Shows the distribution of diabetes types among people with the condition.
+
+---
+
+**3. Formula**
+
+* **Prevalence (%) of type X** = (Cases of type X ÷ All diagnosed diabetes cases) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Cases of a specific type.
+* **Denominator:** All diagnosed diabetes cases.
+
+---
+
+**5. Variables Required**
+
+* Diabetes type
+* Diagnosis status
+
+---
+
+**6. Data Source(s)**
+
+* Registry diagnosis fields
+
+---
+
+**7. Data Quality & Caveats**
+
+* Misclassification is common.
+* Requires consistent diagnostic coding.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Report **absolute counts and %**.
+* Combine rare types into “Other.”
+* Suppress % if cell count <5.
+
+**Bayesian estimation (technical)**
+
+* Multinomial likelihood, Prior: Dirichlet(0.5,…,0.5).
+* Posterior = Dirichlet(0.5+xk).
+* Report mean + 95% CrI for each category.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By sex and age group (no geography).
+* **Age-standardisation:** Use WHO or ESP for comparing type distribution internationally, though often presented as raw proportions.
+
+---
+
+**10. Importance / Uses**
+
+* Helps anticipate treatment needs (insulin vs tablets).
+* Monitors epidemiological shifts (e.g., more type 2 at younger ages).
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual reporting.
+* Use distribution tables or pie charts.
+
+---
+
+**12. Interpretation Guidance**
+
+* Shifts in type mix signal changing population risk profiles.
+
+---
+
+**13. Responsible Party**
+Registry management team.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Incidence (T2D-INC-01)
+* Age at diagnosis (T2D-AGE-03)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-TYPE-08
+* Source: ICHOM
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS Digital, *National Diabetes Audit* (type distribution).
+* **International:** IDF Diabetes Atlas.
+
+---
+
+# 📑 Metric T2D-HBA1c-1x-09: Percentage of people with type 2 diabetes with at least 1 HbA1c measurement in the year
+
+**0. Priority**
+**PRIMARY** — this is a key process-of-care metric.
+
+---
+
+**1. Definition (Official wording)**
+IDF Clinical Guidelines Task Force (2012): *Percentage of people with type 2 diabetes who had at least one HbA1c measurement in the past year.*
+
+---
+
+**2. Plain Language Description**
+Shows whether people with diabetes are getting their recommended annual blood sugar test.
+
+---
+
+**3. Formula**
+
+* **% with ≥1 HbA1c test** = (People with T2D who had ≥1 HbA1c in year ÷ All people with T2D) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** People with T2D who had ≥1 HbA1c recorded in the year.
+* **Denominator:** All people with T2D in the registry.
+
+---
+
+**5. Variables Required**
+
+* Diabetes type
+* HbA1c test date(s)
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Laboratory information system
+
+---
+
+**7. Data Quality & Caveats**
+
+* Missing lab linkages may underestimate coverage.
+* Must exclude duplicate results.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Annual coverage should be reasonably stable, but subgroups may be small.
+* Always report **counts and %**.
+* Suppress subgroup reporting if denominator <50.
+
+**Bayesian estimation (technical)**
+
+* Binomial(n, p) with Jeffreys prior.
+* Posterior mean and 95% CrI.
+* Partial pooling across years can smooth trends.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex (no geography).
+* **Age-standardisation:** Use WHO World Standard Population for international comparison; ESP for UK benchmarking.
+
+---
+
+**10. Importance / Uses**
+
+* Core indicator of care quality.
+* Ensures patients receive minimum monitoring.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual reporting.
+* Present % with ≥1 HbA1c, plus complement (none).
+
+---
+
+**12. Interpretation Guidance**
+
+* Low values suggest gaps in monitoring.
+* Should be ≥90% in well-functioning systems.
+
+---
+
+**13. Responsible Party**
+Registry manager; NCD clinical services.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Complements Metric 10 (no HbA1c).
+* Links to HbA1c control metrics (14–15).
+
+---
+
+**15. Metadata**
+
+* Code: T2D-HBA1c-1x-09
+* Source: IDF 2012
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS Digital, *National Diabetes Audit – Care Processes*.
+* **International:** IDF guideline standards.
+
+---
+
+# 📑 Metric T2D-HBA1c-None-10: Percentage of people with type 2 diabetes with no HbA1c measurement in the year
+
+**0. Priority**
+**SECONDARY** — this is the complement of Metric 9 and rarely needed separately.
+
+---
+
+**1. Definition (Official wording)**
+IDF Clinical Guidelines Task Force (2012): *Percentage of people with type 2 diabetes who had no HbA1c measurement in the past year.*
+
+---
+
+**2. Plain Language Description**
+Shows whether people with diabetes are missing their recommended annual blood sugar test.
+
+---
+
+**3. Formula**
+
+* **% with no HbA1c test** = (People with T2D who had zero HbA1c tests in year ÷ All people with T2D) × 100
+* **Note:** This is 100 – Metric 9.
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** People with T2D who had zero HbA1c in year.
+* **Denominator:** All people with T2D in the registry.
+
+---
+
+**5. Variables Required**
+
+* Diabetes type
+* HbA1c test date(s)
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Laboratory system
+
+---
+
+**7. Data Quality & Caveats**
+
+* May reflect data capture issues rather than true absence of testing.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Derived directly from Metric 9.
+* No need to model separately.
+
+**Bayesian estimation (technical)**
+
+* Derived as complement of Metric 9’s posterior distribution.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex (no geography).
+* **Age-standardisation:** As per Metric 9.
+
+---
+
+**10. Importance / Uses**
+
+* Secondary indicator.
+* Highlights groups missing annual review.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual reporting.
+* Report alongside Metric 9.
+
+---
+
+**12. Interpretation Guidance**
+
+* High values indicate monitoring gaps.
+
+---
+
+**13. Responsible Party**
+Registry manager; NCD services.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Direct complement of Metric 9.
+
+---
+
+**15. Metadata**
+
+* Code: T2D-HBA1c-None-10
+* Source: IDF 2012
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS Digital, *National Diabetes Audit – Care Processes*.
+* **International:** IDF guideline standards.
+
+---
+
+# 📑 Metric T2D-SMBG-11(A-B): Percentage of people (A) All people with T2 diabetes, (B) with insulin-treated diabetes) routinely performing self-monitoring of blood glucose (SMBG)
+
+**0. Priority**
+**SECONDARY** — useful for assessing patient engagement, but small denominators in St Helena mean estimates will be unstable.
+
+---
+
+**1. Definition (Official wording)**
+IDF Clinical Guidelines Task Force (2012): *Percentage of people with insulin-treated diabetes who routinely perform SMBG.*
+
+---
+
+**2. Plain Language Description**
+Shows how many people on insulin are checking their blood sugar regularly at home.
+
+---
+
+**3. Formula**
+
+* **% performing SMBG** = (People on insulin reporting regular SMBG ÷ All insulin-treated people with diabetes) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Insulin-treated people with diabetes who report or have records of SMBG.
+* **Denominator:** All insulin-treated people with diabetes in the registry.
+
+---
+
+**5. Variables Required**
+
+* Diabetes type
+* Medication status (insulin)
+* SMBG status (yes/no, frequency if available)
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Patient self-report or clinic documentation
+
+---
+
+**7. Data Quality & Caveats**
+
+* Relies on self-report, which may overestimate compliance.
+* Very small numbers in St Helena.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Report **counts and %** together.
+* Pool data across **3–5 years** to achieve stable rates.
+* Suppress if denominator <20.
+
+**Bayesian estimation (technical)**
+
+* Binomial(n, p), Prior: Beta(0.5,0.5).
+* Posterior mean and 95% CrI.
+* Consider hierarchical modelling if stratifying.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By sex and age group (no geography).
+* **Age-standardisation:** Optional; WHO/ESP may be used if comparing internationally.
+
+---
+
+**10. Importance / Uses**
+
+* Indicates whether insulin-treated patients are monitoring adequately.
+* Supports education and adherence interventions.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual, but pooled reporting recommended.
+
+---
+
+**12. Interpretation Guidance**
+
+* Low levels suggest need for patient education and support.
+
+---
+
+**13. Responsible Party**
+Registry team; diabetes nurse specialist.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Medication use (T2D-MED-21)
+* HbA1c control (Metrics 14–15)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-SMBG-11
+* Source: IDF 2012
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS NDA (if SMBG reported).
+* **International:** IDF Clinical Practice Recommendations.
+
+---
+
+# 📑 Metric T2D-HbA1c≤64-12: Percentage of patients with diabetes whose last HbA1c was ≤64 mmol/mol (8.0%)
+
+**0. Priority**
+**SECONDARY** — overlaps with more clinically relevant targets (≤53 mmol/mol, ≥75 mmol/mol).
+
+---
+
+**1. Definition (Official wording)**
+NICE QOF: *Percentage of patients with diabetes on the register whose last HbA1c was ≤64 mmol/mol in the past 12 months.*
+
+---
+
+**2. Plain Language Description**
+Shows how many patients have good blood sugar control, using an HbA1c cut-off of 8.0%.
+
+---
+
+**3. Formula**
+
+* **% ≤64 mmol/mol** = (Patients with last HbA1c ≤64 mmol/mol ÷ All patients with diabetes) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Patients with last HbA1c ≤64 mmol/mol.
+* **Denominator:** All people with diabetes.
+
+---
+
+**5. Variables Required**
+
+* Latest HbA1c result in past year
+* Diabetes status
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Laboratory data
+
+---
+
+**7. Data Quality & Caveats**
+
+* Must use most recent HbA1c only.
+* Missing data will bias results.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Always show **counts and %**.
+* Suppress subgroup estimates if denominator <50.
+* Use rolling averages if needed.
+
+**Bayesian estimation (technical)**
+
+* Binomial likelihood with Jeffreys prior.
+* Posterior mean + 95% CrI.
+* Possible hierarchical shrinkage across age/sex groups.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex.
+* **Age-standardisation:** WHO and ESP if comparing internationally.
+
+---
+
+**10. Importance / Uses**
+
+* Tracks intermediate control threshold.
+* Supports QOF and international reporting.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual reporting.
+
+---
+
+**12. Interpretation Guidance**
+
+* High % suggests majority are reasonably controlled.
+* Complements stricter (<53) and looser (≤75) thresholds.
+
+---
+
+**13. Responsible Party**
+Registry; primary care diabetes services.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* HbA1c <53 mmol/mol (T2D-HbA1c<53-14)
+* HbA1c ≥75 mmol/mol (T2D-HbA1c≥75-15)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-HbA1c≤64-12
+* Source: NICE QOF
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS QOF indicators.
+* **International:** IDF guideline thresholds.
+
+---
+
+# 📑 Metric T2D-HbA1c≤75-13: Percentage of patients with diabetes whose last HbA1c was ≤75 mmol/mol (9.0%)
+
+**0. Priority**
+**SECONDARY** — a looser threshold, less clinically meaningful but useful for monitoring worst control.
+
+---
+
+**1. Definition (Official wording)**
+NICE QOF: *Percentage of patients with diabetes on the register whose last HbA1c was ≤75 mmol/mol in the past 12 months.*
+
+---
+
+**2. Plain Language Description**
+Shows how many patients are avoiding very poor control (above 9.0%).
+
+---
+
+**3. Formula**
+
+* **% ≤75 mmol/mol** = (Patients with last HbA1c ≤75 ÷ All patients with diabetes) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Patients with last HbA1c ≤75 mmol/mol.
+* **Denominator:** All people with diabetes.
+
+---
+
+**5. Variables Required**
+
+* Latest HbA1c result in past year
+* Diabetes status
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Laboratory data
+
+---
+
+**7. Data Quality & Caveats**
+
+* Missing lab results reduce denominator coverage.
+* Data completeness essential.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Report as context to other HbA1c thresholds.
+* Suppress subgroup estimates if denominator <50.
+
+**Bayesian estimation (technical)**
+
+* Binomial(n, p), Beta(0.5,0.5).
+* Posterior mean and 95% CrI.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex.
+* **Age-standardisation:** WHO and ESP if international comparisons needed.
+
+---
+
+**10. Importance / Uses**
+
+* Indicates how many patients are keeping below very high HbA1c levels.
+* Complements stricter thresholds.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual reporting.
+
+---
+
+**12. Interpretation Guidance**
+
+* High % suggests most patients avoid worst control.
+
+---
+
+**13. Responsible Party**
+Registry; clinical services.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* HbA1c <53 mmol/mol (T2D-HbA1c<53-14)
+* HbA1c ≥75 mmol/mol (T2D-HbA1c≥75-15)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-HbA1c≤75-13
+* Source: NICE QOF
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS QOF indicators.
+* **International:** IDF guideline thresholds.
+
+---
+
+# 📑 Metric T2D-HbA1c<53-14: Percentage of people with type 2 diabetes with HbA1c <53 mmol/mol (7.0%)
+
+**0. Priority**
+**PRIMARY** — the most clinically relevant threshold for good glycaemic control.
+
+---
+
+**1. Definition (Official wording)**
+IDF Clinical Guidelines Task Force: *Percentage of people with type 2 diabetes whose HbA1c is <53 mmol/mol (7.0%).*
+
+---
+
+**2. Plain Language Description**
+Shows the proportion of patients meeting the standard target for good blood sugar control.
+
+---
+
+**3. Formula**
+
+* **% <53 mmol/mol** = (Patients with HbA1c <53 mmol/mol ÷ All people with type 2 diabetes) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** People with T2D and last HbA1c <53 mmol/mol.
+* **Denominator:** All people with T2D in registry.
+
+---
+
+**5. Variables Required**
+
+* Latest HbA1c result
+* Diabetes type
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Laboratory system
+
+---
+
+**7. Data Quality & Caveats**
+
+* Missing HbA1c results reduce denominator completeness.
+* Must use most recent result only.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Report **counts and %**.
+* Suppress subgroup reporting if denominator <50.
+* Show rolling averages for subgroups.
+
+**Bayesian estimation (technical)**
+
+* Binomial likelihood with Jeffreys prior.
+* Posterior mean + 95% CrI.
+* Consider hierarchical shrinkage across age/sex groups.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex.
+* **Age-standardisation:** WHO World Standard Population and 2013 ESP for comparisons.
+
+---
+
+**10. Importance / Uses**
+
+* Internationally recognised treatment target.
+* Indicator of effective management and reduced risk of complications.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual.
+
+---
+
+**12. Interpretation Guidance**
+
+* High % indicates good glycaemic management.
+
+---
+
+**13. Responsible Party**
+Registry; diabetes specialist nurse.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* HbA1c ≥75 mmol/mol (T2D-HbA1c≥75-15)
+* Care process metrics (T2D-HBA1c-1x-09)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-HbA1c<53-14
+* Source: IDF 2012
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS NDA (HbA1c <7% target).
+* **International:** IDF Diabetes Atlas (control indicators).
+
+---
+
+# 📑 Metric T2D-HbA1c≥75-15: Percentage of people with type 2 diabetes with HbA1c ≥75 mmol/mol (9.0%)
+
+**0. Priority**
+**PRIMARY** — identifies patients with poor control, at highest risk of complications.
+
+---
+
+**1. Definition (Official wording)**
+IDF Clinical Guidelines Task Force: *Percentage of people with type 2 diabetes whose HbA1c is ≥75 mmol/mol (9.0%).*
+
+---
+
+**2. Plain Language Description**
+Shows the proportion of patients with very poor blood sugar control.
+
+---
+
+**3. Formula**
+
+* **% ≥75 mmol/mol** = (Patients with HbA1c ≥75 ÷ All people with type 2 diabetes) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** People with T2D and last HbA1c ≥75 mmol/mol.
+* **Denominator:** All people with T2D in registry.
+
+---
+
+**5. Variables Required**
+
+* Latest HbA1c result
+* Diabetes type
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Laboratory system
+
+---
+
+**7. Data Quality & Caveats**
+
+* Must use most recent HbA1c only.
+* Missing data may underestimate poor control.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Always report **counts + %**.
+* Flag absolute numbers since very poor control is rare.
+* Suppress subgroup % if denominator <50.
+
+**Bayesian estimation (technical)**
+
+* Binomial(n, p) with Beta(0.5,0.5).
+* Posterior mean and 95% CrI.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex.
+* **Age-standardisation:** WHO and ESP if comparing internationally.
+
+---
+
+**10. Importance / Uses**
+
+* Identifies high-risk patients who need urgent clinical attention.
+* Guides targeted interventions.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual.
+* Report alongside HbA1c <53 mmol/mol.
+
+---
+
+**12. Interpretation Guidance**
+
+* Higher % indicates significant clinical management issues.
+
+---
+
+**13. Responsible Party**
+Registry; diabetes specialist nurse.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* HbA1c <53 mmol/mol (T2D-HbA1c<53-14)
+* Process metrics (T2D-HBA1c-1x-09)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-HbA1c≥75-15
+* Source: IDF 2012
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS NDA (HbA1c ≥9% metric).
+* **International:** IDF guideline thresholds.
+
+---
+
+# 📑 Metric T2D-Diet-16: Percentage of patients with diabetes who had a dietary review within the last 15 months
+
+**0. Priority**
+**SECONDARY** — a useful quality of care process measure, but not central for burden or risk tracking.
+
+---
+
+**1. Definition (Official wording)**
+NICE QOF: *Percentage of patients with diabetes on the register who have had a dietary review by a suitably competent professional in the preceding 15 months.*
+
+---
+
+**2. Plain Language Description**
+Shows how many people with diabetes received professional dietary advice or review in the past 15 months.
+
+---
+
+**3. Formula**
+
+* **% with dietary review** = (Patients with record of dietary review ÷ All patients with diabetes) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Patients with documented dietary review in the past 15 months.
+* **Denominator:** All patients with diabetes.
+
+---
+
+**5. Variables Required**
+
+* Date of last dietary review
+* Diabetes diagnosis status
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Clinical care records
+
+---
+
+**7. Data Quality & Caveats**
+
+* Relies on consistent recording.
+* Quality of advice not measured.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Counts may be small; always present **absolute counts + %**.
+* Use 3-year rolling averages if denominators <50.
+
+**Bayesian estimation (technical)**
+
+* Binomial(n, p), Prior: Beta(0.5,0.5).
+* Posterior mean and 95% CrI.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex.
+* **Age-standardisation:** WHO and ESP if comparing across populations.
+
+---
+
+**10. Importance / Uses**
+
+* Supports quality improvement in lifestyle management.
+* Identifies gaps in nutrition support services.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual reporting.
+
+---
+
+**12. Interpretation Guidance**
+
+* Low values highlight resource gaps or under-recording.
+
+---
+
+**13. Responsible Party**
+Registry; dietetics service.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Education (T2D-EDU-23)
+* HbA1c control metrics (14–15).
+
+---
+
+**15. Metadata**
+
+* Code: T2D-Diet-16
+* Source: NICE QOF
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS QOF dietary review indicator.
+* **International:** Limited — IDF guidelines for patient education.
+
+---
+
+# 📑 Metric T2D-Flu-17: Percentage of patients with diabetes who had influenza immunisation (seasonal)
+
+**0. Priority**
+**SECONDARY** — preventive care marker, but not central to diabetes-specific outcomes.
+
+---
+
+**1. Definition (Official wording)**
+NICE QOF: *Percentage of patients with diabetes who received influenza immunisation between 1 August and 31 March.*
+
+---
+
+**2. Plain Language Description**
+Shows how many people with diabetes are protected from flu during the season.
+
+---
+
+**3. Formula**
+
+* **% vaccinated** = (Diabetes patients with influenza immunisation ÷ All diabetes patients) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Patients with record of seasonal flu vaccination.
+* **Denominator:** All patients with diabetes.
+
+---
+
+**5. Variables Required**
+
+* Vaccination record
+* Diabetes diagnosis
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Immunisation system
+
+---
+
+**7. Data Quality & Caveats**
+
+* Depends on reliable vaccine data.
+* May miss vaccines given outside health service.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Annual coverage should be reported with **counts and %**.
+* Suppress subgroup % if denominator <50.
+
+**Bayesian estimation (technical)**
+
+* Binomial(n, p), Prior: Beta(0.5,0.5).
+* Posterior mean + 95% CrI.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex.
+* **Age-standardisation:** WHO and ESP for comparison to international/UK immunisation rates.
+
+---
+
+**10. Importance / Uses**
+
+* Protects vulnerable patients.
+* Indicator of integration with preventive health.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual, seasonal reporting (1 Aug–31 Mar).
+
+---
+
+**12. Interpretation Guidance**
+
+* Low values highlight service delivery gaps.
+
+---
+
+**13. Responsible Party**
+Public Health Directorate; immunisation programme.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* Education and care process indicators.
+
+---
+
+**15. Metadata**
+
+* Code: T2D-Flu-17
+* Source: NICE QOF
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS QOF flu vaccination coverage in diabetes.
+* **International:** WHO vaccine coverage reports.
+
+---
+
+# 📑 Metric T2D-ACEARB-18: Percentage of patients with diabetes and nephropathy treated with an ACE inhibitor or ARB
+
+**0. Priority**
+**PRIMARY** — critical for renal protection, a major outcome of diabetes management.
+
+---
+
+**1. Definition (Official wording)**
+NICE QOF: *Percentage of patients with diabetes and nephropathy (clinical proteinuria or microalbuminuria) currently treated with an ACE-I or ARB.*
+
+---
+
+**2. Plain Language Description**
+Shows how many people with diabetic kidney disease are receiving the recommended protective medications.
+
+---
+
+**3. Formula**
+
+* **% on ACE/ARB** = (Patients with nephropathy on ACE/ARB ÷ All diabetes patients with nephropathy) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Patients with nephropathy receiving ACE/ARB therapy.
+* **Denominator:** All diabetes patients with nephropathy.
+
+---
+
+**5. Variables Required**
+
+* Diagnosis of nephropathy
+* Medication record
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Prescribing records
+
+---
+
+**7. Data Quality & Caveats**
+
+* Requires reliable diagnosis coding.
+* Treatment contraindications must be considered.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Numbers will be very small; report **absolute counts**.
+* Suppress % if denominator <20.
+* Pool data across years for stability.
+
+**Bayesian estimation (technical)**
+
+* Binomial(n, p), Prior: Beta(0.5,0.5).
+* Posterior mean + 95% CrI.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex.
+* **Age-standardisation:** WHO/ESP if comparing internationally, though small denominators limit use.
+
+---
+
+**10. Importance / Uses**
+
+* Protects kidney function and reduces risk of end-stage renal disease.
+* Monitors adherence to clinical guidelines.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual, with multi-year pooling.
+
+---
+
+**12. Interpretation Guidance**
+
+* Low coverage may reflect prescribing gaps or contraindications.
+
+---
+
+**13. Responsible Party**
+Registry and primary care/renal services.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* BP control (T2D-BP metrics)
+* Complication tracking
+
+---
+
+**15. Metadata**
+
+* Code: T2D-ACEARB-18
+* Source: NICE QOF
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS QOF nephropathy management indicator.
+* **International:** KDIGO/IDF renal protection standards.
+
+---
+
+# 📑 Metric T2D-BP>140/90-19: Percentage of people with type 2 diabetes (A) not treated and (B) treated with anti-hypertensives who have BP >140/90 mmHg
+
+**0. Priority**
+**SECONDARY** — indicates missed opportunities for BP management, but less central than target achievement.
+
+---
+
+**1. Definition (Official wording)**
+IDF Clinical Guidelines Task Force: *Percentage of people with type 2 diabetes not on antihypertensives with blood pressure >140/90 mmHg.*
+
+---
+
+**2. Plain Language Description**
+Shows the proportion of patients with uncontrolled high blood pressure who are not receiving antihypertensive medication.
+
+---
+
+**3. Formula**
+
+* **% uncontrolled without treatment** = (Patients with BP >140/90 and no antihypertensive therapy ÷ All people with type 2 diabetes) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Patients with BP >140/90 and no antihypertensive prescription.
+* **Denominator:** All patients with type 2 diabetes.
+
+---
+
+**5. Variables Required**
+
+* BP measurement
+* Medication status
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Clinical records
+
+---
+
+**7. Data Quality & Caveats**
+
+* Relies on latest BP only.
+* Missing data reduces accuracy.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Counts may be very small; always report absolute numbers.
+* Suppress subgroup % if denominator <50.
+
+**Bayesian estimation (technical)**
+
+* Binomial(n, p), Beta(0.5,0.5).
+* Posterior mean + 95% CrI.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex.
+* **Age-standardisation:** WHO and ESP for comparability.
+
+---
+
+**10. Importance / Uses**
+
+* Highlights gaps in treatment initiation.
+* Supports quality improvement in hypertension management.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual.
+
+---
+
+**12. Interpretation Guidance**
+
+* High % indicates under-treatment of hypertension.
+
+---
+
+**13. Responsible Party**
+Registry and primary care services.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* BP control target (T2D-BP≤130/80-20).
+
+---
+
+**15. Metadata**
+
+* Code: T2D-BP>140/90-19
+* Source: IDF
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS NDA blood pressure care process indicators.
+* **International:** IDF hypertension guidelines.
+
+---
+
+# 📑 Metric T2D-BP≤130/80-20: Percentage of people with type 2 diabetes with BP ≤130/80 mmHg
+
+**0. Priority**
+**PRIMARY** — blood pressure control is one of the strongest predictors of reduced cardiovascular risk.
+
+---
+
+**1. Definition (Official wording)**
+IDF Clinical Guidelines Task Force: *Percentage of people with type 2 diabetes whose blood pressure is ≤130/80 mmHg.*
+
+---
+
+**2. Plain Language Description**
+Shows the proportion of patients with diabetes who have well-controlled blood pressure.
+
+---
+
+**3. Formula**
+
+* **% with controlled BP** = (Patients with last BP ≤130/80 ÷ All patients with type 2 diabetes) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Patients with last BP ≤130/80.
+* **Denominator:** All patients with type 2 diabetes.
+
+---
+
+**5. Variables Required**
+
+* BP measurement
+* Diabetes diagnosis
+
+---
+
+**6. Data Source(s)**
+
+* Registry
+* Clinical records
+
+---
+
+**7. Data Quality & Caveats**
+
+* Based on latest BP reading, not average.
+* Missing values may bias estimates.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Report **counts and %**.
+* Suppress subgroup % if denominator <50.
+* Use rolling averages for subgroup reporting.
+
+**Bayesian estimation (technical)**
+
+* Binomial(n, p), Beta(0.5,0.5).
+* Posterior mean + 95% CrI.
+* Trend smoothing possible with hierarchical models.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex.
+* **Age-standardisation:** WHO and ESP for comparison.
+
+---
+
+**10. Importance / Uses**
+
+* Strongly linked to reduced risk of stroke, kidney failure, and CVD.
+* Critical for monitoring clinical quality.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual.
+
+---
+
+**12. Interpretation Guidance**
+
+* Higher % indicates better blood pressure control in the diabetes population.
+
+---
+
+**13. Responsible Party**
+Registry; primary care and hypertension services.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* BP >140/90 without medication (T2D-BP>140/90-19).
+* ACE/ARB treatment (T2D-ACEARB-18).
+
+---
+
+**15. Metadata**
+
+* Code: T2D-BP≤130/80-20
+* Source: IDF
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS NDA BP control indicators.
+* **International:** IDF guidelines.
+
+---
+
+# 📑 Metric T2D-MED-21: Diabetes medication use (none / tablets only / insulin only / combination)
+
+**0. Priority**
+**SECONDARY** — essential context for service planning and interpreting glycaemic control, but not itself an outcome or core burden metric.
+
+---
+
+**1. Definition (Official wording)**
+CDC USDSS (adapted): *Distribution of current diabetes pharmacotherapy among people with diagnosed diabetes, categorised as: no medication; oral agents only; insulin only; insulin + oral combination.*
+
+---
+
+**2. Plain Language Description**
+Shows how people with diabetes are being treated right now — with tablets, insulin, both, or no medication.
+
+---
+
+**3. Formula**
+
+* **Share of category k (%)** = (Number of patients in category k ÷ All patients with diabetes) × 100
+  *Categories:* none; tablets only; insulin only; combination.
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Patients whose current treatment falls into category *k*.
+* **Denominator:** All patients with diagnosed diabetes (or T2D if restricting to type 2).
+
+---
+
+**5. Variables Required**
+
+* Diabetes diagnosis and type
+* Current medication list (drug names, class, start/stop dates)
+* Optional: contraindications/intolerance codes
+
+---
+
+**6. Data Source(s)**
+
+* St Helena Diabetes Registry
+* Prescribing/dispensing records (primary care pharmacy)
+
+---
+
+**7. Data Quality & Caveats**
+
+* Medication lists must reflect **current** therapy (watch for stale repeats).
+* Insulin “as needed” vs daily use should be distinguished where possible.
+* Combination therapy must not double-count.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Always report **absolute counts and proportions** by category.
+* Collapse rare cells (e.g., GLP-1 only) into “Other” to avoid suppressions.
+* If any category count <5, aggregate with a neighbour (e.g., combine “insulin only” with “combination” for reporting).
+
+**Bayesian estimation (technical)**
+
+* Use **Dirichlet–Multinomial**: prior Dirichlet(α=0.5 for each category).
+* Posterior Dirichlet(αk + xk) → report category means and 95% credible intervals.
+* Optional partial pooling across years to stabilise trends.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* Break down by **age group** and **sex** (no geography).
+* **Age-standardisation:** If comparing internationally or to the UK, age-standardise category shares using the **WHO World Standard Population (2000–2025)** or **2013 European Standard Population (ESP)**.
+
+---
+
+**10. Importance / Uses**
+
+* Informs procurement (insulin, strips, GLP-1s), workforce skills, and education needs.
+* Contextualises HbA1c control metrics (different targets expected on insulin vs tablets).
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual snapshot; optional quarterly operational view.
+* Stacked bar chart of category distribution; table with counts + %.
+
+---
+
+**12. Interpretation Guidance**
+
+* Rising insulin share may reflect more severe disease or prescribing shifts.
+* “No medication” can indicate early disease, lifestyle control, or care gaps — interpret with HbA1c.
+
+---
+
+**13. Responsible Party**
+Registry manager; primary care pharmacy lead.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* HbA1c control (T2D-HbA1c<53-14; T2D-HbA1c≥75-15)
+* SMBG among insulin-treated (T2D-SMBG-11)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-MED-21
+* Source: CDC USDSS (adapted)
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS Digital, *National Diabetes Audit* (therapy profiles by age/sex).
+* **International:** IDF Diabetes Atlas (treatment patterns, where available).
+
+---
+
+# 📑 Metric T2D-RET-22: Retinopathy exam within the last 12 months
+
+**0. Priority**
+**PRIMARY** — sight-saving process metric; a foundational quality standard for diabetes care.
+
+---
+
+**1. Definition (Official wording)**
+NHS DESP / NDA (adapted): *Percentage of people with diabetes who received a retinal screening (dilated fundus photography or equivalent) within the last 12 months.*
+
+---
+
+**2. Plain Language Description**
+Shows whether people with diabetes are getting their annual eye check to prevent vision loss.
+
+---
+
+**3. Formula**
+
+* **% screened in last 12 months** = (People with diabetes with a retinopathy exam in past 12 months ÷ All people with diabetes eligible for screening) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** Eligible patients with a documented retinopathy screen in the last 12 months.
+* **Denominator:** All patients eligible for screening (exclude medical exemptions, recent diagnosis if locally exempted, or those already under ophthalmology where screening is not indicated per pathway).
+
+---
+
+**5. Variables Required**
+
+* Diabetes status and eligibility flag
+* Date of last retinal screen; screening outcome (optional)
+* Exemption/ophthalmology follow-up status
+
+---
+
+**6. Data Source(s)**
+
+* St Helena Diabetes Registry
+* Eye screening service / ophthalmology records
+
+---
+
+**7. Data Quality & Caveats**
+
+* Ensure **eligibility** is correctly defined and recorded.
+* Screens done off-island must be captured to avoid false “missed” screens.
+* Distinguish screening from diagnostic ophthalmology visits.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Present **counts + %**; aim for **≥80–90%** coverage as a quality goal.
+* If denominator <50 (e.g., age/sex subgroup), suppress subgroup %; use pooled multi-year.
+* Consider **quarterly operational monitoring** to chase defaulters.
+
+**Bayesian estimation (technical)**
+
+* Binomial(n, p) with Jeffreys prior Beta(0.5,0.5).
+* Posterior mean and 95% credible interval.
+* Optional partial pooling across years or clinics.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex (no geography).
+* **Age-standardisation:** For UK/global comparison, age-standardise coverage using **WHO World Standard Population** or **2013 ESP** (particularly if age structure differs).
+
+---
+
+**10. Importance / Uses**
+
+* Early detection prevents sight loss.
+* Core service quality metric; supports DESP-style assurance.
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual formal report; monthly/quarterly operational dashboards.
+* Gauge chart vs target; trend line with 95% CrI.
+
+---
+
+**12. Interpretation Guidance**
+
+* Low coverage often reflects **recall & reminder** issues, not capacity alone.
+* Improving registry–screening linkage typically yields rapid gains.
+
+---
+
+**13. Responsible Party**
+Registry manager; Eye Screening Service lead / Ophthalmology.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* HbA1c control (risk of retinopathy progression)
+* Education uptake (T2D-EDU-23)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-RET-22
+* Source: NHS DESP / NDA (adapted)
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS Diabetic Eye Screening Programme (DESP) and *National Diabetes Audit – Care Processes*.
+* **International:** IDF and WHO eye health programme guidance.
+
+---
+
+# 📑 Metric T2D-EDU-23: Percentage of people with type 2 diabetes receiving formal diabetes education in the last year
+
+**0. Priority**
+**PRIMARY** — education underpins self-management, medication adherence, SMBG, diet, and risk reduction.
+
+---
+
+**1. Definition (Official wording)**
+IDF (adapted to local context): *Percentage of people with type 2 diabetes who participated in a structured diabetes education programme within the last 12 months.*
+
+---
+
+**2. Plain Language Description**
+Shows how many people attended a formal course or programme to learn how to manage their diabetes.
+
+---
+
+**3. Formula**
+
+* **% receiving education** = (People with T2D who completed formal education in last 12 months ÷ All people with T2D) × 100
+
+---
+
+**4. Numerator & Denominator**
+
+* **Numerator:** People with T2D with documented participation/completion of a recognised programme (e.g., group course, structured curriculum).
+* **Denominator:** All people with T2D (or newly diagnosed subset, if running a “new diagnosis” metric variant).
+
+---
+
+**5. Variables Required**
+
+* Diabetes type
+* Education attendance/completion date and programme code
+* Optional: delivery mode (group, one-to-one, digital), language, duration
+
+---
+
+**6. Data Source(s)**
+
+* Registry (education module)
+* Education provider records / sign-in sheets / LMS exports
+
+---
+
+**7. Data Quality & Caveats**
+
+* Define “formal education” clearly (curriculum, duration threshold).
+* Capture **completion**, not just referral or booking.
+* Off-island or online completions must be recorded.
+
+---
+
+**8. Methodological Notes for Small Numbers**
+
+**Practical implications**
+
+* Report **counts + %**; if few completions, show trajectory over time.
+* Suppress subgroup % if denominator <50; pool across years.
+* Track **referral → attendance → completion** funnel in operational dashboards.
+
+**Bayesian estimation (technical)**
+
+* Binomial(n, p), Beta(0.5,0.5) prior.
+* Posterior mean and 95% CrI; optional hierarchical pooling across cohorts/years.
+
+---
+
+**9. Disaggregation & Standardisation**
+
+* By age and sex; optionally by **newly diagnosed vs established**.
+* **Age-standardisation:** For UK/global comparison, age-standardise using **WHO World Standard Population** or **2013 ESP** where relevant.
+
+---
+
+**10. Importance / Uses**
+
+* Strong evidence link to improved self-management and control.
+* Identifies equity gaps (who isn’t getting access).
+
+---
+
+**11. Reporting Frequency & Format**
+
+* Annual headline; quarterly operational tracking.
+* Display funnel (referred → attended → completed) and overall completion % with 95% CrI.
+
+---
+
+**12. Interpretation Guidance**
+
+* Low completion may reflect scheduling, transport, or cultural fit — pair with qualitative feedback.
+* Digital or micro-modules can improve access in small islands.
+
+---
+
+**13. Responsible Party**
+Registry manager; Diabetes Education Programme lead.
+
+---
+
+**14. Linkages to Other Metrics**
+
+* SMBG (T2D-SMBG-11)
+* HbA1c targets (T2D-HbA1c<53-14; T2D-HbA1c≥75-15)
+* Retinopathy screening (T2D-RET-22)
+
+---
+
+**15. Metadata**
+
+* Code: T2D-EDU-23
+* Source: IDF (adapted)
+* Version: 1.0
+
+---
+
+**16. Benchmark / Comparison Reference**
+
+* **UK:** NHS Digital, *National Diabetes Audit – Structured Education* (e.g., DESMOND/DAFNE uptake, where available).
+* **International:** IDF education standards and position statements.
+
+---
+
+# REQUIRED VARIABLES
+
+## 1. Demographics
+| Variable | Metrics Requiring Variable |
+|---|---|
+| Date of birth | T2D-AGE-03 |
+| Age | T2D-AGE-03, T2D-DUR-04 |
+| Age + sex | T2D-INC-01, T2D-W18-44-07 |
+| Maternal age, BMI (if available) | T2D-GDM-06 |
+| Population denominator | T2D-INC-01, T2D-PREV-02 |
+
+## 2. Diagnosis & Disease Status
+| Variable | Metrics Requiring Variable |
+|---|---|
+| Date of diagnosis | T2D-AGE-03, T2D-DUR-04, T2D-INC-01, T2D-PREV-02 |
+| Diabetes diagnosis status | T2D-Diet-16, T2D-Flu-17, T2D-HbA1c≤64-12, T2D-HbA1c≤75-13, T2D-RET-22 |
+| Diabetes diagnosis status + type | T2D-MED-21, T2D-PREG-05 |
+| Diabetes type | T2D-EDU-23, T2D-HBA1c-1x-09, T2D-HBA1c-None-10, T2D-HbA1c<53-14, T2D-HbA1c≥75-15, T2D-SMBG-11, T2D-TYPE-08 |
+| Diabetes type (exclude type 1, gestational, secondary) | T2D-INC-01 |
+| Diagnosis of nephropathy | T2D-ACEARB-18 |
+| Pregnancy status | T2D-PREG-05 |
+| Pregnancy identifier | T2D-GDM-06 |
+| Number of pregnancies (denominator) | T2D-PREG-05, T2D-GDM-06 |
+| Date of GDM diagnosis | T2D-GDM-06 |
+| Vital status | T2D-INC-01, T2D-PREV-02 |
+| Current date (or date of death if deceased) | T2D-DUR-04 |
+
+## 3. Laboratory & Clinical Measurements
+| Variable | Metrics Requiring Variable |
+|---|---|
+| HbA1c test date(s) | T2D-HBA1c-1x-09, T2D-HBA1c-None-10 |
+| Latest HbA1c result | T2D-HbA1c≤64-12, T2D-HbA1c≤75-13, T2D-HbA1c<53-14, T2D-HbA1c≥75-15 |
+| Medication status | T2D-BP>140/90-19, T2D-SMBG-11 |
+| Current medication list (drug names, class, start/stop dates) | T2D-MED-21 |
+| Medication record | T2D-ACEARB-18 |
+| SMBG status (yes/no, frequency if available) | T2D-SMBG-11 |
+
+## 4. Care Processes
+| Variable | Metrics Requiring Variable |
+|---|---|
+| Date of last dietary review | T2D-Diet-16 |
+| Date of last retinal screen; screening outcome (optional) | T2D-RET-22 |
+| Exemption/ophthalmology follow-up status | T2D-RET-22 |
+| Education attendance/completion date and programme code | T2D-EDU-23 |
+| Vaccination record | T2D-Flu-17 |
+
+---
+
+## 📋 Minimal Core Dataset for Diabetes Registry
+
+### 1. Demographics
+
+* **Unique patient ID** (registry identifier, non-identifiable)
+* **Date of birth** (→ derive age)
+* **Sex**
+* **Vital status** (alive/deceased; if deceased, date of death)
+* **Population denominator source** (link to census/administrative data, not patient-level)
+
+---
+
+### 2. Diagnosis & Disease Status
+
+* **Date of diabetes diagnosis**
+* **Diabetes type** (Type 1, Type 2, Gestational, Secondary/Other)
+* **Pregnancy status** (for women of reproductive age, yes/no at each encounter)
+* **Pregnancy identifier** (episode-level ID, to link with maternal records)
+* **Date of GDM diagnosis** (if applicable)
+* **Nephropathy status** (none, microalbuminuria, proteinuria, other renal disease)
+
+---
+
+### 3. Laboratory & Clinical Measurements
+
+* **HbA1c test date(s) + result(s)** (flag most recent result)
+* **Blood pressure (systolic/diastolic, date measured)**
+* **BMI** (useful for maternal and general risk stratification)
+
+---
+
+### 4. Medications
+
+* **Current medication list** (drug name, class, start/stop date)
+
+  * Flag: insulin (yes/no)
+  * Flag: antihypertensive (yes/no)
+  * Flag: ACE/ARB (yes/no)
+* **Self-monitoring of blood glucose (SMBG) status** (yes/no; optional frequency)
+
+---
+
+### 5. Care Processes
+
+* **Date of last dietary review**
+* **Date of last retinal screening** (+ outcome if available)
+* **Exemption/ophthalmology follow-up status** (yes/no)
+* **Education programme attendance** (date, completion status)
+* **Influenza vaccination status/date**
+
+---
+
+✅ With this **minimal dataset** we can:
+
+* Calculate **all 23 metrics** directly or through derivation.
+* Support **derived measures** like incidence, prevalence, age at diagnosis, and duration.
+* Cover **process-of-care indicators** (HbA1c testing, diet, retinal exam, flu vaccine, education).
+* Track **treatment and outcomes** (HbA1c thresholds, BP control, ACE/ARB use).
+
+---
+
+## 🔗 Crosswalk: Metrics ↔ Minimal Core Dataset
+
+### 1. Incidence & Prevalence
+
+* **T2D-INC-01 (Incidence)** → Date of diagnosis, Diabetes type, Age, Sex, Vital status, Population denominator
+* **T2D-PREV-02 (Prevalence)** → Diabetes diagnosis status, Date of diagnosis, Vital status, Population denominator
+
+### 2. Age & Duration
+
+* **T2D-AGE-03 (Age at diagnosis)** → Date of birth, Date of diagnosis
+* **T2D-DUR-04 (Duration)** → Date of diagnosis, Current date or Date of death
+
+### 3. Maternal & Reproductive Health
+
+* **T2D-PREG-05 (Diabetes in pregnancy)** → Pregnancy status, Diabetes type/status
+* **T2D-GDM-06 (Gestational diabetes incidence)** → Pregnancy identifier, Date of GDM diagnosis, Maternal age, BMI
+* **T2D-W18-44-07 (Women 18–44 prevalence)** → Age, Sex, Diagnosis status
+
+### 4. Diabetes Type Distribution
+
+* **T2D-TYPE-08 (Type distribution)** → Diabetes type
+
+### 5. HbA1c Testing & Control
+
+* **T2D-HBA1c-1x-09 (≥1 HbA1c in year)** → Diabetes type, HbA1c test date(s)
+* **T2D-HBA1c-None-10 (No HbA1c in year)** → Diabetes type, HbA1c test date(s)
+* **T2D-HbA1c≤64-12 (≤64 mmol/mol)** → Latest HbA1c result, Diabetes status
+* **T2D-HbA1c≤75-13 (≤75 mmol/mol)** → Latest HbA1c result, Diabetes status
+* **T2D-HbA1c<53-14 (<53 mmol/mol)** → Latest HbA1c result, Diabetes type
+* **T2D-HbA1c≥75-15 (≥75 mmol/mol)** → Latest HbA1c result, Diabetes type
+
+### 6. Other Clinical Management
+
+* **T2D-SMBG-11 (Self-monitoring in insulin users)** → Diabetes type, Medication list (insulin flag), SMBG status
+* **T2D-Diet-16 (Dietary review)** → Date of last dietary review, Diabetes diagnosis status
+* **T2D-Flu-17 (Flu immunisation)** → Vaccination record, Diabetes diagnosis status
+* **T2D-ACEARB-18 (ACE/ARB in nephropathy)** → Diagnosis of nephropathy, Medication record (ACE/ARB)
+* **T2D-BP>140/90-19 (High BP untreated)** → Blood pressure, Medication status (antihypertensives)
+* **T2D-BP≤130/80-20 (BP controlled)** → Blood pressure, Diabetes diagnosis status
+
+### 7. Medication Profile
+
+* **T2D-MED-21 (Medication use: none/tablets/insulin/combination)** → Current medication list, Diabetes type
+
+### 8. Screening & Education
+
+* **T2D-RET-22 (Retinopathy exam)** → Date of last retinal screen, Exemption/ophthalmology follow-up status, Diabetes diagnosis status
+* **T2D-EDU-23 (Education uptake)** → Diabetes type, Education attendance/completion date
+
+---
+
+## ✅ Coverage Check
+
+* **Demographics:** Needed for incidence, prevalence, reproductive health, and disaggregation.
+* **Diagnosis & status:** Core to almost all metrics.
+* **Labs & clinical measures:** Required for HbA1c, BP, nephropathy.
+* **Medications:** Needed for SMBG, BP, ACE/ARB, therapy distribution.
+* **Care processes:** Needed for diet, retinal screen, vaccination, education.
+
+---
+
+| Field                              | Definition / Coding                              | Example Values                                    | Metrics Supported                                                  |
+| ---------------------------------- | ------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------------ |
+| **Patient ID**                     | Unique non-identifiable registry identifier      | e.g., REG12345                                    | All metrics                                                        |
+| **Date of birth**                  | Patient’s date of birth                          | YYYY-MM-DD                                        | T2D-AGE-03, T2D-W18-44-07, disaggregation                          |
+| **Sex**                            | Biological sex                                   | Male / Female                                     | T2D-INC-01, T2D-W18-44-07, disaggregation                          |
+| **Vital status**                   | Alive or deceased; include date if deceased      | Alive / Deceased; date                            | T2D-INC-01, T2D-PREV-02, T2D-DUR-04                                |
+| **Date of diagnosis**              | First-ever diabetes diagnosis date               | YYYY-MM-DD                                        | T2D-INC-01, T2D-PREV-02, T2D-AGE-03, T2D-DUR-04                    |
+| **Diabetes type**                  | Coded at diagnosis                               | Type 1, Type 2, Gestational, Other/Secondary      | T2D-INC-01, T2D-PREG-05, T2D-TYPE-08, T2D-HbA1c metrics            |
+| **Nephropathy status**             | Kidney disease diagnosis                         | None, Microalbuminuria, Proteinuria, Other        | T2D-ACEARB-18                                                      |
+| **Pregnancy status**               | Pregnancy at time of care                        | Yes / No                                          | T2D-PREG-05                                                        |
+| **Pregnancy identifier**           | Unique ID for pregnancy episode                  | e.g., PREG2025-01                                 | T2D-GDM-06                                                         |
+| **Date of GDM diagnosis**          | Date gestational diabetes diagnosed              | YYYY-MM-DD                                        | T2D-GDM-06                                                         |
+| **BMI**                            | Most recent BMI (kg/m²)                          | 31.2                                              | T2D-GDM-06, contextual                                             |
+| **HbA1c test date(s)**             | All HbA1c test dates                             | YYYY-MM-DD                                        | T2D-HBA1c-1x-09, T2D-HBA1c-None-10                                 |
+| **Latest HbA1c result**            | Most recent HbA1c                                | mmol/mol (e.g., 58)                               | T2D-HbA1c≤64-12, T2D-HbA1c≤75-13, T2D-HbA1c<53-14, T2D-HbA1c≥75-15 |
+| **Blood pressure**                 | Latest systolic/diastolic reading                | 138/82 mmHg                                       | T2D-BP>140/90-19, T2D-BP≤130/80-20                                 |
+| **Current medication list**        | Active medications with start/stop dates         | Metformin 500mg, Insulin                          | T2D-MED-21, T2D-SMBG-11                                            |
+| **Medication flags**               | Derived from list                                | Insulin: Y/N; Antihypertensive: Y/N; ACE/ARB: Y/N | T2D-SMBG-11, T2D-ACEARB-18, T2D-BP metrics                         |
+| **SMBG status**                    | Self-monitoring of blood glucose                 | Yes / No / Frequency                              | T2D-SMBG-11                                                        |
+| **Date of last dietary review**    | Most recent dietary consult                      | YYYY-MM-DD                                        | T2D-Diet-16                                                        |
+| **Date of last retinal screen**    | Most recent retinal screening                    | YYYY-MM-DD                                        | T2D-RET-22                                                         |
+| **Exemption/ophthalmology status** | If exempt or under ophthalmology care            | Exempt / In ophthalmology / Eligible              | T2D-RET-22                                                         |
+| **Education programme attendance** | Date + completion status of structured education | Completed DESMOND (2025-03-01)                    | T2D-EDU-23                                                         |
+| **Influenza vaccination**          | Vaccination status & date                        | Vaccinated 2025-08-12                             | T2D-Flu-17                                                         |
