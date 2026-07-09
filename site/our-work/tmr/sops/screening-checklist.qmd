@@ -132,6 +132,8 @@ If interested:
 
   $\square$ Baseline visit scheduled
 
+  $\square$ Ask if willing to be interviewed. IF YES, email Sarah  
+
 If not interested:
 
   $\square$ Option of routine data use as control explained (where applicable)
