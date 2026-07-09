@@ -73,9 +73,7 @@ draft: false
 ## Participant Administration
 
   $\square$ Participant study ID assigned / confirmed
-  
-  $\square$ Group allocation recorded (intervention / control)
-  
+    
 ## Baseline Measurements Collected
 
 ### Anthropometry and Clinical Measures
@@ -96,9 +94,9 @@ draft: false
 
   $\square$ HbA1c
   
-  $\square$ Blood samples taken - purple tube
+  $\square$ Blood samples taken - purple tube (St Helena), or lilac tube (Ascension)
   
-  $\square$ Blood samples taken - yellow tube
+  $\square$ Blood samples taken - yellow tube (St Helena), or green tube (Ascension)
 
   $\square$ FibroScan completed or scheduled (if applicable)
 
