@@ -18,6 +18,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -25,11 +26,16 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      # Required to render the PDF versions of website pages
+      - name: Install TinyTeX
+        run: quarto install tinytex --no-prompt
+
+      # With no `to: html` restriction, Quarto renders all formats
+      # specified in each QMD file, including PDFs.
       - name: Render website
         uses: quarto-dev/quarto-actions/render@v2
         with:
           path: site
-          to: html
 
       # Upload the rendered site as the Pages artifact
       - name: Upload Pages artifact
@@ -40,9 +46,11 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
