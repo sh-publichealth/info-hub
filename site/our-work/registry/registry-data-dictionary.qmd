@@ -1,0 +1,168 @@
+---
+title: "St Helena Diabetes Registry"
+subtitle: "Data dictionary"
+date: last-modified
+format:
+  html:
+    toc: true
+    toc-location: left
+  pdf:
+    toc: true
+    number-sections: true
+---
+
+## Status and use
+
+This is the design data dictionary for the first registry release. **Core** fields are required for safe workflow, denominator management and M01--M26 reporting. **Extended** fields may be added later or hidden in the initial REDCap build. **Derived** fields are calculated in REDCap or the analysis pipeline and should not be manually entered.
+
+Dates are collected as `date_dmy`. Repeating instruments use the REDCap repeat instance as their operational row identifier; a separate typed event ID is optional and not required for analysis.
+
+## Shared reporting metric codebook
+
+| Codes | Purpose |
+|---|---|
+| M01--M06 | Diabetes burden and descriptive measures |
+| M07--M19 | Care processes, clinical control, prevention and treatment measures |
+| M20 | Diagnosis-confirmation quality |
+| M21--M26 | Review coverage and delivery of the structured care pathway |
+
+## Table 1. Baseline — single current record per person
+
+| Variable | Meaning / values | Status | Metrics |
+|---|---|---|---|
+| `internal_redcap_id` | System-generated registry record key | Core | All |
+| `sh_diabetes_id` | Controlled local registry ID, with check digit when adopted | Core | All/linkage |
+| `emis_id` | Legacy EMIS patient identifier, if available | Core | Linkage |
+| `psource_id` | PatientSource patient identifier, if available | Core | Linkage |
+| `date_of_entry` | Date first entered in the registry | Core | M01, M13 |
+| `date_of_birth` | Date of birth | Core | M03, M05, M17 |
+| `sex` | Male; female; other/indeterminate; unknown | Core | M05, M17, stratification |
+| `age_current_years` | Age at specified reporting date | Derived | M05, M17 |
+| `age_18_44_flag` | Age 18--44 years at reporting date | Derived | M05 |
+| `age_17_44_flag` | Age 17--44 years at reporting date | Derived | M17 |
+
+## Table 2. Contact and residence — restricted single record per person
+
+| Variable | Meaning / values | Status | Metrics |
+|---|---|---|---|
+| `internal_redcap_id` | Registry record key | Core | Linkage |
+| `first_name`, `family_name`, `middle_name`, `previous_name` | Identifying or matching names | Core; Core; Extended; Extended | Recall/linkage |
+| `phone_1`, `phone_2`, `phone_3`, `email` | Contact details | Core; Extended; Extended; Extended | Recall |
+| `preferred_contact_method` | Phone; SMS; email; letter; family contact; community visit; other | Core | Recall |
+| `contact_permission_status` | Allowed; restricted; declined; unable to confirm | Core | Recall |
+| `usual_st_helena_address` | Current usual address or district | Core | Residence/recall |
+| `nominated_contact` | Contact person, relationship and contact details | Extended | Recall |
+
+Address history, if required after launch, is held in a separate repeating contact/residence update log rather than through duplicated address fields.
+
+## Table 3. Diagnosis and confirmation — single current record per person
+
+| Variable | Meaning / values | Status | Metrics |
+|---|---|---|---|
+| `registry_classification` | Confirmed diabetes; probable/unconfirmed diabetes; pre-diabetes/high risk; not diabetes/excluded; pending review | Core | M01, M02, M20 |
+| `diabetes_type` | Type 1; type 2; other/secondary; unknown; not applicable | Core | M01, M06, type-specific measures |
+| `diagnosis_date` | Best available full diabetes diagnosis date | Core | M01, M03, M04, M13 |
+| `diagnosis_year` | Diagnosis year where full date is unavailable | Core | M01, M03, M04 |
+| `diagnosis_age_years` | Age at diagnosis when date is unavailable | Core | M03 |
+| `diagnosis_confirmed_by` | Not reviewed; staff reviewed; clinician confirmed; disputed; excluded | Core | M20 |
+| `diagnosis_review_date` | Date current classification/type was reviewed | Core | M20 |
+| `duration_years` | Diabetes duration at reporting date | Derived | M04 |
+
+## Table 4. Physical review — repeating
+
+| Variable | Meaning / values | Status | Metrics |
+|---|---|---|---|
+| `measurement_date` | Date physical measurements were taken | Core | M18, M19, M21, M26 |
+| `physical_measure_bp` | Blood pressure recorded: no/yes | Core | M18, M19 |
+| `sbp_1_mmHg`, `dbp_1_mmHg` | First systolic and diastolic readings | Core | M18, M19 |
+| `sbp_2_mmHg`, `dbp_2_mmHg`, `sbp_3_mmHg`, `dbp_3_mmHg` | Repeat readings | Extended | M18, M19 |
+| `sbp_final_mmHg`, `dbp_final_mmHg` | Analytic BP, normally mean of readings 2 and 3 where available; otherwise pre-specified fallback | Derived | M18, M19 |
+| `height_cm`, `weight_kg` | Measured height and weight | Core | BMI/future reporting |
+| `bmi_kg_m2`, `bmi_category` | Calculated BMI and adult category | Derived | Future reporting |
+
+## Table 5. Laboratory results — repeating accepted result bundle
+
+Each row is an accepted set of results linked to a diabetes-team blood-taking episode. `aset_request_id` is a specimen/request linkage value, not a patient identifier. Only rows marked accepted are available to routine reporting.
+
+| Variable | Meaning / values | Status | Metrics |
+|---|---|---|---|
+| `lab_measurement_date` | Specimen collection date; use result date only if collection date is unavailable | Core | M07--M12, M16, M26 |
+| `aset_request_id` | ASET accession/request identifier | Core | Safety/QC |
+| `result_acceptance_status` | Accepted; pending query; rejected/wrong patient; not reviewed | Core | All laboratory metrics |
+| `hba1c_mmol_mol` | IFCC HbA1c result | Core | M07--M12 |
+| `hba1c_method_status` | Standardised; non-standardised; unknown | Core | M09 |
+| `serum_creatinine_umol_l`, `egfr_ml_min_1_73m2` | Renal function results | Core | M16 |
+| `urine_acr_mg_mmol` | Urine albumin:creatinine ratio | Core | M16 |
+| `microalbuminuria_flag`, `clinical_proteinuria_flag` | Derived renal disease indicators, using thresholds specified in the SAP | Derived | M16 |
+| `total_cholesterol_mmol_l` | Total cholesterol | Core | Clinical review |
+| `urine_albumin_mg_l`, `urine_creatinine_mmol_l`, `hdl_cholesterol_mmol_l`, `ldl_cholesterol_mmol_l`, `triglycerides_mmol_l` | Supporting renal/lipid values | Extended | Clinical review |
+| `haemoglobin_g_l`, `tsh_miu_l`, `alt_u_l`, `ast_u_l`, `alp_u_l`, `bilirubin_umol_l`, `albumin_g_l`, `total_protein_g_l` | Other laboratory results | Extended | Clinical review |
+
+## Table 6. Lifestyle and preventive care — repeating
+
+Use one event row for each relevant review or intervention. `intervention_status` has one shared value set: offered; referred; attended/received; completed; declined; not eligible; unknown.
+
+| Variable | Meaning / values | Status | Metrics |
+|---|---|---|---|
+| `intervention_date` | Date of intervention, review or advice | Core | M13--M15, M17, M21, M26 |
+| `intervention_type` | Structured education; dietary review; diet advice; physical-activity advice; smoking advice; GLP-1 programme; total meal replacement; DPP diet/exercise | Core | M13, M14, M17 |
+| `intervention_status` | Shared status value set | Core | M13, M14, M17 |
+| `provider_role` | Doctor; diabetes nurse; dietitian; community worker; pharmacist; other competent professional; unknown | Core | M14 |
+| `structured_education_programme` | Named programme or local structured education pathway | Core when relevant | M13 |
+| `influenza_immunisation_date` | Date influenza vaccination received | Core | M15 |
+| `pregnancy_advice_date`, `pregnancy_advice_type`, `pregnancy_contraceptive_intention_recorded` | Pregnancy, pre-conception or contraception advice | Core when relevant | M17 |
+| `smoking_status` | Current smoker; ex-smoker; never smoked; on NRT; unknown | Core | Clinical review |
+| `intervention_notes` | Brief clinically necessary note | Extended | Clinical review |
+
+## Table 7. Foot review — repeating
+
+| Variable | Meaning / values | Status | Metrics |
+|---|---|---|---|
+| `foot_exam_date`, `foot_exam_completed` | Date and completion status | Core | M24, M26 |
+| `foot_exam_result` | Overall assessment result using agreed local values | Core | M24 |
+| `foot_risk_category` | Low; moderate; high; active foot disease; unknown | Core | Clinical review |
+| `current_foot_ulcer` | No; yes; unknown | Core | Clinical review |
+| `podiatry_referral_date` | Date of referral, if relevant | Core when referred | Clinical workflow |
+| `left_foot_pulse_present`, `right_foot_pulse_present`, `left_foot_sensation_normal`, `right_foot_sensation_normal`, `prior_lower_limb_amputation` | Detailed assessment/history | Extended | Clinical review |
+
+## Table 8. Eye review and referral — repeating
+
+| Variable | Meaning / values | Status | Metrics |
+|---|---|---|---|
+| `eye_exam_date`, `eye_exam_completed` | Screening/examination date and status | Core | M25, M26 |
+| `retinopathy_result` | No retinopathy; background; pre-proliferative; proliferative; treated/stable; other; unknown | Core | Clinical review |
+| `eye_referral_date`, `eye_referral_status` | Referral date and status | Core when referred | M25 |
+| `eye_next_due_date` | Planned next review date | Core | Recall |
+| `maculopathy_result` | None; present; unknown | Extended | Clinical review |
+
+## Table 9. Medication review — repeating
+
+| Variable | Meaning / values | Status | Metrics |
+|---|---|---|---|
+| `med_review_date`, `medication_review_completed` | Review date and completion: completed; declined; not completed; unknown | Core | M16, M18, M23, M26 |
+| `medication_date`, `medication_status` | Date and current/started/stopped/historical/not taking/unknown status | Core | M16, M18 |
+| `medication_type` | Diabetes medicine; antihypertensive; ACE-I/ARB; lipid-lowering; antiplatelet/anticoagulant; other | Core | M16, M18 |
+| `medication_class` | Agreed local medication ontology/class | Core | M16, M18 |
+| `is_antihypertensive`, `is_acei_or_arb`, `is_diabetes_medication`, `is_insulin`, `is_oral_diabetes_medication` | Derived medicine-class flags | Derived | M16, M18 |
+| `diabetes_medication_category` | No medicine; pills only; insulin only; insulin plus pills; injectable non-insulin only/combination; unknown | Derived | Descriptive only |
+| `generic_name`, `route`, `dose`, `frequency`, `medication_start_date`, `medication_stop_date` | Detailed prescribing information | Extended | Clinical review |
+
+## Table 10. Vital, residence and recall status — single current record per person
+
+| Variable | Meaning / values | Status | Metrics |
+|---|---|---|---|
+| `vital_status` | Alive; deceased; duplicate/merged; entered in error; unknown | Core | All denominators |
+| `date_of_death` | Date of death | Core when deceased | All denominators |
+| `resident_status` | Resident; temporarily overseas for work; temporarily overseas for care; permanently left island; unknown | Core | M01, M02 and active register |
+| `resident_status_date` | Date current resident status began | Core | Denominator/reconciliation |
+| `active_register_flag` | Active diabetes register: yes/no/pending review | Core | M20--M26 |
+| `date_last_diabetes_review` | Most recent completed diabetes-team consultation/review | Derived | M21, M22 |
+| `last_status_review_date` | Date vital/residence status was reviewed | Core | Denominator quality |
+
+## Build rules
+
+- REDCap user rights must restrict Table 2 to staff who require identifiers for recall and record resolution.
+- Record data-quality queries rather than overwriting uncertain results or classifications without an audit trail.
+- Do not store a static current age; derive age against the reporting date.
+- Do not add clinical reference-range flags until ranges, units, and clinical responsibility have been agreed locally.
+- The Statistical Analysis Plan, rather than calculated fields alone, is the authoritative source for metric derivations.

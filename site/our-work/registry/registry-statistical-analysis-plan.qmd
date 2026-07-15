@@ -1,0 +1,131 @@
+---
+title: "St Helena Diabetes Registry"
+subtitle: "Statistical analysis plan for M01--M26"
+date: last-modified
+format:
+  html:
+    toc: true
+    toc-location: left
+  pdf:
+    toc: true
+    number-sections: true
+---
+
+## Purpose and status
+
+This Statistical Analysis Plan (SAP) defines routine reporting from the St Helena Diabetes Registry. It replaces the 27 September 2025 handbook, which used a previous metric set and an earlier registry design. It is aligned to the current Tables 1--10 and the M01--M26 metric set.
+
+The SAP supports internal service improvement first. External comparison should be cautious because St Helena has a small population, an establishing registry and incomplete historical ascertainment.
+
+## General analytic rules
+
+### Reporting population
+
+Unless a metric states otherwise, the reporting population is people who, on the index date:
+
+- have `registry_classification = confirmed diabetes`;
+- are alive;
+- are usual residents of St Helena; and
+- are not marked duplicate/merged or entered in error.
+
+The **active diabetes register** is the reporting population additionally marked `active_register_flag = yes`. Probable/unconfirmed diabetes, pre-diabetes/high risk and pending-review records are reported separately for M20 and registry quality; they are excluded from diabetes prevalence and care-performance denominators until confirmed.
+
+### Dates and repeated records
+
+- Use the actual measurement, specimen, review or intervention date, not the data-entry date.
+- For a time-window metric, use the latest valid record in the stated window unless a metric specifies otherwise.
+- Laboratory metrics use only Table 5 rows with `result_acceptance_status = accepted`.
+- When a full diagnosis date is unavailable, use diagnosis year for annual allocation only where this does not create false precision; otherwise classify the date as incomplete.
+- A person is counted once per metric per reporting period unless a count of events is explicitly required.
+
+### Missing, unknown and not applicable
+
+For every percentage, report numerator, eligible denominator and an explicit missing/unknown category. Do not treat missing information as evidence that care was not delivered. “Not applicable” is excluded only when the metric definition explicitly permits it; exclusions must be reported.
+
+### Small numbers and presentation
+
+Always show counts with percentages or rates. For island-level annual measures, show a three-year rolling average where it adds stability and label it clearly. Avoid fine subgroup reporting where small counts create confidentiality or unstable comparisons; use agreed local suppression rules before publication. In internal reporting, use exact binomial confidence intervals where informative, but do not let interval estimates obscure the underlying counts.
+
+### Stratification
+
+Routine stratification, where counts permit, is by sex, age group, diabetes type and calendar year. No geographic breakdown is planned. Suggested age groups are under 45, then 10-year bands, with aggregation where needed for confidentiality and stability.
+
+## Metric specification
+
+| Code | Measure | Numerator | Denominator / time window | Main registry fields |
+|---|---|---|---|---|
+| M01 | Newly diagnosed type 2 diabetes | Confirmed type 2 diabetes with first diagnosis in the calendar year | Resident population without diabetes at the start of the year; report count and rate per 1,000 | T1, T3, T10; population estimates |
+| M02 | Diagnosed diabetes prevalence | Confirmed diabetes cases resident and alive on index date | Total resident population on index date | T1, T3, T10; population estimates |
+| M03 | Age at diabetes diagnosis | Age at diagnosis among confirmed diabetes cases with usable date/year or recorded age | No percentage denominator; report n, mean, SD, median and IQR | T1, T3 |
+| M04 | Duration of diabetes | Duration among confirmed diabetes cases with usable diagnosis timing | No percentage denominator; report n, mean, SD, median and IQR | T3 |
+| M05 | Diabetes prevalence among women aged 18--44 | Confirmed diabetes among female residents aged 18--44 on index date | Female resident population aged 18--44 | T1, T3, T10; population estimates |
+| M06 | Diabetes type prevalence | Confirmed diabetes by type | Confirmed diabetes cases; report type unknown separately | T3, T10 |
+| M07 | HbA1c measured annually | Eligible confirmed diabetes cases with at least one accepted HbA1c in the prior 12 months | Eligible confirmed diabetes cases | T3, T5, T10 |
+| M08 | No annual HbA1c | Eligible confirmed diabetes cases with no accepted HbA1c in the prior 12 months | Same as M07 | T3, T5, T10 |
+| M09 | Annual standardised HbA1c coverage | M07 numerator where at least one qualifying HbA1c is from a standardised method | Same as M07; report against 95% target | T5 |
+| M10 | Glycaemic control distribution | Latest accepted HbA1c in prior 12 months, grouped using agreed IFCC categories | Confirmed diabetes cases with a qualifying HbA1c; also report no-result group against full eligible population | T5 |
+| M11 | HbA1c at or below 64 mmol/mol | Latest accepted HbA1c <=64 mmol/mol in prior 12 months | Confirmed diabetes cases with a qualifying HbA1c | T5 |
+| M12 | HbA1c at or below 75 mmol/mol | Latest accepted HbA1c <=75 mmol/mol in prior 12 months | Confirmed diabetes cases with a qualifying HbA1c | T5 |
+| M13 | Structured education referral | Newly diagnosed confirmed diabetes cases referred to structured education within 9 months of registry entry | Newly diagnosed confirmed diabetes cases with at least 9 months follow-up, excluding documented inapplicable cases | T1, T3, T6 |
+| M14 | Dietary review | Confirmed diabetes cases with dietary review by a competent professional in prior 15 months | Eligible confirmed diabetes cases | T6 |
+| M15 | Influenza immunisation | Confirmed diabetes cases with recorded influenza immunisation in the applicable 1 August--31 March season | Eligible confirmed diabetes cases during that season | T6, T10 |
+| M16 | ACE-I/ARB treatment in nephropathy | Confirmed diabetes cases with nephropathy/microalbuminuria and current ACE-I or ARB, unless documented contraindication/decline | Confirmed diabetes cases with qualifying renal disease; report contraindication/decline separately | T5, T9 |
+| M17 | Pregnancy/pre-conception/contraception advice | Women with confirmed diabetes aged 17--44 with relevant advice in prior 12 months | Female confirmed diabetes cases aged 17--44; report documented not applicable separately | T1, T3, T6, T10 |
+| M18 | Untreated high blood pressure | Type 2 diabetes cases with latest BP >140/90 mmHg and no current antihypertensive medicine | Type 2 diabetes cases with valid BP in the reporting window; report missing BP separately | T3, T4, T9 |
+| M19 | Blood pressure at or below 130/80 mmHg | Type 2 diabetes cases with latest BP <=130/80 mmHg | Type 2 diabetes cases with valid BP in the reporting window | T3, T4 |
+| M20 | Confirmed diabetes status | Registry records with a documented current classification and diagnosis review, shown by confirmed/probable/pre-diabetes/excluded/pending status | All non-duplicate registry records | T3, T10 |
+| M21 | Six-month diabetes-team review | Active diabetes cases with completed diabetes-team consultation in prior 6 months | Active diabetes register | T4, T6, T9, T10 |
+| M22 | Overdue diabetes-team review | Active diabetes cases with no completed consultation for >12 months; report separately >24 months | Active diabetes register | T10 |
+| M23 | Medication review coverage | Active diabetes cases with completed medication review in prior 6 months | Active diabetes register | T9, T10 |
+| M24 | Foot-review coverage | Active diabetes cases with completed foot review in prior 12 months | Active diabetes register | T7, T10 |
+| M25 | Eye-review/referral status | Active diabetes cases with completed eye review or recorded eye-referral status in prior 12 months | Active diabetes register | T8, T10 |
+| M26 | Annual core-care bundle | Active diabetes cases meeting every required bundle component in prior 12 months | Active diabetes register with applicable components; report each component and incomplete bundle reason | T4--T9, T10 |
+
+## Metric-specific operational rules
+
+### M01 and M02: burden measures
+
+M01 is an incidence measure and needs a population denominator external to the registry. At the outset, report its case count prominently and interpret rates as provisional because the registry begins after many prevalent cases are already known. M02 is point prevalence and should use the best available resident population estimate for the same index date. Both measures should distinguish confirmed cases from the unconfirmed registry backlog.
+
+### M03 and M04: incomplete diagnosis timing
+
+Use full diagnosis date when available; otherwise use diagnosis year, then recorded age at diagnosis. Report the number with incomplete timing. Do not impute a diagnosis date for the routine descriptive statistics.
+
+### M07--M12: HbA1c rules
+
+The 12-month window ends on the reporting index date. Where more than one valid HbA1c is available, use the latest for M10--M12. M09 requires `hba1c_method_status = standardised`; unknown method is not assumed standardised and is reported separately.
+
+### M16: renal disease and medication
+
+Before first reporting, the clinical lead must approve the renal disease rule, including urine ACR threshold, repeat-testing requirement and any alternative basis for nephropathy. “Currently treated” means a current ACE-I or ARB in the latest valid medication review on or before the index date. Contraindication, intolerance and documented patient decline are not counted as failures, but must be reported.
+
+### M18 and M19: blood pressure
+
+Use the latest valid `sbp_final_mmHg` and `dbp_final_mmHg` in the agreed reporting window, normally 12 months. If repeat readings are absent, use the pre-specified fallback reading rule and report its use in quality checks. For M18, “not treated” means no current antihypertensive medication recorded at the relevant review date.
+
+### M20: registry quality
+
+M20 is a classification-quality measure, not prevalence. Present the number and percentage of all registry records in each current classification, together with the proportion reviewed by a clinician. This avoids the ambiguous and potentially misleading practice of presenting only a single “confirmed” percentage.
+
+### M21 and M22: what counts as a diabetes-team consultation
+
+A completed consultation is a documented diabetes-team clinical review after blood results are available or a clinically equivalent review that records review completion and date. A blood-taking visit alone does not count. The data pipeline derives `date_last_diabetes_review` from valid review records; it is not manually maintained as the sole source.
+
+### M26: annual core-care bundle
+
+For the initial release, a completed bundle requires all of:
+
+- accepted HbA1c within 12 months;
+- valid BP within 12 months;
+- completed medication review within 12 months;
+- completed foot review within 12 months;
+- completed eye review or documented eye referral status within 12 months; and
+- renal assessment within 12 months (accepted eGFR/creatinine and urine ACR where clinically applicable).
+
+Report each missing component and every documented clinical exception. The clinical lead may amend this bundle only through a versioned SAP update.
+
+## Data quality, extracts and release practice
+
+Each reporting extract should retain a release date, reporting index date, source extract date, SAP version and data-quality summary. Routine quality checks should include duplicate identifiers, inconsistent diagnosis status/type, implausible dates, invalid laboratory values, results not accepted, missing active-status review, and repeated records on the same date.
+
+The first January 2027 report is an implementation baseline. It should describe completeness, patient pathway coverage and unresolved classification/linkage issues before making strong time-trend or target-performance claims.

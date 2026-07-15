@@ -1,0 +1,86 @@
+---
+title: "St Helena Diabetes Registry"
+subtitle: "Overview and design"
+date: last-modified
+format:
+  html:
+    toc: true
+    toc-location: left
+  pdf:
+    toc: true
+    number-sections: true
+---
+
+## Purpose
+
+The St Helena Diabetes Registry is a REDCap-based system for improving the organisation of diabetes care and producing decision-ready population reporting.  It is designed to account for the current heralthcare reality in St Helena, in which clinical information remains fragmented across legacy PatientSource, ASET, old EMIS, spreadsheets and paper-based workarounds, while PatientSource 2 is being implemented.
+
+The registry is not intended to replace a whole electronic medical record.  In its first release it records information collected or reviewed by the diabetes team, supports structured recall and follow-up, and provides an auditable source for pre-defined group of internationally recognised diabetes metrics.  It is designed so that its data can later be linked to, or migrated into, a more mature Health Information System environment.
+
+## Care model and patient journey
+
+The first operational pathway records information gathered at two linked patient contacts.  Blood-taking visits start on **1 September 2026**.  Results are expected to take approximately two weeks, after which follow-up consultation visits begin from **mid-September 2026**.  At the second visit (the consultation), the diabetes team reviews results, blood pressure and weight, medicines, foot and eye status, lifestyle support, and any needed action or referral.
+
+The registry supports a planned six-monthly diabetes-team review rhythm, while allowing separate event records for blood tests, medicine changes, foot and eye care, and lifestyle interventions.
+
+## Registry design principles
+
+- `internal_redcap_id` is the internal registry key; `sh_diabetes_id` is the public registry patient identifier (which still needs to be developed).
+- EMIS and PatientSource identifiers are retained as separate linkage fields.  ASET identifiers are specimen/request-level identifiers, not patient identifiers.
+- Identifiable contact information is held in a restricted instrument; clinical and analytical users should not need routine access to it.
+- Tables 1--3 and 10 contain one current record per person. Tables 4--9 are repeating, event-based instruments.
+- Only accepted laboratory results are used in routine reporting.
+- The initial data collection focuses on the Core field set. Extended fields are deferred or hidden unless a clear clinical workflow requires them.
+- All reporting definitions, exclusions, time windows and missing-data handling are specified in the Statistical Analysis Plan.
+
+## Registry structure
+
+```{mermaid}
+flowchart LR
+  T1["Table 1<br/>Baseline"]
+
+  T2["Table 2<br/>Restricted contact"]
+  T3["Table 3<br/>Diagnosis and confirmation"]
+  T10["Table 10<br/>Vital, residence and recall status"]
+  T4["Table 4<br/>Physical review"]
+  T5["Table 5<br/>Laboratory results"]
+  T6["Table 6<br/>Lifestyle and preventive care"]
+  T7["Table 7<br/>Foot review"]
+  T8["Table 8<br/>Eye review and referral"]
+  T9["Table 9<br/>Medication review"]
+
+  T1 --- T2
+  T1 --- T3
+  T1 --- T10
+  T1 --> T4
+  T1 --> T5
+  T1 --> T6
+  T1 --> T7
+  T1 --> T8
+  T1 --> T9
+```
+
+Laboratory information is managed through the routine blood-taking workflow, documented ASET/request identifiers in Table 5, and local operating procedures for checking identity and accepting results.
+
+| Table | Instrument | Record pattern | Primary role | Key variables / groups |
+|--|---|---:|---|----|
+| 1 | Baseline | Single | Registry identifiers and demographic variables | `internal_redcap_id`<br>`sh_diabetes_id`<br>EMIS and PatientSource IDs<br>Date of registry entry<br>Date of birth<br>Sex |
+| 2 | Contact and residence | Single, restricted | Contact and current residence for recall | Names and previous name<br>Telephone numbers and email<br>Preferred contact method<br>Contact permission status<br>Usual St Helena address<br>Nominated contact |
+| 3 | Diagnosis and confirmation | Single | Diabetes classification, type and date of diagnosis | Registry classification<br>Diabetes type<br>Diagnosis date/year<br>Age at diagnosis<br>Diagnosis confirmation status<br>Diagnosis review date |
+| 4 | Physical review | Repeating | Blood pressure, height, weight and BMI | Measurement date<br>Systolic and diastolic BP readings<br>Final analytic BP<br>Height<br>Weight<br>BMI and BMI category |
+| 5 | Laboratory results | Repeating | Accepted diabetes-team reviewed laboratory result bundles | Specimen date<br>ASET/request identifier<br>Result acceptance status<br>HbA1c and method status<br>Renal function and urine ACR<br>Lipid results<br>Other safety blood results |
+| 6 | Lifestyle and preventive care | Repeating | Education, dietary review, vaccination, pregnancy advice and interventions | Intervention/review date<br>Intervention type and status<br>Provider role<br>Structured education<br>Dietary review<br>Influenza immunisation<br>Pregnancy/pre-conception advice<br>Smoking status |
+| 7 | Foot review | Repeating | Foot assessment, risk and referral | Foot examination date<br>Completion and overall result<br>Foot-risk category<br>Current ulcer<br>Podiatry referral<br>Detailed circulation/sensation findings |
+| 8 | Eye review and referral | Repeating | Eye screening, result, referral and due date | Eye examination date<br>Completion status<br>Retinopathy result<br>Eye referral date and status<br>Next due date<br>Maculopathy result |
+| 9 | Medication review | Repeating | Current treatment and medication review | Medication-review date and completion<br>Medication date and status<br>Medication type and class<br>Diabetes-medication category<br>Antihypertensive and ACE-I/ARB flags<br>Detailed prescribing information |
+| 10 | Vital, residence and recall status | Single | Vital status, usual residence, active register status and last review | Vital status<br>Date of death<br>Resident status and date<br>Active-register flag<br>Date of last diabetes-team review<br>Last status review date |
+
+## Reporting framework
+
+The registry will report the full M01--M26 metric set. M01--M19 describe burden, clinical control and care quality; M20 monitors diagnosis confirmation; and M21--M26 monitor delivery of the structured diabetes-care pathway. The associated Statistical Analysis Plan is the authoritative source for metric definitions.
+
+## Governance and implementation boundary
+
+The registry starts as a diabetes-team system. It does not retrospectively treat free-text entries in existing clinical systems as a fully reliable automated feed. Legacy data can support case ascertainment and clinical review, but new registry data should be entered, reviewed and audited under defined rules.
+
+**Before go-live, the registry team must agree the diagnosis-confirmation rule, active-resident denominator rule, data-access roles, laboratory identity and acceptance procedure, and first reporting date.**

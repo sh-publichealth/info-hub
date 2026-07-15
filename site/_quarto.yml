@@ -29,6 +29,8 @@ website:
         menu:
           - href: our-work/tmr/index.qmd
             text: Total Meal Replacement
+          - href: our-work/registry/index.qmd
+            text: Diabetes Registry
 
       - href: data-skills/course-overview.qmd
         text: Data Skills
@@ -141,4 +143,4 @@ resources:
 
 bibliography: references.bib
 csl: https://www.zotero.org/styles/harvard-cite-them-right
-# touch: 2026-07-09 14:58:25.132
+# touch: 2026-07-15 12:38:38.617
