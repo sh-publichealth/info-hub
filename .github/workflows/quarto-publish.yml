@@ -25,26 +25,11 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      # Optional but helpful if you render PDFs
-      - name: Install TinyTeX
-        run: quarto install tinytex --no-prompt
-
-      # Cache Quarto + TinyTeX to speed up and reduce flakiness
-      - name: Cache Quarto + TinyTeX
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/quarto
-            ~/.TinyTeX
-          key: ${{ runner.os }}-quarto-${{ hashFiles('site/**/*.qmd', 'site/**/_quarto.yml', 'site/_quarto.yml', '_quarto.yml') }}
-          restore-keys: |
-            ${{ runner.os }}-quarto-
-
-      # Render main website (creates site/_site)
       - name: Render website
         uses: quarto-dev/quarto-actions/render@v2
         with:
           path: site
+          to: html
 
       # Upload the rendered site as the Pages artifact
       - name: Upload Pages artifact
