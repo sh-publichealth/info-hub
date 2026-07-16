@@ -5,11 +5,11 @@ description-meta: "Diabetes Registry Implementation Plan"
 author: Ian Hambleton, Selvi Jeyaseelan
 format:
   html: default
-  pdf:
-    toc: false
-    documentclass: article
-    margin-left: 30mm
-    margin-right: 30mm
+#  pdf:
+#    toc: false
+#    documentclass: article
+#    margin-left: 30mm
+#    margin-right: 30mm
 format-links: true
 
 date: last-modified
