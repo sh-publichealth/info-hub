@@ -47,19 +47,37 @@ Dates are collected as `date_dmy`. Repeating instruments use the REDCap repeat i
 | `age_18_44_flag` | Age 18--44 years at reporting date | Derived | M05 |
 | `age_17_44_flag` | Age 17--44 years at reporting date | Derived | M17 |
 
-## Table 2. Contact and residence — restricted single record per person
+## Table 2. Contact, residence, vital status and follow-up history — repeating restricted record
 
 | Variable | Meaning / values | Status | Metrics |
 |---|---|---|---|
+| `contact_status_date` | Date this contact, residence, vital-status or follow-up record became effective | Core | Denominator and history selection |
 | `internal_redcap_id` | Registry record key | Core | Linkage |
 | `first_name`, `family_name`, `middle_name`, `previous_name` | Identifying or matching names | Core; Core; Extended; Extended | Recall/linkage |
 | `phone_1`, `phone_2`, `phone_3`, `email` | Contact details | Core; Extended; Extended; Extended | Recall |
 | `preferred_contact_method` | Phone; SMS; email; letter; family contact; community visit; other | Core | Recall |
 | `contact_permission_status` | Allowed; restricted; declined; unable to confirm | Core | Recall |
-| `usual_st_helena_address` | Current usual address or district | Core | Residence/recall |
+| `usual_st_helena_address` | Address or district applying from `contact_status_date`; later records preserve prior addresses | Core | Residence/recall |
 | `nominated_contact` | Contact person, relationship and contact details | Extended | Recall |
+| `residence_status` | Resident in St Helena; temporarily overseas for employment; temporarily overseas for medical care; temporarily overseas for other reason; permanently left/settled overseas; unknown | Core | M01, M02, M20--M26 |
+| `expected_return_date` | Expected return to St Helena, where known | Core when temporarily overseas | Recall/denominator reconciliation |
+| `vital_status` | Alive; deceased; unknown | Core | All denominators |
+| `date_of_death` | Date of death | Core when deceased | All denominators |
+| `date_last_diabetes_review` | Most recent completed diabetes-team consultation/review at this status record | Derived | M21, M22 |
+| `next_review_due_date` | Date next six-monthly diabetes-team review is due | Derived | M21, M22 |
+| `missed_six_month_review_count` | Consecutive scheduled six-monthly reviews missed | Derived | M21, M22 |
+| `follow_up_status` | Up to date; potentially defaulted; definitely defaulted; re-engaged; follow-up temporarily suspended; unknown | Core | M21, M22 and active-register derivation |
+| `follow_up_status_date` | Date the current follow-up status was assigned | Core | M21, M22 |
+| `follow_up_reason` | Temporary overseas employment; temporary overseas medical care; transfer to another provider; permanently left/settled overseas; unable to contact; declined/no longer wishes follow-up; illness/disability; other; unknown | Core when follow-up is not up to date | Recall, M21, M22 |
+| `follow_up_reason_other` | Free-text explanation where `follow_up_reason = other` | Core when other | Recall/data quality |
+| `active_follow_up_flag` | Derived: eligible for routine local diabetes-team monitoring and re-engagement, yes/no; includes potentially and definitely defaulted residents | Derived | M20--M26 |
+| `last_status_review_date` | Date contact, residence, vital status and follow-up status were last reviewed | Core | Denominator quality |
 
-Address history, if required after launch, is held in a separate repeating contact/residence update log rather than through duplicated address fields.
+The latest Table 2 record on or before the reporting date defines current contact, residence, vital and follow-up status. Earlier repeat instances retain address, migration and follow-up history. A default category is never used to represent known migration, medical travel, transfer of care or death.
+
+### Follow-up status operational rule
+
+For the routine six-monthly pathway, `potentially defaulted` means one scheduled review was not completed within 30 days after its due date. `Definitely defaulted` means two consecutive scheduled reviews were not completed, normally at least 12 months after the last completed diabetes-team review, and at least one contact/tracing attempt has been documented. A completed later review changes the current status to `re-engaged`; the preceding repeat instance remains part of the history.
 
 ## Table 3. Diagnosis and confirmation — single current record per person
 
@@ -153,21 +171,10 @@ Use one event row for each relevant review or intervention. `intervention_status
 | `diabetes_medication_category` | No medicine; pills only; insulin only; insulin plus pills; injectable non-insulin only/combination; unknown | Derived | Descriptive only |
 | `generic_name`, `route`, `dose`, `frequency`, `medication_start_date`, `medication_stop_date` | Detailed prescribing information | Extended | Clinical review |
 
-## Table 10. Vital, residence and recall status — single current record per person
-
-| Variable | Meaning / values | Status | Metrics |
-|---|---|---|---|
-| `vital_status` | Alive; deceased; duplicate/merged; entered in error; unknown | Core | All denominators |
-| `date_of_death` | Date of death | Core when deceased | All denominators |
-| `resident_status` | Resident; temporarily overseas for work; temporarily overseas for care; permanently left island; unknown | Core | M01, M02 and active register |
-| `resident_status_date` | Date current resident status began | Core | Denominator/reconciliation |
-| `active_register_flag` | Active diabetes register: yes/no/pending review | Core | M20--M26 |
-| `date_last_diabetes_review` | Most recent completed diabetes-team consultation/review | Derived | M21, M22 |
-| `last_status_review_date` | Date vital/residence status was reviewed | Core | Denominator quality |
-
 ## Build rules
 
 - REDCap user rights must restrict Table 2 to staff who require identifiers for recall and record resolution.
+- Configure Table 2 as a repeating instrument. Create a new repeat instance whenever material contact, address, residence, vital or follow-up status changes; do not overwrite a previous status episode.
 - Record data-quality queries rather than overwriting uncertain results or classifications without an audit trail.
 - Do not store a static current age; derive age against the reporting date.
 - Do not add clinical reference-range flags until ranges, units, and clinical responsibility have been agreed locally.

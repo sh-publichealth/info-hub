@@ -34,7 +34,7 @@ The registry supports a planned six-monthly diabetes-team review rhythm, while a
 
 - `internal_redcap_id` is the internal registry key; `sh_diabetes_id` is the public registry patient identifier (which still needs to be developed).
 - EMIS and PatientSource identifiers are retained as separate linkage fields.  ASET identifiers are specimen/request-level identifiers, not patient identifiers.
-- Identifiable contact information is held in a restricted access form; clinical and analytical users should not need routine access to it.
+- Repeating Table 2 is a restricted contact, residence, vital-status and follow-up history form. It preserves changing addresses and contact details, migration episodes, vital status and follow-up outcomes; clinical and analytical users should not need routine access to identifiers.
 - Only accepted laboratory results are used in routine reporting.
 - The initial data collection focuses on the core field set. Extended fields are deferred or hidden unless a clear clinical workflow requires them.
 - All reporting definitions, exclusions, time windows and missing-data handling are specified in the Statistical Analysis Plan.
@@ -45,9 +45,8 @@ The registry supports a planned six-monthly diabetes-team review rhythm, while a
 flowchart LR
   T1["Table 1<br/>Baseline"]
 
-  T2["Table 2<br/>Restricted contact"]
+  T2["Table 2<br/>Contact, residence, vital status<br/>and follow-up history"]
   T3["Table 3<br/>Diagnosis and confirmation"]
-  T10["Table 10<br/>Vital, residence and recall status"]
   T4["Table 4<br/>Physical review"]
   T5["Table 5<br/>Laboratory results"]
   T6["Table 6<br/>Lifestyle and preventive care"]
@@ -57,7 +56,6 @@ flowchart LR
 
   T1 --- T2
   T1 --- T3
-  T1 --- T10
   T1 --> T4
   T1 --> T5
   T1 --> T6
@@ -71,7 +69,7 @@ Database table details are presented below:
 | Table | Instrument | Record pattern | Primary role | Key variables / groups |
 |--|---|---:|---|----|
 | 1 | Baseline | Single | Registry identifiers and demographic variables | `internal_redcap_id`<br>`sh_diabetes_id`<br>EMIS and PatientSource IDs<br>Date of registry entry<br>Date of birth<br>Sex |
-| 2 | Contact and residence | Single, restricted | Contact and current residence for recall | Names and previous name<br>Telephone numbers and email<br>Preferred contact method<br>Contact permission status<br>Usual St Helena address<br>Nominated contact |
+| 2 | Contact, residence, vital status and follow-up history | Repeating, restricted | Maintains changing contact and address details, residence/migration, vital status, review due dates and default/re-engagement history | Names and previous name<br>Telephone numbers and email<br>Address episode and usual residence<br>Migration/overseas-care status<br>Vital status and date of death<br>Follow-up status, missed-review count and reason |
 | 3 | Diagnosis and confirmation | Single | Diabetes classification, type and date of diagnosis | Registry classification<br>Diabetes type<br>Diagnosis date/year<br>Age at diagnosis<br>Diagnosis confirmation status<br>Diagnosis review date |
 | 4 | Physical review | Repeating | Blood pressure, height, weight and BMI | Measurement date<br>Systolic and diastolic BP readings<br>Final analytic BP<br>Height<br>Weight<br>BMI and BMI category |
 | 5 | Laboratory results | Repeating | Accepted diabetes-team reviewed laboratory result bundles | Specimen date<br>ASET/request identifier<br>Result acceptance status<br>HbA1c and method status<br>Renal function and urine ACR<br>Lipid results<br>Other safety blood results |
@@ -79,14 +77,21 @@ Database table details are presented below:
 | 7 | Foot review | Repeating | Foot assessment, risk and referral | Foot examination date<br>Completion and overall result<br>Foot-risk category<br>Current ulcer<br>Podiatry referral<br>Detailed circulation/sensation findings |
 | 8 | Eye review and referral | Repeating | Eye screening, result, referral and due date | Eye examination date<br>Completion status<br>Retinopathy result<br>Eye referral date and status<br>Next due date<br>Maculopathy result |
 | 9 | Medication review | Repeating | Current treatment and medication review | Medication-review date and completion<br>Medication date and status<br>Medication type and class<br>Diabetes-medication category<br>Antihypertensive and ACE-I/ARB flags<br>Detailed prescribing information |
-| 10 | Vital, residence and recall status | Single | Vital status, usual residence, active register status and last review | Vital status<br>Date of death<br>Resident status and date<br>Active-register flag<br>Date of last diabetes-team review<br>Last status review date |
 
 ## Reporting framework
 
 The registry will report the full M01--M26 metric set. M01--M19 describe burden, clinical control and care quality; M20 monitors diagnosis confirmation; and M21--M26 monitor delivery of the structured diabetes-care pathway. The associated Statistical Analysis Plan is the authoritative source for metric definitions.
 
+## Follow-up, default and migration status
+
+Vital status remains deliberately simple: **alive**, **deceased** or **unknown**. It is distinct from attendance and migration. Table 2 records the longitudinal status needed for safe recall and denominator management.
+
+For the initial six-monthly care pathway, a person is **potentially defaulted** when one scheduled diabetes-team review is missed and remains incomplete after a 30-day grace period. A person is **definitely defaulted** when two consecutive scheduled six-monthly reviews are missed (normally at least 12 months since the last completed review), following at least one documented attempt to contact or trace them. A later completed review records **re-engaged** status while preserving the earlier history.
+
+Temporary overseas employment, overseas medical care, transfer to another provider, permanent migration and other documented reasons are recorded separately as the reason for missed or ceased local follow-up. They should not be misclassified as unknown default.
+
 ## Governance and implementation boundary
 
 The registry starts as a diabetes-team system. It does not retrospectively treat free-text entries in existing clinical systems as a fully reliable automated feed. Legacy data can support case ascertainment and clinical review, but new registry data should be entered, reviewed and audited under defined rules.
 
-**Before go-live, the registry team must agree the diagnosis-confirmation rule, active-resident denominator rule, data-access roles, laboratory identity and acceptance procedure, and first reporting date.**
+**Before go-live, the registry team must agree the diagnosis-confirmation rule, active-resident denominator rule, default/re-engagement and migration rules, data-access roles, laboratory identity and acceptance procedure, and first reporting date.**

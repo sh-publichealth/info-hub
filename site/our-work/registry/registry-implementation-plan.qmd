@@ -20,7 +20,7 @@ draft: false
 
 ## Objective
 
-The initial implementation will establish a safe, usable diabetes-team workflow: blood-taking first, then a follow-up consultation once results are available. It will also establish a trusted diabetes cohort, structured recall, and the data needed for reporting key diabetes metrics.
+The initial implementation will establish a safe, usable diabetes-team workflow: blood-taking first, then a follow-up consultation once results are available. It will also establish a trusted diabetes cohort, structured recall, a repeating Table 2 history of contact/residence/vital/follow-up status, and the data needed for reporting key diabetes metrics.
 
 ## Patient pathway
 
@@ -40,7 +40,7 @@ At the blood-taking visit, the team confirms the patient identity. On return of 
 
 | Period | Focus | Main work | Deliverable |
 |---|---|---|---|
-| 15 July--31 August 2026 | Readiness | Confirm core data set, diagnosis-confirmation and active-resident rules, access roles, local laboratory identity/acceptance procedure, and first reporting rules. Build and test REDCap instruments. Undertake laboratory, pharmacy and diabetes-workflow walkthroughs. | Signed-off MVP specification, tested build and local operating procedures |
+| 15 July--31 August 2026 | Readiness | Confirm core data set, diagnosis-confirmation and active-resident rules, Table 2 status-history structure, default/re-engagement and migration rules, access roles, local laboratory identity/acceptance procedure, and first reporting rules. Build and test REDCap instruments. Undertake laboratory, pharmacy and diabetes-workflow walkthroughs. | Signed-off MVP specification, tested build and local operating procedures |
 | 1--14 September 2026 | Start blood-taking | Begin planned blood-taking visits; confirm identifiers; record ASET/request identifiers and specimen dates; enter accepted historical results only where confidently linked. | First live blood-taking cohort and laboratory tracking list |
 | From mid-September 2026 | Start consultations | Begin consultations after approximately two-week result turnaround. Complete diagnosis review, physical review, medicine review and priority actions. | First complete two-contact patient journeys |
 | October 2026 | Controlled scale-up | Prioritise people not seen for years, people without recent HbA1c, unconfirmed/probable cases, and people with known high-risk markers. Review workflow bottlenecks weekly. | Prioritised recall list and workflow issue log |
@@ -57,7 +57,7 @@ No numerical throughput target is specified until clinic, laboratory and follow-
 | Patient identity | Agree the identifiers checked at blood-taking and the procedure for uncertain or mismatched results. | Reduces wrong-patient laboratory risk. |
 | Two-contact workflow | Agree responsibility, appointment method and escalation route between blood-taking and consultation. | Makes the intended patient journey deliverable. |
 | Core data set | Confirm which Core fields are completed at blood-taking, consultation and separate foot/eye contacts. | Limits staff burden and prevents incomplete forms. |
-| Recall and action | Agree priority criteria, review due dates, and management of people temporarily overseas or lost to follow-up. | Makes the registry an active care tool. |
+| Recall and action | Agree priority criteria, six-month review due dates, potential/definite default rules, tracing actions, re-engagement, and management of people temporarily overseas or transferred to another provider. | Makes the registry an active care tool without misclassifying known migration or medical travel as default. |
 | Reporting | Approve the SAP’s denominators, time windows and first reporting date. | Produces interpretable M01--M26 outputs. |
 
 ## Role-based workflow
@@ -74,6 +74,8 @@ No numerical throughput target is specified until clinic, laboratory and follow-
 ## Readiness checklist
 
 - [ ] Diagnosis-confirmation and active-resident denominator rules agreed.
+- [ ] Repeating Table 2 status-history instrument configured, including address, residence/migration, vital status and follow-up fields.
+- [ ] Potential default, definite default, tracing, re-engagement and reason-for-follow-up-gap rules agreed.
 - [ ] Blood-taking identity and ASET/request recording procedure tested.
 - [ ] Table 5 acceptance status and result-entry procedure tested.
 - [ ] Consultation instruments tested with a realistic patient scenario.
@@ -85,4 +87,4 @@ No numerical throughput target is specified until clinic, laboratory and follow-
 
 ## Early measures of implementation success
 
-At the January 2027 review, report the number of people entered, classification status, blood-taking contacts, accepted laboratory-result bundles, consultations completed, and people with unresolved identity or data-quality queries. Interpret M01--M26 cautiously during this establishment phase: early values will principally show coverage and backlog rather than stable island-wide care performance.
+At the January 2027 review, report the number of people entered, classification status, blood-taking contacts, accepted laboratory-result bundles, consultations completed, current residence/migration status, potential and definite defaults, re-engagements, and people with unresolved identity or data-quality queries. Interpret M01--M26 cautiously during this establishment phase: early values will principally show coverage and backlog rather than stable island-wide care performance.
