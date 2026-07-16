@@ -1,14 +1,20 @@
 ---
 title: "St Helena Diabetes Registry"
 subtitle: "Data dictionary"
-date: last-modified
+description-meta: "Diabetes Registry Data Dictionary"
+author: Ian Hambleton, Selvi Jeyaseelan
 format:
-  html:
-    toc: true
-    toc-location: left
+  html: default
   pdf:
-    toc: true
-    number-sections: true
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
 ---
 
 ## Status and use

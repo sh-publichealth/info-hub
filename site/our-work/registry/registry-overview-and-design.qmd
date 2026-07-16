@@ -1,36 +1,42 @@
 ---
 title: "St Helena Diabetes Registry"
 subtitle: "Overview and design"
-date: last-modified
+description-meta: "Diabetes Registry Overview and design"
+author: Ian Hambleton, Selvi Jeyaseelan
 format:
-  html:
-    toc: true
-    toc-location: left
+  html: default
   pdf:
-    toc: true
-    number-sections: true
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
 ---
+
 
 ## Purpose
 
-The St Helena Diabetes Registry is a REDCap-based system for improving the organisation of diabetes care and producing decision-ready population reporting.  It is designed to account for the current heralthcare reality in St Helena, in which clinical information remains fragmented across legacy PatientSource, ASET, old EMIS, spreadsheets and paper-based workarounds, while PatientSource 2 is being implemented.
+The St Helena Diabetes Registry is a REDCap-based system for improving the organisation of diabetes care and producing decision-ready population reporting.  It is designed to account for the current healthcare reality in St Helena, in which clinical information remains fragmented across legacy software, spreadsheets and paper-based workarounds, while a new Electronic Medical Record (EMR) system is being implemented.
 
-The registry is not intended to replace a whole electronic medical record.  In its first release it records information collected or reviewed by the diabetes team, supports structured recall and follow-up, and provides an auditable source for pre-defined group of internationally recognised diabetes metrics.  It is designed so that its data can later be linked to, or migrated into, a more mature Health Information System environment.
+The registry is not intended to replace a whole EMR.  In its first release it records information collected or reviewed by the diabetes team, supports structured recall and follow-up, and provides an auditable source for a pre-defined group of internationally recognised diabetes metrics.  It is designed so that its data can later be linked to, or migrated into, a more mature Health Information System environment.
 
 ## Care model and patient journey
 
-The first operational pathway records information gathered at two linked patient contacts.  Blood-taking visits start on **1 September 2026**.  Results are expected to take approximately two weeks, after which follow-up consultation visits begin from **mid-September 2026**.  At the second visit (the consultation), the diabetes team reviews results, blood pressure and weight, medicines, foot and eye status, lifestyle support, and any needed action or referral.
+The first operational pathway records information gathered at two linked patient contacts.  Blood-taking visits start on **1 September 2026**.  Follow-up consultation visits begin around **mid-September 2026**, on receipt of and after review of blood results.  At the consultation, the diabetes team conduct a holistic review with the patient. 
 
 The registry supports a planned six-monthly diabetes-team review rhythm, while allowing separate event records for blood tests, medicine changes, foot and eye care, and lifestyle interventions.
 
-## Registry design principles
+## Registry database design principles
 
 - `internal_redcap_id` is the internal registry key; `sh_diabetes_id` is the public registry patient identifier (which still needs to be developed).
 - EMIS and PatientSource identifiers are retained as separate linkage fields.  ASET identifiers are specimen/request-level identifiers, not patient identifiers.
-- Identifiable contact information is held in a restricted instrument; clinical and analytical users should not need routine access to it.
-- Tables 1--3 and 10 contain one current record per person. Tables 4--9 are repeating, event-based instruments.
+- Identifiable contact information is held in a restricted access form; clinical and analytical users should not need routine access to it.
 - Only accepted laboratory results are used in routine reporting.
-- The initial data collection focuses on the Core field set. Extended fields are deferred or hidden unless a clear clinical workflow requires them.
+- The initial data collection focuses on the core field set. Extended fields are deferred or hidden unless a clear clinical workflow requires them.
 - All reporting definitions, exclusions, time windows and missing-data handling are specified in the Statistical Analysis Plan.
 
 ## Registry structure
@@ -60,7 +66,7 @@ flowchart LR
   T1 --> T9
 ```
 
-Laboratory information is managed through the routine blood-taking workflow, documented ASET/request identifiers in Table 5, and local operating procedures for checking identity and accepting results.
+Database table details are presented below:
 
 | Table | Instrument | Record pattern | Primary role | Key variables / groups |
 |--|---|---:|---|----|

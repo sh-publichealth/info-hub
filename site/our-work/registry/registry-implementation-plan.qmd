@@ -1,40 +1,46 @@
 ---
 title: "St Helena Diabetes Registry"
 subtitle: "Implementation plan"
-date: last-modified
+description-meta: "Diabetes Registry Implementation Plan"
+author: Ian Hambleton, Selvi Jeyaseelan
 format:
-  html:
-    toc: true
-    toc-location: left
+  html: default
   pdf:
-    toc: true
-    number-sections: true
+    toc: false
+    documentclass: article
+    margin-left: 30mm
+    margin-right: 30mm
+format-links: true
+
+date: last-modified
+date-format: "D MMM YYYY"
+draft: false
 ---
+
 
 ## Objective
 
-The initial implementation will establish a safe, usable diabetes-team workflow: blood-taking first, then a follow-up consultation once results are available. It will also establish a trusted diabetes cohort, structured recall, and the data needed for M01--M26 reporting.
+The initial implementation will establish a safe, usable diabetes-team workflow: blood-taking first, then a follow-up consultation once results are available. It will also establish a trusted diabetes cohort, structured recall, and the data needed for reporting key diabetes metrics.
 
 ## Patient pathway
 
 ```{mermaid}
 flowchart TB
   A["<b>Blood-taking visit</b><br/><small>From 1 September 2026</small>"]
-  B["<b>Identified sample</b><br/>Sent to laboratory"]
-  C["<b>Results available</b><br/><small>Approximately two weeks</small>"]
-  D["<b>Follow-up consultation</b><br/><small>From mid-September 2026</small>"]
-  E["<b>Review results, care needs and actions</b>"]
+  B["<b>Results reviewed</b><br/>"]
+  C["<b>Follow-up consultation</b><br/><small>From mid-September 2026</small>"]
+  D["<b>Database updated</b>"]
 
-  A --> B --> C --> D --> E
+  A --> B --> C --> D
 ```
 
-At the blood-taking visit, the team confirms the patient identity, records the relevant ASET/request identifier, and documents the specimen date. On return of results, staff verify the patient-result match and enter only accepted results in Table 5. The follow-up consultation records the clinical review, physical measurements, medicines, lifestyle/preventive care, foot and eye status, and planned actions.
+At the blood-taking visit, the team confirms the patient identity. On return of results, staff verify the patient-result match and enter only accepted results in Table 5. The follow-up consultation records the clinical review, physical measurements, medicines, lifestyle/preventive care, foot and eye status, and planned actions.
 
 ## Delivery timetable
 
 | Period | Focus | Main work | Deliverable |
 |---|---|---|---|
-| 15 July--31 August 2026 | Readiness | Confirm Core data set, diagnosis-confirmation and active-resident rules, access roles, local laboratory identity/acceptance procedure, and first reporting rules. Build and test REDCap instruments. Undertake laboratory, pharmacy and diabetes-workflow walkthroughs. | Signed-off MVP specification, tested build and local operating procedures |
+| 15 July--31 August 2026 | Readiness | Confirm core data set, diagnosis-confirmation and active-resident rules, access roles, local laboratory identity/acceptance procedure, and first reporting rules. Build and test REDCap instruments. Undertake laboratory, pharmacy and diabetes-workflow walkthroughs. | Signed-off MVP specification, tested build and local operating procedures |
 | 1--14 September 2026 | Start blood-taking | Begin planned blood-taking visits; confirm identifiers; record ASET/request identifiers and specimen dates; enter accepted historical results only where confidently linked. | First live blood-taking cohort and laboratory tracking list |
 | From mid-September 2026 | Start consultations | Begin consultations after approximately two-week result turnaround. Complete diagnosis review, physical review, medicine review and priority actions. | First complete two-contact patient journeys |
 | October 2026 | Controlled scale-up | Prioritise people not seen for years, people without recent HbA1c, unconfirmed/probable cases, and people with known high-risk markers. Review workflow bottlenecks weekly. | Prioritised recall list and workflow issue log |

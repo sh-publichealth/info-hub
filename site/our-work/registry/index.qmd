@@ -6,9 +6,9 @@ format:
   html:
     toc: false
     page-layout: full
-  pdf:
-    toc: false
-    number-sections: false
+#  pdf:
+#    toc: false
+#    number-sections: false
 ---
 
 ::: {.callout-important appearance="simple" icon=false}
@@ -17,7 +17,7 @@ format:
 Blood-taking visits are planned to begin on **1 September 2026**, with follow-up consultation visits beginning from mid-September once results are available.
 :::
 
-The St Helena Diabetes Registry is a REDCap-based system to support structured diabetes care, recall and follow-up, and population-level public health reporting. It is being established while PatientSource 2 is implemented and will provide a trusted, auditable source of information for diabetes-team decisions.
+The St Helena Diabetes Registry is a REDCap-based system to support structured diabetes care, recall and follow-up, and population-level public health reporting. It is being established while St Helena updates it's electronic medical records system, and will provide an auditable source of information for diabetes-team decisions.
 
 ## Registry documents
 
@@ -51,13 +51,14 @@ Definitions and analytic rules for the full M01--M26 reporting framework.
 
 ## The initial patient pathway
 
-1. **Blood-taking visit:** identity checks, specimen/request identifier, and required blood tests.
-2. **Laboratory turnaround:** approximately two weeks.
-3. **Follow-up consultation:** review results, blood pressure and weight, medicines, lifestyle/preventive care, foot and eye status, and required actions.
+1. **Blood-taking visit:** including patient identity verification.
+2. **Laboratory turnaround:** Results returned
+3. **Review blood results.** Review results, identify risk categories. 
+4. **Follow-up consultation:** Blood pressure and weight, medicines, lifestyle/preventive care, foot and eye status, and required actions.
 
 ## Key principles
 
 - The registry supports care now; it is not a replacement for the whole electronic medical record.
 - Information is entered or reviewed by the diabetes team under defined data-quality rules.
-- The initial release prioritises a small Core dataset and safe, repeatable workflow.
+- The initial database release prioritises a small core dataset and safe, repeatable workflow.
 - Reporting distinguishes confirmed diabetes from probable, high-risk and pending-review records.
