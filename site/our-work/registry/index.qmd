@@ -47,6 +47,12 @@ The readiness work, two-contact patient pathway, timetable and roles through Jan
 Definitions and analytic rules for the full M01--M26 reporting framework.
 :::
 
+::: {.g-col-12 .g-col-md-6}
+### [Registry Triage Database](diabetes-triage-database.qmd)
+
+Guidelines for the single-page diabetes registry "Triage" database.
+:::
+
 :::
 
 ## The initial patient pathway

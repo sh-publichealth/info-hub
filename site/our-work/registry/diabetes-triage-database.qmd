@@ -1,0 +1,115 @@
+---
+title: "Diabetes Triage: REDCap specification"
+author: "St Helena Health Directorate"
+date: 2026-07-19
+format:
+  html:
+    toc: true
+---
+
+# Project
+
+Create a REDCap database named **Diabetes Triage**.
+
+The supplied Stata dataset is:
+
+`dr-triage-002.dta` — Diabetes Registry Triage Dataset, 19 July 2026.
+
+It contains 1,537 records and 20 variables. The Stata dataset includes variable-level metadata, labels and formats; please review and use these when constructing the REDCap data dictionary.
+
+# Record identifier
+
+Create a new REDCap record identifier using the prefix **`REG`**, with records in the form:
+
+```text
+REG-000001
+REG-000002
+```
+
+This REDCap identifier is separate from all identifiers imported from the Stata dataset. 
+
+# Initial data import
+
+The project team will provide the Stata-derived import dataset containing the existing 1,537 records.
+
+## Source data dictionary
+
+The following is the full data dictionary supplied from Stata. The Stata variable-level metadata should be reviewed when constructing the REDCap data dictionary.
+
+| Variable | Stata storage type | Stata display format | Stata value label | Variable label | REDCap role |
+|---|---|---|---|---|---|
+| `eid_emis` | float | `%9.0g` | — | EMIS ID from EMIS software | Import; review and complete; editable |
+| `eid_jh` | float | `%9.0g` | — | EMIS ID from Jacqui Henry spreadsheet | Import; informational; read-only |
+| `eid_aset` | float | `%9.0g` | — | EMIS ID from ASET software | Import; informational; read-only |
+| `iid_stata` | float | `%9.0g` | — | Internal ID from Stata analytics | Import; informational; read-only |
+| `iid_aset` | float | `%9.0g` | — | Internal ID from ASET software | Import; informational; read-only |
+| `iid_jh` | float | `%9.0g` | — | Internal ID from Jacqui Henry spreadsheet | Import; informational; read-only |
+| `prefix` | str14 | `%14s` | — | Name prefix (Mrs, Mr, etc) | Import; informational; read-only |
+| `fname` | str40 | `%40s` | — | First Name | Import; informational; read-only |
+| `mname` | str15 | `%15s` | — | Middle Name | Import; informational; read-only |
+| `lname` | str40 | `%40s` | — | Last Name | Import; informational; read-only |
+| `flname` | str29 | `%29s` | — | Firstname[space]Lastname - used for fuzzy matching | Import; informational; read-only |
+| `name_clean` | str45 | `%45s` | — | Full name with standard spacing, before split into components | Import; informational; read-only |
+| `sex` | float | `%9.0g` | `sex_` | Patient sex | Import; review Stata coding; read-only unless agreed otherwise |
+| `dob` | float | `%dD_m_CY` | — | Date of birth - used for fuzzy matching | Import; informational; read-only |
+| `phone1` | str10 | `%10s` | — | Phone number 1 | Import; review and complete; editable |
+| `phone2` | str10 | `%10s` | — | Phone number 2 | Import; review and complete; editable |
+| `email` | str10 | `%10s` | — | Email | Import; review and complete; editable |
+| `vital_status` | float | `%9.0g` | — | Alive; deceased; unknown | Import; review and complete; editable |
+| `date_of_death` | float | `%9.0g` | — | Date of death | Import; complete if applicable; editable |
+| `residence_status` | float | `%9.0g` | — | Resident in St Helena | Import; review and complete; editable |
+
+The source dataset has the following variables:
+
+```text
+eid_emis       eid_jh          eid_aset        iid_stata
+iid_aset       iid_jh          prefix          fname
+mname          lname           flname          name_clean
+sex            dob             phone1          phone2
+email          vital_status    date_of_death   residence_status
+```
+
+# Fields requiring review or completion
+
+The St Helena review team will check and, where necessary, complete or correct:
+
+| Variable | Requirement |
+|---|---|
+| `eid_emis` | Review and complete. This is currently the key patient identifier in the St Helena Health Directorate. |
+| `phone1` | Review and complete where available. |
+| `phone2` | Review and complete where available. |
+| `email` | Review and complete where available. |
+| `vital_status` | Review and complete. |
+| `date_of_death` | Complete where applicable. |
+| `residence_status` | Review and complete, including overseas residence or migration where applicable. |
+
+All other imported variables are informational and should be read-only for the review team.
+
+# Review completion
+
+Add a small review section at the end of the instrument containing:
+
+| Variable | Purpose |
+|---|---|
+| `review_status` | Record whether the record is `Unverified`, `Reviewed — no changes required`, `Reviewed — changes made`, or `Unable to verify`. |
+| `reviewer_name` | Identify the person who completed the review. |
+| `review_date` | Record the date of review. |
+| `review_notes` | Optional explanation of unresolved issues or important changes. |
+
+The review team should be able to select **Unverified** until a record has been reviewed. The remaining review fields should be completed when the review status changes from `Unverified`.
+
+# Change history
+
+Please use REDCap’s native logging/audit-trail functionality to retain the field-level history of changes, including the previous value, new value, user and date/time. The review fields above should record the review outcome; the REDCap audit trail should record what was changed.
+
+No separate before-and-after variables are required.
+
+# Points requiring local confirmation
+
+Please review the Stata metadata and confirm the final coding for:
+
+- `sex`;
+- `vital_status`; and
+- `residence_status`.
+
+The residence coding must be capable of distinguishing, where relevant, St Helena residence, temporary overseas residence, permanent migration overseas, and overseas medical care.
