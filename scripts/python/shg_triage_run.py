@@ -340,7 +340,7 @@ def main():
         "new_candidates_after": after_counts.get(
             "new_candidate", 0
         ),
-        "already_registered_or_review_after": after_counts.get(
+        "existing_match_after": after_counts.get(
             "already_registered_or_review", 0
         ),
         "identity_review_after": sum(
@@ -382,3 +382,4 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+

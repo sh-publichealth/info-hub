@@ -1,0 +1,41 @@
+*! SHG Diabetes Registry triage transfer dialog
+*! version 1.0.0, 26 September 2026
+*! Thin interface to scripts/stata/registry/shg_triage_report.do
+
+VERSION 19.0
+POSITION . . 470 255
+
+DIALOG main, label("SHG Diabetes Registry - triage transfer")
+BEGIN
+    TEXTBOX intro 15 15 440 45, label("Reconcile completed, eligible triage records with the test diabetes registry. Preview is read-only. Transfer is restricted to the test projects.")
+
+    GROUPBOX operation 15 72 440 83, label("Operation")
+
+    RADIO preview 30 96 195 ., first default(1) label("Preview (read-only)")
+    RADIO transfer 30 123 195 ., label("Transfer test records")
+
+    TEXT limit_label 245 99 170 ., label("Number to transfer:")
+    SPINNER limit 355 96 60 ., default(5) min(1) max(5) nomemory error("Number to transfer")
+
+    TEXT transfer_note 245 126 170 25, label("Only used for test transfer")
+
+    TEXTBOX safeguard 15 172 440 38, label("A transfer requires the fixed test-project confirmation and is limited to five records. Patient-level reconciliation and receipts remain in the private workspace.")
+END
+
+OK ok1, label("Run")
+CANCEL cancel1, label("Cancel")
+RESET reset1
+
+PROGRAM command
+BEGIN
+    put "do $SHG_STATA/registry/shg_triage_report.do "
+    if main.preview {
+        put "preview"
+    }
+    else {
+        put "transfer "
+        put main.limit
+        put " TEST-1091-TO-1090"
+    }
+END
+
