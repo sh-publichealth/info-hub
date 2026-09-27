@@ -56,7 +56,25 @@ if _rc {
 }
 
 * ------------------------------------------------------------
-* 2. Execute the Python workflow
+* 2. Start-of-run display
+* ------------------------------------------------------------
+
+display as result ""
+display as result "SHG DIABETES REGISTRY: TRIAGE-TO-REGISTRY TRANSFER"
+display as text   "Starting `mode' run | Test projects: triage 1091 -> registry 1090"
+
+if `"`mode'"' == "preview" {
+    display as text "This is read-only: no REDCap records will be changed."
+}
+else {
+    display as text "Authorised test transfer: the registry will be re-read and verified."
+}
+
+display as text "Running Python reconciliation now; please wait..."
+display as result ""
+
+* ------------------------------------------------------------
+* 3. Execute the Python workflow
 * ------------------------------------------------------------
 
 local pointer ///
@@ -85,7 +103,7 @@ else {
 }
 
 * ------------------------------------------------------------
-* 3. Locate the private results
+* 4. Locate the private results
 * ------------------------------------------------------------
 
 capture confirm file `"`pointer'"'
@@ -101,9 +119,12 @@ file read shg_path run_dir
 file close shg_path
 
 local run_dir = strtrim(`"`run_dir'"')
+* Also accept a pointer written by an earlier Windows controller.
+local run_dir : subinstr local run_dir "\" "/", all
 
-capture confirm file ///
-    `"`run_dir'/report_metrics.csv"'
+local metrics_file "`run_dir'/report_metrics.csv"
+
+capture confirm file "`metrics_file'"
 
 if _rc {
     display as error ///
@@ -112,13 +133,13 @@ if _rc {
 }
 
 * ------------------------------------------------------------
-* 4. Read report metrics
+* 5. Read report inputs
 * ------------------------------------------------------------
 
 preserve
 
 import delimited using ///
-    `"`run_dir'/report_metrics.csv"', ///
+    "`metrics_file'", ///
     clear varnames(1) stringcols(_all)
 
 if _N != 1 {
@@ -131,7 +152,8 @@ if _N != 1 {
 * CSV headers are designed to be valid Stata variable names.
 * Do not rely on Stata's truncation of long source headers.
 
-foreach name in operation run_status time_utc ///
+foreach name in operation run_status time_utc time_display ///
+    triage_project registry_project ///
     triage_total eligible not_eligible ///
     registry_before registry_after ///
     registry_export_rows_after ///
@@ -144,8 +166,61 @@ foreach name in operation run_status time_utc ///
 
 restore
 
+local breakdown_file "`run_dir'/report_breakdown.csv"
+
+capture confirm file "`breakdown_file'"
+
+if _rc {
+    display as error "Missing report_breakdown.csv: `run_dir'"
+    exit 601
+}
+
+preserve
+
+import delimited using ///
+    "`breakdown_file'", ///
+    clear varnames(1) stringcols(_all)
+
+local breakdown_rows = _N
+
+forvalues i = 1/`breakdown_rows' {
+    local breakdown_type`i' = row_type[`i']
+    local breakdown_measure`i' = measure[`i']
+    local breakdown_count`i' = count[`i']
+}
+
+restore
+
+local new_transfer_file "`run_dir'/new_transfers_PRIVATE.csv"
+
+capture confirm file "`new_transfer_file'"
+
+if _rc {
+    display as error ///
+        "Missing new-transfers file: `new_transfer_file'"
+    exit 601
+}
+
+preserve
+
+import delimited using ///
+    "`new_transfer_file'", ///
+    clear varnames(1) stringcols(_all)
+
+local new_transfers = _N
+
+forvalues i = 1/`new_transfers' {
+    local transfer_id`i' = registry_internal_id[`i']
+    local transfer_psource`i' = psource_id[`i']
+    local transfer_family`i' = family_name[`i']
+    local transfer_first`i' = first_name[`i']
+    local transfer_dob`i' = date_of_birth[`i']
+}
+
+restore
+
 * ------------------------------------------------------------
-* 5. Create the private PDF
+* 6. Create the private PDF
 * ------------------------------------------------------------
 
 capture putpdf clear
@@ -159,83 +234,79 @@ putpdf paragraph, font(,13) halign(center)
 putpdf text ("Triage transfer and reconciliation")
 
 putpdf paragraph
-putpdf text ("Test projects: triage 1091 to registry 1090")
+putpdf table projects = (1,1)
+putpdf table projects(1,1) = ///
+    ("TEST PROJECTS: TRIAGE `triage_project' TO REGISTRY `registry_project'"), ///
+    bold bgcolor(D9EAF7)
+putpdf table projects(1,1), bgcolor(D9EAF7) halign(center)
 
 putpdf paragraph
 putpdf text ///
-    ("Run: `time_utc' | Operation: `operation' | Status: `run_status'")
+    ("Completed: `time_display' | Operation: `operation' | Status: `run_status'")
 
 putpdf paragraph
-putpdf text ///
-    ("This report contains aggregate operational counts only. Patient-level review files remain private.")
+putpdf table confidential = (1,1)
+putpdf table confidential(1,1) = ("CONFIDENTIAL"), bold bgcolor(F4CCCC)
+putpdf table confidential(1,1), bgcolor(F4CCCC) halign(center)
 
 * ------------------------------------------------------------
-* 6. Summary table
+* 7. Summary table
 * ------------------------------------------------------------
 
-putpdf table counts = (13,2)
+local summary_rows = `breakdown_rows' + 1
 
-putpdf table counts(1,1) = ("Measure")
-putpdf table counts(1,2) = ("Count")
+matrix count_widths = (80, 20)
+putpdf table counts = (`summary_rows',2), ///
+    width(100%) width(count_widths)
 
-putpdf table counts(2,1) = ("Triage records")
-putpdf table counts(2,2) = ("`triage_total'")
+putpdf table counts(1,1) = ("Measure"), bold
+putpdf table counts(1,2) = ("Count"), bold
 
-putpdf table counts(3,1) = ("Eligible triage records")
-putpdf table counts(3,2) = ("`eligible'")
+forvalues i = 1/`breakdown_rows' {
+    local r = `i' + 1
 
-putpdf table counts(4,1) = ("Not eligible")
-putpdf table counts(4,2) = ("`not_eligible'")
-
-putpdf table counts(5,1) = ///
-    ("Distinct registry patients before run")
-putpdf table counts(5,2) = ("`registry_before'")
-
-putpdf table counts(6,1) = ("New candidates before run")
-putpdf table counts(6,2) = ("`new_candidates_before'")
-
-putpdf table counts(7,1) = ("New registry patients this run")
-putpdf table counts(7,2) = ("`new_registry_patients'")
-
-putpdf table counts(8,1) = ("Verified imports this run")
-putpdf table counts(8,2) = ("`verified_imports'")
-
-putpdf table counts(9,1) = ///
-    ("Distinct registry patients after run")
-putpdf table counts(9,2) = ("`registry_after'")
-
-putpdf table counts(10,1) = ///
-    ("Registry export rows (including repeats)")
-putpdf table counts(10,2) = ///
-    ("`registry_export_rows_after'")
-
-putpdf table counts(11,1) = ("New candidates remaining")
-putpdf table counts(11,2) = ("`new_candidates_after'")
-
-putpdf table counts(12,1) = ///
-    ("Existing registry match or review")
-putpdf table counts(12,2) = ///
-    ("`existing_match_after'")
-    
-putpdf table counts(13,1) = ///
-    ("Other identity-review classifications")
-putpdf table counts(13,2) = ///
-    ("`identity_review_after'")
-
-* ------------------------------------------------------------
-* 7. Interpretation and operational notes
-* ------------------------------------------------------------
+    if "`breakdown_type`i''" == "section" {
+        putpdf table counts(`r',1) = ///
+            ("`breakdown_measure`i''"), bold bgcolor(EAF2F8)
+        putpdf table counts(`r',2) = (""), bgcolor(EAF2F8)
+        putpdf table counts(`r',1), bgcolor(EAF2F8)
+        putpdf table counts(`r',2), bgcolor(EAF2F8)
+    }
+    else {
+        putpdf table counts(`r',1) = ///
+            ("`breakdown_measure`i''")
+        putpdf table counts(`r',2) = ///
+            ("`breakdown_count`i''")
+    }
+}
 
 putpdf paragraph
-putpdf text ("Notes"), bold
+putpdf text ("Patients transferred in this run"), bold
 
-putpdf paragraph
-putpdf text ///
-    ("Registry patients are distinct internal_redcap_id values. Export rows may include several repeating instruments per patient.")
+if `new_transfers' == 0 {
+    putpdf paragraph
+    putpdf text ("No patients were transferred in this run.")
+}
+else {
+    local transfer_rows = `new_transfers' + 1
 
-putpdf paragraph
-putpdf text ///
-    ("Existing registry match or review is not yet a confirmed-identity classification. Onboarding-only fields may remain incomplete after enrolment.")
+    putpdf table transfers = (`transfer_rows', 5)
+
+    putpdf table transfers(1,1) = ("Registry internal ID"), bold
+    putpdf table transfers(1,2) = ("PatientSource ID"), bold
+    putpdf table transfers(1,3) = ("Surname"), bold
+    putpdf table transfers(1,4) = ("First name"), bold
+    putpdf table transfers(1,5) = ("Date of birth"), bold
+
+    forvalues i = 1/`new_transfers' {
+        local r = `i' + 1
+        putpdf table transfers(`r',1) = ("`transfer_id`i''")
+        putpdf table transfers(`r',2) = ("`transfer_psource`i''")
+        putpdf table transfers(`r',3) = ("`transfer_family`i''")
+        putpdf table transfers(`r',4) = ("`transfer_first`i''")
+        putpdf table transfers(`r',5) = ("`transfer_dob`i''")
+    }
+}
 
 if `"`run_status'"' != "completed" {
 
@@ -253,14 +324,37 @@ if `"`run_status'"' != "completed" {
 putpdf save ///
     `"`run_dir'/triage-transfer-report.pdf"', replace
 
-display as result ///
-    "Private PDF: `run_dir'/triage-transfer-report.pdf"
-
-display as result ///
-    "Private YAML: `run_dir'/summary.yml"
-
 if `"`run_status'"' != "completed" {
     display as error ///
         "Run requires investigation: `run_status'"
     exit 459
+}
+
+quietly {
+    noisily display as result ///
+        "SHG TRIAGE TRANSFER COMPLETED"
+
+    noisily display as text ///
+        "Operation: `operation' | Status: `run_status' | Run: `time_utc'"
+
+    noisily display as result ///
+        "New registry patients transferred: `new_registry_patients'"
+
+    noisily display as text ///
+        "Verified imports: `verified_imports' | New candidates remaining: `new_candidates_after'"
+
+    noisily display as text ///
+        "Existing registry match or review: `existing_match_after' | Other identity review: `identity_review_after'"
+
+    noisily display as text ///
+        "Registry patients: `registry_before' -> `registry_after'"
+
+    noisily display as result ///
+        "Private PDF: `run_dir'/triage-transfer-report.pdf"
+
+    noisily display as result ///
+        "Private YAML: `run_dir'/summary.yml"
+
+    noisily display as result ///
+        "Private transferred-patient list: `run_dir'/new_transfers_PRIVATE.csv"
 }

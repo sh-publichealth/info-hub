@@ -1,0 +1,24 @@
+{
+  "_purpose": "Private configuration design for SHG triage-to-registry transfer. Store the completed file only in $SHG_CONFIG; do not commit it.",
+  "test": {
+    "label": "Test",
+    "triage_project_id": "1091",
+    "registry_project_id": "1090",
+    "triage_token_file": "triage_token.txt",
+    "registry_token_file": "registry_token.txt",
+    "transfer_confirmation": "TEST-1091-TO-1090",
+    "maximum_patients_per_run": 5,
+    "transfer_enabled": true
+  },
+  "live": {
+    "label": "Live",
+    "triage_project_id": "1087",
+    "registry_project_id": "1077",
+    "triage_token_file": "triage_live_token.txt",
+    "registry_token_file": "registry_live_token.txt",
+    "transfer_confirmation": "SET_ONLY_AT_GO_LIVE",
+    "maximum_patients_per_run": 1,
+    "transfer_enabled": false
+  }
+}
+
