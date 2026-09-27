@@ -1,12 +1,12 @@
 
 """
-SHG diabetes triage to registry: controlled test import.
+SHG diabetes triage to registry: controlled production import.
 
 Uses the existing shg_redcap_transfer.py preview module.
-TEST PROJECTS ONLY: triage 1091, registry 1090.
+Production projects: triage 1087, registry 1077.
 
 Without --confirm, this program performs read-only validation.
-The first authorised import is limited to one patient by default.
+An optional --limit supports a deliberately bounded first run.
 """
 
 import argparse
@@ -19,9 +19,9 @@ from pathlib import Path
 import shg_redcap_transfer as preview
 
 
-TRIAGE_PID = "1091"
-REGISTRY_PID = "1090"
-CONFIRMATION = "TEST-1091-TO-1090"
+TRIAGE_PID = "1087"
+REGISTRY_PID = "1077"
+CONFIRMATION = "TRANSFER-1087-TO-1077"
 
 EXCLUDE = {
     "internal_redcap_id",
@@ -363,7 +363,7 @@ def main():
     )
 
     parser.add_argument(
-        "--limit", type=int, default=1
+        "--limit", type=int
     )
 
     parser.add_argument(
@@ -372,14 +372,14 @@ def main():
 
     args = parser.parse_args()
 
-    if not 1 <= args.limit <= 5:
+    if args.limit is not None and args.limit < 1:
         raise RuntimeError(
-            "Test import limit must be between 1 and 5"
+            "Import limit must be a positive integer"
         )
 
     if args.confirm and args.confirm != CONFIRMATION:
         raise RuntimeError(
-            "Incorrect test-import confirmation"
+            "Incorrect transfer confirmation"
         )
 
     private = Path(args.private).resolve()
@@ -390,11 +390,11 @@ def main():
         )
 
     triage_token = preview.read_token(
-        private / "config" / "triage_token.txt"
+        private / "config" / "triage_token_live.txt"
     )
 
     registry_token = preview.read_token(
-        private / "config" / "registry_token.txt"
+        private / "config" / "registry_token_live.txt"
     )
 
     # Confirm actual project identity and settings.
@@ -403,7 +403,7 @@ def main():
         triage_token
     ) != TRIAGE_PID:
         raise RuntimeError(
-            "Incorrect test triage project"
+            "Incorrect triage project; expected 1087"
         )
 
     project = preview.api_request(
@@ -414,7 +414,7 @@ def main():
         project.get("project_id")
     ) != REGISTRY_PID:
         raise RuntimeError(
-            "Incorrect test registry project"
+            "Incorrect registry project; expected 1077"
         )
 
     if str(
@@ -500,7 +500,7 @@ def main():
         )
 
     print(
-        "Test projects verified. "
+        "REDCap projects verified. "
         f"New candidates: {len(candidates)}"
     )
 
@@ -522,7 +522,7 @@ def main():
         private
         / "work"
         / "triage-transfer"
-        / "import-test"
+        / "import-receipts"
     )
 
     ledger.mkdir(
@@ -531,7 +531,13 @@ def main():
 
     completed = 0
 
-    for source in candidates[:args.limit]:
+    selected = (
+        candidates
+        if args.limit is None
+        else candidates[:args.limit]
+    )
+
+    for source in selected:
         sid = required_value(
             source, "internal_redcap_id"
         )
@@ -658,7 +664,7 @@ def main():
             completed += 1
 
             print(
-                f"Verified test enrolment {completed}."
+                f"Verified registry enrolment {completed}."
             )
 
         except Exception as exc:

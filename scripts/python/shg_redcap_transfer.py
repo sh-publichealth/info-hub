@@ -1,11 +1,10 @@
 
 """
 SHG Diabetes Triage Transfer
-First draft: read-only reconciliation.
+Production read-only reconciliation.
 
-TEST PROJECTS ONLY
-Triage:   1091
-Registry: 1090
+Triage:   1087
+Registry: 1077
 
 This script never imports, updates or deletes REDCap records.
 
@@ -29,8 +28,8 @@ import requests
 
 API_URL = "https://caribdata.org/redcap/api/"
 
-TRIAGE_PROJECT = "1091"
-REGISTRY_PROJECT = "1090"
+TRIAGE_PROJECT = "1087"
+REGISTRY_PROJECT = "1077"
 
 SOURCE_ID = "internal_redcap_id"
 
@@ -380,15 +379,15 @@ def main():
     config = private / "config"
 
     # --------------------------------------------------------
-    # Read the test-project credentials.
+    # Read the production-project credentials.
     # --------------------------------------------------------
 
     triage_token = read_token(
-        config / "triage_token.txt"
+        config / "triage_token_live.txt"
     )
 
     registry_token = read_token(
-        config / "registry_token.txt"
+        config / "registry_token_live.txt"
     )
 
     # --------------------------------------------------------
@@ -406,13 +405,13 @@ def main():
     if tid != TRIAGE_PROJECT or rid != REGISTRY_PROJECT:
 
         raise RuntimeError(
-            "TEST PROJECT LOCK: expected "
-            "triage 1091 and registry 1090; "
+            "PROJECT LOCK: expected "
+            "triage 1087 and registry 1077; "
             f"received {tid} and {rid}."
         )
 
     print(
-        "REDCap test projects verified."
+        "REDCap projects verified."
     )
 
     # --------------------------------------------------------
@@ -466,7 +465,7 @@ def main():
     )
 
     # --------------------------------------------------------
-    # Export records from both test projects.
+    # Export records from both production projects.
     # --------------------------------------------------------
 
     triage = export_records(
@@ -607,7 +606,7 @@ def main():
         "",
         "run:",
         f"  timestamp_utc: {json.dumps(stamp)}",
-        "  environment: test",
+        "  environment: production",
         "  operation: preview",
         "  read_only: true",
         "",

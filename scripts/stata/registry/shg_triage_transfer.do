@@ -1,50 +1,16 @@
 /*
-SHG diabetes triage transfer
+SHG diabetes triage transfer: compatibility preview entry point
 
-First draft: read-only preview
-Test projects: triage 1091, registry 1090
-
-Run:
-    do scripts/stata/registry/shg_triage_transfer.do
+The maintained controller is shg_triage_report.do.
+This wrapper preserves the earlier read-only command.
 */
 
 version 19.0
 
-* Workstation configuration
-capture confirm file ///
-    "scripts/stata/config/shg_paths_LOCAL.do"
-
-if _rc {
-    display as error "SHG local configuration not found."
+if "$SHG_STATA" == "" {
+    display as error ///
+        "SHG paths are not loaded. Restart Stata using the SHG-enabled profile."
     exit 601
 }
 
-do "scripts/stata/config/shg_paths_LOCAL.do"
-
-* Check Python executable
-capture confirm file "$SHG_PYTHON_EXE"
-
-if _rc {
-    display as error "SHG Python executable not found."
-    exit 601
-}
-
-* Check Python transfer script
-capture confirm file ///
-    "$SHG_PYTHON/shg_redcap_transfer.py"
-
-if _rc {
-    display as error "Python transfer script not found."
-    exit 601
-}
-
-display as text "SHG diabetes triage transfer"
-display as text "Read-only preview: test projects only"
-
-shell "$SHG_PYTHON_EXE" ///
-    "$SHG_PYTHON/shg_redcap_transfer.py" ///
-    --private "$SHG_PRIVATE"
-
-display as text "Preview command finished."
-display as text ///
-    "Check the Python output and private reconciliation files."
+do "$SHG_STATA/registry/shg_triage_report.do" preview

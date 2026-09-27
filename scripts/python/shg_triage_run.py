@@ -1,8 +1,8 @@
 
 """SHG triage run controller: reconciliation, optional import and report inputs.
 
-TEST PROJECTS ONLY: triage 1091, registry 1090.
-Requires the existing shg_redcap_transfer.py and shg_triage_import_test.py.
+Production projects: triage 1087, registry 1077.
+Requires shg_redcap_transfer.py and shg_triage_import.py.
 """
 
 import argparse
@@ -18,9 +18,9 @@ import sys
 import shg_redcap_transfer as preview
 
 
-TRIAGE_PID = "1091"
-REGISTRY_PID = "1090"
-CONFIRM = "TEST-1091-TO-1090"
+TRIAGE_PID = "1087"
+REGISTRY_PID = "1077"
+CONFIRM = "TRANSFER-1087-TO-1077"
 
 # Keep this in the same order as the triage_decision field definition in the
 # REDCap data dictionary.  The report intentionally uses labels, never codes.
@@ -245,7 +245,7 @@ def write_outputs(
         "# SHG diabetes triage transfer: private operational summary",
         "run:",
         f"  time_utc: {q(metrics['time_utc'])}",
-        f"  environment: {q('test')}",
+        f"  environment: {q('production')}",
         f"  operation: {q(metrics['operation'])}",
         f"  status: {q(metrics['run_status'])}",
         "projects:",
@@ -361,18 +361,21 @@ def main():
         choices=("preview", "transfer"),
         default="preview",
     )
-    parser.add_argument("--limit", type=int, default=5)
+    parser.add_argument("--limit", type=int)
     parser.add_argument("--confirm", default="")
 
     args = parser.parse_args()
 
     if args.mode == "transfer" and args.confirm != CONFIRM:
         parser.error(
-            "Test transfer requires --confirm TEST-1091-TO-1090"
+            "Transfer requires --confirm TRANSFER-1087-TO-1077"
         )
 
-    if args.mode == "transfer" and not 1 <= args.limit <= 5:
-        parser.error("Test transfers require --limit between 1 and 5")
+    if args.limit is not None and args.limit < 1:
+        parser.error("Transfer limit must be a positive integer")
+
+    if args.mode == "preview" and args.limit is not None:
+        parser.error("Preview does not accept an import limit")
 
     if args.mode == "preview" and args.confirm:
         parser.error("Preview does not accept import confirmation")
@@ -395,21 +398,21 @@ def main():
     # Verify actual project IDs before reading patient records.
 
     triage_token = preview.read_token(
-        private / "config" / "triage_token.txt"
+        private / "config" / "triage_token_live.txt"
     )
 
     registry_token = preview.read_token(
-        private / "config" / "registry_token.txt"
+        private / "config" / "registry_token_live.txt"
     )
 
     if preview.get_project_id(triage_token) != TRIAGE_PID:
         raise RuntimeError(
-            "Wrong triage project; expected test project 1091"
+            "Wrong triage project; expected project 1087"
         )
 
     if preview.get_project_id(registry_token) != REGISTRY_PID:
         raise RuntimeError(
-            "Wrong registry project; expected test project 1090"
+            "Wrong registry project; expected project 1077"
         )
 
     # Reconcile the database state before this run.
@@ -439,7 +442,7 @@ def main():
     status = "completed"
     error = ""
 
-    # Invoke the existing, tested import routine when requested.
+    # Invoke the existing, validated import routine when requested.
     # Its private receipts remain authoritative for recovery.
 
     if args.mode == "transfer" and before_counts.get(
@@ -449,16 +452,17 @@ def main():
             sys.executable,
             str(
                 Path(__file__).with_name(
-                    "shg_triage_import_test.py"
+                    "shg_triage_import.py"
                 )
             ),
             "--private",
             str(private),
-            "--limit",
-            str(args.limit),
             "--confirm",
             CONFIRM,
         ]
+
+        if args.limit is not None:
+            command.extend(["--limit", str(args.limit)])
 
         result = subprocess.run(
             command,

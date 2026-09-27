@@ -2,14 +2,14 @@
 /*
 SHG diabetes triage: reporting worker and private operational PDF
 
-TEST ONLY: triage 1091 -> registry 1090
+Production projects: triage 1087 -> registry 1077
 
 Called by shg_triage_report.do. Do not run this worker directly.
 */
 
 version 19.0
 
-args mode limit confirmation
+args mode confirmation limit
 
 if `"`mode'"' == "" local mode "preview"
 
@@ -18,13 +18,11 @@ if !inlist(`"`mode'"', "preview", "transfer") {
     exit 198
 }
 
-if `"`limit'"' == "" local limit "5"
-
 if `"`mode'"' == "transfer" & ///
-    `"`confirmation'"' != "TEST-1091-TO-1090" {
+    `"`confirmation'"' != "TRANSFER-1087-TO-1077" {
 
     display as error ///
-        "Transfer requires the TEST-1091-TO-1090 confirmation argument."
+        "Transfer requires the TRANSFER-1087-TO-1077 confirmation argument."
 
     exit 198
 }
@@ -61,13 +59,13 @@ if _rc {
 
 display as result ""
 display as result "SHG DIABETES REGISTRY: TRIAGE-TO-REGISTRY TRANSFER"
-display as text   "Starting `mode' run | Test projects: triage 1091 -> registry 1090"
+display as text   "Starting `mode' run | Triage 1087 -> registry 1077"
 
 if `"`mode'"' == "preview" {
     display as text "This is read-only: no REDCap records will be changed."
 }
 else {
-    display as text "Authorised test transfer: the registry will be re-read and verified."
+    display as text "Authorised transfer: the registry will be re-read and verified."
 }
 
 display as text "Running Python reconciliation now; please wait..."
@@ -93,13 +91,21 @@ if `"`mode'"' == "preview" {
         --mode preview
 }
 else {
-
-    shell "$SHG_PYTHON_EXE" ///
-        "$SHG_PYTHON/shg_triage_run.py" ///
-        --private "$SHG_PRIVATE" ///
-        --mode transfer ///
-        --limit `limit' ///
-        --confirm TEST-1091-TO-1090
+    if `"`limit'"' == "" {
+        shell "$SHG_PYTHON_EXE" ///
+            "$SHG_PYTHON/shg_triage_run.py" ///
+            --private "$SHG_PRIVATE" ///
+            --mode transfer ///
+            --confirm TRANSFER-1087-TO-1077
+    }
+    else {
+        shell "$SHG_PYTHON_EXE" ///
+            "$SHG_PYTHON/shg_triage_run.py" ///
+            --private "$SHG_PRIVATE" ///
+            --mode transfer ///
+            --confirm TRANSFER-1087-TO-1077 ///
+            --limit `limit'
+    }
 }
 
 * ------------------------------------------------------------
@@ -236,7 +242,7 @@ putpdf text ("Triage transfer and reconciliation")
 putpdf paragraph
 putpdf table projects = (1,1)
 putpdf table projects(1,1) = ///
-    ("TEST PROJECTS: TRIAGE `triage_project' TO REGISTRY `registry_project'"), ///
+    ("TRIAGE PROJECT `triage_project' TO REGISTRY PROJECT `registry_project'"), ///
     bold bgcolor(D9EAF7)
 putpdf table projects(1,1), bgcolor(D9EAF7) halign(center)
 

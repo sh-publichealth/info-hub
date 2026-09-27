@@ -1,17 +1,47 @@
-# Private test/live configuration design
+# Triage-to-registry production operation
 
-This template is a design and go-live preparation aid. It is **not yet read by
-the transfer code**: the current code remains explicitly locked to the tested
-1091 -> 1090 route.
+## Fixed project route
 
-Before any live access is enabled:
+The operational workflow transfers eligible patients from Diabetes Triage
+project 1087 to Diabetes Registry project 1077.
 
-1. copy the template to `$SHG_CONFIG/triage_transfer_environments.json`;
-2. create separate least-privilege live tokens outside Git;
-3. retain `transfer_enabled: false` until the approved go-live decision;
-4. refactor the controller and import script together to consume this file;
-5. run and approve a live **preview** before enabling any live transfer.
+The private configuration folder must contain:
 
-The live route must not be enabled by editing the test configuration or by
-changing a project ID in source code.
+- `triage_token_live.txt` for project 1087;
+- `registry_token_live.txt` for project 1077.
 
+Each file contains one API token. Tokens and all patient-level outputs remain
+outside Git under `$SHG_PRIVATE`.
+
+## Eligibility and matching
+
+A patient is eligible for transfer only when `triage_decision == 1` and
+`triage_review_complete == 2`. The reconciliation excludes ambiguous records,
+duplicate identifiers and incomplete identity information from automatic
+transfer. Triage records are never modified.
+
+## Operating sequence
+
+1. Run the read-only preview.
+2. Review the private PDF and reconciliation CSV.
+3. Resolve records classified for identity review.
+4. Run the authorised transfer.
+5. Confirm the completion screen, PDF, YAML and transferred-patient CSV.
+
+The dialog transfers the complete reviewed candidate set. A positive optional
+command-line limit is available for a deliberately bounded first run.
+
+Every transfer rechecks the destination immediately before each import,
+allocates the registry ID through REDCap auto-numbering, reads the destination
+back, compares transferred values and records a private receipt. An uncertain
+write is never automatically retried.
+
+## Private outputs
+
+Run folders remain below:
+
+`$SHG_PRIVATE/work/triage-transfer/runs`
+
+Persistent import receipts remain below:
+
+`$SHG_PRIVATE/work/triage-transfer/import-receipts`
