@@ -1,6 +1,6 @@
 ** HEADER -----------------------------------------------------
 **  DO-FILE METADATA
-    //  algorithm name             tmr-04-monitor-report-v7.do
+    //  algorithm name             tmr-04-monitor-report-v7-noname.do
     //  project:                   SH007 total meal replacement
     //  analysts:                  Ian HAMBLETON
     //  date last modified         01-Oct-2026
@@ -40,7 +40,7 @@
 
     ** Close any open log file and open a new log file
     capture log close
-    log using "$log\tmr-04-monitor-report-v7", replace
+    log using "$log\tmr-04-monitor-report-v7-noname", replace
 ** HEADER -----------------------------------------------------
 
 
@@ -1176,6 +1176,7 @@ putpdf table medication_change_boxes(2,5), bgcolor("FFF1DF")
 putpdf paragraph
 putpdf text ("Changes within 3+ or between single-medicine types are not shown."), font("Arial", 7)
 
+
 ** -------------------------------------------------------------------------
 ** Group average change graphs
 **
@@ -1382,7 +1383,7 @@ foreach p of local pid_list {
         putpdf table person_header_`p'(1,4) = ("`report_date'")
 
         putpdf table person_header_`p'(2,1) = ("Name")
-        putpdf table person_header_`p'(2,2) = ("`person_name'")
+        putpdf table person_header_`p'(2,2) = (" ")
         putpdf table person_header_`p'(2,3) = ("Baseline date")
         putpdf table person_header_`p'(2,4) = ("`baseline_date_txt'")
 
@@ -1456,8 +1457,6 @@ foreach p of local pid_list {
                 local meds_code = diabetes_meds[`j']
                 local meds_label : value label diabetes_meds
                 local person_meds : label `meds_label' `meds_code'
-                ** Display codes 5 and 6 consistently; retain the original data.
-                if inlist(`meds_code',5,6) local person_meds "not taking medication"
             }
             putpdf table person_visit_table_`p'(`row',1) = ("`person_visit'")
             putpdf table person_visit_table_`p'(`row',2) = ("`txt_weight'")
@@ -1488,8 +1487,7 @@ foreach p of local pid_list {
 ** Save PDF
 ** -------------------------------------------------------------------------
 
-putpdf save "$pdfdir\tmr_monitor_report_`report_date_file'.pdf", replace
+putpdf save "$pdfdir\tmr_monitor_report_`report_date_file'_noname.pdf", replace
 
 capture log close
-
 

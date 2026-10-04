@@ -1456,8 +1456,6 @@ foreach p of local pid_list {
                 local meds_code = diabetes_meds[`j']
                 local meds_label : value label diabetes_meds
                 local person_meds : label `meds_label' `meds_code'
-                ** Display codes 5 and 6 consistently; retain the original data.
-                if inlist(`meds_code',5,6) local person_meds "not taking medication"
             }
             putpdf table person_visit_table_`p'(`row',1) = ("`person_visit'")
             putpdf table person_visit_table_`p'(`row',2) = ("`txt_weight'")
@@ -1491,5 +1489,4 @@ foreach p of local pid_list {
 putpdf save "$pdfdir\tmr_monitor_report_`report_date_file'.pdf", replace
 
 capture log close
-
 
