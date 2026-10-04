@@ -36,3 +36,9 @@ Thumbs.db
 *.csv
 *.dta
 
+# Python virtual environments
+.venv/
+venv/
+
+# Local SHG configuration
+shg_paths_LOCAL.do

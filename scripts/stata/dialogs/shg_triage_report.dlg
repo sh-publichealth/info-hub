@@ -1,0 +1,36 @@
+*! SHG Diabetes Registry triage-transfer dialog
+*! version 2.0.0, 27 September 2026
+*! Thin interface to scripts/stata/registry/shg_triage_report.do
+
+VERSION 19.0
+POSITION . . 430 185
+
+DIALOG main, label("SHG Diabetes Registry - triage transfer")
+BEGIN
+    TEXTBOX intro 15 15 400 25, label("Reconcile completed eligible triage records with the registry.")
+
+    GROUPBOX operation 15 52 400 70, label("Operation")
+
+    RADIO preview 30 75 350 ., first default(1) nomemory ///
+        label("Preview reconciliation (read-only)")
+
+    RADIO transfer 30 101 350 ., last nomemory ///
+        label("Authorised transfer")
+
+    TEXTBOX safeguard 15 137 400 25, label("Authorised transfers are verified and recorded in private run files.")
+END
+
+OK ok1, label("Run")
+CANCEL cancel1, label("Cancel")
+HELP help1, view("help shg_triage_transfer")
+
+PROGRAM command
+BEGIN
+    put "do $SHG_STATA/registry/shg_triage_report.do "
+    if main.preview {
+        put "preview"
+    }
+    else {
+        put "transfer TRANSFER-1087-TO-1077"
+    }
+END

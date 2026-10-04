@@ -1,0 +1,23 @@
+{
+  "baseline_med_counts_0_1_2_3plus": [
+    0,
+    1,
+    1,
+    2
+  ],
+  "baseline_med_n": 4,
+  "tmr6_med_counts_0_1_2_3plus": [
+    2,
+    1,
+    0,
+    1
+  ],
+  "tmr6_med_n": 4,
+  "paired_med_n": 3,
+  "paired_lower": 2,
+  "paired_same": 0,
+  "paired_higher": 1,
+  "optional_visits_305_90017": 5,
+  "withdrawn_after": "TMR additional safety visit",
+  "note": "These are synthetic expectations only."
+}
